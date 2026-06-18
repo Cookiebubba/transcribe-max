@@ -52,15 +52,8 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg-0);
   background:radial-gradient(80% 50% at 50% 50%, transparent 60%, rgba(0,0,0,.45) 100%);}
 #stars{position:fixed;inset:0;z-index:-2;pointer-events:none}
 .star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.5;animation:tw 4s ease-in-out infinite}
-.shoot{position:fixed;top:-10%;left:0;width:2px;height:2px;border-radius:50%;background:#fff;z-index:-2;
-  box-shadow:0 0 6px 1px rgba(255,245,220,.8);opacity:0;filter:drop-shadow(0 0 4px #fff)}
-.shoot::after{content:"";position:absolute;right:1px;top:0;width:140px;height:1px;
-  background:linear-gradient(90deg, rgba(255,245,220,.85), transparent)}
-.shoot.s1{animation:shoot 9s ease-in 2s infinite}
-.shoot.s2{animation:shoot 11s ease-in 6.5s infinite}
 @keyframes tw{0%,100%{opacity:.25}50%{opacity:.9}}
-@keyframes shoot{0%{opacity:0;transform:translate(6vw,4vh) rotate(34deg)}6%,16%{opacity:1}24%,100%{opacity:0;transform:translate(46vw,34vh) rotate(34deg)}}
-@media (prefers-reduced-motion:reduce){.star,.shoot{animation:none}.shoot{display:none}.head h1,.seg__btn{animation:none!important}*{scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){.star{animation:none}.head h1,.seg__btn{animation:none!important}*{scroll-behavior:auto!important}}
 
 /* ---------- page ---------- */
 .wrap{max-width:720px;margin:0 auto;padding:84px 20px 80px}
@@ -78,6 +71,8 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg-0);
   80%{text-shadow:0 0 30px rgba(240,205,134,.55), 0 0 10px rgba(240,205,134,.35), 0 1px 30px rgba(216,181,107,.2)}
 }
 .head p{color:var(--ink-dim);font-size:15.5px;margin:0;max-width:48ch;margin-inline:auto;line-height:1.55}
+.sub-link{color:var(--gold);text-decoration:none;font-weight:600;white-space:nowrap;transition:color .25s, text-shadow .25s}
+.sub-link:hover{color:var(--gold-bright);text-shadow:0 0 14px rgba(240,205,134,.45)}
 
 /* ---------- the outer card (CNVS node window) ---------- */
 .faq-card{border-radius:22px;
@@ -186,8 +181,8 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg-0);
 .cnvs-node__close{flex:0 0 auto;width:24px;height:24px;border-radius:7px;border:1px solid transparent;background:transparent;
   color:var(--ink-faint);display:grid;place-items:center;transition:.3s cubic-bezier(.2,.9,.25,1)}
 .cnvs-node__close svg{width:12px;height:12px;transition:transform .35s cubic-bezier(.2,.9,.25,1)}
-.cnvs-node.open .cnvs-node__close{color:var(--cream);background:rgba(255,240,210,.06)}
-.cnvs-node.open .cnvs-node__close svg{transform:rotate(45deg)}
+.cnvs-node.open .cnvs-node__close{color:var(--accent)}
+.cnvs-node.open .cnvs-node__close svg{transform:rotate(180deg)}
 .cnvs-node__reveal{overflow:hidden}
 .cnvs-node__body{max-height:0;overflow:hidden;transition:max-height .42s cubic-bezier(.2,.9,.25,1)}
 .cnvs-node__body-inner{padding:0 12px 17px 30px;color:var(--ink-dim);font-size:14.5px;line-height:1.62;
@@ -219,14 +214,12 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg-0);
 <body>
 <div class="sky" aria-hidden="true"></div>
 <div id="stars" aria-hidden="true"></div>
-<span class="shoot s1" aria-hidden="true"></span>
-<span class="shoot s2" aria-hidden="true"></span>
 
 <main class="wrap">
   <header class="head">
     <span class="head__eyebrow"><span class="dot"></span>Canvas · Support</span>
     <h1>Frequently asked,<br>answered on stream.</h1>
-    <p>Everything you need to know about CNVS — the voice-driven agentic canvas for macOS.</p>
+    <p>Everything you need to know about CNVS — the voice-driven agentic canvas for macOS. <a class="sub-link" href="https://cnvs.dev">Available now at cnvs.dev.</a></p>
   </header>
 
   <section class="faq-card" id="faqCard">
@@ -298,12 +291,12 @@ const FAQ = [
   kw:"voice control parakeet nvidia gpt realtime jarvis speech to text local microphone command dictation"},
 
  {q:"How much does it cost?", asks:295, acc:"--gold", sub:"Pricing",
-  a:"<strong>A one-time lifetime license on a price ratchet:</strong> <strong>$99</strong> founder (first 5), then <strong>$129</strong> (#6–50), then <strong>$169</strong> (#51–150). You get a numbered license and all 1.x updates forever. No subscription.",
-  kw:"cost price how much pricing lifetime 99 129 169 ratchet license founder pay once cheap"},
+  a:"<strong>$169 — one-time payment.</strong> A lifetime license: pay once and own CNVS forever, no subscription. Includes every agent, voice and all themes, all 1.x updates, and it works with your existing AI subscriptions.",
+  kw:"cost price how much pricing lifetime 169 license pay once one time cheap"},
 
  {q:"Is it a subscription?", asks:188, acc:"--gold", sub:"Pricing",
-  a:"<strong>No.</strong> It's a one-time, bring-your-own-key purchase. “Charging recurring revenue for a product with no recurring costs is a bad look.” Lifetime may be retired around ~150–200 licenses, with existing buyers grandfathered onto it forever.",
-  kw:"subscription monthly recurring one time lifetime byo key no sub grandfathered"},
+  a:"<strong>No.</strong> It's a one-time, bring-your-own-key purchase — pay once, own it forever. “Charging recurring revenue for a product with no recurring costs is a bad look.”",
+  kw:"subscription monthly recurring one time lifetime byo key no sub"},
 
  {q:"Does it bill me API rates, or use my Claude/Codex plan?", asks:210, acc:"--bronze", sub:"Billing",
   a:"<strong>It uses your existing subscriptions, not API billing.</strong> The agent CLIs (Claude Code, Codex, Cursor) run on your normal plans — full subsidized usage. The only bring-your-own-API-key part is voice via GPT Realtime; local Parakeet voice costs nothing.",
@@ -326,8 +319,8 @@ const FAQ = [
   kw:"forge kanban board tasks queue parallel agents concurrent spawn delegate"},
 
  {q:"How are agents named?", asks:134, acc:"--bronze", sub:"Agents",
-  a:"They <strong>auto-name themselves</strong>, by default after the <strong>Paw Patrol</strong> cast (his kid's favorite) — Chase, Marshall, Sky, Rubble, Rocky, Zuma… You can name them yourself, and Day 43 added a custom comma-separated name pool.",
-  kw:"agent names naming paw patrol chase marshall sky rubble custom random"},
+  a:"They <strong>auto-name themselves</strong>, by default after the <strong>Paw Patrol</strong> cast (his kid's favorite) — Chase, Marshall, Sky, Rubble, Rocky, Zuma… and you can <strong>edit agent names right within Canvas</strong>, or set your own custom name pool.",
+  kw:"agent names naming paw patrol chase marshall sky rubble custom edit rename within canvas"},
 
  {q:"Is there shared memory across agents?", asks:108, acc:"--gold", sub:"Memory",
   a:"<strong>Yes — a system-wide canvas memory</strong> all agents read/write via MCP/CLI, so different-brand agents feel like one. It's a file-based “MD playbook” using just-in-time retrieval (chosen over heavyweight engines) — “200% less me explaining.”",
@@ -342,11 +335,11 @@ const FAQ = [
   kw:"canvas link multiple directories connect front end back end local production command k"},
 
  {q:"What themes are there?", asks:96, acc:"--amber", sub:"Themes",
-  a:"Many, always growing: <strong>Aurora</strong> (the brand theme), Lakeside (light + night, very popular), Cobalt, Meadow / Night Meadow, Outrun, Bauhaus and more. Backgrounds are Max's own — GPT Image Gen 2 stills animated into 4K loops with Kling. Goal: a translucent “smoked glass” look.",
-  kw:"themes aurora lakeside cobalt meadow outrun bauhaus smoked glass liquid background customize"},
+  a:"Plenty — <strong>Aurora</strong> (the brand theme), Lakeside (light + night), Cobalt, Meadow / Night Meadow, Outrun, Bauhaus and more, all with a translucent “smoked glass” look. <strong>New themes are always coming out.</strong>",
+  kw:"themes aurora lakeside cobalt meadow outrun bauhaus smoked glass liquid background customize new"},
 
  {q:"How many agents can it run at once?", asks:88, acc:"--bronze", sub:"Limits",
-  a:"“<strong>I don't think there's a max — comes down to how good your computer is.</strong>” He's demoed 15 Claude + 15 Codex + 15 Cursor together; getting perf good enough for ~1,000 took about two months. Spinning up ~100 at once can still hitch live.",
+  a:"“<strong>I don't think there's a max — comes down to how good your computer is.</strong>” He's demoed 15 Claude + 15 Codex + 15 Cursor together; getting performance good enough for ~1,000 took about two months. Spinning up ~100 at once can still hitch live.",
   kw:"how many agents max limit terminals concurrent thousand performance run at once"},
 
  {q:"Is there a free trial?", asks:79, acc:"--gold", sub:"Pricing",
@@ -365,10 +358,6 @@ const FAQ = [
   a:"Partially, behind a debug flag. macOS forbids reparenting another app's window, so the approach is to <strong>mirror Simulator.app</strong> (ScreenCaptureKit) and forward input — “puppeteering.” Pulled from the build until it's perfected.",
   kw:"ios simulator iphone preview mirror screencapturekit xcode app"},
 
- {q:"Does the music player support Spotify?", asks:84, acc:"--amber", sub:"Music",
-  a:"Not yet — it's the top request. It has Apple Music (MusicKit), YouTube and licensed “stations.” Spotify is hard: the old streaming SDK was deprecated, leaving only an “app remote” that can't play audio itself. It'd be the first real library added to Canvas.",
-  kw:"music player spotify apple music youtube stations equalizer visualizer background song"},
-
  {q:"Can agents draw diagrams or loops?", asks:67, acc:"--gold", sub:"Drawing",
   a:"<strong>Yes</strong> — agents can draw labeled boxes and diagrams on the canvas via a JSON draw verb (demoed a 54-element diagram). The roadmap goal is visual <strong>loops</strong>: draw a loop node, wire an arrow to an agent/forge, “start the loop.”",
   kw:"draw diagrams agents canvas excalidraw loops visual arrow node sketch"},
@@ -377,33 +366,21 @@ const FAQ = [
   a:"<strong>Yes, point it at Ollama</strong> (Gemma / Qwen) inside an agent. He wouldn't run it live (eats all system memory) and says local models “aren't there yet” for his complexity — but he's “model agnostic” and open to native support later.",
   kw:"local model offline ollama gemma qwen open source no internet llama agnostic"},
 
- {q:"Who built it and how long did it take?", asks:92, acc:"--gold", sub:"Origin",
-  a:"<strong>Max built it solo, off-stream, at night over ~2 weeks</strong>, then continued live. He pitched it on Day 15 — “the entire stream chat said it's a terrible idea and I made it anyways.”",
-  kw:"who built made it solo how long origin started story idea night"},
-
- {q:"When did the alpha ship and how do I get access?", asks:103, acc:"--bronze", sub:"Access",
-  a:"A free <strong>early-access alpha to YouTube channel members</strong> shipped late May 2026 (live by Day 38), with hard cut-off at paid launch. It went paid on <strong>Day 42 (2026-06-11)</strong>. Get on the list at cnvs.dev.",
-  kw:"alpha access early beta how to get members waitlist launch when shipped sign up"},
-
  {q:"Does Canvas build itself?", asks:69, acc:"--gold", sub:"Meta",
   a:"“<strong>Yes — I build canvas within canvas.</strong>” A dev script opens a second <em>canvas-dev</em> instance on its own port so the installed app stays up while he tests. An artifact build exposes an API the main canvas drives to run ~1,000+ tests (replacing Playwright for Swift).",
   kw:"canvas build itself dogfood dev mode artifact tests inside meta self hosting"},
 
  {q:"What's the dictation feature?", asks:64, acc:"--amber", sub:"Dictation",
-  a:"A <strong>Whisper-Flow-style dictation</strong> on its own keybind (separate from the command voice key). It types wherever your cursor is and doesn't auto-submit, powered by local Parakeet. Max canceled his Whisper Flow sub after building it.",
-  kw:"dictation whisper flow type cursor keybind parakeet local transcribe"},
-
- {q:"What are Hermes and Open Claw?", asks:57, acc:"--bronze", sub:"Hermes",
-  a:"<strong>Max's own agents.</strong> Hermes (built in as a chat node, runs on GPT-5.5) handles infrastructure and bulk work — SSH, repos, DNS, sending invite codes. Canvas/Claude Code handle taste-driven work. “Claude Code holds the paintbrush; Hermes is a paintbrush holding another paintbrush.”",
-  kw:"hermes open claw agent infrastructure ssh gpt 5.5 chat node bulk tasks"},
+  a:"<strong>Whisper-Flow-style dictation, but completely local.</strong> On its own keybind (separate from the command voice key), it types wherever your cursor is — powered by on-device Parakeet, so nothing ever leaves your machine. Max canceled his Whisper Flow subscription after building it.",
+  kw:"dictation whisper flow type cursor keybind parakeet local offline private transcribe"},
 
  {q:"How do you stop agents fighting over files?", asks:55, acc:"--bronze", sub:"Agents",
   a:"Max says he's <strong>never once</strong> hit it, even with 20 agents — they detect another agent editing a file and wait (a watcher), helped by shared memory. The “proper” way is git worktrees, which you can run inside Canvas.",
   kw:"race condition conflict files agents fighting worktree git parallel watcher wait"},
 
- {q:"Can I run it on a TV?", asks:52, acc:"--sand", sub:"Use case",
-  a:"<strong>Yes — a favorite use case.</strong> Stand in front of a TV, fully voice-controlled, no keyboard or mouse, “vibe code your ass off.”",
-  kw:"tv big screen voice control no keyboard mouse hands free use case"},
+ {q:"What's your favorite way to use Canvas?", asks:52, acc:"--sand", sub:"Use case",
+  a:"<strong>In front of a TV, fully voice-controlled</strong> — no keyboard, no mouse, just stand back and “vibe code your ass off.”",
+  kw:"favorite way use canvas tv big screen voice control no keyboard mouse hands free"},
 
  {q:"Is there a mobile / iPad app?", asks:73, acc:"--sand", sub:"Mobile",
   a:"Wanted a lot — “an iPad and iPhone version is going to be insane,” envisioned as a phone remote (push-to-talk, swipe to flip canvases). Built natively in Swift, not React Native. No firm date.",
@@ -493,7 +470,7 @@ function buildCard(item){
         <span class="cnvs-node__title-sub">${e.sub}</span>
       </span>
       <span class="cnvs-node__close" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
       </span>
     </button>
     <div class="cnvs-node__reveal"><div class="cnvs-node__body"><div class="cnvs-node__body-inner">${e.a}</div></div></div>`;
