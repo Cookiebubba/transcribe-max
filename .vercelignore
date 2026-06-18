@@ -1,0 +1,8 @@
+# Deploy only the FAQ page — exclude the transcript corpus and tooling.
+transcripts/
+scripts/
+*.py
+streams.json
+requirements.txt
+README.md
+docs/canvas-project-faq.md
