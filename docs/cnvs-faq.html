@@ -194,8 +194,8 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg-0);
 .cnvs-node.open .cnvs-node__body-inner{opacity:1;transform:none}
 .cnvs-node__body-inner strong{color:var(--cream);font-weight:650}
 
-.hl{color:#fff;font-weight:700;background:linear-gradient(180deg, transparent 60%, color-mix(in srgb,var(--accent) 42%, transparent) 0);
-  border-radius:3px;padding:0 .5px}
+.hl{color:#fff;font-weight:700;background:linear-gradient(180deg, transparent 58%, color-mix(in srgb,var(--accent) 42%, transparent) 0);
+  border-radius:2px;padding:0;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 
 .cnvs-node{animation:rise .42s cubic-bezier(.2,.9,.25,1) both}
 .list.regen .cnvs-node{animation:regen .3s cubic-bezier(.2,.9,.25,1) both}
@@ -476,13 +476,21 @@ const phText=document.getElementById('phText');
 const seg=document.getElementById('seg');
 const segPill=seg.querySelector('.seg__pill');
 const MIN_RESULTS=3, TOP_N=10;
-let view='top', openId=null, rendered=new Map();
+let view='top', openId=null, searchMode=false, rendered=new Map();
 
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function highlight(text,hits){
   if(!hits||!hits.length) return esc(text);
-  const set=new Set(hits); let out='';
-  for(let i=0;i<text.length;i++){const c=esc(text[i]); out+=set.has(i)?`<span class="hl">${c}</span>`:c;}
+  const set=new Set(hits); let out='', i=0;
+  while(i<text.length){
+    if(set.has(i)){
+      let j=i; while(j<text.length && set.has(j)) j++;          // merge a contiguous run of matches
+      out+=`<span class="hl">${esc(text.slice(i,j))}</span>`; i=j;
+    } else {
+      let j=i; while(j<text.length && !set.has(j)) j++;
+      out+=esc(text.slice(i,j)); i=j;
+    }
+  }
   return out;
 }
 function buildCard(item){
@@ -491,7 +499,7 @@ function buildCard(item){
   el.className='cnvs-node';
   el.style.setProperty('--accent',`var(${e.acc})`);
   el.dataset.q=e.q; el.setAttribute('role','listitem');
-  const isOpen = openId===e.q;
+  const isOpen = openId===e.q && !searchMode;
   el.innerHTML=`
     <button class="cnvs-node__chrome" type="button" aria-expanded="${isOpen?'true':'false'}">
       <span class="cnvs-node__status" aria-hidden="true"></span>
@@ -523,6 +531,7 @@ function toggle(el,q){
 }
 function render(query){
   const searching=query.trim().length>0;
+  searchMode=searching;
   let items;
   if(!searching){
     const all=FAQ.map((e,idx)=>({e,idx,score:0,hits:[]})).sort((a,b)=>b.e.asks-a.e.asks);
@@ -544,10 +553,7 @@ function render(query){
   const frag=document.createDocumentFragment(), next=new Map(); let openEl=null;
   items.forEach(item=>{const el=buildCard(item); if(!searching && openId===item.e.q) openEl=el; next.set(item.e.q,el); frag.appendChild(el);});
   listEl.innerHTML=''; listEl.appendChild(frag);
-  if(searching){
-    next.forEach(el=>{ const b=el.querySelector('.cnvs-node__body'); el.classList.add('open');
-      el.querySelector('.cnvs-node__chrome').setAttribute('aria-expanded','true'); b.style.maxHeight=b.scrollHeight+'px'; });
-  } else if(openEl){ const b=openEl.querySelector('.cnvs-node__body'); b.style.maxHeight=b.scrollHeight+'px'; }
+  if(openEl){ const b=openEl.querySelector('.cnvs-node__body'); b.style.maxHeight=b.scrollHeight+'px'; }
   listEl.classList.remove('regen'); void listEl.offsetWidth; listEl.classList.add('regen');
   next.forEach((el,q)=>{
     if(first.has(q)){
