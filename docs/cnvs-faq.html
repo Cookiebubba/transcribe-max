@@ -147,7 +147,9 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg-0);
 .cnvs-node::after{content:"";position:absolute;left:0;top:9px;bottom:9px;width:2px;border-radius:2px;
   background:var(--accent);opacity:0;transition:opacity .3s}
 .cnvs-node.open::after{opacity:.85}
-.cnvs-node__chrome{display:flex;align-items:center;gap:11px;padding:15px 10px;cursor:pointer;user-select:none}
+.cnvs-node__chrome{display:flex;align-items:center;gap:11px;width:100%;padding:15px 10px;cursor:pointer;user-select:none;
+  background:transparent;border:0;margin:0;text-align:left;color:inherit;font:inherit;
+  -webkit-tap-highlight-color:transparent;touch-action:manipulation}
 .cnvs-node__status{flex:0 0 auto;width:8px;height:8px;border-radius:50%;background:var(--accent);
   box-shadow:0 0 7px color-mix(in srgb, var(--accent) 70%, transparent);animation:dotpulse 3.4s ease-in-out infinite}
 .cnvs-node__title{flex:1;min-width:0;display:flex;align-items:baseline;gap:9px;overflow:hidden}
@@ -160,9 +162,8 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg-0);
 .cnvs-node__close svg{width:12px;height:12px;transition:transform .35s cubic-bezier(.2,.9,.25,1)}
 .cnvs-node.open .cnvs-node__close{color:var(--cream);background:rgba(255,240,210,.06)}
 .cnvs-node.open .cnvs-node__close svg{transform:rotate(45deg)}
-.cnvs-node__reveal{display:grid;grid-template-rows:0fr;transition:grid-template-rows .42s cubic-bezier(.2,.9,.25,1)}
-.cnvs-node.open .cnvs-node__reveal{grid-template-rows:1fr}
-.cnvs-node__body{overflow:hidden;min-height:0}
+.cnvs-node__reveal{overflow:hidden}
+.cnvs-node__body{max-height:0;overflow:hidden;transition:max-height .42s cubic-bezier(.2,.9,.25,1)}
 .cnvs-node__body-inner{padding:0 12px 17px 30px;color:var(--ink-dim);font-size:14.5px;line-height:1.62;
   opacity:0;transform:translateY(6px);transition:opacity .4s ease .06s, transform .4s ease .06s}
 .cnvs-node.open .cnvs-node__body-inner{opacity:1;transform:none}
@@ -451,28 +452,35 @@ function buildCard(item){
   el.className='cnvs-node';
   el.style.setProperty('--accent',`var(${e.acc})`);
   el.dataset.q=e.q; el.setAttribute('role','listitem');
+  const isOpen = openId===e.q;
   el.innerHTML=`
-    <header class="cnvs-node__chrome">
+    <button class="cnvs-node__chrome" type="button" aria-expanded="${isOpen?'true':'false'}">
       <span class="cnvs-node__status" aria-hidden="true"></span>
-      <div class="cnvs-node__title">
+      <span class="cnvs-node__title">
         <span class="cnvs-node__title-main">${highlight(e.q,item.hits)}</span>
         <span class="cnvs-node__title-sep" aria-hidden="true">·</span>
         <span class="cnvs-node__title-sub">${e.sub}</span>
-      </div>
-      <button class="cnvs-node__close" tabindex="-1" aria-hidden="true">
+      </span>
+      <span class="cnvs-node__close" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
-      </button>
-    </header>
+      </span>
+    </button>
     <div class="cnvs-node__reveal"><div class="cnvs-node__body"><div class="cnvs-node__body-inner">${e.a}</div></div></div>`;
   el.querySelector('.cnvs-node__chrome').addEventListener('click',()=>toggle(el,e.q));
-  if(openId===e.q) el.classList.add('open');
+  if(isOpen) el.classList.add('open');
   return el;
 }
+function setHeight(el, open){
+  const body=el.querySelector('.cnvs-node__body');
+  const chrome=el.querySelector('.cnvs-node__chrome');
+  if(open){ el.classList.add('open'); body.style.maxHeight=body.scrollHeight+'px'; chrome.setAttribute('aria-expanded','true'); }
+  else { el.classList.remove('open'); body.style.maxHeight='0px'; chrome.setAttribute('aria-expanded','false'); }
+}
 function toggle(el,q){
-  const isOpen=el.classList.contains('open');
-  listEl.querySelectorAll('.cnvs-node.open').forEach(n=>{if(n!==el) n.classList.remove('open');});
-  el.classList.toggle('open',!isOpen);
-  openId=!isOpen?q:null;
+  const willOpen=!el.classList.contains('open');
+  listEl.querySelectorAll('.cnvs-node.open').forEach(n=>{ if(n!==el) setHeight(n,false); });
+  setHeight(el, willOpen);
+  openId=willOpen?q:null;
 }
 function render(query){
   const searching=query.trim().length>0;
@@ -491,9 +499,10 @@ function render(query){
   }
   const first=new Map();
   rendered.forEach((el,q)=>first.set(q, el.getBoundingClientRect().top));
-  const frag=document.createDocumentFragment(), next=new Map();
-  items.forEach(item=>{const el=buildCard(item); next.set(item.e.q,el); frag.appendChild(el);});
+  const frag=document.createDocumentFragment(), next=new Map(); let openEl=null;
+  items.forEach(item=>{const el=buildCard(item); if(openId===item.e.q) openEl=el; next.set(item.e.q,el); frag.appendChild(el);});
   listEl.innerHTML=''; listEl.appendChild(frag);
+  if(openEl){ const b=openEl.querySelector('.cnvs-node__body'); b.style.maxHeight=b.scrollHeight+'px'; }
   listEl.classList.remove('regen'); void listEl.offsetWidth; listEl.classList.add('regen');
   next.forEach((el,q)=>{
     if(first.has(q)){
