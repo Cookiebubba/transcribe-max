@@ -1,0 +1,2400 @@
+{
+  "video_id": "aRzkugQ_L_0",
+  "title": "Building a Glowing Ai GitHub Commit Button, HAPPY NEW YEAR!!",
+  "url": "https://www.youtube.com/watch?v=aRzkugQ_L_0",
+  "published_at": "2025-01-02T23:28:30Z",
+  "duration": "00:44:48",
+  "day_number": null,
+  "caption_language": "en",
+  "caption_kind": "auto-generated",
+  "segment_count": 477,
+  "word_count": 2734,
+  "segments": [
+    {
+      "start": 7.2,
+      "duration": 2.48,
+      "text": "yo yo"
+    },
+    {
+      "start": 10.599,
+      "duration": 3.681,
+      "text": "yo good morning good"
+    },
+    {
+      "start": 15.279,
+      "duration": 8.24,
+      "text": "morning we're back we're"
+    },
+    {
+      "start": 18.359,
+      "duration": 5.16,
+      "text": "back max versus button and we're back"
+    },
+    {
+      "start": 24.88,
+      "duration": 5.159,
+      "text": "baby huge progress was made"
+    },
+    {
+      "start": 31.079,
+      "duration": 3.0,
+      "text": "oh"
+    },
+    {
+      "start": 36.399,
+      "duration": 3.0,
+      "text": "whoa"
+    },
+    {
+      "start": 40.2,
+      "duration": 4.48,
+      "text": "whoa I'm not going to lie this PCB is a"
+    },
+    {
+      "start": 42.48,
+      "duration": 2.2,
+      "text": "little"
+    },
+    {
+      "start": 48.0,
+      "duration": 3.8,
+      "text": "crazy good morning good"
+    },
+    {
+      "start": 52.12,
+      "duration": 5.68,
+      "text": "morning check us out check us out we got"
+    },
+    {
+      "start": 54.96,
+      "duration": 2.84,
+      "text": "our PCP"
+    },
+    {
+      "start": 57.84,
+      "duration": 4.44,
+      "text": "made take a little take a little look"
+    },
+    {
+      "start": 60.0,
+      "duration": 2.28,
+      "text": "look at"
+    },
+    {
+      "start": 67.799,
+      "duration": 6.36,
+      "text": "this this is where our um microprocessor"
+    },
+    {
+      "start": 71.72,
+      "duration": 3.88,
+      "text": "is going to lay right here here are the"
+    },
+    {
+      "start": 74.159,
+      "duration": 2.921,
+      "text": "solder pads that it's going to get"
+    },
+    {
+      "start": 75.6,
+      "duration": 3.72,
+      "text": "solder"
+    },
+    {
+      "start": 77.08,
+      "duration": 5.32,
+      "text": "to these are all"
+    },
+    {
+      "start": 79.32,
+      "duration": 6.2,
+      "text": "LEDs these are RGB"
+    },
+    {
+      "start": 82.4,
+      "duration": 5.16,
+      "text": "LEDs here's our small"
+    },
+    {
+      "start": 85.52,
+      "duration": 3.08,
+      "text": "capacitors that are right in line with"
+    },
+    {
+      "start": 87.56,
+      "duration": 4.16,
+      "text": "the"
+    },
+    {
+      "start": 88.6,
+      "duration": 6.0,
+      "text": "LEDs here's our full circuit capacitor"
+    },
+    {
+      "start": 91.72,
+      "duration": 6.2,
+      "text": "the big boy this is a big boy"
+    },
+    {
+      "start": 94.6,
+      "duration": 6.08,
+      "text": "too oh it's a big"
+    },
+    {
+      "start": 97.92,
+      "duration": 5.08,
+      "text": "boy here's a resistor that's in line"
+    },
+    {
+      "start": 100.68,
+      "duration": 4.759,
+      "text": "with the data data in and data out on"
+    },
+    {
+      "start": 103.0,
+      "duration": 6.0,
+      "text": "the rgbs LED"
+    },
+    {
+      "start": 105.439,
+      "duration": 3.561,
+      "text": "rgbs RGB"
+    },
+    {
+      "start": 111.04,
+      "duration": 8.52,
+      "text": "LEDs and then uh here is the Cherry MX"
+    },
+    {
+      "start": 116.56,
+      "duration": 3.0,
+      "text": "switch"
+    },
+    {
+      "start": 121.119,
+      "duration": 3.721,
+      "text": "it's not bad not bad at"
+    },
+    {
+      "start": 126.439,
+      "duration": 6.361,
+      "text": "all today's goal today on the to-do"
+    },
+    {
+      "start": 134.879,
+      "duration": 3.921,
+      "text": "list we got to get the"
+    },
+    {
+      "start": 140.68,
+      "duration": 3.36,
+      "text": "um website"
+    },
+    {
+      "start": 147.239,
+      "duration": 4.441,
+      "text": "rolling you know what I mean"
+    },
+    {
+      "start": 155.68,
+      "duration": 4.919,
+      "text": "and"
+    },
+    {
+      "start": 156.879,
+      "duration": 5.241,
+      "text": "um so what I'm going to do cuz we have a"
+    },
+    {
+      "start": 160.599,
+      "duration": 4.161,
+      "text": "few of these projects we're going to be"
+    },
+    {
+      "start": 162.12,
+      "duration": 4.8,
+      "text": "doing"
+    },
+    {
+      "start": 164.76,
+      "duration": 5.68,
+      "text": "um we have a few of these projects we're"
+    },
+    {
+      "start": 166.92,
+      "duration": 7.319,
+      "text": "going to be doing this year we're going"
+    },
+    {
+      "start": 170.44,
+      "duration": 3.799,
+      "text": "to we are going"
+    },
+    {
+      "start": 174.319,
+      "duration": 3.0,
+      "text": "to"
+    },
+    {
+      "start": 177.56,
+      "duration": 5.88,
+      "text": "Boom I'm going to make I'm going to make"
+    },
+    {
+      "start": 180.12,
+      "duration": 5.479,
+      "text": "make uh it"
+    },
+    {
+      "start": 183.44,
+      "duration": 5.079,
+      "text": "live"
+    },
+    {
+      "start": 185.599,
+      "duration": 7.56,
+      "text": "early for a"
+    },
+    {
+      "start": 188.519,
+      "duration": 9.201,
+      "text": "few for a few people few was in like"
+    },
+    {
+      "start": 193.159,
+      "duration": 6.841,
+      "text": "two and they can pay a little bit"
+    },
+    {
+      "start": 197.72,
+      "duration": 5.68,
+      "text": "more to be a"
+    },
+    {
+      "start": 200.0,
+      "duration": 6.12,
+      "text": "supporter of the YouTube channel of the"
+    },
+    {
+      "start": 203.4,
+      "duration": 6.64,
+      "text": "X of the projects we're doing they'll"
+    },
+    {
+      "start": 206.12,
+      "duration": 5.16,
+      "text": "get access to our project early and"
+    },
+    {
+      "start": 210.04,
+      "duration": 3.88,
+      "text": "they're going to get their name"
+    },
+    {
+      "start": 211.28,
+      "duration": 5.679,
+      "text": "permanently on the back of the PCB of"
+    },
+    {
+      "start": 213.92,
+      "duration": 3.039,
+      "text": "the projects that we"
+    },
+    {
+      "start": 217.239,
+      "duration": 3.36,
+      "text": "make for"
+    },
+    {
+      "start": 220.84,
+      "duration": 5.36,
+      "text": "everyone so everyone that we make is"
+    },
+    {
+      "start": 223.239,
+      "duration": 5.961,
+      "text": "going to have their name supported"
+    },
+    {
+      "start": 226.2,
+      "duration": 3.0,
+      "text": "by"
+    },
+    {
+      "start": 230.28,
+      "duration": 6.159,
+      "text": "boom cool"
+    },
+    {
+      "start": 233.439,
+      "duration": 3.0,
+      "text": "idea"
+    },
+    {
+      "start": 237.239,
+      "duration": 7.84,
+      "text": "Okay so"
+    },
+    {
+      "start": 241.2,
+      "duration": 7.36,
+      "text": "the uh the good news is is we have a"
+    },
+    {
+      "start": 245.079,
+      "duration": 7.041,
+      "text": "um we have a small head"
+    },
+    {
+      "start": 248.56,
+      "duration": 7.12,
+      "text": "start on the"
+    },
+    {
+      "start": 252.12,
+      "duration": 6.679,
+      "text": "um we have a small head start"
+    },
+    {
+      "start": 255.68,
+      "duration": 6.68,
+      "text": "on the website"
+    },
+    {
+      "start": 258.799,
+      "duration": 5.721,
+      "text": "because I got to wake up"
+    },
+    {
+      "start": 262.36,
+      "duration": 4.92,
+      "text": "here we have a small head start on the"
+    },
+    {
+      "start": 264.52,
+      "duration": 2.76,
+      "text": "website because"
+    },
+    {
+      "start": 268.16,
+      "duration": 7.16,
+      "text": "kaiso I hope that's say his name that's"
+    },
+    {
+      "start": 270.88,
+      "duration": 4.44,
+      "text": "a that's a awesome name"
+    },
+    {
+      "start": 276.919,
+      "duration": 10.84,
+      "text": "huh Kao Drew"
+    },
+    {
+      "start": 280.8,
+      "duration": 12.28,
+      "text": "up a nextjs website for us and"
+    },
+    {
+      "start": 287.759,
+      "duration": 5.321,
+      "text": "um he sent me an invite on GitHub"
+    },
+    {
+      "start": 304.24,
+      "duration": 4.56,
+      "text": "so let's pull up uh let's pull up what"
+    },
+    {
+      "start": 306.4,
+      "duration": 2.4,
+      "text": "he sent"
+    },
+    {
+      "start": 313.759,
+      "duration": 5.561,
+      "text": "me and uh see what we got"
+    },
+    {
+      "start": 334.16,
+      "duration": 2.36,
+      "text": "where is"
+    },
+    {
+      "start": 345.4,
+      "duration": 8.84,
+      "text": "it my entire head I was waiting for"
+    },
+    {
+      "start": 350.84,
+      "duration": 6.4,
+      "text": "that my entire head is in fact the"
+    },
+    {
+      "start": 354.24,
+      "duration": 3.0,
+      "text": "button"
+    },
+    {
+      "start": 360.6,
+      "duration": 6.08,
+      "text": "God where do I find good morning JJ how"
+    },
+    {
+      "start": 363.52,
+      "duration": 3.16,
+      "text": "are you"
+    },
+    {
+      "start": 410.4,
+      "duration": 7.16,
+      "text": "where so Kao shared I want my unit with"
+    },
+    {
+      "start": 414.84,
+      "duration": 5.16,
+      "text": "your face printed on it that's going to"
+    },
+    {
+      "start": 417.56,
+      "duration": 4.88,
+      "text": "be that's going to be a heavy upch"
+    },
+    {
+      "start": 420.0,
+      "duration": 5.28,
+      "text": "charge for my face on"
+    },
+    {
+      "start": 422.44,
+      "duration": 5.68,
+      "text": "there I don't know about that one I"
+    },
+    {
+      "start": 425.28,
+      "duration": 5.08,
+      "text": "don't know if my printers can get that"
+    },
+    {
+      "start": 428.12,
+      "duration": 2.24,
+      "text": "high"
+    },
+    {
+      "start": 438.039,
+      "duration": 6.521,
+      "text": "resolution all right"
+    },
+    {
+      "start": 440.639,
+      "duration": 3.921,
+      "text": "so kaiso sent"
+    },
+    {
+      "start": 446.759,
+      "duration": 6.041,
+      "text": "me access to the repo on"
+    },
+    {
+      "start": 460.479,
+      "duration": 5.4,
+      "text": "GitHub but I don't see it anywhere dance"
+    },
+    {
+      "start": 463.879,
+      "duration": 4.72,
+      "text": "face be okay as well that one we could"
+    },
+    {
+      "start": 465.879,
+      "duration": 5.201,
+      "text": "definitely do from the uh from the"
+    },
+    {
+      "start": 468.599,
+      "duration": 4.88,
+      "text": "little box scenario oh my God that would"
+    },
+    {
+      "start": 471.08,
+      "duration": 2.399,
+      "text": "be"
+    },
+    {
+      "start": 476.599,
+      "duration": 4.841,
+      "text": "easy you need to open the email in"
+    },
+    {
+      "start": 483.199,
+      "duration": 4.44,
+      "text": "invite I accepted it on GitHub I don't"
+    },
+    {
+      "start": 485.919,
+      "duration": 2.56,
+      "text": "know what is uh what is wrong with me"
+    },
+    {
+      "start": 487.639,
+      "duration": 4.28,
+      "text": "right"
+    },
+    {
+      "start": 488.479,
+      "duration": 8.12,
+      "text": "now I'm GNA I'm going to go"
+    },
+    {
+      "start": 491.919,
+      "duration": 6.801,
+      "text": "uh I'm going to check it out on my"
+    },
+    {
+      "start": 496.599,
+      "duration": 6.0,
+      "text": "email accept"
+    },
+    {
+      "start": 498.72,
+      "duration": 8.52,
+      "text": "invitation got it okay you're a"
+    },
+    {
+      "start": 502.599,
+      "duration": 4.641,
+      "text": "genius what is wrong with me"
+    },
+    {
+      "start": 537.8,
+      "duration": 6.12,
+      "text": "okay and also amazing job just coming"
+    },
+    {
+      "start": 540.959,
+      "duration": 2.961,
+      "text": "through clutch right"
+    },
+    {
+      "start": 546.0,
+      "duration": 4.04,
+      "text": "there"
+    },
+    {
+      "start": 548.0,
+      "duration": 4.079,
+      "text": "Jesus you just show up when you're"
+    },
+    {
+      "start": 550.04,
+      "duration": 5.039,
+      "text": "needed you saw the bat signal and you"
+    },
+    {
+      "start": 552.079,
+      "duration": 3.0,
+      "text": "just that was"
+    },
+    {
+      "start": 556.04,
+      "duration": 3.359,
+      "text": "unbelievable good"
+    },
+    {
+      "start": 561.0,
+      "duration": 7.399,
+      "text": "Lord all"
+    },
+    {
+      "start": 562.8,
+      "duration": 5.599,
+      "text": "right npm install baby"
+    },
+    {
+      "start": 570.48,
+      "duration": 6.4,
+      "text": "so this is a"
+    },
+    {
+      "start": 572.399,
+      "duration": 8.56,
+      "text": "nextjs uh template for Shopify store"
+    },
+    {
+      "start": 576.88,
+      "duration": 9.28,
+      "text": "specifically we'll need to grab our uh"
+    },
+    {
+      "start": 580.959,
+      "duration": 5.201,
+      "text": "we'll need to grab the environmental"
+    },
+    {
+      "start": 587.399,
+      "duration": 5.801,
+      "text": "variables H your commit is looks bad"
+    },
+    {
+      "start": 590.32,
+      "duration": 2.88,
+      "text": "still it looks"
+    },
+    {
+      "start": 593.6,
+      "duration": 6.239,
+      "text": "great oh you already put the"
+    },
+    {
+      "start": 595.6,
+      "duration": 4.239,
+      "text": "environmental variables in there"
+    },
+    {
+      "start": 600.079,
+      "duration": 2.521,
+      "text": "dude you're"
+    },
+    {
+      "start": 602.92,
+      "duration": 3.52,
+      "text": "amazing excellent"
+    },
+    {
+      "start": 610.36,
+      "duration": 4.84,
+      "text": "job is that what we're doing here mpm"
+    },
+    {
+      "start": 612.519,
+      "duration": 2.681,
+      "text": "run Dev with"
+    },
+    {
+      "start": 617.32,
+      "duration": 4.48,
+      "text": "this I think so"
+    },
+    {
+      "start": 629.64,
+      "duration": 4.4,
+      "text": "[Music]"
+    },
+    {
+      "start": 631.44,
+      "duration": 4.92,
+      "text": "yes oh it's"
+    },
+    {
+      "start": 634.04,
+      "duration": 5.359,
+      "text": "amazing look at this"
+    },
+    {
+      "start": 636.36,
+      "duration": 6.32,
+      "text": "button look at this look at this text"
+    },
+    {
+      "start": 639.399,
+      "duration": 3.281,
+      "text": "with a little Boop Bo"
+    },
+    {
+      "start": 643.12,
+      "duration": 6.8,
+      "text": "Boop oh I'm so fired"
+    },
+    {
+      "start": 645.839,
+      "duration": 4.081,
+      "text": "up I'm so fired"
+    },
+    {
+      "start": 651.04,
+      "duration": 8.4,
+      "text": "up commit to GitHub with a click"
+    },
+    {
+      "start": 655.44,
+      "duration": 4.0,
+      "text": "literally literally"
+    },
+    {
+      "start": 663.04,
+      "duration": 2.599,
+      "text": "I feel like I'm going to make changes"
+    },
+    {
+      "start": 664.32,
+      "duration": 4.48,
+      "text": "and I'm going to completely ruin your"
+    },
+    {
+      "start": 665.639,
+      "duration": 3.161,
+      "text": "beautiful website that you made"
+    },
+    {
+      "start": 669.92,
+      "duration": 4.2,
+      "text": "here all right"
+    },
+    {
+      "start": 689.92,
+      "duration": 4.719,
+      "text": "so I guess we start off by making this"
+    },
+    {
+      "start": 694.8,
+      "duration": 4.599,
+      "text": "um making a product"
+    },
+    {
+      "start": 721.2,
+      "duration": 3.6,
+      "text": "oh my God you already added"
+    },
+    {
+      "start": 726.68,
+      "duration": 3.0,
+      "text": "the"
+    },
+    {
+      "start": 730.12,
+      "duration": 5.959,
+      "text": "brother what are you trying to do here"
+    },
+    {
+      "start": 733.48,
+      "duration": 2.599,
+      "text": "my man is"
+    },
+    {
+      "start": 742.36,
+      "duration": 4.0,
+      "text": "incredible wow"
+    },
+    {
+      "start": 749.959,
+      "duration": 7.081,
+      "text": "okay okay so when is this set to go live"
+    },
+    {
+      "start": 807.839,
+      "duration": 3.0,
+      "text": "um"
+    },
+    {
+      "start": 837.199,
+      "duration": 6.56,
+      "text": "I have to just set it up so mess around"
+    },
+    {
+      "start": 839.72,
+      "duration": 4.039,
+      "text": "with that un Local Host first"
+    },
+    {
+      "start": 872.72,
+      "duration": 3.16,
+      "text": "I think"
+    },
+    {
+      "start": 901.36,
+      "duration": 3.68,
+      "text": "no you're all good oh my God I can't"
+    },
+    {
+      "start": 903.199,
+      "duration": 4.281,
+      "text": "believe how much you did on this it's"
+    },
+    {
+      "start": 905.04,
+      "duration": 7.239,
+      "text": "unreal"
+    },
+    {
+      "start": 907.48,
+      "duration": 4.799,
+      "text": "actually I'm just trying to remember"
+    },
+    {
+      "start": 913.519,
+      "duration": 8.641,
+      "text": "uh I'm trying to remember how to uh set"
+    },
+    {
+      "start": 918.0,
+      "duration": 5.68,
+      "text": "up it to run on Local Host because um I"
+    },
+    {
+      "start": 922.16,
+      "duration": 5.119,
+      "text": "know it has like the whole web hook"
+    },
+    {
+      "start": 923.68,
+      "duration": 6.36,
+      "text": "thing with um with the Shopify where it"
+    },
+    {
+      "start": 927.279,
+      "duration": 3.721,
+      "text": "grabs the product and I remember when I"
+    },
+    {
+      "start": 930.04,
+      "duration": 3.68,
+      "text": "was making"
+    },
+    {
+      "start": 931.0,
+      "duration": 5.959,
+      "text": "deskhub uh I had to do something in"
+    },
+    {
+      "start": 933.72,
+      "duration": 6.52,
+      "text": "order for it to be like okay with"
+    },
+    {
+      "start": 936.959,
+      "duration": 8.161,
+      "text": "grabbing that information for Local Host"
+    },
+    {
+      "start": 940.24,
+      "duration": 4.88,
+      "text": "instead of uh like on a live web"
+    },
+    {
+      "start": 957.92,
+      "duration": 4.039,
+      "text": "server for"
+    },
+    {
+      "start": 991.279,
+      "duration": 2.881,
+      "text": "what do I need what do I"
+    },
+    {
+      "start": 1000.319,
+      "duration": 4.161,
+      "text": "need can you also explain to us where"
+    },
+    {
+      "start": 1002.68,
+      "duration": 5.279,
+      "text": "kaiso comes from and if that's how I'm"
+    },
+    {
+      "start": 1004.48,
+      "duration": 3.479,
+      "text": "saying it if that if that's"
+    },
+    {
+      "start": 1011.6,
+      "duration": 4.4,
+      "text": "correct is this a nickname or real"
+    },
+    {
+      "start": 1017.48,
+      "duration": 5.12,
+      "text": "name I mean it's sick either way"
+    },
+    {
+      "start": 1050.84,
+      "duration": 3.16,
+      "text": "where did you put product"
+    },
+    {
+      "start": 1054.559,
+      "duration": 4.321,
+      "text": "hero components product hero"
+    },
+    {
+      "start": 1059.28,
+      "duration": 5.279,
+      "text": "okay yes my man look at you"
+    },
+    {
+      "start": 1064.679,
+      "duration": 3.441,
+      "text": "go you're a"
+    },
+    {
+      "start": 1068.559,
+      "duration": 3.0,
+      "text": "legend"
+    },
+    {
+      "start": 1074.08,
+      "duration": 5.479,
+      "text": "yes I don't even know what this is but I"
+    },
+    {
+      "start": 1076.36,
+      "duration": 3.199,
+      "text": "love it"
+    },
+    {
+      "start": 1087.96,
+      "duration": 3.959,
+      "text": "are you absolutely leaving me hanging"
+    },
+    {
+      "start": 1090.039,
+      "duration": 4.481,
+      "text": "right now with the okay so what you need"
+    },
+    {
+      "start": 1091.919,
+      "duration": 7.681,
+      "text": "now is and"
+    },
+    {
+      "start": 1094.52,
+      "duration": 5.08,
+      "text": "then not not giving me"
+    },
+    {
+      "start": 1107.76,
+      "duration": 4.0,
+      "text": "it for"
+    },
+    {
+      "start": 1175.44,
+      "duration": 5.68,
+      "text": "so let me just see if this is pulling"
+    },
+    {
+      "start": 1178.44,
+      "duration": 2.68,
+      "text": "the data or"
+    },
+    {
+      "start": 1189.919,
+      "duration": 4.841,
+      "text": "not get up dash button"
+    },
+    {
+      "start": 1200.76,
+      "duration": 2.399,
+      "text": "oh it"
+    },
+    {
+      "start": 1216.08,
+      "duration": 6.599,
+      "text": "is my comments are showing up open"
+    },
+    {
+      "start": 1218.679,
+      "duration": 6.201,
+      "text": "Twitter God why is that happening you're"
+    },
+    {
+      "start": 1222.679,
+      "duration": 4.961,
+      "text": "not the first person to say that I think"
+    },
+    {
+      "start": 1224.88,
+      "duration": 6.76,
+      "text": "that restream is"
+    },
+    {
+      "start": 1227.64,
+      "duration": 4.0,
+      "text": "terrible for"
+    },
+    {
+      "start": 1261.4,
+      "duration": 3.12,
+      "text": "oh you were just going to work on"
+    },
+    {
+      "start": 1268.919,
+      "duration": 4.921,
+      "text": "it if you want if you want to keep going"
+    },
+    {
+      "start": 1271.44,
+      "duration": 4.44,
+      "text": "for it you can and I can do uh I can"
+    },
+    {
+      "start": 1273.84,
+      "duration": 5.199,
+      "text": "make a thumbnail for the uh YouTube"
+    },
+    {
+      "start": 1275.88,
+      "duration": 3.159,
+      "text": "right now"
+    },
+    {
+      "start": 1308.36,
+      "duration": 4.48,
+      "text": "hey Jacob how you doing good morning so"
+    },
+    {
+      "start": 1310.799,
+      "duration": 5.48,
+      "text": "uh no the button is not"
+    },
+    {
+      "start": 1312.84,
+      "duration": 6.319,
+      "text": "finished our current spot with the"
+    },
+    {
+      "start": 1316.279,
+      "duration": 5.241,
+      "text": "button is uh so"
+    },
+    {
+      "start": 1319.159,
+      "duration": 5.12,
+      "text": "we're kind of in a a tricky spot because"
+    },
+    {
+      "start": 1321.52,
+      "duration": 5.36,
+      "text": "we ordered the PCB we finished our PCB"
+    },
+    {
+      "start": 1324.279,
+      "duration": 6.361,
+      "text": "design right and it came out"
+    },
+    {
+      "start": 1326.88,
+      "duration": 6.0,
+      "text": "amazing but um now we have to wait for"
+    },
+    {
+      "start": 1330.64,
+      "duration": 3.919,
+      "text": "the PCB to come in which is probably"
+    },
+    {
+      "start": 1332.88,
+      "duration": 2.799,
+      "text": "going to be like 5 days or something"
+    },
+    {
+      "start": 1334.559,
+      "duration": 7.881,
+      "text": "like"
+    },
+    {
+      "start": 1335.679,
+      "duration": 9.971,
+      "text": "that so um here's our PCB we have our uh"
+    },
+    {
+      "start": 1342.44,
+      "duration": 3.21,
+      "text": "[Music]"
+    },
+    {
+      "start": 1346.6,
+      "duration": 6.0,
+      "text": "our LEDs"
+    },
+    {
+      "start": 1349.48,
+      "duration": 6.679,
+      "text": "these are RGB LEDs okay and then we have"
+    },
+    {
+      "start": 1352.6,
+      "duration": 5.84,
+      "text": "our capacitor for the whole Bank we have"
+    },
+    {
+      "start": 1356.159,
+      "duration": 4.4,
+      "text": "our capacitor for each LEDs we have a"
+    },
+    {
+      "start": 1358.44,
+      "duration": 4.16,
+      "text": "resistor before the data line going into"
+    },
+    {
+      "start": 1360.559,
+      "duration": 4.081,
+      "text": "the LEDs this is the spot where our"
+    },
+    {
+      "start": 1362.6,
+      "duration": 6.079,
+      "text": "microprocessor will go so uh the"
+    },
+    {
+      "start": 1364.64,
+      "duration": 7.159,
+      "text": "microprocessor already has USBC on it"
+    },
+    {
+      "start": 1368.679,
+      "duration": 6.441,
+      "text": "and um and so that'll come right out the"
+    },
+    {
+      "start": 1371.799,
+      "duration": 5.0,
+      "text": "side and so the USBC Port will end up"
+    },
+    {
+      "start": 1375.12,
+      "duration": 3.679,
+      "text": "being right on the side of the button"
+    },
+    {
+      "start": 1376.799,
+      "duration": 4.12,
+      "text": "here"
+    },
+    {
+      "start": 1378.799,
+      "duration": 4.36,
+      "text": "uh and then we have this sweet little"
+    },
+    {
+      "start": 1380.919,
+      "duration": 6.281,
+      "text": "back blade"
+    },
+    {
+      "start": 1383.159,
+      "duration": 5.281,
+      "text": "here click it I'm 99% sure we're going"
+    },
+    {
+      "start": 1387.2,
+      "duration": 4.56,
+      "text": "to be calling"
+    },
+    {
+      "start": 1388.44,
+      "duration": 5.719,
+      "text": "clicket uh by Max blade for kaiso"
+    },
+    {
+      "start": 1391.76,
+      "duration": 6.48,
+      "text": "supported by I'm going to have a spot"
+    },
+    {
+      "start": 1394.159,
+      "duration": 7.081,
+      "text": "for uh some supporters to uh to donate"
+    },
+    {
+      "start": 1398.24,
+      "duration": 4.64,
+      "text": "to the project and they're going to"
+    },
+    {
+      "start": 1401.24,
+      "duration": 4.12,
+      "text": "receive their name on the back of the"
+    },
+    {
+      "start": 1402.88,
+      "duration": 3.88,
+      "text": "PCB and they're going to get the um"
+    },
+    {
+      "start": 1405.36,
+      "duration": 4.76,
+      "text": "they're going to get the button before"
+    },
+    {
+      "start": 1406.76,
+      "duration": 3.36,
+      "text": "everybody else"
+    },
+    {
+      "start": 1410.32,
+      "duration": 2.56,
+      "text": "oh dude that would be amazing thank you"
+    },
+    {
+      "start": 1411.76,
+      "duration": 4.68,
+      "text": "so"
+    },
+    {
+      "start": 1412.88,
+      "duration": 3.56,
+      "text": "much that'd be great"
+    },
+    {
+      "start": 1418.159,
+      "duration": 5.321,
+      "text": "Kao beautiful I'll do"
+    },
+    {
+      "start": 1420.48,
+      "duration": 3.0,
+      "text": "it"
+    },
+    {
+      "start": 1423.919,
+      "duration": 3.76,
+      "text": "awesome all right so basically he's"
+    },
+    {
+      "start": 1426.279,
+      "duration": 4.201,
+      "text": "going to uh he's going to do a little"
+    },
+    {
+      "start": 1427.679,
+      "duration": 4.921,
+      "text": "bit more work on the website and then"
+    },
+    {
+      "start": 1430.48,
+      "duration": 4.92,
+      "text": "I'm going to go mess around with a"
+    },
+    {
+      "start": 1432.6,
+      "duration": 5.84,
+      "text": "YouTube thumbnail and"
+    },
+    {
+      "start": 1435.4,
+      "duration": 5.639,
+      "text": "title yeah your name is there yeah it's"
+    },
+    {
+      "start": 1438.44,
+      "duration": 5.04,
+      "text": "it's going to be so sick too when it"
+    },
+    {
+      "start": 1441.039,
+      "duration": 5.161,
+      "text": "comes in it's silk screened black on"
+    },
+    {
+      "start": 1443.48,
+      "duration": 5.4,
+      "text": "white like this it looks sick on the"
+    },
+    {
+      "start": 1446.2,
+      "duration": 4.959,
+      "text": "PCB and so that PCB is just going to sit"
+    },
+    {
+      "start": 1448.88,
+      "duration": 4.6,
+      "text": "right inside here I might need to make a"
+    },
+    {
+      "start": 1451.159,
+      "duration": 5.64,
+      "text": "diffuser so we can diffuse these LED"
+    },
+    {
+      "start": 1453.48,
+      "duration": 3.319,
+      "text": "lights cuz they're going to be super"
+    },
+    {
+      "start": 1456.88,
+      "duration": 3.48,
+      "text": "bright and I'll have full control over"
+    },
+    {
+      "start": 1459.2,
+      "duration": 4.04,
+      "text": "these so we can have them do a little"
+    },
+    {
+      "start": 1460.36,
+      "duration": 2.88,
+      "text": "dance whatever we"
+    },
+    {
+      "start": 1466.52,
+      "duration": 5.6,
+      "text": "want all righty"
+    },
+    {
+      "start": 1470.12,
+      "duration": 3.919,
+      "text": "thank you my man huge project huge"
+    },
+    {
+      "start": 1472.12,
+      "duration": 4.919,
+      "text": "progress yeah"
+    },
+    {
+      "start": 1474.039,
+      "duration": 3.0,
+      "text": "yep"
+    },
+    {
+      "start": 1478.52,
+      "duration": 7.639,
+      "text": "definitely so let's uh let's get out of"
+    },
+    {
+      "start": 1481.96,
+      "duration": 5.599,
+      "text": "here this looks amazing oh and uh I"
+    },
+    {
+      "start": 1486.159,
+      "duration": 3.161,
+      "text": "don't know if you know but you you can"
+    },
+    {
+      "start": 1487.559,
+      "duration": 4.36,
+      "text": "go to forward SL product and then"
+    },
+    {
+      "start": 1489.32,
+      "duration": 6.44,
+      "text": "forward SL uh GitHub button and it is"
+    },
+    {
+      "start": 1491.919,
+      "duration": 3.841,
+      "text": "pulling the uh the button"
+    },
+    {
+      "start": 1496.679,
+      "duration": 3.641,
+      "text": "from from uh"
+    },
+    {
+      "start": 1502.679,
+      "duration": 3.441,
+      "text": "Shopify so that's"
+    },
+    {
+      "start": 1508.039,
+      "duration": 4.76,
+      "text": "cool all right all right all right all"
+    },
+    {
+      "start": 1513.08,
+      "duration": 5.8,
+      "text": "right so we got"
+    },
+    {
+      "start": 1516.0,
+      "duration": 5.76,
+      "text": "to we got to get an awesome YouTube"
+    },
+    {
+      "start": 1518.88,
+      "duration": 2.88,
+      "text": "thumbnail going"
+    },
+    {
+      "start": 1522.44,
+      "duration": 4.719,
+      "text": "here let's see what we can do"
+    },
+    {
+      "start": 1550.279,
+      "duration": 3.28,
+      "text": "cuz we are going to make a uh we're"
+    },
+    {
+      "start": 1551.679,
+      "duration": 3.321,
+      "text": "going to make an insane YouTube video"
+    },
+    {
+      "start": 1553.559,
+      "duration": 4.801,
+      "text": "about this it's going to be the best one"
+    },
+    {
+      "start": 1555.0,
+      "duration": 4.799,
+      "text": "we ever made"
+    },
+    {
+      "start": 1558.36,
+      "duration": 2.4,
+      "text": "I'm wondering if I should pay somebody"
+    },
+    {
+      "start": 1559.799,
+      "duration": 5.561,
+      "text": "to edit"
+    },
+    {
+      "start": 1560.76,
+      "duration": 4.6,
+      "text": "it or if I should just try and edit"
+    },
+    {
+      "start": 1566.32,
+      "duration": 5.92,
+      "text": "myself cuz if I pay somebody it'll be a"
+    },
+    {
+      "start": 1569.48,
+      "duration": 6.76,
+      "text": "lot better quality all right start"
+    },
+    {
+      "start": 1572.24,
+      "duration": 9.799,
+      "text": "YouTube finish uh YouTube title"
+    },
+    {
+      "start": 1576.24,
+      "duration": 5.799,
+      "text": "uh start general script"
+    },
+    {
+      "start": 1596.279,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 1630.08,
+      "duration": 8.28,
+      "text": "what resolution should a"
+    },
+    {
+      "start": 1634.12,
+      "duration": 4.24,
+      "text": "YouTube thumbnail"
+    },
+    {
+      "start": 1638.6,
+      "duration": 4.959,
+      "text": "be 1280 by 720"
+    },
+    {
+      "start": 1677.12,
+      "duration": 4.039,
+      "text": "oh for"
+    },
+    {
+      "start": 1712.64,
+      "duration": 5.2,
+      "text": "there's got to be a site where it just"
+    },
+    {
+      "start": 1715.399,
+      "duration": 5.441,
+      "text": "has like super high performing YouTube"
+    },
+    {
+      "start": 1717.84,
+      "duration": 3.0,
+      "text": "thumbnails"
+    },
+    {
+      "start": 1753.039,
+      "duration": 6.681,
+      "text": "all"
+    },
+    {
+      "start": 1754.919,
+      "duration": 7.721,
+      "text": "right so I'm thinking that"
+    },
+    {
+      "start": 1759.72,
+      "duration": 6.64,
+      "text": "um this is a great thumbnail right"
+    },
+    {
+      "start": 1762.64,
+      "duration": 3.72,
+      "text": "here this one on the"
+    },
+    {
+      "start": 1766.799,
+      "duration": 4.88,
+      "text": "top this most recent one is also really"
+    },
+    {
+      "start": 1773.12,
+      "duration": 6.64,
+      "text": "good all of Mark's thumbnail have his"
+    },
+    {
+      "start": 1776.559,
+      "duration": 5.921,
+      "text": "face on them I could literally"
+    },
+    {
+      "start": 1779.76,
+      "duration": 4.919,
+      "text": "do I could literally do this thumbnail"
+    },
+    {
+      "start": 1782.48,
+      "duration": 2.199,
+      "text": "right"
+    },
+    {
+      "start": 1785.32,
+      "duration": 6.16,
+      "text": "here it's got uh it's got 62,000 views"
+    },
+    {
+      "start": 1788.799,
+      "duration": 2.681,
+      "text": "which is kind of"
+    },
+    {
+      "start": 1792.799,
+      "duration": 5.441,
+      "text": "high it it's like his eighth performing"
+    },
+    {
+      "start": 1795.32,
+      "duration": 5.079,
+      "text": "video"
+    },
+    {
+      "start": 1798.24,
+      "duration": 4.96,
+      "text": "so I think that I think that we draw one"
+    },
+    {
+      "start": 1800.399,
+      "duration": 4.601,
+      "text": "thumbnail that has my face in it doing"
+    },
+    {
+      "start": 1803.2,
+      "duration": 5.199,
+      "text": "like a crazy face"
+    },
+    {
+      "start": 1805.0,
+      "duration": 7.399,
+      "text": "like and then we drop one thumbnail that"
+    },
+    {
+      "start": 1808.399,
+      "duration": 4.0,
+      "text": "uh has not my face in"
+    },
+    {
+      "start": 1812.72,
+      "duration": 3.88,
+      "text": "there if you pre-record videos in good"
+    },
+    {
+      "start": 1815.08,
+      "duration": 5.199,
+      "text": "quality I don't mind try to edit a video"
+    },
+    {
+      "start": 1816.6,
+      "duration": 3.679,
+      "text": "for free if you would use some help"
+    },
+    {
+      "start": 1821.559,
+      "duration": 4.201,
+      "text": "dude your videos are so"
+    },
+    {
+      "start": 1825.96,
+      "duration": 4.0,
+      "text": "good like your videos are"
+    },
+    {
+      "start": 1849.519,
+      "duration": 8.241,
+      "text": "insane I don't know if this is something"
+    },
+    {
+      "start": 1851.84,
+      "duration": 5.92,
+      "text": "that you just do for fun or if you uh"
+    },
+    {
+      "start": 1860.2,
+      "duration": 3.079,
+      "text": "had some sort of background in video"
+    },
+    {
+      "start": 1861.799,
+      "duration": 3.961,
+      "text": "editing or whatever but that would be"
+    },
+    {
+      "start": 1863.279,
+      "duration": 2.481,
+      "text": "honestly"
+    },
+    {
+      "start": 1872.44,
+      "duration": 4.32,
+      "text": "amazing I don't speak this language"
+    },
+    {
+      "start": 1877.519,
+      "duration": 3.4,
+      "text": "but what was I"
+    },
+    {
+      "start": 1884.679,
+      "duration": 4.441,
+      "text": "seeing why is not loading"
+    },
+    {
+      "start": 1908.2,
+      "duration": 3.359,
+      "text": "dude could you"
+    },
+    {
+      "start": 1911.96,
+      "duration": 6.439,
+      "text": "imagine we have like a high I I got to"
+    },
+    {
+      "start": 1914.96,
+      "duration": 3.439,
+      "text": "pause the music"
+    },
+    {
+      "start": 1919.08,
+      "duration": 2.52,
+      "text": "where is my"
+    },
+    {
+      "start": 1927.679,
+      "duration": 6.36,
+      "text": "music all right all right we need like a"
+    },
+    {
+      "start": 1931.679,
+      "duration": 3.921,
+      "text": "high energy I used to addit inell"
+    },
+    {
+      "start": 1934.039,
+      "duration": 3.48,
+      "text": "digital effects for filmmaker but I felt"
+    },
+    {
+      "start": 1935.6,
+      "duration": 4.6,
+      "text": "like it's not"
+    },
+    {
+      "start": 1937.519,
+      "duration": 5.16,
+      "text": "me and now I'm like can you please come"
+    },
+    {
+      "start": 1940.2,
+      "duration": 2.479,
+      "text": "edit this"
+    },
+    {
+      "start": 1943.6,
+      "duration": 5.319,
+      "text": "video I'm sorry to pull you back into it"
+    },
+    {
+      "start": 1956.399,
+      "duration": 4.921,
+      "text": "I love the energy of the start of this"
+    },
+    {
+      "start": 1958.32,
+      "duration": 3.0,
+      "text": "video"
+    },
+    {
+      "start": 1980.039,
+      "duration": 5.0,
+      "text": "I created the button that every"
+    },
+    {
+      "start": 1982.12,
+      "duration": 5.2,
+      "text": "developer wants I created the button"
+    },
+    {
+      "start": 1985.039,
+      "duration": 4.401,
+      "text": "that every developer needs with that"
+    },
+    {
+      "start": 1987.32,
+      "duration": 6.8,
+      "text": "music in the"
+    },
+    {
+      "start": 1989.44,
+      "duration": 4.68,
+      "text": "background and then it's like it's"
+    },
+    {
+      "start": 1996.6,
+      "duration": 2.76,
+      "text": "like and like I have different angles of"
+    },
+    {
+      "start": 1998.679,
+      "duration": 3.681,
+      "text": "the"
+    },
+    {
+      "start": 1999.36,
+      "duration": 3.0,
+      "text": "button"
+    },
+    {
+      "start": 2003.519,
+      "duration": 5.88,
+      "text": "boom oh you don't have the audio of the"
+    },
+    {
+      "start": 2005.639,
+      "duration": 3.76,
+      "text": "YouTube video no"
+    },
+    {
+      "start": 2012.12,
+      "duration": 3.11,
+      "text": "[Music]"
+    },
+    {
+      "start": 2015.799,
+      "duration": 6.961,
+      "text": "I know just a place to pick up a bargain"
+    },
+    {
+      "start": 2019.2,
+      "duration": 6.199,
+      "text": "that place is coopar an auction which"
+    },
+    {
+      "start": 2022.76,
+      "duration": 5.519,
+      "text": "sells only salvage cars deemed"
+    },
+    {
+      "start": 2025.399,
+      "duration": 6.76,
+      "text": "unrepairable by the buying any crash"
+    },
+    {
+      "start": 2028.279,
+      "duration": 6.12,
+      "text": "damaged car is a huge risk I should know"
+    },
+    {
+      "start": 2032.159,
+      "duration": 5.88,
+      "text": "but buying a flood damaged car hugely"
+    },
+    {
+      "start": 2034.399,
+      "duration": 5.361,
+      "text": "increases that risk especially you must"
+    },
+    {
+      "start": 2038.039,
+      "duration": 4.76,
+      "text": "have it"
+    },
+    {
+      "start": 2039.76,
+      "duration": 7.44,
+      "text": "now in s days we're going on a trip"
+    },
+    {
+      "start": 2042.799,
+      "duration": 4.401,
+      "text": "where we definitely need a 4x4"
+    },
+    {
+      "start": 2048.879,
+      "duration": 4.8,
+      "text": "car any Crush Dam car is a huge risk I"
+    },
+    {
+      "start": 2052.839,
+      "duration": 4.24,
+      "text": "should"
+    },
+    {
+      "start": 2053.679,
+      "duration": 8.16,
+      "text": "know a FL damage car hugely increases"
+    },
+    {
+      "start": 2057.079,
+      "duration": 7.28,
+      "text": "that risk especially in something like a"
+    },
+    {
+      "start": 2061.839,
+      "duration": 3.881,
+      "text": "rollsroyce in seven days we're going on"
+    },
+    {
+      "start": 2064.359,
+      "duration": 2.881,
+      "text": "a trip all right you guys get the point"
+    },
+    {
+      "start": 2065.72,
+      "duration": 2.72,
+      "text": "you guys get the point right though like"
+    },
+    {
+      "start": 2067.24,
+      "duration": 6.879,
+      "text": "like we need a"
+    },
+    {
+      "start": 2068.44,
+      "duration": 9.84,
+      "text": "Banger Banger thumbnail amazing title"
+    },
+    {
+      "start": 2074.119,
+      "duration": 6.72,
+      "text": "okay I created I built the button every"
+    },
+    {
+      "start": 2078.28,
+      "duration": 2.559,
+      "text": "developer"
+    },
+    {
+      "start": 2081.8,
+      "duration": 5.559,
+      "text": "needs I created a magic button for"
+    },
+    {
+      "start": 2091.639,
+      "duration": 6.121,
+      "text": "developers and then uh and then it opens"
+    },
+    {
+      "start": 2094.76,
+      "duration": 5.4,
+      "text": "up to this"
+    },
+    {
+      "start": 2097.76,
+      "duration": 4.2,
+      "text": "me"
+    },
+    {
+      "start": 2100.16,
+      "duration": 4.919,
+      "text": "somewhere"
+    },
+    {
+      "start": 2101.96,
+      "duration": 4.68,
+      "text": "button maybe in my lab here but better"
+    },
+    {
+      "start": 2105.079,
+      "duration": 3.121,
+      "text": "better setup"
+    },
+    {
+      "start": 2106.64,
+      "duration": 4.28,
+      "text": "lighting"
+    },
+    {
+      "start": 2108.2,
+      "duration": 4.56,
+      "text": "button I created the button that every"
+    },
+    {
+      "start": 2110.92,
+      "duration": 4.96,
+      "text": "developer"
+    },
+    {
+      "start": 2112.76,
+      "duration": 6.24,
+      "text": "needs buying any Crush damaged car is a"
+    },
+    {
+      "start": 2115.88,
+      "duration": 6.6,
+      "text": "huge risk I should know but buying a"
+    },
+    {
+      "start": 2119.0,
+      "duration": 8.44,
+      "text": "flood damaged car hugely increases that"
+    },
+    {
+      "start": 2122.48,
+      "duration": 4.96,
+      "text": "RIS sorry okay we need to"
+    },
+    {
+      "start": 2127.76,
+      "duration": 5.2,
+      "text": "we're we're getting nothing done today"
+    },
+    {
+      "start": 2129.4,
+      "duration": 6.04,
+      "text": "I'm so over tired okay all right I need"
+    },
+    {
+      "start": 2132.96,
+      "duration": 2.48,
+      "text": "to lock it"
+    },
+    {
+      "start": 2144.76,
+      "duration": 6.28,
+      "text": "in tension Music Plus kicks yeah plus"
+    },
+    {
+      "start": 2148.079,
+      "duration": 5.681,
+      "text": "amazing first 10 seconds of"
+    },
+    {
+      "start": 2151.04,
+      "duration": 7.079,
+      "text": "video yes yes yes let's see really quick"
+    },
+    {
+      "start": 2153.76,
+      "duration": 4.359,
+      "text": "what Mark's first 10 seconds are"
+    },
+    {
+      "start": 2159.17,
+      "duration": 7.75,
+      "text": "[Music]"
+    },
+    {
+      "start": 2161.359,
+      "duration": 5.561,
+      "text": "Mo it's good it's it's real"
+    },
+    {
+      "start": 2171.58,
+      "duration": 3.05,
+      "text": "[Music]"
+    },
+    {
+      "start": 2174.72,
+      "duration": 4.0,
+      "text": "good how I got fit without a"
+    },
+    {
+      "start": 2179.76,
+      "duration": 5.839,
+      "text": "gy oh man workout always feel like a"
+    },
+    {
+      "start": 2183.2,
+      "duration": 4.48,
+      "text": "burden before I start but it feels so"
+    },
+    {
+      "start": 2185.599,
+      "duration": 5.441,
+      "text": "good when I'm done okay so some people"
+    },
+    {
+      "start": 2187.68,
+      "duration": 6.36,
+      "text": "asked how do I get feet the truth is I"
+    },
+    {
+      "start": 2191.04,
+      "duration": 4.68,
+      "text": "am lazy I've never been to a gym and I"
+    },
+    {
+      "start": 2194.04,
+      "duration": 3.44,
+      "text": "don't have time I have nine tiny"
+    },
+    {
+      "start": 2195.72,
+      "duration": 3.359,
+      "text": "businesses to run and so I build a"
+    },
+    {
+      "start": 2197.48,
+      "duration": 4.4,
+      "text": "little system for myself that requires"
+    },
+    {
+      "start": 2199.079,
+      "duration": 5.081,
+      "text": "the minimum input for the maximum"
+    },
+    {
+      "start": 2201.88,
+      "duration": 4.719,
+      "text": "outputs I guess would be good to"
+    },
+    {
+      "start": 2204.16,
+      "duration": 4.36,
+      "text": "Showcase what the magic means when you"
+    },
+    {
+      "start": 2206.599,
+      "duration": 4.0,
+      "text": "press the button you think we do that"
+    },
+    {
+      "start": 2208.52,
+      "duration": 3.96,
+      "text": "right off the uh you think we do that"
+    },
+    {
+      "start": 2210.599,
+      "duration": 3.041,
+      "text": "right off the rip or do we make him wait"
+    },
+    {
+      "start": 2212.48,
+      "duration": 3.32,
+      "text": "for it that's what I'm that's what I'm"
+    },
+    {
+      "start": 2213.64,
+      "duration": 4.199,
+      "text": "trying to figure out also like do I just"
+    },
+    {
+      "start": 2215.8,
+      "duration": 4.519,
+      "text": "come out and say it right away in the"
+    },
+    {
+      "start": 2217.839,
+      "duration": 5.161,
+      "text": "first 10 seconds so I say hey we created"
+    },
+    {
+      "start": 2220.319,
+      "duration": 5.0,
+      "text": "a magic button that allows every that"
+    },
+    {
+      "start": 2223.0,
+      "duration": 4.96,
+      "text": "allows developers to commit to"
+    },
+    {
+      "start": 2225.319,
+      "duration": 7.681,
+      "text": "GitHub in one click"
+    },
+    {
+      "start": 2227.96,
+      "duration": 7.2,
+      "text": "bang and we added AI to automatically"
+    },
+    {
+      "start": 2233.0,
+      "duration": 4.72,
+      "text": "come up with"
+    },
+    {
+      "start": 2235.16,
+      "duration": 6.199,
+      "text": "the GitHub commit"
+    },
+    {
+      "start": 2237.72,
+      "duration": 7.76,
+      "text": "message for you depending on what code"
+    },
+    {
+      "start": 2241.359,
+      "duration": 4.121,
+      "text": "changes you made"
+    },
+    {
+      "start": 2250.28,
+      "duration": 5.76,
+      "text": "I don't know I have to uh tomorrow I"
+    },
+    {
+      "start": 2253.4,
+      "duration": 4.439,
+      "text": "have to edit the delay on the stream"
+    },
+    {
+      "start": 2256.04,
+      "duration": 4.039,
+      "text": "because it makes me impossible for me to"
+    },
+    {
+      "start": 2257.839,
+      "duration": 5.801,
+      "text": "talk to you guys because I know that uh"
+    },
+    {
+      "start": 2260.079,
+      "duration": 3.561,
+      "text": "I know that there's a huge delay on"
+    },
+    {
+      "start": 2263.76,
+      "duration": 3.44,
+      "text": "this it's very"
+    },
+    {
+      "start": 2267.64,
+      "duration": 3.56,
+      "text": "annoying I'm sorry"
+    },
+    {
+      "start": 2274.44,
+      "duration": 3.96,
+      "text": "guys Mr Beast do it right away to make"
+    },
+    {
+      "start": 2276.88,
+      "duration": 4.08,
+      "text": "connection with thumbnail so watch your"
+    },
+    {
+      "start": 2278.4,
+      "duration": 5.36,
+      "text": "satisfaction is met right away but don't"
+    },
+    {
+      "start": 2280.96,
+      "duration": 4.879,
+      "text": "know what's best approach okay"
+    },
+    {
+      "start": 2283.76,
+      "duration": 4.52,
+      "text": "yeah all right so we'll give them a"
+    },
+    {
+      "start": 2285.839,
+      "duration": 4.401,
+      "text": "little bit we'll give them a taste and"
+    },
+    {
+      "start": 2288.28,
+      "duration": 4.72,
+      "text": "then um I'm going to and then we'll"
+    },
+    {
+      "start": 2290.24,
+      "duration": 5.76,
+      "text": "tease something that we'll give them"
+    },
+    {
+      "start": 2293.0,
+      "duration": 4.92,
+      "text": "towards the end of the video so hey I"
+    },
+    {
+      "start": 2296.0,
+      "duration": 5.119,
+      "text": "created the magic button that every"
+    },
+    {
+      "start": 2297.92,
+      "duration": 7.12,
+      "text": "developer needs with one click bang all"
+    },
+    {
+      "start": 2301.119,
+      "duration": 7.361,
+      "text": "your code is sent to GitHub and we used"
+    },
+    {
+      "start": 2305.04,
+      "duration": 6.4,
+      "text": "AI to set the commit message"
+    },
+    {
+      "start": 2308.48,
+      "duration": 2.96,
+      "text": "based on your code"
+    },
+    {
+      "start": 2313.359,
+      "duration": 5.281,
+      "text": "changes but I had to take it one step"
+    },
+    {
+      "start": 2319.319,
+      "duration": 5.321,
+      "text": "further and then maybe we can talk about"
+    },
+    {
+      "start": 2322.28,
+      "duration": 3.799,
+      "text": "uh setting up like the LEDs or something"
+    },
+    {
+      "start": 2324.64,
+      "duration": 4.04,
+      "text": "like"
+    },
+    {
+      "start": 2326.079,
+      "duration": 6.121,
+      "text": "that later on in the video to keep"
+    },
+    {
+      "start": 2328.68,
+      "duration": 3.52,
+      "text": "people uh keep their attention"
+    },
+    {
+      "start": 2332.24,
+      "duration": 6.079,
+      "text": "High you know I I know it feels like I'm"
+    },
+    {
+      "start": 2335.24,
+      "duration": 5.92,
+      "text": "going crazy with this but one"
+    },
+    {
+      "start": 2338.319,
+      "duration": 6.52,
+      "text": "Banger video one like 100k video or"
+    },
+    {
+      "start": 2341.16,
+      "duration": 7.72,
+      "text": "something like that would"
+    },
+    {
+      "start": 2344.839,
+      "duration": 8.921,
+      "text": "um catapult the YouTube channel catapult"
+    },
+    {
+      "start": 2348.88,
+      "duration": 9.36,
+      "text": "the exposure on my Hardware all of it so"
+    },
+    {
+      "start": 2353.76,
+      "duration": 4.48,
+      "text": "um I gotta dial I got to dial it"
+    },
+    {
+      "start": 2362.28,
+      "duration": 4.72,
+      "text": "in all right all right"
+    },
+    {
+      "start": 2368.359,
+      "duration": 2.801,
+      "text": "so the"
+    },
+    {
+      "start": 2371.56,
+      "duration": 4.72,
+      "text": "um the photo that I want right now is"
+    },
+    {
+      "start": 2377.44,
+      "duration": 6.36,
+      "text": "on is on my phone that I'm live"
+    },
+    {
+      "start": 2382.68,
+      "duration": 4.36,
+      "text": "streaming"
+    },
+    {
+      "start": 2383.8,
+      "duration": 4.799,
+      "text": "from so I'm going to grab my phone real"
+    },
+    {
+      "start": 2387.04,
+      "duration": 4.72,
+      "text": "quick"
+    },
+    {
+      "start": 2388.599,
+      "duration": 7.041,
+      "text": "here and I think it's going to turn"
+    },
+    {
+      "start": 2391.76,
+      "duration": 6.48,
+      "text": "off the screen me going turn off me for"
+    },
+    {
+      "start": 2395.64,
+      "duration": 5.32,
+      "text": "one second"
+    },
+    {
+      "start": 2398.24,
+      "duration": 5.4,
+      "text": "yeah all right I'm just going the"
+    },
+    {
+      "start": 2400.96,
+      "duration": 2.68,
+      "text": "thumbnail really"
+    },
+    {
+      "start": 2426.319,
+      "duration": 3.0,
+      "text": "quick"
+    },
+    {
+      "start": 2456.24,
+      "duration": 3.0,
+      "text": "e"
+    },
+    {
+      "start": 2516.24,
+      "duration": 4.0,
+      "text": "e e"
+    },
+    {
+      "start": 2606.119,
+      "duration": 3.0,
+      "text": "e"
+    },
+    {
+      "start": 2666.04,
+      "duration": 4.039,
+      "text": "e e"
+    }
+  ],
+  "full_text": "yo yo yo good morning good morning we're back we're back max versus button and we're back baby huge progress was made oh whoa whoa I'm not going to lie this PCB is a little crazy good morning good morning check us out check us out we got our PCP made take a little take a little look look at this this is where our um microprocessor is going to lay right here here are the solder pads that it's going to get solder to these are all LEDs these are RGB LEDs here's our small capacitors that are right in line with the LEDs here's our full circuit capacitor the big boy this is a big boy too oh it's a big boy here's a resistor that's in line with the data data in and data out on the rgbs LED rgbs RGB LEDs and then uh here is the Cherry MX switch it's not bad not bad at all today's goal today on the to-do list we got to get the um website rolling you know what I mean and um so what I'm going to do cuz we have a few of these projects we're going to be doing um we have a few of these projects we're going to be doing this year we're going to we are going to Boom I'm going to make I'm going to make make uh it live early for a few for a few people few was in like two and they can pay a little bit more to be a supporter of the YouTube channel of the X of the projects we're doing they'll get access to our project early and they're going to get their name permanently on the back of the PCB of the projects that we make for everyone so everyone that we make is going to have their name supported by boom cool idea Okay so the uh the good news is is we have a um we have a small head start on the um we have a small head start on the website because I got to wake up here we have a small head start on the website because kaiso I hope that's say his name that's a that's a awesome name huh Kao Drew up a nextjs website for us and um he sent me an invite on GitHub so let's pull up uh let's pull up what he sent me and uh see what we got where is it my entire head I was waiting for that my entire head is in fact the button God where do I find good morning JJ how are you where so Kao shared I want my unit with your face printed on it that's going to be that's going to be a heavy upch charge for my face on there I don't know about that one I don't know if my printers can get that high resolution all right so kaiso sent me access to the repo on GitHub but I don't see it anywhere dance face be okay as well that one we could definitely do from the uh from the little box scenario oh my God that would be easy you need to open the email in invite I accepted it on GitHub I don't know what is uh what is wrong with me right now I'm GNA I'm going to go uh I'm going to check it out on my email accept invitation got it okay you're a genius what is wrong with me okay and also amazing job just coming through clutch right there Jesus you just show up when you're needed you saw the bat signal and you just that was unbelievable good Lord all right npm install baby so this is a nextjs uh template for Shopify store specifically we'll need to grab our uh we'll need to grab the environmental variables H your commit is looks bad still it looks great oh you already put the environmental variables in there dude you're amazing excellent job is that what we're doing here mpm run Dev with this I think so [Music] yes oh it's amazing look at this button look at this look at this text with a little Boop Bo Boop oh I'm so fired up I'm so fired up commit to GitHub with a click literally literally I feel like I'm going to make changes and I'm going to completely ruin your beautiful website that you made here all right so I guess we start off by making this um making a product oh my God you already added the brother what are you trying to do here my man is incredible wow okay okay so when is this set to go live um I have to just set it up so mess around with that un Local Host first I think no you're all good oh my God I can't believe how much you did on this it's unreal actually I'm just trying to remember uh I'm trying to remember how to uh set up it to run on Local Host because um I know it has like the whole web hook thing with um with the Shopify where it grabs the product and I remember when I was making deskhub uh I had to do something in order for it to be like okay with grabbing that information for Local Host instead of uh like on a live web server for what do I need what do I need can you also explain to us where kaiso comes from and if that's how I'm saying it if that if that's correct is this a nickname or real name I mean it's sick either way where did you put product hero components product hero okay yes my man look at you go you're a legend yes I don't even know what this is but I love it are you absolutely leaving me hanging right now with the okay so what you need now is and then not not giving me it for so let me just see if this is pulling the data or not get up dash button oh it is my comments are showing up open Twitter God why is that happening you're not the first person to say that I think that restream is terrible for oh you were just going to work on it if you want if you want to keep going for it you can and I can do uh I can make a thumbnail for the uh YouTube right now hey Jacob how you doing good morning so uh no the button is not finished our current spot with the button is uh so we're kind of in a a tricky spot because we ordered the PCB we finished our PCB design right and it came out amazing but um now we have to wait for the PCB to come in which is probably going to be like 5 days or something like that so um here's our PCB we have our uh [Music] our LEDs these are RGB LEDs okay and then we have our capacitor for the whole Bank we have our capacitor for each LEDs we have a resistor before the data line going into the LEDs this is the spot where our microprocessor will go so uh the microprocessor already has USBC on it and um and so that'll come right out the side and so the USBC Port will end up being right on the side of the button here uh and then we have this sweet little back blade here click it I'm 99% sure we're going to be calling clicket uh by Max blade for kaiso supported by I'm going to have a spot for uh some supporters to uh to donate to the project and they're going to receive their name on the back of the PCB and they're going to get the um they're going to get the button before everybody else oh dude that would be amazing thank you so much that'd be great Kao beautiful I'll do it awesome all right so basically he's going to uh he's going to do a little bit more work on the website and then I'm going to go mess around with a YouTube thumbnail and title yeah your name is there yeah it's it's going to be so sick too when it comes in it's silk screened black on white like this it looks sick on the PCB and so that PCB is just going to sit right inside here I might need to make a diffuser so we can diffuse these LED lights cuz they're going to be super bright and I'll have full control over these so we can have them do a little dance whatever we want all righty thank you my man huge project huge progress yeah yep definitely so let's uh let's get out of here this looks amazing oh and uh I don't know if you know but you you can go to forward SL product and then forward SL uh GitHub button and it is pulling the uh the button from from uh Shopify so that's cool all right all right all right all right so we got to we got to get an awesome YouTube thumbnail going here let's see what we can do cuz we are going to make a uh we're going to make an insane YouTube video about this it's going to be the best one we ever made I'm wondering if I should pay somebody to edit it or if I should just try and edit myself cuz if I pay somebody it'll be a lot better quality all right start YouTube finish uh YouTube title uh start general script for what resolution should a YouTube thumbnail be 1280 by 720 oh for there's got to be a site where it just has like super high performing YouTube thumbnails all right so I'm thinking that um this is a great thumbnail right here this one on the top this most recent one is also really good all of Mark's thumbnail have his face on them I could literally do I could literally do this thumbnail right here it's got uh it's got 62,000 views which is kind of high it it's like his eighth performing video so I think that I think that we draw one thumbnail that has my face in it doing like a crazy face like and then we drop one thumbnail that uh has not my face in there if you pre-record videos in good quality I don't mind try to edit a video for free if you would use some help dude your videos are so good like your videos are insane I don't know if this is something that you just do for fun or if you uh had some sort of background in video editing or whatever but that would be honestly amazing I don't speak this language but what was I seeing why is not loading dude could you imagine we have like a high I I got to pause the music where is my music all right all right we need like a high energy I used to addit inell digital effects for filmmaker but I felt like it's not me and now I'm like can you please come edit this video I'm sorry to pull you back into it I love the energy of the start of this video I created the button that every developer wants I created the button that every developer needs with that music in the background and then it's like it's like and like I have different angles of the button boom oh you don't have the audio of the YouTube video no [Music] I know just a place to pick up a bargain that place is coopar an auction which sells only salvage cars deemed unrepairable by the buying any crash damaged car is a huge risk I should know but buying a flood damaged car hugely increases that risk especially you must have it now in s days we're going on a trip where we definitely need a 4x4 car any Crush Dam car is a huge risk I should know a FL damage car hugely increases that risk especially in something like a rollsroyce in seven days we're going on a trip all right you guys get the point you guys get the point right though like like we need a Banger Banger thumbnail amazing title okay I created I built the button every developer needs I created a magic button for developers and then uh and then it opens up to this me somewhere button maybe in my lab here but better better setup lighting button I created the button that every developer needs buying any Crush damaged car is a huge risk I should know but buying a flood damaged car hugely increases that RIS sorry okay we need to we're we're getting nothing done today I'm so over tired okay all right I need to lock it in tension Music Plus kicks yeah plus amazing first 10 seconds of video yes yes yes let's see really quick what Mark's first 10 seconds are [Music] Mo it's good it's it's real [Music] good how I got fit without a gy oh man workout always feel like a burden before I start but it feels so good when I'm done okay so some people asked how do I get feet the truth is I am lazy I've never been to a gym and I don't have time I have nine tiny businesses to run and so I build a little system for myself that requires the minimum input for the maximum outputs I guess would be good to Showcase what the magic means when you press the button you think we do that right off the uh you think we do that right off the rip or do we make him wait for it that's what I'm that's what I'm trying to figure out also like do I just come out and say it right away in the first 10 seconds so I say hey we created a magic button that allows every that allows developers to commit to GitHub in one click bang and we added AI to automatically come up with the GitHub commit message for you depending on what code changes you made I don't know I have to uh tomorrow I have to edit the delay on the stream because it makes me impossible for me to talk to you guys because I know that uh I know that there's a huge delay on this it's very annoying I'm sorry guys Mr Beast do it right away to make connection with thumbnail so watch your satisfaction is met right away but don't know what's best approach okay yeah all right so we'll give them a little bit we'll give them a taste and then um I'm going to and then we'll tease something that we'll give them towards the end of the video so hey I created the magic button that every developer needs with one click bang all your code is sent to GitHub and we used AI to set the commit message based on your code changes but I had to take it one step further and then maybe we can talk about uh setting up like the LEDs or something like that later on in the video to keep people uh keep their attention High you know I I know it feels like I'm going crazy with this but one Banger video one like 100k video or something like that would um catapult the YouTube channel catapult the exposure on my Hardware all of it so um I gotta dial I got to dial it in all right all right so the um the photo that I want right now is on is on my phone that I'm live streaming from so I'm going to grab my phone real quick here and I think it's going to turn off the screen me going turn off me for one second yeah all right I'm just going the thumbnail really quick e e e e e e"
+}

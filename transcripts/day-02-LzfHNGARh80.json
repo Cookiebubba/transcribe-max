@@ -1,0 +1,5465 @@
+{
+  "video_id": "LzfHNGARh80",
+  "title": "Vibe Coding a AAA game #VibeJam (Day 2)",
+  "url": "https://www.youtube.com/watch?v=LzfHNGARh80",
+  "published_at": "2026-04-14T02:49:26Z",
+  "duration": "01:17:01",
+  "day_number": 2,
+  "caption_language": "en",
+  "caption_kind": "auto-generated",
+  "segment_count": 1090,
+  "word_count": 4960,
+  "segments": [
+    {
+      "start": 1.56,
+      "duration": 3.734,
+      "text": "Fire"
+    },
+    {
+      "start": 3.274,
+      "duration": 2.02,
+      "text": "[screaming]"
+    },
+    {
+      "start": 6.44,
+      "duration": 3.16,
+      "text": "me up."
+    },
+    {
+      "start": 13.76,
+      "duration": 2.67,
+      "text": "Fire [screaming]"
+    },
+    {
+      "start": 18.04,
+      "duration": 3.2,
+      "text": "me up."
+    },
+    {
+      "start": 26.92,
+      "duration": 2.92,
+      "text": "Good morning."
+    },
+    {
+      "start": 30.68,
+      "duration": 2.8,
+      "text": "And welcome."
+    },
+    {
+      "start": 34.24,
+      "duration": 3.36,
+      "text": "Welcome. Welcome. Welcome."
+    },
+    {
+      "start": 40.88,
+      "duration": 2.88,
+      "text": "To the building of the world's first"
+    },
+    {
+      "start": 43.0,
+      "duration": 3.8,
+      "text": "five-coded [music]"
+    },
+    {
+      "start": 43.76,
+      "duration": 3.04,
+      "text": "AAA game."
+    },
+    {
+      "start": 47.48,
+      "duration": 2.56,
+      "text": "Come on."
+    },
+    {
+      "start": 48.47,
+      "duration": 5.13,
+      "text": ">> [screaming]"
+    },
+    {
+      "start": 50.04,
+      "duration": 3.56,
+      "text": ">> Wake up."
+    },
+    {
+      "start": 56.4,
+      "duration": 3.12,
+      "text": "For $25,000."
+    },
+    {
+      "start": 64.64,
+      "duration": 5.28,
+      "text": "Let's go. Wake up."
+    },
+    {
+      "start": 73.44,
+      "duration": 4.56,
+      "text": "So. So. So. So. So. So. So. So."
+    },
+    {
+      "start": 76.84,
+      "duration": 3.2,
+      "text": "I got to catch you guys up a little bit"
+    },
+    {
+      "start": 78.0,
+      "duration": 7.12,
+      "text": "because I did do a tiny bit of building"
+    },
+    {
+      "start": 80.04,
+      "duration": 5.08,
+      "text": "off stream this weekend. Nothing crazy."
+    },
+    {
+      "start": 85.68,
+      "duration": 4.2,
+      "text": "But I got to show you what we did, where"
+    },
+    {
+      "start": 87.2,
+      "duration": 2.68,
+      "text": "we're at."
+    },
+    {
+      "start": 90.8,
+      "duration": 5.56,
+      "text": "Let's make sure that we're actually"
+    },
+    {
+      "start": 92.0,
+      "duration": 10.28,
+      "text": "live. We are live. Let's go."
+    },
+    {
+      "start": 96.36,
+      "duration": 5.92,
+      "text": "Nothing crazy. Let's [ __ ] go."
+    },
+    {
+      "start": 111.28,
+      "duration": 3.16,
+      "text": "Let me get it loaded up."
+    },
+    {
+      "start": 116.32,
+      "duration": 3.6,
+      "text": "Let me show you what we're talking"
+    },
+    {
+      "start": 117.32,
+      "duration": 2.6,
+      "text": "about."
+    },
+    {
+      "start": 127.52,
+      "duration": 5.08,
+      "text": "Boom."
+    },
+    {
+      "start": 132.92,
+      "duration": 4.48,
+      "text": "All right."
+    },
+    {
+      "start": 135.16,
+      "duration": 3.24,
+      "text": "Here's what we have."
+    },
+    {
+      "start": 137.4,
+      "duration": 3.44,
+      "text": "Here's what we have. Here's what we"
+    },
+    {
+      "start": 138.4,
+      "duration": 2.44,
+      "text": "have."
+    },
+    {
+      "start": 141.6,
+      "duration": 3.0,
+      "text": "Dreadnought."
+    },
+    {
+      "start": 148.4,
+      "duration": 5.36,
+      "text": "We have made an intro cutscene"
+    },
+    {
+      "start": 151.64,
+      "duration": 4.84,
+      "text": "for our game"
+    },
+    {
+      "start": 153.76,
+      "duration": 2.72,
+      "text": "Dreadnought."
+    },
+    {
+      "start": 157.68,
+      "duration": 6.96,
+      "text": "Dreadnought is a moon-based zombie game"
+    },
+    {
+      "start": 162.32,
+      "duration": 5.16,
+      "text": "where the zombie does in fact happen to"
+    },
+    {
+      "start": 164.64,
+      "duration": 2.84,
+      "text": "be levels."
+    },
+    {
+      "start": 169.68,
+      "duration": 3.8,
+      "text": "Play the cutscene."
+    },
+    {
+      "start": 172.04,
+      "duration": 4.24,
+      "text": "Let me get this full scene. Let me get"
+    },
+    {
+      "start": 173.48,
+      "duration": 2.8,
+      "text": "this full screen."
+    },
+    {
+      "start": 176.4,
+      "duration": 3.0,
+      "text": "Play the cutscene."
+    },
+    {
+      "start": 182.08,
+      "duration": 6.12,
+      "text": "Yes."
+    },
+    {
+      "start": 184.72,
+      "duration": 5.52,
+      "text": "How good is the cutscene?"
+    },
+    {
+      "start": 188.2,
+      "duration": 3.72,
+      "text": "And then we're right into levels running"
+    },
+    {
+      "start": 190.24,
+      "duration": 5.0,
+      "text": "at us."
+    },
+    {
+      "start": 191.92,
+      "duration": 3.32,
+      "text": "And you got to take them out."
+    },
+    {
+      "start": 198.64,
+      "duration": 3.04,
+      "text": "We're just going to hope that he thinks"
+    },
+    {
+      "start": 199.76,
+      "duration": 4.84,
+      "text": "that's fun"
+    },
+    {
+      "start": 201.68,
+      "duration": 4.04,
+      "text": "and not weird."
+    },
+    {
+      "start": 204.6,
+      "duration": 3.48,
+      "text": "All right."
+    },
+    {
+      "start": 205.72,
+      "duration": 6.92,
+      "text": "We're going to pick our level up."
+    },
+    {
+      "start": 208.08,
+      "duration": 4.56,
+      "text": "Let's do 12% movement speed. Easy peasy."
+    },
+    {
+      "start": 217.16,
+      "duration": 5.28,
+      "text": "What's up, Felix? How you doing?"
+    },
+    {
+      "start": 220.52,
+      "duration": 4.2,
+      "text": "All right. So, the red zombie can run"
+    },
+    {
+      "start": 222.44,
+      "duration": 4.92,
+      "text": "ultra fast"
+    },
+    {
+      "start": 224.72,
+      "duration": 4.2,
+      "text": "but has half health. Okay. And that just"
+    },
+    {
+      "start": 227.36,
+      "duration": 3.36,
+      "text": "adds some variety to the people"
+    },
+    {
+      "start": 228.92,
+      "duration": 2.84,
+      "text": "attacking you."
+    },
+    {
+      "start": 230.72,
+      "duration": 3.08,
+      "text": "Oh, I might be dead here. I might be"
+    },
+    {
+      "start": 231.76,
+      "duration": 2.92,
+      "text": "dead here."
+    },
+    {
+      "start": 233.8,
+      "duration": 2.16,
+      "text": "I'm not going to lie to you. I might be"
+    },
+    {
+      "start": 234.68,
+      "duration": 3.32,
+      "text": "dead here."
+    },
+    {
+      "start": 235.96,
+      "duration": 3.92,
+      "text": "All right. So, levels are running at"
+    },
+    {
+      "start": 238.0,
+      "duration": 4.64,
+      "text": "you. You got to be shooting them as fast"
+    },
+    {
+      "start": 239.88,
+      "duration": 2.76,
+      "text": "as you can."
+    },
+    {
+      "start": 243.04,
+      "duration": 3.2,
+      "text": "Today we're going to push this live to"
+    },
+    {
+      "start": 244.72,
+      "duration": 4.0,
+      "text": "the server"
+    },
+    {
+      "start": 246.24,
+      "duration": 5.88,
+      "text": "so you guys can play around with it."
+    },
+    {
+      "start": 248.72,
+      "duration": 4.4,
+      "text": "We're also going to add a I'm going to"
+    },
+    {
+      "start": 252.12,
+      "duration": 3.24,
+      "text": "do"
+    },
+    {
+      "start": 253.12,
+      "duration": 4.52,
+      "text": "I'm going to do more damage."
+    },
+    {
+      "start": 255.36,
+      "duration": 3.52,
+      "text": "Let's open this up. Ooh, we got one-shot"
+    },
+    {
+      "start": 257.64,
+      "duration": 2.56,
+      "text": "kill."
+    },
+    {
+      "start": 258.88,
+      "duration": 2.52,
+      "text": "Come on. Where is the bad guys? There"
+    },
+    {
+      "start": 260.2,
+      "duration": 3.6,
+      "text": "they are."
+    },
+    {
+      "start": 261.4,
+      "duration": 4.16,
+      "text": "One-shot kill."
+    },
+    {
+      "start": 268.8,
+      "duration": 3.68,
+      "text": "Add a breeding mechanic."
+    },
+    {
+      "start": 271.6,
+      "duration": 3.92,
+      "text": "I don't"
+    },
+    {
+      "start": 272.48,
+      "duration": 3.04,
+      "text": "I don't think we're going to do"
+    },
+    {
+      "start": 275.72,
+      "duration": 3.72,
+      "text": "What do you What exactly"
+    },
+    {
+      "start": 278.08,
+      "duration": 3.24,
+      "text": "Hold on."
+    },
+    {
+      "start": 281.32,
+      "duration": 5.64,
+      "text": "Felix, what exactly do you mean by"
+    },
+    {
+      "start": 283.68,
+      "duration": 3.28,
+      "text": "breeding mechanic?"
+    },
+    {
+      "start": 292.96,
+      "duration": 3.6,
+      "text": "What exactly do you mean?"
+    },
+    {
+      "start": 301.04,
+      "duration": 5.6,
+      "text": "All right. Let's get this uh"
+    },
+    {
+      "start": 303.72,
+      "duration": 2.92,
+      "text": "out of full screen."
+    },
+    {
+      "start": 308.08,
+      "duration": 4.4,
+      "text": "All right. So, cutscene's pretty dope,"
+    },
+    {
+      "start": 310.04,
+      "duration": 4.92,
+      "text": "isn't it?"
+    },
+    {
+      "start": 312.48,
+      "duration": 5.64,
+      "text": "Play Dreadnought."
+    },
+    {
+      "start": 314.96,
+      "duration": 4.44,
+      "text": "Levels turns into a zombie"
+    },
+    {
+      "start": 318.12,
+      "duration": 4.08,
+      "text": "and then boom, you're right into the"
+    },
+    {
+      "start": 319.4,
+      "duration": 4.84,
+      "text": "game and level zombie"
+    },
+    {
+      "start": 322.2,
+      "duration": 3.76,
+      "text": "is running after you"
+    },
+    {
+      "start": 324.24,
+      "duration": 4.68,
+      "text": "and you got to take them out before they"
+    },
+    {
+      "start": 325.96,
+      "duration": 2.96,
+      "text": "take you out."
+    },
+    {
+      "start": 332.0,
+      "duration": 2.88,
+      "text": "That's pretty fun. That's pretty fun"
+    },
+    {
+      "start": 333.56,
+      "duration": 2.6,
+      "text": "right there."
+    },
+    {
+      "start": 334.88,
+      "duration": 2.32,
+      "text": "I don't know."
+    },
+    {
+      "start": 336.16,
+      "duration": 4.16,
+      "text": "They're either going to think it's fun"
+    },
+    {
+      "start": 337.2,
+      "duration": 6.52,
+      "text": "or it's disturbing."
+    },
+    {
+      "start": 340.32,
+      "duration": 3.4,
+      "text": "Either way, it's good. I like it."
+    },
+    {
+      "start": 344.24,
+      "duration": 3.88,
+      "text": "So, um"
+    },
+    {
+      "start": 346.4,
+      "duration": 4.36,
+      "text": "Let me see what's live on the on the"
+    },
+    {
+      "start": 348.12,
+      "duration": 2.64,
+      "text": "server"
+    },
+    {
+      "start": 351.04,
+      "duration": 4.72,
+      "text": "real quick."
+    },
+    {
+      "start": 353.96,
+      "duration": 4.88,
+      "text": "All right. So, the cutscene is not live"
+    },
+    {
+      "start": 355.76,
+      "duration": 6.52,
+      "text": "on the server and also"
+    },
+    {
+      "start": 358.84,
+      "duration": 5.48,
+      "text": "the new enemies are not the new level"
+    },
+    {
+      "start": 362.28,
+      "duration": 4.52,
+      "text": "zombies are not live on the server"
+    },
+    {
+      "start": 364.32,
+      "duration": 2.48,
+      "text": "either."
+    },
+    {
+      "start": 368.68,
+      "duration": 6.28,
+      "text": "I want to make little babies with other"
+    },
+    {
+      "start": 370.48,
+      "duration": 4.48,
+      "text": "players that [music] help kill zombies."
+    },
+    {
+      "start": 382.2,
+      "duration": 6.56,
+      "text": "Felix, that's [music] crazy. It's"
+    },
+    {
+      "start": 384.24,
+      "duration": 4.52,
+      "text": "It's It's 9:30 on Monday."
+    },
+    {
+      "start": 389.0,
+      "duration": 4.44,
+      "text": "And we're talking about [music]"
+    },
+    {
+      "start": 390.8,
+      "duration": 5.8,
+      "text": "breeding with other players"
+    },
+    {
+      "start": 393.44,
+      "duration": 3.16,
+      "text": "to kill the zombies."
+    },
+    {
+      "start": 398.12,
+      "duration": 3.04,
+      "text": "I need you to wake up."
+    },
+    {
+      "start": 405.16,
+      "duration": 3.24,
+      "text": "I need you to wake up, Felix."
+    },
+    {
+      "start": 409.72,
+      "duration": 2.76,
+      "text": "All right. So, I'm going to get this"
+    },
+    {
+      "start": 411.04,
+      "duration": 4.16,
+      "text": "ripping."
+    },
+    {
+      "start": 412.48,
+      "duration": 2.72,
+      "text": "We'll say um"
+    },
+    {
+      "start": 417.76,
+      "duration": 5.84,
+      "text": "Please patch the [music] local updates"
+    },
+    {
+      "start": 420.52,
+      "duration": 6.28,
+      "text": "to the server including the"
+    },
+    {
+      "start": 423.6,
+      "duration": 5.64,
+      "text": "new zombie character and the intro"
+    },
+    {
+      "start": 426.8,
+      "duration": 2.44,
+      "text": "scene."
+    },
+    {
+      "start": 431.28,
+      "duration": 2.96,
+      "text": "Is it going to be multiplayer because"
+    },
+    {
+      "start": 433.614,
+      "duration": 5.346,
+      "text": "[laughter]"
+    },
+    {
+      "start": 434.24,
+      "duration": 4.72,
+      "text": "what you can breed with the zombies?"
+    },
+    {
+      "start": 444.64,
+      "duration": 5.2,
+      "text": "You're out of control."
+    },
+    {
+      "start": 455.44,
+      "duration": 6.8,
+      "text": "Reverted loading bar is back."
+    },
+    {
+      "start": 458.6,
+      "duration": 3.64,
+      "text": "No. No. No. No. No. No. No."
+    },
+    {
+      "start": 463.52,
+      "duration": 2.88,
+      "text": "That's not what I said."
+    },
+    {
+      "start": 469.08,
+      "duration": 4.24,
+      "text": "Oh, I don't have Whisper open. No, I do"
+    },
+    {
+      "start": 470.56,
+      "duration": 2.76,
+      "text": "have Whisper open."
+    },
+    {
+      "start": 475.04,
+      "duration": 2.76,
+      "text": "Please"
+    },
+    {
+      "start": 478.36,
+      "duration": 3.56,
+      "text": "patch the updates to the server from"
+    },
+    {
+      "start": 480.72,
+      "duration": 3.48,
+      "text": "local"
+    },
+    {
+      "start": 481.92,
+      "duration": 4.96,
+      "text": "including the new zombie and the intro"
+    },
+    {
+      "start": 484.2,
+      "duration": 2.68,
+      "text": "cutscene."
+    },
+    {
+      "start": 488.72,
+      "duration": 4.16,
+      "text": "Yo, why is Whisper not working? What the"
+    },
+    {
+      "start": 490.32,
+      "duration": 2.56,
+      "text": "[ __ ]"
+    },
+    {
+      "start": 501.08,
+      "duration": 3.6,
+      "text": "Please patch"
+    },
+    {
+      "start": 502.76,
+      "duration": 2.905,
+      "text": "um"
+    },
+    {
+      "start": 504.68,
+      "duration": 4.26,
+      "text": "It's possibly going to be multiplayer."
+    },
+    {
+      "start": 505.665,
+      "duration": 4.575,
+      "text": "[music] It depends."
+    },
+    {
+      "start": 508.94,
+      "duration": 3.86,
+      "text": ">> [sighs]"
+    },
+    {
+      "start": 510.24,
+      "duration": 6.479,
+      "text": ">> God."
+    },
+    {
+      "start": 512.8,
+      "duration": 3.919,
+      "text": "What is wrong with you guys?"
+    },
+    {
+      "start": 517.84,
+      "duration": 3.84,
+      "text": "You guys are out of control."
+    },
+    {
+      "start": 522.76,
+      "duration": 3.4,
+      "text": "Make [laughter]"
+    },
+    {
+      "start": 523.88,
+      "duration": 5.04,
+      "text": "kids where you can breed with"
+    },
+    {
+      "start": 526.16,
+      "duration": 4.24,
+      "text": "There's a lot of"
+    },
+    {
+      "start": 528.92,
+      "duration": 4.76,
+      "text": "Maybe I should just make Maybe I should"
+    },
+    {
+      "start": 530.4,
+      "duration": 5.84,
+      "text": "just get rid of the combat and just make"
+    },
+    {
+      "start": 533.68,
+      "duration": 4.96,
+      "text": "it mainly breeding."
+    },
+    {
+      "start": 536.24,
+      "duration": 4.08,
+      "text": "Ninio, what's up? How we doing?"
+    },
+    {
+      "start": 538.64,
+      "duration": 4.64,
+      "text": "Please tell me something good. Please"
+    },
+    {
+      "start": 540.32,
+      "duration": 5.96,
+      "text": "tell me something good here, brother."
+    },
+    {
+      "start": 543.28,
+      "duration": 6.24,
+      "text": "All right. Um please patch updates"
+    },
+    {
+      "start": 546.28,
+      "duration": 9.12,
+      "text": "to the server"
+    },
+    {
+      "start": 549.52,
+      "duration": 5.88,
+      "text": "including new zombie and"
+    },
+    {
+      "start": 555.56,
+      "duration": 3.92,
+      "text": "intro cutscene."
+    },
+    {
+      "start": 565.2,
+      "duration": 2.8,
+      "text": "All right. You want to see [music] the"
+    },
+    {
+      "start": 566.2,
+      "duration": 3.0,
+      "text": "You want to see the update, bro?"
+    },
+    {
+      "start": 568.0,
+      "duration": 4.04,
+      "text": "I'm going to show you I'm going to show"
+    },
+    {
+      "start": 569.2,
+      "duration": 4.4,
+      "text": "you, Ninio, what we got going on here."
+    },
+    {
+      "start": 572.04,
+      "duration": 5.84,
+      "text": "And you're going to have to tell me if"
+    },
+    {
+      "start": 573.6,
+      "duration": 6.736,
+      "text": "this cutscene is going to be taken as"
+    },
+    {
+      "start": 577.88,
+      "duration": 3.04,
+      "text": "this"
+    },
+    {
+      "start": 580.336,
+      "duration": 3.144,
+      "text": ">> [sighs]"
+    },
+    {
+      "start": 580.92,
+      "duration": 4.64,
+      "text": ">> as this cutscene is taken as like,"
+    },
+    {
+      "start": 583.48,
+      "duration": 3.406,
+      "text": "\"Dude, that's awesome.\" or this"
+    },
+    {
+      "start": 585.56,
+      "duration": 1.36,
+      "text": "cutscene's taken as,"
+    },
+    {
+      "start": 586.886,
+      "duration": 2.914,
+      "text": ">> [music]"
+    },
+    {
+      "start": 586.92,
+      "duration": 2.88,
+      "text": ">> \"That's too far.\""
+    },
+    {
+      "start": 590.64,
+      "duration": 3.36,
+      "text": "Here's our intro cutscene."
+    },
+    {
+      "start": 594.72,
+      "duration": 3.16,
+      "text": "Play Dreadnought."
+    },
+    {
+      "start": 601.296,
+      "duration": 2.944,
+      "text": ">> [laughter]"
+    },
+    {
+      "start": 602.12,
+      "duration": 3.8,
+      "text": ">> So, there's level zombie, right? And now"
+    },
+    {
+      "start": 604.24,
+      "duration": 4.48,
+      "text": "he's running at you, and you got to take"
+    },
+    {
+      "start": 605.92,
+      "duration": 2.8,
+      "text": "him out."
+    },
+    {
+      "start": 609.08,
+      "duration": 3.351,
+      "text": "And they're all over the place."
+    },
+    {
+      "start": 611.68,
+      "duration": 0.84,
+      "text": "Coming at you."
+    },
+    {
+      "start": 612.431,
+      "duration": 2.129,
+      "text": ">> [music]"
+    },
+    {
+      "start": 612.52,
+      "duration": 4.48,
+      "text": ">> I do feel like we need to lighten it up"
+    },
+    {
+      "start": 614.56,
+      "duration": 3.36,
+      "text": "a little bit. Make make"
+    },
+    {
+      "start": 617.0,
+      "duration": 3.16,
+      "text": "I don't know."
+    },
+    {
+      "start": 617.92,
+      "duration": 3.44,
+      "text": "We definitely need more color."
+    },
+    {
+      "start": 620.16,
+      "duration": 2.64,
+      "text": "So, I think any sort [music] of map"
+    },
+    {
+      "start": 621.36,
+      "duration": 4.44,
+      "text": "design we're going to do, we need to add"
+    },
+    {
+      "start": 622.8,
+      "duration": 3.0,
+      "text": "some color to it."
+    },
+    {
+      "start": 626.04,
+      "duration": 2.8,
+      "text": "All right, so that's patching to the"
+    },
+    {
+      "start": 627.12,
+      "duration": 4.4,
+      "text": "server."
+    },
+    {
+      "start": 628.84,
+      "duration": 4.08,
+      "text": "We got to do uh"
+    },
+    {
+      "start": 631.52,
+      "duration": 2.44,
+      "text": "We got to write down some of our goals"
+    },
+    {
+      "start": 632.92,
+      "duration": 2.16,
+      "text": "here as far [music] as what we're going"
+    },
+    {
+      "start": 633.96,
+      "duration": 4.32,
+      "text": "to get done. What do you think about"
+    },
+    {
+      "start": 635.08,
+      "duration": 3.2,
+      "text": "that cutscene, you know?"
+    },
+    {
+      "start": 639.8,
+      "duration": 5.04,
+      "text": "Is that cutscene too much?"
+    },
+    {
+      "start": 641.84,
+      "duration": 3.0,
+      "text": "Or is it just perfect?"
+    },
+    {
+      "start": 646.96,
+      "duration": 2.56,
+      "text": "What do you think?"
+    },
+    {
+      "start": 662.76,
+      "duration": 2.96,
+      "text": "Also, goals."
+    },
+    {
+      "start": 670.24,
+      "duration": 4.16,
+      "text": "More is more. Yes, it is."
+    },
+    {
+      "start": 677.4,
+      "duration": 2.72,
+      "text": "Goals."
+    },
+    {
+      "start": 683.839,
+      "duration": 4.241,
+      "text": "I'm not making a robot game, and I'm"
+    },
+    {
+      "start": 693.36,
+      "duration": 5.84,
+      "text": "Goals. Uh"
+    },
+    {
+      "start": 696.68,
+      "duration": 5.68,
+      "text": "Add breeding animation. No."
+    },
+    {
+      "start": 699.2,
+      "duration": 3.16,
+      "text": "What are we going to do?"
+    },
+    {
+      "start": 702.8,
+      "duration": 4.2,
+      "text": "The first goal is going to be"
+    },
+    {
+      "start": 707.52,
+      "duration": 8.68,
+      "text": "We need to start We need to um"
+    },
+    {
+      "start": 710.12,
+      "duration": 6.08,
+      "text": "add super mutant evolution."
+    },
+    {
+      "start": 716.44,
+      "duration": 4.72,
+      "text": "All right. The second goal is going to"
+    },
+    {
+      "start": 719.04,
+      "duration": 7.56,
+      "text": "be"
+    },
+    {
+      "start": 721.16,
+      "duration": 5.44,
+      "text": "creating map structure."
+    },
+    {
+      "start": 730.6,
+      "duration": 6.04,
+      "text": "And then, the third goal is going to be"
+    },
+    {
+      "start": 734.6,
+      "duration": 2.04,
+      "text": "uh"
+    },
+    {
+      "start": 736.72,
+      "duration": 5.0,
+      "text": "storyline through map."
+    },
+    {
+      "start": 741.96,
+      "duration": 2.879,
+      "text": "Beautiful."
+    },
+    {
+      "start": 743.48,
+      "duration": 3.56,
+      "text": "Beautiful. All right, so what this means"
+    },
+    {
+      "start": 744.839,
+      "duration": 5.121,
+      "text": "is the first goal there, add the super"
+    },
+    {
+      "start": 747.04,
+      "duration": 6.64,
+      "text": "mutant evolution."
+    },
+    {
+      "start": 749.96,
+      "duration": 3.72,
+      "text": "We We have to um"
+    },
+    {
+      "start": 753.8,
+      "duration": 4.039,
+      "text": "We have to add this guy in right here,"
+    },
+    {
+      "start": 755.44,
+      "duration": 4.08,
+      "text": "that we made. Okay. So, this is like the"
+    },
+    {
+      "start": 757.839,
+      "duration": 3.201,
+      "text": "advanced state of levels, right? So, we"
+    },
+    {
+      "start": 759.52,
+      "duration": 3.8,
+      "text": "have this guy."
+    },
+    {
+      "start": 761.04,
+      "duration": 5.16,
+      "text": "Now."
+    },
+    {
+      "start": 763.32,
+      "duration": 2.88,
+      "text": "Why is it not loading?"
+    },
+    {
+      "start": 767.92,
+      "duration": 2.44,
+      "text": "Hold on."
+    },
+    {
+      "start": 772.839,
+      "duration": 2.561,
+      "text": "This is"
+    },
+    {
+      "start": 777.48,
+      "duration": 3.52,
+      "text": "the first stage zombie."
+    },
+    {
+      "start": 781.2,
+      "duration": 4.72,
+      "text": "This is the second stage zombie."
+    },
+    {
+      "start": 784.12,
+      "duration": 4.08,
+      "text": "Okay."
+    },
+    {
+      "start": 785.92,
+      "duration": 4.16,
+      "text": "First, second."
+    },
+    {
+      "start": 788.2,
+      "duration": 2.68,
+      "text": "We need to create"
+    },
+    {
+      "start": 790.08,
+      "duration": 3.44,
+      "text": "a"
+    },
+    {
+      "start": 790.88,
+      "duration": 4.2,
+      "text": "cutscene where like maybe once you get"
+    },
+    {
+      "start": 793.52,
+      "duration": 4.24,
+      "text": "to wave two"
+    },
+    {
+      "start": 795.08,
+      "duration": 4.88,
+      "text": "he evolves into this one. And this one's"
+    },
+    {
+      "start": 797.76,
+      "duration": 5.36,
+      "text": "going to be more difficult to kill and"
+    },
+    {
+      "start": 799.96,
+      "duration": 3.16,
+      "text": "do more damage to you."
+    },
+    {
+      "start": 804.72,
+      "duration": 3.24,
+      "text": "So, that's our [music] first goal there,"
+    },
+    {
+      "start": 805.8,
+      "duration": 3.92,
+      "text": "add the super mutant evolution."
+    },
+    {
+      "start": 807.96,
+      "duration": 3.44,
+      "text": "Uh second goal, creating the map"
+    },
+    {
+      "start": 809.72,
+      "duration": 4.64,
+      "text": "structure."
+    },
+    {
+      "start": 811.4,
+      "duration": 6.8,
+      "text": "We have to add uh physical structure to"
+    },
+    {
+      "start": 814.36,
+      "duration": 4.64,
+      "text": "the map that guides you through"
+    },
+    {
+      "start": 818.2,
+      "duration": 2.639,
+      "text": "uh"
+    },
+    {
+      "start": 819.0,
+      "duration": 4.52,
+      "text": "like basically the storyline, similar to"
+    },
+    {
+      "start": 820.839,
+      "duration": 5.361,
+      "text": "like Call of Duty Zombies, where"
+    },
+    {
+      "start": 823.52,
+      "duration": 4.72,
+      "text": "like as you go wave by wave, you can pay"
+    },
+    {
+      "start": 826.2,
+      "duration": 5.16,
+      "text": "to unlock doors."
+    },
+    {
+      "start": 828.24,
+      "duration": 4.24,
+      "text": "And then, once you get to the final area"
+    },
+    {
+      "start": 831.36,
+      "duration": 2.24,
+      "text": "there's going to be like a rocket ship"
+    },
+    {
+      "start": 832.48,
+      "duration": 4.359,
+      "text": "or something like that that takes you"
+    },
+    {
+      "start": 833.6,
+      "duration": 4.08,
+      "text": "off the moon, so that you can go to"
+    },
+    {
+      "start": 836.839,
+      "duration": 2.721,
+      "text": "uh"
+    },
+    {
+      "start": 837.68,
+      "duration": 4.32,
+      "text": "you you It's like the win state of the"
+    },
+    {
+      "start": 839.56,
+      "duration": 2.44,
+      "text": "game."
+    },
+    {
+      "start": 842.76,
+      "duration": 3.2,
+      "text": "There There's no"
+    },
+    {
+      "start": 846.08,
+      "duration": 3.44,
+      "text": "There's no breeding with that one. No."
+    },
+    {
+      "start": 850.64,
+      "duration": 5.8,
+      "text": "You're in timeout."
+    },
+    {
+      "start": 853.44,
+      "duration": 3.0,
+      "text": "And"
+    },
+    {
+      "start": 857.56,
+      "duration": 3.36,
+      "text": "There you go. You're in timeout. All"
+    },
+    {
+      "start": 858.52,
+      "duration": 5.68,
+      "text": "right, we're We're in timeout until we"
+    },
+    {
+      "start": 860.92,
+      "duration": 3.28,
+      "text": "can figure out the breeding."
+    },
+    {
+      "start": 867.16,
+      "duration": 4.36,
+      "text": "What?"
+    },
+    {
+      "start": 868.56,
+      "duration": 2.96,
+      "text": "So, this is deployed."
+    },
+    {
+      "start": 871.68,
+      "duration": 5.96,
+      "text": "Let me see if this uh"
+    },
+    {
+      "start": 874.16,
+      "duration": 3.48,
+      "text": "actually works live on the server."
+    },
+    {
+      "start": 879.32,
+      "duration": 5.519,
+      "text": "Refresh."
+    },
+    {
+      "start": 881.24,
+      "duration": 3.599,
+      "text": "We'll do a force refresh. Yes."
+    },
+    {
+      "start": 886.04,
+      "duration": 3.039,
+      "text": "That's not it."
+    },
+    {
+      "start": 894.28,
+      "duration": 4.2,
+      "text": "All right."
+    },
+    {
+      "start": 895.04,
+      "duration": 5.28,
+      "text": "On the server, the cutscene"
+    },
+    {
+      "start": 898.48,
+      "duration": 6.74,
+      "text": "isn't"
+    },
+    {
+      "start": 900.32,
+      "duration": 8.08,
+      "text": "starting from the beginning for some"
+    },
+    {
+      "start": 905.22,
+      "duration": 3.18,
+      "text": "[music] reason."
+    },
+    {
+      "start": 910.44,
+      "duration": 7.24,
+      "text": "It"
+    },
+    {
+      "start": 911.839,
+      "duration": 5.841,
+      "text": "starts like 1 second in."
+    },
+    {
+      "start": 918.68,
+      "duration": 2.279,
+      "text": "Okay."
+    },
+    {
+      "start": 921.0,
+      "duration": 4.16,
+      "text": "There's not really like [music] a lot of"
+    },
+    {
+      "start": 922.04,
+      "duration": 5.36,
+      "text": "real estate for um"
+    },
+    {
+      "start": 925.16,
+      "duration": 3.96,
+      "text": "other [ __ ]"
+    },
+    {
+      "start": 927.4,
+      "duration": 3.439,
+      "text": "I guess if you were just coding and you"
+    },
+    {
+      "start": 929.12,
+      "duration": 3.76,
+      "text": "didn't have a game open, you could just"
+    },
+    {
+      "start": 930.839,
+      "duration": 4.601,
+      "text": "have that mainly."
+    },
+    {
+      "start": 932.88,
+      "duration": 4.16,
+      "text": "Or like I guess a 5K screen would come"
+    },
+    {
+      "start": 935.44,
+      "duration": 5.08,
+      "text": "in handy"
+    },
+    {
+      "start": 937.04,
+      "duration": 3.48,
+      "text": "for like streaming and all that."
+    },
+    {
+      "start": 944.8,
+      "duration": 6.44,
+      "text": "So, for some reason this is starting"
+    },
+    {
+      "start": 947.68,
+      "duration": 3.56,
+      "text": "too far into the cutscene."
+    },
+    {
+      "start": 951.88,
+      "duration": 5.16,
+      "text": "Which we don't want. And And the gun is"
+    },
+    {
+      "start": 954.345,
+      "duration": 2.695,
+      "text": "[music] not Oh my god."
+    },
+    {
+      "start": 961.52,
+      "duration": 3.04,
+      "text": "All right, that's fixed. Great."
+    },
+    {
+      "start": 968.72,
+      "duration": 10.84,
+      "text": "I'm going to say, \"Okay, it's doing"
+    },
+    {
+      "start": 974.4,
+      "duration": 10.8,
+      "text": "the thing where the hands"
+    },
+    {
+      "start": 979.56,
+      "duration": 11.16,
+      "text": "and gun are invisible again."
+    },
+    {
+      "start": 985.2,
+      "duration": 7.04,
+      "text": "This has [music] to do with file"
+    },
+    {
+      "start": 990.72,
+      "duration": 4.48,
+      "text": "permissions."
+    },
+    {
+      "start": 992.24,
+      "duration": 5.52,
+      "text": "Fix it,"
+    },
+    {
+      "start": 995.2,
+      "duration": 2.56,
+      "text": "please.\""
+    },
+    {
+      "start": 998.12,
+      "duration": 2.8,
+      "text": "All right, great."
+    },
+    {
+      "start": 1001.24,
+      "duration": 3.16,
+      "text": "And then, uh"
+    },
+    {
+      "start": 1014.16,
+      "duration": 2.6,
+      "text": "Where are we going?"
+    },
+    {
+      "start": 1023.8,
+      "duration": 3.96,
+      "text": "All right, so we are going to"
+    },
+    {
+      "start": 1030.839,
+      "duration": 3.721,
+      "text": "We're going to look up a"
+    },
+    {
+      "start": 1035.12,
+      "duration": 4.319,
+      "text": "space"
+    },
+    {
+      "start": 1036.76,
+      "duration": 2.679,
+      "text": "uh moon"
+    },
+    {
+      "start": 1040.959,
+      "duration": 2.921,
+      "text": "colony."
+    },
+    {
+      "start": 1046.04,
+      "duration": 7.639,
+      "text": "And then, we have to figure out how we"
+    },
+    {
+      "start": 1047.92,
+      "duration": 5.759,
+      "text": "can make our way through a moon colony"
+    },
+    {
+      "start": 1054.04,
+      "duration": 4.2,
+      "text": "just like you would with Call of Duty"
+    },
+    {
+      "start": 1056.04,
+      "duration": 5.16,
+      "text": "Zombies, where it has like sectioned off"
+    },
+    {
+      "start": 1058.24,
+      "duration": 2.96,
+      "text": "spaces."
+    },
+    {
+      "start": 1063.12,
+      "duration": 5.92,
+      "text": "So, the game is about It's basically"
+    },
+    {
+      "start": 1066.44,
+      "duration": 8.04,
+      "text": "like zombies on the moon."
+    },
+    {
+      "start": 1069.04,
+      "duration": 5.44,
+      "text": "And um it's for the Vibe Jam."
+    },
+    {
+      "start": 1075.679,
+      "duration": 2.681,
+      "text": "Is it busted?"
+    },
+    {
+      "start": 1079.0,
+      "duration": 3.72,
+      "text": "Did it Did it"
+    },
+    {
+      "start": 1080.56,
+      "duration": 5.72,
+      "text": "uh Did it load all right on your"
+    },
+    {
+      "start": 1082.72,
+      "duration": 5.2,
+      "text": "computer or or not really?"
+    },
+    {
+      "start": 1086.28,
+      "duration": 4.52,
+      "text": "I'm trying to optimize the files, make"
+    },
+    {
+      "start": 1087.92,
+      "duration": 2.88,
+      "text": "them a little bit smaller."
+    },
+    {
+      "start": 1091.0,
+      "duration": 2.32,
+      "text": "But um"
+    },
+    {
+      "start": 1092.32,
+      "duration": 2.44,
+      "text": "Kristoff, I think that's how you"
+    },
+    {
+      "start": 1093.32,
+      "duration": 4.6,
+      "text": "pronounce your name. Kristoff, the game"
+    },
+    {
+      "start": 1094.76,
+      "duration": 5.84,
+      "text": "is like uh space zombies."
+    },
+    {
+      "start": 1097.92,
+      "duration": 5.08,
+      "text": "So, um"
+    },
+    {
+      "start": 1100.6,
+      "duration": 4.84,
+      "text": "I'll show you real quick."
+    },
+    {
+      "start": 1103.0,
+      "duration": 4.28,
+      "text": "We have this cutscene where Levels turns"
+    },
+    {
+      "start": 1105.44,
+      "duration": 4.76,
+      "text": "into a zombie."
+    },
+    {
+      "start": 1107.28,
+      "duration": 4.76,
+      "text": "And then, we're dumped in the moon."
+    },
+    {
+      "start": 1110.2,
+      "duration": 6.36,
+      "text": "And we have"
+    },
+    {
+      "start": 1112.04,
+      "duration": 4.52,
+      "text": "uh level zombies running after us."
+    },
+    {
+      "start": 1117.04,
+      "duration": 6.16,
+      "text": "And you basically have to kill them"
+    },
+    {
+      "start": 1119.88,
+      "duration": 3.32,
+      "text": "before they kill you."
+    },
+    {
+      "start": 1124.44,
+      "duration": 3.88,
+      "text": "And you get power-ups from what they"
+    },
+    {
+      "start": 1126.52,
+      "duration": 5.159,
+      "text": "drop. And then, every level you get to"
+    },
+    {
+      "start": 1128.32,
+      "duration": 4.72,
+      "text": "choose a a power-up, faster movement,"
+    },
+    {
+      "start": 1131.679,
+      "duration": 3.561,
+      "text": "bigger magazine, faster reload,"
+    },
+    {
+      "start": 1133.04,
+      "duration": 4.28,
+      "text": "whatever."
+    },
+    {
+      "start": 1135.24,
+      "duration": 3.96,
+      "text": "And um there's these rocks in the ground"
+    },
+    {
+      "start": 1137.32,
+      "duration": 4.839,
+      "text": "they open up to get more health, more"
+    },
+    {
+      "start": 1139.2,
+      "duration": 2.959,
+      "text": "ammo, all of it."
+    },
+    {
+      "start": 1145.36,
+      "duration": 4.28,
+      "text": "It was bugging. Yeah, it was probably"
+    },
+    {
+      "start": 1146.72,
+      "duration": 7.48,
+      "text": "bugging cuz I'm doing updates right now."
+    },
+    {
+      "start": 1149.64,
+      "duration": 4.56,
+      "text": "Let me see if the gun is loading now."
+    },
+    {
+      "start": 1159.32,
+      "duration": 2.52,
+      "text": "I know."
+    },
+    {
+      "start": 1160.2,
+      "duration": 3.64,
+      "text": "I know the"
+    },
+    {
+      "start": 1161.84,
+      "duration": 4.16,
+      "text": "Levels at the beginning is absolutely"
+    },
+    {
+      "start": 1163.84,
+      "duration": 4.56,
+      "text": "nuts. And I'm going to have uh I'm going"
+    },
+    {
+      "start": 1166.0,
+      "duration": 5.08,
+      "text": "to have another cutscene, too, where it"
+    },
+    {
+      "start": 1168.4,
+      "duration": 4.2,
+      "text": "goes from that version of zombie Levels"
+    },
+    {
+      "start": 1171.08,
+      "duration": 4.28,
+      "text": "to um"
+    },
+    {
+      "start": 1172.6,
+      "duration": 3.92,
+      "text": "super mutant version."
+    },
+    {
+      "start": 1175.36,
+      "duration": 4.04,
+      "text": "He's either going to think it's really"
+    },
+    {
+      "start": 1176.52,
+      "duration": 5.2,
+      "text": "funny or he's going to be upset about"
+    },
+    {
+      "start": 1179.4,
+      "duration": 4.44,
+      "text": "it. But, we're going to find out."
+    },
+    {
+      "start": 1181.72,
+      "duration": 4.32,
+      "text": "I mean, he put on the Vibe Jam. It's his"
+    },
+    {
+      "start": 1183.84,
+      "duration": 4.68,
+      "text": "Vibe Jam. So,"
+    },
+    {
+      "start": 1186.04,
+      "duration": 2.48,
+      "text": "whatever."
+    },
+    {
+      "start": 1190.96,
+      "duration": 4.12,
+      "text": "But, this is um super mutant"
+    },
+    {
+      "start": 1195.8,
+      "duration": 5.04,
+      "text": "levels"
+    },
+    {
+      "start": 1198.2,
+      "duration": 2.64,
+      "text": "that it will uh"
+    },
+    {
+      "start": 1201.8,
+      "duration": 2.813,
+      "text": "upgrade to."
+    },
+    {
+      "start": 1202.593,
+      "duration": 2.02,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1207.28,
+      "duration": 3.28,
+      "text": ">> All right, so let's add let's add the"
+    },
+    {
+      "start": 1208.4,
+      "duration": 6.56,
+      "text": "super mutant evolution and let's do that"
+    },
+    {
+      "start": 1210.56,
+      "duration": 7.44,
+      "text": "between wave two and [music] three."
+    },
+    {
+      "start": 1214.96,
+      "duration": 3.04,
+      "text": "So we'll go um"
+    },
+    {
+      "start": 1218.314,
+      "duration": 2.02,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1220.56,
+      "duration": 5.08,
+      "text": ">> I already downloaded this, so I should"
+    },
+    {
+      "start": 1222.64,
+      "duration": 3.0,
+      "text": "already have [music] this."
+    },
+    {
+      "start": 1226.88,
+      "duration": 3.32,
+      "text": "Uh"
+    },
+    {
+      "start": 1227.6,
+      "duration": 2.6,
+      "text": "let me see."
+    },
+    {
+      "start": 1233.8,
+      "duration": 2.56,
+      "text": "I've been working [music] on this for a"
+    },
+    {
+      "start": 1234.76,
+      "duration": 4.04,
+      "text": "couple days now."
+    },
+    {
+      "start": 1236.36,
+      "duration": 4.88,
+      "text": "Uh but but just like two hours at a at a"
+    },
+    {
+      "start": 1238.8,
+      "duration": 2.44,
+      "text": "time."
+    },
+    {
+      "start": 1242.96,
+      "duration": 5.44,
+      "text": "So I better win."
+    },
+    {
+      "start": 1245.12,
+      "duration": 3.28,
+      "text": "I better win first place."
+    },
+    {
+      "start": 1248.56,
+      "duration": 3.4,
+      "text": "Now there's a lot of good games out"
+    },
+    {
+      "start": 1250.0,
+      "duration": 3.96,
+      "text": "there. At first, I was thinking it was"
+    },
+    {
+      "start": 1251.96,
+      "duration": 3.52,
+      "text": "going to be very easy to win first place"
+    },
+    {
+      "start": 1253.96,
+      "duration": 5.36,
+      "text": "because there were not like a ton of"
+    },
+    {
+      "start": 1255.48,
+      "duration": 3.84,
+      "text": "great games, but um"
+    },
+    {
+      "start": 1261.6,
+      "duration": 3.12,
+      "text": "but after looking [music] at the rest of"
+    },
+    {
+      "start": 1262.88,
+      "duration": 5.16,
+      "text": "the games, I'm like, \"Oh [ __ ] Now"
+    },
+    {
+      "start": 1264.72,
+      "duration": 5.44,
+      "text": "there's actually some decent games.\""
+    },
+    {
+      "start": 1268.04,
+      "duration": 4.16,
+      "text": "All right, so let's copy the green"
+    },
+    {
+      "start": 1270.16,
+      "duration": 3.92,
+      "text": "hulking character."
+    },
+    {
+      "start": 1272.2,
+      "duration": 4.76,
+      "text": "Let's actually rename it first. We'll"
+    },
+    {
+      "start": 1274.08,
+      "duration": 6.24,
+      "text": "rename this to um"
+    },
+    {
+      "start": 1276.96,
+      "duration": 3.36,
+      "text": "level super mutant."
+    },
+    {
+      "start": 1282.24,
+      "duration": 3.2,
+      "text": "And then"
+    },
+    {
+      "start": 1285.72,
+      "duration": 5.04,
+      "text": "we'll put this in the game [music] files"
+    },
+    {
+      "start": 1287.4,
+      "duration": 3.36,
+      "text": "and we'll say"
+    },
+    {
+      "start": 1292.4,
+      "duration": 3.16,
+      "text": "I'm just going to I'm just going to say"
+    },
+    {
+      "start": 1293.84,
+      "duration": 3.08,
+      "text": "for now"
+    },
+    {
+      "start": 1295.56,
+      "duration": 4.44,
+      "text": "um"
+    },
+    {
+      "start": 1296.92,
+      "duration": 6.8,
+      "text": "after wave two"
+    },
+    {
+      "start": 1300.0,
+      "duration": 3.72,
+      "text": "can you"
+    },
+    {
+      "start": 1304.16,
+      "duration": 4.36,
+      "text": "replace"
+    },
+    {
+      "start": 1306.4,
+      "duration": 3.615,
+      "text": "the"
+    },
+    {
+      "start": 1308.52,
+      "duration": 2.64,
+      "text": "current"
+    },
+    {
+      "start": 1310.015,
+      "duration": 3.585,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1311.16,
+      "duration": 4.92,
+      "text": ">> zombie"
+    },
+    {
+      "start": 1313.6,
+      "duration": 4.6,
+      "text": "with the"
+    },
+    {
+      "start": 1316.08,
+      "duration": 3.52,
+      "text": "level super"
+    },
+    {
+      "start": 1318.2,
+      "duration": 5.2,
+      "text": "mutant"
+    },
+    {
+      "start": 1319.6,
+      "duration": 7.36,
+      "text": "GLB I just added"
+    },
+    {
+      "start": 1323.4,
+      "duration": 6.12,
+      "text": "with the same settings. What's up?"
+    },
+    {
+      "start": 1326.96,
+      "duration": 2.56,
+      "text": "What's [music] up?"
+    },
+    {
+      "start": 1332.08,
+      "duration": 3.36,
+      "text": "How you doing, Dragon? What's going on?"
+    },
+    {
+      "start": 1338.6,
+      "duration": 3.24,
+      "text": "You want to see the game we're working"
+    },
+    {
+      "start": 1339.64,
+      "duration": 2.2,
+      "text": "on?"
+    },
+    {
+      "start": 1342.28,
+      "duration": 2.76,
+      "text": "That's what we got."
+    },
+    {
+      "start": 1359.0,
+      "duration": 3.4,
+      "text": "We got zombies in space."
+    },
+    {
+      "start": 1364.08,
+      "duration": 3.16,
+      "text": "Sort of like Call of Duty zombies, but"
+    },
+    {
+      "start": 1365.72,
+      "duration": 4.28,
+      "text": "in space."
+    },
+    {
+      "start": 1367.24,
+      "duration": 6.0,
+      "text": "Power ups, one shot kill."
+    },
+    {
+      "start": 1370.0,
+      "duration": 3.24,
+      "text": "You can open these rocks."
+    },
+    {
+      "start": 1374.0,
+      "duration": 3.2,
+      "text": "We're still building. We're still"
+    },
+    {
+      "start": 1375.0,
+      "duration": 4.56,
+      "text": "building."
+    },
+    {
+      "start": 1377.2,
+      "duration": 2.36,
+      "text": "All right."
+    },
+    {
+      "start": 1380.36,
+      "duration": 4.4,
+      "text": "Would be way more intuitive and easier"
+    },
+    {
+      "start": 1382.96,
+      "duration": 3.68,
+      "text": "hand movement. It was buggy not showing"
+    },
+    {
+      "start": 1384.76,
+      "duration": 3.68,
+      "text": "enemies at first, but then reboot did"
+    },
+    {
+      "start": 1386.64,
+      "duration": 3.12,
+      "text": "it."
+    },
+    {
+      "start": 1388.44,
+      "duration": 3.64,
+      "text": "Thank you, Dragon. Thank you. Appreciate"
+    },
+    {
+      "start": 1389.76,
+      "duration": 2.32,
+      "text": "it."
+    },
+    {
+      "start": 1392.52,
+      "duration": 5.159,
+      "text": "Would be What would be way more"
+    },
+    {
+      "start": 1393.76,
+      "duration": 3.919,
+      "text": "intuitive and easier hand movement?"
+    },
+    {
+      "start": 1405.96,
+      "duration": 3.4,
+      "text": "All right, done. Waves one through two"
+    },
+    {
+      "start": 1407.72,
+      "duration": 3.32,
+      "text": "spawn the regular zombie. Wave three"
+    },
+    {
+      "start": 1409.36,
+      "duration": 2.92,
+      "text": "plus spawns the super mutant. All right,"
+    },
+    {
+      "start": 1411.04,
+      "duration": 3.36,
+      "text": "let's let's rip through these real"
+    },
+    {
+      "start": 1412.28,
+      "duration": 6.08,
+      "text": "quick."
+    },
+    {
+      "start": 1414.4,
+      "duration": 3.96,
+      "text": "And uh let's see if it has it."
+    },
+    {
+      "start": 1419.8,
+      "duration": 4.68,
+      "text": "Change shortcut V to E. Oh, yeah, yeah,"
+    },
+    {
+      "start": 1422.28,
+      "duration": 3.02,
+      "text": "yeah."
+    },
+    {
+      "start": 1424.48,
+      "duration": 2.08,
+      "text": "I actually think you're right about"
+    },
+    {
+      "start": 1425.3,
+      "duration": 3.3,
+      "text": "[music] that."
+    },
+    {
+      "start": 1426.56,
+      "duration": 3.04,
+      "text": "I I do"
+    },
+    {
+      "start": 1428.6,
+      "duration": 3.44,
+      "text": "I played a lot of Fortnite"
+    },
+    {
+      "start": 1429.6,
+      "duration": 4.24,
+      "text": "unfortunately, so uh V was always"
+    },
+    {
+      "start": 1432.04,
+      "duration": 5.16,
+      "text": "interact."
+    },
+    {
+      "start": 1433.84,
+      "duration": 5.2,
+      "text": "And uh that's why I set it as V."
+    },
+    {
+      "start": 1437.2,
+      "duration": 3.8,
+      "text": "But I think you're right. We should we"
+    },
+    {
+      "start": 1439.04,
+      "duration": 4.08,
+      "text": "should change it to E because like I"
+    },
+    {
+      "start": 1441.0,
+      "duration": 5.56,
+      "text": "think that most people are used to"
+    },
+    {
+      "start": 1443.12,
+      "duration": 3.44,
+      "text": "hitting E to interact."
+    },
+    {
+      "start": 1452.56,
+      "duration": 5.56,
+      "text": "I really like ways with the beer."
+    },
+    {
+      "start": 1455.28,
+      "duration": 3.52,
+      "text": "I know. I can't believe in"
+    },
+    {
+      "start": 1458.12,
+      "duration": 4.48,
+      "text": "uh"
+    },
+    {
+      "start": 1458.8,
+      "duration": 6.72,
+      "text": "in literally 3js inside the browser,"
+    },
+    {
+      "start": 1462.6,
+      "duration": 4.48,
+      "text": "you can get 100 you can get 270 frames"
+    },
+    {
+      "start": 1465.52,
+      "duration": 5.84,
+      "text": "per second."
+    },
+    {
+      "start": 1467.08,
+      "duration": 6.92,
+      "text": "Insanely smooth animations for"
+    },
+    {
+      "start": 1471.36,
+      "duration": 2.64,
+      "text": "everything."
+    },
+    {
+      "start": 1476.16,
+      "duration": 3.96,
+      "text": "And you can just vibe code it."
+    },
+    {
+      "start": 1478.04,
+      "duration": 4.28,
+      "text": "Meanwhile, there's these games out there"
+    },
+    {
+      "start": 1480.12,
+      "duration": 4.08,
+      "text": "that are making millions and millions of"
+    },
+    {
+      "start": 1482.32,
+      "duration": 4.48,
+      "text": "dollars"
+    },
+    {
+      "start": 1484.2,
+      "duration": 5.52,
+      "text": "that have terrible"
+    },
+    {
+      "start": 1486.8,
+      "duration": 5.84,
+      "text": "mechanics. The game runs awful, low"
+    },
+    {
+      "start": 1489.72,
+      "duration": 2.92,
+      "text": "frames."
+    },
+    {
+      "start": 1492.8,
+      "duration": 3.04,
+      "text": "Like I'm just some dude. I've no idea"
+    },
+    {
+      "start": 1494.28,
+      "duration": 3.399,
+      "text": "what I'm doing."
+    },
+    {
+      "start": 1495.84,
+      "duration": 5.76,
+      "text": "And I created a"
+    },
+    {
+      "start": 1497.679,
+      "duration": 3.921,
+      "text": "a game that is way better um"
+    },
+    {
+      "start": 1502.24,
+      "duration": 4.24,
+      "text": "frames, reload. I mean, the shooting is"
+    },
+    {
+      "start": 1504.92,
+      "duration": 2.68,
+      "text": "great."
+    },
+    {
+      "start": 1506.48,
+      "duration": 4.08,
+      "text": "Everything kills really good. All right,"
+    },
+    {
+      "start": 1507.6,
+      "duration": 2.96,
+      "text": "so here's the new zombie."
+    },
+    {
+      "start": 1512.44,
+      "duration": 3.88,
+      "text": "Oh, it's great. It's kicking."
+    },
+    {
+      "start": 1517.679,
+      "duration": 3.041,
+      "text": "Oh, it's so good."
+    },
+    {
+      "start": 1521.4,
+      "duration": 3.279,
+      "text": "Oh, it's kind of going to kill me"
+    },
+    {
+      "start": 1522.36,
+      "duration": 2.319,
+      "text": "though."
+    },
+    {
+      "start": 1528.84,
+      "duration": 3.64,
+      "text": "All right, I'm dead."
+    },
+    {
+      "start": 1531.2,
+      "duration": 3.72,
+      "text": "Cuz they spent thousands of marketing"
+    },
+    {
+      "start": 1532.48,
+      "duration": 5.8,
+      "text": "sabotage. Yeah, I know."
+    },
+    {
+      "start": 1534.92,
+      "duration": 5.6,
+      "text": "I know. It sucks though. And and like"
+    },
+    {
+      "start": 1538.28,
+      "duration": 4.399,
+      "text": "the video game market right now i- is"
+    },
+    {
+      "start": 1540.52,
+      "duration": 3.92,
+      "text": "awful. Like there's Arc Raiders who they"
+    },
+    {
+      "start": 1542.679,
+      "duration": 4.081,
+      "text": "did a really good job with it and I feel"
+    },
+    {
+      "start": 1544.44,
+      "duration": 3.88,
+      "text": "like they actually cared about like what"
+    },
+    {
+      "start": 1546.76,
+      "duration": 3.2,
+      "text": "they put out."
+    },
+    {
+      "start": 1548.32,
+      "duration": 3.16,
+      "text": "Like you can tell they're artists. You"
+    },
+    {
+      "start": 1549.96,
+      "duration": 4.16,
+      "text": "know, like everything looks beautiful."
+    },
+    {
+      "start": 1551.48,
+      "duration": 6.56,
+      "text": "There's like awesome sound to the game"
+    },
+    {
+      "start": 1554.12,
+      "duration": 9.6,
+      "text": "and it actually runs somewhat decent."
+    },
+    {
+      "start": 1558.04,
+      "duration": 5.68,
+      "text": "Hulk zombies. Yes. Yes. Yes. Yes."
+    },
+    {
+      "start": 1564.52,
+      "duration": 2.84,
+      "text": "Hulk zombies. All right, so we're going"
+    },
+    {
+      "start": 1565.84,
+      "duration": 4.08,
+      "text": "to push that live cuz that was [ __ ]"
+    },
+    {
+      "start": 1567.36,
+      "duration": 2.56,
+      "text": "awesome."
+    },
+    {
+      "start": 1572.92,
+      "duration": 6.04,
+      "text": "I'm going to say, \"Okay, that was"
+    },
+    {
+      "start": 1576.08,
+      "duration": 2.88,
+      "text": "awesome."
+    },
+    {
+      "start": 1579.72,
+      "duration": 8.36,
+      "text": "Please push that"
+    },
+    {
+      "start": 1582.76,
+      "duration": 5.32,
+      "text": "live to Oh [ __ ] that's the wrong one."
+    },
+    {
+      "start": 1588.96,
+      "duration": 8.92,
+      "text": "Okay, that was awesome. Please"
+    },
+    {
+      "start": 1593.72,
+      "duration": 5.76,
+      "text": "push live to the server.\""
+    },
+    {
+      "start": 1597.88,
+      "duration": 3.2,
+      "text": "Okay, great. I feel like the game is"
+    },
+    {
+      "start": 1599.48,
+      "duration": 5.64,
+      "text": "getting a little bit either too"
+    },
+    {
+      "start": 1601.08,
+      "duration": 4.04,
+      "text": "challenging or I'm just"
+    },
+    {
+      "start": 1606.56,
+      "duration": 3.119,
+      "text": "not"
+    },
+    {
+      "start": 1607.6,
+      "duration": 2.079,
+      "text": "um"
+    },
+    {
+      "start": 1611.76,
+      "duration": 3.48,
+      "text": "Oh, it's already live on the server."
+    },
+    {
+      "start": 1612.628,
+      "duration": 2.612,
+      "text": "[music] Great."
+    },
+    {
+      "start": 1615.64,
+      "duration": 6.32,
+      "text": "Is the game getting too challenging or"
+    },
+    {
+      "start": 1617.64,
+      "duration": 4.32,
+      "text": "I'm just not playing good at it?"
+    },
+    {
+      "start": 1622.88,
+      "duration": 4.44,
+      "text": "So um"
+    },
+    {
+      "start": 1624.8,
+      "duration": 4.56,
+      "text": "we'll go to Google AI Studio."
+    },
+    {
+      "start": 1627.32,
+      "duration": 4.28,
+      "text": "And then we're going to get the cutscene"
+    },
+    {
+      "start": 1629.36,
+      "duration": 3.16,
+      "text": "started"
+    },
+    {
+      "start": 1631.6,
+      "duration": 2.96,
+      "text": "for"
+    },
+    {
+      "start": 1632.52,
+      "duration": 2.04,
+      "text": "uh"
+    },
+    {
+      "start": 1638.84,
+      "duration": 5.228,
+      "text": "for the zombie"
+    },
+    {
+      "start": 1641.64,
+      "duration": 7.0,
+      "text": "upgrading from the regular level zombie"
+    },
+    {
+      "start": 1644.068,
+      "duration": 4.572,
+      "text": "[music] to the uh the upgraded zombie."
+    },
+    {
+      "start": 1654.8,
+      "duration": 2.32,
+      "text": "All right."
+    },
+    {
+      "start": 1657.84,
+      "duration": 4.76,
+      "text": "I'll be back in"
+    },
+    {
+      "start": 1659.679,
+      "duration": 2.921,
+      "text": "literally 3 seconds."
+    },
+    {
+      "start": 1701.48,
+      "duration": 2.6,
+      "text": "All right, I'm back."
+    },
+    {
+      "start": 1705.32,
+      "duration": 3.0,
+      "text": "Gamers love challenging the game should"
+    },
+    {
+      "start": 1706.72,
+      "duration": 4.04,
+      "text": "trigger their ego. Yeah, yeah, it"
+    },
+    {
+      "start": 1708.32,
+      "duration": 3.08,
+      "text": "should. Oh, he's back."
+    },
+    {
+      "start": 1710.76,
+      "duration": 1.919,
+      "text": "He's [laughter]"
+    },
+    {
+      "start": 1711.4,
+      "duration": 3.48,
+      "text": "back."
+    },
+    {
+      "start": 1712.679,
+      "duration": 5.041,
+      "text": "Felix, you have staying power. I'm not"
+    },
+    {
+      "start": 1714.88,
+      "duration": 6.96,
+      "text": "going to lie."
+    },
+    {
+      "start": 1717.72,
+      "duration": 5.48,
+      "text": "It's okay, Felix. We we forgive you."
+    },
+    {
+      "start": 1721.84,
+      "duration": 4.28,
+      "text": "How'd you find How'd you find this"
+    },
+    {
+      "start": 1723.2,
+      "duration": 5.56,
+      "text": "channel, Felix? From X or"
+    },
+    {
+      "start": 1726.12,
+      "duration": 2.64,
+      "text": "from YouTube?"
+    },
+    {
+      "start": 1737.84,
+      "duration": 3.56,
+      "text": "All right, so we're going to go um"
+    },
+    {
+      "start": 1743.2,
+      "duration": 3.8,
+      "text": "I'm going to grab [music] this in here."
+    },
+    {
+      "start": 1745.28,
+      "duration": 2.96,
+      "text": "We got to make the cutscene, okay? So"
+    },
+    {
+      "start": 1747.0,
+      "duration": 2.76,
+      "text": "the way we're going to do that is we're"
+    },
+    {
+      "start": 1748.24,
+      "duration": 3.16,
+      "text": "going to take this image that we have"
+    },
+    {
+      "start": 1749.76,
+      "duration": 2.385,
+      "text": "currently right here."
+    },
+    {
+      "start": 1751.4,
+      "duration": 1.04,
+      "text": "This one."
+    },
+    {
+      "start": 1752.145,
+      "duration": 2.055,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1752.44,
+      "duration": 4.12,
+      "text": ">> We're going to generate a second image"
+    },
+    {
+      "start": 1754.2,
+      "duration": 6.36,
+      "text": "with the new zombie"
+    },
+    {
+      "start": 1756.56,
+      "duration": 4.0,
+      "text": "on there, okay? This zombie."
+    },
+    {
+      "start": 1763.0,
+      "duration": 3.84,
+      "text": "All right? So we're going to make it"
+    },
+    {
+      "start": 1764.76,
+      "duration": 4.8,
+      "text": "with this zombie."
+    },
+    {
+      "start": 1766.84,
+      "duration": 5.44,
+      "text": "First image here, second image here, and"
+    },
+    {
+      "start": 1769.56,
+      "duration": 6.119,
+      "text": "then we are going to put it in Kling and"
+    },
+    {
+      "start": 1772.28,
+      "duration": 5.28,
+      "text": "make an AI video of it evolving"
+    },
+    {
+      "start": 1775.679,
+      "duration": 3.521,
+      "text": "from Oh [ __ ] No, this is not the right"
+    },
+    {
+      "start": 1777.56,
+      "duration": 2.88,
+      "text": "one. This one right here."
+    },
+    {
+      "start": 1779.2,
+      "duration": 4.28,
+      "text": "This one. We're going to make a video of"
+    },
+    {
+      "start": 1780.44,
+      "duration": 6.2,
+      "text": "it evolving from this zombie to this"
+    },
+    {
+      "start": 1783.48,
+      "duration": 6.72,
+      "text": "zombie super mutant."
+    },
+    {
+      "start": 1786.64,
+      "duration": 6.32,
+      "text": "Okay? With an AI video. And when we get"
+    },
+    {
+      "start": 1790.2,
+      "duration": 4.76,
+      "text": "to wave number two, the cutscene is"
+    },
+    {
+      "start": 1792.96,
+      "duration": 4.16,
+      "text": "going to fire and we're going to play"
+    },
+    {
+      "start": 1794.96,
+      "duration": 5.12,
+      "text": "some sort of awesome soundtrack like oh"
+    },
+    {
+      "start": 1797.12,
+      "duration": 4.16,
+      "text": "oh no, the zombie's evolving."
+    },
+    {
+      "start": 1800.08,
+      "duration": 4.8,
+      "text": "And then you're going to hear some sort"
+    },
+    {
+      "start": 1801.28,
+      "duration": 6.36,
+      "text": "of awful shriek in the background like"
+    },
+    {
+      "start": 1804.88,
+      "duration": 4.76,
+      "text": "and it'll cut right back to the game and"
+    },
+    {
+      "start": 1807.64,
+      "duration": 5.4,
+      "text": "they'll be running after you like crazy."
+    },
+    {
+      "start": 1809.64,
+      "duration": 3.4,
+      "text": "So, let's go ahead and make this happen."
+    },
+    {
+      "start": 1814.24,
+      "duration": 5.32,
+      "text": "First, let's prompt it. So,"
+    },
+    {
+      "start": 1817.08,
+      "duration": 4.68,
+      "text": "I'm going to say"
+    },
+    {
+      "start": 1819.56,
+      "duration": 5.56,
+      "text": "Okay, perfect."
+    },
+    {
+      "start": 1821.76,
+      "duration": 7.76,
+      "text": "Replace [music] the guy"
+    },
+    {
+      "start": 1825.12,
+      "duration": 7.2,
+      "text": "in the photo with this"
+    },
+    {
+      "start": 1829.52,
+      "duration": 2.8,
+      "text": "mutant."
+    },
+    {
+      "start": 1833.0,
+      "duration": 3.0,
+      "text": "And we'll hit run."
+    },
+    {
+      "start": 1841.12,
+      "duration": 7.366,
+      "text": "And then we're going to go to"
+    },
+    {
+      "start": 1845.16,
+      "duration": 3.326,
+      "text": "super mutant [music]"
+    },
+    {
+      "start": 1848.72,
+      "duration": 2.76,
+      "text": "MP3."
+    },
+    {
+      "start": 1853.56,
+      "duration": 3.2,
+      "text": "God damn it."
+    },
+    {
+      "start": 1857.56,
+      "duration": 4.08,
+      "text": "It's okay."
+    },
+    {
+      "start": 1862.52,
+      "duration": 3.76,
+      "text": "I don't I don't know if we're going to"
+    },
+    {
+      "start": 1863.88,
+      "duration": 4.88,
+      "text": "add a breathing animation, guys,"
+    },
+    {
+      "start": 1866.28,
+      "duration": 4.28,
+      "text": "unfortunately."
+    },
+    {
+      "start": 1868.76,
+      "duration": 3.56,
+      "text": "How did you find How did you find the"
+    },
+    {
+      "start": 1870.56,
+      "duration": 4.44,
+      "text": "channel?"
+    },
+    {
+      "start": 1872.32,
+      "duration": 2.68,
+      "text": "Is that from"
+    },
+    {
+      "start": 1875.08,
+      "duration": 3.68,
+      "text": "Is that from X or is that from YouTube?"
+    },
+    {
+      "start": 1879.88,
+      "duration": 3.52,
+      "text": "And are you the same person?"
+    },
+    {
+      "start": 1883.48,
+      "duration": 2.56,
+      "text": "Also."
+    },
+    {
+      "start": 1906.64,
+      "duration": 4.8,
+      "text": "Small correction needed when game over"
+    },
+    {
+      "start": 1908.08,
+      "duration": 6.16,
+      "text": "after wave No, no, kills."
+    },
+    {
+      "start": 1911.44,
+      "duration": 6.52,
+      "text": "Make kills nose"
+    },
+    {
+      "start": 1914.24,
+      "duration": 3.72,
+      "text": "after world kills."
+    },
+    {
+      "start": 1918.4,
+      "duration": 3.88,
+      "text": "That's the craziest chat ever."
+    },
+    {
+      "start": 1920.679,
+      "duration": 4.521,
+      "text": "What does that mean? Small correction"
+    },
+    {
+      "start": 1922.28,
+      "duration": 5.88,
+      "text": "needed when game over after"
+    },
+    {
+      "start": 1925.2,
+      "duration": 2.96,
+      "text": "wave."
+    },
+    {
+      "start": 1934.6,
+      "duration": 4.72,
+      "text": "That's excellent."
+    },
+    {
+      "start": 1936.56,
+      "duration": 2.76,
+      "text": "That's really"
+    },
+    {
+      "start": 1941.4,
+      "duration": 5.4,
+      "text": "Oh, you're the same guy."
+    },
+    {
+      "start": 1944.24,
+      "duration": 2.56,
+      "text": "But but"
+    },
+    {
+      "start": 1948.76,
+      "duration": 2.84,
+      "text": "I don't get it."
+    },
+    {
+      "start": 1951.72,
+      "duration": 0.88,
+      "text": "It's Nos"
+    },
+    {
+      "start": 1952.577,
+      "duration": 2.703,
+      "text": ">> [music]"
+    },
+    {
+      "start": 1952.6,
+      "duration": 2.68,
+      "text": ">> numbers."
+    },
+    {
+      "start": 1955.56,
+      "duration": 2.88,
+      "text": "What does that mean?"
+    },
+    {
+      "start": 1966.08,
+      "duration": 4.56,
+      "text": "No."
+    },
+    {
+      "start": 1967.84,
+      "duration": 2.8,
+      "text": "No and no."
+    },
+    {
+      "start": 1970.8,
+      "duration": 3.44,
+      "text": "Can you guys hear the"
+    },
+    {
+      "start": 1972.6,
+      "duration": 3.04,
+      "text": "Can you guys hear the text-to-speech or"
+    },
+    {
+      "start": 1974.24,
+      "duration": 3.68,
+      "text": "is that just"
+    },
+    {
+      "start": 1975.64,
+      "duration": 5.84,
+      "text": "only on my end?"
+    },
+    {
+      "start": 1977.92,
+      "duration": 3.56,
+      "text": "Cuz I have chat-to-speech."
+    },
+    {
+      "start": 1981.84,
+      "duration": 3.839,
+      "text": "I think you're the same guy."
+    },
+    {
+      "start": 1984.16,
+      "duration": 3.92,
+      "text": "How can you prove you're not the same"
+    },
+    {
+      "start": 1985.679,
+      "duration": 2.401,
+      "text": "guy?"
+    },
+    {
+      "start": 1997.76,
+      "duration": 2.28,
+      "text": "No."
+    },
+    {
+      "start": 2006.6,
+      "duration": 5.36,
+      "text": "I bet you it doesn't like that."
+    },
+    {
+      "start": 2008.92,
+      "duration": 3.04,
+      "text": "I'm going to have to redo this."
+    },
+    {
+      "start": 2014.16,
+      "duration": 4.48,
+      "text": "Oh, you can't hear the text-to-speech?"
+    },
+    {
+      "start": 2015.64,
+      "duration": 3.0,
+      "text": "That sucks."
+    },
+    {
+      "start": 2019.96,
+      "duration": 3.44,
+      "text": "Cuz right now when you guys comment, it"
+    },
+    {
+      "start": 2021.84,
+      "duration": 3.16,
+      "text": "plays"
+    },
+    {
+      "start": 2023.4,
+      "duration": 3.88,
+      "text": "it plays what you guys are saying in my"
+    },
+    {
+      "start": 2025.0,
+      "duration": 3.6,
+      "text": "headphones."
+    },
+    {
+      "start": 2027.28,
+      "duration": 4.88,
+      "text": "I don't I don't understand how [music]"
+    },
+    {
+      "start": 2028.6,
+      "duration": 3.56,
+      "text": "it's not playing over the stream."
+    },
+    {
+      "start": 2033.08,
+      "duration": 4.96,
+      "text": "You want to breathe it? Okay."
+    },
+    {
+      "start": 2035.04,
+      "duration": 3.0,
+      "text": "Well, that's fair enough."
+    },
+    {
+      "start": 2038.08,
+      "duration": 3.2,
+      "text": "No. No, you do."
+    },
+    {
+      "start": 2040.44,
+      "duration": 4.0,
+      "text": "You"
+    },
+    {
+      "start": 2041.28,
+      "duration": 3.16,
+      "text": "You still do."
+    },
+    {
+      "start": 2055.48,
+      "duration": 5.6,
+      "text": "I got a crazy idea."
+    },
+    {
+      "start": 2061.76,
+      "duration": 3.68,
+      "text": "Thank you."
+    },
+    {
+      "start": 2067.56,
+      "duration": 5.92,
+      "text": "Listen, I may have put you guys back in"
+    },
+    {
+      "start": 2069.32,
+      "duration": 4.16,
+      "text": "timeout for a second, okay?"
+    },
+    {
+      "start": 2073.56,
+      "duration": 3.44,
+      "text": "But please don't go."
+    },
+    {
+      "start": 2075.359,
+      "duration": 4.8,
+      "text": "I'm I'm [music] relying on you guys for"
+    },
+    {
+      "start": 2077.0,
+      "duration": 3.159,
+      "text": "the stream views right now."
+    },
+    {
+      "start": 2083.96,
+      "duration": 3.04,
+      "text": "Right."
+    },
+    {
+      "start": 2084.879,
+      "duration": 2.121,
+      "text": "Um"
+    },
+    {
+      "start": 2087.04,
+      "duration": 4.96,
+      "text": "We're going to download this."
+    },
+    {
+      "start": 2089.0,
+      "duration": 3.0,
+      "text": "We're going to put that in there."
+    },
+    {
+      "start": 2101.2,
+      "duration": 6.88,
+      "text": "It shows like this wave one zero kills"
+    },
+    {
+      "start": 2104.12,
+      "duration": 5.36,
+      "text": "instead show wave one."
+    },
+    {
+      "start": 2108.08,
+      "duration": 4.6,
+      "text": "Oh, yeah, yeah, yeah, yeah. That's a"
+    },
+    {
+      "start": 2109.48,
+      "duration": 3.2,
+      "text": "good idea. That's a good idea."
+    },
+    {
+      "start": 2119.0,
+      "duration": 3.44,
+      "text": "Let me see what that looks like,"
+    },
+    {
+      "start": 2119.84,
+      "duration": 2.6,
+      "text": "actually."
+    },
+    {
+      "start": 2137.28,
+      "duration": 3.079,
+      "text": "I don't know, though."
+    },
+    {
+      "start": 2141.72,
+      "duration": 3.88,
+      "text": "I feel like that's pretty clean, isn't"
+    },
+    {
+      "start": 2143.28,
+      "duration": 5.2,
+      "text": "it? You don't think so? Three kills,"
+    },
+    {
+      "start": 2145.6,
+      "duration": 4.64,
+      "text": "wave one three kills."
+    },
+    {
+      "start": 2148.48,
+      "duration": 4.44,
+      "text": "Score 50."
+    },
+    {
+      "start": 2150.24,
+      "duration": 2.68,
+      "text": "You don't like it?"
+    },
+    {
+      "start": 2161.52,
+      "duration": 3.96,
+      "text": "Now, we're making no progress right now."
+    },
+    {
+      "start": 2166.6,
+      "duration": 3.4,
+      "text": "No, we're making lots of progress."
+    },
+    {
+      "start": 2177.84,
+      "duration": 3.24,
+      "text": "All right. So, like I said,"
+    },
+    {
+      "start": 2179.4,
+      "duration": 4.84,
+      "text": "adding this guy in there and then we're"
+    },
+    {
+      "start": 2181.08,
+      "duration": 6.08,
+      "text": "going to create the Kling"
+    },
+    {
+      "start": 2184.24,
+      "duration": 2.92,
+      "text": "AI video."
+    },
+    {
+      "start": 2198.04,
+      "duration": 3.48,
+      "text": "This is going to be what we're going to"
+    },
+    {
+      "start": 2199.12,
+      "duration": 4.12,
+      "text": "use to create the"
+    },
+    {
+      "start": 2201.52,
+      "duration": 5.52,
+      "text": "video between the animations. Don't"
+    },
+    {
+      "start": 2203.24,
+      "duration": 3.8,
+      "text": "worry about these TikTok ads."
+    },
+    {
+      "start": 2216.88,
+      "duration": 3.0,
+      "text": "Okay."
+    },
+    {
+      "start": 2233.12,
+      "duration": 5.52,
+      "text": "And then hit download."
+    },
+    {
+      "start": 2235.6,
+      "duration": 3.04,
+      "text": "Why is it not downloading?"
+    },
+    {
+      "start": 2242.12,
+      "duration": 2.96,
+      "text": "I feel like there's something wrong with"
+    },
+    {
+      "start": 2243.32,
+      "duration": 4.24,
+      "text": "Google AI Studio today. It's like not"
+    },
+    {
+      "start": 2245.08,
+      "duration": 2.48,
+      "text": "loading."
+    },
+    {
+      "start": 2255.68,
+      "duration": 3.56,
+      "text": "Like it just caught on thinking."
+    },
+    {
+      "start": 2260.04,
+      "duration": 4.52,
+      "text": "But I really don't want to use something"
+    },
+    {
+      "start": 2261.48,
+      "duration": 3.08,
+      "text": "else to"
+    },
+    {
+      "start": 2266.6,
+      "duration": 3.08,
+      "text": "try to make these."
+    },
+    {
+      "start": 2284.04,
+      "duration": 4.96,
+      "text": "Failed to generate content. I'm going to"
+    },
+    {
+      "start": 2285.84,
+      "duration": 3.16,
+      "text": "try a different model."
+    },
+    {
+      "start": 2289.96,
+      "duration": 6.08,
+      "text": "We'll do this one."
+    },
+    {
+      "start": 2292.8,
+      "duration": 3.24,
+      "text": "We'll do rerun."
+    },
+    {
+      "start": 2302.92,
+      "duration": 4.04,
+      "text": "And we'll see if this one can get it."
+    },
+    {
+      "start": 2305.04,
+      "duration": 4.44,
+      "text": "We're using Nano Banana Pro instead of"
+    },
+    {
+      "start": 2306.96,
+      "duration": 5.04,
+      "text": "Nano Banana"
+    },
+    {
+      "start": 2309.48,
+      "duration": 2.52,
+      "text": "whatever."
+    },
+    {
+      "start": 2312.76,
+      "duration": 5.28,
+      "text": "Instead of Nano Banana Flash 3 preview."
+    },
+    {
+      "start": 2326.84,
+      "duration": 5.2,
+      "text": "I must have it somewhere."
+    },
+    {
+      "start": 2329.24,
+      "duration": 2.8,
+      "text": "Maybe I don't."
+    },
+    {
+      "start": 2339.64,
+      "duration": 4.0,
+      "text": "Cuz I can't even download this [ __ ]"
+    },
+    {
+      "start": 2341.12,
+      "duration": 2.52,
+      "text": "right now."
+    },
+    {
+      "start": 2344.56,
+      "duration": 4.36,
+      "text": "Google AI Studio might be screwing us"
+    },
+    {
+      "start": 2346.359,
+      "duration": 2.561,
+      "text": "right now."
+    },
+    {
+      "start": 2354.359,
+      "duration": 2.881,
+      "text": "What's up? What's up?"
+    },
+    {
+      "start": 2357.76,
+      "duration": 2.84,
+      "text": "How you doing, Wolfie?"
+    },
+    {
+      "start": 2365.48,
+      "duration": 3.0,
+      "text": "No."
+    },
+    {
+      "start": 2372.6,
+      "duration": 3.44,
+      "text": "So, we might have to go to chat GPT and"
+    },
+    {
+      "start": 2374.56,
+      "duration": 5.2,
+      "text": "see if that can generate the image for"
+    },
+    {
+      "start": 2376.04,
+      "duration": 3.72,
+      "text": "us instead because um"
+    },
+    {
+      "start": 2382.16,
+      "duration": 5.36,
+      "text": "it seems like Nano Banana Pro is"
+    },
+    {
+      "start": 2385.56,
+      "duration": 6.4,
+      "text": "[ __ ] us."
+    },
+    {
+      "start": 2387.52,
+      "duration": 8.64,
+      "text": "Oh, no. Oh, no."
+    },
+    {
+      "start": 2391.96,
+      "duration": 4.2,
+      "text": "How many accounts do you have?"
+    },
+    {
+      "start": 2398.76,
+      "duration": 3.4,
+      "text": "You have endless accounts."
+    },
+    {
+      "start": 2414.36,
+      "duration": 3.04,
+      "text": "What up, you don? How you doing?"
+    },
+    {
+      "start": 2419.16,
+      "duration": 2.84,
+      "text": "Good morning. Good morning."
+    },
+    {
+      "start": 2435.32,
+      "duration": 3.16,
+      "text": "Endless accounts."
+    },
+    {
+      "start": 2473.68,
+      "duration": 2.92,
+      "text": "Oh, you're back."
+    },
+    {
+      "start": 2481.28,
+      "duration": 2.88,
+      "text": "All right. Um"
+    },
+    {
+      "start": 2486.92,
+      "duration": 2.88,
+      "text": "What about"
+    },
+    {
+      "start": 2513.68,
+      "duration": 5.48,
+      "text": "Does it keep the moon landscape"
+    },
+    {
+      "start": 2517.84,
+      "duration": 5.92,
+      "text": "the"
+    },
+    {
+      "start": 2519.16,
+      "duration": 8.76,
+      "text": "same, but replace"
+    },
+    {
+      "start": 2523.76,
+      "duration": 5.76,
+      "text": "the man in the photo"
+    },
+    {
+      "start": 2527.92,
+      "duration": 4.4,
+      "text": "with"
+    },
+    {
+      "start": 2529.52,
+      "duration": 5.6,
+      "text": "the super"
+    },
+    {
+      "start": 2532.32,
+      "duration": 2.8,
+      "text": "mutant?"
+    },
+    {
+      "start": 2540.4,
+      "duration": 2.04,
+      "text": "I don't know if it's going to be able to"
+    },
+    {
+      "start": 2541.28,
+      "duration": 3.424,
+      "text": "do this."
+    },
+    {
+      "start": 2542.44,
+      "duration": 4.72,
+      "text": "And also, it doesn't even let me pick"
+    },
+    {
+      "start": 2544.704,
+      "duration": 6.336,
+      "text": "[music] like"
+    },
+    {
+      "start": 2547.16,
+      "duration": 3.88,
+      "text": "9 by 16 or anything like that."
+    },
+    {
+      "start": 2551.24,
+      "duration": 5.0,
+      "text": "I might have to like"
+    },
+    {
+      "start": 2553.64,
+      "duration": 5.32,
+      "text": "just do it with Photoshop"
+    },
+    {
+      "start": 2556.24,
+      "duration": 2.72,
+      "text": "or something."
+    },
+    {
+      "start": 2564.48,
+      "duration": 3.36,
+      "text": "It's going to suck because"
+    },
+    {
+      "start": 2571.28,
+      "duration": 3.64,
+      "text": "the"
+    },
+    {
+      "start": 2573.56,
+      "duration": 4.72,
+      "text": "I'm going to have to make the shadow and"
+    },
+    {
+      "start": 2574.92,
+      "duration": 3.36,
+      "text": "[ __ ] which won't be good."
+    },
+    {
+      "start": 2581.76,
+      "duration": 4.6,
+      "text": "I'm sorry, but the image we created may"
+    },
+    {
+      "start": 2583.2,
+      "duration": 6.48,
+      "text": "violate our guardrails."
+    },
+    {
+      "start": 2586.36,
+      "duration": 3.32,
+      "text": "Are you [ __ ] kidding me?"
+    },
+    {
+      "start": 2593.2,
+      "duration": 5.6,
+      "text": "All right. We're going to have to do"
+    },
+    {
+      "start": 2596.12,
+      "duration": 5.28,
+      "text": "new chat."
+    },
+    {
+      "start": 2598.8,
+      "duration": 2.6,
+      "text": "Link."
+    },
+    {
+      "start": 2602.84,
+      "duration": 2.4,
+      "text": "Come on."
+    },
+    {
+      "start": 2611.92,
+      "duration": 3.0,
+      "text": "Can you"
+    },
+    {
+      "start": 2617.24,
+      "duration": 9.56,
+      "text": "replace the man the zombie on the moon"
+    },
+    {
+      "start": 2623.92,
+      "duration": 6.92,
+      "text": "with this"
+    },
+    {
+      "start": 2626.8,
+      "duration": 6.88,
+      "text": "super mutant guy"
+    },
+    {
+      "start": 2630.84,
+      "duration": 2.84,
+      "text": "for"
+    },
+    {
+      "start": 2633.8,
+      "duration": 3.2,
+      "text": "All right. Which is only"
+    },
+    {
+      "start": 2646.28,
+      "duration": 2.76,
+      "text": "Somehow it's going to work."
+    },
+    {
+      "start": 2651.2,
+      "duration": 2.48,
+      "text": "I know it."
+    },
+    {
+      "start": 2654.08,
+      "duration": 2.52,
+      "text": "It has to."
+    },
+    {
+      "start": 2662.88,
+      "duration": 3.12,
+      "text": "All right. Back to Moon Colony."
+    },
+    {
+      "start": 2666.48,
+      "duration": 8.24,
+      "text": "Let's figure out how we can make stages"
+    },
+    {
+      "start": 2670.92,
+      "duration": 3.8,
+      "text": "so that you can progress through it."
+    },
+    {
+      "start": 2689.16,
+      "duration": 2.199,
+      "text": "Ooh."
+    },
+    {
+      "start": 2703.56,
+      "duration": 4.16,
+      "text": "Something like this could be good."
+    },
+    {
+      "start": 2711.08,
+      "duration": 6.08,
+      "text": "Where you have to like"
+    },
+    {
+      "start": 2713.44,
+      "duration": 3.72,
+      "text": "go inside, maybe."
+    },
+    {
+      "start": 2718.0,
+      "duration": 3.4,
+      "text": "Yeah, maybe we have a dome."
+    },
+    {
+      "start": 2723.56,
+      "duration": 4.68,
+      "text": "Maybe we have a space dome."
+    },
+    {
+      "start": 2726.88,
+      "duration": 4.56,
+      "text": "You have to go into. We just have to"
+    },
+    {
+      "start": 2728.24,
+      "duration": 7.44,
+      "text": "create an end state for the game where"
+    },
+    {
+      "start": 2731.44,
+      "duration": 4.24,
+      "text": "you go in and then"
+    },
+    {
+      "start": 2736.56,
+      "duration": 3.12,
+      "text": "you can take off"
+    },
+    {
+      "start": 2740.72,
+      "duration": 5.08,
+      "text": "and leave somehow"
+    },
+    {
+      "start": 2742.8,
+      "duration": 3.0,
+      "text": "when you win the game."
+    },
+    {
+      "start": 2765.6,
+      "duration": 3.6,
+      "text": "Oh, like this would be so good."
+    },
+    {
+      "start": 2770.04,
+      "duration": 4.56,
+      "text": "Something like this with like glowing"
+    },
+    {
+      "start": 2771.52,
+      "duration": 3.08,
+      "text": "plants and [ __ ]"
+    },
+    {
+      "start": 2788.4,
+      "duration": 4.24,
+      "text": "Or a structure like this that you"
+    },
+    {
+      "start": 2789.677,
+      "duration": 2.963,
+      "text": "[music] went inside of."
+    },
+    {
+      "start": 2793.84,
+      "duration": 5.6,
+      "text": "That's going to be way past the scope of"
+    },
+    {
+      "start": 2796.68,
+      "duration": 2.76,
+      "text": "what we're doing here."
+    },
+    {
+      "start": 2800.44,
+      "duration": 2.68,
+      "text": "Me thinks."
+    },
+    {
+      "start": 2810.12,
+      "duration": 4.52,
+      "text": "I don't think this is going to work cuz"
+    },
+    {
+      "start": 2811.359,
+      "duration": 3.281,
+      "text": "it would have already [music] done it."
+    },
+    {
+      "start": 2815.72,
+      "duration": 3.08,
+      "text": "God, it's irritating."
+    },
+    {
+      "start": 2845.92,
+      "duration": 5.6,
+      "text": "Like maybe we try to Well, really"
+    },
+    {
+      "start": 2850.359,
+      "duration": 2.841,
+      "text": "there's almost nothing we can do right"
+    },
+    {
+      "start": 2851.52,
+      "duration": 3.48,
+      "text": "now because"
+    },
+    {
+      "start": 2853.2,
+      "duration": 3.32,
+      "text": "even creating the map structures, we"
+    },
+    {
+      "start": 2855.0,
+      "duration": 4.48,
+      "text": "have to have [music]"
+    },
+    {
+      "start": 2856.52,
+      "duration": 2.96,
+      "text": "Nano Banana"
+    },
+    {
+      "start": 2860.64,
+      "duration": 4.96,
+      "text": "We have to have Nano Banana"
+    },
+    {
+      "start": 2862.96,
+      "duration": 5.64,
+      "text": "make the structure and then we have to"
+    },
+    {
+      "start": 2865.6,
+      "duration": 4.16,
+      "text": "convert it to a 3D model."
+    },
+    {
+      "start": 2868.6,
+      "duration": 3.6,
+      "text": "But"
+    },
+    {
+      "start": 2869.76,
+      "duration": 4.96,
+      "text": "since Nano Banana is literally not"
+    },
+    {
+      "start": 2872.2,
+      "duration": 5.32,
+      "text": "working at all"
+    },
+    {
+      "start": 2874.72,
+      "duration": 2.8,
+      "text": "at all at all."
+    },
+    {
+      "start": 2878.2,
+      "duration": 3.56,
+      "text": "Let me just see if it can make anything."
+    },
+    {
+      "start": 2883.16,
+      "duration": 3.84,
+      "text": "Make a picture"
+    },
+    {
+      "start": 2887.44,
+      "duration": 4.56,
+      "text": "of a"
+    },
+    {
+      "start": 2889.48,
+      "duration": 2.52,
+      "text": "lemur."
+    },
+    {
+      "start": 2892.08,
+      "duration": 5.56,
+      "text": "We'll see if it can even make anything"
+    },
+    {
+      "start": 2894.2,
+      "duration": 3.44,
+      "text": "or if it's just completely down."
+    },
+    {
+      "start": 2897.84,
+      "duration": 5.24,
+      "text": "Is Nano Banana down today?"
+    },
+    {
+      "start": 2913.48,
+      "duration": 3.32,
+      "text": "There's no down detector."
+    },
+    {
+      "start": 2927.88,
+      "duration": 3.68,
+      "text": "Oh, it would seem [music] like Nano"
+    },
+    {
+      "start": 2929.04,
+      "duration": 4.6,
+      "text": "Banana is having some issues."
+    },
+    {
+      "start": 2931.56,
+      "duration": 4.52,
+      "text": "No."
+    },
+    {
+      "start": 2933.64,
+      "duration": 2.44,
+      "text": "Maybe."
+    },
+    {
+      "start": 2943.12,
+      "duration": 2.68,
+      "text": "[ __ ]"
+    },
+    {
+      "start": 2950.52,
+      "duration": 4.16,
+      "text": "So, it's just failing for some reason."
+    },
+    {
+      "start": 2961.88,
+      "duration": 3.44,
+      "text": "All right."
+    },
+    {
+      "start": 2964.2,
+      "duration": 4.72,
+      "text": "We're not going to waste any more time"
+    },
+    {
+      "start": 2965.32,
+      "duration": 3.6,
+      "text": "on this. We're just going to"
+    },
+    {
+      "start": 2974.88,
+      "duration": 6.12,
+      "text": "open this in Photoshop."
+    },
+    {
+      "start": 2978.08,
+      "duration": 2.92,
+      "text": "Unfortunately."
+    },
+    {
+      "start": 2983.24,
+      "duration": 5.12,
+      "text": "We're going to open this"
+    },
+    {
+      "start": 2985.4,
+      "duration": 2.96,
+      "text": "with Photoshop."
+    },
+    {
+      "start": 2991.64,
+      "duration": 3.04,
+      "text": "Remove background."
+    },
+    {
+      "start": 3011.08,
+      "duration": 4.32,
+      "text": "Not really that [music] high-res."
+    },
+    {
+      "start": 3023.48,
+      "duration": 3.04,
+      "text": "Oh, copy."
+    },
+    {
+      "start": 3026.72,
+      "duration": 2.72,
+      "text": "Paste."
+    },
+    {
+      "start": 3048.6,
+      "duration": 2.76,
+      "text": "Kind of"
+    },
+    {
+      "start": 3053.8,
+      "duration": 3.24,
+      "text": "[ __ ] things up a bit."
+    },
+    {
+      "start": 3056.265,
+      "duration": 3.775,
+      "text": ">> [music]"
+    },
+    {
+      "start": 3057.04,
+      "duration": 3.0,
+      "text": ">> Let's go."
+    },
+    {
+      "start": 3060.8,
+      "duration": 4.84,
+      "text": "Deselect."
+    },
+    {
+      "start": 3062.52,
+      "duration": 5.6,
+      "text": "Select subject."
+    },
+    {
+      "start": 3065.64,
+      "duration": 7.68,
+      "text": "Remove."
+    },
+    {
+      "start": 3068.12,
+      "duration": 5.2,
+      "text": "Okay. And then we'll go like"
+    },
+    {
+      "start": 3074.0,
+      "duration": 3.44,
+      "text": "generative fill."
+    },
+    {
+      "start": 3087.48,
+      "duration": 5.4,
+      "text": "Fill in the"
+    },
+    {
+      "start": 3090.44,
+      "duration": 5.2,
+      "text": "moon"
+    },
+    {
+      "start": 3092.88,
+      "duration": 5.6,
+      "text": "and space"
+    },
+    {
+      "start": 3095.64,
+      "duration": 2.84,
+      "text": "background."
+    },
+    {
+      "start": 3099.16,
+      "duration": 2.92,
+      "text": "See if I can nail this."
+    },
+    {
+      "start": 3108.32,
+      "duration": 2.8,
+      "text": "We're rolling."
+    },
+    {
+      "start": 3119.4,
+      "duration": 2.52,
+      "text": "No."
+    },
+    {
+      "start": 3122.12,
+      "duration": 3.2,
+      "text": "Why is it doing that?"
+    },
+    {
+      "start": 3125.64,
+      "duration": 2.48,
+      "text": "No."
+    },
+    {
+      "start": 3129.32,
+      "duration": 6.64,
+      "text": "Oh, god. Why?"
+    },
+    {
+      "start": 3132.48,
+      "duration": 3.48,
+      "text": "Wait, does this get covered?"
+    },
+    {
+      "start": 3137.0,
+      "duration": 2.52,
+      "text": "Maybe."
+    },
+    {
+      "start": 3140.52,
+      "duration": 5.36,
+      "text": "No, it doesn't."
+    },
+    {
+      "start": 3143.32,
+      "duration": 2.56,
+      "text": "[ __ ]"
+    },
+    {
+      "start": 3146.08,
+      "duration": 2.2,
+      "text": "Okay."
+    },
+    {
+      "start": 3148.44,
+      "duration": 2.96,
+      "text": "We're going to delete this."
+    },
+    {
+      "start": 3151.64,
+      "duration": 2.32,
+      "text": "Okay."
+    },
+    {
+      "start": 3156.0,
+      "duration": 2.92,
+      "text": "And then"
+    },
+    {
+      "start": 3161.2,
+      "duration": 6.84,
+      "text": "for now we'll make this invisible."
+    },
+    {
+      "start": 3164.88,
+      "duration": 3.16,
+      "text": "We'll select this."
+    },
+    {
+      "start": 3168.32,
+      "duration": 3.16,
+      "text": "Generative fill."
+    },
+    {
+      "start": 3172.92,
+      "duration": 6.36,
+      "text": "Fill in"
+    },
+    {
+      "start": 3176.4,
+      "duration": 2.88,
+      "text": "moon"
+    },
+    {
+      "start": 3179.8,
+      "duration": 3.16,
+      "text": "and"
+    },
+    {
+      "start": 3181.32,
+      "duration": 3.32,
+      "text": "space"
+    },
+    {
+      "start": 3182.96,
+      "duration": 4.08,
+      "text": "background."
+    },
+    {
+      "start": 3184.64,
+      "duration": 4.52,
+      "text": "No"
+    },
+    {
+      "start": 3187.04,
+      "duration": 4.32,
+      "text": "characters"
+    },
+    {
+      "start": 3189.16,
+      "duration": 5.2,
+      "text": "or"
+    },
+    {
+      "start": 3191.36,
+      "duration": 3.0,
+      "text": "planets."
+    },
+    {
+      "start": 3197.64,
+      "duration": 8.48,
+      "text": "See if that works."
+    },
+    {
+      "start": 3200.24,
+      "duration": 5.88,
+      "text": "Generate with Firefly fill and expand."
+    },
+    {
+      "start": 3211.72,
+      "duration": 4.96,
+      "text": "Right."
+    },
+    {
+      "start": 3213.84,
+      "duration": 2.84,
+      "text": "This might work."
+    },
+    {
+      "start": 3225.64,
+      "duration": 3.68,
+      "text": "I think we're just going to have to go"
+    },
+    {
+      "start": 3226.84,
+      "duration": 2.48,
+      "text": "with this."
+    },
+    {
+      "start": 3234.04,
+      "duration": 2.92,
+      "text": "Like it's not good."
+    },
+    {
+      "start": 3238.0,
+      "duration": 4.12,
+      "text": "But we're going to see what clean could"
+    },
+    {
+      "start": 3239.16,
+      "duration": 2.96,
+      "text": "do to make it good."
+    },
+    {
+      "start": 3261.04,
+      "duration": 3.319,
+      "text": "All right, we'll upload this."
+    },
+    {
+      "start": 3273.48,
+      "duration": 3.84,
+      "text": "And then"
+    },
+    {
+      "start": 3274.48,
+      "duration": 2.84,
+      "text": "we'll upload the new one."
+    },
+    {
+      "start": 3307.12,
+      "duration": 3.2,
+      "text": "Oh, this is not what we want."
+    },
+    {
+      "start": 3314.64,
+      "duration": 7.12,
+      "text": "Video generation."
+    },
+    {
+      "start": 3317.68,
+      "duration": 4.08,
+      "text": "Add start frames and end [music] frames."
+    },
+    {
+      "start": 3325.52,
+      "duration": 3.28,
+      "text": "All right, here's the start [music]"
+    },
+    {
+      "start": 3326.4,
+      "duration": 3.48,
+      "text": "frame."
+    },
+    {
+      "start": 3328.8,
+      "duration": 3.559,
+      "text": "And then we're going to add the end"
+    },
+    {
+      "start": 3329.88,
+      "duration": 2.479,
+      "text": "frame."
+    },
+    {
+      "start": 3333.48,
+      "duration": 2.24,
+      "text": "Oh."
+    },
+    {
+      "start": 3344.04,
+      "duration": 3.36,
+      "text": "And we'll say"
+    },
+    {
+      "start": 3348.04,
+      "duration": 6.64,
+      "text": "have"
+    },
+    {
+      "start": 3350.84,
+      "duration": 6.728,
+      "text": "the zombie evolve"
+    },
+    {
+      "start": 3354.68,
+      "duration": 3.0,
+      "text": "into this super"
+    },
+    {
+      "start": 3357.568,
+      "duration": 2.872,
+      "text": ">> [music]"
+    },
+    {
+      "start": 3357.68,
+      "duration": 2.76,
+      "text": ">> mutant."
+    },
+    {
+      "start": 3368.8,
+      "duration": 3.4,
+      "text": "Generate."
+    },
+    {
+      "start": 3370.44,
+      "duration": 4.0,
+      "text": "No."
+    },
+    {
+      "start": 3372.2,
+      "duration": 2.24,
+      "text": "What?"
+    },
+    {
+      "start": 3375.16,
+      "duration": 2.44,
+      "text": "Why?"
+    },
+    {
+      "start": 3381.68,
+      "duration": 4.56,
+      "text": "Oh, we're out of tokens. You kidding me?"
+    },
+    {
+      "start": 3393.76,
+      "duration": 6.12,
+      "text": "What if we bring it down?"
+    },
+    {
+      "start": 3395.64,
+      "duration": 4.24,
+      "text": "27? No."
+    },
+    {
+      "start": 3403.12,
+      "duration": 4.84,
+      "text": "Oh my god, [music] we're six credits"
+    },
+    {
+      "start": 3405.359,
+      "duration": 2.601,
+      "text": "short."
+    },
+    {
+      "start": 3412.44,
+      "duration": 3.28,
+      "text": "It's going to drive me insane."
+    },
+    {
+      "start": 3420.6,
+      "duration": 3.04,
+      "text": "Why is that more?"
+    },
+    {
+      "start": 3427.359,
+      "duration": 4.201,
+      "text": "25? We're [music] four credits short."
+    },
+    {
+      "start": 3432.64,
+      "duration": 4.76,
+      "text": "God, this is ridiculous. 35?"
+    },
+    {
+      "start": 3438.56,
+      "duration": 4.4,
+      "text": "35 still."
+    },
+    {
+      "start": 3442.96,
+      "duration": 2.96,
+      "text": "Come on."
+    },
+    {
+      "start": 3477.96,
+      "duration": 2.76,
+      "text": "This is insane."
+    },
+    {
+      "start": 3505.56,
+      "duration": 4.32,
+      "text": "All right, we may or may not have"
+    },
+    {
+      "start": 3507.16,
+      "duration": 2.72,
+      "text": "upgraded."
+    },
+    {
+      "start": 3512.92,
+      "duration": 4.76,
+      "text": "And it didn't even dump us back out to"
+    },
+    {
+      "start": 3514.96,
+      "duration": 2.72,
+      "text": "the"
+    },
+    {
+      "start": 3517.96,
+      "duration": 4.28,
+      "text": "the video creation"
+    },
+    {
+      "start": 3519.96,
+      "duration": 5.32,
+      "text": "page."
+    },
+    {
+      "start": 3522.24,
+      "duration": 3.04,
+      "text": "You're kidding me."
+    },
+    {
+      "start": 3528.64,
+      "duration": 2.6,
+      "text": "Okay."
+    },
+    {
+      "start": 3536.48,
+      "duration": 2.76,
+      "text": "Please."
+    },
+    {
+      "start": 3543.24,
+      "duration": 5.36,
+      "text": "Have [music] the zombie"
+    },
+    {
+      "start": 3546.52,
+      "duration": 6.08,
+      "text": "evolve"
+    },
+    {
+      "start": 3548.6,
+      "duration": 4.0,
+      "text": "into the mutant."
+    },
+    {
+      "start": 3558.96,
+      "duration": 3.12,
+      "text": "All right, that is generating."
+    },
+    {
+      "start": 3562.28,
+      "duration": 3.6,
+      "text": "We'll let that generate for 1 second."
+    },
+    {
+      "start": 3616.56,
+      "duration": 3.2,
+      "text": ">> Okay. What do we got?"
+    },
+    {
+      "start": 3627.36,
+      "duration": 3.0,
+      "text": "I think"
+    },
+    {
+      "start": 3629.04,
+      "duration": 4.08,
+      "text": "it's so bad, but I think we're going to"
+    },
+    {
+      "start": 3630.36,
+      "duration": 2.76,
+      "text": "have to go with it."
+    },
+    {
+      "start": 3642.2,
+      "duration": 5.2,
+      "text": "All right, let's just"
+    },
+    {
+      "start": 3644.96,
+      "duration": 5.52,
+      "text": "we'll download this."
+    },
+    {
+      "start": 3647.4,
+      "duration": 3.08,
+      "text": "It is not good."
+    },
+    {
+      "start": 3662.84,
+      "duration": 6.12,
+      "text": "We're going to cut this down"
+    },
+    {
+      "start": 3665.04,
+      "duration": 3.92,
+      "text": "so it's just like the uh"
+    },
+    {
+      "start": 3669.36,
+      "duration": 3.08,
+      "text": "evolving animation."
+    },
+    {
+      "start": 3695.84,
+      "duration": 5.52,
+      "text": "And then"
+    },
+    {
+      "start": 3697.6,
+      "duration": 3.76,
+      "text": "we're going to have it say"
+    },
+    {
+      "start": 3703.84,
+      "duration": 3.2,
+      "text": "the zombies"
+    },
+    {
+      "start": 3707.6,
+      "duration": 3.56,
+      "text": "are evolving."
+    },
+    {
+      "start": 3713.24,
+      "duration": 5.92,
+      "text": "Okay."
+    },
+    {
+      "start": 3715.84,
+      "duration": 3.32,
+      "text": "Center that."
+    },
+    {
+      "start": 3724.96,
+      "duration": 4.6,
+      "text": "And then we're going to make this"
+    },
+    {
+      "start": 3735.92,
+      "duration": 5.68,
+      "text": "red."
+    },
+    {
+      "start": 3737.84,
+      "duration": 6.68,
+      "text": "We're going to make this Arial"
+    },
+    {
+      "start": 3741.6,
+      "duration": 2.92,
+      "text": "bold."
+    },
+    {
+      "start": 3744.96,
+      "duration": 3.68,
+      "text": "We're going to add a shadow."
+    },
+    {
+      "start": 3760.92,
+      "duration": 4.24,
+      "text": "And with that the graphic [music] kind"
+    },
+    {
+      "start": 3762.16,
+      "duration": 3.0,
+      "text": "of hides"
+    },
+    {
+      "start": 3765.68,
+      "duration": 2.92,
+      "text": "how bad it is."
+    },
+    {
+      "start": 3770.12,
+      "duration": 4.12,
+      "text": "No, we'll take that off [music] and"
+    },
+    {
+      "start": 3771.2,
+      "duration": 3.04,
+      "text": "we'll just have that."
+    },
+    {
+      "start": 3778.96,
+      "duration": 3.84,
+      "text": "All right."
+    },
+    {
+      "start": 3780.92,
+      "duration": 3.8,
+      "text": "Export this."
+    },
+    {
+      "start": 3782.8,
+      "duration": 4.76,
+      "text": "We'll just have the zombies are evolving"
+    },
+    {
+      "start": 3784.72,
+      "duration": 6.56,
+      "text": "text handled by the game"
+    },
+    {
+      "start": 3787.56,
+      "duration": 3.72,
+      "text": "instead of having it uh"
+    },
+    {
+      "start": 3799.12,
+      "duration": 5.92,
+      "text": "instead of having it actually on the"
+    },
+    {
+      "start": 3800.8,
+      "duration": 4.24,
+      "text": "video like hard hard coded."
+    },
+    {
+      "start": 3808.72,
+      "duration": 2.2,
+      "text": "Okay."
+    },
+    {
+      "start": 3812.8,
+      "duration": 3.0,
+      "text": "Export."
+    },
+    {
+      "start": 3817.08,
+      "duration": 3.4,
+      "text": "I'm going to say"
+    },
+    {
+      "start": 3820.52,
+      "duration": 4.68,
+      "text": "can you have the"
+    },
+    {
+      "start": 3825.44,
+      "duration": 3.0,
+      "text": "zombie"
+    },
+    {
+      "start": 3829.2,
+      "duration": 4.92,
+      "text": "evolution [music] MP4"
+    },
+    {
+      "start": 3831.6,
+      "duration": 5.52,
+      "text": "play"
+    },
+    {
+      "start": 3834.12,
+      "duration": 3.0,
+      "text": "after"
+    },
+    {
+      "start": 3838.359,
+      "duration": 6.881,
+      "text": "you select your"
+    },
+    {
+      "start": 3842.4,
+      "duration": 6.24,
+      "text": "upgrade"
+    },
+    {
+      "start": 3845.24,
+      "duration": 5.36,
+      "text": "after wave two"
+    },
+    {
+      "start": 3848.64,
+      "duration": 3.96,
+      "text": "when it"
+    },
+    {
+      "start": 3850.6,
+      "duration": 7.16,
+      "text": "switches"
+    },
+    {
+      "start": 3852.6,
+      "duration": 5.16,
+      "text": "to the new zombies"
+    },
+    {
+      "start": 3858.64,
+      "duration": 3.6,
+      "text": "like a cutscene."
+    },
+    {
+      "start": 3865.8,
+      "duration": 2.96,
+      "text": "Let's see."
+    },
+    {
+      "start": 3878.24,
+      "duration": 3.4,
+      "text": "That's pretty bad, I'm not going to lie."
+    },
+    {
+      "start": 3892.359,
+      "duration": 4.761,
+      "text": "The flow is wave two complete, two"
+    },
+    {
+      "start": 3894.92,
+      "duration": 5.12,
+      "text": "second delay, upgrade menu shows, player"
+    },
+    {
+      "start": 3897.12,
+      "duration": 2.92,
+      "text": "picks upgrade."
+    },
+    {
+      "start": 3904.68,
+      "duration": 5.06,
+      "text": "Flow is wave two complete, two second"
+    },
+    {
+      "start": 3907.4,
+      "duration": 5.76,
+      "text": "delay. Stop doing that. I hate that"
+    },
+    {
+      "start": 3909.74,
+      "duration": 3.42,
+      "text": "[music] it auto scrolls for you."
+    },
+    {
+      "start": 3916.32,
+      "duration": 3.44,
+      "text": "Wave two complete, [music] two second"
+    },
+    {
+      "start": 3917.359,
+      "duration": 5.361,
+      "text": "delay, upgrade menu shows, player picks"
+    },
+    {
+      "start": 3919.76,
+      "duration": 5.08,
+      "text": "upgrade, select upgrade, hide upgrade"
+    },
+    {
+      "start": 3922.72,
+      "duration": 3.96,
+      "text": "menu. I need to intercept this at wave"
+    },
+    {
+      "start": 3924.84,
+      "duration": 3.8,
+      "text": "two after [music] the upgrade is"
+    },
+    {
+      "start": 3926.68,
+      "duration": 4.88,
+      "text": "selected, play the evolution cutscene,"
+    },
+    {
+      "start": 3928.64,
+      "duration": 2.92,
+      "text": "then resume."
+    },
+    {
+      "start": 3934.68,
+      "duration": 2.8,
+      "text": "All right, let's check it out."
+    },
+    {
+      "start": 3943.6,
+      "duration": 3.0,
+      "text": "Well, first cutscene."
+    },
+    {
+      "start": 3959.04,
+      "duration": 2.96,
+      "text": "So, we have to make it through our two"
+    },
+    {
+      "start": 3960.52,
+      "duration": 4.92,
+      "text": "waves"
+    },
+    {
+      "start": 3962.0,
+      "duration": 6.0,
+      "text": "and then see if it plays the second"
+    },
+    {
+      "start": 3965.44,
+      "duration": 2.56,
+      "text": "cutscene."
+    },
+    {
+      "start": 3971.359,
+      "duration": 5.041,
+      "text": "All right, wave one done."
+    },
+    {
+      "start": 3973.96,
+      "duration": 5.24,
+      "text": "Faster movement."
+    },
+    {
+      "start": 3976.4,
+      "duration": 2.8,
+      "text": "Let's get some ammo going."
+    },
+    {
+      "start": 3979.8,
+      "duration": 7.2,
+      "text": "Wave two, eight enemies incoming."
+    },
+    {
+      "start": 3983.56,
+      "duration": 5.88,
+      "text": "Feels like a lot of enemies, but"
+    },
+    {
+      "start": 3987.0,
+      "duration": 2.44,
+      "text": "oh well."
+    },
+    {
+      "start": 3990.16,
+      "duration": 2.52,
+      "text": "Shoot."
+    },
+    {
+      "start": 3999.08,
+      "duration": 3.88,
+      "text": "Come on, give me a one shot kill. Yes,"
+    },
+    {
+      "start": 4000.68,
+      "duration": 4.16,
+      "text": "there we go."
+    },
+    {
+      "start": 4002.96,
+      "duration": 4.32,
+      "text": "All right, wave two complete. So, after"
+    },
+    {
+      "start": 4004.84,
+      "duration": 6.08,
+      "text": "I select this"
+    },
+    {
+      "start": 4007.28,
+      "duration": 3.64,
+      "text": "the cutscene should be playing."
+    },
+    {
+      "start": 4011.48,
+      "duration": 3.04,
+      "text": "Which it did not."
+    },
+    {
+      "start": 4014.56,
+      "duration": 6.52,
+      "text": "[ __ ]"
+    },
+    {
+      "start": 4016.68,
+      "duration": 4.4,
+      "text": "But, we do have the upgraded zombies."
+    },
+    {
+      "start": 4035.28,
+      "duration": 3.2,
+      "text": "Also, feel like we should make these"
+    },
+    {
+      "start": 4036.44,
+      "duration": 5.16,
+      "text": "guys a little bit bigger."
+    },
+    {
+      "start": 4038.48,
+      "duration": 3.12,
+      "text": "They're too small right now."
+    },
+    {
+      "start": 4046.28,
+      "duration": 2.88,
+      "text": "Let's see if it plays here."
+    },
+    {
+      "start": 4051.92,
+      "duration": 2.32,
+      "text": "Nope."
+    },
+    {
+      "start": 4056.48,
+      "duration": 6.08,
+      "text": "Player completes wave two, upgrade menu"
+    },
+    {
+      "start": 4059.72,
+      "duration": 2.84,
+      "text": "appears."
+    },
+    {
+      "start": 4079.6,
+      "duration": 3.4,
+      "text": "I'll say cutscene"
+    },
+    {
+      "start": 4084.56,
+      "duration": 9.32,
+      "text": "did not play."
+    },
+    {
+      "start": 4088.32,
+      "duration": 5.56,
+      "text": "Can you add console logging?"
+    },
+    {
+      "start": 4113.24,
+      "duration": 6.4,
+      "text": "All right, we're engaging the Fairlife"
+    },
+    {
+      "start": 4115.2,
+      "duration": 4.44,
+      "text": "protein shake. 40 g of protein."
+    },
+    {
+      "start": 4122.759,
+      "duration": 2.6,
+      "text": "Strawberry."
+    },
+    {
+      "start": 4147.88,
+      "duration": 2.8,
+      "text": "All right, let's try it out."
+    },
+    {
+      "start": 4153.68,
+      "duration": 5.36,
+      "text": "We got to play through to"
+    },
+    {
+      "start": 4156.52,
+      "duration": 2.52,
+      "text": "wave two."
+    },
+    {
+      "start": 4167.12,
+      "duration": 2.36,
+      "text": "Wave one"
+    },
+    {
+      "start": 4169.72,
+      "duration": 2.639,
+      "text": ">> Wave one down."
+    },
+    {
+      "start": 4176.04,
+      "duration": 2.799,
+      "text": "Where is the zombies?"
+    },
+    {
+      "start": 4187.72,
+      "duration": 2.52,
+      "text": "[ __ ]"
+    },
+    {
+      "start": 4194.36,
+      "duration": 3.24,
+      "text": "See these guys drop out."
+    },
+    {
+      "start": 4203.32,
+      "duration": 4.24,
+      "text": "What do you do that?"
+    },
+    {
+      "start": 4204.6,
+      "duration": 2.96,
+      "text": "No, don't die. Don't die."
+    },
+    {
+      "start": 4208.56,
+      "duration": 2.2,
+      "text": "No."
+    },
+    {
+      "start": 4211.92,
+      "duration": 5.56,
+      "text": "Wave two."
+    },
+    {
+      "start": 4213.52,
+      "duration": 3.96,
+      "text": "So, it should play that cut. Yes."
+    },
+    {
+      "start": 4221.8,
+      "duration": 4.04,
+      "text": "All right. Those videos are pretty bad."
+    },
+    {
+      "start": 4231.2,
+      "duration": 5.84,
+      "text": "So, we're going to blur"
+    },
+    {
+      "start": 4235.28,
+      "duration": 5.12,
+      "text": "like the background image. We're going"
+    },
+    {
+      "start": 4237.04,
+      "duration": 3.36,
+      "text": "to blur the video"
+    },
+    {
+      "start": 4240.48,
+      "duration": 3.08,
+      "text": "and have it um"
+    },
+    {
+      "start": 4249.08,
+      "duration": 2.96,
+      "text": "I'm going to say"
+    },
+    {
+      "start": 4252.4,
+      "duration": 4.92,
+      "text": "great great"
+    },
+    {
+      "start": 4254.6,
+      "duration": 6.28,
+      "text": "have it darken"
+    },
+    {
+      "start": 4257.32,
+      "duration": 3.56,
+      "text": "and slightly"
+    },
+    {
+      "start": 4261.04,
+      "duration": 6.08,
+      "text": "very slightly"
+    },
+    {
+      "start": 4264.24,
+      "duration": 2.88,
+      "text": "blur"
+    },
+    {
+      "start": 4267.52,
+      "duration": 6.12,
+      "text": "the video and [music] have"
+    },
+    {
+      "start": 4271.4,
+      "duration": 3.76,
+      "text": "flashing"
+    },
+    {
+      "start": 4273.64,
+      "duration": 4.52,
+      "text": "large"
+    },
+    {
+      "start": 4275.16,
+      "duration": 3.0,
+      "text": "bold"
+    },
+    {
+      "start": 4278.88,
+      "duration": 7.28,
+      "text": "red text"
+    },
+    {
+      "start": 4282.2,
+      "duration": 3.96,
+      "text": "come up saying"
+    },
+    {
+      "start": 4287.64,
+      "duration": 5.08,
+      "text": "zombies are evolving."
+    },
+    {
+      "start": 4335.52,
+      "duration": 3.16,
+      "text": "All right."
+    },
+    {
+      "start": 4336.36,
+      "duration": 2.32,
+      "text": "And then"
+    },
+    {
+      "start": 4338.72,
+      "duration": 4.16,
+      "text": "I guess let's play through and try it"
+    },
+    {
+      "start": 4340.56,
+      "duration": 2.32,
+      "text": "again."
+    },
+    {
+      "start": 4343.44,
+      "duration": 3.92,
+      "text": "It's ridiculous they're doing this way,"
+    },
+    {
+      "start": 4344.72,
+      "duration": 2.64,
+      "text": "but oh well."
+    },
+    {
+      "start": 4359.08,
+      "duration": 3.68,
+      "text": "Basically, instead of having a go to all"
+    },
+    {
+      "start": 4361.44,
+      "duration": 2.64,
+      "text": "this"
+    },
+    {
+      "start": 4362.76,
+      "duration": 3.64,
+      "text": "it's forcing us to play the game, which"
+    },
+    {
+      "start": 4364.08,
+      "duration": 2.32,
+      "text": "is good."
+    },
+    {
+      "start": 4368.48,
+      "duration": 2.84,
+      "text": "Wave one complete."
+    },
+    {
+      "start": 4377.24,
+      "duration": 5.56,
+      "text": "Grab this gold."
+    },
+    {
+      "start": 4378.96,
+      "duration": 3.84,
+      "text": "Get one shot kill. Beautiful."
+    },
+    {
+      "start": 4382.84,
+      "duration": 3.44,
+      "text": "Is it again? Yes."
+    },
+    {
+      "start": 4388.04,
+      "duration": 2.68,
+      "text": "Nice."
+    },
+    {
+      "start": 4398.0,
+      "duration": 2.24,
+      "text": "Beautiful."
+    },
+    {
+      "start": 4400.32,
+      "duration": 2.24,
+      "text": "All right."
+    },
+    {
+      "start": 4411.96,
+      "duration": 7.84,
+      "text": "I'm going to say have it even"
+    },
+    {
+      "start": 4416.96,
+      "duration": 2.84,
+      "text": "darker"
+    },
+    {
+      "start": 4421.12,
+      "duration": 4.72,
+      "text": "and more"
+    },
+    {
+      "start": 4423.12,
+      "duration": 2.72,
+      "text": "blurred."
+    },
+    {
+      "start": 4425.885,
+      "duration": 2.021,
+      "text": ">> [music]"
+    },
+    {
+      "start": 4429.08,
+      "duration": 3.4,
+      "text": ">> And that's going to be perfect."
+    },
+    {
+      "start": 4453.32,
+      "duration": 8.4,
+      "text": "Add a button [music]"
+    },
+    {
+      "start": 4457.16,
+      "duration": 8.2,
+      "text": "for now in the menu"
+    },
+    {
+      "start": 4461.72,
+      "duration": 8.6,
+      "text": "so that I can"
+    },
+    {
+      "start": 4465.36,
+      "duration": 4.96,
+      "text": "play this cutscene."
+    },
+    {
+      "start": 4471.081,
+      "duration": 1.199,
+      "text": ">> [music]"
+    },
+    {
+      "start": 4471.24,
+      "duration": 3.56,
+      "text": ">> Which is what we should have done from"
+    },
+    {
+      "start": 4472.28,
+      "duration": 2.52,
+      "text": "the beginning."
+    },
+    {
+      "start": 4482.871,
+      "duration": 2.02,
+      "text": ">> [music]"
+    },
+    {
+      "start": 4508.68,
+      "duration": 3.84,
+      "text": ">> All right. So, I think after this we're"
+    },
+    {
+      "start": 4509.88,
+      "duration": 5.6,
+      "text": "going to have to"
+    },
+    {
+      "start": 4512.52,
+      "duration": 4.08,
+      "text": "we're going to leave off there because"
+    },
+    {
+      "start": 4515.48,
+      "duration": 4.24,
+      "text": "I'm going to have to figure out [music]"
+    },
+    {
+      "start": 4516.6,
+      "duration": 6.2,
+      "text": "how to get Nano Banana"
+    },
+    {
+      "start": 4519.72,
+      "duration": 4.416,
+      "text": "working with 3D models and get the map"
+    },
+    {
+      "start": 4522.8,
+      "duration": 4.16,
+      "text": "structure and all that, but I'll do that"
+    },
+    {
+      "start": 4524.136,
+      "duration": 2.824,
+      "text": "[music] later tonight."
+    },
+    {
+      "start": 4543.52,
+      "duration": 3.68,
+      "text": "This is sending to the server."
+    },
+    {
+      "start": 4548.24,
+      "duration": 3.4,
+      "text": "All right. Nice. All right."
+    },
+    {
+      "start": 4551.8,
+      "duration": 3.12,
+      "text": "Refresh [music] here."
+    },
+    {
+      "start": 4559.64,
+      "duration": 4.92,
+      "text": "Go to the menu. Test evolution cutscene."
+    },
+    {
+      "start": 4564.6,
+      "duration": 4.28,
+      "text": "Zombies are evolving. Nice."
+    },
+    {
+      "start": 4574.08,
+      "duration": 2.68,
+      "text": "See it one more time."
+    },
+    {
+      "start": 4579.12,
+      "duration": 4.04,
+      "text": "Again."
+    },
+    {
+      "start": 4581.28,
+      "duration": 5.24,
+      "text": "It's not great."
+    },
+    {
+      "start": 4583.16,
+      "duration": 3.36,
+      "text": "But it will do fine for now."
+    },
+    {
+      "start": 4597.96,
+      "duration": 2.28,
+      "text": "Cool."
+    },
+    {
+      "start": 4601.8,
+      "duration": 4.28,
+      "text": "All right."
+    },
+    {
+      "start": 4603.52,
+      "duration": 5.16,
+      "text": "We got the zombies upgraded."
+    },
+    {
+      "start": 4606.08,
+      "duration": 5.0,
+      "text": "Super mutant. We got the cutscene."
+    },
+    {
+      "start": 4608.68,
+      "duration": 4.28,
+      "text": "Next time on our goals, we got to do uh"
+    },
+    {
+      "start": 4611.08,
+      "duration": 3.32,
+      "text": "create the map structure and add the"
+    },
+    {
+      "start": 4612.96,
+      "duration": 3.6,
+      "text": "storyline [music] to the map and then we"
+    },
+    {
+      "start": 4614.4,
+      "duration": 4.6,
+      "text": "will have a finished game"
+    },
+    {
+      "start": 4616.56,
+      "duration": 5.24,
+      "text": "and we can submit it for [music]"
+    },
+    {
+      "start": 4619.0,
+      "duration": 2.8,
+      "text": "the vibe jam."
+    }
+  ],
+  "full_text": "Fire [screaming] me up. Fire [screaming] me up. Good morning. And welcome. Welcome. Welcome. Welcome. To the building of the world's first five-coded [music] AAA game. Come on. >> [screaming] >> Wake up. For $25,000. Let's go. Wake up. So. So. So. So. So. So. So. So. I got to catch you guys up a little bit because I did do a tiny bit of building off stream this weekend. Nothing crazy. But I got to show you what we did, where we're at. Let's make sure that we're actually live. We are live. Let's go. Nothing crazy. Let's [ __ ] go. Let me get it loaded up. Let me show you what we're talking about. Boom. All right. Here's what we have. Here's what we have. Here's what we have. Dreadnought. We have made an intro cutscene for our game Dreadnought. Dreadnought is a moon-based zombie game where the zombie does in fact happen to be levels. Play the cutscene. Let me get this full scene. Let me get this full screen. Play the cutscene. Yes. How good is the cutscene? And then we're right into levels running at us. And you got to take them out. We're just going to hope that he thinks that's fun and not weird. All right. We're going to pick our level up. Let's do 12% movement speed. Easy peasy. What's up, Felix? How you doing? All right. So, the red zombie can run ultra fast but has half health. Okay. And that just adds some variety to the people attacking you. Oh, I might be dead here. I might be dead here. I'm not going to lie to you. I might be dead here. All right. So, levels are running at you. You got to be shooting them as fast as you can. Today we're going to push this live to the server so you guys can play around with it. We're also going to add a I'm going to do I'm going to do more damage. Let's open this up. Ooh, we got one-shot kill. Come on. Where is the bad guys? There they are. One-shot kill. Add a breeding mechanic. I don't I don't think we're going to do What do you What exactly Hold on. Felix, what exactly do you mean by breeding mechanic? What exactly do you mean? All right. Let's get this uh out of full screen. All right. So, cutscene's pretty dope, isn't it? Play Dreadnought. Levels turns into a zombie and then boom, you're right into the game and level zombie is running after you and you got to take them out before they take you out. That's pretty fun. That's pretty fun right there. I don't know. They're either going to think it's fun or it's disturbing. Either way, it's good. I like it. So, um Let me see what's live on the on the server real quick. All right. So, the cutscene is not live on the server and also the new enemies are not the new level zombies are not live on the server either. I want to make little babies with other players that [music] help kill zombies. Felix, that's [music] crazy. It's It's It's 9:30 on Monday. And we're talking about [music] breeding with other players to kill the zombies. I need you to wake up. I need you to wake up, Felix. All right. So, I'm going to get this ripping. We'll say um Please patch the [music] local updates to the server including the new zombie character and the intro scene. Is it going to be multiplayer because [laughter] what you can breed with the zombies? You're out of control. Reverted loading bar is back. No. No. No. No. No. No. No. That's not what I said. Oh, I don't have Whisper open. No, I do have Whisper open. Please patch the updates to the server from local including the new zombie and the intro cutscene. Yo, why is Whisper not working? What the [ __ ] Please patch um It's possibly going to be multiplayer. [music] It depends. >> [sighs] >> God. What is wrong with you guys? You guys are out of control. Make [laughter] kids where you can breed with There's a lot of Maybe I should just make Maybe I should just get rid of the combat and just make it mainly breeding. Ninio, what's up? How we doing? Please tell me something good. Please tell me something good here, brother. All right. Um please patch updates to the server including new zombie and intro cutscene. All right. You want to see [music] the You want to see the update, bro? I'm going to show you I'm going to show you, Ninio, what we got going on here. And you're going to have to tell me if this cutscene is going to be taken as this >> [sighs] >> as this cutscene is taken as like, \"Dude, that's awesome.\" or this cutscene's taken as, >> [music] >> \"That's too far.\" Here's our intro cutscene. Play Dreadnought. >> [laughter] >> So, there's level zombie, right? And now he's running at you, and you got to take him out. And they're all over the place. Coming at you. >> [music] >> I do feel like we need to lighten it up a little bit. Make make I don't know. We definitely need more color. So, I think any sort [music] of map design we're going to do, we need to add some color to it. All right, so that's patching to the server. We got to do uh We got to write down some of our goals here as far [music] as what we're going to get done. What do you think about that cutscene, you know? Is that cutscene too much? Or is it just perfect? What do you think? Also, goals. More is more. Yes, it is. Goals. I'm not making a robot game, and I'm Goals. Uh Add breeding animation. No. What are we going to do? The first goal is going to be We need to start We need to um add super mutant evolution. All right. The second goal is going to be creating map structure. And then, the third goal is going to be uh storyline through map. Beautiful. Beautiful. All right, so what this means is the first goal there, add the super mutant evolution. We We have to um We have to add this guy in right here, that we made. Okay. So, this is like the advanced state of levels, right? So, we have this guy. Now. Why is it not loading? Hold on. This is the first stage zombie. This is the second stage zombie. Okay. First, second. We need to create a cutscene where like maybe once you get to wave two he evolves into this one. And this one's going to be more difficult to kill and do more damage to you. So, that's our [music] first goal there, add the super mutant evolution. Uh second goal, creating the map structure. We have to add uh physical structure to the map that guides you through uh like basically the storyline, similar to like Call of Duty Zombies, where like as you go wave by wave, you can pay to unlock doors. And then, once you get to the final area there's going to be like a rocket ship or something like that that takes you off the moon, so that you can go to uh you you It's like the win state of the game. There There's no There's no breeding with that one. No. You're in timeout. And There you go. You're in timeout. All right, we're We're in timeout until we can figure out the breeding. What? So, this is deployed. Let me see if this uh actually works live on the server. Refresh. We'll do a force refresh. Yes. That's not it. All right. On the server, the cutscene isn't starting from the beginning for some [music] reason. It starts like 1 second in. Okay. There's not really like [music] a lot of real estate for um other [ __ ] I guess if you were just coding and you didn't have a game open, you could just have that mainly. Or like I guess a 5K screen would come in handy for like streaming and all that. So, for some reason this is starting too far into the cutscene. Which we don't want. And And the gun is [music] not Oh my god. All right, that's fixed. Great. I'm going to say, \"Okay, it's doing the thing where the hands and gun are invisible again. This has [music] to do with file permissions. Fix it, please.\" All right, great. And then, uh Where are we going? All right, so we are going to We're going to look up a space uh moon colony. And then, we have to figure out how we can make our way through a moon colony just like you would with Call of Duty Zombies, where it has like sectioned off spaces. So, the game is about It's basically like zombies on the moon. And um it's for the Vibe Jam. Is it busted? Did it Did it uh Did it load all right on your computer or or not really? I'm trying to optimize the files, make them a little bit smaller. But um Kristoff, I think that's how you pronounce your name. Kristoff, the game is like uh space zombies. So, um I'll show you real quick. We have this cutscene where Levels turns into a zombie. And then, we're dumped in the moon. And we have uh level zombies running after us. And you basically have to kill them before they kill you. And you get power-ups from what they drop. And then, every level you get to choose a a power-up, faster movement, bigger magazine, faster reload, whatever. And um there's these rocks in the ground they open up to get more health, more ammo, all of it. It was bugging. Yeah, it was probably bugging cuz I'm doing updates right now. Let me see if the gun is loading now. I know. I know the Levels at the beginning is absolutely nuts. And I'm going to have uh I'm going to have another cutscene, too, where it goes from that version of zombie Levels to um super mutant version. He's either going to think it's really funny or he's going to be upset about it. But, we're going to find out. I mean, he put on the Vibe Jam. It's his Vibe Jam. So, whatever. But, this is um super mutant levels that it will uh upgrade to. >> [music] >> All right, so let's add let's add the super mutant evolution and let's do that between wave two and [music] three. So we'll go um >> [music] >> I already downloaded this, so I should already have [music] this. Uh let me see. I've been working [music] on this for a couple days now. Uh but but just like two hours at a at a time. So I better win. I better win first place. Now there's a lot of good games out there. At first, I was thinking it was going to be very easy to win first place because there were not like a ton of great games, but um but after looking [music] at the rest of the games, I'm like, \"Oh [ __ ] Now there's actually some decent games.\" All right, so let's copy the green hulking character. Let's actually rename it first. We'll rename this to um level super mutant. And then we'll put this in the game [music] files and we'll say I'm just going to I'm just going to say for now um after wave two can you replace the current >> [music] >> zombie with the level super mutant GLB I just added with the same settings. What's up? What's [music] up? How you doing, Dragon? What's going on? You want to see the game we're working on? That's what we got. We got zombies in space. Sort of like Call of Duty zombies, but in space. Power ups, one shot kill. You can open these rocks. We're still building. We're still building. All right. Would be way more intuitive and easier hand movement. It was buggy not showing enemies at first, but then reboot did it. Thank you, Dragon. Thank you. Appreciate it. Would be What would be way more intuitive and easier hand movement? All right, done. Waves one through two spawn the regular zombie. Wave three plus spawns the super mutant. All right, let's let's rip through these real quick. And uh let's see if it has it. Change shortcut V to E. Oh, yeah, yeah, yeah. I actually think you're right about [music] that. I I do I played a lot of Fortnite unfortunately, so uh V was always interact. And uh that's why I set it as V. But I think you're right. We should we should change it to E because like I think that most people are used to hitting E to interact. I really like ways with the beer. I know. I can't believe in uh in literally 3js inside the browser, you can get 100 you can get 270 frames per second. Insanely smooth animations for everything. And you can just vibe code it. Meanwhile, there's these games out there that are making millions and millions of dollars that have terrible mechanics. The game runs awful, low frames. Like I'm just some dude. I've no idea what I'm doing. And I created a a game that is way better um frames, reload. I mean, the shooting is great. Everything kills really good. All right, so here's the new zombie. Oh, it's great. It's kicking. Oh, it's so good. Oh, it's kind of going to kill me though. All right, I'm dead. Cuz they spent thousands of marketing sabotage. Yeah, I know. I know. It sucks though. And and like the video game market right now i- is awful. Like there's Arc Raiders who they did a really good job with it and I feel like they actually cared about like what they put out. Like you can tell they're artists. You know, like everything looks beautiful. There's like awesome sound to the game and it actually runs somewhat decent. Hulk zombies. Yes. Yes. Yes. Yes. Hulk zombies. All right, so we're going to push that live cuz that was [ __ ] awesome. I'm going to say, \"Okay, that was awesome. Please push that live to Oh [ __ ] that's the wrong one. Okay, that was awesome. Please push live to the server.\" Okay, great. I feel like the game is getting a little bit either too challenging or I'm just not um Oh, it's already live on the server. [music] Great. Is the game getting too challenging or I'm just not playing good at it? So um we'll go to Google AI Studio. And then we're going to get the cutscene started for uh for the zombie upgrading from the regular level zombie [music] to the uh the upgraded zombie. All right. I'll be back in literally 3 seconds. All right, I'm back. Gamers love challenging the game should trigger their ego. Yeah, yeah, it should. Oh, he's back. He's [laughter] back. Felix, you have staying power. I'm not going to lie. It's okay, Felix. We we forgive you. How'd you find How'd you find this channel, Felix? From X or from YouTube? All right, so we're going to go um I'm going to grab [music] this in here. We got to make the cutscene, okay? So the way we're going to do that is we're going to take this image that we have currently right here. This one. >> [music] >> We're going to generate a second image with the new zombie on there, okay? This zombie. All right? So we're going to make it with this zombie. First image here, second image here, and then we are going to put it in Kling and make an AI video of it evolving from Oh [ __ ] No, this is not the right one. This one right here. This one. We're going to make a video of it evolving from this zombie to this zombie super mutant. Okay? With an AI video. And when we get to wave number two, the cutscene is going to fire and we're going to play some sort of awesome soundtrack like oh oh no, the zombie's evolving. And then you're going to hear some sort of awful shriek in the background like and it'll cut right back to the game and they'll be running after you like crazy. So, let's go ahead and make this happen. First, let's prompt it. So, I'm going to say Okay, perfect. Replace [music] the guy in the photo with this mutant. And we'll hit run. And then we're going to go to super mutant [music] MP3. God damn it. It's okay. I don't I don't know if we're going to add a breathing animation, guys, unfortunately. How did you find How did you find the channel? Is that from Is that from X or is that from YouTube? And are you the same person? Also. Small correction needed when game over after wave No, no, kills. Make kills nose after world kills. That's the craziest chat ever. What does that mean? Small correction needed when game over after wave. That's excellent. That's really Oh, you're the same guy. But but I don't get it. It's Nos >> [music] >> numbers. What does that mean? No. No and no. Can you guys hear the Can you guys hear the text-to-speech or is that just only on my end? Cuz I have chat-to-speech. I think you're the same guy. How can you prove you're not the same guy? No. I bet you it doesn't like that. I'm going to have to redo this. Oh, you can't hear the text-to-speech? That sucks. Cuz right now when you guys comment, it plays it plays what you guys are saying in my headphones. I don't I don't understand how [music] it's not playing over the stream. You want to breathe it? Okay. Well, that's fair enough. No. No, you do. You You still do. I got a crazy idea. Thank you. Listen, I may have put you guys back in timeout for a second, okay? But please don't go. I'm I'm [music] relying on you guys for the stream views right now. Right. Um We're going to download this. We're going to put that in there. It shows like this wave one zero kills instead show wave one. Oh, yeah, yeah, yeah, yeah. That's a good idea. That's a good idea. Let me see what that looks like, actually. I don't know, though. I feel like that's pretty clean, isn't it? You don't think so? Three kills, wave one three kills. Score 50. You don't like it? Now, we're making no progress right now. No, we're making lots of progress. All right. So, like I said, adding this guy in there and then we're going to create the Kling AI video. This is going to be what we're going to use to create the video between the animations. Don't worry about these TikTok ads. Okay. And then hit download. Why is it not downloading? I feel like there's something wrong with Google AI Studio today. It's like not loading. Like it just caught on thinking. But I really don't want to use something else to try to make these. Failed to generate content. I'm going to try a different model. We'll do this one. We'll do rerun. And we'll see if this one can get it. We're using Nano Banana Pro instead of Nano Banana whatever. Instead of Nano Banana Flash 3 preview. I must have it somewhere. Maybe I don't. Cuz I can't even download this [ __ ] right now. Google AI Studio might be screwing us right now. What's up? What's up? How you doing, Wolfie? No. So, we might have to go to chat GPT and see if that can generate the image for us instead because um it seems like Nano Banana Pro is [ __ ] us. Oh, no. Oh, no. How many accounts do you have? You have endless accounts. What up, you don? How you doing? Good morning. Good morning. Endless accounts. Oh, you're back. All right. Um What about Does it keep the moon landscape the same, but replace the man in the photo with the super mutant? I don't know if it's going to be able to do this. And also, it doesn't even let me pick [music] like 9 by 16 or anything like that. I might have to like just do it with Photoshop or something. It's going to suck because the I'm going to have to make the shadow and [ __ ] which won't be good. I'm sorry, but the image we created may violate our guardrails. Are you [ __ ] kidding me? All right. We're going to have to do new chat. Link. Come on. Can you replace the man the zombie on the moon with this super mutant guy for All right. Which is only Somehow it's going to work. I know it. It has to. All right. Back to Moon Colony. Let's figure out how we can make stages so that you can progress through it. Ooh. Something like this could be good. Where you have to like go inside, maybe. Yeah, maybe we have a dome. Maybe we have a space dome. You have to go into. We just have to create an end state for the game where you go in and then you can take off and leave somehow when you win the game. Oh, like this would be so good. Something like this with like glowing plants and [ __ ] Or a structure like this that you [music] went inside of. That's going to be way past the scope of what we're doing here. Me thinks. I don't think this is going to work cuz it would have already [music] done it. God, it's irritating. Like maybe we try to Well, really there's almost nothing we can do right now because even creating the map structures, we have to have [music] Nano Banana We have to have Nano Banana make the structure and then we have to convert it to a 3D model. But since Nano Banana is literally not working at all at all at all. Let me just see if it can make anything. Make a picture of a lemur. We'll see if it can even make anything or if it's just completely down. Is Nano Banana down today? There's no down detector. Oh, it would seem [music] like Nano Banana is having some issues. No. Maybe. [ __ ] So, it's just failing for some reason. All right. We're not going to waste any more time on this. We're just going to open this in Photoshop. Unfortunately. We're going to open this with Photoshop. Remove background. Not really that [music] high-res. Oh, copy. Paste. Kind of [ __ ] things up a bit. >> [music] >> Let's go. Deselect. Select subject. Remove. Okay. And then we'll go like generative fill. Fill in the moon and space background. See if I can nail this. We're rolling. No. Why is it doing that? No. Oh, god. Why? Wait, does this get covered? Maybe. No, it doesn't. [ __ ] Okay. We're going to delete this. Okay. And then for now we'll make this invisible. We'll select this. Generative fill. Fill in moon and space background. No characters or planets. See if that works. Generate with Firefly fill and expand. Right. This might work. I think we're just going to have to go with this. Like it's not good. But we're going to see what clean could do to make it good. All right, we'll upload this. And then we'll upload the new one. Oh, this is not what we want. Video generation. Add start frames and end [music] frames. All right, here's the start [music] frame. And then we're going to add the end frame. Oh. And we'll say have the zombie evolve into this super >> [music] >> mutant. Generate. No. What? Why? Oh, we're out of tokens. You kidding me? What if we bring it down? 27? No. Oh my god, [music] we're six credits short. It's going to drive me insane. Why is that more? 25? We're [music] four credits short. God, this is ridiculous. 35? 35 still. Come on. This is insane. All right, we may or may not have upgraded. And it didn't even dump us back out to the the video creation page. You're kidding me. Okay. Please. Have [music] the zombie evolve into the mutant. All right, that is generating. We'll let that generate for 1 second. >> Okay. What do we got? I think it's so bad, but I think we're going to have to go with it. All right, let's just we'll download this. It is not good. We're going to cut this down so it's just like the uh evolving animation. And then we're going to have it say the zombies are evolving. Okay. Center that. And then we're going to make this red. We're going to make this Arial bold. We're going to add a shadow. And with that the graphic [music] kind of hides how bad it is. No, we'll take that off [music] and we'll just have that. All right. Export this. We'll just have the zombies are evolving text handled by the game instead of having it uh instead of having it actually on the video like hard hard coded. Okay. Export. I'm going to say can you have the zombie evolution [music] MP4 play after you select your upgrade after wave two when it switches to the new zombies like a cutscene. Let's see. That's pretty bad, I'm not going to lie. The flow is wave two complete, two second delay, upgrade menu shows, player picks upgrade. Flow is wave two complete, two second delay. Stop doing that. I hate that [music] it auto scrolls for you. Wave two complete, [music] two second delay, upgrade menu shows, player picks upgrade, select upgrade, hide upgrade menu. I need to intercept this at wave two after [music] the upgrade is selected, play the evolution cutscene, then resume. All right, let's check it out. Well, first cutscene. So, we have to make it through our two waves and then see if it plays the second cutscene. All right, wave one done. Faster movement. Let's get some ammo going. Wave two, eight enemies incoming. Feels like a lot of enemies, but oh well. Shoot. Come on, give me a one shot kill. Yes, there we go. All right, wave two complete. So, after I select this the cutscene should be playing. Which it did not. [ __ ] But, we do have the upgraded zombies. Also, feel like we should make these guys a little bit bigger. They're too small right now. Let's see if it plays here. Nope. Player completes wave two, upgrade menu appears. I'll say cutscene did not play. Can you add console logging? All right, we're engaging the Fairlife protein shake. 40 g of protein. Strawberry. All right, let's try it out. We got to play through to wave two. Wave one >> Wave one down. Where is the zombies? [ __ ] See these guys drop out. What do you do that? No, don't die. Don't die. No. Wave two. So, it should play that cut. Yes. All right. Those videos are pretty bad. So, we're going to blur like the background image. We're going to blur the video and have it um I'm going to say great great have it darken and slightly very slightly blur the video and [music] have flashing large bold red text come up saying zombies are evolving. All right. And then I guess let's play through and try it again. It's ridiculous they're doing this way, but oh well. Basically, instead of having a go to all this it's forcing us to play the game, which is good. Wave one complete. Grab this gold. Get one shot kill. Beautiful. Is it again? Yes. Nice. Beautiful. All right. I'm going to say have it even darker and more blurred. >> [music] >> And that's going to be perfect. Add a button [music] for now in the menu so that I can play this cutscene. >> [music] >> Which is what we should have done from the beginning. >> [music] >> All right. So, I think after this we're going to have to we're going to leave off there because I'm going to have to figure out [music] how to get Nano Banana working with 3D models and get the map structure and all that, but I'll do that [music] later tonight. This is sending to the server. All right. Nice. All right. Refresh [music] here. Go to the menu. Test evolution cutscene. Zombies are evolving. Nice. See it one more time. Again. It's not great. But it will do fine for now. Cool. All right. We got the zombies upgraded. Super mutant. We got the cutscene. Next time on our goals, we got to do uh create the map structure and add the storyline [music] to the map and then we will have a finished game and we can submit it for [music] the vibe jam."
+}

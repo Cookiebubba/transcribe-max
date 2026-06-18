@@ -1,0 +1,631 @@
+{
+  "channel": "MaxBladeTv",
+  "channel_handle": "@MaxBladeTv",
+  "channel_url": "https://www.youtube.com/@MaxBladeTv",
+  "channel_id": "UChcJv_JCjQHXcgjlHpxDIcA",
+  "source": "channel /streams tab (ended live broadcasts)",
+  "snapshot_date": "2026-06-18",
+  "stream_count": 62,
+  "streams": [
+    {
+      "video_id": "fzQ73Q5oGa0",
+      "title": "Test Stream :) PLS IGNORE",
+      "url": "https://www.youtube.com/watch?v=fzQ73Q5oGa0",
+      "published_at": "2024-12-28T02:16:54Z",
+      "duration": "00:00:49",
+      "duration_seconds": 49,
+      "day_number": null,
+      "slug": "stream-fzQ73Q5oGa0"
+    },
+    {
+      "video_id": "UaTJ0-oHBPk",
+      "title": "Building a Glowing Ai GitHub Commit Button",
+      "url": "https://www.youtube.com/watch?v=UaTJ0-oHBPk",
+      "published_at": "2024-12-29T00:31:51Z",
+      "duration": "01:49:06",
+      "duration_seconds": 6546,
+      "day_number": null,
+      "slug": "stream-UaTJ0-oHBPk"
+    },
+    {
+      "video_id": "38Uiw_Fin-w",
+      "title": "Building a Glowing Ai GitHub Commit Button",
+      "url": "https://www.youtube.com/watch?v=38Uiw_Fin-w",
+      "published_at": "2024-12-30T00:16:22Z",
+      "duration": "01:34:07",
+      "duration_seconds": 5647,
+      "day_number": null,
+      "slug": "stream-38Uiw_Fin-w"
+    },
+    {
+      "video_id": "cr3mvgGQvKY",
+      "title": "Building a Glowing Ai GitHub Commit Button",
+      "url": "https://www.youtube.com/watch?v=cr3mvgGQvKY",
+      "published_at": "2024-12-30T10:40:09Z",
+      "duration": "00:01:38",
+      "duration_seconds": 98,
+      "day_number": null,
+      "slug": "stream-cr3mvgGQvKY"
+    },
+    {
+      "video_id": "B-lkgRFmxQ0",
+      "title": "Building a Glowing Ai GitHub Commit Button",
+      "url": "https://www.youtube.com/watch?v=B-lkgRFmxQ0",
+      "published_at": "2024-12-31T00:03:21Z",
+      "duration": "00:54:39",
+      "duration_seconds": 3279,
+      "day_number": null,
+      "slug": "stream-B-lkgRFmxQ0"
+    },
+    {
+      "video_id": "ngsiNEHbIr0",
+      "title": "Building a Glowing Ai GitHub Commit Button",
+      "url": "https://www.youtube.com/watch?v=ngsiNEHbIr0",
+      "published_at": "2025-01-01T00:03:33Z",
+      "duration": "01:21:10",
+      "duration_seconds": 4870,
+      "day_number": null,
+      "slug": "stream-ngsiNEHbIr0"
+    },
+    {
+      "video_id": "ULwVjtVKXFY",
+      "title": "Building a Glowing Ai GitHub Commit Button, HAPPY NEW YEAR!!",
+      "url": "https://www.youtube.com/watch?v=ULwVjtVKXFY",
+      "published_at": "2025-01-02T00:17:46Z",
+      "duration": "00:53:48",
+      "duration_seconds": 3228,
+      "day_number": null,
+      "slug": "stream-ULwVjtVKXFY"
+    },
+    {
+      "video_id": "aRzkugQ_L_0",
+      "title": "Building a Glowing Ai GitHub Commit Button, HAPPY NEW YEAR!!",
+      "url": "https://www.youtube.com/watch?v=aRzkugQ_L_0",
+      "published_at": "2025-01-02T23:28:30Z",
+      "duration": "00:44:48",
+      "duration_seconds": 2688,
+      "day_number": null,
+      "slug": "stream-aRzkugQ_L_0"
+    },
+    {
+      "video_id": "ktFXbvywgHc",
+      "title": "Building a Glowing Ai GitHub Commit Button, HAPPY NEW YEAR!!",
+      "url": "https://www.youtube.com/watch?v=ktFXbvywgHc",
+      "published_at": "2025-01-03T00:04:01Z",
+      "duration": "00:30:55",
+      "duration_seconds": 1855,
+      "day_number": null,
+      "slug": "stream-ktFXbvywgHc"
+    },
+    {
+      "video_id": "Vp_I7NZ3ffM",
+      "title": "Building a Glowing Ai GitHub Commit Button, HAPPY NEW YEAR!!",
+      "url": "https://www.youtube.com/watch?v=Vp_I7NZ3ffM",
+      "published_at": "2025-01-03T23:52:53Z",
+      "duration": "00:56:26",
+      "duration_seconds": 3386,
+      "day_number": null,
+      "slug": "stream-Vp_I7NZ3ffM"
+    },
+    {
+      "video_id": "M5fSgyNWBRA",
+      "title": "MONDAY BUTTON BUILDING ( This week were done for real )",
+      "url": "https://www.youtube.com/watch?v=M5fSgyNWBRA",
+      "published_at": "2025-01-06T23:52:45Z",
+      "duration": "00:53:47",
+      "duration_seconds": 3227,
+      "day_number": null,
+      "slug": "stream-M5fSgyNWBRA"
+    },
+    {
+      "video_id": "ULT3DtNDeAo",
+      "title": "Vibe Coding a $100M AAA video game ( day 1 ) #vibejam",
+      "url": "https://www.youtube.com/watch?v=ULT3DtNDeAo",
+      "published_at": "2026-04-09T16:55:20Z",
+      "duration": "02:09:29",
+      "duration_seconds": 7769,
+      "day_number": 1,
+      "slug": "day-01-ULT3DtNDeAo"
+    },
+    {
+      "video_id": "8KmygLIX6Cw",
+      "title": "Vibe Coding a AAA game #VibeJam (Day 2)",
+      "url": "https://www.youtube.com/watch?v=8KmygLIX6Cw",
+      "published_at": "2026-04-11T10:28:21Z",
+      "duration": "01:52:56",
+      "duration_seconds": 6776,
+      "day_number": 2,
+      "slug": "day-02-8KmygLIX6Cw"
+    },
+    {
+      "video_id": "LzfHNGARh80",
+      "title": "Vibe Coding a AAA game #VibeJam (Day 2)",
+      "url": "https://www.youtube.com/watch?v=LzfHNGARh80",
+      "published_at": "2026-04-14T02:49:26Z",
+      "duration": "01:17:01",
+      "duration_seconds": 4621,
+      "day_number": 2,
+      "slug": "day-02-LzfHNGARh80"
+    },
+    {
+      "video_id": "FI5Bky1XKPU",
+      "title": "Day 1 – Vibe Coding Until I Buy My Family a House ( $32,160 ARR )",
+      "url": "https://www.youtube.com/watch?v=FI5Bky1XKPU",
+      "published_at": "2026-04-16T06:03:21Z",
+      "duration": "02:58:13",
+      "duration_seconds": 10693,
+      "day_number": 1,
+      "slug": "day-01-FI5Bky1XKPU"
+    },
+    {
+      "video_id": "-lFV-lgOnpY",
+      "title": "Day 2 – Vibe Coding Until I Buy My Family a House ( $31,524 ARR )",
+      "url": "https://www.youtube.com/watch?v=-lFV-lgOnpY",
+      "published_at": "2026-04-17T05:36:37Z",
+      "duration": "03:01:39",
+      "duration_seconds": 10899,
+      "day_number": 2,
+      "slug": "day-02--lFV-lgOnpY"
+    },
+    {
+      "video_id": "zS4OdLPfhZY",
+      "title": "Day 3 – Vibe Coding Until I Buy My Family a House ( $31,524 ARR )",
+      "url": "https://www.youtube.com/watch?v=zS4OdLPfhZY",
+      "published_at": "2026-04-17T18:06:37Z",
+      "duration": "04:02:58",
+      "duration_seconds": 14578,
+      "day_number": 3,
+      "slug": "day-03-zS4OdLPfhZY"
+    },
+    {
+      "video_id": "K6Kyr0n7TvQ",
+      "title": "Day 4 – Vibe Coding Until I Buy My Family a House ( $29,208 ARR )",
+      "url": "https://www.youtube.com/watch?v=K6Kyr0n7TvQ",
+      "published_at": "2026-04-21T10:36:44Z",
+      "duration": "03:20:28",
+      "duration_seconds": 12028,
+      "day_number": 4,
+      "slug": "day-04-K6Kyr0n7TvQ"
+    },
+    {
+      "video_id": "iOtmC2LlYac",
+      "title": "Day 5 – Vibe Coding Until I Buy My Family a House ( $28,332 ARR )",
+      "url": "https://www.youtube.com/watch?v=iOtmC2LlYac",
+      "published_at": "2026-04-22T03:37:56Z",
+      "duration": "01:12:40",
+      "duration_seconds": 4360,
+      "day_number": 5,
+      "slug": "day-05-iOtmC2LlYac"
+    },
+    {
+      "video_id": "BAhglss2e-o",
+      "title": "Day 6 – Vibe Coding Until I Buy My Family a House ( $28,332 ARR )",
+      "url": "https://www.youtube.com/watch?v=BAhglss2e-o",
+      "published_at": "2026-04-23T08:05:27Z",
+      "duration": "03:42:03",
+      "duration_seconds": 13323,
+      "day_number": 6,
+      "slug": "day-06-BAhglss2e-o"
+    },
+    {
+      "video_id": "ddyTp95pf24",
+      "title": "Day 7 – Vibe Coding Until I Buy My Family a House ( $28,824 ARR )",
+      "url": "https://www.youtube.com/watch?v=ddyTp95pf24",
+      "published_at": "2026-04-24T05:44:54Z",
+      "duration": "02:02:38",
+      "duration_seconds": 7358,
+      "day_number": 7,
+      "slug": "day-07-ddyTp95pf24"
+    },
+    {
+      "video_id": "sQ-0Pk6_asI",
+      "title": "Day 8 – Vibe Coding Until I Buy My Family a House ( $28,824 ARR )",
+      "url": "https://www.youtube.com/watch?v=sQ-0Pk6_asI",
+      "published_at": "2026-04-24T19:32:38Z",
+      "duration": "05:11:26",
+      "duration_seconds": 18686,
+      "day_number": 8,
+      "slug": "day-08-sQ-0Pk6_asI"
+    },
+    {
+      "video_id": "oWlz7hXSvRE",
+      "title": "Day 9 – Vibe Coding Until I Buy My Family a House ( $30,024 ARR )",
+      "url": "https://www.youtube.com/watch?v=oWlz7hXSvRE",
+      "published_at": "2026-04-27T18:43:35Z",
+      "duration": "04:27:16",
+      "duration_seconds": 16036,
+      "day_number": 9,
+      "slug": "day-09-oWlz7hXSvRE"
+    },
+    {
+      "video_id": "hzCWy303ak0",
+      "title": "Day 10 – Vibe Coding Until I Buy My Family a House ( $30,444 ARR )",
+      "url": "https://www.youtube.com/watch?v=hzCWy303ak0",
+      "published_at": "2026-04-29T04:07:27Z",
+      "duration": "01:22:23",
+      "duration_seconds": 4943,
+      "day_number": 10,
+      "slug": "day-10-hzCWy303ak0"
+    },
+    {
+      "video_id": "uWcnJ39FNrI",
+      "title": "Day 10 – Vibe Coding Until I Buy My Family a House ( $30,444 ARR )",
+      "url": "https://www.youtube.com/watch?v=uWcnJ39FNrI",
+      "published_at": "2026-04-29T07:49:49Z",
+      "duration": "02:57:28",
+      "duration_seconds": 10648,
+      "day_number": 10,
+      "slug": "day-10-uWcnJ39FNrI"
+    },
+    {
+      "video_id": "GxIKVrImvKA",
+      "title": "Day 11 – Vibe Coding Until I Buy My Family a House ( $29,964 ARR )",
+      "url": "https://www.youtube.com/watch?v=GxIKVrImvKA",
+      "published_at": "2026-04-30T05:21:03Z",
+      "duration": "02:39:34",
+      "duration_seconds": 9574,
+      "day_number": 11,
+      "slug": "day-11-GxIKVrImvKA"
+    },
+    {
+      "video_id": "kV5eXIXhMHQ",
+      "title": "Day 12 – Vibe Coding Until I Buy My Family a House ( $30,276 ARR )",
+      "url": "https://www.youtube.com/watch?v=kV5eXIXhMHQ",
+      "published_at": "2026-04-30T19:55:09Z",
+      "duration": "05:09:41",
+      "duration_seconds": 18581,
+      "day_number": 12,
+      "slug": "day-12-kV5eXIXhMHQ"
+    },
+    {
+      "video_id": "gL0dzeF4xZY",
+      "title": "Day 13 – Vibe Coding Until I Buy My Family a House ( $30,276 ARR )",
+      "url": "https://www.youtube.com/watch?v=gL0dzeF4xZY",
+      "published_at": "2026-05-01T19:52:00Z",
+      "duration": "05:08:23",
+      "duration_seconds": 18503,
+      "day_number": 13,
+      "slug": "day-13-gL0dzeF4xZY"
+    },
+    {
+      "video_id": "keo0g_AIe3I",
+      "title": "Day 14 – Vibe Coding Until I Buy My Family a House ( $29,712 ARR )",
+      "url": "https://www.youtube.com/watch?v=keo0g_AIe3I",
+      "published_at": "2026-05-05T08:17:08Z",
+      "duration": "03:58:12",
+      "duration_seconds": 14292,
+      "day_number": 14,
+      "slug": "day-14-keo0g_AIe3I"
+    },
+    {
+      "video_id": "UvXbQw365r0",
+      "title": "Day 15 – Vibe Coding Until I Buy My Family a House ( $29,811 ARR )",
+      "url": "https://www.youtube.com/watch?v=UvXbQw365r0",
+      "published_at": "2026-05-05T18:37:30Z",
+      "duration": "04:08:07",
+      "duration_seconds": 14887,
+      "day_number": 15,
+      "slug": "day-15-UvXbQw365r0"
+    },
+    {
+      "video_id": "sqHei0bl1Ng",
+      "title": "Day 16 – Vibe Coding Until I Buy My Family a House ( $28,800 ARR )",
+      "url": "https://www.youtube.com/watch?v=sqHei0bl1Ng",
+      "published_at": "2026-05-06T16:37:02Z",
+      "duration": "02:08:17",
+      "duration_seconds": 7697,
+      "day_number": 16,
+      "slug": "day-16-sqHei0bl1Ng"
+    },
+    {
+      "video_id": "BSe-OvDjr3g",
+      "title": "Day 17 – Vibe Coding Until I Buy My Family a House ( $28,896 ARR )",
+      "url": "https://www.youtube.com/watch?v=BSe-OvDjr3g",
+      "published_at": "2026-05-07T19:27:33Z",
+      "duration": "05:02:39",
+      "duration_seconds": 18159,
+      "day_number": 17,
+      "slug": "day-17-BSe-OvDjr3g"
+    },
+    {
+      "video_id": "4tXlEqQbEZo",
+      "title": "Day 18 – GIVEAWAY + Vibe Coding Until I Buy My Family a House ( $28,668 ARR )",
+      "url": "https://www.youtube.com/watch?v=4tXlEqQbEZo",
+      "published_at": "2026-05-08T19:09:40Z",
+      "duration": "04:21:21",
+      "duration_seconds": 15681,
+      "day_number": 18,
+      "slug": "day-18-4tXlEqQbEZo"
+    },
+    {
+      "video_id": "nk9bUv2YCUc",
+      "title": "Day 19 – Vibe Coding Until I Buy My Family a House ( $27,576 ARR )",
+      "url": "https://www.youtube.com/watch?v=nk9bUv2YCUc",
+      "published_at": "2026-05-11T17:21:14Z",
+      "duration": "02:58:12",
+      "duration_seconds": 10692,
+      "day_number": 19,
+      "slug": "day-19-nk9bUv2YCUc"
+    },
+    {
+      "video_id": "ZC9NR03y8MA",
+      "title": "Day 20 – Vibe Coding Until I Buy My Family a House ( $27,576 ARR )",
+      "url": "https://www.youtube.com/watch?v=ZC9NR03y8MA",
+      "published_at": "2026-05-12T19:14:41Z",
+      "duration": "04:26:29",
+      "duration_seconds": 15989,
+      "day_number": 20,
+      "slug": "day-20-ZC9NR03y8MA"
+    },
+    {
+      "video_id": "K_9Emt_5Tvs",
+      "title": "Day 21 – Vibe Coding Until I Buy My Family a House ( $27,576 ARR )",
+      "url": "https://www.youtube.com/watch?v=K_9Emt_5Tvs",
+      "published_at": "2026-05-13T17:58:54Z",
+      "duration": "03:23:27",
+      "duration_seconds": 12207,
+      "day_number": 21,
+      "slug": "day-21-K_9Emt_5Tvs"
+    },
+    {
+      "video_id": "r78x36FcIWQ",
+      "title": "Day 21 – Vibe Coding Until I Buy My Family a House ( $27,576 ARR )",
+      "url": "https://www.youtube.com/watch?v=r78x36FcIWQ",
+      "published_at": "2026-05-13T19:12:28Z",
+      "duration": "01:17:25",
+      "duration_seconds": 4645,
+      "day_number": 21,
+      "slug": "day-21-r78x36FcIWQ"
+    },
+    {
+      "video_id": "KWTUMLvj3ts",
+      "title": "Day 22 – Vibe Coding Until I Buy My Family a House ( $27,576 ARR )",
+      "url": "https://www.youtube.com/watch?v=KWTUMLvj3ts",
+      "published_at": "2026-05-14T18:38:58Z",
+      "duration": "03:41:10",
+      "duration_seconds": 13270,
+      "day_number": 22,
+      "slug": "day-22-KWTUMLvj3ts"
+    },
+    {
+      "video_id": "Lw7MFi0eCgI",
+      "title": "Day 23 – Vibe Coding Until I Buy My Family a House ( $26,328 ARR )",
+      "url": "https://www.youtube.com/watch?v=Lw7MFi0eCgI",
+      "published_at": "2026-05-15T17:56:56Z",
+      "duration": "03:33:33",
+      "duration_seconds": 12813,
+      "day_number": 23,
+      "slug": "day-23-Lw7MFi0eCgI"
+    },
+    {
+      "video_id": "rYD15QH72KQ",
+      "title": "Day 24 – Vibe Coding Until I Buy My Family a House ( $24,048 ARR )",
+      "url": "https://www.youtube.com/watch?v=rYD15QH72KQ",
+      "published_at": "2026-05-18T15:56:03Z",
+      "duration": "01:23:38",
+      "duration_seconds": 5018,
+      "day_number": 24,
+      "slug": "day-24-rYD15QH72KQ"
+    },
+    {
+      "video_id": "tFh5BuwN2ok",
+      "title": "Day 24 – Vibe Coding Until I Buy My Family a House ( $24,048 ARR )",
+      "url": "https://www.youtube.com/watch?v=tFh5BuwN2ok",
+      "published_at": "2026-05-18T21:46:06Z",
+      "duration": "04:02:56",
+      "duration_seconds": 14576,
+      "day_number": 24,
+      "slug": "day-24-tFh5BuwN2ok"
+    },
+    {
+      "video_id": "HqgVrZNJXZQ",
+      "title": "Day 25 – Vibe Coding Until I Buy My Family a House ( $24,816 ARR )",
+      "url": "https://www.youtube.com/watch?v=HqgVrZNJXZQ",
+      "published_at": "2026-05-19T18:31:42Z",
+      "duration": "03:19:03",
+      "duration_seconds": 11943,
+      "day_number": 25,
+      "slug": "day-25-HqgVrZNJXZQ"
+    },
+    {
+      "video_id": "X2RPbuBFPRo",
+      "title": "Day 26 – Vibe Coding Until I Buy My Family a House ( $24,744 ARR )",
+      "url": "https://www.youtube.com/watch?v=X2RPbuBFPRo",
+      "published_at": "2026-05-20T17:01:59Z",
+      "duration": "02:20:15",
+      "duration_seconds": 8415,
+      "day_number": 26,
+      "slug": "day-26-X2RPbuBFPRo"
+    },
+    {
+      "video_id": "OYG7irO8iBk",
+      "title": "Day 27 – Vibe Coding Until I Buy My Family a House ( $22,872 ARR )",
+      "url": "https://www.youtube.com/watch?v=OYG7irO8iBk",
+      "published_at": "2026-05-21T18:22:26Z",
+      "duration": "03:40:49",
+      "duration_seconds": 13249,
+      "day_number": 27,
+      "slug": "day-27-OYG7irO8iBk"
+    },
+    {
+      "video_id": "JFaCkPB67Lw",
+      "title": "Day 28 – Vibe Coding Until I Buy My Family a House ( $22,872 ARR )",
+      "url": "https://www.youtube.com/watch?v=JFaCkPB67Lw",
+      "published_at": "2026-05-22T18:36:39Z",
+      "duration": "03:54:54",
+      "duration_seconds": 14094,
+      "day_number": 28,
+      "slug": "day-28-JFaCkPB67Lw"
+    },
+    {
+      "video_id": "I6mQVamLxAo",
+      "title": "Day 29 – Vibe Coding Until I Buy My Family a House ( $22,872 ARR )",
+      "url": "https://www.youtube.com/watch?v=I6mQVamLxAo",
+      "published_at": "2026-05-26T07:08:31Z",
+      "duration": "03:28:01",
+      "duration_seconds": 12481,
+      "day_number": 29,
+      "slug": "day-29-I6mQVamLxAo"
+    },
+    {
+      "video_id": "0dP6nB9CcbE",
+      "title": "Day 30 – Vibe Coding Until I Buy My Family a House ( $22,296 ARR )",
+      "url": "https://www.youtube.com/watch?v=0dP6nB9CcbE",
+      "published_at": "2026-05-27T07:26:27Z",
+      "duration": "03:15:48",
+      "duration_seconds": 11748,
+      "day_number": 30,
+      "slug": "day-30-0dP6nB9CcbE"
+    },
+    {
+      "video_id": "RH_4Sjarolg",
+      "title": "Day 31 – Vibe Coding Until I Buy My Family a House ( $22,296 ARR )",
+      "url": "https://www.youtube.com/watch?v=RH_4Sjarolg",
+      "published_at": "2026-05-27T17:58:29Z",
+      "duration": "03:21:10",
+      "duration_seconds": 12070,
+      "day_number": 31,
+      "slug": "day-31-RH_4Sjarolg"
+    },
+    {
+      "video_id": "jIfBY5yd7P4",
+      "title": "TESTING OPUS 4.8 ULTRACODE",
+      "url": "https://www.youtube.com/watch?v=jIfBY5yd7P4",
+      "published_at": "2026-05-28T18:14:04Z",
+      "duration": "03:37:15",
+      "duration_seconds": 13035,
+      "day_number": null,
+      "slug": "stream-jIfBY5yd7P4"
+    },
+    {
+      "video_id": "Oam7uaiwYyU",
+      "title": "Day 33 – Vibe Coding Until I Buy My Family a House ( $21,672 ARR )",
+      "url": "https://www.youtube.com/watch?v=Oam7uaiwYyU",
+      "published_at": "2026-05-29T16:50:22Z",
+      "duration": "02:14:26",
+      "duration_seconds": 8066,
+      "day_number": 33,
+      "slug": "day-33-Oam7uaiwYyU"
+    },
+    {
+      "video_id": "Vgm0YCo1rd8",
+      "title": "Day 34 – Vibe Coding Until I Buy My Family a House ( $21,672 ARR )",
+      "url": "https://www.youtube.com/watch?v=Vgm0YCo1rd8",
+      "published_at": "2026-06-01T21:53:09Z",
+      "duration": "07:30:38",
+      "duration_seconds": 27038,
+      "day_number": 34,
+      "slug": "day-34-Vgm0YCo1rd8"
+    },
+    {
+      "video_id": "bKVWcS8RsCU",
+      "title": "Day 35 – Vibe Coding Until I Buy My Family a House ( $21,672 ARR )",
+      "url": "https://www.youtube.com/watch?v=bKVWcS8RsCU",
+      "published_at": "2026-06-02T16:41:35Z",
+      "duration": "02:30:34",
+      "duration_seconds": 9034,
+      "day_number": 35,
+      "slug": "day-35-bKVWcS8RsCU"
+    },
+    {
+      "video_id": "zW2tloD2mx0",
+      "title": "Day 38 – Vibe Coding Until I Buy My Family a House ( $21,636 ARR )",
+      "url": "https://www.youtube.com/watch?v=zW2tloD2mx0",
+      "published_at": "2026-06-05T17:55:49Z",
+      "duration": "03:17:57",
+      "duration_seconds": 11877,
+      "day_number": 38,
+      "slug": "day-38-zW2tloD2mx0"
+    },
+    {
+      "video_id": "kt4xJdrYtp4",
+      "title": "Day 39 – Vibe Coding Until I Buy My Family a House ( $21,636 ARR )",
+      "url": "https://www.youtube.com/watch?v=kt4xJdrYtp4",
+      "published_at": "2026-06-08T17:18:22Z",
+      "duration": "02:43:26",
+      "duration_seconds": 9806,
+      "day_number": 39,
+      "slug": "day-39-kt4xJdrYtp4"
+    },
+    {
+      "video_id": "Ea-CQ1PWxA8",
+      "title": "Day 39 – Vibe Coding Until I Buy My Family a House ( $21,636 ARR )",
+      "url": "https://www.youtube.com/watch?v=Ea-CQ1PWxA8",
+      "published_at": "2026-06-09T08:36:57Z",
+      "duration": "02:53:31",
+      "duration_seconds": 10411,
+      "day_number": 39,
+      "slug": "day-39-Ea-CQ1PWxA8"
+    },
+    {
+      "video_id": "idiuL75QXfQ",
+      "title": "TESTING CLAUDE MYTHOS ALL DAY!",
+      "url": "https://www.youtube.com/watch?v=idiuL75QXfQ",
+      "published_at": "2026-06-09T22:56:33Z",
+      "duration": "07:59:41",
+      "duration_seconds": 28781,
+      "day_number": null,
+      "slug": "stream-idiuL75QXfQ"
+    },
+    {
+      "video_id": "igKjMaUHaUU",
+      "title": "DAY 41 - Vibe coding until I buy my family a house ( $20,154 ARR )",
+      "url": "https://www.youtube.com/watch?v=igKjMaUHaUU",
+      "published_at": "2026-06-10T18:25:43Z",
+      "duration": "03:37:38",
+      "duration_seconds": 13058,
+      "day_number": 41,
+      "slug": "day-41-igKjMaUHaUU"
+    },
+    {
+      "video_id": "e-uQEe_HRWo",
+      "title": "DAY 42 - Vibe coding until I buy my family a house ( $20,154 ARR )",
+      "url": "https://www.youtube.com/watch?v=e-uQEe_HRWo",
+      "published_at": "2026-06-11T20:06:57Z",
+      "duration": "05:22:26",
+      "duration_seconds": 19346,
+      "day_number": 42,
+      "slug": "day-42-e-uQEe_HRWo"
+    },
+    {
+      "video_id": "Ris3XOQ3f8Y",
+      "title": "Not leaving my desk until I vibe code an entire windows app",
+      "url": "https://www.youtube.com/watch?v=Ris3XOQ3f8Y",
+      "published_at": "2026-06-12T20:06:13Z",
+      "duration": "05:04:52",
+      "duration_seconds": 18292,
+      "day_number": null,
+      "slug": "stream-Ris3XOQ3f8Y"
+    },
+    {
+      "video_id": "E07ps2b843Y",
+      "title": "Day 43 - VIBE CODING UNTIL I BUY MY FAMILY A HOUSE",
+      "url": "https://www.youtube.com/watch?v=E07ps2b843Y",
+      "published_at": "2026-06-16T06:37:38Z",
+      "duration": "02:33:16",
+      "duration_seconds": 9196,
+      "day_number": 43,
+      "slug": "day-43-E07ps2b843Y"
+    },
+    {
+      "video_id": "MzNA0EMUva0",
+      "title": "Day 45 - Vibe coding until I buy my family a house ( Earned : $9,319 )",
+      "url": "https://www.youtube.com/watch?v=MzNA0EMUva0",
+      "published_at": "2026-06-17T18:49:14Z",
+      "duration": "04:13:36",
+      "duration_seconds": 15216,
+      "day_number": 45,
+      "slug": "day-45-MzNA0EMUva0"
+    },
+    {
+      "video_id": "iSy9MB15csw",
+      "title": "Day 46 - Vibe coding until I buy my family a house ( Earned : $9,826 )",
+      "url": "https://www.youtube.com/watch?v=iSy9MB15csw",
+      "published_at": "2026-06-18T14:17:34Z",
+      "duration": "03:59:38",
+      "duration_seconds": 14378,
+      "day_number": 46,
+      "slug": "day-46-iSy9MB15csw"
+    }
+  ]
+}

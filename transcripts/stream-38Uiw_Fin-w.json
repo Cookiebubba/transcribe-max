@@ -1,0 +1,3275 @@
+{
+  "video_id": "38Uiw_Fin-w",
+  "title": "Building a Glowing Ai GitHub Commit Button",
+  "url": "https://www.youtube.com/watch?v=38Uiw_Fin-w",
+  "published_at": "2024-12-30T00:16:22Z",
+  "duration": "01:34:07",
+  "day_number": null,
+  "caption_language": "en",
+  "caption_kind": "auto-generated",
+  "segment_count": 652,
+  "word_count": 3363,
+  "segments": [
+    {
+      "start": 7.08,
+      "duration": 3.599,
+      "text": "yo yo yo"
+    },
+    {
+      "start": 13.36,
+      "duration": 5.04,
+      "text": "yo we're"
+    },
+    {
+      "start": 15.48,
+      "duration": 6.12,
+      "text": "live day"
+    },
+    {
+      "start": 18.4,
+      "duration": 3.2,
+      "text": "three of"
+    },
+    {
+      "start": 24.08,
+      "duration": 4.64,
+      "text": "building the"
+    },
+    {
+      "start": 26.119,
+      "duration": 5.121,
+      "text": "button we still don't have a name for it"
+    },
+    {
+      "start": 28.72,
+      "duration": 5.56,
+      "text": "yet"
+    },
+    {
+      "start": 31.24,
+      "duration": 7.36,
+      "text": "we need a name for the"
+    },
+    {
+      "start": 34.28,
+      "duration": 4.32,
+      "text": "button we're live we're live we're"
+    },
+    {
+      "start": 39.079,
+      "duration": 9.16,
+      "text": "live fantastic news this"
+    },
+    {
+      "start": 43.12,
+      "duration": 5.119,
+      "text": "morning absolutely fantastic news this"
+    },
+    {
+      "start": 49.44,
+      "duration": 4.959,
+      "text": "morning let's get the suet out here"
+    },
+    {
+      "start": 72.4,
+      "duration": 2.719,
+      "text": "let's get this tweet out here hold on we"
+    },
+    {
+      "start": 73.799,
+      "duration": 3.841,
+      "text": "got to throw some we got to throw a"
+    },
+    {
+      "start": 75.119,
+      "duration": 6.801,
+      "text": "little sauce at it though first we got"
+    },
+    {
+      "start": 77.64,
+      "duration": 4.28,
+      "text": "to throw a little something on it"
+    },
+    {
+      "start": 87.52,
+      "duration": 4.4,
+      "text": "oh Mark came through"
+    },
+    {
+      "start": 93.56,
+      "duration": 5.36,
+      "text": "I woke up this"
+    },
+    {
+      "start": 95.119,
+      "duration": 7.441,
+      "text": "morning we got the uh we got the mark"
+    },
+    {
+      "start": 98.92,
+      "duration": 3.64,
+      "text": "reply nothing feels"
+    },
+    {
+      "start": 102.759,
+      "duration": 5.64,
+      "text": "better what is up brother how are you"
+    },
+    {
+      "start": 105.04,
+      "duration": 3.359,
+      "text": "doing the blade King is"
+    },
+    {
+      "start": 108.56,
+      "duration": 4.879,
+      "text": "back how we doing today good morning"
+    },
+    {
+      "start": 111.64,
+      "duration": 3.4,
+      "text": "good morning good morning I don't know"
+    },
+    {
+      "start": 113.439,
+      "duration": 4.32,
+      "text": "where you are but it might be morning"
+    },
+    {
+      "start": 115.04,
+      "duration": 6.6,
+      "text": "for you maybe I don't"
+    },
+    {
+      "start": 117.759,
+      "duration": 6.72,
+      "text": "know I think I'm peeking my mic"
+    },
+    {
+      "start": 121.64,
+      "duration": 2.839,
+      "text": "my check my"
+    },
+    {
+      "start": 124.719,
+      "duration": 3.801,
+      "text": "check my check my"
+    },
+    {
+      "start": 129.119,
+      "duration": 3.76,
+      "text": "check what is up what is"
+    },
+    {
+      "start": 146.04,
+      "duration": 4.4,
+      "text": "up we need something good we need"
+    },
+    {
+      "start": 148.48,
+      "duration": 5.56,
+      "text": "something good here we need to going me"
+    },
+    {
+      "start": 150.44,
+      "duration": 7.4,
+      "text": "fired up we have a big day"
+    },
+    {
+      "start": 154.04,
+      "duration": 3.8,
+      "text": "today massive day"
+    },
+    {
+      "start": 160.92,
+      "duration": 5.08,
+      "text": "today oh I got it I got it I got it I"
+    },
+    {
+      "start": 163.84,
+      "duration": 2.16,
+      "text": "got"
+    },
+    {
+      "start": 166.64,
+      "duration": 3.64,
+      "text": "it come on"
+    },
+    {
+      "start": 170.76,
+      "duration": 4.44,
+      "text": "yes here we go"
+    },
+    {
+      "start": 197.76,
+      "duration": 8.399,
+      "text": "boom boom we're in"
+    },
+    {
+      "start": 201.48,
+      "duration": 4.679,
+      "text": "there all right we're we're going to hit"
+    },
+    {
+      "start": 207.4,
+      "duration": 4.36,
+      "text": "this we're going to hit one of these"
+    },
+    {
+      "start": 212.959,
+      "duration": 3.081,
+      "text": "you got to Hype it up"
+    },
+    {
+      "start": 217.599,
+      "duration": 4.2,
+      "text": "sometimes I don't know if that's going"
+    },
+    {
+      "start": 219.4,
+      "duration": 2.399,
+      "text": "to work"
+    },
+    {
+      "start": 227.72,
+      "duration": 3.799,
+      "text": "good no"
+    },
+    {
+      "start": 232.599,
+      "duration": 6.241,
+      "text": "no we got to go to my channel and then"
+    },
+    {
+      "start": 235.4,
+      "duration": 6.119,
+      "text": "we got to grab uh we got to grab the"
+    },
+    {
+      "start": 238.84,
+      "duration": 5.599,
+      "text": "YouTube link"
+    },
+    {
+      "start": 241.519,
+      "duration": 2.92,
+      "text": "cuz we're live"
+    },
+    {
+      "start": 250.799,
+      "duration": 5.68,
+      "text": "baby did you already settle on a name"
+    },
+    {
+      "start": 252.92,
+      "duration": 7.279,
+      "text": "for the product I didn't I"
+    },
+    {
+      "start": 256.479,
+      "duration": 6.521,
+      "text": "didn't I I do sound like I have a cold"
+    },
+    {
+      "start": 260.199,
+      "duration": 4.241,
+      "text": "yeah it's morning I know sorry I'm being"
+    },
+    {
+      "start": 263.0,
+      "duration": 4.12,
+      "text": "I'm being bad streamer I'm not reading"
+    },
+    {
+      "start": 264.44,
+      "duration": 2.68,
+      "text": "the chat right"
+    },
+    {
+      "start": 268.56,
+      "duration": 5.88,
+      "text": "now hey it's just uh it's 5:00 a.m. you"
+    },
+    {
+      "start": 271.8,
+      "duration": 4.239,
+      "text": "know and I'm a dad so it takes me a"
+    },
+    {
+      "start": 274.44,
+      "duration": 5.84,
+      "text": "minute for my"
+    },
+    {
+      "start": 276.039,
+      "duration": 4.241,
+      "text": "uh my voice and all that to come"
+    },
+    {
+      "start": 290.12,
+      "duration": 3.4,
+      "text": "around you know what's crazy I'm not"
+    },
+    {
+      "start": 292.24,
+      "duration": 5.44,
+      "text": "going to lie I thought that I had"
+    },
+    {
+      "start": 293.52,
+      "duration": 8.119,
+      "text": "everything ready to go but I"
+    },
+    {
+      "start": 297.68,
+      "duration": 3.959,
+      "text": "um I left my"
+    },
+    {
+      "start": 302.84,
+      "duration": 6.639,
+      "text": "button I left I left the actual button"
+    },
+    {
+      "start": 306.039,
+      "duration": 3.44,
+      "text": "upstairs I'm not even going to lie to"
+    },
+    {
+      "start": 312.16,
+      "duration": 3.479,
+      "text": "you which is so"
+    },
+    {
+      "start": 316.039,
+      "duration": 3.241,
+      "text": "annoying The"
+    },
+    {
+      "start": 319.72,
+      "duration": 4.96,
+      "text": "Pusher The Pusher sounds good but it"
+    },
+    {
+      "start": 322.319,
+      "duration": 5.6,
+      "text": "also reminds me a little bit of doing"
+    },
+    {
+      "start": 324.68,
+      "duration": 6.959,
+      "text": "drugs like like uh what's that song just"
+    },
+    {
+      "start": 327.919,
+      "duration": 3.72,
+      "text": "a little push and you'll be"
+    },
+    {
+      "start": 331.8,
+      "duration": 6.32,
+      "text": "flying just a little"
+    },
+    {
+      "start": 335.12,
+      "duration": 3.0,
+      "text": "push"
+    },
+    {
+      "start": 340.88,
+      "duration": 3.48,
+      "text": "okay to-do"
+    },
+    {
+      "start": 344.68,
+      "duration": 3.359,
+      "text": "list what we"
+    },
+    {
+      "start": 353.8,
+      "duration": 7.64,
+      "text": "need what we need here is uh we have to"
+    },
+    {
+      "start": 357.919,
+      "duration": 3.521,
+      "text": "come up with"
+    },
+    {
+      "start": 361.479,
+      "duration": 2.44,
+      "text": "what do we"
+    },
+    {
+      "start": 366.8,
+      "duration": 5.2,
+      "text": "need we have to build"
+    },
+    {
+      "start": 370.24,
+      "duration": 3.959,
+      "text": "stabilizer"
+    },
+    {
+      "start": 374.199,
+      "duration": 6.481,
+      "text": "Mount like Space"
+    },
+    {
+      "start": 377.68,
+      "duration": 3.0,
+      "text": "Bar"
+    },
+    {
+      "start": 384.4,
+      "duration": 5.56,
+      "text": "Key all right we need the stabilizer"
+    },
+    {
+      "start": 386.96,
+      "duration": 3.0,
+      "text": "mount"
+    },
+    {
+      "start": 390.72,
+      "duration": 2.68,
+      "text": "and then we need"
+    },
+    {
+      "start": 391.85,
+      "duration": 4.87,
+      "text": "[Music]"
+    },
+    {
+      "start": 393.4,
+      "duration": 7.44,
+      "text": "to so"
+    },
+    {
+      "start": 396.72,
+      "duration": 4.12,
+      "text": "Pressly we need to"
+    },
+    {
+      "start": 402.88,
+      "duration": 4.68,
+      "text": "um write script"
+    },
+    {
+      "start": 408.12,
+      "duration": 7.199,
+      "text": "to push"
+    },
+    {
+      "start": 411.24,
+      "duration": 4.079,
+      "text": "from GitHub all right"
+    },
+    {
+      "start": 415.599,
+      "duration": 5.201,
+      "text": "so this is this is our to-do list right"
+    },
+    {
+      "start": 418.12,
+      "duration": 6.32,
+      "text": "now okay"
+    },
+    {
+      "start": 420.8,
+      "duration": 5.679,
+      "text": "we do the stabilizer Mount first because"
+    },
+    {
+      "start": 424.44,
+      "duration": 5.56,
+      "text": "we are going to design that and then"
+    },
+    {
+      "start": 426.479,
+      "duration": 5.521,
+      "text": "we're going to 3D print it all right so"
+    },
+    {
+      "start": 430.0,
+      "duration": 4.0,
+      "text": "this gets knocked out first well that's"
+    },
+    {
+      "start": 432.0,
+      "duration": 3.56,
+      "text": "printing this is what we got to do we"
+    },
+    {
+      "start": 434.0,
+      "duration": 4.84,
+      "text": "have to start thinking smarter we got to"
+    },
+    {
+      "start": 435.56,
+      "duration": 6.56,
+      "text": "use our head here we have to uh we have"
+    },
+    {
+      "start": 438.84,
+      "duration": 5.24,
+      "text": "to we have to design that and then it's"
+    },
+    {
+      "start": 442.12,
+      "duration": 3.56,
+      "text": "going to start 3D printing and then well"
+    },
+    {
+      "start": 444.08,
+      "duration": 2.399,
+      "text": "that's 3D printing then we start writing"
+    },
+    {
+      "start": 445.68,
+      "duration": 4.0,
+      "text": "the"
+    },
+    {
+      "start": 446.479,
+      "duration": 5.16,
+      "text": "software okay"
+    },
+    {
+      "start": 449.68,
+      "duration": 3.6,
+      "text": "so we have uh we have multiple things"
+    },
+    {
+      "start": 451.639,
+      "duration": 4.601,
+      "text": "going on at once"
+    },
+    {
+      "start": 453.28,
+      "duration": 4.4,
+      "text": "there what's up cuber Dennis how we"
+    },
+    {
+      "start": 456.24,
+      "duration": 3.2,
+      "text": "doing this morning good morning good"
+    },
+    {
+      "start": 457.68,
+      "duration": 4.079,
+      "text": "morning we're building software today"
+    },
+    {
+      "start": 459.44,
+      "duration": 4.36,
+      "text": "we're we're right"
+    },
+    {
+      "start": 461.759,
+      "duration": 4.321,
+      "text": "we're we're building Hardware we're"
+    },
+    {
+      "start": 463.8,
+      "duration": 2.28,
+      "text": "writing"
+    },
+    {
+      "start": 467.199,
+      "duration": 4.68,
+      "text": "software I need my"
+    },
+    {
+      "start": 469.8,
+      "duration": 4.399,
+      "text": "coffee what's the software used to"
+    },
+    {
+      "start": 471.879,
+      "duration": 5.32,
+      "text": "design/ engineer the button I see you"
+    },
+    {
+      "start": 474.199,
+      "duration": 9.161,
+      "text": "have Kad find out about it yesterday"
+    },
+    {
+      "start": 477.199,
+      "duration": 11.801,
+      "text": "okay so the software using is a uh is an"
+    },
+    {
+      "start": 483.36,
+      "duration": 5.64,
+      "text": "extension of VSS code called platform"
+    },
+    {
+      "start": 489.24,
+      "duration": 5.399,
+      "text": "IO uh oh that that's for the software"
+    },
+    {
+      "start": 492.159,
+      "duration": 5.841,
+      "text": "you want"
+    },
+    {
+      "start": 494.639,
+      "duration": 5.96,
+      "text": "um you want shaper 3D I think that's"
+    },
+    {
+      "start": 498.0,
+      "duration": 5.08,
+      "text": "what you're talking"
+    },
+    {
+      "start": 500.599,
+      "duration": 6.72,
+      "text": "about uh"
+    },
+    {
+      "start": 503.08,
+      "duration": 10.04,
+      "text": "so design/ engineer button yeah so I use"
+    },
+    {
+      "start": 507.319,
+      "duration": 9.801,
+      "text": "Kad to do the PCB work and I say"
+    },
+    {
+      "start": 513.12,
+      "duration": 7.0,
+      "text": "that I I've done two pcbs before so I I"
+    },
+    {
+      "start": 517.12,
+      "duration": 5.32,
+      "text": "have no idea what I'm doing yet but yeah"
+    },
+    {
+      "start": 520.12,
+      "duration": 6.12,
+      "text": "Kad will do our"
+    },
+    {
+      "start": 522.44,
+      "duration": 6.44,
+      "text": "PCB for the for it and basically I've"
+    },
+    {
+      "start": 526.24,
+      "duration": 7.0,
+      "text": "decided I'm just going to make almost"
+    },
+    {
+      "start": 528.88,
+      "duration": 7.84,
+      "text": "like a uh like a keyboard PCB that just"
+    },
+    {
+      "start": 533.24,
+      "duration": 6.719,
+      "text": "has one button on it you know and then I"
+    },
+    {
+      "start": 536.72,
+      "duration": 5.76,
+      "text": "use shaper 3D which honestly I probably"
+    },
+    {
+      "start": 539.959,
+      "duration": 5.201,
+      "text": "wouldn't recommend unless you're like"
+    },
+    {
+      "start": 542.48,
+      "duration": 6.0,
+      "text": "you could start with this as like a way"
+    },
+    {
+      "start": 545.16,
+      "duration": 5.52,
+      "text": "to get into it as a beginner and then um"
+    },
+    {
+      "start": 548.48,
+      "duration": 4.88,
+      "text": "right after that I would immediately"
+    },
+    {
+      "start": 550.68,
+      "duration": 2.68,
+      "text": "stop using"
+    },
+    {
+      "start": 553.44,
+      "duration": 7.72,
+      "text": "that when you did pcbs at did you fail"
+    },
+    {
+      "start": 556.32,
+      "duration": 4.84,
+      "text": "at first no I didn't which I"
+    },
+    {
+      "start": 561.32,
+      "duration": 6.16,
+      "text": "wish I didn't because I followed an"
+    },
+    {
+      "start": 564.079,
+      "duration": 6.081,
+      "text": "exact video of how to make the PCB but"
+    },
+    {
+      "start": 567.48,
+      "duration": 4.68,
+      "text": "um"
+    },
+    {
+      "start": 570.16,
+      "duration": 5.28,
+      "text": "I"
+    },
+    {
+      "start": 572.16,
+      "duration": 6.799,
+      "text": "uh no I ones shott it completely and"
+    },
+    {
+      "start": 575.44,
+      "duration": 5.56,
+      "text": "then um I I just followed a guys video"
+    },
+    {
+      "start": 578.959,
+      "duration": 5.081,
+      "text": "on how to make it and then I hand"
+    },
+    {
+      "start": 581.0,
+      "duration": 6.6,
+      "text": "soldered all the components on it but uh"
+    },
+    {
+      "start": 584.04,
+      "duration": 7.16,
+      "text": "this PCB that I just made recently um I"
+    },
+    {
+      "start": 587.6,
+      "duration": 8.0,
+      "text": "did not follow any videos on it and I"
+    },
+    {
+      "start": 591.2,
+      "duration": 10.639,
+      "text": "picked all the capacitors resistors"
+    },
+    {
+      "start": 595.6,
+      "duration": 9.239,
+      "text": "LEDs um the the actual ship itself the"
+    },
+    {
+      "start": 601.839,
+      "duration": 6.881,
+      "text": "uh whatever the MCU if you want to call"
+    },
+    {
+      "start": 604.839,
+      "duration": 6.041,
+      "text": "it um and that's the one that I'm like I"
+    },
+    {
+      "start": 608.72,
+      "duration": 4.4,
+      "text": "have very low hopes for that actually"
+    },
+    {
+      "start": 610.88,
+      "duration": 4.84,
+      "text": "working I have no idea if that that's"
+    },
+    {
+      "start": 613.12,
+      "duration": 2.6,
+      "text": "going to actually"
+    },
+    {
+      "start": 618.48,
+      "duration": 3.4,
+      "text": "work all right"
+    },
+    {
+      "start": 624.36,
+      "duration": 6.32,
+      "text": "so this is what I'm talking about for"
+    },
+    {
+      "start": 627.68,
+      "duration": 3.0,
+      "text": "today"
+    },
+    {
+      "start": 631.519,
+      "duration": 11.601,
+      "text": "all right so that is a plate Mount"
+    },
+    {
+      "start": 636.6,
+      "duration": 10.039,
+      "text": "stabilizer and um that just allows for"
+    },
+    {
+      "start": 643.12,
+      "duration": 9.08,
+      "text": "your pretty much allows for"
+    },
+    {
+      "start": 646.639,
+      "duration": 7.44,
+      "text": "your key to stay stable and stabilizer"
+    },
+    {
+      "start": 652.2,
+      "duration": 5.079,
+      "text": "as you press it"
+    },
+    {
+      "start": 654.079,
+      "duration": 5.961,
+      "text": "down and the problem is with big large"
+    },
+    {
+      "start": 657.279,
+      "duration": 7.081,
+      "text": "button is that"
+    },
+    {
+      "start": 660.04,
+      "duration": 4.32,
+      "text": "when you press big large button"
+    },
+    {
+      "start": 664.44,
+      "duration": 8.16,
+      "text": "down and um it's so wide kind of like a"
+    },
+    {
+      "start": 669.56,
+      "duration": 4.04,
+      "text": "space bar that it'll become unstable and"
+    },
+    {
+      "start": 672.6,
+      "duration": 5.52,
+      "text": "it can"
+    },
+    {
+      "start": 673.6,
+      "duration": 7.6,
+      "text": "jam inside of the uh inside of the"
+    },
+    {
+      "start": 678.12,
+      "duration": 4.839,
+      "text": "housing so if we add a stabilizer it'll"
+    },
+    {
+      "start": 681.2,
+      "duration": 3.56,
+      "text": "keep it stable just like your space bar"
+    },
+    {
+      "start": 682.959,
+      "duration": 5.281,
+      "text": "does that way there if you're not"
+    },
+    {
+      "start": 684.76,
+      "duration": 5.199,
+      "text": "pressing uh in the center of the button"
+    },
+    {
+      "start": 688.24,
+      "duration": 4.52,
+      "text": "if you press in the side it doesn't"
+    },
+    {
+      "start": 689.959,
+      "duration": 7.521,
+      "text": "matter cuz the stabilizer will keep the"
+    },
+    {
+      "start": 692.76,
+      "duration": 7.639,
+      "text": "button moving uh perfectly vertical and"
+    },
+    {
+      "start": 697.48,
+      "duration": 2.919,
+      "text": "not catching on the"
+    },
+    {
+      "start": 707.32,
+      "duration": 5.0,
+      "text": "sides I can show you uh I can show you"
+    },
+    {
+      "start": 709.839,
+      "duration": 2.481,
+      "text": "what I'm talking"
+    },
+    {
+      "start": 715.839,
+      "duration": 9.921,
+      "text": "about so uh if you if you click the"
+    },
+    {
+      "start": 721.68,
+      "duration": 4.08,
+      "text": "button at the top then there's no"
+    },
+    {
+      "start": 726.92,
+      "duration": 6.84,
+      "text": "problems but see right there if you"
+    },
+    {
+      "start": 729.6,
+      "duration": 4.16,
+      "text": "click on the side if we click on the"
+    },
+    {
+      "start": 734.68,
+      "duration": 7.2,
+      "text": "side you see that that's because we have"
+    },
+    {
+      "start": 737.199,
+      "duration": 4.681,
+      "text": "no uh we have no stabilizer"
+    },
+    {
+      "start": 742.92,
+      "duration": 7.24,
+      "text": "support so um basically what we need to"
+    },
+    {
+      "start": 747.16,
+      "duration": 3.0,
+      "text": "do"
+    },
+    {
+      "start": 750.24,
+      "duration": 5.719,
+      "text": "is"
+    },
+    {
+      "start": 751.68,
+      "duration": 4.279,
+      "text": "uh take this piece right"
+    },
+    {
+      "start": 757.16,
+      "duration": 5.44,
+      "text": "here take this piece right here which is"
+    },
+    {
+      "start": 760.36,
+      "duration": 4.32,
+      "text": "basically our"
+    },
+    {
+      "start": 762.6,
+      "duration": 6.76,
+      "text": "plate you want to talk about it like a"
+    },
+    {
+      "start": 764.68,
+      "duration": 7.12,
+      "text": "keyboard take this piece and then uh"
+    },
+    {
+      "start": 769.36,
+      "duration": 5.96,
+      "text": "throw"
+    },
+    {
+      "start": 771.8,
+      "duration": 4.599,
+      "text": "two plate Mount stabilizer mounts on"
+    },
+    {
+      "start": 775.32,
+      "duration": 4.56,
+      "text": "either"
+    },
+    {
+      "start": 776.399,
+      "duration": 5.361,
+      "text": "side but that's going to be a little bit"
+    },
+    {
+      "start": 779.88,
+      "duration": 3.92,
+      "text": "tricky because I've never done anything"
+    },
+    {
+      "start": 781.76,
+      "duration": 4.439,
+      "text": "like that"
+    },
+    {
+      "start": 783.8,
+      "duration": 5.68,
+      "text": "before so I'm thinking that we take"
+    },
+    {
+      "start": 786.199,
+      "duration": 7.0,
+      "text": "apart this plate that I have"
+    },
+    {
+      "start": 789.48,
+      "duration": 7.32,
+      "text": "here we take this apart and then uh from"
+    },
+    {
+      "start": 793.199,
+      "duration": 3.601,
+      "text": "there we'll be able to"
+    },
+    {
+      "start": 797.56,
+      "duration": 7.36,
+      "text": "um measure this and I didn't get a new"
+    },
+    {
+      "start": 801.639,
+      "duration": 5.401,
+      "text": "caliber yet which I need to do that I"
+    },
+    {
+      "start": 804.92,
+      "duration": 5.279,
+      "text": "should probably just order that now but"
+    },
+    {
+      "start": 807.04,
+      "duration": 6.2,
+      "text": "I also don't want to leak my"
+    },
+    {
+      "start": 810.199,
+      "duration": 3.041,
+      "text": "payment details by"
+    },
+    {
+      "start": 814.0,
+      "duration": 6.44,
+      "text": "accident I think you guys would take"
+    },
+    {
+      "start": 817.92,
+      "duration": 4.719,
+      "text": "it all right thanks for the explanation"
+    },
+    {
+      "start": 820.44,
+      "duration": 4.959,
+      "text": "this is more of a nice to have idea for"
+    },
+    {
+      "start": 822.639,
+      "duration": 3.88,
+      "text": "your product but how difficult do you"
+    },
+    {
+      "start": 825.399,
+      "duration": 2.601,
+      "text": "think it would be to implement a press"
+    },
+    {
+      "start": 826.519,
+      "duration": 3.241,
+      "text": "and hold functionality so user"
+    },
+    {
+      "start": 828.0,
+      "duration": 4.12,
+      "text": "experiences charging up effect when"
+    },
+    {
+      "start": 829.76,
+      "duration": 3.8,
+      "text": "committing it's so funny I was just"
+    },
+    {
+      "start": 832.12,
+      "duration": 5.719,
+      "text": "thinking about"
+    },
+    {
+      "start": 833.56,
+      "duration": 8.76,
+      "text": "that uh yeah absolutely that would be"
+    },
+    {
+      "start": 837.839,
+      "duration": 7.081,
+      "text": "incredible um I was also thinking that"
+    },
+    {
+      "start": 842.32,
+      "duration": 5.12,
+      "text": "like I'm going to put I'm going to put"
+    },
+    {
+      "start": 844.92,
+      "duration": 6.8,
+      "text": "the same"
+    },
+    {
+      "start": 847.44,
+      "duration": 5.68,
+      "text": "uh the same processor the same chip god"
+    },
+    {
+      "start": 851.72,
+      "duration": 4.799,
+      "text": "what the same"
+    },
+    {
+      "start": 853.12,
+      "duration": 6.959,
+      "text": "microprocessor that desk Hub has in the"
+    },
+    {
+      "start": 856.519,
+      "duration": 7.24,
+      "text": "button which is kind of crazy but uh"
+    },
+    {
+      "start": 860.079,
+      "duration": 6.0,
+      "text": "it'll let me um write some crazy"
+    },
+    {
+      "start": 863.759,
+      "duration": 4.52,
+      "text": "software for it it'll let it be Wi-Fi"
+    },
+    {
+      "start": 866.079,
+      "duration": 4.281,
+      "text": "connected if we want to put a battery in"
+    },
+    {
+      "start": 868.279,
+      "duration": 4.521,
+      "text": "it um"
+    },
+    {
+      "start": 870.36,
+      "duration": 5.52,
+      "text": "so like somebody else brought up we"
+    },
+    {
+      "start": 872.8,
+      "duration": 5.36,
+      "text": "could have a contextual button so the"
+    },
+    {
+      "start": 875.88,
+      "duration": 6.0,
+      "text": "software could realize like what's going"
+    },
+    {
+      "start": 878.16,
+      "duration": 6.72,
+      "text": "on around it and then the button could"
+    },
+    {
+      "start": 881.88,
+      "duration": 5.639,
+      "text": "change depending on the situation and"
+    },
+    {
+      "start": 884.88,
+      "duration": 5.72,
+      "text": "then the LEDs in the button could"
+    },
+    {
+      "start": 887.519,
+      "duration": 5.921,
+      "text": "represent what context the button is in"
+    },
+    {
+      "start": 890.6,
+      "duration": 4.52,
+      "text": "so let me give an example like let's say"
+    },
+    {
+      "start": 893.44,
+      "duration": 5.24,
+      "text": "your computer is"
+    },
+    {
+      "start": 895.12,
+      "duration": 4.92,
+      "text": "off then you could have uh you could"
+    },
+    {
+      "start": 898.68,
+      "duration": 3.56,
+      "text": "have"
+    },
+    {
+      "start": 900.04,
+      "duration": 4.4,
+      "text": "the let me turn the music down a little"
+    },
+    {
+      "start": 902.24,
+      "duration": 4.64,
+      "text": "bit if the"
+    },
+    {
+      "start": 904.44,
+      "duration": 4.56,
+      "text": "um if the computer is off you could have"
+    },
+    {
+      "start": 906.88,
+      "duration": 4.16,
+      "text": "the button realized the computer is off"
+    },
+    {
+      "start": 909.0,
+      "duration": 5.0,
+      "text": "and then the context of the button now"
+    },
+    {
+      "start": 911.04,
+      "duration": 7.64,
+      "text": "becomes let me turn your computer on and"
+    },
+    {
+      "start": 914.0,
+      "duration": 6.24,
+      "text": "off if your computer's on and you're in"
+    },
+    {
+      "start": 918.68,
+      "duration": 5.079,
+      "text": "um"
+    },
+    {
+      "start": 920.24,
+      "duration": 6.519,
+      "text": "CAD like we're in 3D CAD right now then"
+    },
+    {
+      "start": 923.759,
+      "duration": 6.721,
+      "text": "the context of the button becomes um an"
+    },
+    {
+      "start": 926.759,
+      "duration": 6.041,
+      "text": "export Your Design file button export to"
+    },
+    {
+      "start": 930.48,
+      "duration": 4.839,
+      "text": "sdl and then the color of the button"
+    },
+    {
+      "start": 932.8,
+      "duration": 6.599,
+      "text": "might change to like blue for for shape"
+    },
+    {
+      "start": 935.319,
+      "duration": 6.121,
+      "text": "or 3D if we're in VSS code then the"
+    },
+    {
+      "start": 939.399,
+      "duration": 4.481,
+      "text": "context of the button would change to"
+    },
+    {
+      "start": 941.44,
+      "duration": 4.48,
+      "text": "the GitHub commit button and it would"
+    },
+    {
+      "start": 943.88,
+      "duration": 4.36,
+      "text": "change to"
+    },
+    {
+      "start": 945.92,
+      "duration": 4.12,
+      "text": "green and then you could have you could"
+    },
+    {
+      "start": 948.24,
+      "duration": 6.039,
+      "text": "have it do different stuff depending on"
+    },
+    {
+      "start": 950.04,
+      "duration": 8.479,
+      "text": "if you long press or if you um if you"
+    },
+    {
+      "start": 954.279,
+      "duration": 4.24,
+      "text": "just do like a quick press"
+    },
+    {
+      "start": 996.56,
+      "duration": 3.44,
+      "text": "so we need"
+    },
+    {
+      "start": 1000.079,
+      "duration": 4.88,
+      "text": "to make this right"
+    },
+    {
+      "start": 1006.079,
+      "duration": 7.2,
+      "text": "here which this is going to be"
+    },
+    {
+      "start": 1010.519,
+      "duration": 6.12,
+      "text": "brutal especially 3D printing it it's"
+    },
+    {
+      "start": 1013.279,
+      "duration": 3.36,
+      "text": "going to be brutal"
+    },
+    {
+      "start": 1022.199,
+      "duration": 5.801,
+      "text": "this one feels like it might be out of"
+    },
+    {
+      "start": 1025.28,
+      "duration": 5.84,
+      "text": "it might be out of my pay"
+    },
+    {
+      "start": 1028.0,
+      "duration": 6.839,
+      "text": "grade I think that we start here we go"
+    },
+    {
+      "start": 1031.12,
+      "duration": 3.719,
+      "text": "this is this is using your"
+    },
+    {
+      "start": 1035.679,
+      "duration": 6.12,
+      "text": "head we start by"
+    },
+    {
+      "start": 1038.64,
+      "duration": 4.799,
+      "text": "adding so right now this is the the"
+    },
+    {
+      "start": 1041.799,
+      "duration": 7.24,
+      "text": "actual key"
+    },
+    {
+      "start": 1043.439,
+      "duration": 7.521,
+      "text": "Gap we start by adding the uh"
+    },
+    {
+      "start": 1049.039,
+      "duration": 5.441,
+      "text": "the extra prongs to it so this has one"
+    },
+    {
+      "start": 1050.96,
+      "duration": 7.52,
+      "text": "prong we have to add the uh the two"
+    },
+    {
+      "start": 1054.48,
+      "duration": 6.559,
+      "text": "extra prongs that'll interface with the"
+    },
+    {
+      "start": 1058.48,
+      "duration": 2.559,
+      "text": "uh with the"
+    },
+    {
+      "start": 1061.08,
+      "duration": 4.959,
+      "text": "switch so we should figure out how far"
+    },
+    {
+      "start": 1064.559,
+      "duration": 4.321,
+      "text": "away from"
+    },
+    {
+      "start": 1066.039,
+      "duration": 5.121,
+      "text": "Center these uh these prongs"
+    },
+    {
+      "start": 1068.88,
+      "duration": 4.6,
+      "text": "are and then we'll add them to our"
+    },
+    {
+      "start": 1071.16,
+      "duration": 5.32,
+      "text": "design and then we'll start printing"
+    },
+    {
+      "start": 1073.48,
+      "duration": 8.6,
+      "text": "that while we designed the"
+    },
+    {
+      "start": 1076.48,
+      "duration": 5.6,
+      "text": "um while we designed the actual plate"
+    },
+    {
+      "start": 1085.48,
+      "duration": 6.04,
+      "text": "housing this is the worst caliper ever"
+    },
+    {
+      "start": 1087.88,
+      "duration": 6.0,
+      "text": "I'm so sorry guys but uh I need I need a"
+    },
+    {
+      "start": 1091.52,
+      "duration": 2.36,
+      "text": "digital"
+    },
+    {
+      "start": 1100.159,
+      "duration": 6.681,
+      "text": "caliper"
+    },
+    {
+      "start": 1102.28,
+      "duration": 4.56,
+      "text": "so I think that we're"
+    },
+    {
+      "start": 1108.919,
+      "duration": 4.401,
+      "text": "at I think we're at 12 mm right"
+    },
+    {
+      "start": 1116.48,
+      "duration": 4.43,
+      "text": "there yeah I think we're at 12 mm and"
+    },
+    {
+      "start": 1119.32,
+      "duration": 4.739,
+      "text": "I'm going to pull up"
+    },
+    {
+      "start": 1120.91,
+      "duration": 3.149,
+      "text": "[Music]"
+    },
+    {
+      "start": 1128.28,
+      "duration": 5.12,
+      "text": "um of course I can't type this morning"
+    },
+    {
+      "start": 1143.78,
+      "duration": 3.47,
+      "text": "[Music]"
+    },
+    {
+      "start": 1150.52,
+      "duration": 3.56,
+      "text": "this sounds like a fun idea for"
+    },
+    {
+      "start": 1152.559,
+      "duration": 3.041,
+      "text": "implementing a custom dashboard for the"
+    },
+    {
+      "start": 1154.08,
+      "duration": 3.44,
+      "text": "button or would it be overc for this"
+    },
+    {
+      "start": 1155.6,
+      "duration": 4.72,
+      "text": "there no we're definitely going to need"
+    },
+    {
+      "start": 1157.52,
+      "duration": 6.48,
+      "text": "we're definitely going to need a"
+    },
+    {
+      "start": 1160.32,
+      "duration": 5.479,
+      "text": "um a dashboard because people are going"
+    },
+    {
+      "start": 1164.0,
+      "duration": 4.0,
+      "text": "to want to configure it to do whatever"
+    },
+    {
+      "start": 1165.799,
+      "duration": 4.36,
+      "text": "they want you know like especially if"
+    },
+    {
+      "start": 1168.0,
+      "duration": 4.159,
+      "text": "they want to configure to do like apple"
+    },
+    {
+      "start": 1170.159,
+      "duration": 5.041,
+      "text": "home kit so they can use it to turn on"
+    },
+    {
+      "start": 1172.159,
+      "duration": 4.601,
+      "text": "their like lights and TV and stuff we're"
+    },
+    {
+      "start": 1175.2,
+      "duration": 3.16,
+      "text": "going to have to put together a custom"
+    },
+    {
+      "start": 1176.76,
+      "duration": 3.2,
+      "text": "dashboard but I think that's going to be"
+    },
+    {
+      "start": 1178.36,
+      "duration": 3.92,
+      "text": "down the"
+    },
+    {
+      "start": 1179.96,
+      "duration": 6.32,
+      "text": "road I think we just launched with an"
+    },
+    {
+      "start": 1182.28,
+      "duration": 7.519,
+      "text": "MVP of having the um of having it"
+    },
+    {
+      "start": 1186.28,
+      "duration": 6.879,
+      "text": "shipped to GitHub and then from there we"
+    },
+    {
+      "start": 1189.799,
+      "duration": 6.281,
+      "text": "like add the dashboard and then we add"
+    },
+    {
+      "start": 1193.159,
+      "duration": 6.201,
+      "text": "like hopefully a little bit of like AI"
+    },
+    {
+      "start": 1196.08,
+      "duration": 3.28,
+      "text": "in the software"
+    },
+    {
+      "start": 1220.52,
+      "duration": 3.39,
+      "text": "how far apart are the pieces that go"
+    },
+    {
+      "start": 1222.36,
+      "duration": 4.559,
+      "text": "over the"
+    },
+    {
+      "start": 1223.91,
+      "duration": 6.73,
+      "text": "[Music]"
+    },
+    {
+      "start": 1226.919,
+      "duration": 3.721,
+      "text": "stems in a key"
+    },
+    {
+      "start": 1235.24,
+      "duration": 3.0,
+      "text": "cap"
+    },
+    {
+      "start": 1238.76,
+      "duration": 4.56,
+      "text": "specifically the"
+    },
+    {
+      "start": 1240.679,
+      "duration": 5.521,
+      "text": "shift how far apart the pieces that go"
+    },
+    {
+      "start": 1243.32,
+      "duration": 2.88,
+      "text": "over the"
+    },
+    {
+      "start": 1248.0,
+      "duration": 12.28,
+      "text": "stems that click into the"
+    },
+    {
+      "start": 1254.6,
+      "duration": 5.68,
+      "text": "stabs next to the switch"
+    },
+    {
+      "start": 1263.039,
+      "duration": 2.76,
+      "text": "we'll see what it"
+    },
+    {
+      "start": 1277.84,
+      "duration": 8.0,
+      "text": "says this size this"
+    },
+    {
+      "start": 1280.64,
+      "duration": 5.2,
+      "text": "water as I spill it all over my keyboard"
+    },
+    {
+      "start": 1333.84,
+      "duration": 3.48,
+      "text": "what does this mean"
+    },
+    {
+      "start": 1348.919,
+      "duration": 4.681,
+      "text": "they're"
+    },
+    {
+      "start": 1350.039,
+      "duration": 3.561,
+      "text": "33.3 mm"
+    },
+    {
+      "start": 1363.12,
+      "duration": 5.24,
+      "text": "apart that's so much further than I"
+    },
+    {
+      "start": 1365.36,
+      "duration": 3.0,
+      "text": "measured"
+    },
+    {
+      "start": 1393.4,
+      "duration": 8.24,
+      "text": "I'm just going with my measurements I'm"
+    },
+    {
+      "start": 1395.559,
+      "duration": 6.081,
+      "text": "started with 12 [ __ ] it if I'm wrong I'm"
+    },
+    {
+      "start": 1403.64,
+      "duration": 5.8,
+      "text": "wrong chat GPT has led me in the wrong"
+    },
+    {
+      "start": 1406.919,
+      "duration": 3.801,
+      "text": "direction too many times on this build I"
+    },
+    {
+      "start": 1409.44,
+      "duration": 6.76,
+      "text": "can't"
+    },
+    {
+      "start": 1410.72,
+      "duration": 5.48,
+      "text": "uh I can't keep letting it derail"
+    },
+    {
+      "start": 1437.44,
+      "duration": 3.0,
+      "text": "me"
+    },
+    {
+      "start": 1467.36,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 1497.32,
+      "duration": 4.04,
+      "text": "for for"
+    },
+    {
+      "start": 1551.52,
+      "duration": 3.8,
+      "text": "all right we sorry for being quiet we"
+    },
+    {
+      "start": 1553.559,
+      "duration": 5.6,
+      "text": "are going"
+    },
+    {
+      "start": 1555.32,
+      "duration": 7.719,
+      "text": "to uh"
+    },
+    {
+      "start": 1559.159,
+      "duration": 3.88,
+      "text": "God this is right in the way"
+    },
+    {
+      "start": 1603.32,
+      "duration": 5.359,
+      "text": "all"
+    },
+    {
+      "start": 1605.039,
+      "duration": 6.401,
+      "text": "righty so we're"
+    },
+    {
+      "start": 1608.679,
+      "duration": 6.681,
+      "text": "locked we're going to slice this this is"
+    },
+    {
+      "start": 1611.44,
+      "duration": 3.92,
+      "text": "get to print so fast too"
+    },
+    {
+      "start": 1638.559,
+      "duration": 6.201,
+      "text": "all right we're sending that to the"
+    },
+    {
+      "start": 1640.76,
+      "duration": 4.0,
+      "text": "printer so"
+    },
+    {
+      "start": 1653.399,
+      "duration": 6.241,
+      "text": "I really need to get organized"
+    },
+    {
+      "start": 1656.2,
+      "duration": 7.16,
+      "text": "here I did not expect for"
+    },
+    {
+      "start": 1659.64,
+      "duration": 5.72,
+      "text": "this build to have so many"
+    },
+    {
+      "start": 1663.36,
+      "duration": 3.96,
+      "text": "layers but I pretty much always"
+    },
+    {
+      "start": 1665.36,
+      "duration": 4.439,
+      "text": "underestimate how"
+    },
+    {
+      "start": 1667.32,
+      "duration": 7.239,
+      "text": "many how in"
+    },
+    {
+      "start": 1669.799,
+      "duration": 4.76,
+      "text": "depth a build is going to be"
+    },
+    {
+      "start": 1682.08,
+      "duration": 4.719,
+      "text": "all"
+    },
+    {
+      "start": 1683.48,
+      "duration": 3.319,
+      "text": "righty where is"
+    },
+    {
+      "start": 1688.919,
+      "duration": 3.0,
+      "text": "it"
+    },
+    {
+      "start": 1696.2,
+      "duration": 6.0,
+      "text": "no come on this is why I need to label"
+    },
+    {
+      "start": 1699.2,
+      "duration": 3.0,
+      "text": "up"
+    },
+    {
+      "start": 1709.44,
+      "duration": 3.04,
+      "text": "oh there's no sketch right"
+    },
+    {
+      "start": 1724.559,
+      "duration": 4.0,
+      "text": "there no"
+    },
+    {
+      "start": 1736.41,
+      "duration": 3.329,
+      "text": "[Music]"
+    },
+    {
+      "start": 1752.399,
+      "duration": 5.441,
+      "text": "we're going to take"
+    },
+    {
+      "start": 1753.84,
+      "duration": 4.0,
+      "text": "this and we're going to move"
+    },
+    {
+      "start": 1758.279,
+      "duration": 3.921,
+      "text": "it copy it as we move"
+    },
+    {
+      "start": 1763.86,
+      "duration": 5.699,
+      "text": "[Music]"
+    },
+    {
+      "start": 1765.559,
+      "duration": 4.0,
+      "text": "it here"
+    },
+    {
+      "start": 1781.399,
+      "duration": 2.481,
+      "text": "delete the"
+    },
+    {
+      "start": 1790.32,
+      "duration": 4.599,
+      "text": "outside going delete these"
+    },
+    {
+      "start": 1802.96,
+      "duration": 2.16,
+      "text": "we're going to have nothing left here I"
+    },
+    {
+      "start": 1804.2,
+      "duration": 5.0,
+      "text": "should have just started from the"
+    },
+    {
+      "start": 1805.12,
+      "duration": 4.08,
+      "text": "beginning with this what just"
+    },
+    {
+      "start": 1814.08,
+      "duration": 4.36,
+      "text": "happened wa what"
+    },
+    {
+      "start": 1831.76,
+      "duration": 4.12,
+      "text": "where did my thing go"
+    },
+    {
+      "start": 1858.799,
+      "duration": 5.681,
+      "text": "I don't know where everything went do"
+    },
+    {
+      "start": 1860.96,
+      "duration": 6.64,
+      "text": "you still work a fulltime as well I"
+    },
+    {
+      "start": 1864.48,
+      "duration": 7.319,
+      "text": "don't work full-time I work"
+    },
+    {
+      "start": 1867.6,
+      "duration": 7.52,
+      "text": "um I run a"
+    },
+    {
+      "start": 1871.799,
+      "duration": 5.88,
+      "text": "business uh and I have employees that"
+    },
+    {
+      "start": 1875.12,
+      "duration": 6.679,
+      "text": "work with me work for"
+    },
+    {
+      "start": 1877.679,
+      "duration": 8.921,
+      "text": "me uh and we do personal traininghealth"
+    },
+    {
+      "start": 1881.799,
+      "duration": 4.801,
+      "text": "coaching so I have dialed that way"
+    },
+    {
+      "start": 1886.639,
+      "duration": 5.4,
+      "text": "back since since I started uh doing"
+    },
+    {
+      "start": 1890.88,
+      "duration": 4.44,
+      "text": "Indie"
+    },
+    {
+      "start": 1892.039,
+      "duration": 6.24,
+      "text": "hacking and uh I like to think about it"
+    },
+    {
+      "start": 1895.32,
+      "duration": 4.76,
+      "text": "like as my goal right now is that uh if"
+    },
+    {
+      "start": 1898.279,
+      "duration": 5.76,
+      "text": "I can make enough money"
+    },
+    {
+      "start": 1900.08,
+      "duration": 3.959,
+      "text": "to pay my bills each"
+    },
+    {
+      "start": 1904.08,
+      "duration": 6.0,
+      "text": "month with the uh with the Indie hacking"
+    },
+    {
+      "start": 1906.6,
+      "duration": 6.559,
+      "text": "that's amazing and then I try to uh make"
+    },
+    {
+      "start": 1910.08,
+      "duration": 6.079,
+      "text": "sure that my business doesn't go out of"
+    },
+    {
+      "start": 1913.159,
+      "duration": 3.0,
+      "text": "business"
+    },
+    {
+      "start": 1931.48,
+      "duration": 3.199,
+      "text": "but it's extremely"
+    },
+    {
+      "start": 1940.6,
+      "duration": 3.48,
+      "text": "stressful all right"
+    },
+    {
+      "start": 1944.519,
+      "duration": 6.441,
+      "text": "so we need to make this right there"
+    },
+    {
+      "start": 1947.96,
+      "duration": 3.0,
+      "text": "there"
+    },
+    {
+      "start": 1990.96,
+      "duration": 5.16,
+      "text": "so that's like 1 and 1 12 mm there"
+    },
+    {
+      "start": 2035.76,
+      "duration": 5.24,
+      "text": "then I'm just going to guess that it's 1"
+    },
+    {
+      "start": 2038.0,
+      "duration": 3.0,
+      "text": "mm"
+    },
+    {
+      "start": 2083.44,
+      "duration": 2.639,
+      "text": "6 and a"
+    },
+    {
+      "start": 2092.399,
+      "duration": 6.921,
+      "text": "half and then we're going do the same"
+    },
+    {
+      "start": 2094.159,
+      "duration": 5.161,
+      "text": "thing on the side so uh one and half"
+    },
+    {
+      "start": 2100.64,
+      "duration": 2.52,
+      "text": "by"
+    },
+    {
+      "start": 2101.37,
+      "duration": 4.79,
+      "text": "[Music]"
+    },
+    {
+      "start": 2103.16,
+      "duration": 3.0,
+      "text": "one"
+    },
+    {
+      "start": 2107.44,
+      "duration": 7.159,
+      "text": "enter by 6 and"
+    },
+    {
+      "start": 2110.52,
+      "duration": 4.079,
+      "text": "A2 by 12"
+    },
+    {
+      "start": 2126.64,
+      "duration": 4.04,
+      "text": "okay for"
+    },
+    {
+      "start": 2186.56,
+      "duration": 4.0,
+      "text": "whoopsies for"
+    },
+    {
+      "start": 2243.96,
+      "duration": 3.0,
+      "text": "1.5"
+    },
+    {
+      "start": 2247.64,
+      "duration": 3.0,
+      "text": "don't"
+    },
+    {
+      "start": 2286.319,
+      "duration": 2.681,
+      "text": "6 and a"
+    },
+    {
+      "start": 2297.16,
+      "duration": 6.32,
+      "text": "half"
+    },
+    {
+      "start": 2299.839,
+      "duration": 7.641,
+      "text": "by I don't know what that"
+    },
+    {
+      "start": 2303.48,
+      "duration": 4.0,
+      "text": "is 1.5"
+    },
+    {
+      "start": 2326.44,
+      "duration": 3.76,
+      "text": "three by one and a"
+    },
+    {
+      "start": 2332.68,
+      "duration": 6.76,
+      "text": "half"
+    },
+    {
+      "start": 2335.0,
+      "duration": 4.44,
+      "text": "two by six and A2"
+    },
+    {
+      "start": 2340.44,
+      "duration": 5.44,
+      "text": "close this"
+    },
+    {
+      "start": 2342.28,
+      "duration": 5.799,
+      "text": "up yes yes yes yes yes yes yes yes yes"
+    },
+    {
+      "start": 2345.88,
+      "duration": 3.92,
+      "text": "yes okay"
+    },
+    {
+      "start": 2348.079,
+      "duration": 3.721,
+      "text": "so"
+    },
+    {
+      "start": 2349.8,
+      "duration": 5.559,
+      "text": "this we're"
+    },
+    {
+      "start": 2351.8,
+      "duration": 6.12,
+      "text": "hoping is going to"
+    },
+    {
+      "start": 2355.359,
+      "duration": 6.081,
+      "text": "be like"
+    },
+    {
+      "start": 2357.92,
+      "duration": 3.52,
+      "text": "that this right"
+    },
+    {
+      "start": 2362.4,
+      "duration": 4.4,
+      "text": "here we shall see"
+    },
+    {
+      "start": 2378.88,
+      "duration": 4.719,
+      "text": "need to add the uh little side"
+    },
+    {
+      "start": 2392.839,
+      "duration": 4.601,
+      "text": "prongs and the bottom PR"
+    },
+    {
+      "start": 2399.359,
+      "duration": 3.0,
+      "text": "h"
+    },
+    {
+      "start": 2445.64,
+      "duration": 4.4,
+      "text": "completely guessing at this stuff right"
+    },
+    {
+      "start": 2447.04,
+      "duration": 3.0,
+      "text": "now"
+    },
+    {
+      "start": 2475.8,
+      "duration": 3.559,
+      "text": "it's way too big"
+    },
+    {
+      "start": 2489.079,
+      "duration": 3.28,
+      "text": "maybe not"
+    },
+    {
+      "start": 2541.119,
+      "duration": 6.121,
+      "text": "okay all our 3D print is done let's go"
+    },
+    {
+      "start": 2543.88,
+      "duration": 3.36,
+      "text": "get that together"
+    },
+    {
+      "start": 2598.839,
+      "duration": 4.321,
+      "text": "okay here we are"
+    },
+    {
+      "start": 2623.16,
+      "duration": 2.56,
+      "text": "oh my"
+    },
+    {
+      "start": 2627.8,
+      "duration": 7.72,
+      "text": "God it's"
+    },
+    {
+      "start": 2630.92,
+      "duration": 4.6,
+      "text": "perfect first time"
+    },
+    {
+      "start": 2638.0,
+      "duration": 2.64,
+      "text": "are you kidding"
+    },
+    {
+      "start": 2641.44,
+      "duration": 3.159,
+      "text": "me come"
+    },
+    {
+      "start": 2647.8,
+      "duration": 3.559,
+      "text": "on that never"
+    },
+    {
+      "start": 2655.4,
+      "duration": 4.6,
+      "text": "happens I got to grab a button"
+    },
+    {
+      "start": 2707.24,
+      "duration": 3.0,
+      "text": "okay"
+    },
+    {
+      "start": 2752.72,
+      "duration": 3.32,
+      "text": "it's perfect"
+    },
+    {
+      "start": 2781.559,
+      "duration": 5.161,
+      "text": "unbelievable all right so we nailed that"
+    },
+    {
+      "start": 2793.2,
+      "duration": 4.879,
+      "text": "which means we got to print the full the"
+    },
+    {
+      "start": 2795.76,
+      "duration": 2.319,
+      "text": "full"
+    },
+    {
+      "start": 2815.839,
+      "duration": 3.0,
+      "text": "deal"
+    },
+    {
+      "start": 2845.839,
+      "duration": 4.041,
+      "text": "for for"
+    },
+    {
+      "start": 2877.76,
+      "duration": 2.48,
+      "text": "we're going to get"
+    },
+    {
+      "start": 2884.359,
+      "duration": 3.0,
+      "text": "organized"
+    },
+    {
+      "start": 2905.76,
+      "duration": 3.0,
+      "text": "okay"
+    },
+    {
+      "start": 2935.72,
+      "duration": 4.04,
+      "text": "for for"
+    },
+    {
+      "start": 2974.68,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 3007.76,
+      "duration": 6.559,
+      "text": "why it won't let me import the STL that"
+    },
+    {
+      "start": 3010.559,
+      "duration": 3.76,
+      "text": "we just exported into"
+    },
+    {
+      "start": 3015.64,
+      "duration": 3.4,
+      "text": "um ambo"
+    },
+    {
+      "start": 3023.599,
+      "duration": 4.801,
+      "text": "slicer let us do our work"
+    },
+    {
+      "start": 3043.76,
+      "duration": 5.079,
+      "text": "why all right I'm going to quit and then"
+    },
+    {
+      "start": 3046.119,
+      "duration": 7.321,
+      "text": "I'm going to reopen"
+    },
+    {
+      "start": 3048.839,
+      "duration": 4.601,
+      "text": "it we'll see if that works"
+    },
+    {
+      "start": 3061.079,
+      "duration": 2.24,
+      "text": "come"
+    },
+    {
+      "start": 3066.48,
+      "duration": 4.92,
+      "text": "on why is this doing this"
+    },
+    {
+      "start": 3109.28,
+      "duration": 3.839,
+      "text": "just doesn't like that one"
+    },
+    {
+      "start": 3126.04,
+      "duration": 3.96,
+      "text": "oh you know what before I forget"
+    },
+    {
+      "start": 3244.96,
+      "duration": 3.56,
+      "text": "don't like that"
+    },
+    {
+      "start": 3274.359,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 3286.64,
+      "duration": 13.329,
+      "text": "[Music]"
+    },
+    {
+      "start": 3324.24,
+      "duration": 3.0,
+      "text": "uh"
+    },
+    {
+      "start": 3341.559,
+      "duration": 4.0,
+      "text": "why whatever"
+    },
+    {
+      "start": 3394.079,
+      "duration": 2.361,
+      "text": "oh it's"
+    },
+    {
+      "start": 3405.2,
+      "duration": 6.0,
+      "text": "nice I'm measuring another part of this"
+    },
+    {
+      "start": 3408.76,
+      "duration": 2.44,
+      "text": "plate"
+    },
+    {
+      "start": 3411.839,
+      "duration": 4.0,
+      "text": "mount for"
+    },
+    {
+      "start": 3434.76,
+      "duration": 4.0,
+      "text": "righto God"
+    },
+    {
+      "start": 3458.99,
+      "duration": 12.109,
+      "text": "[Music]"
+    },
+    {
+      "start": 3476.16,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 3517.0,
+      "duration": 4.5,
+      "text": "[Music]"
+    },
+    {
+      "start": 3521.76,
+      "duration": 4.44,
+      "text": "prob"
+    },
+    {
+      "start": 3522.97,
+      "duration": 3.23,
+      "text": "[Music]"
+    },
+    {
+      "start": 3531.64,
+      "duration": 7.439,
+      "text": "stupid that's what that should look"
+    },
+    {
+      "start": 3535.039,
+      "duration": 4.04,
+      "text": "like for"
+    },
+    {
+      "start": 3552.65,
+      "duration": 3.61,
+      "text": "[Music]"
+    },
+    {
+      "start": 3594.92,
+      "duration": 3.119,
+      "text": "right this look very"
+    },
+    {
+      "start": 3624.96,
+      "duration": 4.0,
+      "text": "sick for"
+    },
+    {
+      "start": 3644.08,
+      "duration": 3.55,
+      "text": "[Music]"
+    },
+    {
+      "start": 3700.44,
+      "duration": 5.96,
+      "text": "all"
+    },
+    {
+      "start": 3701.28,
+      "duration": 5.12,
+      "text": "right there's our plate there's our"
+    },
+    {
+      "start": 3707.64,
+      "duration": 4.36,
+      "text": "plate good Lord"
+    },
+    {
+      "start": 3717.4,
+      "duration": 6.199,
+      "text": "all right"
+    },
+    {
+      "start": 3718.68,
+      "duration": 4.919,
+      "text": "so let to export this"
+    },
+    {
+      "start": 3765.88,
+      "duration": 4.159,
+      "text": "all right so it's got 10 minutes left on"
+    },
+    {
+      "start": 3767.88,
+      "duration": 5.52,
+      "text": "the"
+    },
+    {
+      "start": 3770.039,
+      "duration": 3.361,
+      "text": "um on the"
+    },
+    {
+      "start": 3774.839,
+      "duration": 4.0,
+      "text": "situation for"
+    },
+    {
+      "start": 3809.64,
+      "duration": 3.6,
+      "text": "all right so that's going to be our"
+    },
+    {
+      "start": 3811.24,
+      "duration": 5.0,
+      "text": "switch"
+    },
+    {
+      "start": 3813.24,
+      "duration": 3.0,
+      "text": "plate"
+    },
+    {
+      "start": 3820.52,
+      "duration": 4.0,
+      "text": "eventually cool"
+    },
+    {
+      "start": 3838.4,
+      "duration": 6.8,
+      "text": "we need"
+    },
+    {
+      "start": 3840.52,
+      "duration": 4.68,
+      "text": "to we got to write some software"
+    },
+    {
+      "start": 3866.16,
+      "duration": 8.84,
+      "text": "so right now it is pressing"
+    },
+    {
+      "start": 3869.279,
+      "duration": 5.721,
+      "text": "a we got to see if it can press multiple"
+    },
+    {
+      "start": 3901.279,
+      "duration": 5.881,
+      "text": "we have to see if it can send"
+    },
+    {
+      "start": 3904.64,
+      "duration": 5.52,
+      "text": "multiple we're going to ask cheat you"
+    },
+    {
+      "start": 3907.16,
+      "duration": 3.0,
+      "text": "this"
+    },
+    {
+      "start": 3937.96,
+      "duration": 4.28,
+      "text": "cuz cuz basically I'm going to see if we"
+    },
+    {
+      "start": 3940.839,
+      "duration": 4.801,
+      "text": "can"
+    },
+    {
+      "start": 3942.24,
+      "duration": 8.599,
+      "text": "do I'm going to see if we can do save as"
+    },
+    {
+      "start": 3945.64,
+      "duration": 5.199,
+      "text": "first which would be shift command s"
+    },
+    {
+      "start": 3963.279,
+      "duration": 4.721,
+      "text": "maybe I don't know I'm having a hard"
+    },
+    {
+      "start": 3965.359,
+      "duration": 12.311,
+      "text": "time contact switching right"
+    },
+    {
+      "start": 3968.0,
+      "duration": 9.67,
+      "text": "[Music]"
+    },
+    {
+      "start": 3984.559,
+      "duration": 4.0,
+      "text": "now for"
+    },
+    {
+      "start": 3998.37,
+      "duration": 3.59,
+      "text": "[Music]"
+    },
+    {
+      "start": 4039.68,
+      "duration": 7.84,
+      "text": "going to open a terminal in the current"
+    },
+    {
+      "start": 4043.88,
+      "duration": 3.64,
+      "text": "project directory"
+    },
+    {
+      "start": 4048.72,
+      "duration": 5.319,
+      "text": "three and then run"
+    },
+    {
+      "start": 4060.54,
+      "duration": 3.34,
+      "text": "[Music]"
+    },
+    {
+      "start": 4085.2,
+      "duration": 2.32,
+      "text": "let's"
+    },
+    {
+      "start": 4087.92,
+      "duration": 4.32,
+      "text": "see what it thinks"
+    },
+    {
+      "start": 4134.08,
+      "duration": 7.48,
+      "text": "okay keyboard press left control shift"
+    },
+    {
+      "start": 4138.48,
+      "duration": 7.44,
+      "text": "squiggly release"
+    },
+    {
+      "start": 4141.56,
+      "duration": 6.199,
+      "text": "all get add delay get commit get push no"
+    },
+    {
+      "start": 4145.92,
+      "duration": 4.239,
+      "text": "delay unless you want to do something"
+    },
+    {
+      "start": 4147.759,
+      "duration": 2.4,
+      "text": "after"
+    },
+    {
+      "start": 4155.56,
+      "duration": 3.32,
+      "text": "pushing let's"
+    },
+    {
+      "start": 4164.359,
+      "duration": 3.0,
+      "text": "see"
+    },
+    {
+      "start": 4194.32,
+      "duration": 4.04,
+      "text": "for for"
+    },
+    {
+      "start": 4254.239,
+      "duration": 4.041,
+      "text": "yeah for"
+    },
+    {
+      "start": 4303.48,
+      "duration": 5.199,
+      "text": "see that builds there"
+    },
+    {
+      "start": 4306.28,
+      "duration": 5.399,
+      "text": "AOW allowed here"
+    },
+    {
+      "start": 4308.679,
+      "duration": 3.0,
+      "text": "before"
+    },
+    {
+      "start": 4313.28,
+      "duration": 3.959,
+      "text": "toen oopsies"
+    },
+    {
+      "start": 4321.96,
+      "duration": 3.44,
+      "text": "I'm so silly"
+    },
+    {
+      "start": 4345.44,
+      "duration": 3.0,
+      "text": "w"
+    },
+    {
+      "start": 4381.97,
+      "duration": 4.189,
+      "text": "[Music]"
+    },
+    {
+      "start": 4383.159,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 4417.48,
+      "duration": 3.8,
+      "text": "okay jgpt has no idea what it's"
+    },
+    {
+      "start": 4422.6,
+      "duration": 4.72,
+      "text": "doing oops I didn't mean to do"
+    },
+    {
+      "start": 4428.52,
+      "duration": 4.44,
+      "text": "that nice that belt"
+    },
+    {
+      "start": 4457.44,
+      "duration": 3.0,
+      "text": "[ __ ]"
+    },
+    {
+      "start": 4476.28,
+      "duration": 5.72,
+      "text": "all right so it recognized the uh the"
+    },
+    {
+      "start": 4478.96,
+      "duration": 5.0,
+      "text": "keyboard continue it's not going to"
+    },
+    {
+      "start": 4482.0,
+      "duration": 7.0,
+      "text": "recognize this it doesn't"
+    },
+    {
+      "start": 4483.96,
+      "duration": 5.04,
+      "text": "know holy [ __ ] it just worked"
+    },
+    {
+      "start": 4506.239,
+      "duration": 5.601,
+      "text": "wait wait wait wait wa wait wa"
+    },
+    {
+      "start": 4519.0,
+      "duration": 5.4,
+      "text": "wait so we'll go here"
+    },
+    {
+      "start": 4544.239,
+      "duration": 3.801,
+      "text": "okay and I'm going to hit the"
+    },
+    {
+      "start": 4549.08,
+      "duration": 4.92,
+      "text": "button damn didn't work that time"
+    },
+    {
+      "start": 4566.239,
+      "duration": 4.161,
+      "text": "the first time it worked really good"
+    },
+    {
+      "start": 4587.36,
+      "duration": 5.0,
+      "text": "Control Plus shift plus back"
+    },
+    {
+      "start": 4598.6,
+      "duration": 8.599,
+      "text": "tick so I wonder what it's doing"
+    },
+    {
+      "start": 4602.36,
+      "duration": 4.839,
+      "text": "there I never know what it's doing"
+    },
+    {
+      "start": 4642.199,
+      "duration": 3.0,
+      "text": "h"
+    },
+    {
+      "start": 4648.0,
+      "duration": 4.159,
+      "text": "see the problem is"
+    },
+    {
+      "start": 4683.32,
+      "duration": 3.28,
+      "text": "let's see"
+    },
+    {
+      "start": 4734.36,
+      "duration": 2.359,
+      "text": "got"
+    },
+    {
+      "start": 4757.28,
+      "duration": 4.56,
+      "text": "all right I'm going to go grab the print"
+    },
+    {
+      "start": 4758.52,
+      "duration": 3.32,
+      "text": "cuz it's ready"
+    },
+    {
+      "start": 4780.239,
+      "duration": 3.44,
+      "text": "we got our button"
+    },
+    {
+      "start": 4823.639,
+      "duration": 5.241,
+      "text": "is oh it's so hard to light up"
+    },
+    {
+      "start": 4862.92,
+      "duration": 5.279,
+      "text": "who would have thought a massive button"
+    },
+    {
+      "start": 4864.88,
+      "duration": 3.319,
+      "text": "was going to be this to drop line"
+    },
+    {
+      "start": 4872.8,
+      "duration": 4.2,
+      "text": "up come on"
+    },
+    {
+      "start": 4890.76,
+      "duration": 3.08,
+      "text": "let me make sure this does"
+    },
+    {
+      "start": 4909.12,
+      "duration": 5.079,
+      "text": "fit all right it 100% fits"
+    },
+    {
+      "start": 4943.52,
+      "duration": 4.0,
+      "text": "okay e"
+    },
+    {
+      "start": 4984.28,
+      "duration": 2.24,
+      "text": "much"
+    },
+    {
+      "start": 4994.12,
+      "duration": 3.92,
+      "text": "better all right very"
+    },
+    {
+      "start": 4998.36,
+      "duration": 3.44,
+      "text": "satisfying I'll just sit here and just"
+    },
+    {
+      "start": 5000.199,
+      "duration": 4.601,
+      "text": "press this button for the rest of the"
+    },
+    {
+      "start": 5001.8,
+      "duration": 3.0,
+      "text": "Stream"
+    },
+    {
+      "start": 5007.32,
+      "duration": 2.319,
+      "text": "all"
+    },
+    {
+      "start": 5024.76,
+      "duration": 6.919,
+      "text": "right so we are sending"
+    },
+    {
+      "start": 5027.679,
+      "duration": 4.0,
+      "text": "the wa"
+    },
+    {
+      "start": 5044.719,
+      "duration": 3.0,
+      "text": "bre"
+    },
+    {
+      "start": 5093.719,
+      "duration": 2.601,
+      "text": "still"
+    },
+    {
+      "start": 5123.56,
+      "duration": 2.76,
+      "text": "no no"
+    },
+    {
+      "start": 5146.119,
+      "duration": 3.0,
+      "text": "true"
+    },
+    {
+      "start": 5171.66,
+      "duration": 3.13,
+      "text": "[Music]"
+    },
+    {
+      "start": 5183.96,
+      "duration": 2.279,
+      "text": "eyes"
+    },
+    {
+      "start": 5189.8,
+      "duration": 2.56,
+      "text": "all right"
+    },
+    {
+      "start": 5201.32,
+      "duration": 3.0,
+      "text": "so"
+    },
+    {
+      "start": 5209.09,
+      "duration": 7.029,
+      "text": "[Music]"
+    },
+    {
+      "start": 5212.08,
+      "duration": 7.039,
+      "text": "oops hold on"
+    },
+    {
+      "start": 5216.119,
+      "duration": 3.0,
+      "text": "[ __ ]"
+    },
+    {
+      "start": 5222.83,
+      "duration": 3.13,
+      "text": "[Music]"
+    },
+    {
+      "start": 5260.679,
+      "duration": 2.52,
+      "text": "right let's"
+    },
+    {
+      "start": 5264.239,
+      "duration": 4.92,
+      "text": "see and press it"
+    },
+    {
+      "start": 5298.679,
+      "duration": 3.0,
+      "text": "br"
+    },
+    {
+      "start": 5310.84,
+      "duration": 4.399,
+      "text": "I right take"
+    },
+    {
+      "start": 5312.0,
+      "duration": 3.239,
+      "text": "two press"
+    },
+    {
+      "start": 5320.84,
+      "duration": 3.0,
+      "text": "it"
+    },
+    {
+      "start": 5328.84,
+      "duration": 7.2,
+      "text": "okay so what we do left control Shi"
+    },
+    {
+      "start": 5360.199,
+      "duration": 4.52,
+      "text": "practic control [ __ ]"
+    },
+    {
+      "start": 5388.52,
+      "duration": 4.28,
+      "text": "see what happens when we do it here"
+    },
+    {
+      "start": 5394.8,
+      "duration": 3.76,
+      "text": "all right I press it"
+    },
+    {
+      "start": 5445.28,
+      "duration": 4.04,
+      "text": "don't know why it's not opening"
+    },
+    {
+      "start": 5460.36,
+      "duration": 4.92,
+      "text": "oh is she not releasing Maybe"
+    },
+    {
+      "start": 5488.08,
+      "duration": 4.96,
+      "text": "how do you connect the button with your"
+    },
+    {
+      "start": 5489.96,
+      "duration": 7.64,
+      "text": "Mac incense and cursor"
+    },
+    {
+      "start": 5493.04,
+      "duration": 6.44,
+      "text": "window so right now I'm just running uh"
+    },
+    {
+      "start": 5497.6,
+      "duration": 7.039,
+      "text": "I'm just having it set up as a keyboard"
+    },
+    {
+      "start": 5499.48,
+      "duration": 7.92,
+      "text": "and then having it run um almost like a"
+    },
+    {
+      "start": 5504.639,
+      "duration": 3.56,
+      "text": "macro but um I'm going to have to get a"
+    },
+    {
+      "start": 5507.4,
+      "duration": 3.239,
+      "text": "lot"
+    },
+    {
+      "start": 5508.199,
+      "duration": 6.48,
+      "text": "more advanced than this as far as"
+    },
+    {
+      "start": 5510.639,
+      "duration": 7.721,
+      "text": "software goes but I figure for the MVP"
+    },
+    {
+      "start": 5514.679,
+      "duration": 5.681,
+      "text": "let's just get a demo of me pressing the"
+    },
+    {
+      "start": 5518.36,
+      "duration": 4.64,
+      "text": "button and then having it pull open the"
+    },
+    {
+      "start": 5520.36,
+      "duration": 5.16,
+      "text": "terminal and commit so right now to pull"
+    },
+    {
+      "start": 5523.0,
+      "duration": 5.0,
+      "text": "open the terminal I'm doing uh left"
+    },
+    {
+      "start": 5525.52,
+      "duration": 6.52,
+      "text": "control shift back tick and you have to"
+    },
+    {
+      "start": 5528.0,
+      "duration": 6.239,
+      "text": "have VSS code open to your project and"
+    },
+    {
+      "start": 5532.04,
+      "duration": 5.0,
+      "text": "then uh I'm"
+    },
+    {
+      "start": 5534.239,
+      "duration": 4.88,
+      "text": "doing Enter so when you"
+    },
+    {
+      "start": 5537.04,
+      "duration": 6.0,
+      "text": "do control"
+    },
+    {
+      "start": 5539.119,
+      "duration": 6.08,
+      "text": "shift back tick it opens this up and"
+    },
+    {
+      "start": 5543.04,
+      "duration": 4.199,
+      "text": "asks you to select your current working"
+    },
+    {
+      "start": 5545.199,
+      "duration": 3.601,
+      "text": "directory if you're in your"
+    },
+    {
+      "start": 5547.239,
+      "duration": 4.081,
+      "text": "terminal"
+    },
+    {
+      "start": 5548.8,
+      "duration": 5.439,
+      "text": "um and then hopefully you don't have a"
+    },
+    {
+      "start": 5551.32,
+      "duration": 5.799,
+      "text": "million directories open there and from"
+    },
+    {
+      "start": 5554.239,
+      "duration": 6.92,
+      "text": "there we'll press enter and it will open"
+    },
+    {
+      "start": 5557.119,
+      "duration": 8.881,
+      "text": "a new working a new terminal in the"
+    },
+    {
+      "start": 5561.159,
+      "duration": 8.121,
+      "text": "working directory and then it should uh"
+    },
+    {
+      "start": 5566.0,
+      "duration": 3.28,
+      "text": "write these"
+    },
+    {
+      "start": 5569.639,
+      "duration": 7.841,
+      "text": "commands what we're going to find out"
+    },
+    {
+      "start": 5574.239,
+      "duration": 3.241,
+      "text": "I don't know"
+    },
+    {
+      "start": 5605.199,
+      "duration": 2.92,
+      "text": "all right"
+    },
+    {
+      "start": 5608.199,
+      "duration": 4.601,
+      "text": "so we're going to connect oh we already"
+    },
+    {
+      "start": 5610.84,
+      "duration": 5.56,
+      "text": "connected never"
+    },
+    {
+      "start": 5612.8,
+      "duration": 3.6,
+      "text": "mind we connect the"
+    },
+    {
+      "start": 5618.239,
+      "duration": 6.681,
+      "text": "keyboard and then um we'll press and see"
+    },
+    {
+      "start": 5622.76,
+      "duration": 2.16,
+      "text": "what"
+    },
+    {
+      "start": 5627.239,
+      "duration": 6.88,
+      "text": "happens oh he did it oh my God"
+    },
+    {
+      "start": 5635.36,
+      "duration": 4.839,
+      "text": "yes yes all right that's the end of the"
+    },
+    {
+      "start": 5637.84,
+      "duration": 6.72,
+      "text": "stream we're calling it right"
+    },
+    {
+      "start": 5640.199,
+      "duration": 4.361,
+      "text": "there let's go"
+    }
+  ],
+  "full_text": "yo yo yo yo we're live day three of building the button we still don't have a name for it yet we need a name for the button we're live we're live we're live fantastic news this morning absolutely fantastic news this morning let's get the suet out here let's get this tweet out here hold on we got to throw some we got to throw a little sauce at it though first we got to throw a little something on it oh Mark came through I woke up this morning we got the uh we got the mark reply nothing feels better what is up brother how are you doing the blade King is back how we doing today good morning good morning good morning I don't know where you are but it might be morning for you maybe I don't know I think I'm peeking my mic my check my check my check my check what is up what is up we need something good we need something good here we need to going me fired up we have a big day today massive day today oh I got it I got it I got it I got it come on yes here we go boom boom we're in there all right we're we're going to hit this we're going to hit one of these you got to Hype it up sometimes I don't know if that's going to work good no no we got to go to my channel and then we got to grab uh we got to grab the YouTube link cuz we're live baby did you already settle on a name for the product I didn't I didn't I I do sound like I have a cold yeah it's morning I know sorry I'm being I'm being bad streamer I'm not reading the chat right now hey it's just uh it's 5:00 a.m. you know and I'm a dad so it takes me a minute for my uh my voice and all that to come around you know what's crazy I'm not going to lie I thought that I had everything ready to go but I um I left my button I left I left the actual button upstairs I'm not even going to lie to you which is so annoying The Pusher The Pusher sounds good but it also reminds me a little bit of doing drugs like like uh what's that song just a little push and you'll be flying just a little push okay to-do list what we need what we need here is uh we have to come up with what do we need we have to build stabilizer Mount like Space Bar Key all right we need the stabilizer mount and then we need [Music] to so Pressly we need to um write script to push from GitHub all right so this is this is our to-do list right now okay we do the stabilizer Mount first because we are going to design that and then we're going to 3D print it all right so this gets knocked out first well that's printing this is what we got to do we have to start thinking smarter we got to use our head here we have to uh we have to we have to design that and then it's going to start 3D printing and then well that's 3D printing then we start writing the software okay so we have uh we have multiple things going on at once there what's up cuber Dennis how we doing this morning good morning good morning we're building software today we're we're right we're we're building Hardware we're writing software I need my coffee what's the software used to design/ engineer the button I see you have Kad find out about it yesterday okay so the software using is a uh is an extension of VSS code called platform IO uh oh that that's for the software you want um you want shaper 3D I think that's what you're talking about uh so design/ engineer button yeah so I use Kad to do the PCB work and I say that I I've done two pcbs before so I I have no idea what I'm doing yet but yeah Kad will do our PCB for the for it and basically I've decided I'm just going to make almost like a uh like a keyboard PCB that just has one button on it you know and then I use shaper 3D which honestly I probably wouldn't recommend unless you're like you could start with this as like a way to get into it as a beginner and then um right after that I would immediately stop using that when you did pcbs at did you fail at first no I didn't which I wish I didn't because I followed an exact video of how to make the PCB but um I uh no I ones shott it completely and then um I I just followed a guys video on how to make it and then I hand soldered all the components on it but uh this PCB that I just made recently um I did not follow any videos on it and I picked all the capacitors resistors LEDs um the the actual ship itself the uh whatever the MCU if you want to call it um and that's the one that I'm like I have very low hopes for that actually working I have no idea if that that's going to actually work all right so this is what I'm talking about for today all right so that is a plate Mount stabilizer and um that just allows for your pretty much allows for your key to stay stable and stabilizer as you press it down and the problem is with big large button is that when you press big large button down and um it's so wide kind of like a space bar that it'll become unstable and it can jam inside of the uh inside of the housing so if we add a stabilizer it'll keep it stable just like your space bar does that way there if you're not pressing uh in the center of the button if you press in the side it doesn't matter cuz the stabilizer will keep the button moving uh perfectly vertical and not catching on the sides I can show you uh I can show you what I'm talking about so uh if you if you click the button at the top then there's no problems but see right there if you click on the side if we click on the side you see that that's because we have no uh we have no stabilizer support so um basically what we need to do is uh take this piece right here take this piece right here which is basically our plate you want to talk about it like a keyboard take this piece and then uh throw two plate Mount stabilizer mounts on either side but that's going to be a little bit tricky because I've never done anything like that before so I'm thinking that we take apart this plate that I have here we take this apart and then uh from there we'll be able to um measure this and I didn't get a new caliber yet which I need to do that I should probably just order that now but I also don't want to leak my payment details by accident I think you guys would take it all right thanks for the explanation this is more of a nice to have idea for your product but how difficult do you think it would be to implement a press and hold functionality so user experiences charging up effect when committing it's so funny I was just thinking about that uh yeah absolutely that would be incredible um I was also thinking that like I'm going to put I'm going to put the same uh the same processor the same chip god what the same microprocessor that desk Hub has in the button which is kind of crazy but uh it'll let me um write some crazy software for it it'll let it be Wi-Fi connected if we want to put a battery in it um so like somebody else brought up we could have a contextual button so the software could realize like what's going on around it and then the button could change depending on the situation and then the LEDs in the button could represent what context the button is in so let me give an example like let's say your computer is off then you could have uh you could have the let me turn the music down a little bit if the um if the computer is off you could have the button realized the computer is off and then the context of the button now becomes let me turn your computer on and off if your computer's on and you're in um CAD like we're in 3D CAD right now then the context of the button becomes um an export Your Design file button export to sdl and then the color of the button might change to like blue for for shape or 3D if we're in VSS code then the context of the button would change to the GitHub commit button and it would change to green and then you could have you could have it do different stuff depending on if you long press or if you um if you just do like a quick press so we need to make this right here which this is going to be brutal especially 3D printing it it's going to be brutal this one feels like it might be out of it might be out of my pay grade I think that we start here we go this is this is using your head we start by adding so right now this is the the actual key Gap we start by adding the uh the extra prongs to it so this has one prong we have to add the uh the two extra prongs that'll interface with the uh with the switch so we should figure out how far away from Center these uh these prongs are and then we'll add them to our design and then we'll start printing that while we designed the um while we designed the actual plate housing this is the worst caliper ever I'm so sorry guys but uh I need I need a digital caliper so I think that we're at I think we're at 12 mm right there yeah I think we're at 12 mm and I'm going to pull up [Music] um of course I can't type this morning [Music] this sounds like a fun idea for implementing a custom dashboard for the button or would it be overc for this there no we're definitely going to need we're definitely going to need a um a dashboard because people are going to want to configure it to do whatever they want you know like especially if they want to configure to do like apple home kit so they can use it to turn on their like lights and TV and stuff we're going to have to put together a custom dashboard but I think that's going to be down the road I think we just launched with an MVP of having the um of having it shipped to GitHub and then from there we like add the dashboard and then we add like hopefully a little bit of like AI in the software how far apart are the pieces that go over the [Music] stems in a key cap specifically the shift how far apart the pieces that go over the stems that click into the stabs next to the switch we'll see what it says this size this water as I spill it all over my keyboard what does this mean they're 33.3 mm apart that's so much further than I measured I'm just going with my measurements I'm started with 12 [ __ ] it if I'm wrong I'm wrong chat GPT has led me in the wrong direction too many times on this build I can't uh I can't keep letting it derail me for for for all right we sorry for being quiet we are going to uh God this is right in the way all righty so we're locked we're going to slice this this is get to print so fast too all right we're sending that to the printer so I really need to get organized here I did not expect for this build to have so many layers but I pretty much always underestimate how many how in depth a build is going to be all righty where is it no come on this is why I need to label up oh there's no sketch right there no [Music] we're going to take this and we're going to move it copy it as we move [Music] it here delete the outside going delete these we're going to have nothing left here I should have just started from the beginning with this what just happened wa what where did my thing go I don't know where everything went do you still work a fulltime as well I don't work full-time I work um I run a business uh and I have employees that work with me work for me uh and we do personal traininghealth coaching so I have dialed that way back since since I started uh doing Indie hacking and uh I like to think about it like as my goal right now is that uh if I can make enough money to pay my bills each month with the uh with the Indie hacking that's amazing and then I try to uh make sure that my business doesn't go out of business but it's extremely stressful all right so we need to make this right there there so that's like 1 and 1 12 mm there then I'm just going to guess that it's 1 mm 6 and a half and then we're going do the same thing on the side so uh one and half by [Music] one enter by 6 and A2 by 12 okay for whoopsies for 1.5 don't 6 and a half by I don't know what that is 1.5 three by one and a half two by six and A2 close this up yes yes yes yes yes yes yes yes yes yes okay so this we're hoping is going to be like that this right here we shall see need to add the uh little side prongs and the bottom PR h completely guessing at this stuff right now it's way too big maybe not okay all our 3D print is done let's go get that together okay here we are oh my God it's perfect first time are you kidding me come on that never happens I got to grab a button okay it's perfect unbelievable all right so we nailed that which means we got to print the full the full deal for for we're going to get organized okay for for for why it won't let me import the STL that we just exported into um ambo slicer let us do our work why all right I'm going to quit and then I'm going to reopen it we'll see if that works come on why is this doing this just doesn't like that one oh you know what before I forget don't like that for [Music] uh why whatever oh it's nice I'm measuring another part of this plate mount for righto God [Music] for [Music] prob [Music] stupid that's what that should look like for [Music] right this look very sick for [Music] all right there's our plate there's our plate good Lord all right so let to export this all right so it's got 10 minutes left on the um on the situation for all right so that's going to be our switch plate eventually cool we need to we got to write some software so right now it is pressing a we got to see if it can press multiple we have to see if it can send multiple we're going to ask cheat you this cuz cuz basically I'm going to see if we can do I'm going to see if we can do save as first which would be shift command s maybe I don't know I'm having a hard time contact switching right [Music] now for [Music] going to open a terminal in the current project directory three and then run [Music] let's see what it thinks okay keyboard press left control shift squiggly release all get add delay get commit get push no delay unless you want to do something after pushing let's see for for yeah for see that builds there AOW allowed here before toen oopsies I'm so silly w [Music] for okay jgpt has no idea what it's doing oops I didn't mean to do that nice that belt [ __ ] all right so it recognized the uh the keyboard continue it's not going to recognize this it doesn't know holy [ __ ] it just worked wait wait wait wait wa wait wa wait so we'll go here okay and I'm going to hit the button damn didn't work that time the first time it worked really good Control Plus shift plus back tick so I wonder what it's doing there I never know what it's doing h see the problem is let's see got all right I'm going to go grab the print cuz it's ready we got our button is oh it's so hard to light up who would have thought a massive button was going to be this to drop line up come on let me make sure this does fit all right it 100% fits okay e much better all right very satisfying I'll just sit here and just press this button for the rest of the Stream all right so we are sending the wa bre still no no true [Music] eyes all right so [Music] oops hold on [ __ ] [Music] right let's see and press it br I right take two press it okay so what we do left control Shi practic control [ __ ] see what happens when we do it here all right I press it don't know why it's not opening oh is she not releasing Maybe how do you connect the button with your Mac incense and cursor window so right now I'm just running uh I'm just having it set up as a keyboard and then having it run um almost like a macro but um I'm going to have to get a lot more advanced than this as far as software goes but I figure for the MVP let's just get a demo of me pressing the button and then having it pull open the terminal and commit so right now to pull open the terminal I'm doing uh left control shift back tick and you have to have VSS code open to your project and then uh I'm doing Enter so when you do control shift back tick it opens this up and asks you to select your current working directory if you're in your terminal um and then hopefully you don't have a million directories open there and from there we'll press enter and it will open a new working a new terminal in the working directory and then it should uh write these commands what we're going to find out I don't know all right so we're going to connect oh we already connected never mind we connect the keyboard and then um we'll press and see what happens oh he did it oh my God yes yes all right that's the end of the stream we're calling it right there let's go"
+}

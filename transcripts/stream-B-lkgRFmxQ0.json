@@ -1,0 +1,2445 @@
+{
+  "video_id": "B-lkgRFmxQ0",
+  "title": "Building a Glowing Ai GitHub Commit Button",
+  "url": "https://www.youtube.com/watch?v=B-lkgRFmxQ0",
+  "published_at": "2024-12-31T00:03:21Z",
+  "duration": "00:54:39",
+  "day_number": null,
+  "caption_language": "en",
+  "caption_kind": "auto-generated",
+  "segment_count": 486,
+  "word_count": 2874,
+  "segments": [
+    {
+      "start": 4.279,
+      "duration": 5.761,
+      "text": "yo yo yo yo yo we're back all right"
+    },
+    {
+      "start": 7.04,
+      "duration": 6.12,
+      "text": "sorry my uh one of my kids is teething"
+    },
+    {
+      "start": 10.04,
+      "duration": 5.4,
+      "text": "and then the other one of my kids is uh"
+    },
+    {
+      "start": 13.16,
+      "duration": 4.039,
+      "text": "got an ear infection so we got crazy"
+    },
+    {
+      "start": 15.44,
+      "duration": 4.599,
+      "text": "[ __ ] going on they were up all night"
+    },
+    {
+      "start": 17.199,
+      "duration": 5.08,
+      "text": "long it was uh it was wild but I'm still"
+    },
+    {
+      "start": 20.039,
+      "duration": 6.24,
+      "text": "ready to be locked the [ __ ] in and I got"
+    },
+    {
+      "start": 22.279,
+      "duration": 8.32,
+      "text": "to blast this button now today so um"
+    },
+    {
+      "start": 26.279,
+      "duration": 4.32,
+      "text": "here's the deal here's the deal"
+    },
+    {
+      "start": 30.759,
+      "duration": 2.84,
+      "text": "we have to"
+    },
+    {
+      "start": 35.48,
+      "duration": 5.28,
+      "text": "um we have"
+    },
+    {
+      "start": 37.76,
+      "duration": 3.0,
+      "text": "to"
+    },
+    {
+      "start": 41.16,
+      "duration": 6.12,
+      "text": "fix the stabilizer Mount which like I"
+    },
+    {
+      "start": 44.52,
+      "duration": 5.4,
+      "text": "said before is just like the the"
+    },
+    {
+      "start": 47.28,
+      "duration": 5.919,
+      "text": "keyboard just like the space"
+    },
+    {
+      "start": 49.92,
+      "duration": 5.56,
+      "text": "key keeps the wobble to a minimum so the"
+    },
+    {
+      "start": 53.199,
+      "duration": 4.801,
+      "text": "button goes down nice and straight"
+    },
+    {
+      "start": 55.48,
+      "duration": 6.039,
+      "text": "doesn't get jammed or anything like that"
+    },
+    {
+      "start": 58.0,
+      "duration": 6.76,
+      "text": "and then we need to"
+    },
+    {
+      "start": 61.519,
+      "duration": 6.201,
+      "text": "we already did this this is done so"
+    },
+    {
+      "start": 64.76,
+      "duration": 7.48,
+      "text": "we're going to focus on this today and"
+    },
+    {
+      "start": 67.72,
+      "duration": 7.0,
+      "text": "then uh we're going to clean up"
+    },
+    {
+      "start": 72.24,
+      "duration": 6.519,
+      "text": "design"
+    },
+    {
+      "start": 74.72,
+      "duration": 4.039,
+      "text": "of keap which is the"
+    },
+    {
+      "start": 80.159,
+      "duration": 7.481,
+      "text": "top"
+    },
+    {
+      "start": 81.759,
+      "duration": 10.161,
+      "text": "and uh base and I'm thinking we make the"
+    },
+    {
+      "start": 87.64,
+      "duration": 4.28,
+      "text": "um what is up good morning good morning"
+    },
+    {
+      "start": 92.439,
+      "duration": 4.801,
+      "text": "how we doing Divine I'm thinking we make"
+    },
+    {
+      "start": 95.079,
+      "duration": 4.961,
+      "text": "the base a little bit chunkier kind of"
+    },
+    {
+      "start": 97.24,
+      "duration": 6.08,
+      "text": "like the one I have in the uh in the"
+    },
+    {
+      "start": 100.04,
+      "duration": 5.119,
+      "text": "thumbnail and uh and that way there it's"
+    },
+    {
+      "start": 103.32,
+      "duration": 5.159,
+      "text": "a little bit more"
+    },
+    {
+      "start": 105.159,
+      "duration": 5.0,
+      "text": "rigid and maybe we even look into having"
+    },
+    {
+      "start": 108.479,
+      "duration": 4.121,
+      "text": "an option that's made of aluminum that's"
+    },
+    {
+      "start": 110.159,
+      "duration": 6.401,
+      "text": "a little bit more uh"
+    },
+    {
+      "start": 112.6,
+      "duration": 6.08,
+      "text": "highend here is the filament I got it's"
+    },
+    {
+      "start": 116.56,
+      "duration": 6.44,
+      "text": "translucent"
+    },
+    {
+      "start": 118.68,
+      "duration": 7.479,
+      "text": "green and and it's hard to see here but"
+    },
+    {
+      "start": 123.0,
+      "duration": 5.28,
+      "text": "this [ __ ] is unbelievable looking and so"
+    },
+    {
+      "start": 126.159,
+      "duration": 3.88,
+      "text": "that's what is going to make the key cap"
+    },
+    {
+      "start": 128.28,
+      "duration": 3.48,
+      "text": "of our button we're going to back light"
+    },
+    {
+      "start": 130.039,
+      "duration": 4.48,
+      "text": "this with"
+    },
+    {
+      "start": 131.76,
+      "duration": 4.92,
+      "text": "LEDs and uh we'll start with green maybe"
+    },
+    {
+      "start": 134.519,
+      "duration": 4.8,
+      "text": "eventually we'll go to a clear one so"
+    },
+    {
+      "start": 136.68,
+      "duration": 7.44,
+      "text": "that we can have whatever color LEDs we"
+    },
+    {
+      "start": 139.319,
+      "duration": 7.2,
+      "text": "want but uh this green translucent key"
+    },
+    {
+      "start": 144.12,
+      "duration": 6.399,
+      "text": "cap back lit with green I think is going"
+    },
+    {
+      "start": 146.519,
+      "duration": 4.0,
+      "text": "to look [ __ ] unbelievable"
+    },
+    {
+      "start": 152.04,
+      "duration": 4.32,
+      "text": "all right let's get right into it let's"
+    },
+    {
+      "start": 153.8,
+      "duration": 2.56,
+      "text": "get rolling"
+    },
+    {
+      "start": 158.8,
+      "duration": 3.48,
+      "text": "here so"
+    },
+    {
+      "start": 162.519,
+      "duration": 5.8,
+      "text": "um the issue we're having right"
+    },
+    {
+      "start": 165.319,
+      "duration": 3.0,
+      "text": "now"
+    },
+    {
+      "start": 169.76,
+      "duration": 6.96,
+      "text": "is the stabilizer that we printed"
+    },
+    {
+      "start": 174.159,
+      "duration": 6.041,
+      "text": "yesterday this"
+    },
+    {
+      "start": 176.72,
+      "duration": 6.32,
+      "text": "one is too tight and it's Jam daming the"
+    },
+    {
+      "start": 180.2,
+      "duration": 6.2,
+      "text": "stabilizers so they're not uh letting"
+    },
+    {
+      "start": 183.04,
+      "duration": 5.479,
+      "text": "the key cap press cleanly"
+    },
+    {
+      "start": 186.4,
+      "duration": 4.759,
+      "text": "down which is no"
+    },
+    {
+      "start": 188.519,
+      "duration": 5.0,
+      "text": "good I'm just going to take one second"
+    },
+    {
+      "start": 191.159,
+      "duration": 4.521,
+      "text": "here and we're going to Tweet out uh"
+    },
+    {
+      "start": 193.519,
+      "duration": 3.321,
+      "text": "then I'm live so we're just going to"
+    },
+    {
+      "start": 195.68,
+      "duration": 6.44,
+      "text": "grab this"
+    },
+    {
+      "start": 196.84,
+      "duration": 5.28,
+      "text": "link copy and then"
+    },
+    {
+      "start": 202.319,
+      "duration": 3.64,
+      "text": "uh we're going to go to"
+    },
+    {
+      "start": 206.92,
+      "duration": 8.039,
+      "text": "x we're going to say"
+    },
+    {
+      "start": 210.599,
+      "duration": 7.72,
+      "text": "I'm live the button is taking"
+    },
+    {
+      "start": 214.959,
+      "duration": 3.36,
+      "text": "over my"
+    },
+    {
+      "start": 222.36,
+      "duration": 6.599,
+      "text": "soul"
+    },
+    {
+      "start": 225.04,
+      "duration": 7.64,
+      "text": "YouTube paste we'll grab the"
+    },
+    {
+      "start": 228.959,
+      "duration": 3.721,
+      "text": "uh live stream"
+    },
+    {
+      "start": 237.2,
+      "duration": 4.28,
+      "text": "photo there we go"
+    },
+    {
+      "start": 244.599,
+      "duration": 2.64,
+      "text": "and now we're in"
+    },
+    {
+      "start": 248.959,
+      "duration": 5.56,
+      "text": "there all right let's get it let's get"
+    },
+    {
+      "start": 251.879,
+      "duration": 2.64,
+      "text": "it we're so"
+    },
+    {
+      "start": 256.68,
+      "duration": 8.04,
+      "text": "back all right so the um the"
+    },
+    {
+      "start": 260.44,
+      "duration": 10.4,
+      "text": "width of this scenario is way too"
+    },
+    {
+      "start": 264.72,
+      "duration": 6.12,
+      "text": "tight so I thinking we grab this"
+    },
+    {
+      "start": 272.44,
+      "duration": 3.52,
+      "text": "we got to extend this [ __ ] a little"
+    },
+    {
+      "start": 277.68,
+      "duration": 3.959,
+      "text": "bit I'm thinking I'm going to have to"
+    },
+    {
+      "start": 279.56,
+      "duration": 5.24,
+      "text": "switch out l park it's too much here"
+    },
+    {
+      "start": 281.639,
+      "duration": 3.161,
+      "text": "right now"
+    },
+    {
+      "start": 311.199,
+      "duration": 4.601,
+      "text": "bre no it's going to be too much it's"
+    },
+    {
+      "start": 313.24,
+      "duration": 2.56,
+      "text": "going to be too"
+    },
+    {
+      "start": 324.36,
+      "duration": 7.16,
+      "text": "much all right let's take a look at"
+    },
+    {
+      "start": 328.0,
+      "duration": 5.84,
+      "text": "this we're going to up I'm just putting"
+    },
+    {
+      "start": 331.52,
+      "duration": 6.2,
+      "text": "the 3D printed one that I have over the"
+    },
+    {
+      "start": 333.84,
+      "duration": 7.079,
+      "text": "top of the one that uh yeah it's got to"
+    },
+    {
+      "start": 337.72,
+      "duration": 3.199,
+      "text": "be bigger no it's got to be way"
+    },
+    {
+      "start": 344.6,
+      "duration": 3.56,
+      "text": "bigger really does"
+    },
+    {
+      "start": 354.199,
+      "duration": 6.28,
+      "text": "okay come"
+    },
+    {
+      "start": 356.0,
+      "duration": 7.24,
+      "text": "on 3 and a half mm okay"
+    },
+    {
+      "start": 360.479,
+      "duration": 4.801,
+      "text": "we're right we're flying today we got to"
+    },
+    {
+      "start": 363.24,
+      "duration": 5.079,
+      "text": "get this button"
+    },
+    {
+      "start": 365.28,
+      "duration": 6.68,
+      "text": "live Mark is getting me fired up Mark"
+    },
+    {
+      "start": 368.319,
+      "duration": 6.6,
+      "text": "Lou saying that uh we need to find some"
+    },
+    {
+      "start": 371.96,
+      "duration": 5.799,
+      "text": "creators online and"
+    },
+    {
+      "start": 374.919,
+      "duration": 6.881,
+      "text": "um on Tik Tok and"
+    },
+    {
+      "start": 377.759,
+      "duration": 6.521,
+      "text": "reals and we need to get some units in"
+    },
+    {
+      "start": 381.8,
+      "duration": 3.72,
+      "text": "our hands which I totally agree with him"
+    },
+    {
+      "start": 384.28,
+      "duration": 5.639,
+      "text": "I think that's a great"
+    },
+    {
+      "start": 385.52,
+      "duration": 4.399,
+      "text": "idea and um"
+    },
+    {
+      "start": 390.319,
+      "duration": 3.681,
+      "text": "start sort of like a viral Loop you"
+    },
+    {
+      "start": 411.639,
+      "duration": 4.761,
+      "text": "know whoa whoa whoa who"
+    },
+    {
+      "start": 422.479,
+      "duration": 3.041,
+      "text": "why does it look like there's a"
+    },
+    {
+      "start": 429.24,
+      "duration": 6.359,
+      "text": "little [ __ ] this"
+    },
+    {
+      "start": 431.479,
+      "duration": 4.12,
+      "text": "up all right"
+    },
+    {
+      "start": 451.96,
+      "duration": 6.239,
+      "text": "all right we're going to make this"
+    },
+    {
+      "start": 454.039,
+      "duration": 4.16,
+      "text": "invisible the problem is we"
+    },
+    {
+      "start": 461.599,
+      "duration": 6.56,
+      "text": "um we didn't do this right we got to"
+    },
+    {
+      "start": 464.56,
+      "duration": 3.599,
+      "text": "alter the sketch not the"
+    },
+    {
+      "start": 470.919,
+      "duration": 4.641,
+      "text": "um not the actual body"
+    },
+    {
+      "start": 492.919,
+      "duration": 5.84,
+      "text": "Floren what is up how are you"
+    },
+    {
+      "start": 496.319,
+      "duration": 5.361,
+      "text": "doing we got to get that desk C out to"
+    },
+    {
+      "start": 498.759,
+      "duration": 7.241,
+      "text": "you today that's GNA be so"
+    },
+    {
+      "start": 501.68,
+      "duration": 4.32,
+      "text": "fun I think I have it right yeah I"
+    },
+    {
+      "start": 507.039,
+      "duration": 5.841,
+      "text": "do I felt so bad when you were New York"
+    },
+    {
+      "start": 509.759,
+      "duration": 5.96,
+      "text": "City cuz it was so cold and it was windy"
+    },
+    {
+      "start": 512.88,
+      "duration": 6.76,
+      "text": "also and I know like in the city when"
+    },
+    {
+      "start": 515.719,
+      "duration": 6.401,
+      "text": "it's that cold and also windy it's just"
+    },
+    {
+      "start": 519.64,
+      "duration": 5.36,
+      "text": "like it's absolutely brutal I have"
+    },
+    {
+      "start": 522.12,
+      "duration": 5.12,
+      "text": "family that lives in the city and uh you"
+    },
+    {
+      "start": 525.0,
+      "duration": 5.88,
+      "text": "have to just be built different"
+    },
+    {
+      "start": 527.24,
+      "duration": 3.64,
+      "text": "to put up with"
+    },
+    {
+      "start": 532.92,
+      "duration": 3.24,
+      "text": "that kind of"
+    },
+    {
+      "start": 537.76,
+      "duration": 5.639,
+      "text": "brutal I'm doing good I'm doing good I"
+    },
+    {
+      "start": 540.079,
+      "duration": 7.561,
+      "text": "got no sleep last night I have"
+    },
+    {
+      "start": 543.399,
+      "duration": 7.041,
+      "text": "um I have young kids you know and then"
+    },
+    {
+      "start": 547.64,
+      "duration": 3.639,
+      "text": "um one is not feeling they're both not"
+    },
+    {
+      "start": 550.44,
+      "duration": 5.24,
+      "text": "feeling"
+    },
+    {
+      "start": 551.279,
+      "duration": 4.401,
+      "text": "well and so they were up last"
+    },
+    {
+      "start": 558.079,
+      "duration": 5.841,
+      "text": "night and and you were doing the running"
+    },
+    {
+      "start": 561.16,
+      "duration": 6.119,
+      "text": "and [ __ ] like that and I was like oh my"
+    },
+    {
+      "start": 563.92,
+      "duration": 6.76,
+      "text": "God how is he doing"
+    },
+    {
+      "start": 567.279,
+      "duration": 5.321,
+      "text": "this my face would have been frozen off"
+    },
+    {
+      "start": 570.68,
+      "duration": 4.159,
+      "text": "you need like a ski mask or something"
+    },
+    {
+      "start": 572.6,
+      "duration": 2.239,
+      "text": "like"
+    },
+    {
+      "start": 577.76,
+      "duration": 6.88,
+      "text": "that the um when I go and visit"
+    },
+    {
+      "start": 581.16,
+      "duration": 7.04,
+      "text": "them I'll go and visit in the uh summer"
+    },
+    {
+      "start": 584.64,
+      "duration": 6.36,
+      "text": "in New York City and um a lot of the"
+    },
+    {
+      "start": 588.2,
+      "duration": 5.879,
+      "text": "Subways don't have"
+    },
+    {
+      "start": 591.0,
+      "duration": 7.079,
+      "text": "AC and um I think that might even be"
+    },
+    {
+      "start": 594.079,
+      "duration": 7.2,
+      "text": "worse than how cold it gets in the uh in"
+    },
+    {
+      "start": 598.079,
+      "duration": 7.041,
+      "text": "the winter in New York City"
+    },
+    {
+      "start": 601.279,
+      "duration": 3.841,
+      "text": "Jesus I don't know how they do"
+    },
+    {
+      "start": 606.12,
+      "duration": 8.159,
+      "text": "it I don't know how I get the"
+    },
+    {
+      "start": 610.32,
+      "duration": 3.959,
+      "text": "um the chat delay"
+    },
+    {
+      "start": 616.6,
+      "duration": 4.679,
+      "text": "better I'm using uh I'm using"
+    },
+    {
+      "start": 622.399,
+      "duration": 8.921,
+      "text": "re so I have this which is so annoying"
+    },
+    {
+      "start": 627.399,
+      "duration": 3.921,
+      "text": "because if I um"
+    },
+    {
+      "start": 631.959,
+      "duration": 5.801,
+      "text": "if I click anywhere on my"
+    },
+    {
+      "start": 634.72,
+      "duration": 7.239,
+      "text": "screen this goes away immediately so I'm"
+    },
+    {
+      "start": 637.76,
+      "duration": 6.639,
+      "text": "reading from the uh the actual chat like"
+    },
+    {
+      "start": 641.959,
+      "duration": 4.161,
+      "text": "on the stream instead of reading from"
+    },
+    {
+      "start": 644.399,
+      "duration": 4.68,
+      "text": "this"
+    },
+    {
+      "start": 646.12,
+      "duration": 5.64,
+      "text": "dashboard I'm going to have to um"
+    },
+    {
+      "start": 649.079,
+      "duration": 6.521,
+      "text": "tomorrow I'm going to have to Google it"
+    },
+    {
+      "start": 651.76,
+      "duration": 6.199,
+      "text": "and figure out why this disappears as"
+    },
+    {
+      "start": 655.6,
+      "duration": 4.28,
+      "text": "soon as I click anywhere on my monitor"
+    },
+    {
+      "start": 657.959,
+      "duration": 4.721,
+      "text": "which is so annoying"
+    },
+    {
+      "start": 659.88,
+      "duration": 5.32,
+      "text": "right now we're building the"
+    },
+    {
+      "start": 662.68,
+      "duration": 4.2,
+      "text": "um we need to set the YouTube latency"
+    },
+    {
+      "start": 665.2,
+      "duration": 3.28,
+      "text": "before"
+    },
+    {
+      "start": 666.88,
+      "duration": 6.0,
+      "text": "starting"
+    },
+    {
+      "start": 668.48,
+      "duration": 8.159,
+      "text": "ah okay I didn't look into that"
+    },
+    {
+      "start": 672.88,
+      "duration": 3.759,
+      "text": "setting I'll have to edit"
+    },
+    {
+      "start": 676.72,
+      "duration": 6.88,
+      "text": "that I'm brand new to all this"
+    },
+    {
+      "start": 679.92,
+      "duration": 6.64,
+      "text": "[ __ ] the um right now we're"
+    },
+    {
+      "start": 683.6,
+      "duration": 6.72,
+      "text": "making the uh it's basically"
+    },
+    {
+      "start": 686.56,
+      "duration": 6.64,
+      "text": "like we're we're making the whole"
+    },
+    {
+      "start": 690.32,
+      "duration": 5.24,
+      "text": "ho for where the stabilizer is going to"
+    },
+    {
+      "start": 693.2,
+      "duration": 4.639,
+      "text": "go this is a keyboard uh plate you know"
+    },
+    {
+      "start": 695.56,
+      "duration": 7.719,
+      "text": "but we're making the hole for where the"
+    },
+    {
+      "start": 697.839,
+      "duration": 5.44,
+      "text": "uh stabilizer is going to go cuz for our"
+    },
+    {
+      "start": 704.399,
+      "duration": 8.281,
+      "text": "button for our GitHub commit button it's"
+    },
+    {
+      "start": 708.76,
+      "duration": 7.28,
+      "text": "so big that uh it can"
+    },
+    {
+      "start": 712.68,
+      "duration": 5.36,
+      "text": "um it has a lot of wobble to it you know"
+    },
+    {
+      "start": 716.04,
+      "duration": 4.16,
+      "text": "so it needs stabilizers Just Like A"
+    },
+    {
+      "start": 718.04,
+      "duration": 4.359,
+      "text": "spacebar key does"
+    },
+    {
+      "start": 720.2,
+      "duration": 5.879,
+      "text": "so we need to build"
+    },
+    {
+      "start": 722.399,
+      "duration": 6.961,
+      "text": "um we need to build our own version of a"
+    },
+    {
+      "start": 726.079,
+      "duration": 7.081,
+      "text": "keyboard plate that's going to hold the"
+    },
+    {
+      "start": 729.36,
+      "duration": 6.12,
+      "text": "uh it's going to hold the stabilizers on"
+    },
+    {
+      "start": 733.16,
+      "duration": 5.16,
+      "text": "either side of the"
+    },
+    {
+      "start": 735.48,
+      "duration": 6.96,
+      "text": "switch and um then we'll get a really"
+    },
+    {
+      "start": 738.32,
+      "duration": 7.4,
+      "text": "like super clean uh button press and um"
+    },
+    {
+      "start": 742.44,
+      "duration": 7.88,
+      "text": "it won't Jam or anything like"
+    },
+    {
+      "start": 745.72,
+      "duration": 8.08,
+      "text": "that and then uh yesterday we got in"
+    },
+    {
+      "start": 750.32,
+      "duration": 5.519,
+      "text": "the green filament for the actual uh"
+    },
+    {
+      "start": 753.8,
+      "duration": 4.159,
+      "text": "button itself the key cap and we're"
+    },
+    {
+      "start": 755.839,
+      "duration": 6.081,
+      "text": "going to backl this with some super"
+    },
+    {
+      "start": 757.959,
+      "duration": 8.56,
+      "text": "bright LEDs and uh it'll be like"
+    },
+    {
+      "start": 761.92,
+      "duration": 8.52,
+      "text": "a a cool green glowing uh"
+    },
+    {
+      "start": 766.519,
+      "duration": 5.481,
+      "text": "GitHub button the idea is for it to look"
+    },
+    {
+      "start": 770.44,
+      "duration": 7.0,
+      "text": "like a"
+    },
+    {
+      "start": 772.0,
+      "duration": 7.639,
+      "text": "um a square on your GitHub contribution"
+    },
+    {
+      "start": 777.44,
+      "duration": 3.8,
+      "text": "graph uh kaiso"
+    },
+    {
+      "start": 779.639,
+      "duration": 3.961,
+      "text": "gave me the idea I think that's how you"
+    },
+    {
+      "start": 781.24,
+      "duration": 2.36,
+      "text": "say his"
+    },
+    {
+      "start": 784.88,
+      "duration": 6.0,
+      "text": "name I don't"
+    },
+    {
+      "start": 786.959,
+      "duration": 6.281,
+      "text": "really know him a ton we just recently"
+    },
+    {
+      "start": 790.88,
+      "duration": 4.759,
+      "text": "started talking because uh he said hey"
+    },
+    {
+      "start": 793.24,
+      "duration": 5.959,
+      "text": "you should build this and then I was"
+    },
+    {
+      "start": 795.639,
+      "duration": 6.601,
+      "text": "kind of like that is actually a fun idea"
+    },
+    {
+      "start": 799.199,
+      "duration": 7.361,
+      "text": "because I hate pulling up the terminal"
+    },
+    {
+      "start": 802.24,
+      "duration": 4.32,
+      "text": "to uh right"
+    },
+    {
+      "start": 806.8,
+      "duration": 4.76,
+      "text": "commit and then we're going to have ai I"
+    },
+    {
+      "start": 809.399,
+      "duration": 4.841,
+      "text": "do the"
+    },
+    {
+      "start": 811.56,
+      "duration": 6.12,
+      "text": "um there's actually like already a"
+    },
+    {
+      "start": 814.24,
+      "duration": 7.56,
+      "text": "project available where you can have ai"
+    },
+    {
+      "start": 817.68,
+      "duration": 6.92,
+      "text": "read the changes of uh your code when"
+    },
+    {
+      "start": 821.8,
+      "duration": 6.039,
+      "text": "you go to push it and then it will set"
+    },
+    {
+      "start": 824.6,
+      "duration": 6.0,
+      "text": "the uh the"
+    },
+    {
+      "start": 827.839,
+      "duration": 5.44,
+      "text": "message automatically so you don't even"
+    },
+    {
+      "start": 830.6,
+      "duration": 2.679,
+      "text": "have to"
+    },
+    {
+      "start": 833.68,
+      "duration": 4.399,
+      "text": "um you don't even have to write the"
+    },
+    {
+      "start": 835.68,
+      "duration": 4.56,
+      "text": "commit message you'll just press the"
+    },
+    {
+      "start": 838.079,
+      "duration": 4.68,
+      "text": "button in AI will read what changes"
+    },
+    {
+      "start": 840.24,
+      "duration": 6.159,
+      "text": "you're making and then come up with its"
+    },
+    {
+      "start": 842.759,
+      "duration": 3.64,
+      "text": "own uh commit"
+    },
+    {
+      "start": 846.759,
+      "duration": 5.08,
+      "text": "message why didn't you just start with a"
+    },
+    {
+      "start": 849.04,
+      "duration": 5.239,
+      "text": "smaller version for the"
+    },
+    {
+      "start": 851.839,
+      "duration": 5.0,
+      "text": "MVP"
+    },
+    {
+      "start": 854.279,
+      "duration": 4.48,
+      "text": "um that's a good that's a good idea I"
+    },
+    {
+      "start": 856.839,
+      "duration": 2.761,
+      "text": "could have started with a tiny version"
+    },
+    {
+      "start": 858.759,
+      "duration": 4.161,
+      "text": "for the"
+    },
+    {
+      "start": 859.6,
+      "duration": 5.88,
+      "text": "MVP I feel like this is almost one of"
+    },
+    {
+      "start": 862.92,
+      "duration": 6.8,
+      "text": "those things where it's half it's half"
+    },
+    {
+      "start": 865.48,
+      "duration": 9.52,
+      "text": "of a meme half of a good idea"
+    },
+    {
+      "start": 869.72,
+      "duration": 6.96,
+      "text": "and so um I kind of have to nail it and"
+    },
+    {
+      "start": 875.0,
+      "duration": 4.6,
+      "text": "also like with"
+    },
+    {
+      "start": 876.68,
+      "duration": 5.12,
+      "text": "Hardware like the same thing with um"
+    },
+    {
+      "start": 879.6,
+      "duration": 2.2,
+      "text": "with"
+    },
+    {
+      "start": 883.68,
+      "duration": 3.519,
+      "text": "deskhub that's not"
+    },
+    {
+      "start": 889.32,
+      "duration": 3.759,
+      "text": "good what did I do"
+    },
+    {
+      "start": 896.519,
+      "duration": 7.641,
+      "text": "here also with deskhub sorry the uh you"
+    },
+    {
+      "start": 901.279,
+      "duration": 4.56,
+      "text": "could only go so MVP with Hardware"
+    },
+    {
+      "start": 904.16,
+      "duration": 4.52,
+      "text": "because the hardware is going to live"
+    },
+    {
+      "start": 905.839,
+      "duration": 6.44,
+      "text": "with the person so like if I ship"
+    },
+    {
+      "start": 908.68,
+      "duration": 5.68,
+      "text": "something and it's not like super cool"
+    },
+    {
+      "start": 912.279,
+      "duration": 4.8,
+      "text": "then it's going to suck and people are"
+    },
+    {
+      "start": 914.36,
+      "duration": 5.56,
+      "text": "are going to be turned off to it what an"
+    },
+    {
+      "start": 917.079,
+      "duration": 4.641,
+      "text": "absolute Legend I wish my network would"
+    },
+    {
+      "start": 919.92,
+      "duration": 3.88,
+      "text": "be better so I can enjoy this piece of"
+    },
+    {
+      "start": 921.72,
+      "duration": 4.799,
+      "text": "art video quality is crispier than my"
+    },
+    {
+      "start": 923.8,
+      "duration": 5.88,
+      "text": "Nana's fries oh my God I st my face I'm"
+    },
+    {
+      "start": 926.519,
+      "duration": 3.161,
+      "text": "an idiot"
+    },
+    {
+      "start": 934.36,
+      "duration": 6.959,
+      "text": "Dan Dan the"
+    },
+    {
+      "start": 936.639,
+      "duration": 6.76,
+      "text": "man dude I got to figure out how"
+    },
+    {
+      "start": 941.319,
+      "duration": 5.281,
+      "text": "um you would probably know better than"
+    },
+    {
+      "start": 943.399,
+      "duration": 3.201,
+      "text": "me I got to figure out how"
+    },
+    {
+      "start": 946.639,
+      "duration": 6.841,
+      "text": "to cuz my mic is I'm like a mouth"
+    },
+    {
+      "start": 949.959,
+      "duration": 6.12,
+      "text": "breather and my mic is so sensitive so"
+    },
+    {
+      "start": 953.48,
+      "duration": 6.039,
+      "text": "when I stream I feel like I'm listening"
+    },
+    {
+      "start": 956.079,
+      "duration": 7.361,
+      "text": "to Darth Vader uh"
+    },
+    {
+      "start": 959.519,
+      "duration": 6.12,
+      "text": "stream and it's uh it's unbearable when"
+    },
+    {
+      "start": 963.44,
+      "duration": 5.0,
+      "text": "I go back and listen to it I'm like oh"
+    },
+    {
+      "start": 965.639,
+      "duration": 5.161,
+      "text": "my God all you can hear is me breathing"
+    },
+    {
+      "start": 968.44,
+      "duration": 4.519,
+      "text": "the entire time there's got to be like"
+    },
+    {
+      "start": 970.8,
+      "duration": 6.44,
+      "text": "in Discord it doesn't"
+    },
+    {
+      "start": 972.959,
+      "duration": 4.281,
+      "text": "happen see you Floren"
+    },
+    {
+      "start": 1011.8,
+      "duration": 3.399,
+      "text": "you should Market buy some of those nose"
+    },
+    {
+      "start": 1013.68,
+      "duration": 4.639,
+      "text": "trips maybe you start breathing through"
+    },
+    {
+      "start": 1015.199,
+      "duration": 4.841,
+      "text": "your no yeah I know I know I really need"
+    },
+    {
+      "start": 1018.319,
+      "duration": 3.88,
+      "text": "to do that"
+    },
+    {
+      "start": 1020.04,
+      "duration": 4.48,
+      "text": "actually it's funny cuz I think that I"
+    },
+    {
+      "start": 1022.199,
+      "duration": 4.201,
+      "text": "have them somewhere like literally"
+    },
+    {
+      "start": 1024.52,
+      "duration": 3.559,
+      "text": "upstairs right"
+    },
+    {
+      "start": 1026.4,
+      "duration": 5.919,
+      "text": "now"
+    },
+    {
+      "start": 1028.079,
+      "duration": 4.24,
+      "text": "um it's so bad I"
+    },
+    {
+      "start": 1033.88,
+      "duration": 6.24,
+      "text": "uh I definitely do not breathe good at"
+    },
+    {
+      "start": 1037.039,
+      "duration": 4.8,
+      "text": "night when I sleep and so I'm like"
+    },
+    {
+      "start": 1040.12,
+      "duration": 4.079,
+      "text": "always a little bit tired I think"
+    },
+    {
+      "start": 1041.839,
+      "duration": 2.36,
+      "text": "because of"
+    },
+    {
+      "start": 1044.28,
+      "duration": 4.44,
+      "text": "it which is not ideal"
+    },
+    {
+      "start": 1059.24,
+      "duration": 2.72,
+      "text": "oh wait no I don't know where they are I"
+    },
+    {
+      "start": 1061.16,
+      "duration": 1.96,
+      "text": "don't know where they are so I'm not"
+    },
+    {
+      "start": 1061.96,
+      "duration": 3.64,
+      "text": "getting them right"
+    },
+    {
+      "start": 1063.12,
+      "duration": 6.04,
+      "text": "now what are you working on brother how"
+    },
+    {
+      "start": 1065.6,
+      "duration": 3.56,
+      "text": "how are you doing what do you got going"
+    },
+    {
+      "start": 1070.84,
+      "duration": 8.12,
+      "text": "on by the way you have probably like the"
+    },
+    {
+      "start": 1074.96,
+      "duration": 5.4,
+      "text": "best profile picture of all time like"
+    },
+    {
+      "start": 1078.96,
+      "duration": 4.199,
+      "text": "when I see your profile picture on the"
+    },
+    {
+      "start": 1080.36,
+      "duration": 6.96,
+      "text": "feed I'm like God"
+    },
+    {
+      "start": 1083.159,
+      "duration": 4.161,
+      "text": "damn that is a good profile"
+    },
+    {
+      "start": 1088.4,
+      "duration": 4.0,
+      "text": "picture all right we're going to export"
+    },
+    {
+      "start": 1098.24,
+      "duration": 6.72,
+      "text": "this this is not V5 yet because V4"
+    },
+    {
+      "start": 1101.72,
+      "duration": 3.24,
+      "text": "didn't count"
+    },
+    {
+      "start": 1121.12,
+      "duration": 3.08,
+      "text": "why is it doing this"
+    },
+    {
+      "start": 1131.32,
+      "duration": 3.839,
+      "text": "weird all right we're gonna see how this"
+    },
+    {
+      "start": 1135.28,
+      "duration": 4.36,
+      "text": "folks Center to the"
+    },
+    {
+      "start": 1144.6,
+      "duration": 5.959,
+      "text": "currently working on updates for my mom"
+    },
+    {
+      "start": 1146.799,
+      "duration": 5.521,
+      "text": "AI app got a huge like from an"
+    },
+    {
+      "start": 1150.559,
+      "duration": 4.0,
+      "text": "influencer so got to do some stuff for"
+    },
+    {
+      "start": 1152.32,
+      "duration": 5.52,
+      "text": "it oh that's"
+    },
+    {
+      "start": 1154.559,
+      "duration": 3.281,
+      "text": "amazing that's"
+    },
+    {
+      "start": 1159.28,
+      "duration": 4.8,
+      "text": "amazing what is up how you doing"
+    },
+    {
+      "start": 1165.08,
+      "duration": 4.959,
+      "text": "yellow all right so um we just sent that"
+    },
+    {
+      "start": 1167.84,
+      "duration": 4.199,
+      "text": "to the printer that's printing I want to"
+    },
+    {
+      "start": 1170.039,
+      "duration": 4.481,
+      "text": "go and"
+    },
+    {
+      "start": 1172.039,
+      "duration": 6.281,
+      "text": "um I want to refine the button a little"
+    },
+    {
+      "start": 1174.52,
+      "duration": 3.8,
+      "text": "bit the actual key cap"
+    },
+    {
+      "start": 1181.08,
+      "duration": 4.599,
+      "text": "now just have to find it"
+    },
+    {
+      "start": 1213.88,
+      "duration": 2.56,
+      "text": "all right"
+    },
+    {
+      "start": 1217.12,
+      "duration": 3.439,
+      "text": "guys there it"
+    },
+    {
+      "start": 1227.48,
+      "duration": 6.16,
+      "text": "is hey it is a lot it is too much work I"
+    },
+    {
+      "start": 1231.84,
+      "duration": 4.079,
+      "text": "can't believe it I took this project on"
+    },
+    {
+      "start": 1233.64,
+      "duration": 4.0,
+      "text": "cuz I thought it was going to be uh I"
+    },
+    {
+      "start": 1235.919,
+      "duration": 4.561,
+      "text": "thought it was going to be something you"
+    },
+    {
+      "start": 1237.64,
+      "duration": 5.76,
+      "text": "know quick and easy but even lining up"
+    },
+    {
+      "start": 1240.48,
+      "duration": 6.199,
+      "text": "these uh like the stem holders for the"
+    },
+    {
+      "start": 1243.4,
+      "duration": 6.12,
+      "text": "key caps like everything"
+    },
+    {
+      "start": 1246.679,
+      "duration": 7.601,
+      "text": "is a lot of"
+    },
+    {
+      "start": 1249.52,
+      "duration": 10.72,
+      "text": "work so what I'm thinking is right now"
+    },
+    {
+      "start": 1254.28,
+      "duration": 5.96,
+      "text": "the key cap is uh"
+    },
+    {
+      "start": 1260.6,
+      "duration": 6.88,
+      "text": "it's it's too wide in comparison to the"
+    },
+    {
+      "start": 1262.799,
+      "duration": 8.401,
+      "text": "base we need to create a gap between the"
+    },
+    {
+      "start": 1267.48,
+      "duration": 6.04,
+      "text": "uh the key cap and the actual base"
+    },
+    {
+      "start": 1271.2,
+      "duration": 4.079,
+      "text": "itself and uh right now we have no"
+    },
+    {
+      "start": 1273.52,
+      "duration": 3.159,
+      "text": "stabilizers that's why it's wobbly like"
+    },
+    {
+      "start": 1275.279,
+      "duration": 4.241,
+      "text": "this so we're going to add the"
+    },
+    {
+      "start": 1276.679,
+      "duration": 7.161,
+      "text": "stabilizers and then we'll put a little"
+    },
+    {
+      "start": 1279.52,
+      "duration": 4.32,
+      "text": "Gap in between the"
+    },
+    {
+      "start": 1284.0,
+      "duration": 7.24,
+      "text": "um in between the key cap and the base"
+    },
+    {
+      "start": 1287.279,
+      "duration": 6.481,
+      "text": "and then w noise of it actually um"
+    },
+    {
+      "start": 1291.24,
+      "duration": 6.2,
+      "text": "hitting the sides and it'll just be like"
+    },
+    {
+      "start": 1293.76,
+      "duration": 3.68,
+      "text": "uh a lot cleaner of a button"
+    },
+    {
+      "start": 1298.84,
+      "duration": 7.319,
+      "text": "press"
+    },
+    {
+      "start": 1301.12,
+      "duration": 5.039,
+      "text": "see so I'm thinking that we start"
+    },
+    {
+      "start": 1306.799,
+      "duration": 3.0,
+      "text": "off"
+    },
+    {
+      "start": 1315.0,
+      "duration": 5.0,
+      "text": "by erasing a lot of this"
+    },
+    {
+      "start": 1345.96,
+      "duration": 4.56,
+      "text": "[Music]"
+    },
+    {
+      "start": 1347.679,
+      "duration": 2.841,
+      "text": "the"
+    },
+    {
+      "start": 1378.12,
+      "duration": 2.32,
+      "text": "Sur"
+    },
+    {
+      "start": 1386.64,
+      "duration": 2.68,
+      "text": "I think that"
+    },
+    {
+      "start": 1391.24,
+      "duration": 3.88,
+      "text": "uh we just bring this"
+    },
+    {
+      "start": 1395.919,
+      "duration": 6.681,
+      "text": "in do a linear scale or uniform scale"
+    },
+    {
+      "start": 1410.4,
+      "duration": 2.92,
+      "text": "no it's not what I want to"
+    },
+    {
+      "start": 1417.44,
+      "duration": 4.28,
+      "text": "do God this is so tricky"
+    },
+    {
+      "start": 1432.679,
+      "duration": 4.0,
+      "text": "because basically"
+    },
+    {
+      "start": 1440.159,
+      "duration": 4.321,
+      "text": "if I scale this um saw the demo"
+    },
+    {
+      "start": 1442.679,
+      "duration": 3.721,
+      "text": "yesterday on Twitter The Click sounds so"
+    },
+    {
+      "start": 1444.48,
+      "duration": 4.92,
+      "text": "good thank you thank you I appreciate"
+    },
+    {
+      "start": 1446.4,
+      "duration": 3.0,
+      "text": "that that means the"
+    },
+    {
+      "start": 1451.0,
+      "duration": 4.48,
+      "text": "world basically if I scale this"
+    },
+    {
+      "start": 1455.52,
+      "duration": 6.2,
+      "text": "down I'm going to lose the inside of it"
+    },
+    {
+      "start": 1458.88,
+      "duration": 2.84,
+      "text": "which is super"
+    },
+    {
+      "start": 1463.679,
+      "duration": 4.88,
+      "text": "annoying I'm just going to go for it"
+    },
+    {
+      "start": 1480.76,
+      "duration": 3.12,
+      "text": "might take it down a millimeter all the"
+    },
+    {
+      "start": 1482.44,
+      "duration": 5.0,
+      "text": "way"
+    },
+    {
+      "start": 1483.88,
+      "duration": 3.56,
+      "text": "around that's going to be"
+    },
+    {
+      "start": 1491.08,
+      "duration": 5.28,
+      "text": "perfect might be too much but we'll see"
+    },
+    {
+      "start": 1513.72,
+      "duration": 5.88,
+      "text": "so we'll do uh 67 /"
+    },
+    {
+      "start": 1522.08,
+      "duration": 4.0,
+      "text": "68 67"
+    },
+    {
+      "start": 1554.32,
+      "duration": 4.079,
+      "text": "I'm just going to have to delete this"
+    },
+    {
+      "start": 1566.039,
+      "duration": 3.0,
+      "text": "un"
+    },
+    {
+      "start": 1617.24,
+      "duration": 3.0,
+      "text": "to"
+    },
+    {
+      "start": 1620.48,
+      "duration": 2.84,
+      "text": "that is like much"
+    },
+    {
+      "start": 1626.0,
+      "duration": 7.2,
+      "text": "smaller might be too"
+    },
+    {
+      "start": 1628.88,
+      "duration": 4.32,
+      "text": "small I don't know"
+    },
+    {
+      "start": 1648.84,
+      "duration": 3.0,
+      "text": "I"
+    },
+    {
+      "start": 1707.88,
+      "duration": 2.24,
+      "text": "can't"
+    },
+    {
+      "start": 1723.279,
+      "duration": 7.0,
+      "text": "Weir this sketches for the"
+    },
+    {
+      "start": 1727.0,
+      "duration": 7.559,
+      "text": "uh the top of this is what I'm trying to"
+    },
+    {
+      "start": 1730.279,
+      "duration": 4.28,
+      "text": "find this is the cutout"
+    },
+    {
+      "start": 1741.919,
+      "duration": 2.281,
+      "text": "a"
+    },
+    {
+      "start": 1746.76,
+      "duration": 3.48,
+      "text": "PL that's the"
+    },
+    {
+      "start": 1757.96,
+      "duration": 4.439,
+      "text": "base oh there it is"
+    },
+    {
+      "start": 1796.919,
+      "duration": 3.0,
+      "text": "r"
+    },
+    {
+      "start": 1827.039,
+      "duration": 2.921,
+      "text": "got"
+    },
+    {
+      "start": 1830.679,
+      "duration": 3.0,
+      "text": "come"
+    },
+    {
+      "start": 1858.24,
+      "duration": 3.439,
+      "text": "until the"
+    },
+    {
+      "start": 1888.399,
+      "duration": 7.0,
+      "text": "folks we have a guest for you"
+    },
+    {
+      "start": 1891.399,
+      "duration": 4.0,
+      "text": "tonight like"
+    },
+    {
+      "start": 1936.279,
+      "duration": 3.0,
+      "text": "TR"
+    },
+    {
+      "start": 1948.76,
+      "duration": 3.759,
+      "text": "all right we're getting there"
+    },
+    {
+      "start": 2023.039,
+      "duration": 3.161,
+      "text": "all right our"
+    },
+    {
+      "start": 2028.279,
+      "duration": 7.161,
+      "text": "uh our plate is done we go grab that"
+    },
+    {
+      "start": 2032.44,
+      "duration": 3.0,
+      "text": "right"
+    },
+    {
+      "start": 2054.52,
+      "duration": 3.599,
+      "text": "right so"
+    },
+    {
+      "start": 2063.119,
+      "duration": 5.881,
+      "text": "uh we have our"
+    },
+    {
+      "start": 2065.28,
+      "duration": 7.2,
+      "text": "frame it looks pretty solid"
+    },
+    {
+      "start": 2069.0,
+      "duration": 5.8,
+      "text": "I'm going to compare it to an actual"
+    },
+    {
+      "start": 2072.48,
+      "duration": 4.48,
+      "text": "keyboard frame and we're going to see"
+    },
+    {
+      "start": 2074.8,
+      "duration": 2.16,
+      "text": "the"
+    },
+    {
+      "start": 2083.48,
+      "duration": 4.159,
+      "text": "difference it's going to be close but I"
+    },
+    {
+      "start": 2085.72,
+      "duration": 5.159,
+      "text": "don't think that's"
+    },
+    {
+      "start": 2087.639,
+      "duration": 3.24,
+      "text": "it damn"
+    },
+    {
+      "start": 2094.839,
+      "duration": 7.081,
+      "text": "it we'll see"
+    },
+    {
+      "start": 2098.92,
+      "duration": 3.0,
+      "text": "why"
+    },
+    {
+      "start": 2129.839,
+      "duration": 2.441,
+      "text": "it's not"
+    },
+    {
+      "start": 2135.44,
+      "duration": 5.44,
+      "text": "terrible so we have the stabilizers in"
+    },
+    {
+      "start": 2137.88,
+      "duration": 3.0,
+      "text": "there"
+    },
+    {
+      "start": 2160.8,
+      "duration": 4.799,
+      "text": "the button is not held in there that"
+    },
+    {
+      "start": 2163.76,
+      "duration": 4.48,
+      "text": "great we're going to have to tighten"
+    },
+    {
+      "start": 2165.599,
+      "duration": 2.641,
+      "text": "some of this stuff"
+    },
+    {
+      "start": 2173.0,
+      "duration": 4.8,
+      "text": "up all right now we got the button in"
+    },
+    {
+      "start": 2175.119,
+      "duration": 2.681,
+      "text": "there with the"
+    },
+    {
+      "start": 2178.88,
+      "duration": 7.04,
+      "text": "stabilizers you can see there's a little"
+    },
+    {
+      "start": 2182.119,
+      "duration": 7.441,
+      "text": "Gap the side there that's got to be"
+    },
+    {
+      "start": 2185.92,
+      "duration": 3.64,
+      "text": "tightened it's too far"
+    },
+    {
+      "start": 2209.04,
+      "duration": 3.84,
+      "text": "oh it's nice though"
+    },
+    {
+      "start": 2217.64,
+      "duration": 2.36,
+      "text": "oh my"
+    },
+    {
+      "start": 2227.0,
+      "duration": 7.88,
+      "text": "God it takes away a lot the"
+    },
+    {
+      "start": 2230.56,
+      "duration": 4.32,
+      "text": "um there's like no wobble at all"
+    },
+    {
+      "start": 2235.64,
+      "duration": 8.52,
+      "text": "now oh my God it's"
+    },
+    {
+      "start": 2239.16,
+      "duration": 5.0,
+      "text": "perfect well it's not perfect but"
+    },
+    {
+      "start": 2262.359,
+      "duration": 5.361,
+      "text": "yes all right so I think that we go um"
+    },
+    {
+      "start": 2282.319,
+      "duration": 3.161,
+      "text": "you get this uh"
+    },
+    {
+      "start": 2303.079,
+      "duration": 6.76,
+      "text": "pred that's my dog going"
+    },
+    {
+      "start": 2306.44,
+      "duration": 3.399,
+      "text": "crazy is there"
+    },
+    {
+      "start": 2330.48,
+      "duration": 6.08,
+      "text": "you we're going to print the"
+    },
+    {
+      "start": 2333.56,
+      "duration": 7.72,
+      "text": "button so we can see how the new size is"
+    },
+    {
+      "start": 2336.56,
+      "duration": 4.72,
+      "text": "we just size down down inside"
+    },
+    {
+      "start": 2355.079,
+      "duration": 4.0,
+      "text": "that what"
+    },
+    {
+      "start": 2392.2,
+      "duration": 3.0,
+      "text": "feel"
+    },
+    {
+      "start": 2402.04,
+      "duration": 2.16,
+      "text": "there's"
+    },
+    {
+      "start": 2413.04,
+      "duration": 7.16,
+      "text": "the so"
+    },
+    {
+      "start": 2415.16,
+      "duration": 5.04,
+      "text": "now we have to raise it"
+    },
+    {
+      "start": 2422.72,
+      "duration": 5.32,
+      "text": "up and then we to"
+    },
+    {
+      "start": 2433.88,
+      "duration": 4.08,
+      "text": "you have to make a mount for the"
+    },
+    {
+      "start": 2438.16,
+      "duration": 4.919,
+      "text": "um have to make a mount for it it'll"
+    },
+    {
+      "start": 2440.64,
+      "duration": 2.439,
+      "text": "look like"
+    },
+    {
+      "start": 2444.599,
+      "duration": 3.881,
+      "text": "that you see the one that's screwed in"
+    },
+    {
+      "start": 2446.72,
+      "duration": 3.48,
+      "text": "right there we got to make that mount so"
+    },
+    {
+      "start": 2448.48,
+      "duration": 4.56,
+      "text": "we have to raise the plate up and then"
+    },
+    {
+      "start": 2450.2,
+      "duration": 2.84,
+      "text": "put holes in for the"
+    },
+    {
+      "start": 2453.16,
+      "duration": 5.0,
+      "text": "screws which we are going to use some M3"
+    },
+    {
+      "start": 2466.4,
+      "duration": 9.56,
+      "text": "screws so I need to take this"
+    },
+    {
+      "start": 2469.56,
+      "duration": 6.4,
+      "text": "switch out and then see how far"
+    },
+    {
+      "start": 2481.88,
+      "duration": 5.92,
+      "text": "um up I have this one CU height on this"
+    },
+    {
+      "start": 2484.56,
+      "duration": 7.4,
+      "text": "one is perfect"
+    },
+    {
+      "start": 2487.8,
+      "duration": 4.16,
+      "text": "but I forgot how tall I put"
+    },
+    {
+      "start": 2496.839,
+      "duration": 3.0,
+      "text": "it"
+    },
+    {
+      "start": 2500.16,
+      "duration": 4.4,
+      "text": "five okay five millimeters"
+    },
+    {
+      "start": 2521.4,
+      "duration": 5.12,
+      "text": "I'm trying to think of how I'm going to"
+    },
+    {
+      "start": 2523.16,
+      "duration": 3.36,
+      "text": "do this"
+    },
+    {
+      "start": 2556.24,
+      "duration": 6.2,
+      "text": "so this is 1 and a half mm so it needs"
+    },
+    {
+      "start": 2559.16,
+      "duration": 3.28,
+      "text": "to be raised three and a"
+    },
+    {
+      "start": 2572.359,
+      "duration": 4.24,
+      "text": "half and then"
+    },
+    {
+      "start": 2582.0,
+      "duration": 7.16,
+      "text": "I think I can just add some"
+    },
+    {
+      "start": 2585.64,
+      "duration": 3.52,
+      "text": "supports on the"
+    },
+    {
+      "start": 2591.079,
+      "duration": 4.28,
+      "text": "side kind of just raise this thing"
+    },
+    {
+      "start": 2596.52,
+      "duration": 3.559,
+      "text": "up what we're going to"
+    },
+    {
+      "start": 2602.599,
+      "duration": 4.601,
+      "text": "do all right let's do it"
+    },
+    {
+      "start": 2626.319,
+      "duration": 4.721,
+      "text": "all right so we're going to go add"
+    },
+    {
+      "start": 2666.04,
+      "duration": 4.039,
+      "text": "us for"
+    },
+    {
+      "start": 2712.119,
+      "duration": 3.041,
+      "text": "these are just going to be"
+    },
+    {
+      "start": 2715.28,
+      "duration": 5.079,
+      "text": "our brackets and lift it up"
+    },
+    {
+      "start": 2754.92,
+      "duration": 3.0,
+      "text": "last"
+    },
+    {
+      "start": 2785.92,
+      "duration": 6.679,
+      "text": "I my my Bren"
+    },
+    {
+      "start": 2845.28,
+      "duration": 3.0,
+      "text": "love"
+    },
+    {
+      "start": 2875.839,
+      "duration": 4.081,
+      "text": "enough you"
+    },
+    {
+      "start": 2934.359,
+      "duration": 3.0,
+      "text": "you"
+    },
+    {
+      "start": 2948.7,
+      "duration": 3.269,
+      "text": "[Music]"
+    },
+    {
+      "start": 3009.0,
+      "duration": 2.72,
+      "text": "that's our screw"
+    },
+    {
+      "start": 3012.24,
+      "duration": 5.76,
+      "text": "hole we're making a 2.8 because the uh"
+    },
+    {
+      "start": 3016.559,
+      "duration": 5.56,
+      "text": "we're using an"
+    },
+    {
+      "start": 3018.0,
+      "duration": 6.2,
+      "text": "M3 so it'll tap into the"
+    },
+    {
+      "start": 3022.119,
+      "duration": 4.081,
+      "text": "uh"
+    },
+    {
+      "start": 3024.2,
+      "duration": 5.8,
+      "text": "print you know if we make it slightly"
+    },
+    {
+      "start": 3026.2,
+      "duration": 3.8,
+      "text": "smaller you"
+    },
+    {
+      "start": 3086.559,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 3139.04,
+      "duration": 4.12,
+      "text": "I love that these Tabs are extended"
+    },
+    {
+      "start": 3144.799,
+      "duration": 6.641,
+      "text": "off feels like"
+    },
+    {
+      "start": 3148.16,
+      "duration": 3.28,
+      "text": "kind of dangerous as far as"
+    },
+    {
+      "start": 3156.119,
+      "duration": 4.96,
+      "text": "snapping but I think we're going to send"
+    },
+    {
+      "start": 3158.079,
+      "duration": 3.0,
+      "text": "it"
+    },
+    {
+      "start": 3178.4,
+      "duration": 4.76,
+      "text": "oh we're on V6 Jesus Christ"
+    },
+    {
+      "start": 3214.319,
+      "duration": 2.641,
+      "text": "that's pretty decent"
+    },
+    {
+      "start": 3223.839,
+      "duration": 3.401,
+      "text": "looking so"
+    },
+    {
+      "start": 3231.0,
+      "duration": 4.44,
+      "text": "um let's see where that uh see how far"
+    },
+    {
+      "start": 3234.2,
+      "duration": 4.04,
+      "text": "that PR"
+    },
+    {
+      "start": 3235.44,
+      "duration": 5.24,
+      "text": "is four minutes"
+    },
+    {
+      "start": 3238.24,
+      "duration": 6.04,
+      "text": "left all right I'm trying to decide what"
+    },
+    {
+      "start": 3240.68,
+      "duration": 3.6,
+      "text": "we're going to do here I think that"
+    },
+    {
+      "start": 3248.04,
+      "duration": 7.88,
+      "text": "uh think I might end stream there so I"
+    },
+    {
+      "start": 3252.52,
+      "duration": 3.4,
+      "text": "can go let my dogs out"
+    },
+    {
+      "start": 3257.0,
+      "duration": 6.559,
+      "text": "[ __ ] sorry for the shorter one today but"
+    },
+    {
+      "start": 3260.88,
+      "duration": 2.679,
+      "text": "got take care of the"
+    },
+    {
+      "start": 3264.319,
+      "duration": 5.561,
+      "text": "fan all right thanks guys I'll let you"
+    },
+    {
+      "start": 3266.52,
+      "duration": 4.76,
+      "text": "know how the uh how the stabilizer with"
+    },
+    {
+      "start": 3269.88,
+      "duration": 4.679,
+      "text": "the"
+    },
+    {
+      "start": 3271.28,
+      "duration": 7.24,
+      "text": "um the new uh switch plate and the"
+    },
+    {
+      "start": 3274.559,
+      "duration": 6.601,
+      "text": "stabilizer and the new smaller key cap"
+    },
+    {
+      "start": 3278.52,
+      "duration": 2.64,
+      "text": "go"
+    }
+  ],
+  "full_text": "yo yo yo yo yo we're back all right sorry my uh one of my kids is teething and then the other one of my kids is uh got an ear infection so we got crazy [ __ ] going on they were up all night long it was uh it was wild but I'm still ready to be locked the [ __ ] in and I got to blast this button now today so um here's the deal here's the deal we have to um we have to fix the stabilizer Mount which like I said before is just like the the keyboard just like the space key keeps the wobble to a minimum so the button goes down nice and straight doesn't get jammed or anything like that and then we need to we already did this this is done so we're going to focus on this today and then uh we're going to clean up design of keap which is the top and uh base and I'm thinking we make the um what is up good morning good morning how we doing Divine I'm thinking we make the base a little bit chunkier kind of like the one I have in the uh in the thumbnail and uh and that way there it's a little bit more rigid and maybe we even look into having an option that's made of aluminum that's a little bit more uh highend here is the filament I got it's translucent green and and it's hard to see here but this [ __ ] is unbelievable looking and so that's what is going to make the key cap of our button we're going to back light this with LEDs and uh we'll start with green maybe eventually we'll go to a clear one so that we can have whatever color LEDs we want but uh this green translucent key cap back lit with green I think is going to look [ __ ] unbelievable all right let's get right into it let's get rolling here so um the issue we're having right now is the stabilizer that we printed yesterday this one is too tight and it's Jam daming the stabilizers so they're not uh letting the key cap press cleanly down which is no good I'm just going to take one second here and we're going to Tweet out uh then I'm live so we're just going to grab this link copy and then uh we're going to go to x we're going to say I'm live the button is taking over my soul YouTube paste we'll grab the uh live stream photo there we go and now we're in there all right let's get it let's get it we're so back all right so the um the width of this scenario is way too tight so I thinking we grab this we got to extend this [ __ ] a little bit I'm thinking I'm going to have to switch out l park it's too much here right now bre no it's going to be too much it's going to be too much all right let's take a look at this we're going to up I'm just putting the 3D printed one that I have over the top of the one that uh yeah it's got to be bigger no it's got to be way bigger really does okay come on 3 and a half mm okay we're right we're flying today we got to get this button live Mark is getting me fired up Mark Lou saying that uh we need to find some creators online and um on Tik Tok and reals and we need to get some units in our hands which I totally agree with him I think that's a great idea and um start sort of like a viral Loop you know whoa whoa whoa who why does it look like there's a little [ __ ] this up all right all right we're going to make this invisible the problem is we um we didn't do this right we got to alter the sketch not the um not the actual body Floren what is up how are you doing we got to get that desk C out to you today that's GNA be so fun I think I have it right yeah I do I felt so bad when you were New York City cuz it was so cold and it was windy also and I know like in the city when it's that cold and also windy it's just like it's absolutely brutal I have family that lives in the city and uh you have to just be built different to put up with that kind of brutal I'm doing good I'm doing good I got no sleep last night I have um I have young kids you know and then um one is not feeling they're both not feeling well and so they were up last night and and you were doing the running and [ __ ] like that and I was like oh my God how is he doing this my face would have been frozen off you need like a ski mask or something like that the um when I go and visit them I'll go and visit in the uh summer in New York City and um a lot of the Subways don't have AC and um I think that might even be worse than how cold it gets in the uh in the winter in New York City Jesus I don't know how they do it I don't know how I get the um the chat delay better I'm using uh I'm using re so I have this which is so annoying because if I um if I click anywhere on my screen this goes away immediately so I'm reading from the uh the actual chat like on the stream instead of reading from this dashboard I'm going to have to um tomorrow I'm going to have to Google it and figure out why this disappears as soon as I click anywhere on my monitor which is so annoying right now we're building the um we need to set the YouTube latency before starting ah okay I didn't look into that setting I'll have to edit that I'm brand new to all this [ __ ] the um right now we're making the uh it's basically like we're we're making the whole ho for where the stabilizer is going to go this is a keyboard uh plate you know but we're making the hole for where the uh stabilizer is going to go cuz for our button for our GitHub commit button it's so big that uh it can um it has a lot of wobble to it you know so it needs stabilizers Just Like A spacebar key does so we need to build um we need to build our own version of a keyboard plate that's going to hold the uh it's going to hold the stabilizers on either side of the switch and um then we'll get a really like super clean uh button press and um it won't Jam or anything like that and then uh yesterday we got in the green filament for the actual uh button itself the key cap and we're going to backl this with some super bright LEDs and uh it'll be like a a cool green glowing uh GitHub button the idea is for it to look like a um a square on your GitHub contribution graph uh kaiso gave me the idea I think that's how you say his name I don't really know him a ton we just recently started talking because uh he said hey you should build this and then I was kind of like that is actually a fun idea because I hate pulling up the terminal to uh right commit and then we're going to have ai I do the um there's actually like already a project available where you can have ai read the changes of uh your code when you go to push it and then it will set the uh the message automatically so you don't even have to um you don't even have to write the commit message you'll just press the button in AI will read what changes you're making and then come up with its own uh commit message why didn't you just start with a smaller version for the MVP um that's a good that's a good idea I could have started with a tiny version for the MVP I feel like this is almost one of those things where it's half it's half of a meme half of a good idea and so um I kind of have to nail it and also like with Hardware like the same thing with um with deskhub that's not good what did I do here also with deskhub sorry the uh you could only go so MVP with Hardware because the hardware is going to live with the person so like if I ship something and it's not like super cool then it's going to suck and people are are going to be turned off to it what an absolute Legend I wish my network would be better so I can enjoy this piece of art video quality is crispier than my Nana's fries oh my God I st my face I'm an idiot Dan Dan the man dude I got to figure out how um you would probably know better than me I got to figure out how to cuz my mic is I'm like a mouth breather and my mic is so sensitive so when I stream I feel like I'm listening to Darth Vader uh stream and it's uh it's unbearable when I go back and listen to it I'm like oh my God all you can hear is me breathing the entire time there's got to be like in Discord it doesn't happen see you Floren you should Market buy some of those nose trips maybe you start breathing through your no yeah I know I know I really need to do that actually it's funny cuz I think that I have them somewhere like literally upstairs right now um it's so bad I uh I definitely do not breathe good at night when I sleep and so I'm like always a little bit tired I think because of it which is not ideal oh wait no I don't know where they are I don't know where they are so I'm not getting them right now what are you working on brother how how are you doing what do you got going on by the way you have probably like the best profile picture of all time like when I see your profile picture on the feed I'm like God damn that is a good profile picture all right we're going to export this this is not V5 yet because V4 didn't count why is it doing this weird all right we're gonna see how this folks Center to the currently working on updates for my mom AI app got a huge like from an influencer so got to do some stuff for it oh that's amazing that's amazing what is up how you doing yellow all right so um we just sent that to the printer that's printing I want to go and um I want to refine the button a little bit the actual key cap now just have to find it all right guys there it is hey it is a lot it is too much work I can't believe it I took this project on cuz I thought it was going to be uh I thought it was going to be something you know quick and easy but even lining up these uh like the stem holders for the key caps like everything is a lot of work so what I'm thinking is right now the key cap is uh it's it's too wide in comparison to the base we need to create a gap between the uh the key cap and the actual base itself and uh right now we have no stabilizers that's why it's wobbly like this so we're going to add the stabilizers and then we'll put a little Gap in between the um in between the key cap and the base and then w noise of it actually um hitting the sides and it'll just be like uh a lot cleaner of a button press see so I'm thinking that we start off by erasing a lot of this [Music] the Sur I think that uh we just bring this in do a linear scale or uniform scale no it's not what I want to do God this is so tricky because basically if I scale this um saw the demo yesterday on Twitter The Click sounds so good thank you thank you I appreciate that that means the world basically if I scale this down I'm going to lose the inside of it which is super annoying I'm just going to go for it might take it down a millimeter all the way around that's going to be perfect might be too much but we'll see so we'll do uh 67 / 68 67 I'm just going to have to delete this un to that is like much smaller might be too small I don't know I can't Weir this sketches for the uh the top of this is what I'm trying to find this is the cutout a PL that's the base oh there it is r got come until the folks we have a guest for you tonight like TR all right we're getting there all right our uh our plate is done we go grab that right right so uh we have our frame it looks pretty solid I'm going to compare it to an actual keyboard frame and we're going to see the difference it's going to be close but I don't think that's it damn it we'll see why it's not terrible so we have the stabilizers in there the button is not held in there that great we're going to have to tighten some of this stuff up all right now we got the button in there with the stabilizers you can see there's a little Gap the side there that's got to be tightened it's too far oh it's nice though oh my God it takes away a lot the um there's like no wobble at all now oh my God it's perfect well it's not perfect but yes all right so I think that we go um you get this uh pred that's my dog going crazy is there you we're going to print the button so we can see how the new size is we just size down down inside that what feel there's the so now we have to raise it up and then we to you have to make a mount for the um have to make a mount for it it'll look like that you see the one that's screwed in right there we got to make that mount so we have to raise the plate up and then put holes in for the screws which we are going to use some M3 screws so I need to take this switch out and then see how far um up I have this one CU height on this one is perfect but I forgot how tall I put it five okay five millimeters I'm trying to think of how I'm going to do this so this is 1 and a half mm so it needs to be raised three and a half and then I think I can just add some supports on the side kind of just raise this thing up what we're going to do all right let's do it all right so we're going to go add us for these are just going to be our brackets and lift it up last I my my Bren love enough you you [Music] that's our screw hole we're making a 2.8 because the uh we're using an M3 so it'll tap into the uh print you know if we make it slightly smaller you for I love that these Tabs are extended off feels like kind of dangerous as far as snapping but I think we're going to send it oh we're on V6 Jesus Christ that's pretty decent looking so um let's see where that uh see how far that PR is four minutes left all right I'm trying to decide what we're going to do here I think that uh think I might end stream there so I can go let my dogs out [ __ ] sorry for the shorter one today but got take care of the fan all right thanks guys I'll let you know how the uh how the stabilizer with the um the new uh switch plate and the stabilizer and the new smaller key cap go"
+}

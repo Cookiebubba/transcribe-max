@@ -1,0 +1,5 @@
+# Transcription (captions only — no audio/Whisper):
+yt-dlp>=2025.1.1
+
+# Only needed for refresh_streams.py (re-enumerating streams via Apify):
+requests>=2.31.0

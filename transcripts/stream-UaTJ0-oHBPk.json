@@ -1,0 +1,4720 @@
+{
+  "video_id": "UaTJ0-oHBPk",
+  "title": "Building a Glowing Ai GitHub Commit Button",
+  "url": "https://www.youtube.com/watch?v=UaTJ0-oHBPk",
+  "published_at": "2024-12-29T00:31:51Z",
+  "duration": "01:49:06",
+  "day_number": null,
+  "caption_language": "en",
+  "caption_kind": "auto-generated",
+  "segment_count": 941,
+  "word_count": 4977,
+  "segments": [
+    {
+      "start": 8.519,
+      "duration": 5.801,
+      "text": "hello hello good morning good morning"
+    },
+    {
+      "start": 10.639,
+      "duration": 5.64,
+      "text": "good morning good morning the saga"
+    },
+    {
+      "start": 14.32,
+      "duration": 4.84,
+      "text": "continues of"
+    },
+    {
+      "start": 16.279,
+      "duration": 6.281,
+      "text": "building the glowing"
+    },
+    {
+      "start": 19.16,
+      "duration": 3.4,
+      "text": "AI commit"
+    },
+    {
+      "start": 23.4,
+      "duration": 4.639,
+      "text": "button good morning good morning"
+    },
+    {
+      "start": 30.119,
+      "duration": 6.241,
+      "text": "how we doing how we doing how we"
+    },
+    {
+      "start": 32.719,
+      "duration": 8.121,
+      "text": "doing let's make sure that we're"
+    },
+    {
+      "start": 36.36,
+      "duration": 7.92,
+      "text": "live on X and on"
+    },
+    {
+      "start": 40.84,
+      "duration": 4.8,
+      "text": "YouTube because we have restream IO set"
+    },
+    {
+      "start": 44.28,
+      "duration": 5.959,
+      "text": "up"
+    },
+    {
+      "start": 45.64,
+      "duration": 8.52,
+      "text": "today so we should be live on both"
+    },
+    {
+      "start": 50.239,
+      "duration": 3.921,
+      "text": "platforms which would be absolutely"
+    },
+    {
+      "start": 56.8,
+      "duration": 7.399,
+      "text": "incredible all righty"
+    },
+    {
+      "start": 60.16,
+      "duration": 4.039,
+      "text": "so our goal for"
+    },
+    {
+      "start": 65.72,
+      "duration": 8.039,
+      "text": "today our goal for today is to figure"
+    },
+    {
+      "start": 69.479,
+      "duration": 4.28,
+      "text": "out the base for our"
+    },
+    {
+      "start": 74.72,
+      "duration": 6.16,
+      "text": "switch so we need to figure"
+    },
+    {
+      "start": 78.479,
+      "duration": 5.28,
+      "text": "out the bottom"
+    },
+    {
+      "start": 80.88,
+      "duration": 4.919,
+      "text": "part of our switch"
+    },
+    {
+      "start": 83.759,
+      "duration": 3.841,
+      "text": "here the base that it's actually going"
+    },
+    {
+      "start": 85.799,
+      "duration": 4.631,
+      "text": "to plug into so I don't have to hold it"
+    },
+    {
+      "start": 87.6,
+      "duration": 4.159,
+      "text": "in my hand when we're clicking it"
+    },
+    {
+      "start": 90.43,
+      "duration": 2.689,
+      "text": "[Music]"
+    },
+    {
+      "start": 91.759,
+      "duration": 4.161,
+      "text": "and"
+    },
+    {
+      "start": 93.119,
+      "duration": 6.241,
+      "text": "then once we have a base set up we're"
+    },
+    {
+      "start": 95.92,
+      "duration": 7.08,
+      "text": "going to have to start with a uh"
+    },
+    {
+      "start": 99.36,
+      "duration": 5.359,
+      "text": "prototype wiring diagram to wire this to"
+    },
+    {
+      "start": 103.0,
+      "duration": 4.36,
+      "text": "a"
+    },
+    {
+      "start": 104.719,
+      "duration": 5.961,
+      "text": "microcontroller and um from there when"
+    },
+    {
+      "start": 107.36,
+      "duration": 7.2,
+      "text": "we have the microcontroller wired"
+    },
+    {
+      "start": 110.68,
+      "duration": 7.84,
+      "text": "up we will be able to write some code so"
+    },
+    {
+      "start": 114.56,
+      "duration": 6.4,
+      "text": "that the uh the switch can interface"
+    },
+    {
+      "start": 118.52,
+      "duration": 6.0,
+      "text": "with our computer"
+    },
+    {
+      "start": 120.96,
+      "duration": 7.32,
+      "text": "and it can tell our computer to do stuff"
+    },
+    {
+      "start": 124.52,
+      "duration": 8.12,
+      "text": "like send a commit from GitHub and the"
+    },
+    {
+      "start": 128.28,
+      "duration": 11.44,
+      "text": "plan is right now that we can"
+    },
+    {
+      "start": 132.64,
+      "duration": 10.16,
+      "text": "uh we can have a um some code use in llm"
+    },
+    {
+      "start": 139.72,
+      "duration": 7.2,
+      "text": "like Chad gbt"
+    },
+    {
+      "start": 142.8,
+      "duration": 7.2,
+      "text": "to have the commit automatically place a"
+    },
+    {
+      "start": 146.92,
+      "duration": 5.52,
+      "text": "meaningful message based on what kind of"
+    },
+    {
+      "start": 150.0,
+      "duration": 6.08,
+      "text": "code we are"
+    },
+    {
+      "start": 152.44,
+      "duration": 3.64,
+      "text": "committing I hope that makes"
+    },
+    {
+      "start": 157.12,
+      "duration": 5.56,
+      "text": "sense so like AI will go through and"
+    },
+    {
+      "start": 160.48,
+      "duration": 5.52,
+      "text": "look at what we're what code we're"
+    },
+    {
+      "start": 162.68,
+      "duration": 6.72,
+      "text": "committing and uh after we press the"
+    },
+    {
+      "start": 166.0,
+      "duration": 7.04,
+      "text": "button and it'll say hey based on that"
+    },
+    {
+      "start": 169.4,
+      "duration": 5.119,
+      "text": "code you did this commit is you updated"
+    },
+    {
+      "start": 173.04,
+      "duration": 3.52,
+      "text": "the user"
+    },
+    {
+      "start": 174.519,
+      "duration": 5.241,
+      "text": "login so you won't even have to think"
+    },
+    {
+      "start": 176.56,
+      "duration": 3.2,
+      "text": "about it"
+    },
+    {
+      "start": 180.12,
+      "duration": 6.08,
+      "text": "all"
+    },
+    {
+      "start": 181.8,
+      "duration": 8.84,
+      "text": "righty so let's get right to it we have"
+    },
+    {
+      "start": 186.2,
+      "duration": 7.16,
+      "text": "to take the dimensions of these uh"
+    },
+    {
+      "start": 190.64,
+      "duration": 5.159,
+      "text": "bottom pins and then we have to throw"
+    },
+    {
+      "start": 193.36,
+      "duration": 2.439,
+      "text": "them"
+    },
+    {
+      "start": 198.56,
+      "duration": 6.959,
+      "text": "on we have to throw them"
+    },
+    {
+      "start": 201.84,
+      "duration": 3.679,
+      "text": "on the base that we're"
+    },
+    {
+      "start": 207.48,
+      "duration": 7.119,
+      "text": "creating let's see how we can get that"
+    },
+    {
+      "start": 212.28,
+      "duration": 4.56,
+      "text": "working I'm just going to check and make"
+    },
+    {
+      "start": 214.599,
+      "duration": 5.801,
+      "text": "sure that the levels sound all right on"
+    },
+    {
+      "start": 216.84,
+      "duration": 6.16,
+      "text": "the mic and then I'm not peeking on"
+    },
+    {
+      "start": 220.4,
+      "duration": 7.479,
+      "text": "um on X because that would really suck"
+    },
+    {
+      "start": 223.0,
+      "duration": 8.56,
+      "text": "if this whole time the mic was set up"
+    },
+    {
+      "start": 227.879,
+      "duration": 6.64,
+      "text": "poorly oh they sound"
+    },
+    {
+      "start": 231.56,
+      "duration": 5.959,
+      "text": "great Perfect all right"
+    },
+    {
+      "start": 234.519,
+      "duration": 3.0,
+      "text": "cool"
+    },
+    {
+      "start": 237.64,
+      "duration": 6.4,
+      "text": "so how are we going to to do this it"
+    },
+    {
+      "start": 240.92,
+      "duration": 4.599,
+      "text": "looks like so the bottom pin is probably"
+    },
+    {
+      "start": 244.04,
+      "duration": 3.479,
+      "text": "the most"
+    },
+    {
+      "start": 245.519,
+      "duration": 5.44,
+      "text": "important I'll"
+    },
+    {
+      "start": 247.519,
+      "duration": 5.64,
+      "text": "uh zoom in on"
+    },
+    {
+      "start": 250.959,
+      "duration": 4.4,
+      "text": "this so this is what I'm talking about"
+    },
+    {
+      "start": 253.159,
+      "duration": 5.48,
+      "text": "here with the uh the"
+    },
+    {
+      "start": 255.359,
+      "duration": 6.761,
+      "text": "pins so our"
+    },
+    {
+      "start": 258.639,
+      "duration": 5.241,
+      "text": "base is going to eventually be a PCB but"
+    },
+    {
+      "start": 262.12,
+      "duration": 5.4,
+      "text": "for this prototype we're going to make"
+    },
+    {
+      "start": 263.88,
+      "duration": 7.44,
+      "text": "it just a 3D print and then we'll solder"
+    },
+    {
+      "start": 267.52,
+      "duration": 6.2,
+      "text": "wires to the connectors"
+    },
+    {
+      "start": 271.32,
+      "duration": 7.4,
+      "text": "just so that we can get a uh a feasible"
+    },
+    {
+      "start": 273.72,
+      "duration": 7.479,
+      "text": "prototype working but um so so since the"
+    },
+    {
+      "start": 278.72,
+      "duration": 6.52,
+      "text": "PCB won't be holding it we'll make like"
+    },
+    {
+      "start": 281.199,
+      "duration": 7.44,
+      "text": "a pretend PCB out of 3D print and we"
+    },
+    {
+      "start": 285.24,
+      "duration": 6.6,
+      "text": "have to have the whole positions line up"
+    },
+    {
+      "start": 288.639,
+      "duration": 6.041,
+      "text": "with these three pins so the middle pin"
+    },
+    {
+      "start": 291.84,
+      "duration": 4.919,
+      "text": "is obviously just plastic and that's the"
+    },
+    {
+      "start": 294.68,
+      "duration": 6.2,
+      "text": "biggest one and that's kind of like the"
+    },
+    {
+      "start": 296.759,
+      "duration": 9.44,
+      "text": "one that will actually uh position the"
+    },
+    {
+      "start": 300.88,
+      "duration": 8.319,
+      "text": "switch and then the other two are the uh"
+    },
+    {
+      "start": 306.199,
+      "duration": 5.84,
+      "text": "Electro connections that are made when"
+    },
+    {
+      "start": 309.199,
+      "duration": 6.121,
+      "text": "the switch actually gets pressed"
+    },
+    {
+      "start": 312.039,
+      "duration": 3.281,
+      "text": "in like"
+    },
+    {
+      "start": 315.639,
+      "duration": 5.441,
+      "text": "that all"
+    },
+    {
+      "start": 318.08,
+      "duration": 3.0,
+      "text": "righty"
+    },
+    {
+      "start": 321.919,
+      "duration": 5.041,
+      "text": "so let's check it out let's see what we"
+    },
+    {
+      "start": 323.84,
+      "duration": 3.12,
+      "text": "can do"
+    },
+    {
+      "start": 336.84,
+      "duration": 3.639,
+      "text": "I think did we start with the setter"
+    },
+    {
+      "start": 340.639,
+      "duration": 5.921,
+      "text": "pin CU that seems like it's going to be"
+    },
+    {
+      "start": 342.919,
+      "duration": 3.641,
+      "text": "the uh the easiest one to start"
+    },
+    {
+      "start": 351.8,
+      "duration": 4.88,
+      "text": "with get out of modeling View"
+    },
+    {
+      "start": 367.72,
+      "duration": 5.479,
+      "text": "okay and I'm going to design the base"
+    },
+    {
+      "start": 370.639,
+      "duration": 2.56,
+      "text": "right next"
+    },
+    {
+      "start": 373.639,
+      "duration": 3.481,
+      "text": "to the"
+    },
+    {
+      "start": 380.199,
+      "duration": 10.28,
+      "text": "uh the top of the switch"
+    },
+    {
+      "start": 383.919,
+      "duration": 8.4,
+      "text": "here so the base is 70 mm x 70 mm"
+    },
+    {
+      "start": 390.479,
+      "duration": 7.081,
+      "text": "and"
+    },
+    {
+      "start": 392.319,
+      "duration": 8.081,
+      "text": "um I want or the button is 70 mm x 70 mm"
+    },
+    {
+      "start": 397.56,
+      "duration": 7.359,
+      "text": "and I want the top to"
+    },
+    {
+      "start": 400.4,
+      "duration": 4.519,
+      "text": "be and I want the base that it goes"
+    },
+    {
+      "start": 405.0,
+      "duration": 7.4,
+      "text": "into to be maybe like half a millimeter"
+    },
+    {
+      "start": 409.88,
+      "duration": 5.999,
+      "text": "wider than"
+    },
+    {
+      "start": 412.4,
+      "duration": 6.799,
+      "text": "that and um we're going to have to have"
+    },
+    {
+      "start": 415.879,
+      "duration": 3.32,
+      "text": "the same"
+    },
+    {
+      "start": 419.72,
+      "duration": 4.599,
+      "text": "it's not going to work we need to"
+    },
+    {
+      "start": 429.039,
+      "duration": 3.521,
+      "text": "uh go from"
+    },
+    {
+      "start": 434.84,
+      "duration": 4.12,
+      "text": "diagonal all right there's nothing that"
+    },
+    {
+      "start": 437.36,
+      "duration": 3.6,
+      "text": "makes you feel more like you have no"
+    },
+    {
+      "start": 438.96,
+      "duration": 4.799,
+      "text": "idea what you're doing than live"
+    },
+    {
+      "start": 440.96,
+      "duration": 2.799,
+      "text": "streaming what you're"
+    },
+    {
+      "start": 446.0,
+      "duration": 4.84,
+      "text": "doing all right so I'm going to leave"
+    },
+    {
+      "start": 448.52,
+      "duration": 5.32,
+      "text": "that there and we're we're going to"
+    },
+    {
+      "start": 450.84,
+      "duration": 3.0,
+      "text": "go"
+    },
+    {
+      "start": 455.479,
+      "duration": 4.761,
+      "text": "7.5 and oops what the"
+    },
+    {
+      "start": 463.24,
+      "duration": 3.0,
+      "text": "hell"
+    },
+    {
+      "start": 471.68,
+      "duration": 6.44,
+      "text": "why 1.5"
+    },
+    {
+      "start": 474.12,
+      "duration": 4.0,
+      "text": "mm by"
+    },
+    {
+      "start": 481.28,
+      "duration": 6.44,
+      "text": "70.5 millimet"
+    },
+    {
+      "start": 483.599,
+      "duration": 4.121,
+      "text": "okay and then"
+    },
+    {
+      "start": 490.36,
+      "duration": 3.44,
+      "text": "um from"
+    },
+    {
+      "start": 497.319,
+      "duration": 4.56,
+      "text": "there hey sadra happy holidays how you"
+    },
+    {
+      "start": 499.72,
+      "duration": 5.159,
+      "text": "doing what's going on"
+    },
+    {
+      "start": 501.879,
+      "duration": 8.841,
+      "text": "today good morning if it's morning time"
+    },
+    {
+      "start": 504.879,
+      "duration": 5.841,
+      "text": "there if it's not still good morning"
+    },
+    {
+      "start": 512.12,
+      "duration": 3.52,
+      "text": "all right all right"
+    },
+    {
+      "start": 517.8,
+      "duration": 4.359,
+      "text": "so and then the height of the"
+    },
+    {
+      "start": 522.279,
+      "duration": 4.161,
+      "text": "base should probably be"
+    },
+    {
+      "start": 529.08,
+      "duration": 3.52,
+      "text": "like half as"
+    },
+    {
+      "start": 533.88,
+      "duration": 6.399,
+      "text": "short actually it's going to have to be"
+    },
+    {
+      "start": 536.56,
+      "duration": 5.6,
+      "text": "a little bit a little bit more than and"
+    },
+    {
+      "start": 540.279,
+      "duration": 6.201,
+      "text": "then half as"
+    },
+    {
+      "start": 542.16,
+      "duration": 7.04,
+      "text": "short because we have to factor in the"
+    },
+    {
+      "start": 546.48,
+      "duration": 2.72,
+      "text": "height of the"
+    },
+    {
+      "start": 550.76,
+      "duration": 5.759,
+      "text": "switch thank you my man best of luck to"
+    },
+    {
+      "start": 553.079,
+      "duration": 6.44,
+      "text": "you too I'm trying to cook I'm"
+    },
+    {
+      "start": 556.519,
+      "duration": 3.0,
+      "text": "to"
+    },
+    {
+      "start": 559.64,
+      "duration": 7.4,
+      "text": "um so meaning the height of the base has"
+    },
+    {
+      "start": 564.04,
+      "duration": 4.56,
+      "text": "to cover the the height of the switch"
+    },
+    {
+      "start": 567.04,
+      "duration": 4.239,
+      "text": "the bottom of the switch here and then"
+    },
+    {
+      "start": 568.6,
+      "duration": 5.04,
+      "text": "it has to come up like halfway up the"
+    },
+    {
+      "start": 571.279,
+      "duration": 8.201,
+      "text": "side of the button just like the side of"
+    },
+    {
+      "start": 573.64,
+      "duration": 5.84,
+      "text": "like a uh of a keyboard case"
+    },
+    {
+      "start": 589.2,
+      "duration": 7.0,
+      "text": "wood all right let's see how tall our uh"
+    },
+    {
+      "start": 592.959,
+      "duration": 3.241,
+      "text": "our switches"
+    },
+    {
+      "start": 603.0,
+      "duration": 5.079,
+      "text": "so our switch is 8"
+    },
+    {
+      "start": 605.079,
+      "duration": 3.0,
+      "text": "mm"
+    },
+    {
+      "start": 608.32,
+      "duration": 3.48,
+      "text": "okay then"
+    },
+    {
+      "start": 616.48,
+      "duration": 6.479,
+      "text": "um I think that we also make this 8 mm"
+    },
+    {
+      "start": 619.72,
+      "duration": 3.239,
+      "text": "for now"
+    },
+    {
+      "start": 629.68,
+      "duration": 3.839,
+      "text": "and this one we're going to print the"
+    },
+    {
+      "start": 631.0,
+      "duration": 2.519,
+      "text": "opposite"
+    },
+    {
+      "start": 638.16,
+      "duration": 5.2,
+      "text": "way and you know what I'm thinking that"
+    },
+    {
+      "start": 640.279,
+      "duration": 3.081,
+      "text": "it should actually be"
+    },
+    {
+      "start": 643.519,
+      "duration": 4.56,
+      "text": "wider it should be wider than"
+    },
+    {
+      "start": 651.639,
+      "duration": 7.841,
+      "text": "um than 70.5 millim at least on the"
+    },
+    {
+      "start": 655.72,
+      "duration": 3.76,
+      "text": "outside because"
+    },
+    {
+      "start": 660.32,
+      "duration": 3.12,
+      "text": "because like I had in the"
+    },
+    {
+      "start": 664.92,
+      "duration": 4.12,
+      "text": "photo let me see if I can grab the photo"
+    },
+    {
+      "start": 667.04,
+      "duration": 5.2,
+      "text": "real"
+    },
+    {
+      "start": 669.04,
+      "duration": 6.12,
+      "text": "quick yeah like I had in the"
+    },
+    {
+      "start": 672.24,
+      "duration": 4.56,
+      "text": "photo it should be I want to try to make"
+    },
+    {
+      "start": 675.16,
+      "duration": 5.479,
+      "text": "it look like this photo here so it"
+    },
+    {
+      "start": 676.8,
+      "duration": 6.08,
+      "text": "should be a decent amount wider actually"
+    },
+    {
+      "start": 680.639,
+      "duration": 2.241,
+      "text": "than"
+    },
+    {
+      "start": 682.959,
+      "duration": 6.241,
+      "text": "70.5 so let's go back here let's go um"
+    },
+    {
+      "start": 690.44,
+      "duration": 4.76,
+      "text": "here and then um we're going to move"
+    },
+    {
+      "start": 701.92,
+      "duration": 3.919,
+      "text": "this out of the way a little"
+    },
+    {
+      "start": 707.16,
+      "duration": 3.239,
+      "text": "bit and"
+    },
+    {
+      "start": 711.24,
+      "duration": 4.96,
+      "text": "then let's start off with 74"
+    },
+    {
+      "start": 723.519,
+      "duration": 2.721,
+      "text": "by"
+    },
+    {
+      "start": 727.6,
+      "duration": 3.76,
+      "text": "74 and then"
+    },
+    {
+      "start": 742.12,
+      "duration": 3.76,
+      "text": "um oh why didn't that"
+    },
+    {
+      "start": 746.12,
+      "duration": 4.0,
+      "text": "apply 74"
+    },
+    {
+      "start": 751.36,
+      "duration": 4.0,
+      "text": "what whatever I'm just going to delete"
+    },
+    {
+      "start": 761.76,
+      "duration": 3.4,
+      "text": "this we'll go"
+    },
+    {
+      "start": 768.079,
+      "duration": 5.721,
+      "text": "74 by"
+    },
+    {
+      "start": 771.519,
+      "duration": 6.281,
+      "text": "74 okay that way there we have enough"
+    },
+    {
+      "start": 773.8,
+      "duration": 7.88,
+      "text": "room for this uh border if we want to"
+    },
+    {
+      "start": 777.8,
+      "duration": 9.88,
+      "text": "call it to stick out a"
+    },
+    {
+      "start": 781.68,
+      "duration": 8.159,
+      "text": "bit and then um we need to come up eight"
+    },
+    {
+      "start": 787.68,
+      "duration": 2.159,
+      "text": "with"
+    },
+    {
+      "start": 790.16,
+      "duration": 6.479,
+      "text": "it um I want to have almost the same"
+    },
+    {
+      "start": 794.519,
+      "duration": 5.56,
+      "text": "border"
+    },
+    {
+      "start": 796.639,
+      "duration": 7.0,
+      "text": "radius so we'll do three because that's"
+    },
+    {
+      "start": 800.079,
+      "duration": 7.56,
+      "text": "the Border radius we have on the uh"
+    },
+    {
+      "start": 803.639,
+      "duration": 4.0,
+      "text": "switch three"
+    },
+    {
+      "start": 819.16,
+      "duration": 10.679,
+      "text": "oops very beautiful and then"
+    },
+    {
+      "start": 823.639,
+      "duration": 6.2,
+      "text": "um we will cut out the room for the"
+    },
+    {
+      "start": 831.56,
+      "duration": 5.839,
+      "text": "actual button itself so let's add we're"
+    },
+    {
+      "start": 835.32,
+      "duration": 5.72,
+      "text": "going to add a construction"
+    },
+    {
+      "start": 837.399,
+      "duration": 3.641,
+      "text": "plane to the top of"
+    },
+    {
+      "start": 842.32,
+      "duration": 5.4,
+      "text": "this right there like"
+    },
+    {
+      "start": 844.68,
+      "duration": 5.959,
+      "text": "that and then um we'll make the body"
+    },
+    {
+      "start": 847.72,
+      "duration": 2.919,
+      "text": "disappear for one"
+    },
+    {
+      "start": 860.399,
+      "duration": 4.88,
+      "text": "second we'll go top view"
+    },
+    {
+      "start": 869.32,
+      "duration": 3.079,
+      "text": "and then"
+    },
+    {
+      "start": 877.079,
+      "duration": 5.0,
+      "text": "add Center oh we're going to have to"
+    },
+    {
+      "start": 883.0,
+      "duration": 3.44,
+      "text": "um go"
+    },
+    {
+      "start": 889.16,
+      "duration": 6.52,
+      "text": "here we'll do one of"
+    },
+    {
+      "start": 892.199,
+      "duration": 3.481,
+      "text": "those click"
+    },
+    {
+      "start": 895.959,
+      "duration": 5.081,
+      "text": "here and then uh"
+    },
+    {
+      "start": 903.24,
+      "duration": 2.64,
+      "text": "we got to add a"
+    },
+    {
+      "start": 914.0,
+      "duration": 5.92,
+      "text": "square in this one we are going to make"
+    },
+    {
+      "start": 917.199,
+      "duration": 6.56,
+      "text": "71 and a"
+    },
+    {
+      "start": 919.92,
+      "duration": 3.839,
+      "text": "half or no we're going to make"
+    },
+    {
+      "start": 925.24,
+      "duration": 5.0,
+      "text": "70.5 I'm just going to leave that for"
+    },
+    {
+      "start": 927.24,
+      "duration": 3.0,
+      "text": "now"
+    },
+    {
+      "start": 935.8,
+      "duration": 5.519,
+      "text": "70.5 and then we'll go to"
+    },
+    {
+      "start": 941.56,
+      "duration": 4.199,
+      "text": "this I'm going to take this plane"
+    },
+    {
+      "start": 949.56,
+      "duration": 5.48,
+      "text": "out we're going to go 70 oops"
+    },
+    {
+      "start": 962.48,
+      "duration": 2.599,
+      "text": "no not"
+    },
+    {
+      "start": 967.44,
+      "duration": 3.56,
+      "text": "that stop"
+    },
+    {
+      "start": 975.8,
+      "duration": 3.0,
+      "text": "stop"
+    },
+    {
+      "start": 979.12,
+      "duration": 9.32,
+      "text": "70.5 okay"
+    },
+    {
+      "start": 982.319,
+      "duration": 6.121,
+      "text": "nice we'll take this sketch out"
+    },
+    {
+      "start": 994.24,
+      "duration": 2.92,
+      "text": "why is that sketch not"
+    },
+    {
+      "start": 998.68,
+      "duration": 6.88,
+      "text": "disappearing whatever we'll delete that"
+    },
+    {
+      "start": 1001.92,
+      "duration": 3.64,
+      "text": "we'll delete that"
+    },
+    {
+      "start": 1023.399,
+      "duration": 7.961,
+      "text": "right cool all right"
+    },
+    {
+      "start": 1026.959,
+      "duration": 6.921,
+      "text": "so I think that that's way not thick"
+    },
+    {
+      "start": 1031.36,
+      "duration": 3.959,
+      "text": "enough compared to this button cuz this"
+    },
+    {
+      "start": 1033.88,
+      "duration": 4.039,
+      "text": "little section right here is going to be"
+    },
+    {
+      "start": 1035.319,
+      "duration": 2.6,
+      "text": "the outside"
+    },
+    {
+      "start": 1038.0,
+      "duration": 6.12,
+      "text": "radius where's the buy"
+    },
+    {
+      "start": 1041.72,
+      "duration": 5.8,
+      "text": "button uh I don't have the buy button"
+    },
+    {
+      "start": 1044.12,
+      "duration": 5.76,
+      "text": "yet I know that's I literally got"
+    },
+    {
+      "start": 1047.52,
+      "duration": 4.56,
+      "text": "message for that yesterday that said hey"
+    },
+    {
+      "start": 1049.88,
+      "duration": 4.6,
+      "text": "dude if you're going to if you're going"
+    },
+    {
+      "start": 1052.08,
+      "duration": 3.88,
+      "text": "to start working on this and doing stuff"
+    },
+    {
+      "start": 1054.48,
+      "duration": 3.64,
+      "text": "then you should probably set up a"
+    },
+    {
+      "start": 1055.96,
+      "duration": 5.92,
+      "text": "pre-order button"
+    },
+    {
+      "start": 1058.12,
+      "duration": 6.4,
+      "text": "now so that you know like well it's"
+    },
+    {
+      "start": 1061.88,
+      "duration": 6.84,
+      "text": "hyped up a tiny bit people can pre-order"
+    },
+    {
+      "start": 1064.52,
+      "duration": 5.76,
+      "text": "it but I'm working on the button I'm"
+    },
+    {
+      "start": 1068.72,
+      "duration": 4.28,
+      "text": "working on the button"
+    },
+    {
+      "start": 1070.28,
+      "duration": 4.92,
+      "text": "instead can somebody um Can somebody"
+    },
+    {
+      "start": 1073.0,
+      "duration": 3.32,
+      "text": "build me a landing page please I don't"
+    },
+    {
+      "start": 1075.2,
+      "duration": 4.599,
+      "text": "want to do"
+    },
+    {
+      "start": 1076.32,
+      "duration": 5.76,
+      "text": "it I don't want to do it just throw"
+    },
+    {
+      "start": 1079.799,
+      "duration": 4.88,
+      "text": "something together for"
+    },
+    {
+      "start": 1082.08,
+      "duration": 5.479,
+      "text": "me I'm honestly thinking about just"
+    },
+    {
+      "start": 1084.679,
+      "duration": 7.0,
+      "text": "grabbing something off of um or just"
+    },
+    {
+      "start": 1087.559,
+      "duration": 6.12,
+      "text": "adding a product to the desk Cup website"
+    },
+    {
+      "start": 1091.679,
+      "duration": 5.88,
+      "text": "that way there I don't have to deal with"
+    },
+    {
+      "start": 1093.679,
+      "duration": 3.88,
+      "text": "it as terrible as it"
+    },
+    {
+      "start": 1098.159,
+      "duration": 5.441,
+      "text": "sounds and then I don't have to make a"
+    },
+    {
+      "start": 1100.48,
+      "duration": 5.84,
+      "text": "separate um website but I'm just going"
+    },
+    {
+      "start": 1103.6,
+      "duration": 6.16,
+      "text": "to do it I'll make a uh like Ultra"
+    },
+    {
+      "start": 1106.32,
+      "duration": 5.8,
+      "text": "simple landing page"
+    },
+    {
+      "start": 1109.76,
+      "duration": 6.279,
+      "text": "and"
+    },
+    {
+      "start": 1112.12,
+      "duration": 3.919,
+      "text": "uh that way there it's good to"
+    },
+    {
+      "start": 1119.76,
+      "duration": 6.039,
+      "text": "go all right so I am overthinking this"
+    },
+    {
+      "start": 1122.039,
+      "duration": 3.76,
+      "text": "prototype I'm going to"
+    },
+    {
+      "start": 1126.64,
+      "duration": 5.8,
+      "text": "um I got to just do"
+    },
+    {
+      "start": 1130.0,
+      "duration": 5.44,
+      "text": "this damn it I put that on the wrong"
+    },
+    {
+      "start": 1132.44,
+      "duration": 3.0,
+      "text": "plane"
+    },
+    {
+      "start": 1139.4,
+      "duration": 3.399,
+      "text": "what we'll do is we'll just move"
+    },
+    {
+      "start": 1150.64,
+      "duration": 4.08,
+      "text": "this yeah we'll move that up like 2"
+    },
+    {
+      "start": 1159.559,
+      "duration": 7.36,
+      "text": "millimet or actually we'll move it up 8"
+    },
+    {
+      "start": 1163.919,
+      "duration": 5.0,
+      "text": "mm so I'm going to move this up 8 mm and"
+    },
+    {
+      "start": 1166.919,
+      "duration": 4.481,
+      "text": "then it'll be at the top and then when I"
+    },
+    {
+      "start": 1168.919,
+      "duration": 5.361,
+      "text": "bring this down it's going to like chunk"
+    },
+    {
+      "start": 1171.4,
+      "duration": 2.88,
+      "text": "out the whole"
+    },
+    {
+      "start": 1177.08,
+      "duration": 5.2,
+      "text": "deal and it's going to make the space"
+    },
+    {
+      "start": 1179.32,
+      "duration": 2.96,
+      "text": "for our button to go"
+    },
+    {
+      "start": 1192.08,
+      "duration": 3.32,
+      "text": "in there's"
+    },
+    {
+      "start": 1197.0,
+      "duration": 5.88,
+      "text": "bottom we'll leave the bottom I'm at 2"
+    },
+    {
+      "start": 1199.08,
+      "duration": 9.32,
+      "text": "mm so it's kind of"
+    },
+    {
+      "start": 1202.88,
+      "duration": 5.52,
+      "text": "rigid we'll bring this in three"
+    },
+    {
+      "start": 1208.76,
+      "duration": 3.919,
+      "text": "radius bring this in three"
+    },
+    {
+      "start": 1213.52,
+      "duration": 3.0,
+      "text": "radius"
+    },
+    {
+      "start": 1217.52,
+      "duration": 4.2,
+      "text": "three"
+    },
+    {
+      "start": 1219.2,
+      "duration": 7.359,
+      "text": "three okay"
+    },
+    {
+      "start": 1221.72,
+      "duration": 8.16,
+      "text": "great so now we kind of have uh our our"
+    },
+    {
+      "start": 1226.559,
+      "duration": 5.161,
+      "text": "bottom for the button"
+    },
+    {
+      "start": 1229.88,
+      "duration": 4.44,
+      "text": "I still think that the outside perimeter"
+    },
+    {
+      "start": 1231.72,
+      "duration": 4.0,
+      "text": "should probably be wider but for a"
+    },
+    {
+      "start": 1234.32,
+      "duration": 3.76,
+      "text": "prototype this is going to be a great"
+    },
+    {
+      "start": 1235.72,
+      "duration": 2.36,
+      "text": "start"
+    },
+    {
+      "start": 1244.039,
+      "duration": 3.161,
+      "text": "Point all"
+    },
+    {
+      "start": 1252.52,
+      "duration": 5.399,
+      "text": "right now we got to add our switch"
+    },
+    {
+      "start": 1259.24,
+      "duration": 3.88,
+      "text": "which is not going to be easy"
+    },
+    {
+      "start": 1308.799,
+      "duration": 7.721,
+      "text": "so we'll start off with the"
+    },
+    {
+      "start": 1311.6,
+      "duration": 4.92,
+      "text": "uh the main hole for this prong right"
+    },
+    {
+      "start": 1316.799,
+      "duration": 5.681,
+      "text": "here which it looks"
+    },
+    {
+      "start": 1320.279,
+      "duration": 7.4,
+      "text": "like I wonder I don't know if that"
+    },
+    {
+      "start": 1322.48,
+      "duration": 5.199,
+      "text": "symbol is radius or"
+    },
+    {
+      "start": 1331.96,
+      "duration": 4.0,
+      "text": "diameter 3.8"
+    },
+    {
+      "start": 1349.64,
+      "duration": 9.48,
+      "text": "we're going to find"
+    },
+    {
+      "start": 1352.159,
+      "duration": 9.4,
+      "text": "out how wide is the center prong for"
+    },
+    {
+      "start": 1359.12,
+      "duration": 6.12,
+      "text": "the Cherry"
+    },
+    {
+      "start": 1361.559,
+      "duration": 3.681,
+      "text": "MX key"
+    },
+    {
+      "start": 1369.919,
+      "duration": 5.401,
+      "text": "switch the center prong the stem of a"
+    },
+    {
+      "start": 1373.4,
+      "duration": 2.72,
+      "text": "Cherry MX switch is the part of the key"
+    },
+    {
+      "start": 1375.32,
+      "duration": 3.92,
+      "text": "cap"
+    },
+    {
+      "start": 1376.12,
+      "duration": 5.64,
+      "text": "stem connects to has which part of the"
+    },
+    {
+      "start": 1379.24,
+      "duration": 5.2,
+      "text": "stem part that the key cap stem connects"
+    },
+    {
+      "start": 1381.76,
+      "duration": 4.12,
+      "text": "to has a width of 1.3 mm I need to sign"
+    },
+    {
+      "start": 1384.44,
+      "duration": 3.68,
+      "text": "in CU it's not that's not what we're"
+    },
+    {
+      "start": 1385.88,
+      "duration": 2.24,
+      "text": "talking"
+    },
+    {
+      "start": 1390.039,
+      "duration": 7.201,
+      "text": "about it's talking about the width of"
+    },
+    {
+      "start": 1394.84,
+      "duration": 4.959,
+      "text": "um just wrong it's"
+    },
+    {
+      "start": 1397.24,
+      "duration": 5.559,
+      "text": "wrong"
+    },
+    {
+      "start": 1399.799,
+      "duration": 3.0,
+      "text": "okay"
+    },
+    {
+      "start": 1403.039,
+      "duration": 7.401,
+      "text": "how what is the"
+    },
+    {
+      "start": 1406.159,
+      "duration": 4.281,
+      "text": "diameter of the"
+    },
+    {
+      "start": 1410.76,
+      "duration": 6.6,
+      "text": "prong on the bottom of a Cherry"
+    },
+    {
+      "start": 1417.4,
+      "duration": 5.48,
+      "text": "MX"
+    },
+    {
+      "start": 1419.88,
+      "duration": 6.799,
+      "text": "switch"
+    },
+    {
+      "start": 1422.88,
+      "duration": 7.799,
+      "text": "that mounts it to"
+    },
+    {
+      "start": 1426.679,
+      "duration": 4.0,
+      "text": "the PCB"
+    },
+    {
+      "start": 1444.4,
+      "duration": 3.84,
+      "text": "saying it's 1.5 it's"
+    },
+    {
+      "start": 1449.48,
+      "duration": 3.64,
+      "text": "not I know that it's"
+    },
+    {
+      "start": 1464.64,
+      "duration": 5.72,
+      "text": "not I'm just measuring it right now uh"
+    },
+    {
+      "start": 1467.76,
+      "duration": 6.76,
+      "text": "with a cal"
+    },
+    {
+      "start": 1470.36,
+      "duration": 4.16,
+      "text": "cuz it's definitely not 1.51"
+    },
+    {
+      "start": 1475.6,
+      "duration": 4.079,
+      "text": "2 I need to get a much better"
+    },
+    {
+      "start": 1481.2,
+      "duration": 4.359,
+      "text": "caliper all right it's it's like"
+    },
+    {
+      "start": 1487.919,
+      "duration": 9.521,
+      "text": "3.8 this is this 3.8 is definitely the"
+    },
+    {
+      "start": 1493.24,
+      "duration": 4.2,
+      "text": "um the diameter"
+    },
+    {
+      "start": 1498.64,
+      "duration": 5.159,
+      "text": "all"
+    },
+    {
+      "start": 1500.559,
+      "duration": 6.24,
+      "text": "right so we'll go to"
+    },
+    {
+      "start": 1503.799,
+      "duration": 3.0,
+      "text": "sketch"
+    },
+    {
+      "start": 1512.48,
+      "duration": 4.84,
+      "text": "Circle and then we're going to go three"
+    },
+    {
+      "start": 1515.6,
+      "duration": 4.52,
+      "text": "point"
+    },
+    {
+      "start": 1517.32,
+      "duration": 5.359,
+      "text": "or we should go"
+    },
+    {
+      "start": 1520.12,
+      "duration": 5.4,
+      "text": "four because you generally want to make"
+    },
+    {
+      "start": 1522.679,
+      "duration": 6.561,
+      "text": "things like 2"
+    },
+    {
+      "start": 1525.52,
+      "duration": 5.44,
+      "text": "mm uh bigger than they have have to when"
+    },
+    {
+      "start": 1529.24,
+      "duration": 4.0,
+      "text": "they have to interface like when this"
+    },
+    {
+      "start": 1530.96,
+      "duration": 5.959,
+      "text": "prong goes in there if it's the same"
+    },
+    {
+      "start": 1533.24,
+      "duration": 8.039,
+      "text": "size 3.8 then it won't actually"
+    },
+    {
+      "start": 1536.919,
+      "duration": 4.36,
+      "text": "work which be not very"
+    },
+    {
+      "start": 1545.84,
+      "duration": 6.6,
+      "text": "good and now we have to figure out these"
+    },
+    {
+      "start": 1550.12,
+      "duration": 5.84,
+      "text": "pins which that is going to be a [ __ ]"
+    },
+    {
+      "start": 1552.44,
+      "duration": 3.52,
+      "text": "pain in the ass"
+    },
+    {
+      "start": 1558.919,
+      "duration": 4.321,
+      "text": "and I'm not exactly sure how we're going"
+    },
+    {
+      "start": 1560.76,
+      "duration": 2.48,
+      "text": "to do"
+    },
+    {
+      "start": 1566.24,
+      "duration": 5.679,
+      "text": "that all right so this is looking at the"
+    },
+    {
+      "start": 1569.12,
+      "duration": 2.799,
+      "text": "side of the"
+    },
+    {
+      "start": 1575.399,
+      "duration": 3.681,
+      "text": "switch this one right"
+    },
+    {
+      "start": 1584.039,
+      "duration": 4.88,
+      "text": "here and it is saying"
+    },
+    {
+      "start": 1593.96,
+      "duration": 4.439,
+      "text": "oh this hurts my brain it's saying"
+    },
+    {
+      "start": 1621.88,
+      "duration": 5.159,
+      "text": "that it's"
+    },
+    {
+      "start": 1624.2,
+      "duration": 7.28,
+      "text": "2.54"
+    },
+    {
+      "start": 1627.039,
+      "duration": 9.64,
+      "text": "mm in from the"
+    },
+    {
+      "start": 1631.48,
+      "duration": 7.4,
+      "text": "end what we really want is how far away"
+    },
+    {
+      "start": 1636.679,
+      "duration": 6.521,
+      "text": "it is from the"
+    },
+    {
+      "start": 1638.88,
+      "duration": 6.96,
+      "text": "center of our pin hole"
+    },
+    {
+      "start": 1643.2,
+      "duration": 6.959,
+      "text": "there which I guess this is giving it to"
+    },
+    {
+      "start": 1645.84,
+      "duration": 4.319,
+      "text": "us right here that it's 2"
+    },
+    {
+      "start": 1657.48,
+      "duration": 8.12,
+      "text": ".54 so one is"
+    },
+    {
+      "start": 1660.84,
+      "duration": 6.959,
+      "text": "2.54 and then the other"
+    },
+    {
+      "start": 1665.6,
+      "duration": 5.48,
+      "text": "is"
+    },
+    {
+      "start": 1667.799,
+      "duration": 7.88,
+      "text": "5.08 so let's start with that we'll use"
+    },
+    {
+      "start": 1671.08,
+      "duration": 4.599,
+      "text": "that so this one oops"
+    },
+    {
+      "start": 1695.88,
+      "duration": 3.48,
+      "text": "this one is 2.54"
+    },
+    {
+      "start": 1711.76,
+      "duration": 6.72,
+      "text": "2.54 okay and"
+    },
+    {
+      "start": 1714.2,
+      "duration": 4.28,
+      "text": "then the next one"
+    },
+    {
+      "start": 1720.48,
+      "duration": 4.0,
+      "text": "is 5.08"
+    },
+    {
+      "start": 1747.72,
+      "duration": 5.839,
+      "text": "5.08 okay"
+    },
+    {
+      "start": 1749.96,
+      "duration": 3.599,
+      "text": "awesome and"
+    },
+    {
+      "start": 1757.6,
+      "duration": 7.28,
+      "text": "so now how far to the side is"
+    },
+    {
+      "start": 1762.679,
+      "duration": 5.6,
+      "text": "it oh I think this is what it's telling"
+    },
+    {
+      "start": 1764.88,
+      "duration": 3.399,
+      "text": "me right here"
+    },
+    {
+      "start": 1783.159,
+      "duration": 9.841,
+      "text": "Jesus the schematic is insane okay so"
+    },
+    {
+      "start": 1788.96,
+      "duration": 4.04,
+      "text": "um I think that it's also"
+    },
+    {
+      "start": 1794.559,
+      "duration": 4.0,
+      "text": "2 54"
+    },
+    {
+      "start": 1813.84,
+      "duration": 2.8,
+      "text": "so I think we could"
+    },
+    {
+      "start": 1825.96,
+      "duration": 4.0,
+      "text": "do oh it can't be"
+    },
+    {
+      "start": 1852.159,
+      "duration": 5.36,
+      "text": "it well I think we're just going to try"
+    },
+    {
+      "start": 1854.519,
+      "duration": 3.0,
+      "text": "it"
+    },
+    {
+      "start": 1886.2,
+      "duration": 4.92,
+      "text": "2.54 I knew that trying trying to figure"
+    },
+    {
+      "start": 1888.32,
+      "duration": 5.56,
+      "text": "out these pin positioning situation was"
+    },
+    {
+      "start": 1891.12,
+      "duration": 2.76,
+      "text": "going to be"
+    },
+    {
+      "start": 1905.6,
+      "duration": 6.36,
+      "text": "difficult so from there we can make a um"
+    },
+    {
+      "start": 1908.679,
+      "duration": 3.281,
+      "text": "rectangle not like that"
+    },
+    {
+      "start": 1915.24,
+      "duration": 6.279,
+      "text": "though diagonal rectangle"
+    },
+    {
+      "start": 1919.159,
+      "duration": 2.36,
+      "text": "like"
+    },
+    {
+      "start": 1921.799,
+      "duration": 8.401,
+      "text": "that and this should be the exact point"
+    },
+    {
+      "start": 1926.519,
+      "duration": 7.0,
+      "text": "of one of our pins on the bottom of our"
+    },
+    {
+      "start": 1930.2,
+      "duration": 3.319,
+      "text": "key switch"
+    },
+    {
+      "start": 1956.679,
+      "duration": 2.24,
+      "text": "I'm"
+    },
+    {
+      "start": 1962.919,
+      "duration": 4.561,
+      "text": "thinking is that to the middle yeah that"
+    },
+    {
+      "start": 1965.12,
+      "duration": 2.36,
+      "text": "is to the"
+    },
+    {
+      "start": 1969.12,
+      "duration": 4.24,
+      "text": "middle and the width of"
+    },
+    {
+      "start": 1974.159,
+      "duration": 4.561,
+      "text": "it"
+    },
+    {
+      "start": 1975.679,
+      "duration": 6.36,
+      "text": "is 81"
+    },
+    {
+      "start": 1978.72,
+      "duration": 3.319,
+      "text": "so we should just make it one"
+    },
+    {
+      "start": 1984.799,
+      "duration": 4.561,
+      "text": "millimeter I'm pretty sure I'm"
+    },
+    {
+      "start": 1986.36,
+      "duration": 3.0,
+      "text": "overthinking this whole"
+    },
+    {
+      "start": 1989.559,
+      "duration": 3.72,
+      "text": "thing no don't do"
+    },
+    {
+      "start": 1993.76,
+      "duration": 6.639,
+      "text": "that okay 1 millimeter we got one of"
+    },
+    {
+      "start": 1997.039,
+      "duration": 6.36,
+      "text": "them yes Jesus"
+    },
+    {
+      "start": 2000.399,
+      "duration": 3.0,
+      "text": "Christ"
+    },
+    {
+      "start": 2003.6,
+      "duration": 5.319,
+      "text": "okay see if we can clean this up a"
+    },
+    {
+      "start": 2005.679,
+      "duration": 3.24,
+      "text": "little bit"
+    },
+    {
+      "start": 2014.32,
+      "duration": 3.719,
+      "text": "all right now we need to get the second"
+    },
+    {
+      "start": 2019.32,
+      "duration": 5.319,
+      "text": "pin we can do"
+    },
+    {
+      "start": 2021.44,
+      "duration": 6.199,
+      "text": "this All right so we know it's 5.8 over"
+    },
+    {
+      "start": 2024.639,
+      "duration": 4.481,
+      "text": "out that way we have to figure out how"
+    },
+    {
+      "start": 2027.639,
+      "duration": 6.0,
+      "text": "far this"
+    },
+    {
+      "start": 2029.12,
+      "duration": 4.519,
+      "text": "way it is now"
+    },
+    {
+      "start": 2047.72,
+      "duration": 6.48,
+      "text": "let's look I'm going to look at my"
+    },
+    {
+      "start": 2050.28,
+      "duration": 7.879,
+      "text": "caliper first so I get an idea and then"
+    },
+    {
+      "start": 2054.2,
+      "duration": 3.959,
+      "text": "I'll get the exact from the schematic"
+    },
+    {
+      "start": 2058.359,
+      "duration": 5.401,
+      "text": "after it's looking like it's five six"
+    },
+    {
+      "start": 2061.2,
+      "duration": 2.56,
+      "text": "it's like"
+    },
+    {
+      "start": 2066.72,
+      "duration": 4.959,
+      "text": "seven is there any measurement on here"
+    },
+    {
+      "start": 2069.159,
+      "duration": 2.52,
+      "text": "that's like"
+    },
+    {
+      "start": 2076.44,
+      "duration": 3.439,
+      "text": "seven there's"
+    },
+    {
+      "start": 2088.599,
+      "duration": 4.32,
+      "text": "5.08 and then"
+    },
+    {
+      "start": 2100.68,
+      "duration": 3.56,
+      "text": "because this full distance is"
+    },
+    {
+      "start": 2105.88,
+      "duration": 6.32,
+      "text": "13.95 oh it's"
+    },
+    {
+      "start": 2108.079,
+      "duration": 4.121,
+      "text": "3.8 nice I think I got"
+    },
+    {
+      "start": 2117.8,
+      "duration": 7.12,
+      "text": "it so we'll go"
+    },
+    {
+      "start": 2121.119,
+      "duration": 3.801,
+      "text": "here I think this is going to"
+    },
+    {
+      "start": 2126.32,
+      "duration": 3.32,
+      "text": "work three"
+    },
+    {
+      "start": 2131.2,
+      "duration": 6.28,
+      "text": "[ __ ] what I just say"
+    },
+    {
+      "start": 2134.96,
+      "duration": 5.879,
+      "text": "3.8"
+    },
+    {
+      "start": 2137.48,
+      "duration": 6.44,
+      "text": "okay and then we'll grab this circle"
+    },
+    {
+      "start": 2140.839,
+      "duration": 5.321,
+      "text": "we're going to do 1 millimeter again if"
+    },
+    {
+      "start": 2143.92,
+      "duration": 2.24,
+      "text": "we"
+    },
+    {
+      "start": 2146.96,
+      "duration": 4.0,
+      "text": "can nice"
+    },
+    {
+      "start": 2167.599,
+      "duration": 5.361,
+      "text": "Jesus now I'm thinking that it's not"
+    },
+    {
+      "start": 2175.72,
+      "duration": 3.28,
+      "text": "right damn"
+    },
+    {
+      "start": 2185.24,
+      "duration": 4.32,
+      "text": "it we messed up something here"
+    },
+    {
+      "start": 2192.119,
+      "duration": 3.681,
+      "text": "so it's 5.08"
+    },
+    {
+      "start": 2197.76,
+      "duration": 9.4,
+      "text": "out all right I got it I got"
+    },
+    {
+      "start": 2201.359,
+      "duration": 5.801,
+      "text": "it needs to be 5.0 out"
+    },
+    {
+      "start": 2244.28,
+      "duration": 5.24,
+      "text": "why and then 3"
+    },
+    {
+      "start": 2249.599,
+      "duration": 3.0,
+      "text": "8"
+    },
+    {
+      "start": 2262.04,
+      "duration": 5.24,
+      "text": "over yep 3.8 over"
+    },
+    {
+      "start": 2290.96,
+      "duration": 3.76,
+      "text": "good all right then 1"
+    },
+    {
+      "start": 2296.4,
+      "duration": 5.56,
+      "text": "mm for the God damn it"
+    },
+    {
+      "start": 2329.44,
+      "duration": 3.0,
+      "text": "okay"
+    },
+    {
+      "start": 2347.599,
+      "duration": 6.401,
+      "text": "that sort of looks"
+    },
+    {
+      "start": 2350.8,
+      "duration": 3.2,
+      "text": "better I"
+    },
+    {
+      "start": 2360.599,
+      "duration": 4.72,
+      "text": "think but I also don't know"
+    },
+    {
+      "start": 2391.56,
+      "duration": 6.12,
+      "text": "so I think we're going to print a test"
+    },
+    {
+      "start": 2394.68,
+      "duration": 3.0,
+      "text": "print"
+    },
+    {
+      "start": 2397.92,
+      "duration": 2.28,
+      "text": "of"
+    },
+    {
+      "start": 2400.44,
+      "duration": 7.12,
+      "text": "this and see how close we"
+    },
+    {
+      "start": 2403.839,
+      "duration": 3.721,
+      "text": "got with these pin"
+    },
+    {
+      "start": 2408.16,
+      "duration": 3.679,
+      "text": "holes is what we're going to"
+    },
+    {
+      "start": 2413.359,
+      "duration": 8.561,
+      "text": "do and then that'll let us know right"
+    },
+    {
+      "start": 2417.0,
+      "duration": 4.92,
+      "text": "away if we got close or not"
+    },
+    {
+      "start": 2430.119,
+      "duration": 4.101,
+      "text": "and then We'll"
+    },
+    {
+      "start": 2432.56,
+      "duration": 4.039,
+      "text": "erase all this"
+    },
+    {
+      "start": 2434.22,
+      "duration": 4.74,
+      "text": "[Music]"
+    },
+    {
+      "start": 2436.599,
+      "duration": 5.441,
+      "text": "stuff and then we'll just send that to"
+    },
+    {
+      "start": 2438.96,
+      "duration": 3.08,
+      "text": "the 3D printer for"
+    },
+    {
+      "start": 2448.48,
+      "duration": 7.44,
+      "text": "now"
+    },
+    {
+      "start": 2450.079,
+      "duration": 5.841,
+      "text": "switch pin out test"
+    },
+    {
+      "start": 2464.24,
+      "duration": 2.76,
+      "text": "we'll delete"
+    },
+    {
+      "start": 2470.48,
+      "duration": 4.24,
+      "text": "that all right slice"
+    },
+    {
+      "start": 2476.839,
+      "duration": 5.52,
+      "text": "it and that's going to take seven"
+    },
+    {
+      "start": 2479.359,
+      "duration": 3.0,
+      "text": "minutes"
+    },
+    {
+      "start": 2494.64,
+      "duration": 5.0,
+      "text": "wonder if maybe we should have a raft"
+    },
+    {
+      "start": 2497.52,
+      "duration": 4.319,
+      "text": "there N I think it's going be fine we'll"
+    },
+    {
+      "start": 2499.64,
+      "duration": 2.199,
+      "text": "try"
+    },
+    {
+      "start": 2510.92,
+      "duration": 5.88,
+      "text": "it all right so we are sing that to the"
+    },
+    {
+      "start": 2513.2,
+      "duration": 3.6,
+      "text": "printer right now"
+    },
+    {
+      "start": 2517.839,
+      "duration": 5.921,
+      "text": "all right so in recap what we made"
+    },
+    {
+      "start": 2521.04,
+      "duration": 7.079,
+      "text": "is the part that"
+    },
+    {
+      "start": 2523.76,
+      "duration": 9.68,
+      "text": "actually that this switch the pin holes"
+    },
+    {
+      "start": 2528.119,
+      "duration": 5.321,
+      "text": "that the bottom of this switch will plug"
+    },
+    {
+      "start": 2533.599,
+      "duration": 4.601,
+      "text": "into and we need to know that size"
+    },
+    {
+      "start": 2536.16,
+      "duration": 7.52,
+      "text": "because eventually we'll make a"
+    },
+    {
+      "start": 2538.2,
+      "duration": 7.399,
+      "text": "PCB that the pin holes on this will"
+    },
+    {
+      "start": 2543.68,
+      "duration": 3.6,
+      "text": "will'll plug into and then we won't need"
+    },
+    {
+      "start": 2545.599,
+      "duration": 4.081,
+      "text": "wiring or anything like that so we'll"
+    },
+    {
+      "start": 2547.28,
+      "duration": 7.52,
+      "text": "just have um we'll have the switch we'll"
+    },
+    {
+      "start": 2549.68,
+      "duration": 8.84,
+      "text": "have a couple of RGB LEDs to make the"
+    },
+    {
+      "start": 2554.8,
+      "duration": 5.6,
+      "text": "translucent uh button glow we'll have"
+    },
+    {
+      "start": 2558.52,
+      "duration": 4.839,
+      "text": "some capacitors and resistors and we'll"
+    },
+    {
+      "start": 2560.4,
+      "duration": 7.959,
+      "text": "have a microprocessor to handle the"
+    },
+    {
+      "start": 2563.359,
+      "duration": 5.0,
+      "text": "um the communication to the"
+    },
+    {
+      "start": 2569.119,
+      "duration": 4.161,
+      "text": "computer all righty"
+    },
+    {
+      "start": 2590.64,
+      "duration": 4.679,
+      "text": "cool so this will start"
+    },
+    {
+      "start": 2593.16,
+      "duration": 5.64,
+      "text": "printing I just warm me up the heating"
+    },
+    {
+      "start": 2595.319,
+      "duration": 3.481,
+      "text": "bed right now"
+    },
+    {
+      "start": 2608.44,
+      "duration": 4.32,
+      "text": "and"
+    },
+    {
+      "start": 2609.64,
+      "duration": 5.88,
+      "text": "then basically if that ends up"
+    },
+    {
+      "start": 2612.76,
+      "duration": 7.4,
+      "text": "being the size that we"
+    },
+    {
+      "start": 2615.52,
+      "duration": 4.64,
+      "text": "like we will add it"
+    },
+    {
+      "start": 2622.48,
+      "duration": 7.24,
+      "text": "to we'll add it to this which is going"
+    },
+    {
+      "start": 2625.52,
+      "duration": 4.2,
+      "text": "to end up being the actual"
+    },
+    {
+      "start": 2630.359,
+      "duration": 5.76,
+      "text": "base for the button and then we'll have"
+    },
+    {
+      "start": 2634.319,
+      "duration": 3.361,
+      "text": "a base for the button and we'll be able"
+    },
+    {
+      "start": 2636.119,
+      "duration": 6.041,
+      "text": "to actually"
+    },
+    {
+      "start": 2637.68,
+      "duration": 4.48,
+      "text": "test the button on a"
+    },
+    {
+      "start": 2642.52,
+      "duration": 3.36,
+      "text": "um on a"
+    },
+    {
+      "start": 2648.04,
+      "duration": 6.279,
+      "text": "Surface which will be nice and then from"
+    },
+    {
+      "start": 2651.88,
+      "duration": 5.32,
+      "text": "there we'll have to figure out where the"
+    },
+    {
+      "start": 2654.319,
+      "duration": 4.561,
+      "text": "microprocessor is going to go and the"
+    },
+    {
+      "start": 2657.2,
+      "duration": 3.119,
+      "text": "microprocessor so it's probably going to"
+    },
+    {
+      "start": 2658.88,
+      "duration": 4.52,
+      "text": "have to be thicker than what I have here"
+    },
+    {
+      "start": 2660.319,
+      "duration": 7.321,
+      "text": "to be honest this is probably not thick"
+    },
+    {
+      "start": 2663.4,
+      "duration": 4.24,
+      "text": "enough and then also"
+    },
+    {
+      "start": 2669.48,
+      "duration": 2.8,
+      "text": "it's probably just going to have to be"
+    },
+    {
+      "start": 2670.52,
+      "duration": 3.96,
+      "text": "thicker"
+    },
+    {
+      "start": 2672.28,
+      "duration": 4.559,
+      "text": "because I don't think that these holes"
+    },
+    {
+      "start": 2674.48,
+      "duration": 7.48,
+      "text": "are going to be tall enough"
+    },
+    {
+      "start": 2676.839,
+      "duration": 5.121,
+      "text": "to accommodate the height of the pins"
+    },
+    {
+      "start": 2683.559,
+      "duration": 5.361,
+      "text": "itself all right so we have we have a"
+    },
+    {
+      "start": 2686.119,
+      "duration": 2.801,
+      "text": "lot to think about"
+    },
+    {
+      "start": 2688.96,
+      "duration": 5.599,
+      "text": "here I'm going to"
+    },
+    {
+      "start": 2691.76,
+      "duration": 5.799,
+      "text": "um we'll grab I'm going to grab a micro"
+    },
+    {
+      "start": 2694.559,
+      "duration": 3.0,
+      "text": "processor"
+    },
+    {
+      "start": 2703.359,
+      "duration": 5.401,
+      "text": "and then we'll start thinking about"
+    },
+    {
+      "start": 2706.599,
+      "duration": 5.281,
+      "text": "code and how we're going to get the code"
+    },
+    {
+      "start": 2708.76,
+      "duration": 6.599,
+      "text": "for this thing to work which chat GPT is"
+    },
+    {
+      "start": 2711.88,
+      "duration": 3.479,
+      "text": "going to help us out a lot with"
+    },
+    {
+      "start": 2720.88,
+      "duration": 5.12,
+      "text": "that let's see let's see let's see"
+    },
+    {
+      "start": 2733.599,
+      "duration": 3.24,
+      "text": "I'm not sure if we're even oh yeah we"
+    },
+    {
+      "start": 2739.4,
+      "duration": 8.24,
+      "text": "are all right so let's start talking to"
+    },
+    {
+      "start": 2743.04,
+      "duration": 4.6,
+      "text": "chat GPT here"
+    },
+    {
+      "start": 2775.599,
+      "duration": 6.801,
+      "text": "connect the mechanical keyboard switch"
+    },
+    {
+      "start": 2778.0,
+      "duration": 4.4,
+      "text": "to an ESP"
+    },
+    {
+      "start": 2785.319,
+      "duration": 5.881,
+      "text": "32 I want it"
+    },
+    {
+      "start": 2789.28,
+      "duration": 4.16,
+      "text": "to log"
+    },
+    {
+      "start": 2791.2,
+      "duration": 5.24,
+      "text": "into my"
+    },
+    {
+      "start": 2793.44,
+      "duration": 3.0,
+      "text": "computer"
+    },
+    {
+      "start": 2798.24,
+      "duration": 8.2,
+      "text": "via builtin"
+    },
+    {
+      "start": 2801.96,
+      "duration": 4.48,
+      "text": "US BC"
+    },
+    {
+      "start": 2806.8,
+      "duration": 5.12,
+      "text": "um the ESP 32"
+    },
+    {
+      "start": 2815.28,
+      "duration": 7.839,
+      "text": "and I would like make it to"
+    },
+    {
+      "start": 2818.96,
+      "duration": 4.159,
+      "text": "run a script"
+    },
+    {
+      "start": 2826.44,
+      "duration": 3.24,
+      "text": "when the"
+    },
+    {
+      "start": 2832.359,
+      "duration": 3.361,
+      "text": "button is"
+    },
+    {
+      "start": 2840.599,
+      "duration": 3.24,
+      "text": "pressed we're going to start with just"
+    },
+    {
+      "start": 2842.599,
+      "duration": 5.601,
+      "text": "running a"
+    },
+    {
+      "start": 2843.839,
+      "duration": 10.121,
+      "text": "script and then I'm thinking that"
+    },
+    {
+      "start": 2848.2,
+      "duration": 9.919,
+      "text": "we can possibly make a plugin"
+    },
+    {
+      "start": 2853.96,
+      "duration": 8.84,
+      "text": "for vs code and I think that cursor uses"
+    },
+    {
+      "start": 2858.119,
+      "duration": 11.361,
+      "text": "the same plugins as vs code and then we"
+    },
+    {
+      "start": 2862.8,
+      "duration": 8.08,
+      "text": "can uh use the plugin to automate the uh"
+    },
+    {
+      "start": 2869.48,
+      "duration": 6.32,
+      "text": "get"
+    },
+    {
+      "start": 2870.88,
+      "duration": 6.959,
+      "text": "commit get push for us because if we"
+    },
+    {
+      "start": 2875.8,
+      "duration": 6.96,
+      "text": "just have it run a scre grip then it's"
+    },
+    {
+      "start": 2877.839,
+      "duration": 4.921,
+      "text": "going to uh have issues"
+    },
+    {
+      "start": 2884.119,
+      "duration": 8.841,
+      "text": "with with not knowing which like"
+    },
+    {
+      "start": 2888.0,
+      "duration": 6.44,
+      "text": "directory to run the git ad. gomit DM"
+    },
+    {
+      "start": 2892.96,
+      "duration": 5.08,
+      "text": "and get"
+    },
+    {
+      "start": 2894.44,
+      "duration": 3.6,
+      "text": "push if that makes"
+    },
+    {
+      "start": 2899.079,
+      "duration": 3.161,
+      "text": "sense all"
+    },
+    {
+      "start": 2904.52,
+      "duration": 4.24,
+      "text": "righty let's see what it says here"
+    },
+    {
+      "start": 2930.76,
+      "duration": 4.64,
+      "text": "so we need to pull up or pull down"
+    },
+    {
+      "start": 2932.4,
+      "duration": 3.0,
+      "text": "resistor"
+    },
+    {
+      "start": 2944.92,
+      "duration": 7.08,
+      "text": "one leg of the GPI one leg to"
+    },
+    {
+      "start": 2948.319,
+      "duration": 6.28,
+      "text": "the GPI opit whatever we want on the"
+    },
+    {
+      "start": 2952.0,
+      "duration": 4.4,
+      "text": "esp32 and then the other leg to ground"
+    },
+    {
+      "start": 2954.599,
+      "duration": 6.081,
+      "text": "use a pullup resistor connected between"
+    },
+    {
+      "start": 2956.4,
+      "duration": 6.679,
+      "text": "gpio and 3.3 volts if the switch is"
+    },
+    {
+      "start": 2960.68,
+      "duration": 7.159,
+      "text": "configured as active"
+    },
+    {
+      "start": 2963.079,
+      "duration": 7.0,
+      "text": "low configure the esp32 as a hid device"
+    },
+    {
+      "start": 2967.839,
+      "duration": 3.76,
+      "text": "can act as a human interface device this"
+    },
+    {
+      "start": 2970.079,
+      "duration": 3.52,
+      "text": "is what I need to know this allows it to"
+    },
+    {
+      "start": 2971.599,
+      "duration": 4.321,
+      "text": "emulate a keyboard or similar device"
+    },
+    {
+      "start": 2973.599,
+      "duration": 2.321,
+      "text": "over"
+    },
+    {
+      "start": 2977.599,
+      "duration": 7.881,
+      "text": "USB use the Arduino framework or ESP IDF"
+    },
+    {
+      "start": 2982.68,
+      "duration": 2.8,
+      "text": "with the USB"
+    },
+    {
+      "start": 2985.52,
+      "duration": 4.52,
+      "text": "H wow that print already finished that"
+    },
+    {
+      "start": 2988.2,
+      "duration": 4.56,
+      "text": "was so fast all right let's grab the"
+    },
+    {
+      "start": 2990.04,
+      "duration": 4.079,
+      "text": "print and then uh we'll come right back"
+    },
+    {
+      "start": 2992.76,
+      "duration": 5.559,
+      "text": "to"
+    },
+    {
+      "start": 2994.119,
+      "duration": 4.2,
+      "text": "this let's see"
+    },
+    {
+      "start": 3022.319,
+      "duration": 5.0,
+      "text": "all right the big reveal do we think"
+    },
+    {
+      "start": 3025.319,
+      "duration": 3.28,
+      "text": "that this is going to work oh no it's"
+    },
+    {
+      "start": 3027.319,
+      "duration": 2.961,
+      "text": "not going to work at"
+    },
+    {
+      "start": 3028.599,
+      "duration": 4.881,
+      "text": "all"
+    },
+    {
+      "start": 3030.28,
+      "duration": 8.039,
+      "text": "so so the problem is is the holes that"
+    },
+    {
+      "start": 3033.48,
+      "duration": 7.599,
+      "text": "we made for the uh connector the pins"
+    },
+    {
+      "start": 3038.319,
+      "duration": 7.24,
+      "text": "you can barely see them cuz they're way"
+    },
+    {
+      "start": 3041.079,
+      "duration": 4.48,
+      "text": "too small 1 mm is way too small for"
+    },
+    {
+      "start": 3046.2,
+      "duration": 6.28,
+      "text": "that yeah so what we need to do is we"
+    },
+    {
+      "start": 3048.88,
+      "duration": 7.56,
+      "text": "need to make those pins like"
+    },
+    {
+      "start": 3052.48,
+      "duration": 6.4,
+      "text": "um at least one and 1 and a half millim"
+    },
+    {
+      "start": 3056.44,
+      "duration": 2.44,
+      "text": "maybe maybe"
+    },
+    {
+      "start": 3061.119,
+      "duration": 5.68,
+      "text": "more let me see if I can just see if"
+    },
+    {
+      "start": 3063.64,
+      "duration": 5.919,
+      "text": "that looks like it's going to line"
+    },
+    {
+      "start": 3066.799,
+      "duration": 5.201,
+      "text": "up it"
+    },
+    {
+      "start": 3069.559,
+      "duration": 5.24,
+      "text": "might I think that it does actually line"
+    },
+    {
+      "start": 3072.0,
+      "duration": 2.799,
+      "text": "up which should be a"
+    },
+    {
+      "start": 3076.079,
+      "duration": 3.921,
+      "text": "miracle all right let's make these pins"
+    },
+    {
+      "start": 3078.359,
+      "duration": 5.321,
+      "text": "bigger and then set another print this"
+    },
+    {
+      "start": 3080.0,
+      "duration": 3.68,
+      "text": "is very exciting"
+    },
+    {
+      "start": 3091.92,
+      "duration": 2.399,
+      "text": "delete"
+    },
+    {
+      "start": 3106.48,
+      "duration": 3.68,
+      "text": "that just going to make him"
+    },
+    {
+      "start": 3113.68,
+      "duration": 4.84,
+      "text": "two and then we can go smaller"
+    },
+    {
+      "start": 3134.4,
+      "duration": 6.52,
+      "text": "where did I print this last one was 2"
+    },
+    {
+      "start": 3137.92,
+      "duration": 3.0,
+      "text": "mm"
+    },
+    {
+      "start": 3144.319,
+      "duration": 6.52,
+      "text": "two yes"
+    },
+    {
+      "start": 3148.28,
+      "duration": 6.039,
+      "text": "okay oh [ __ ] my"
+    },
+    {
+      "start": 3150.839,
+      "duration": 8.201,
+      "text": "bad all right all I did was make the uh"
+    },
+    {
+      "start": 3154.319,
+      "duration": 4.721,
+      "text": "the holes bigger on this these two"
+    },
+    {
+      "start": 3166.04,
+      "duration": 6.24,
+      "text": "holes we're going to export it again"
+    },
+    {
+      "start": 3179.92,
+      "duration": 2.28,
+      "text": "and"
+    },
+    {
+      "start": 3184.839,
+      "duration": 4.161,
+      "text": "then import it back into"
+    },
+    {
+      "start": 3196.4,
+      "duration": 4.84,
+      "text": "bamboo except for not really"
+    },
+    {
+      "start": 3225.4,
+      "duration": 5.12,
+      "text": "okay that up nice slice"
+    },
+    {
+      "start": 3230.96,
+      "duration": 6.119,
+      "text": "it and then print"
+    },
+    {
+      "start": 3234.359,
+      "duration": 4.841,
+      "text": "it I hope that's enough material in"
+    },
+    {
+      "start": 3237.079,
+      "duration": 4.081,
+      "text": "between those two that it doesn't become"
+    },
+    {
+      "start": 3239.2,
+      "duration": 5.159,
+      "text": "one"
+    },
+    {
+      "start": 3241.16,
+      "duration": 3.199,
+      "text": "Circle it"
+    },
+    {
+      "start": 3258.68,
+      "duration": 3.0,
+      "text": "is"
+    },
+    {
+      "start": 3262.559,
+      "duration": 4.0,
+      "text": "nice no"
+    },
+    {
+      "start": 3280.359,
+      "duration": 6.72,
+      "text": "all right we're"
+    },
+    {
+      "start": 3282.28,
+      "duration": 4.799,
+      "text": "printing nice nice nice"
+    },
+    {
+      "start": 3302.88,
+      "duration": 5.4,
+      "text": "all right so back to the uh code"
+    },
+    {
+      "start": 3305.52,
+      "duration": 5.319,
+      "text": "here the diameter of the prong or pin on"
+    },
+    {
+      "start": 3308.28,
+      "duration": 6.0,
+      "text": "the bottom of a chair no this is not"
+    },
+    {
+      "start": 3310.839,
+      "duration": 3.441,
+      "text": "what we need"
+    },
+    {
+      "start": 3328.4,
+      "duration": 9.639,
+      "text": "human interface device. begin initialize"
+    },
+    {
+      "start": 3333.48,
+      "duration": 9.359,
+      "text": "hid uh void Loop if digital read switch"
+    },
+    {
+      "start": 3338.039,
+      "duration": 7.28,
+      "text": "pin is equal to low keyboard. press"
+    },
+    {
+      "start": 3342.839,
+      "duration": 9.161,
+      "text": "key"
+    },
+    {
+      "start": 3345.319,
+      "duration": 6.681,
+      "text": "f13 delay 100 keyboard release"
+    },
+    {
+      "start": 3353.24,
+      "duration": 5.52,
+      "text": "all this is nice this"
+    },
+    {
+      "start": 3357.359,
+      "duration": 4.0,
+      "text": "I don't want to say anything but it"
+    },
+    {
+      "start": 3358.76,
+      "duration": 2.599,
+      "text": "seems like"
+    },
+    {
+      "start": 3361.599,
+      "duration": 4.48,
+      "text": "this could be straightforward"
+    },
+    {
+      "start": 3371.28,
+      "duration": 6.36,
+      "text": "is we're basically just making a small"
+    },
+    {
+      "start": 3374.119,
+      "duration": 3.521,
+      "text": "keyboard like a little tiny"
+    },
+    {
+      "start": 3380.24,
+      "duration": 4.599,
+      "text": "keyboard let's see what we can do"
+    },
+    {
+      "start": 3392.839,
+      "duration": 5.441,
+      "text": "this is going to be the microcontroller"
+    },
+    {
+      "start": 3395.92,
+      "duration": 7.679,
+      "text": "we're going to use CU it's"
+    },
+    {
+      "start": 3398.28,
+      "duration": 5.319,
+      "text": "tiny and it will fit good inside of"
+    },
+    {
+      "start": 3406.4,
+      "duration": 7.159,
+      "text": "this see how small that"
+    },
+    {
+      "start": 3409.64,
+      "duration": 7.679,
+      "text": "is and then there's"
+    },
+    {
+      "start": 3413.559,
+      "duration": 7.28,
+      "text": "that see so this will fit inside of this"
+    },
+    {
+      "start": 3417.319,
+      "duration": 7.48,
+      "text": "somewhere we'll hide that and then uh"
+    },
+    {
+      "start": 3420.839,
+      "duration": 7.081,
+      "text": "the USB can just kind of like the"
+    },
+    {
+      "start": 3424.799,
+      "duration": 7.24,
+      "text": "USBC we'll we'll make a like a hole for"
+    },
+    {
+      "start": 3427.92,
+      "duration": 7.119,
+      "text": "it and it'll go out the side of"
+    },
+    {
+      "start": 3432.039,
+      "duration": 3.0,
+      "text": "it"
+    },
+    {
+      "start": 3437.079,
+      "duration": 4.361,
+      "text": "somewhere we shall see"
+    },
+    {
+      "start": 3450.72,
+      "duration": 4.56,
+      "text": "let's just make sure we we do have pin"
+    },
+    {
+      "start": 3457.72,
+      "duration": 6.119,
+      "text": "four okay"
+    },
+    {
+      "start": 3459.76,
+      "duration": 4.079,
+      "text": "great and then we need"
+    },
+    {
+      "start": 3464.119,
+      "duration": 3.521,
+      "text": "to we got to"
+    },
+    {
+      "start": 3468.44,
+      "duration": 4.2,
+      "text": "grab a breadboard"
+    },
+    {
+      "start": 3478.72,
+      "duration": 4.04,
+      "text": "I'm G to grab another switch hold on"
+    },
+    {
+      "start": 3480.319,
+      "duration": 2.441,
+      "text": "I'll be right"
+    },
+    {
+      "start": 3499.359,
+      "duration": 4.161,
+      "text": "back all right"
+    },
+    {
+      "start": 3518.28,
+      "duration": 5.96,
+      "text": "so here is our breadboard"
+    },
+    {
+      "start": 3543.88,
+      "duration": 5.56,
+      "text": "I'm not actually sure if you can plug"
+    },
+    {
+      "start": 3547.319,
+      "duration": 4.161,
+      "text": "a"
+    },
+    {
+      "start": 3549.44,
+      "duration": 3.48,
+      "text": "mechanical keyboard switch into a"
+    },
+    {
+      "start": 3551.48,
+      "duration": 4.44,
+      "text": "breadboard or"
+    },
+    {
+      "start": 3552.92,
+      "duration": 4.159,
+      "text": "not it'd be nice if you could but I"
+    },
+    {
+      "start": 3555.92,
+      "duration": 3.119,
+      "text": "don't think it's going"
+    },
+    {
+      "start": 3557.079,
+      "duration": 5.321,
+      "text": "to I don't think the pins are going to"
+    },
+    {
+      "start": 3559.039,
+      "duration": 3.361,
+      "text": "be long enough"
+    },
+    {
+      "start": 3568.44,
+      "duration": 4.639,
+      "text": "yeah it doesn't look like the pin are"
+    },
+    {
+      "start": 3569.64,
+      "duration": 3.439,
+      "text": "going to be long enough which is super"
+    },
+    {
+      "start": 3576.44,
+      "duration": 6.24,
+      "text": "annoying so I think that instead of"
+    },
+    {
+      "start": 3579.24,
+      "duration": 3.44,
+      "text": "using the keyboard"
+    },
+    {
+      "start": 3584.68,
+      "duration": 3.679,
+      "text": "switch we're going to have to use a"
+    },
+    {
+      "start": 3586.839,
+      "duration": 3.441,
+      "text": "different"
+    },
+    {
+      "start": 3588.359,
+      "duration": 4.921,
+      "text": "switch all right I'll get a different"
+    },
+    {
+      "start": 3590.28,
+      "duration": 3.0,
+      "text": "switch"
+    },
+    {
+      "start": 3624.24,
+      "duration": 3.72,
+      "text": "all right so we are looking for"
+    },
+    {
+      "start": 3628.799,
+      "duration": 3.921,
+      "text": "or a small"
+    },
+    {
+      "start": 3636.28,
+      "duration": 3.6,
+      "text": "button like one of"
+    },
+    {
+      "start": 3640.72,
+      "duration": 5.92,
+      "text": "these just for now so we can write the"
+    },
+    {
+      "start": 3643.079,
+      "duration": 3.561,
+      "text": "software with"
+    },
+    {
+      "start": 3675.4,
+      "duration": 3.0,
+      "text": "whoopsies"
+    },
+    {
+      "start": 3684.52,
+      "duration": 7.72,
+      "text": "right so that is is a tiny button right"
+    },
+    {
+      "start": 3688.599,
+      "duration": 3.641,
+      "text": "there right small"
+    },
+    {
+      "start": 3695.0,
+      "duration": 4.68,
+      "text": "button that we're going to use for now"
+    },
+    {
+      "start": 3697.68,
+      "duration": 6.48,
+      "text": "just to prototype"
+    },
+    {
+      "start": 3699.68,
+      "duration": 4.48,
+      "text": "with so um"
+    },
+    {
+      "start": 3722.64,
+      "duration": 2.88,
+      "text": "we'll throw that in"
+    },
+    {
+      "start": 3737.72,
+      "duration": 3.72,
+      "text": "there we can do one of"
+    },
+    {
+      "start": 3743.24,
+      "duration": 4.599,
+      "text": "these so it's in there like that"
+    },
+    {
+      "start": 3756.72,
+      "duration": 3.96,
+      "text": "I don't know if that's going to work"
+    },
+    {
+      "start": 3798.119,
+      "duration": 2.401,
+      "text": "that might"
+    },
+    {
+      "start": 3804.76,
+      "duration": 4.0,
+      "text": "work for"
+    },
+    {
+      "start": 3836.0,
+      "duration": 4.799,
+      "text": "all right so that finished printing from"
+    },
+    {
+      "start": 3838.64,
+      "duration": 2.159,
+      "text": "the"
+    },
+    {
+      "start": 3841.559,
+      "duration": 8.121,
+      "text": "printer this is supposed to hold"
+    },
+    {
+      "start": 3845.52,
+      "duration": 7.24,
+      "text": "our uh mechanical switch so now we can"
+    },
+    {
+      "start": 3849.68,
+      "duration": 6.48,
+      "text": "test to see if this actually"
+    },
+    {
+      "start": 3852.76,
+      "duration": 3.4,
+      "text": "fits we just"
+    },
+    {
+      "start": 3858.4,
+      "duration": 5.76,
+      "text": "made see if this F on this"
+    },
+    {
+      "start": 3871.799,
+      "duration": 3.681,
+      "text": "it's looking like the center"
+    },
+    {
+      "start": 3876.599,
+      "duration": 3.841,
+      "text": "pin is a little bit"
+    },
+    {
+      "start": 3883.359,
+      "duration": 4.48,
+      "text": "off damn it we're so close"
+    },
+    {
+      "start": 3891.64,
+      "duration": 5.8,
+      "text": "too I wish I had a better way of showing"
+    },
+    {
+      "start": 3893.839,
+      "duration": 3.601,
+      "text": "this to you but"
+    },
+    {
+      "start": 3898.119,
+      "duration": 3.68,
+      "text": "for whatever reason that center pin does"
+    },
+    {
+      "start": 3899.88,
+      "duration": 5.919,
+      "text": "not line"
+    },
+    {
+      "start": 3901.799,
+      "duration": 4.0,
+      "text": "up just a tiny bit"
+    },
+    {
+      "start": 3907.4,
+      "duration": 4.919,
+      "text": "off so how are we going to go about"
+    },
+    {
+      "start": 3909.76,
+      "duration": 2.559,
+      "text": "fixing"
+    },
+    {
+      "start": 3915.64,
+      "duration": 8.639,
+      "text": "that the uh the placement"
+    },
+    {
+      "start": 3919.599,
+      "duration": 4.68,
+      "text": "of the pins is"
+    },
+    {
+      "start": 3924.44,
+      "duration": 5.48,
+      "text": "perfect but that center pin is not"
+    },
+    {
+      "start": 3934.88,
+      "duration": 4.76,
+      "text": "correct so we need to move that center"
+    },
+    {
+      "start": 3937.319,
+      "duration": 2.321,
+      "text": "pin"
+    },
+    {
+      "start": 3948.799,
+      "duration": 6.201,
+      "text": "over I think that if we just move the"
+    },
+    {
+      "start": 3951.24,
+      "duration": 3.76,
+      "text": "center pin over"
+    },
+    {
+      "start": 3956.039,
+      "duration": 2.76,
+      "text": "we might be doing"
+    },
+    {
+      "start": 3968.52,
+      "duration": 4.12,
+      "text": "good honestly like a"
+    },
+    {
+      "start": 3974.96,
+      "duration": 3.0,
+      "text": "millimeter"
+    },
+    {
+      "start": 3981.079,
+      "duration": 4.28,
+      "text": "weird very weird"
+    },
+    {
+      "start": 3990.44,
+      "duration": 3.2,
+      "text": "so then"
+    },
+    {
+      "start": 4002.559,
+      "duration": 3.8,
+      "text": "um all right so we'll"
+    },
+    {
+      "start": 4009.839,
+      "duration": 4.841,
+      "text": "move that's to the right"
+    },
+    {
+      "start": 4022.48,
+      "duration": 2.96,
+      "text": "1 mm for"
+    },
+    {
+      "start": 4033.0,
+      "duration": 5.52,
+      "text": "now delete that luckily these print"
+    },
+    {
+      "start": 4036.24,
+      "duration": 2.28,
+      "text": "really"
+    },
+    {
+      "start": 4041.92,
+      "duration": 5.199,
+      "text": "fast okay and then we'll export"
+    },
+    {
+      "start": 4050.24,
+      "duration": 5.28,
+      "text": "STL switch pin out test version"
+    },
+    {
+      "start": 4056.319,
+      "duration": 3.0,
+      "text": "three"
+    },
+    {
+      "start": 4060.039,
+      "duration": 5.201,
+      "text": "save we'll pull open bamboo Studio"
+    },
+    {
+      "start": 4067.359,
+      "duration": 3.601,
+      "text": "again delete"
+    },
+    {
+      "start": 4073.039,
+      "duration": 5.961,
+      "text": "this add version three"
+    },
+    {
+      "start": 4076.599,
+      "duration": 2.401,
+      "text": "oh my"
+    },
+    {
+      "start": 4081.799,
+      "duration": 5.32,
+      "text": "God we don't want to print the uh the"
+    },
+    {
+      "start": 4084.72,
+      "duration": 2.399,
+      "text": "switch"
+    },
+    {
+      "start": 4090.96,
+      "duration": 3.599,
+      "text": "again export to"
+    },
+    {
+      "start": 4094.599,
+      "duration": 5.2,
+      "text": "STL version three again"
+    },
+    {
+      "start": 4104.0,
+      "duration": 3.44,
+      "text": "replace and"
+    },
+    {
+      "start": 4111.159,
+      "duration": 3.16,
+      "text": "there we are"
+    },
+    {
+      "start": 4120.96,
+      "duration": 3.68,
+      "text": "boom and we'll print"
+    },
+    {
+      "start": 4132.0,
+      "duration": 5.44,
+      "text": "it we might be closer we might be closer"
+    },
+    {
+      "start": 4139.759,
+      "duration": 3.801,
+      "text": "all"
+    },
+    {
+      "start": 4141.44,
+      "duration": 5.68,
+      "text": "right so while we got that printing"
+    },
+    {
+      "start": 4143.56,
+      "duration": 3.56,
+      "text": "we'll go back to"
+    },
+    {
+      "start": 4148.199,
+      "duration": 3.441,
+      "text": "the button"
+    },
+    {
+      "start": 4164.359,
+      "duration": 4.0,
+      "text": "situation for"
+    },
+    {
+      "start": 4196.64,
+      "duration": 5.72,
+      "text": "so what I should probably"
+    },
+    {
+      "start": 4199.64,
+      "duration": 6.44,
+      "text": "do is add"
+    },
+    {
+      "start": 4202.36,
+      "duration": 3.72,
+      "text": "uh solder these"
+    },
+    {
+      "start": 4206.76,
+      "duration": 3.88,
+      "text": "pins on there"
+    },
+    {
+      "start": 4214.96,
+      "duration": 3.32,
+      "text": "unfortunately like"
+    },
+    {
+      "start": 4222.4,
+      "duration": 4.92,
+      "text": "this that way for prototyping and all"
+    },
+    {
+      "start": 4224.84,
+      "duration": 2.48,
+      "text": "that"
+    },
+    {
+      "start": 4228.36,
+      "duration": 4.879,
+      "text": "it'll be much easier because then these"
+    },
+    {
+      "start": 4230.239,
+      "duration": 3.0,
+      "text": "pins"
+    },
+    {
+      "start": 4256.6,
+      "duration": 3.2,
+      "text": "can go right in there like"
+    },
+    {
+      "start": 4271.28,
+      "duration": 4.8,
+      "text": "that so I think that's what we're going"
+    },
+    {
+      "start": 4273.4,
+      "duration": 2.68,
+      "text": "to have to do real"
+    },
+    {
+      "start": 4277.8,
+      "duration": 5.28,
+      "text": "quick what time is it it's 6:40 we have"
+    },
+    {
+      "start": 4281.6,
+      "duration": 5.04,
+      "text": "20 minutes that's going to be just"
+    },
+    {
+      "start": 4283.08,
+      "duration": 6.4,
+      "text": "enough time to throw these pins"
+    },
+    {
+      "start": 4286.64,
+      "duration": 2.84,
+      "text": "onto"
+    },
+    {
+      "start": 4290.88,
+      "duration": 3.76,
+      "text": "um onto it over"
+    },
+    {
+      "start": 4294.88,
+      "duration": 3.359,
+      "text": "there let's do"
+    },
+    {
+      "start": 4314.239,
+      "duration": 4.0,
+      "text": "it for"
+    },
+    {
+      "start": 4352.96,
+      "duration": 4.239,
+      "text": "all right so we're going to have no mic"
+    },
+    {
+      "start": 4354.4,
+      "duration": 2.799,
+      "text": "for this part"
+    },
+    {
+      "start": 4357.28,
+      "duration": 6.28,
+      "text": "because"
+    },
+    {
+      "start": 4359.52,
+      "duration": 7.48,
+      "text": "I don't have a mic over at my soldering"
+    },
+    {
+      "start": 4363.56,
+      "duration": 3.44,
+      "text": "station is kind of"
+    },
+    {
+      "start": 4367.12,
+      "duration": 4.92,
+      "text": "annoying can you do the mic from"
+    },
+    {
+      "start": 4372.96,
+      "duration": 4.16,
+      "text": "the no I don't think you can"
+    },
+    {
+      "start": 4378.04,
+      "duration": 3.96,
+      "text": "that would be cool if you could do the"
+    },
+    {
+      "start": 4379.56,
+      "duration": 2.44,
+      "text": "mic"
+    },
+    {
+      "start": 4386.44,
+      "duration": 3.48,
+      "text": "from from the"
+    },
+    {
+      "start": 4396.32,
+      "duration": 4.68,
+      "text": "iPhone oh I think you can"
+    },
+    {
+      "start": 4410.36,
+      "duration": 3.12,
+      "text": "oh no I might just crashed"
+    },
+    {
+      "start": 4416.719,
+      "duration": 4.121,
+      "text": "everything all right we're not going to"
+    },
+    {
+      "start": 4418.4,
+      "duration": 2.44,
+      "text": "do that right"
+    },
+    {
+      "start": 4427.48,
+      "duration": 4.88,
+      "text": "now all right we're just going to have"
+    },
+    {
+      "start": 4429.28,
+      "duration": 5.16,
+      "text": "no mic for a minute while we do the"
+    },
+    {
+      "start": 4432.36,
+      "duration": 5.76,
+      "text": "soldering of this and then I'll come"
+    },
+    {
+      "start": 4434.44,
+      "duration": 3.68,
+      "text": "back then we have a mic after"
+    },
+    {
+      "start": 4464.04,
+      "duration": 4.0,
+      "text": "that for"
+    },
+    {
+      "start": 4532.96,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 4651.04,
+      "duration": 4.85,
+      "text": "all right so that print"
+    },
+    {
+      "start": 4654.0,
+      "duration": 3.28,
+      "text": "finished and we got to"
+    },
+    {
+      "start": 4655.89,
+      "duration": 3.829,
+      "text": "[Music]"
+    },
+    {
+      "start": 4657.28,
+      "duration": 6.24,
+      "text": "see if it fits this"
+    },
+    {
+      "start": 4659.719,
+      "duration": 3.801,
+      "text": "time i' be surprised if we"
+    },
+    {
+      "start": 4665.92,
+      "duration": 4.48,
+      "text": "did oh my God so oh"
+    },
+    {
+      "start": 4670.88,
+      "duration": 4.48,
+      "text": "fits yeah it's perfect"
+    },
+    {
+      "start": 4679.159,
+      "duration": 3.241,
+      "text": "why wouldn't focus on"
+    },
+    {
+      "start": 4686.32,
+      "duration": 3.68,
+      "text": "that focus on"
+    },
+    {
+      "start": 4690.92,
+      "duration": 5.6,
+      "text": "this I just want to focus on it but I'm"
+    },
+    {
+      "start": 4694.6,
+      "duration": 6.4,
+      "text": "telling you right"
+    },
+    {
+      "start": 4696.52,
+      "duration": 4.48,
+      "text": "now it fits perfectly"
+    },
+    {
+      "start": 4714.44,
+      "duration": 6.96,
+      "text": "could probably make the positioning hole"
+    },
+    {
+      "start": 4717.0,
+      "duration": 4.4,
+      "text": "a tiny bit smaller but it's not really"
+    },
+    {
+      "start": 4729.28,
+      "duration": 4.359,
+      "text": "needed okay nice"
+    },
+    {
+      "start": 4739.32,
+      "duration": 3.64,
+      "text": "s like a bug"
+    },
+    {
+      "start": 4770.12,
+      "duration": 5.84,
+      "text": "cool so"
+    },
+    {
+      "start": 4772.32,
+      "duration": 6.839,
+      "text": "um from there we can make this a little"
+    },
+    {
+      "start": 4775.96,
+      "duration": 7.84,
+      "text": "bit taller maybe 1 mm"
+    },
+    {
+      "start": 4779.159,
+      "duration": 9.321,
+      "text": "taller and then we can uh"
+    },
+    {
+      "start": 4783.8,
+      "duration": 4.68,
+      "text": "print we can print the actual"
+    },
+    {
+      "start": 4792.199,
+      "duration": 6.721,
+      "text": "um we can make it 1 mm taller and we can"
+    },
+    {
+      "start": 4794.96,
+      "duration": 3.96,
+      "text": "print the actual"
+    },
+    {
+      "start": 4809.52,
+      "duration": 6.24,
+      "text": "base where is it uh body there we go"
+    },
+    {
+      "start": 4823.28,
+      "duration": 5.6,
+      "text": "nice how t this this is two need to be"
+    },
+    {
+      "start": 4826.4,
+      "duration": 2.48,
+      "text": "at least"
+    },
+    {
+      "start": 4832.56,
+      "duration": 5.92,
+      "text": "three and then we'll go to the bottom of"
+    },
+    {
+      "start": 4835.48,
+      "duration": 3.0,
+      "text": "this"
+    },
+    {
+      "start": 4856.0,
+      "duration": 4.679,
+      "text": "go"
+    },
+    {
+      "start": 4857.88,
+      "duration": 5.799,
+      "text": "three"
+    },
+    {
+      "start": 4863.96,
+      "duration": 6.84,
+      "text": "three okay"
+    },
+    {
+      "start": 4866.92,
+      "duration": 3.88,
+      "text": "cool and then"
+    },
+    {
+      "start": 4876.04,
+      "duration": 5.04,
+      "text": "um that should be"
+    },
+    {
+      "start": 4878.96,
+      "duration": 4.84,
+      "text": "perfect it's not going to be perfect now"
+    },
+    {
+      "start": 4881.08,
+      "duration": 5.48,
+      "text": "that I said that it's definitely not but"
+    },
+    {
+      "start": 4883.8,
+      "duration": 2.76,
+      "text": "we'll see"
+    },
+    {
+      "start": 4894.12,
+      "duration": 2.84,
+      "text": "so"
+    },
+    {
+      "start": 4901.28,
+      "duration": 4.8,
+      "text": "go base test V1"
+    },
+    {
+      "start": 4917.4,
+      "duration": 4.44,
+      "text": "I'm thinking this needs to be millimeter"
+    },
+    {
+      "start": 4918.76,
+      "duration": 3.08,
+      "text": "taller I'm going to go for"
+    },
+    {
+      "start": 4927.159,
+      "duration": 5.641,
+      "text": "it that way there it actually covers"
+    },
+    {
+      "start": 4930.199,
+      "duration": 2.601,
+      "text": "some of the"
+    },
+    {
+      "start": 4933.8,
+      "duration": 4.72,
+      "text": "side of the top of the button"
+    },
+    {
+      "start": 4953.12,
+      "duration": 8.559,
+      "text": "and then we'll go to Bamboo bring up the"
+    },
+    {
+      "start": 4957.04,
+      "duration": 8.04,
+      "text": "printer prepare get rid of that we'll"
+    },
+    {
+      "start": 4961.679,
+      "duration": 3.401,
+      "text": "add base"
+    },
+    {
+      "start": 4965.639,
+      "duration": 5.56,
+      "text": "B1 slice this it's going to be 30"
+    },
+    {
+      "start": 4972.48,
+      "duration": 3.96,
+      "text": "minutes we'll send it"
+    },
+    {
+      "start": 4980.08,
+      "duration": 3.24,
+      "text": "cool cool cool cool"
+    },
+    {
+      "start": 4989.199,
+      "duration": 3.721,
+      "text": "cool all while that's"
+    },
+    {
+      "start": 4995.76,
+      "duration": 4.6,
+      "text": "printing we'll go back"
+    },
+    {
+      "start": 5000.92,
+      "duration": 6.56,
+      "text": "to our software and hardware setup for"
+    },
+    {
+      "start": 5056.48,
+      "duration": 6.56,
+      "text": "so this button does not want to stay in"
+    },
+    {
+      "start": 5058.92,
+      "duration": 4.12,
+      "text": "there good at all it's really annoying"
+    },
+    {
+      "start": 5081.28,
+      "duration": 2.64,
+      "text": "all right that seems"
+    },
+    {
+      "start": 5084.719,
+      "duration": 4.48,
+      "text": "better I grab some wires I'll be right"
+    },
+    {
+      "start": 5093.32,
+      "duration": 4.04,
+      "text": "back for"
+    },
+    {
+      "start": 5139.199,
+      "duration": 4.361,
+      "text": "so me"
+    },
+    {
+      "start": 5141.119,
+      "duration": 5.201,
+      "text": "thinks there's four prongs on this"
+    },
+    {
+      "start": 5143.56,
+      "duration": 4.0,
+      "text": "button here I think that I have to use"
+    },
+    {
+      "start": 5146.32,
+      "duration": 3.64,
+      "text": "the"
+    },
+    {
+      "start": 5147.56,
+      "duration": 3.52,
+      "text": "bottom in the top but we are going to"
+    },
+    {
+      "start": 5149.96,
+      "duration": 5.0,
+      "text": "find"
+    },
+    {
+      "start": 5151.08,
+      "duration": 6.28,
+      "text": "out and then I'm going to use pin four"
+    },
+    {
+      "start": 5154.96,
+      "duration": 6.96,
+      "text": "and ground on"
+    },
+    {
+      "start": 5157.36,
+      "duration": 4.56,
+      "text": "this but I need to figure out oh"
+    },
+    {
+      "start": 5162.88,
+      "duration": 3.92,
+      "text": "no I covered up the"
+    },
+    {
+      "start": 5171.159,
+      "duration": 6.0,
+      "text": "pin I covered up the labels for the pins"
+    },
+    {
+      "start": 5173.719,
+      "duration": 3.44,
+      "text": "on this so"
+    },
+    {
+      "start": 5196.96,
+      "duration": 2.32,
+      "text": "let's"
+    },
+    {
+      "start": 5199.32,
+      "duration": 7.839,
+      "text": "see for is 1 2 three four five"
+    },
+    {
+      "start": 5207.44,
+      "duration": 8.799,
+      "text": "6 or one two three four from the back"
+    },
+    {
+      "start": 5213.199,
+      "duration": 3.04,
+      "text": "four from the back okay"
+    },
+    {
+      "start": 5223.04,
+      "duration": 3.72,
+      "text": "two three"
+    },
+    {
+      "start": 5240.44,
+      "duration": 4.16,
+      "text": "four all right"
+    },
+    {
+      "start": 5249.639,
+      "duration": 4.681,
+      "text": "and then we got to go to ground with the"
+    },
+    {
+      "start": 5251.639,
+      "duration": 2.681,
+      "text": "other side of the"
+    },
+    {
+      "start": 5269.44,
+      "duration": 4.16,
+      "text": "button all right"
+    },
+    {
+      "start": 5276.32,
+      "duration": 7.359,
+      "text": "so that is our prototype board there we"
+    },
+    {
+      "start": 5280.52,
+      "duration": 6.4,
+      "text": "have the button clicky"
+    },
+    {
+      "start": 5283.679,
+      "duration": 3.241,
+      "text": "clicky and"
+    },
+    {
+      "start": 5288.119,
+      "duration": 3.481,
+      "text": "then we have our"
+    },
+    {
+      "start": 5292.639,
+      "duration": 4.201,
+      "text": "board could be"
+    },
+    {
+      "start": 5294.88,
+      "duration": 6.0,
+      "text": "promising so we need to write some"
+    },
+    {
+      "start": 5296.84,
+      "duration": 7.68,
+      "text": "software to this and check to see if we"
+    },
+    {
+      "start": 5300.88,
+      "duration": 3.64,
+      "text": "are set up right"
+    },
+    {
+      "start": 5332.56,
+      "duration": 3.48,
+      "text": "so let's go into"
+    },
+    {
+      "start": 5340.639,
+      "duration": 3.241,
+      "text": "we're going to pull up vs"
+    },
+    {
+      "start": 5350.96,
+      "duration": 4.96,
+      "text": "code so I don't know why it's not at my"
+    },
+    {
+      "start": 5363.04,
+      "duration": 4.04,
+      "text": "tray for"
+    },
+    {
+      "start": 5407.08,
+      "duration": 5.159,
+      "text": "all right I'm opening up desab Alpha so"
+    },
+    {
+      "start": 5409.199,
+      "duration": 3.04,
+      "text": "I can grab"
+    },
+    {
+      "start": 5413.32,
+      "duration": 7.16,
+      "text": "the specs for how to set up this"
+    },
+    {
+      "start": 5416.92,
+      "duration": 5.64,
+      "text": "board and basically we are in platform"
+    },
+    {
+      "start": 5420.48,
+      "duration": 4.679,
+      "text": "IO right"
+    },
+    {
+      "start": 5422.56,
+      "duration": 5.599,
+      "text": "now which is is going to be how we"
+    },
+    {
+      "start": 5425.159,
+      "duration": 3.0,
+      "text": "communicate"
+    },
+    {
+      "start": 5432.36,
+      "duration": 3.64,
+      "text": "with with our"
+    },
+    {
+      "start": 5452.92,
+      "duration": 6.44,
+      "text": "board and then we have to find the ESP"
+    },
+    {
+      "start": 5455.84,
+      "duration": 3.52,
+      "text": "32 dev"
+    },
+    {
+      "start": 5465.36,
+      "duration": 4.279,
+      "text": "kit right here"
+    },
+    {
+      "start": 5505.52,
+      "duration": 2.199,
+      "text": "all"
+    },
+    {
+      "start": 5509.199,
+      "duration": 6.601,
+      "text": "right and then we can pull open main I'm"
+    },
+    {
+      "start": 5514.08,
+      "duration": 3.119,
+      "text": "just going to see if we can get this set"
+    },
+    {
+      "start": 5515.8,
+      "duration": 5.399,
+      "text": "up quick and then I'm going to turn the"
+    },
+    {
+      "start": 5517.199,
+      "duration": 4.0,
+      "text": "stream off because I gotta let my dogs"
+    },
+    {
+      "start": 5540.36,
+      "duration": 4.0,
+      "text": "out oops"
+    },
+    {
+      "start": 5565.119,
+      "duration": 3.801,
+      "text": "we're going to see if key F would"
+    },
+    {
+      "start": 5572.84,
+      "duration": 7.08,
+      "text": "work"
+    },
+    {
+      "start": 5575.679,
+      "duration": 4.241,
+      "text": "keyboard press F"
+    },
+    {
+      "start": 5592.8,
+      "duration": 6.359,
+      "text": "okay hid project is what we need to"
+    },
+    {
+      "start": 5595.48,
+      "duration": 6.759,
+      "text": "install so we need to install this onto"
+    },
+    {
+      "start": 5599.159,
+      "duration": 3.08,
+      "text": "the situation"
+    },
+    {
+      "start": 5602.76,
+      "duration": 3.0,
+      "text": "here"
+    },
+    {
+      "start": 5606.8,
+      "duration": 5.439,
+      "text": "libraries this is one of those search"
+    },
+    {
+      "start": 5608.88,
+      "duration": 3.359,
+      "text": "boxes that it needs to be like"
+    },
+    {
+      "start": 5620.719,
+      "duration": 4.761,
+      "text": "exact all right and then we'll add it to"
+    },
+    {
+      "start": 5623.28,
+      "duration": 5.959,
+      "text": "commit"
+    },
+    {
+      "start": 5625.48,
+      "duration": 9.0,
+      "text": "button this is going way too"
+    },
+    {
+      "start": 5629.239,
+      "duration": 5.241,
+      "text": "smoothly so I don't expect this to"
+    },
+    {
+      "start": 5634.84,
+      "duration": 6.0,
+      "text": "to work I think I'm going to unplug my"
+    },
+    {
+      "start": 5637.239,
+      "duration": 7.081,
+      "text": "keyboard so I can just plug that into"
+    },
+    {
+      "start": 5640.84,
+      "duration": 3.48,
+      "text": "my my"
+    },
+    {
+      "start": 5657.08,
+      "duration": 3.159,
+      "text": "controller I just plugged my"
+    },
+    {
+      "start": 5658.76,
+      "duration": 6.16,
+      "text": "microcontroller"
+    },
+    {
+      "start": 5660.239,
+      "duration": 4.681,
+      "text": "in and unplugg my keyboard"
+    },
+    {
+      "start": 5665.92,
+      "duration": 3.799,
+      "text": "that's it right there"
+    },
+    {
+      "start": 5692.239,
+      "duration": 8.201,
+      "text": "maybe he DH no such file directory"
+    },
+    {
+      "start": 5696.0,
+      "duration": 4.44,
+      "text": "looking for HH dependency check out our"
+    },
+    {
+      "start": 5710.84,
+      "duration": 4.24,
+      "text": "registry let's see"
+    },
+    {
+      "start": 5738.48,
+      "duration": 5.4,
+      "text": "sometimes like chat gbd is not great at"
+    },
+    {
+      "start": 5741.52,
+      "duration": 2.36,
+      "text": "this"
+    },
+    {
+      "start": 5750.44,
+      "duration": 6.199,
+      "text": "so sometimes it just does not understand"
+    },
+    {
+      "start": 5753.639,
+      "duration": 3.0,
+      "text": "e"
+    },
+    {
+      "start": 5830.56,
+      "duration": 2.639,
+      "text": "yeah this should be"
+    },
+    {
+      "start": 5842.52,
+      "duration": 4.0,
+      "text": "installed e"
+    },
+    {
+      "start": 5888.4,
+      "duration": 3.08,
+      "text": "maybe we have to install"
+    },
+    {
+      "start": 5894.52,
+      "duration": 4.4,
+      "text": "H my keyboard's unplugged hold"
+    },
+    {
+      "start": 5902.44,
+      "duration": 4.04,
+      "text": "on e"
+    },
+    {
+      "start": 5978.0,
+      "duration": 3.44,
+      "text": "can I see"
+    },
+    {
+      "start": 6052.239,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 6082.239,
+      "duration": 4.041,
+      "text": "e e"
+    },
+    {
+      "start": 6117.08,
+      "duration": 3.0,
+      "text": "h"
+    },
+    {
+      "start": 6184.56,
+      "duration": 2.84,
+      "text": "let me get rid of"
+    },
+    {
+      "start": 6192.599,
+      "duration": 4.321,
+      "text": "this and then"
+    },
+    {
+      "start": 6218.52,
+      "duration": 3.0,
+      "text": "all"
+    },
+    {
+      "start": 6263.119,
+      "duration": 2.12,
+      "text": "of"
+    },
+    {
+      "start": 6292.04,
+      "duration": 3.0,
+      "text": "course"
+    },
+    {
+      "start": 6321.96,
+      "duration": 4.0,
+      "text": "for for"
+    },
+    {
+      "start": 6377.719,
+      "duration": 3.281,
+      "text": "I don't know why he doesn't like"
+    },
+    {
+      "start": 6381.92,
+      "duration": 4.0,
+      "text": "this for"
+    },
+    {
+      "start": 6433.96,
+      "duration": 4.199,
+      "text": "it's like trying to give me chat gbg is"
+    },
+    {
+      "start": 6436.4,
+      "duration": 5.44,
+      "text": "trying to give me like a framework that"
+    },
+    {
+      "start": 6438.159,
+      "duration": 3.681,
+      "text": "doesn't actually exist"
+    },
+    {
+      "start": 6498.32,
+      "duration": 2.76,
+      "text": "all right we're going to try this if"
+    },
+    {
+      "start": 6499.32,
+      "duration": 6.44,
+      "text": "this doesn't work then I'm getting off"
+    },
+    {
+      "start": 6501.08,
+      "duration": 4.68,
+      "text": "and we'll figure it out tomorrow for"
+    },
+    {
+      "start": 6544.08,
+      "duration": 4.039,
+      "text": "hey bab I'm getting off right now"
+    }
+  ],
+  "full_text": "hello hello good morning good morning good morning good morning the saga continues of building the glowing AI commit button good morning good morning how we doing how we doing how we doing let's make sure that we're live on X and on YouTube because we have restream IO set up today so we should be live on both platforms which would be absolutely incredible all righty so our goal for today our goal for today is to figure out the base for our switch so we need to figure out the bottom part of our switch here the base that it's actually going to plug into so I don't have to hold it in my hand when we're clicking it [Music] and then once we have a base set up we're going to have to start with a uh prototype wiring diagram to wire this to a microcontroller and um from there when we have the microcontroller wired up we will be able to write some code so that the uh the switch can interface with our computer and it can tell our computer to do stuff like send a commit from GitHub and the plan is right now that we can uh we can have a um some code use in llm like Chad gbt to have the commit automatically place a meaningful message based on what kind of code we are committing I hope that makes sense so like AI will go through and look at what we're what code we're committing and uh after we press the button and it'll say hey based on that code you did this commit is you updated the user login so you won't even have to think about it all righty so let's get right to it we have to take the dimensions of these uh bottom pins and then we have to throw them on we have to throw them on the base that we're creating let's see how we can get that working I'm just going to check and make sure that the levels sound all right on the mic and then I'm not peeking on um on X because that would really suck if this whole time the mic was set up poorly oh they sound great Perfect all right cool so how are we going to to do this it looks like so the bottom pin is probably the most important I'll uh zoom in on this so this is what I'm talking about here with the uh the pins so our base is going to eventually be a PCB but for this prototype we're going to make it just a 3D print and then we'll solder wires to the connectors just so that we can get a uh a feasible prototype working but um so so since the PCB won't be holding it we'll make like a pretend PCB out of 3D print and we have to have the whole positions line up with these three pins so the middle pin is obviously just plastic and that's the biggest one and that's kind of like the one that will actually uh position the switch and then the other two are the uh Electro connections that are made when the switch actually gets pressed in like that all righty so let's check it out let's see what we can do I think did we start with the setter pin CU that seems like it's going to be the uh the easiest one to start with get out of modeling View okay and I'm going to design the base right next to the uh the top of the switch here so the base is 70 mm x 70 mm and um I want or the button is 70 mm x 70 mm and I want the top to be and I want the base that it goes into to be maybe like half a millimeter wider than that and um we're going to have to have the same it's not going to work we need to uh go from diagonal all right there's nothing that makes you feel more like you have no idea what you're doing than live streaming what you're doing all right so I'm going to leave that there and we're we're going to go 7.5 and oops what the hell why 1.5 mm by 70.5 millimet okay and then um from there hey sadra happy holidays how you doing what's going on today good morning if it's morning time there if it's not still good morning all right all right so and then the height of the base should probably be like half as short actually it's going to have to be a little bit a little bit more than and then half as short because we have to factor in the height of the switch thank you my man best of luck to you too I'm trying to cook I'm to um so meaning the height of the base has to cover the the height of the switch the bottom of the switch here and then it has to come up like halfway up the side of the button just like the side of like a uh of a keyboard case wood all right let's see how tall our uh our switches so our switch is 8 mm okay then um I think that we also make this 8 mm for now and this one we're going to print the opposite way and you know what I'm thinking that it should actually be wider it should be wider than um than 70.5 millim at least on the outside because because like I had in the photo let me see if I can grab the photo real quick yeah like I had in the photo it should be I want to try to make it look like this photo here so it should be a decent amount wider actually than 70.5 so let's go back here let's go um here and then um we're going to move this out of the way a little bit and then let's start off with 74 by 74 and then um oh why didn't that apply 74 what whatever I'm just going to delete this we'll go 74 by 74 okay that way there we have enough room for this uh border if we want to call it to stick out a bit and then um we need to come up eight with it um I want to have almost the same border radius so we'll do three because that's the Border radius we have on the uh switch three oops very beautiful and then um we will cut out the room for the actual button itself so let's add we're going to add a construction plane to the top of this right there like that and then um we'll make the body disappear for one second we'll go top view and then add Center oh we're going to have to um go here we'll do one of those click here and then uh we got to add a square in this one we are going to make 71 and a half or no we're going to make 70.5 I'm just going to leave that for now 70.5 and then we'll go to this I'm going to take this plane out we're going to go 70 oops no not that stop stop 70.5 okay nice we'll take this sketch out why is that sketch not disappearing whatever we'll delete that we'll delete that right cool all right so I think that that's way not thick enough compared to this button cuz this little section right here is going to be the outside radius where's the buy button uh I don't have the buy button yet I know that's I literally got message for that yesterday that said hey dude if you're going to if you're going to start working on this and doing stuff then you should probably set up a pre-order button now so that you know like well it's hyped up a tiny bit people can pre-order it but I'm working on the button I'm working on the button instead can somebody um Can somebody build me a landing page please I don't want to do it I don't want to do it just throw something together for me I'm honestly thinking about just grabbing something off of um or just adding a product to the desk Cup website that way there I don't have to deal with it as terrible as it sounds and then I don't have to make a separate um website but I'm just going to do it I'll make a uh like Ultra simple landing page and uh that way there it's good to go all right so I am overthinking this prototype I'm going to um I got to just do this damn it I put that on the wrong plane what we'll do is we'll just move this yeah we'll move that up like 2 millimet or actually we'll move it up 8 mm so I'm going to move this up 8 mm and then it'll be at the top and then when I bring this down it's going to like chunk out the whole deal and it's going to make the space for our button to go in there's bottom we'll leave the bottom I'm at 2 mm so it's kind of rigid we'll bring this in three radius bring this in three radius three three okay great so now we kind of have uh our our bottom for the button I still think that the outside perimeter should probably be wider but for a prototype this is going to be a great start Point all right now we got to add our switch which is not going to be easy so we'll start off with the uh the main hole for this prong right here which it looks like I wonder I don't know if that symbol is radius or diameter 3.8 we're going to find out how wide is the center prong for the Cherry MX key switch the center prong the stem of a Cherry MX switch is the part of the key cap stem connects to has which part of the stem part that the key cap stem connects to has a width of 1.3 mm I need to sign in CU it's not that's not what we're talking about it's talking about the width of um just wrong it's wrong okay how what is the diameter of the prong on the bottom of a Cherry MX switch that mounts it to the PCB saying it's 1.5 it's not I know that it's not I'm just measuring it right now uh with a cal cuz it's definitely not 1.51 2 I need to get a much better caliper all right it's it's like 3.8 this is this 3.8 is definitely the um the diameter all right so we'll go to sketch Circle and then we're going to go three point or we should go four because you generally want to make things like 2 mm uh bigger than they have have to when they have to interface like when this prong goes in there if it's the same size 3.8 then it won't actually work which be not very good and now we have to figure out these pins which that is going to be a [ __ ] pain in the ass and I'm not exactly sure how we're going to do that all right so this is looking at the side of the switch this one right here and it is saying oh this hurts my brain it's saying that it's 2.54 mm in from the end what we really want is how far away it is from the center of our pin hole there which I guess this is giving it to us right here that it's 2 .54 so one is 2.54 and then the other is 5.08 so let's start with that we'll use that so this one oops this one is 2.54 2.54 okay and then the next one is 5.08 5.08 okay awesome and so now how far to the side is it oh I think this is what it's telling me right here Jesus the schematic is insane okay so um I think that it's also 2 54 so I think we could do oh it can't be it well I think we're just going to try it 2.54 I knew that trying trying to figure out these pin positioning situation was going to be difficult so from there we can make a um rectangle not like that though diagonal rectangle like that and this should be the exact point of one of our pins on the bottom of our key switch I'm thinking is that to the middle yeah that is to the middle and the width of it is 81 so we should just make it one millimeter I'm pretty sure I'm overthinking this whole thing no don't do that okay 1 millimeter we got one of them yes Jesus Christ okay see if we can clean this up a little bit all right now we need to get the second pin we can do this All right so we know it's 5.8 over out that way we have to figure out how far this way it is now let's look I'm going to look at my caliper first so I get an idea and then I'll get the exact from the schematic after it's looking like it's five six it's like seven is there any measurement on here that's like seven there's 5.08 and then because this full distance is 13.95 oh it's 3.8 nice I think I got it so we'll go here I think this is going to work three [ __ ] what I just say 3.8 okay and then we'll grab this circle we're going to do 1 millimeter again if we can nice Jesus now I'm thinking that it's not right damn it we messed up something here so it's 5.08 out all right I got it I got it needs to be 5.0 out why and then 3 8 over yep 3.8 over good all right then 1 mm for the God damn it okay that sort of looks better I think but I also don't know so I think we're going to print a test print of this and see how close we got with these pin holes is what we're going to do and then that'll let us know right away if we got close or not and then We'll erase all this [Music] stuff and then we'll just send that to the 3D printer for now switch pin out test we'll delete that all right slice it and that's going to take seven minutes wonder if maybe we should have a raft there N I think it's going be fine we'll try it all right so we are sing that to the printer right now all right so in recap what we made is the part that actually that this switch the pin holes that the bottom of this switch will plug into and we need to know that size because eventually we'll make a PCB that the pin holes on this will will'll plug into and then we won't need wiring or anything like that so we'll just have um we'll have the switch we'll have a couple of RGB LEDs to make the translucent uh button glow we'll have some capacitors and resistors and we'll have a microprocessor to handle the um the communication to the computer all righty cool so this will start printing I just warm me up the heating bed right now and then basically if that ends up being the size that we like we will add it to we'll add it to this which is going to end up being the actual base for the button and then we'll have a base for the button and we'll be able to actually test the button on a um on a Surface which will be nice and then from there we'll have to figure out where the microprocessor is going to go and the microprocessor so it's probably going to have to be thicker than what I have here to be honest this is probably not thick enough and then also it's probably just going to have to be thicker because I don't think that these holes are going to be tall enough to accommodate the height of the pins itself all right so we have we have a lot to think about here I'm going to um we'll grab I'm going to grab a micro processor and then we'll start thinking about code and how we're going to get the code for this thing to work which chat GPT is going to help us out a lot with that let's see let's see let's see I'm not sure if we're even oh yeah we are all right so let's start talking to chat GPT here connect the mechanical keyboard switch to an ESP 32 I want it to log into my computer via builtin US BC um the ESP 32 and I would like make it to run a script when the button is pressed we're going to start with just running a script and then I'm thinking that we can possibly make a plugin for vs code and I think that cursor uses the same plugins as vs code and then we can uh use the plugin to automate the uh get commit get push for us because if we just have it run a scre grip then it's going to uh have issues with with not knowing which like directory to run the git ad. gomit DM and get push if that makes sense all righty let's see what it says here so we need to pull up or pull down resistor one leg of the GPI one leg to the GPI opit whatever we want on the esp32 and then the other leg to ground use a pullup resistor connected between gpio and 3.3 volts if the switch is configured as active low configure the esp32 as a hid device can act as a human interface device this is what I need to know this allows it to emulate a keyboard or similar device over USB use the Arduino framework or ESP IDF with the USB H wow that print already finished that was so fast all right let's grab the print and then uh we'll come right back to this let's see all right the big reveal do we think that this is going to work oh no it's not going to work at all so so the problem is is the holes that we made for the uh connector the pins you can barely see them cuz they're way too small 1 mm is way too small for that yeah so what we need to do is we need to make those pins like um at least one and 1 and a half millim maybe maybe more let me see if I can just see if that looks like it's going to line up it might I think that it does actually line up which should be a miracle all right let's make these pins bigger and then set another print this is very exciting delete that just going to make him two and then we can go smaller where did I print this last one was 2 mm two yes okay oh [ __ ] my bad all right all I did was make the uh the holes bigger on this these two holes we're going to export it again and then import it back into bamboo except for not really okay that up nice slice it and then print it I hope that's enough material in between those two that it doesn't become one Circle it is nice no all right we're printing nice nice nice all right so back to the uh code here the diameter of the prong or pin on the bottom of a chair no this is not what we need human interface device. begin initialize hid uh void Loop if digital read switch pin is equal to low keyboard. press key f13 delay 100 keyboard release all this is nice this I don't want to say anything but it seems like this could be straightforward is we're basically just making a small keyboard like a little tiny keyboard let's see what we can do this is going to be the microcontroller we're going to use CU it's tiny and it will fit good inside of this see how small that is and then there's that see so this will fit inside of this somewhere we'll hide that and then uh the USB can just kind of like the USBC we'll we'll make a like a hole for it and it'll go out the side of it somewhere we shall see let's just make sure we we do have pin four okay great and then we need to we got to grab a breadboard I'm G to grab another switch hold on I'll be right back all right so here is our breadboard I'm not actually sure if you can plug a mechanical keyboard switch into a breadboard or not it'd be nice if you could but I don't think it's going to I don't think the pins are going to be long enough yeah it doesn't look like the pin are going to be long enough which is super annoying so I think that instead of using the keyboard switch we're going to have to use a different switch all right I'll get a different switch all right so we are looking for or a small button like one of these just for now so we can write the software with whoopsies right so that is is a tiny button right there right small button that we're going to use for now just to prototype with so um we'll throw that in there we can do one of these so it's in there like that I don't know if that's going to work that might work for all right so that finished printing from the printer this is supposed to hold our uh mechanical switch so now we can test to see if this actually fits we just made see if this F on this it's looking like the center pin is a little bit off damn it we're so close too I wish I had a better way of showing this to you but for whatever reason that center pin does not line up just a tiny bit off so how are we going to go about fixing that the uh the placement of the pins is perfect but that center pin is not correct so we need to move that center pin over I think that if we just move the center pin over we might be doing good honestly like a millimeter weird very weird so then um all right so we'll move that's to the right 1 mm for now delete that luckily these print really fast okay and then we'll export STL switch pin out test version three save we'll pull open bamboo Studio again delete this add version three oh my God we don't want to print the uh the switch again export to STL version three again replace and there we are boom and we'll print it we might be closer we might be closer all right so while we got that printing we'll go back to the button situation for so what I should probably do is add uh solder these pins on there unfortunately like this that way for prototyping and all that it'll be much easier because then these pins can go right in there like that so I think that's what we're going to have to do real quick what time is it it's 6:40 we have 20 minutes that's going to be just enough time to throw these pins onto um onto it over there let's do it for all right so we're going to have no mic for this part because I don't have a mic over at my soldering station is kind of annoying can you do the mic from the no I don't think you can that would be cool if you could do the mic from from the iPhone oh I think you can oh no I might just crashed everything all right we're not going to do that right now all right we're just going to have no mic for a minute while we do the soldering of this and then I'll come back then we have a mic after that for for all right so that print finished and we got to [Music] see if it fits this time i' be surprised if we did oh my God so oh fits yeah it's perfect why wouldn't focus on that focus on this I just want to focus on it but I'm telling you right now it fits perfectly could probably make the positioning hole a tiny bit smaller but it's not really needed okay nice s like a bug cool so um from there we can make this a little bit taller maybe 1 mm taller and then we can uh print we can print the actual um we can make it 1 mm taller and we can print the actual base where is it uh body there we go nice how t this this is two need to be at least three and then we'll go to the bottom of this go three three okay cool and then um that should be perfect it's not going to be perfect now that I said that it's definitely not but we'll see so go base test V1 I'm thinking this needs to be millimeter taller I'm going to go for it that way there it actually covers some of the side of the top of the button and then we'll go to Bamboo bring up the printer prepare get rid of that we'll add base B1 slice this it's going to be 30 minutes we'll send it cool cool cool cool cool all while that's printing we'll go back to our software and hardware setup for so this button does not want to stay in there good at all it's really annoying all right that seems better I grab some wires I'll be right back for so me thinks there's four prongs on this button here I think that I have to use the bottom in the top but we are going to find out and then I'm going to use pin four and ground on this but I need to figure out oh no I covered up the pin I covered up the labels for the pins on this so let's see for is 1 2 three four five 6 or one two three four from the back four from the back okay two three four all right and then we got to go to ground with the other side of the button all right so that is our prototype board there we have the button clicky clicky and then we have our board could be promising so we need to write some software to this and check to see if we are set up right so let's go into we're going to pull up vs code so I don't know why it's not at my tray for all right I'm opening up desab Alpha so I can grab the specs for how to set up this board and basically we are in platform IO right now which is is going to be how we communicate with with our board and then we have to find the ESP 32 dev kit right here all right and then we can pull open main I'm just going to see if we can get this set up quick and then I'm going to turn the stream off because I gotta let my dogs out oops we're going to see if key F would work keyboard press F okay hid project is what we need to install so we need to install this onto the situation here libraries this is one of those search boxes that it needs to be like exact all right and then we'll add it to commit button this is going way too smoothly so I don't expect this to to work I think I'm going to unplug my keyboard so I can just plug that into my my controller I just plugged my microcontroller in and unplugg my keyboard that's it right there maybe he DH no such file directory looking for HH dependency check out our registry let's see sometimes like chat gbd is not great at this so sometimes it just does not understand e yeah this should be installed e maybe we have to install H my keyboard's unplugged hold on e can I see for e e h let me get rid of this and then all of course for for I don't know why he doesn't like this for it's like trying to give me chat gbg is trying to give me like a framework that doesn't actually exist all right we're going to try this if this doesn't work then I'm getting off and we'll figure it out tomorrow for hey bab I'm getting off right now"
+}

@@ -1,0 +1,3825 @@
+{
+  "video_id": "ngsiNEHbIr0",
+  "title": "Building a Glowing Ai GitHub Commit Button",
+  "url": "https://www.youtube.com/watch?v=ngsiNEHbIr0",
+  "published_at": "2025-01-01T00:03:33Z",
+  "duration": "01:21:10",
+  "day_number": null,
+  "caption_language": "en",
+  "caption_kind": "auto-generated",
+  "segment_count": 762,
+  "word_count": 4387,
+  "segments": [
+    {
+      "start": 6.48,
+      "duration": 8.399,
+      "text": "appreciate good morning good"
+    },
+    {
+      "start": 10.24,
+      "duration": 8.48,
+      "text": "morning good morning it's Max it's Max"
+    },
+    {
+      "start": 14.879,
+      "duration": 3.841,
+      "text": "vers button and I will not give"
+    },
+    {
+      "start": 18.84,
+      "duration": 3.56,
+      "text": "in let's"
+    },
+    {
+      "start": 22.48,
+      "duration": 3.84,
+      "text": "go good morning good"
+    },
+    {
+      "start": 28.56,
+      "duration": 4.679,
+      "text": "morning we got to get our tweet"
+    },
+    {
+      "start": 31.079,
+      "duration": 4.32,
+      "text": "out we got to let the people know what"
+    },
+    {
+      "start": 33.239,
+      "duration": 2.16,
+      "text": "we're"
+    },
+    {
+      "start": 38.92,
+      "duration": 5.6,
+      "text": "doing come on let's go there"
+    },
+    {
+      "start": 62.44,
+      "duration": 4.2,
+      "text": "all right people come on come on"
+    },
+    {
+      "start": 67.04,
+      "duration": 5.36,
+      "text": "now let's pull up the uh to-do list here"
+    },
+    {
+      "start": 69.759,
+      "duration": 5.801,
+      "text": "let's get smart let's get educated about"
+    },
+    {
+      "start": 72.4,
+      "duration": 6.32,
+      "text": "it I get the coffee"
+    },
+    {
+      "start": 75.56,
+      "duration": 3.16,
+      "text": "going my"
+    },
+    {
+      "start": 79.88,
+      "duration": 4.559,
+      "text": "veins all right let's get the status"
+    },
+    {
+      "start": 82.0,
+      "duration": 2.439,
+      "text": "update"
+    },
+    {
+      "start": 86.04,
+      "duration": 5.88,
+      "text": "first"
+    },
+    {
+      "start": 88.36,
+      "duration": 3.56,
+      "text": "okay o"
+    },
+    {
+      "start": 100.92,
+      "duration": 3.0,
+      "text": "o"
+    },
+    {
+      "start": 106.0,
+      "duration": 3.799,
+      "text": "o it just make it just makes you want to"
+    },
+    {
+      "start": 108.719,
+      "duration": 5.08,
+      "text": "press"
+    },
+    {
+      "start": 109.799,
+      "duration": 4.0,
+      "text": "it look at it look at"
+    },
+    {
+      "start": 114.119,
+      "duration": 3.441,
+      "text": "it makes you want to press this bad boy"
+    },
+    {
+      "start": 116.759,
+      "duration": 4.801,
+      "text": "doesn't"
+    },
+    {
+      "start": 117.56,
+      "duration": 4.0,
+      "text": "it Jesus"
+    },
+    {
+      "start": 128.759,
+      "duration": 4.601,
+      "text": "oh"
+    },
+    {
+      "start": 130.28,
+      "duration": 5.52,
+      "text": "wow so the issue we have right now okay"
+    },
+    {
+      "start": 133.36,
+      "duration": 7.159,
+      "text": "and then this is uh priority Numero"
+    },
+    {
+      "start": 135.8,
+      "duration": 8.2,
+      "text": "Uno on our to-do list here is that um we"
+    },
+    {
+      "start": 140.519,
+      "duration": 7.921,
+      "text": "need to make the actual green button"
+    },
+    {
+      "start": 144.0,
+      "duration": 5.959,
+      "text": "part a tiny bit a tiny bit smaller there"
+    },
+    {
+      "start": 148.44,
+      "duration": 5.04,
+      "text": "Christian thank you so much brother that"
+    },
+    {
+      "start": 149.959,
+      "duration": 6.601,
+      "text": "means the absolute world to me"
+    },
+    {
+      "start": 153.48,
+      "duration": 7.52,
+      "text": "yes so the button we have to make a tiny"
+    },
+    {
+      "start": 156.56,
+      "duration": 7.2,
+      "text": "bit smaller because it is uh it if you"
+    },
+    {
+      "start": 161.0,
+      "duration": 6.08,
+      "text": "don't hit it top dead center it will hit"
+    },
+    {
+      "start": 163.76,
+      "duration": 5.88,
+      "text": "the uh the the base the key cap will hit"
+    },
+    {
+      "start": 167.08,
+      "duration": 4.159,
+      "text": "the base okay which um which we"
+    },
+    {
+      "start": 169.64,
+      "duration": 4.239,
+      "text": "obviously don't want happening we want a"
+    },
+    {
+      "start": 171.239,
+      "duration": 5.28,
+      "text": "really nice clean key press that way"
+    },
+    {
+      "start": 173.879,
+      "duration": 4.841,
+      "text": "there there's no weird sounds of the uh"
+    },
+    {
+      "start": 176.519,
+      "duration": 5.321,
+      "text": "of the 3D print hitting the um the"
+    },
+    {
+      "start": 178.72,
+      "duration": 3.12,
+      "text": "outside of it"
+    },
+    {
+      "start": 182.64,
+      "duration": 2.519,
+      "text": "all right"
+    },
+    {
+      "start": 187.0,
+      "duration": 4.519,
+      "text": "people let's get it going let's get it"
+    },
+    {
+      "start": 192.36,
+      "duration": 6.4,
+      "text": "rolling joining for people just"
+    },
+    {
+      "start": 196.76,
+      "duration": 6.759,
+      "text": "joining here's where we're at with the"
+    },
+    {
+      "start": 198.76,
+      "duration": 6.52,
+      "text": "button all right I think it's looking"
+    },
+    {
+      "start": 203.519,
+      "duration": 3.681,
+      "text": "unbelievable it's it's the most"
+    },
+    {
+      "start": 205.28,
+      "duration": 4.08,
+      "text": "clickable thing I've ever seen like when"
+    },
+    {
+      "start": 207.2,
+      "duration": 5.0,
+      "text": "you see it on the desk you instantly"
+    },
+    {
+      "start": 209.36,
+      "duration": 2.84,
+      "text": "just want to click"
+    },
+    {
+      "start": 212.92,
+      "duration": 8.12,
+      "text": "it so um yeah all right to-do list is"
+    },
+    {
+      "start": 218.879,
+      "duration": 5.601,
+      "text": "uh"
+    },
+    {
+      "start": 221.04,
+      "duration": 8.119,
+      "text": "make key cap tiny bit"
+    },
+    {
+      "start": 224.48,
+      "duration": 7.8,
+      "text": "smaller half a millimeter you C smaller"
+    },
+    {
+      "start": 229.159,
+      "duration": 6.121,
+      "text": "half millimeter and then um we have"
+    },
+    {
+      "start": 232.28,
+      "duration": 8.92,
+      "text": "to it's not going to be"
+    },
+    {
+      "start": 235.28,
+      "duration": 5.92,
+      "text": "easy we have to draw schematic"
+    },
+    {
+      "start": 241.84,
+      "duration": 2.88,
+      "text": "for"
+    },
+    {
+      "start": 246.12,
+      "duration": 3.28,
+      "text": "PCB G to"
+    },
+    {
+      "start": 249.599,
+      "duration": 3.56,
+      "text": "be got me a little"
+    },
+    {
+      "start": 255.04,
+      "duration": 3.4,
+      "text": "top we can do"
+    },
+    {
+      "start": 259.4,
+      "duration": 3.959,
+      "text": "it we can do"
+    },
+    {
+      "start": 265.0,
+      "duration": 5.08,
+      "text": "it all right let's get this key cap"
+    },
+    {
+      "start": 267.32,
+      "duration": 6.76,
+      "text": "smaller"
+    },
+    {
+      "start": 270.08,
+      "duration": 6.88,
+      "text": "Morpheus is here yes"
+    },
+    {
+      "start": 274.08,
+      "duration": 5.119,
+      "text": "baby good morning Morpheus how are you"
+    },
+    {
+      "start": 276.96,
+      "duration": 2.239,
+      "text": "doing"
+    },
+    {
+      "start": 280.72,
+      "duration": 5.44,
+      "text": "today are we waking up from the Matrix"
+    },
+    {
+      "start": 283.759,
+      "duration": 2.401,
+      "text": "wake up"
+    },
+    {
+      "start": 294.759,
+      "duration": 6.16,
+      "text": "Neil here's our new key key uh stems"
+    },
+    {
+      "start": 301.44,
+      "duration": 2.72,
+      "text": "revolutionary"
+    },
+    {
+      "start": 311.44,
+      "duration": 4.96,
+      "text": "design yes you are bless"
+    },
+    {
+      "start": 314.08,
+      "duration": 4.52,
+      "text": "sir yes you are we're all blessed to be"
+    },
+    {
+      "start": 316.4,
+      "duration": 2.2,
+      "text": "doing"
+    },
+    {
+      "start": 320.759,
+      "duration": 6.521,
+      "text": "it I think you should add text commit I"
+    },
+    {
+      "start": 323.68,
+      "duration": 3.6,
+      "text": "think I should too"
+    },
+    {
+      "start": 330.16,
+      "duration": 6.36,
+      "text": "I think I gotta add your name to it"
+    },
+    {
+      "start": 334.199,
+      "duration": 3.56,
+      "text": "right I got to add your name and I got"
+    },
+    {
+      "start": 336.52,
+      "duration": 5.08,
+      "text": "to"
+    },
+    {
+      "start": 337.759,
+      "duration": 3.841,
+      "text": "say I gotta say push"
+    },
+    {
+      "start": 343.88,
+      "duration": 5.12,
+      "text": "it I think that's a great idea good"
+    },
+    {
+      "start": 346.24,
+      "duration": 2.76,
+      "text": "morning how you doing"
+    },
+    {
+      "start": 350.6,
+      "duration": 4.8,
+      "text": "today all right so um"
+    },
+    {
+      "start": 360.96,
+      "duration": 6.799,
+      "text": "come on"
+    },
+    {
+      "start": 363.36,
+      "duration": 4.399,
+      "text": "bro little bit bigger"
+    },
+    {
+      "start": 374.5,
+      "duration": 3.18,
+      "text": "[Music]"
+    },
+    {
+      "start": 401.12,
+      "duration": 2.84,
+      "text": "oh I'm so shot"
+    },
+    {
+      "start": 408.52,
+      "duration": 6.32,
+      "text": "today go Max go wait Floren real quick I"
+    },
+    {
+      "start": 412.84,
+      "duration": 6.6,
+      "text": "got to give you the uh I got to give you"
+    },
+    {
+      "start": 414.84,
+      "duration": 4.6,
+      "text": "I got to show you what's up with this"
+    },
+    {
+      "start": 422.319,
+      "duration": 3.16,
+      "text": "I gotta show you this real quick"
+    },
+    {
+      "start": 427.919,
+      "duration": 3.0,
+      "text": "foren"
+    },
+    {
+      "start": 432.4,
+      "duration": 3.56,
+      "text": "oh look at"
+    },
+    {
+      "start": 436.599,
+      "duration": 4.16,
+      "text": "it look at this bad boy"
+    },
+    {
+      "start": 442.84,
+      "duration": 5.079,
+      "text": "go yes yes"
+    },
+    {
+      "start": 455.96,
+      "duration": 5.04,
+      "text": "it's pretty"
+    },
+    {
+      "start": 457.039,
+      "duration": 3.961,
+      "text": "good it's pretty good"
+    },
+    {
+      "start": 462.919,
+      "duration": 6.361,
+      "text": "right that's the that's the big ass"
+    },
+    {
+      "start": 465.12,
+      "duration": 4.16,
+      "text": "green button yes it"
+    },
+    {
+      "start": 469.479,
+      "duration": 5.0,
+      "text": "is Makoto thank you good morning good"
+    },
+    {
+      "start": 472.199,
+      "duration": 4.641,
+      "text": "morning all right I got to keep"
+    },
+    {
+      "start": 474.479,
+      "duration": 4.4,
+      "text": "going uh yeah so we're going to add"
+    },
+    {
+      "start": 476.84,
+      "duration": 5.319,
+      "text": "we're going to add LEDs to it so it will"
+    },
+    {
+      "start": 478.879,
+      "duration": 5.16,
+      "text": "glow the uh the inside of the button is"
+    },
+    {
+      "start": 482.159,
+      "duration": 5.201,
+      "text": "going to be filled with LEDs we're going"
+    },
+    {
+      "start": 484.039,
+      "duration": 4.44,
+      "text": "to make a custom PCB and uh it'll it'll"
+    },
+    {
+      "start": 487.36,
+      "duration": 5.08,
+      "text": "have"
+    },
+    {
+      "start": 488.479,
+      "duration": 3.961,
+      "text": "backlight and it's going to look"
+    },
+    {
+      "start": 495.44,
+      "duration": 5.56,
+      "text": "sick right now we are making the um"
+    },
+    {
+      "start": 510.8,
+      "duration": 5.0,
+      "text": "oh my God I just made the button bigger"
+    },
+    {
+      "start": 512.24,
+      "duration": 3.56,
+      "text": "too I'm I'm so shot"
+    },
+    {
+      "start": 518.56,
+      "duration": 3.2,
+      "text": "today damn"
+    },
+    {
+      "start": 527.64,
+      "duration": 5.08,
+      "text": "it we're making the button a little bit"
+    },
+    {
+      "start": 530.399,
+      "duration": 5.321,
+      "text": "smaller it's tiny bit too big in the"
+    },
+    {
+      "start": 532.72,
+      "duration": 3.0,
+      "text": "closure"
+    },
+    {
+      "start": 568.16,
+      "duration": 4.919,
+      "text": "no all right that's going to be"
+    },
+    {
+      "start": 570.56,
+      "duration": 4.88,
+      "text": "perfect can't wait for it super cool"
+    },
+    {
+      "start": 573.079,
+      "duration": 4.721,
+      "text": "custom purple version yes we need the"
+    },
+    {
+      "start": 575.44,
+      "duration": 2.36,
+      "text": "purple"
+    },
+    {
+      "start": 577.959,
+      "duration": 6.201,
+      "text": "version of course of course of course go"
+    },
+    {
+      "start": 580.64,
+      "duration": 3.52,
+      "text": "to the desk hub"
+    },
+    {
+      "start": 611.0,
+      "duration": 4.24,
+      "text": "look at how big this little project has"
+    },
+    {
+      "start": 612.64,
+      "duration": 2.6,
+      "text": "gotten by the"
+    },
+    {
+      "start": 616.12,
+      "duration": 6.719,
+      "text": "way please someone tell me I'm I'm"
+    },
+    {
+      "start": 620.519,
+      "duration": 4.721,
+      "text": "insane thank you thank you good morning"
+    },
+    {
+      "start": 622.839,
+      "duration": 4.321,
+      "text": "have a great day today you're you're a"
+    },
+    {
+      "start": 625.24,
+      "duration": 6.08,
+      "text": "legend your desk cup will be there soon"
+    },
+    {
+      "start": 627.16,
+      "duration": 4.16,
+      "text": "I'll share the uh tracking with you"
+    },
+    {
+      "start": 634.0,
+      "duration": 3.399,
+      "text": "Jesus Christ"
+    },
+    {
+      "start": 642.12,
+      "duration": 7.12,
+      "text": "okay version 11 of the"
+    },
+    {
+      "start": 646.24,
+      "duration": 3.0,
+      "text": "keycap"
+    },
+    {
+      "start": 650.6,
+      "duration": 6.0,
+      "text": "wow I have to volunteer with the"
+    },
+    {
+      "start": 652.68,
+      "duration": 7.68,
+      "text": "marketing face red smiling to face red"
+    },
+    {
+      "start": 656.6,
+      "duration": 6.08,
+      "text": "smiling live"
+    },
+    {
+      "start": 660.36,
+      "duration": 4.32,
+      "text": "I have to volunteer with the"
+    },
+    {
+      "start": 662.68,
+      "duration": 3.36,
+      "text": "marketing all right volunteer with"
+    },
+    {
+      "start": 664.68,
+      "duration": 4.48,
+      "text": "marketing let's get"
+    },
+    {
+      "start": 666.04,
+      "duration": 3.12,
+      "text": "involved come"
+    },
+    {
+      "start": 670.56,
+      "duration": 8.399,
+      "text": "on do you have um about 8,000 followers"
+    },
+    {
+      "start": 674.639,
+      "duration": 4.32,
+      "text": "on Tik Tok cuz that's what we need right"
+    },
+    {
+      "start": 686.88,
+      "duration": 4.0,
+      "text": "now again"
+    },
+    {
+      "start": 706.0,
+      "duration": 6.2,
+      "text": "have you arrived in the name yet or will"
+    },
+    {
+      "start": 707.8,
+      "duration": 8.279,
+      "text": "it be a surprise I have the file name as"
+    },
+    {
+      "start": 712.2,
+      "duration": 7.16,
+      "text": "click it but I don't like it I have not"
+    },
+    {
+      "start": 716.079,
+      "duration": 4.88,
+      "text": "come up with the name yet"
+    },
+    {
+      "start": 719.36,
+      "duration": 3.76,
+      "text": "what is your uh what's your favorite of"
+    },
+    {
+      "start": 720.959,
+      "duration": 5.161,
+      "text": "the names so"
+    },
+    {
+      "start": 723.12,
+      "duration": 6.24,
+      "text": "far happy New Year happy New Year Jacob"
+    },
+    {
+      "start": 726.12,
+      "duration": 6.6,
+      "text": "how you doing today good"
+    },
+    {
+      "start": 729.36,
+      "duration": 3.36,
+      "text": "morning what's your"
+    },
+    {
+      "start": 737.6,
+      "duration": 3.679,
+      "text": "resolution everyone in here what's your"
+    },
+    {
+      "start": 739.56,
+      "duration": 5.16,
+      "text": "New Year's resolution right now come on"
+    },
+    {
+      "start": 741.279,
+      "duration": 3.441,
+      "text": "I got to hear it"
+    },
+    {
+      "start": 776.959,
+      "duration": 4.161,
+      "text": "you are with me"
+    },
+    {
+      "start": 793.279,
+      "duration": 3.0,
+      "text": "I need to put some"
+    },
+    {
+      "start": 802.56,
+      "duration": 3.92,
+      "text": "uh I wish you best of luck inspiring to"
+    },
+    {
+      "start": 805.04,
+      "duration": 3.64,
+      "text": "see you build the physical products"
+    },
+    {
+      "start": 806.48,
+      "duration": 3.359,
+      "text": "thank you so much I think I think Nobody"
+    },
+    {
+      "start": 808.68,
+      "duration": 4.519,
+      "text": "Does it"
+    },
+    {
+      "start": 809.839,
+      "duration": 3.36,
+      "text": "because they're"
+    },
+    {
+      "start": 813.48,
+      "duration": 3.599,
+      "text": "smart because they're not"
+    },
+    {
+      "start": 817.399,
+      "duration": 5.401,
+      "text": "insane it uh it'll make you go crazy"
+    },
+    {
+      "start": 820.399,
+      "duration": 5.281,
+      "text": "designing physical"
+    },
+    {
+      "start": 822.8,
+      "duration": 4.64,
+      "text": "stuff I guess there's twice as many bugs"
+    },
+    {
+      "start": 825.68,
+      "duration": 4.68,
+      "text": "right you have software bugs and"
+    },
+    {
+      "start": 827.44,
+      "duration": 2.92,
+      "text": "Hardware bugs"
+    },
+    {
+      "start": 835.16,
+      "duration": 4.479,
+      "text": "now you can just name things go into"
+    },
+    {
+      "start": 837.48,
+      "duration": 4.56,
+      "text": "dead if you have to"
+    },
+    {
+      "start": 839.639,
+      "duration": 5.361,
+      "text": "you can just name things what if we have"
+    },
+    {
+      "start": 842.04,
+      "duration": 5.64,
+      "text": "multiple names for it if I just throw"
+    },
+    {
+      "start": 845.0,
+      "duration": 2.68,
+      "text": "together a couple"
+    },
+    {
+      "start": 849.6,
+      "duration": 5.039,
+      "text": "websites is it really that painful to"
+    },
+    {
+      "start": 851.839,
+      "duration": 4.881,
+      "text": "build it damn uh did you see did you see"
+    },
+    {
+      "start": 854.639,
+      "duration": 4.601,
+      "text": "my file list hold on I'll show you how"
+    },
+    {
+      "start": 856.72,
+      "duration": 2.52,
+      "text": "painful it"
+    },
+    {
+      "start": 862.519,
+      "duration": 5.721,
+      "text": "is I will show you right now how painful"
+    },
+    {
+      "start": 865.079,
+      "duration": 3.161,
+      "text": "it is"
+    },
+    {
+      "start": 874.8,
+      "duration": 3.039,
+      "text": "this is how painful it is"
+    },
+    {
+      "start": 879.36,
+      "duration": 5.0,
+      "text": "brother remember these are all designs"
+    },
+    {
+      "start": 882.16,
+      "duration": 2.2,
+      "text": "all"
+    },
+    {
+      "start": 884.399,
+      "duration": 5.761,
+      "text": "right these are all designs and then not"
+    },
+    {
+      "start": 888.04,
+      "duration": 3.84,
+      "text": "only did I design them but I printed"
+    },
+    {
+      "start": 890.16,
+      "duration": 4.56,
+      "text": "them and they didn't"
+    },
+    {
+      "start": 891.88,
+      "duration": 5.759,
+      "text": "work and then I redesigned it and then I"
+    },
+    {
+      "start": 894.72,
+      "duration": 5.0,
+      "text": "printed it and then it didn't"
+    },
+    {
+      "start": 897.639,
+      "duration": 3.0,
+      "text": "work right and we're we're just talking"
+    },
+    {
+      "start": 899.72,
+      "duration": 3.479,
+      "text": "about a"
+    },
+    {
+      "start": 900.639,
+      "duration": 5.041,
+      "text": "button just a button here"
+    },
+    {
+      "start": 903.199,
+      "duration": 6.361,
+      "text": "guys"
+    },
+    {
+      "start": 905.68,
+      "duration": 8.2,
+      "text": "okay we're not talking"
+    },
+    {
+      "start": 909.56,
+      "duration": 4.32,
+      "text": "about catching a rocket with"
+    },
+    {
+      "start": 914.279,
+      "duration": 3.321,
+      "text": "chopsticks this a"
+    },
+    {
+      "start": 922.759,
+      "duration": 6.52,
+      "text": "button but I love"
+    },
+    {
+      "start": 924.959,
+      "duration": 4.32,
+      "text": "it I love it"
+    },
+    {
+      "start": 929.36,
+      "duration": 6.76,
+      "text": "lot of iterations yes all right New Year"
+    },
+    {
+      "start": 933.319,
+      "duration": 5.041,
+      "text": "resolution ship my very first product"
+    },
+    {
+      "start": 936.12,
+      "duration": 4.159,
+      "text": "ship"
+    },
+    {
+      "start": 938.36,
+      "duration": 5.44,
+      "text": "fast"
+    },
+    {
+      "start": 940.279,
+      "duration": 5.8,
+      "text": "yes let's get a button on your desk and"
+    },
+    {
+      "start": 943.8,
+      "duration": 4.76,
+      "text": "I want to see you"
+    },
+    {
+      "start": 946.079,
+      "duration": 4.921,
+      "text": "2025 when the product when the the"
+    },
+    {
+      "start": 948.56,
+      "duration": 5.839,
+      "text": "Project's all"
+    },
+    {
+      "start": 951.0,
+      "duration": 6.399,
+      "text": "done slam the button send it into"
+    },
+    {
+      "start": 954.399,
+      "duration": 7.201,
+      "text": "production make your first"
+    },
+    {
+      "start": 957.399,
+      "duration": 7.841,
+      "text": "sale get some r r going big"
+    },
+    {
+      "start": 961.6,
+      "duration": 3.64,
+      "text": "money all right"
+    },
+    {
+      "start": 965.759,
+      "duration": 5.961,
+      "text": "um so this is the scariest part of the"
+    },
+    {
+      "start": 969.12,
+      "duration": 4.32,
+      "text": "whole the whole ordeal here this is a"
+    },
+    {
+      "start": 971.72,
+      "duration": 4.64,
+      "text": "schematic editor right this is where"
+    },
+    {
+      "start": 973.44,
+      "duration": 2.92,
+      "text": "we're going to draw"
+    },
+    {
+      "start": 976.92,
+      "duration": 4.68,
+      "text": "up this is where we're going to draw up"
+    },
+    {
+      "start": 979.24,
+      "duration": 4.159,
+      "text": "the schematic"
+    },
+    {
+      "start": 981.6,
+      "duration": 7.56,
+      "text": "for the"
+    },
+    {
+      "start": 983.399,
+      "duration": 5.761,
+      "text": "PCB you know which is really"
+    },
+    {
+      "start": 989.959,
+      "duration": 2.401,
+      "text": "really"
+    },
+    {
+      "start": 997.6,
+      "duration": 3.76,
+      "text": "something no"
+    },
+    {
+      "start": 1009.8,
+      "duration": 5.039,
+      "text": "no I think we start with our pins"
+    },
+    {
+      "start": 1027.959,
+      "duration": 4.441,
+      "text": "and we grab some"
+    },
+    {
+      "start": 1029.959,
+      "duration": 5.36,
+      "text": "uh how many pins are there in our micr"
+    },
+    {
+      "start": 1032.4,
+      "duration": 4.799,
+      "text": "controller I build iOS apps I guess the"
+    },
+    {
+      "start": 1035.319,
+      "duration": 4.201,
+      "text": "button won't work with pushing to App"
+    },
+    {
+      "start": 1037.199,
+      "duration": 3.76,
+      "text": "Store connect right absolutely it'll"
+    },
+    {
+      "start": 1039.52,
+      "duration": 5.0,
+      "text": "work with it so I'm putting a"
+    },
+    {
+      "start": 1040.959,
+      "duration": 5.441,
+      "text": "microcontroller in it and uh and you're"
+    },
+    {
+      "start": 1044.52,
+      "duration": 4.08,
+      "text": "going to have a small dashboard similar"
+    },
+    {
+      "start": 1046.4,
+      "duration": 5.92,
+      "text": "to how desk deskhub has a dashboard to"
+    },
+    {
+      "start": 1048.6,
+      "duration": 6.36,
+      "text": "set up up so um we can"
+    },
+    {
+      "start": 1052.32,
+      "duration": 4.84,
+      "text": "actually a the button will connect to"
+    },
+    {
+      "start": 1054.96,
+      "duration": 4.959,
+      "text": "Wi-Fi um and it'll be able to receive"
+    },
+    {
+      "start": 1057.16,
+      "duration": 5.32,
+      "text": "software updates but um we'll actually"
+    },
+    {
+      "start": 1059.919,
+      "duration": 4.561,
+      "text": "be able to tell the button uh whatever"
+    },
+    {
+      "start": 1062.48,
+      "duration": 3.68,
+      "text": "we want it to do I mean you could hook"
+    },
+    {
+      "start": 1064.48,
+      "duration": 5.68,
+      "text": "it up to Philips Hue and have it turn"
+    },
+    {
+      "start": 1066.16,
+      "duration": 7.08,
+      "text": "your lights on and off if you want to"
+    },
+    {
+      "start": 1070.16,
+      "duration": 5.6,
+      "text": "uh what whatever you can think of doing"
+    },
+    {
+      "start": 1073.24,
+      "duration": 6.16,
+      "text": "to your computer you're going to be able"
+    },
+    {
+      "start": 1075.76,
+      "duration": 3.64,
+      "text": "to have the button do"
+    },
+    {
+      "start": 1083.919,
+      "duration": 3.12,
+      "text": "how many pses"
+    },
+    {
+      "start": 1093.36,
+      "duration": 8.48,
+      "text": "have it's got nine"
+    },
+    {
+      "start": 1096.96,
+      "duration": 4.88,
+      "text": "pins so we need a one by n"
+    },
+    {
+      "start": 1126.799,
+      "duration": 3.88,
+      "text": "we need two of them CU there's two rows"
+    },
+    {
+      "start": 1128.52,
+      "duration": 2.159,
+      "text": "of"
+    },
+    {
+      "start": 1136.32,
+      "duration": 4.16,
+      "text": "pins come on"
+    },
+    {
+      "start": 1161.24,
+      "duration": 4.52,
+      "text": "okay it sounds cool to be able to"
+    },
+    {
+      "start": 1162.96,
+      "duration": 5.76,
+      "text": "implement on top of the button to create"
+    },
+    {
+      "start": 1165.76,
+      "duration": 4.64,
+      "text": "something my own absolutely and that's"
+    },
+    {
+      "start": 1168.72,
+      "duration": 4.6,
+      "text": "that's how I build all of my stuff like"
+    },
+    {
+      "start": 1170.4,
+      "duration": 5.08,
+      "text": "desk Cub has the API feature so that you"
+    },
+    {
+      "start": 1173.32,
+      "duration": 5.2,
+      "text": "can uh you can grab whatever you want on"
+    },
+    {
+      "start": 1175.48,
+      "duration": 3.04,
+      "text": "the desk Cub you"
+    },
+    {
+      "start": 1181.4,
+      "duration": 4.72,
+      "text": "know I like building Hardware that uh"
+    },
+    {
+      "start": 1184.32,
+      "duration": 3.719,
+      "text": "you have full control over and you're"
+    },
+    {
+      "start": 1186.12,
+      "duration": 3.96,
+      "text": "not locked"
+    },
+    {
+      "start": 1188.039,
+      "duration": 5.041,
+      "text": "into the"
+    },
+    {
+      "start": 1190.08,
+      "duration": 6.28,
+      "text": "Matrix I don't"
+    },
+    {
+      "start": 1193.08,
+      "duration": 6.079,
+      "text": "know all right what we need to know"
+    },
+    {
+      "start": 1196.36,
+      "duration": 4.679,
+      "text": "is we got to we got to get chat gbt"
+    },
+    {
+      "start": 1199.159,
+      "duration": 6.64,
+      "text": "involved here because we need to"
+    },
+    {
+      "start": 1201.039,
+      "duration": 4.76,
+      "text": "know and I'm all out of credit"
+    },
+    {
+      "start": 1206.12,
+      "duration": 8.72,
+      "text": "on on 01 the good chat GPT that's not"
+    },
+    {
+      "start": 1211.96,
+      "duration": 5.04,
+      "text": "good extensibility is a great quality"
+    },
+    {
+      "start": 1214.84,
+      "duration": 4.719,
+      "text": "yes it is yes it"
+    },
+    {
+      "start": 1217.0,
+      "duration": 4.88,
+      "text": "is I think the Indie hacking Community"
+    },
+    {
+      "start": 1219.559,
+      "duration": 3.801,
+      "text": "appreciates that because um we're all"
+    },
+    {
+      "start": 1221.88,
+      "duration": 5.6,
+      "text": "Builders and we don't want to buy"
+    },
+    {
+      "start": 1223.36,
+      "duration": 8.439,
+      "text": "something that we can't mess"
+    },
+    {
+      "start": 1227.48,
+      "duration": 4.319,
+      "text": "with okay okay"
+    },
+    {
+      "start": 1278.36,
+      "duration": 5.0,
+      "text": "God that sucks why do we have to make"
+    },
+    {
+      "start": 1280.36,
+      "duration": 3.0,
+      "text": "everything"
+    },
+    {
+      "start": 1291.84,
+      "duration": 5.16,
+      "text": "that's just how it"
+    },
+    {
+      "start": 1293.08,
+      "duration": 6.24,
+      "text": "goes you look like Tony Stark Elon must"
+    },
+    {
+      "start": 1297.0,
+      "duration": 6.0,
+      "text": "designing this those electric stuff so"
+    },
+    {
+      "start": 1299.32,
+      "duration": 6.52,
+      "text": "much cooler than design ux coding Jacob"
+    },
+    {
+      "start": 1303.0,
+      "duration": 4.159,
+      "text": "that that makes my whole day all right"
+    },
+    {
+      "start": 1305.84,
+      "duration": 3.36,
+      "text": "I'm going to go to work today and think"
+    },
+    {
+      "start": 1307.159,
+      "duration": 5.801,
+      "text": "about that comment all"
+    },
+    {
+      "start": 1309.2,
+      "duration": 6.92,
+      "text": "day let's grab let's grab a screenshot"
+    },
+    {
+      "start": 1312.96,
+      "duration": 6.92,
+      "text": "I'm grabbing a screenshot of that right"
+    },
+    {
+      "start": 1316.12,
+      "duration": 7.32,
+      "text": "there you're incredible comment 2024 on"
+    },
+    {
+      "start": 1319.88,
+      "duration": 3.56,
+      "text": "the last day"
+    },
+    {
+      "start": 1356.36,
+      "duration": 7.6,
+      "text": "God the the non-pa chat gbt is not good"
+    },
+    {
+      "start": 1361.64,
+      "duration": 2.32,
+      "text": "it"
+    },
+    {
+      "start": 1364.159,
+      "duration": 4.88,
+      "text": "it messes me up more times than it"
+    },
+    {
+      "start": 1373.279,
+      "duration": 9.0,
+      "text": "helps also they make this uh they make"
+    },
+    {
+      "start": 1378.76,
+      "duration": 7.6,
+      "text": "this software difficult on purpose I"
+    },
+    {
+      "start": 1382.279,
+      "duration": 4.081,
+      "text": "don't know why but they do"
+    },
+    {
+      "start": 1414.12,
+      "duration": 3.679,
+      "text": "they think it's awesome they think it's"
+    },
+    {
+      "start": 1429.0,
+      "duration": 4.799,
+      "text": "funny all right so we are going from"
+    },
+    {
+      "start": 1434.36,
+      "duration": 5.16,
+      "text": "uh gpio Port 4"
+    },
+    {
+      "start": 1442.919,
+      "duration": 6.081,
+      "text": "to"
+    },
+    {
+      "start": 1444.919,
+      "duration": 7.921,
+      "text": "ground and the hilarious thing about GPI"
+    },
+    {
+      "start": 1449.0,
+      "duration": 3.84,
+      "text": "Port 4 is it's on pin number"
+    },
+    {
+      "start": 1454.88,
+      "duration": 4.72,
+      "text": "seven one day when I start designing"
+    },
+    {
+      "start": 1457.72,
+      "duration": 5.52,
+      "text": "real"
+    },
+    {
+      "start": 1459.6,
+      "duration": 5.679,
+      "text": "stuff not that a button isn't real"
+    },
+    {
+      "start": 1463.24,
+      "duration": 3.88,
+      "text": "stuff I'm just going to make [ __ ] that"
+    },
+    {
+      "start": 1465.279,
+      "duration": 4.28,
+      "text": "makes"
+    },
+    {
+      "start": 1467.12,
+      "duration": 5.799,
+      "text": "sense why are we"
+    },
+    {
+      "start": 1469.559,
+      "duration": 3.36,
+      "text": "putting on a"
+    },
+    {
+      "start": 1477.32,
+      "duration": 7.479,
+      "text": "microprocessor pin 4 gpio"
+    },
+    {
+      "start": 1481.88,
+      "duration": 6.2,
+      "text": "4"
+    },
+    {
+      "start": 1484.799,
+      "duration": 5.6,
+      "text": "on right what the [ __ ] all right so what"
+    },
+    {
+      "start": 1488.08,
+      "duration": 3.88,
+      "text": "we did right there is we just made our"
+    },
+    {
+      "start": 1490.399,
+      "duration": 3.561,
+      "text": "uh that's our"
+    },
+    {
+      "start": 1491.96,
+      "duration": 5.88,
+      "text": "microprocessor this right here this"
+    },
+    {
+      "start": 1493.96,
+      "duration": 6.56,
+      "text": "header and then um this is going to be"
+    },
+    {
+      "start": 1497.84,
+      "duration": 8.4,
+      "text": "our actual ual button itself"
+    },
+    {
+      "start": 1500.52,
+      "duration": 10.039,
+      "text": "right and so uh seven will be pulled"
+    },
+    {
+      "start": 1506.24,
+      "duration": 5.76,
+      "text": "high with a pullup resistor in software"
+    },
+    {
+      "start": 1510.559,
+      "duration": 3.961,
+      "text": "so you can do that you can do that all"
+    },
+    {
+      "start": 1512.0,
+      "duration": 5.96,
+      "text": "in software you pull seven"
+    },
+    {
+      "start": 1514.52,
+      "duration": 6.48,
+      "text": "high and then um it is connected to"
+    },
+    {
+      "start": 1517.96,
+      "duration": 8.16,
+      "text": "ground via the"
+    },
+    {
+      "start": 1521.0,
+      "duration": 7.76,
+      "text": "um the uh two which two is ground here"
+    },
+    {
+      "start": 1526.12,
+      "duration": 4.88,
+      "text": "and then when you hit the button seven"
+    },
+    {
+      "start": 1528.76,
+      "duration": 6.48,
+      "text": "the pull-up resistor will read low"
+    },
+    {
+      "start": 1531.0,
+      "duration": 8.159,
+      "text": "because instead of uh being stuck as as"
+    },
+    {
+      "start": 1535.24,
+      "duration": 6.48,
+      "text": "high it'll switch to uh to being"
+    },
+    {
+      "start": 1539.159,
+      "duration": 4.721,
+      "text": "connected to ground which will"
+    },
+    {
+      "start": 1541.72,
+      "duration": 3.24,
+      "text": "um which will make it read low because"
+    },
+    {
+      "start": 1543.88,
+      "duration": 3.72,
+      "text": "it's going to make the connection to"
+    },
+    {
+      "start": 1544.96,
+      "duration": 4.599,
+      "text": "ground right instead of uh instead of"
+    },
+    {
+      "start": 1547.6,
+      "duration": 4.84,
+      "text": "just there being the signal going back"
+    },
+    {
+      "start": 1549.559,
+      "duration": 6.48,
+      "text": "to the microprocessor as reading"
+    },
+    {
+      "start": 1552.44,
+      "duration": 6.28,
+      "text": "high and that's your what a time to be"
+    },
+    {
+      "start": 1556.039,
+      "duration": 5.601,
+      "text": "alive yes"
+    },
+    {
+      "start": 1558.72,
+      "duration": 6.559,
+      "text": "um and that's your basic explanation of"
+    },
+    {
+      "start": 1561.64,
+      "duration": 6.08,
+      "text": "that all right and"
+    },
+    {
+      "start": 1565.279,
+      "duration": 7.4,
+      "text": "so the switch the switch is actually"
+    },
+    {
+      "start": 1567.72,
+      "duration": 4.959,
+      "text": "really easy we need to figure out our"
+    },
+    {
+      "start": 1573.36,
+      "duration": 5.08,
+      "text": "um we need to figure out our LED design"
+    },
+    {
+      "start": 1577.159,
+      "duration": 7.041,
+      "text": "and"
+    },
+    {
+      "start": 1578.44,
+      "duration": 5.76,
+      "text": "um I think that we should go with um"
+    },
+    {
+      "start": 1595.679,
+      "duration": 3.641,
+      "text": "um The"
+    },
+    {
+      "start": 1597.08,
+      "duration": 8.16,
+      "text": "W"
+    },
+    {
+      "start": 1599.32,
+      "duration": 5.92,
+      "text": "W12 S I forgot what it is"
+    },
+    {
+      "start": 1631.64,
+      "duration": 3.24,
+      "text": "like"
+    },
+    {
+      "start": 1632.559,
+      "duration": 3.761,
+      "text": "wb12 what exactly the micro processor"
+    },
+    {
+      "start": 1634.88,
+      "duration": 4.24,
+      "text": "does in this case so the microprocessor"
+    },
+    {
+      "start": 1636.32,
+      "duration": 5.359,
+      "text": "holds the um the"
+    },
+    {
+      "start": 1639.12,
+      "duration": 5.159,
+      "text": "code and uh it's the brains of the"
+    },
+    {
+      "start": 1641.679,
+      "duration": 5.921,
+      "text": "operation so when I hit the switch"
+    },
+    {
+      "start": 1644.279,
+      "duration": 4.52,
+      "text": "button It'll recognize that the button's"
+    },
+    {
+      "start": 1647.6,
+      "duration": 4.16,
+      "text": "been switched"
+    },
+    {
+      "start": 1648.799,
+      "duration": 6.081,
+      "text": "and then in this case uh I have it set"
+    },
+    {
+      "start": 1651.76,
+      "duration": 6.88,
+      "text": "up to emulate a keyboard right now and"
+    },
+    {
+      "start": 1654.88,
+      "duration": 5.84,
+      "text": "so um it's like a smart keyboard and"
+    },
+    {
+      "start": 1658.64,
+      "duration": 5.159,
+      "text": "that it can do whatever like I could"
+    },
+    {
+      "start": 1660.72,
+      "duration": 7.12,
+      "text": "have it send um okay"
+    },
+    {
+      "start": 1663.799,
+      "duration": 7.641,
+      "text": "send a keystroke wait 500 milliseconds"
+    },
+    {
+      "start": 1667.84,
+      "duration": 8.8,
+      "text": "send b keystroke wait 500 milliseconds"
+    },
+    {
+      "start": 1671.44,
+      "duration": 7.56,
+      "text": "uh send shift don't release shift send"
+    },
+    {
+      "start": 1676.64,
+      "duration": 4.96,
+      "text": "uh CBF"
+    },
+    {
+      "start": 1679.0,
+      "duration": 3.919,
+      "text": "release shift like you can do whatever"
+    },
+    {
+      "start": 1681.6,
+      "duration": 4.04,
+      "text": "you want with"
+    },
+    {
+      "start": 1682.919,
+      "duration": 6.521,
+      "text": "it and that's how we're going to get it"
+    },
+    {
+      "start": 1685.64,
+      "duration": 7.68,
+      "text": "to um open the terminal go to our"
+    },
+    {
+      "start": 1689.44,
+      "duration": 8.68,
+      "text": "project directory and uh make the get"
+    },
+    {
+      "start": 1693.32,
+      "duration": 7.04,
+      "text": "commits and also input uh a message with"
+    },
+    {
+      "start": 1698.12,
+      "duration": 2.24,
+      "text": "the"
+    },
+    {
+      "start": 1701.24,
+      "duration": 6.2,
+      "text": "commit the microprocessor is uh is"
+    },
+    {
+      "start": 1703.88,
+      "duration": 3.56,
+      "text": "critical you know"
+    },
+    {
+      "start": 1731.679,
+      "duration": 7.0,
+      "text": "5050 so that's a 5 mm x 5 mm surface"
+    },
+    {
+      "start": 1735.44,
+      "duration": 6.04,
+      "text": "mount device package which means we're"
+    },
+    {
+      "start": 1738.679,
+      "duration": 6.401,
+      "text": "going to throw that bad boy right on top"
+    },
+    {
+      "start": 1741.48,
+      "duration": 5.76,
+      "text": "of a PCB and um with the pick and place"
+    },
+    {
+      "start": 1745.08,
+      "duration": 5.599,
+      "text": "machine and then we'll throw it on a hot"
+    },
+    {
+      "start": 1747.24,
+      "duration": 5.64,
+      "text": "plate and it'll solder itself just like"
+    },
+    {
+      "start": 1750.679,
+      "duration": 5.641,
+      "text": "the uh"
+    },
+    {
+      "start": 1752.88,
+      "duration": 7.44,
+      "text": "microprocessor so we have to throw"
+    },
+    {
+      "start": 1756.32,
+      "duration": 5.079,
+      "text": "some of these LEDs into our uh design"
+    },
+    {
+      "start": 1760.32,
+      "duration": 3.719,
+      "text": "the thing we're going to need for our"
+    },
+    {
+      "start": 1761.399,
+      "duration": 6.76,
+      "text": "LEDs is we're going to need"
+    },
+    {
+      "start": 1764.039,
+      "duration": 6.041,
+      "text": "a resistor at the beginning oh thumbs up"
+    },
+    {
+      "start": 1768.159,
+      "duration": 4.52,
+      "text": "we're going to need a resistor at the"
+    },
+    {
+      "start": 1770.08,
+      "duration": 2.599,
+      "text": "beginning of the"
+    },
+    {
+      "start": 1772.96,
+      "duration": 6.0,
+      "text": "circuit maybe we're GNA need a large"
+    },
+    {
+      "start": 1776.72,
+      "duration": 5.319,
+      "text": "capacitor definitely at the beginning of"
+    },
+    {
+      "start": 1778.96,
+      "duration": 4.92,
+      "text": "the circuit so that um when we have it"
+    },
+    {
+      "start": 1782.039,
+      "duration": 4.601,
+      "text": "change colors or change brightness or"
+    },
+    {
+      "start": 1783.88,
+      "duration": 7.08,
+      "text": "whatever it doesn't get messed up and"
+    },
+    {
+      "start": 1786.64,
+      "duration": 8.039,
+      "text": "then um we're going to have a tiny"
+    },
+    {
+      "start": 1790.96,
+      "duration": 5.199,
+      "text": "capacitor right in front of every LEDs"
+    },
+    {
+      "start": 1794.679,
+      "duration": 3.161,
+      "text": "and I almost like to think of those as"
+    },
+    {
+      "start": 1796.159,
+      "duration": 4.481,
+      "text": "like just like a little tiny battery"
+    },
+    {
+      "start": 1797.84,
+      "duration": 5.079,
+      "text": "back backup for them where uh if"
+    },
+    {
+      "start": 1800.64,
+      "duration": 3.8,
+      "text": "something changes or they Peak or"
+    },
+    {
+      "start": 1802.919,
+      "duration": 3.521,
+      "text": "whatever they need a little bit more"
+    },
+    {
+      "start": 1804.44,
+      "duration": 4.16,
+      "text": "power draw you don't see any flicker"
+    },
+    {
+      "start": 1806.44,
+      "duration": 3.52,
+      "text": "because they have that capacitor saving"
+    },
+    {
+      "start": 1808.6,
+      "duration": 4.48,
+      "text": "the energy for them right there and it"
+    },
+    {
+      "start": 1809.96,
+      "duration": 3.12,
+      "text": "can just boom here you"
+    },
+    {
+      "start": 1814.919,
+      "duration": 5.48,
+      "text": "go so let's throw some"
+    },
+    {
+      "start": 1817.919,
+      "duration": 5.041,
+      "text": "uh let's throw some of these LEDs in"
+    },
+    {
+      "start": 1820.399,
+      "duration": 5.921,
+      "text": "there some 50s these are going to be"
+    },
+    {
+      "start": 1822.96,
+      "duration": 3.36,
+      "text": "bright too"
+    },
+    {
+      "start": 1831.6,
+      "duration": 4.52,
+      "text": "we got we got to make sure that we get"
+    },
+    {
+      "start": 1832.799,
+      "duration": 3.321,
+      "text": "the right ones here that's going to be"
+    },
+    {
+      "start": 1848.519,
+      "duration": 6.04,
+      "text": "critical those are 2020s we these are"
+    },
+    {
+      "start": 1851.32,
+      "duration": 3.239,
+      "text": "2020s we don't want"
+    },
+    {
+      "start": 1854.919,
+      "duration": 7.841,
+      "text": "those we're going to use the big 50/50"
+    },
+    {
+      "start": 1859.679,
+      "duration": 7.641,
+      "text": "these ones are awesome all"
+    },
+    {
+      "start": 1862.76,
+      "duration": 6.84,
+      "text": "right um so 5 by"
+    },
+    {
+      "start": 1867.32,
+      "duration": 5.719,
+      "text": "five we're going to hit this and then"
+    },
+    {
+      "start": 1869.6,
+      "duration": 3.439,
+      "text": "we're going to hit Place repeated"
+    },
+    {
+      "start": 1875.48,
+      "duration": 4.72,
+      "text": "copies and then how many 5 by"
+    },
+    {
+      "start": 1882.399,
+      "duration": 6.201,
+      "text": "five are we going to have on this thing"
+    },
+    {
+      "start": 1885.2,
+      "duration": 3.4,
+      "text": "on this unit"
+    },
+    {
+      "start": 1889.48,
+      "duration": 2.52,
+      "text": "so I'm"
+    },
+    {
+      "start": 1892.2,
+      "duration": 4.079,
+      "text": "thinking I'm"
+    },
+    {
+      "start": 1894.32,
+      "duration": 4.359,
+      "text": "thinking yeah Jacob you should you"
+    },
+    {
+      "start": 1896.279,
+      "duration": 5.12,
+      "text": "should try to build something it's good"
+    },
+    {
+      "start": 1898.679,
+      "duration": 5.96,
+      "text": "for you all right"
+    },
+    {
+      "start": 1901.399,
+      "duration": 6.4,
+      "text": "um I'm thinking that we try to throw in"
+    },
+    {
+      "start": 1904.639,
+      "duration": 5.081,
+      "text": "cuz these are only 5 by five okay"
+    },
+    {
+      "start": 1907.799,
+      "duration": 6.6,
+      "text": "they're they're not that"
+    },
+    {
+      "start": 1909.72,
+      "duration": 8.199,
+      "text": "big like this whole case is 60x 60 okay"
+    },
+    {
+      "start": 1914.399,
+      "duration": 5.681,
+      "text": "so I'm thinking we place and the more"
+    },
+    {
+      "start": 1917.919,
+      "duration": 5.6,
+      "text": "LEDs we have the better it'll be for"
+    },
+    {
+      "start": 1920.08,
+      "duration": 8.199,
+      "text": "diffusion so you won't see like a strong"
+    },
+    {
+      "start": 1923.519,
+      "duration": 7.961,
+      "text": "uh LED in one area and not the next so"
+    },
+    {
+      "start": 1928.279,
+      "duration": 4.721,
+      "text": "I'm thinking we throw one two three four"
+    },
+    {
+      "start": 1931.48,
+      "duration": 5.319,
+      "text": "in the"
+    },
+    {
+      "start": 1933.0,
+      "duration": 7.679,
+      "text": "top and then we try to do"
+    },
+    {
+      "start": 1936.799,
+      "duration": 3.88,
+      "text": "three in the bottom"
+    },
+    {
+      "start": 1940.72,
+      "duration": 3.48,
+      "text": "there oh we can't do three in the bottom"
+    },
+    {
+      "start": 1943.08,
+      "duration": 4.52,
+      "text": "because the microprocessor is going to"
+    },
+    {
+      "start": 1944.2,
+      "duration": 3.4,
+      "text": "be right there"
+    },
+    {
+      "start": 1949.559,
+      "duration": 5.48,
+      "text": "so we do four in the top and then uh we"
+    },
+    {
+      "start": 1953.48,
+      "duration": 3.36,
+      "text": "do two in the bottom we have six in"
+    },
+    {
+      "start": 1955.039,
+      "duration": 5.561,
+      "text": "total that's going to be great cuz we'll"
+    },
+    {
+      "start": 1956.84,
+      "duration": 3.76,
+      "text": "have plenty of head room for power"
+    },
+    {
+      "start": 1961.36,
+      "duration": 4.199,
+      "text": "there let's go let's"
+    },
+    {
+      "start": 1975.76,
+      "duration": 5.0,
+      "text": "go so when we lay it out and the"
+    },
+    {
+      "start": 1977.96,
+      "duration": 4.8,
+      "text": "schematic the positioning doesn't matter"
+    },
+    {
+      "start": 1980.76,
+      "duration": 3.639,
+      "text": "oops I'm on my face by accident when we"
+    },
+    {
+      "start": 1982.76,
+      "duration": 4.759,
+      "text": "lay it out in the schematic the"
+    },
+    {
+      "start": 1984.399,
+      "duration": 3.12,
+      "text": "positioning does not"
+    },
+    {
+      "start": 1988.12,
+      "duration": 3.2,
+      "text": "matter all"
+    },
+    {
+      "start": 1993.279,
+      "duration": 6.721,
+      "text": "right we do need to ask chat GPT here"
+    },
+    {
+      "start": 1997.12,
+      "duration": 6.32,
+      "text": "what um a"
+    },
+    {
+      "start": 2000.0,
+      "duration": 3.44,
+      "text": "good CU I don't"
+    },
+    {
+      "start": 2003.72,
+      "duration": 5.64,
+      "text": "remember"
+    },
+    {
+      "start": 2005.24,
+      "duration": 8.48,
+      "text": "what should we use"
+    },
+    {
+      "start": 2009.36,
+      "duration": 4.36,
+      "text": "for a"
+    },
+    {
+      "start": 2015.08,
+      "duration": 6.599,
+      "text": "cap in"
+    },
+    {
+      "start": 2017.519,
+      "duration": 10.681,
+      "text": "front of each"
+    },
+    {
+      "start": 2021.679,
+      "duration": 12.201,
+      "text": "LED and what should we use for"
+    },
+    {
+      "start": 2028.2,
+      "duration": 5.68,
+      "text": "one on the entire circuit"
+    },
+    {
+      "start": 2039.88,
+      "duration": 2.159,
+      "text": "come"
+    },
+    {
+      "start": 2043.12,
+      "duration": 5.039,
+      "text": "on okay filter no we know what we know"
+    },
+    {
+      "start": 2045.88,
+      "duration": 5.279,
+      "text": "what they're for all"
+    },
+    {
+      "start": 2048.159,
+      "duration": 3.0,
+      "text": "right"
+    },
+    {
+      "start": 2051.28,
+      "duration": 6.559,
+      "text": "yes a point"
+    },
+    {
+      "start": 2053.839,
+      "duration": 4.0,
+      "text": "UF ceramic"
+    },
+    {
+      "start": 2069.399,
+      "duration": 2.921,
+      "text": "come on"
+    },
+    {
+      "start": 2075.96,
+      "duration": 6.84,
+      "text": "now so the really nice thing about a"
+    },
+    {
+      "start": 2078.879,
+      "duration": 8.561,
+      "text": "ceramic cap not an electro electrolytic"
+    },
+    {
+      "start": 2082.8,
+      "duration": 4.64,
+      "text": "cap a ceramic cap is that"
+    },
+    {
+      "start": 2089.28,
+      "duration": 7.399,
+      "text": "um with the ceramic cap they are um"
+    },
+    {
+      "start": 2093.119,
+      "duration": 3.56,
+      "text": "there's no polarity"
+    },
+    {
+      "start": 2098.88,
+      "duration": 5.76,
+      "text": "so for someone like"
+    },
+    {
+      "start": 2100.72,
+      "duration": 9.76,
+      "text": "myself who has no idea what they're"
+    },
+    {
+      "start": 2104.64,
+      "duration": 5.84,
+      "text": "doing uh it's hard to mess them up right"
+    },
+    {
+      "start": 2140.2,
+      "duration": 2.919,
+      "text": "0402"
+    },
+    {
+      "start": 2145.24,
+      "duration": 4.28,
+      "text": "baby this is the bad boy we need right"
+    },
+    {
+      "start": 2147.599,
+      "duration": 4.401,
+      "text": "here"
+    },
+    {
+      "start": 2149.52,
+      "duration": 6.079,
+      "text": "yes do you already have the LEDs at home"
+    },
+    {
+      "start": 2152.0,
+      "duration": 7.04,
+      "text": "the LEDs are on the way they're uh"
+    },
+    {
+      "start": 2155.599,
+      "duration": 6.281,
+      "text": "they're coming from uh China right"
+    },
+    {
+      "start": 2159.04,
+      "duration": 4.88,
+      "text": "now I think that I have a thousand of"
+    },
+    {
+      "start": 2161.88,
+      "duration": 5.0,
+      "text": "them coming and they're going to come on"
+    },
+    {
+      "start": 2163.92,
+      "duration": 5.28,
+      "text": "a big uh real like a huge"
+    },
+    {
+      "start": 2166.88,
+      "duration": 4.6,
+      "text": "tape that'll get put into my pick and"
+    },
+    {
+      "start": 2169.2,
+      "duration": 2.28,
+      "text": "place"
+    },
+    {
+      "start": 2174.44,
+      "duration": 4.879,
+      "text": "machine all right 4020 Let's uh let's"
+    },
+    {
+      "start": 2177.2,
+      "duration": 6.919,
+      "text": "grab"
+    },
+    {
+      "start": 2179.319,
+      "duration": 4.8,
+      "text": "these come on we got to keep going"
+    },
+    {
+      "start": 2212.24,
+      "duration": 3.48,
+      "text": "oh this is an 0402"
+    },
+    {
+      "start": 2218.8,
+      "duration": 4.279,
+      "text": "we want the surface mount"
+    },
+    {
+      "start": 2230.28,
+      "duration": 6.24,
+      "text": "version this was really hard for me to"
+    },
+    {
+      "start": 2232.599,
+      "duration": 6.881,
+      "text": "wrap my head around but uh the"
+    },
+    {
+      "start": 2236.52,
+      "duration": 6.24,
+      "text": "capacitors are going to bridge ground"
+    },
+    {
+      "start": 2239.48,
+      "duration": 8.68,
+      "text": "and uh VCC so it's going to bridge 5"
+    },
+    {
+      "start": 2242.76,
+      "duration": 5.4,
+      "text": "volts and ground right before the um"
+    },
+    {
+      "start": 2249.16,
+      "duration": 2.72,
+      "text": "right before the"
+    },
+    {
+      "start": 2266.8,
+      "duration": 5.0,
+      "text": "LED we need a resistor for data"
+    },
+    {
+      "start": 2306.48,
+      "duration": 2.96,
+      "text": "oh"
+    },
+    {
+      "start": 2329.24,
+      "duration": 4.52,
+      "text": "this is going to turn into a mess very"
+    },
+    {
+      "start": 2330.76,
+      "duration": 3.0,
+      "text": "quickly"
+    },
+    {
+      "start": 2350.68,
+      "duration": 6.439,
+      "text": "I think that I think that this uh th"
+    },
+    {
+      "start": 2354.16,
+      "duration": 5.36,
+      "text": "farad capacitor or whatever it is is"
+    },
+    {
+      "start": 2357.119,
+      "duration": 5.521,
+      "text": "going to be a 1210"
+    },
+    {
+      "start": 2359.52,
+      "duration": 5.72,
+      "text": "size but I will fix it if it's not I"
+    },
+    {
+      "start": 2362.64,
+      "duration": 5.6,
+      "text": "just want to get going with this because"
+    },
+    {
+      "start": 2365.24,
+      "duration": 5.839,
+      "text": "it's already 611"
+    },
+    {
+      "start": 2368.24,
+      "duration": 2.839,
+      "text": "okay so"
+    },
+    {
+      "start": 2371.599,
+      "duration": 11.76,
+      "text": "um let's do um let's do data first and"
+    },
+    {
+      "start": 2378.2,
+      "duration": 9.76,
+      "text": "then we'll do uh voltage and"
+    },
+    {
+      "start": 2383.359,
+      "duration": 4.601,
+      "text": "ground so um"
+    },
+    {
+      "start": 2398.8,
+      "duration": 5.08,
+      "text": "grab a chip here as well do you already"
+    },
+    {
+      "start": 2402.28,
+      "duration": 3.319,
+      "text": "yeah as well the microprocessors yeah I"
+    },
+    {
+      "start": 2403.88,
+      "duration": 3.04,
+      "text": "have like only 100 of the"
+    },
+    {
+      "start": 2405.599,
+      "duration": 4.121,
+      "text": "microprocessors at home though because"
+    },
+    {
+      "start": 2406.92,
+      "duration": 2.8,
+      "text": "those are a little bit more"
+    },
+    {
+      "start": 2413.48,
+      "duration": 4.76,
+      "text": "expensive those also come from China"
+    },
+    {
+      "start": 2470.28,
+      "duration": 4.28,
+      "text": "all right so this is data it's going to"
+    },
+    {
+      "start": 2472.44,
+      "duration": 7.96,
+      "text": "go in it's going to come out of the GPI"
+    },
+    {
+      "start": 2474.56,
+      "duration": 9.519,
+      "text": "o Port uh three and then uh go into this"
+    },
+    {
+      "start": 2480.4,
+      "duration": 5.4,
+      "text": "resistor right here uh this 30 330 Ohm"
+    },
+    {
+      "start": 2484.079,
+      "duration": 6.321,
+      "text": "resistor and then it's going to go into"
+    },
+    {
+      "start": 2485.8,
+      "duration": 4.6,
+      "text": "Data n and then uh out data"
+    },
+    {
+      "start": 2492.56,
+      "duration": 3.68,
+      "text": "out pretty simple"
+    },
+    {
+      "start": 2499.88,
+      "duration": 6.0,
+      "text": "setup remember all we're doing is"
+    },
+    {
+      "start": 2502.2,
+      "duration": 6.0,
+      "text": "drawing the schematic this is nothing"
+    },
+    {
+      "start": 2505.88,
+      "duration": 6.439,
+      "text": "positional so this is like writing the"
+    },
+    {
+      "start": 2508.2,
+      "duration": 9.48,
+      "text": "backend code without"
+    },
+    {
+      "start": 2512.319,
+      "duration": 5.361,
+      "text": "um without having any front end code"
+    },
+    {
+      "start": 2517.92,
+      "duration": 5.12,
+      "text": "and all I did right there was just told"
+    },
+    {
+      "start": 2520.04,
+      "duration": 5.079,
+      "text": "the schematic that that ends that ends"
+    },
+    {
+      "start": 2523.04,
+      "duration": 6.44,
+      "text": "right"
+    },
+    {
+      "start": 2525.119,
+      "duration": 6.561,
+      "text": "there data data in data"
+    },
+    {
+      "start": 2529.48,
+      "duration": 6.52,
+      "text": "out"
+    },
+    {
+      "start": 2531.68,
+      "duration": 4.32,
+      "text": "okay and then"
+    },
+    {
+      "start": 2536.2,
+      "duration": 11.84,
+      "text": "um we have to supply the"
+    },
+    {
+      "start": 2540.68,
+      "duration": 11.08,
+      "text": "power which uh power is going to be on"
+    },
+    {
+      "start": 2548.04,
+      "duration": 8.68,
+      "text": "five volts is right"
+    },
+    {
+      "start": 2551.76,
+      "duration": 4.96,
+      "text": "here oops that's about"
+    },
+    {
+      "start": 2591.96,
+      "duration": 2.72,
+      "text": "I don't think we need"
+    },
+    {
+      "start": 2595.44,
+      "duration": 7.639,
+      "text": "one okay we do not need"
+    },
+    {
+      "start": 2599.359,
+      "duration": 5.841,
+      "text": "one God if I do that one more time"
+    },
+    {
+      "start": 2603.079,
+      "duration": 6.04,
+      "text": "okay all right so we're going out of"
+    },
+    {
+      "start": 2605.2,
+      "duration": 3.919,
+      "text": "five volts right here"
+    },
+    {
+      "start": 2612.52,
+      "duration": 4.72,
+      "text": "this is probably unfortunately going to"
+    },
+    {
+      "start": 2614.76,
+      "duration": 7.319,
+      "text": "be an electrolytic"
+    },
+    {
+      "start": 2617.24,
+      "duration": 4.839,
+      "text": "capacitor so we are going to"
+    },
+    {
+      "start": 2624.28,
+      "duration": 5.96,
+      "text": "need What's the title of the soundtrack"
+    },
+    {
+      "start": 2626.72,
+      "duration": 3.52,
+      "text": "the soundtrack is white"
+    },
+    {
+      "start": 2632.04,
+      "duration": 6.12,
+      "text": "bat uh white bat vibrant 80 synth wve"
+    },
+    {
+      "start": 2635.599,
+      "duration": 4.561,
+      "text": "playlist gets me AB absolutely fired up"
+    },
+    {
+      "start": 2638.16,
+      "duration": 5.0,
+      "text": "out of my"
+    },
+    {
+      "start": 2640.16,
+      "duration": 3.0,
+      "text": "mind"
+    },
+    {
+      "start": 2661.8,
+      "duration": 7.84,
+      "text": "okay so we have to hit one leg of the"
+    },
+    {
+      "start": 2664.52,
+      "duration": 5.12,
+      "text": "capacitor before going in to voltage"
+    },
+    {
+      "start": 2677.0,
+      "duration": 4.92,
+      "text": "in I mean it's simple stuff but it's"
+    },
+    {
+      "start": 2679.64,
+      "duration": 5.28,
+      "text": "also not at"
+    },
+    {
+      "start": 2681.92,
+      "duration": 6.72,
+      "text": "all that makes"
+    },
+    {
+      "start": 2684.92,
+      "duration": 7.919,
+      "text": "sense it's simple stuff but it's also"
+    },
+    {
+      "start": 2688.64,
+      "duration": 4.199,
+      "text": "very infuriating and I have no"
+    },
+    {
+      "start": 2695.52,
+      "duration": 3.92,
+      "text": "uh it just stuff that I"
+    },
+    {
+      "start": 2703.359,
+      "duration": 3.841,
+      "text": "researched do we have another"
+    },
+    {
+      "start": 2711.88,
+      "duration": 4.959,
+      "text": "ground really don't okay"
+    },
+    {
+      "start": 2743.119,
+      "duration": 3.44,
+      "text": "I like this better I think that's"
+    },
+    {
+      "start": 2744.4,
+      "duration": 5.48,
+      "text": "cleaner to look at for the schematic for"
+    },
+    {
+      "start": 2746.559,
+      "duration": 5.961,
+      "text": "it to dip down like that and then pop"
+    },
+    {
+      "start": 2749.88,
+      "duration": 5.0,
+      "text": "back up so you can"
+    },
+    {
+      "start": 2752.52,
+      "duration": 4.52,
+      "text": "see that we're hitting this we're"
+    },
+    {
+      "start": 2754.88,
+      "duration": 3.959,
+      "text": "hitting this capacitor this is just a"
+    },
+    {
+      "start": 2757.04,
+      "duration": 4.64,
+      "text": "little tiny guy tooo a little tiny"
+    },
+    {
+      "start": 2758.839,
+      "duration": 5.881,
+      "text": "capacitor and uh these actually like"
+    },
+    {
+      "start": 2761.68,
+      "duration": 5.879,
+      "text": "matter you want them as close as"
+    },
+    {
+      "start": 2764.72,
+      "duration": 5.68,
+      "text": "possible to the LED like you want it"
+    },
+    {
+      "start": 2767.559,
+      "duration": 6.76,
+      "text": "snug right up there so that you get the"
+    },
+    {
+      "start": 2770.4,
+      "duration": 3.919,
+      "text": "um the greatest effect from"
+    },
+    {
+      "start": 2776.24,
+      "duration": 5.079,
+      "text": "it I messed the song up right here"
+    },
+    {
+      "start": 2794.319,
+      "duration": 3.0,
+      "text": "oh no I didn't I'm an"
+    },
+    {
+      "start": 2798.76,
+      "duration": 4.24,
+      "text": "idiot all right"
+    },
+    {
+      "start": 2828.359,
+      "duration": 2.401,
+      "text": "here we"
+    },
+    {
+      "start": 2833.92,
+      "duration": 4.199,
+      "text": "go come on"
+    },
+    {
+      "start": 2880.8,
+      "duration": 4.88,
+      "text": "that would have broke the whole"
+    },
+    {
+      "start": 2882.68,
+      "duration": 3.0,
+      "text": "thing"
+    },
+    {
+      "start": 2904.64,
+      "duration": 4.12,
+      "text": "okay there's our circuit baby"
+    },
+    {
+      "start": 2915.72,
+      "duration": 3.08,
+      "text": "come on keep"
+    },
+    {
+      "start": 2932.559,
+      "duration": 5.161,
+      "text": "pushing why are these connected right"
+    },
+    {
+      "start": 2934.92,
+      "duration": 5.08,
+      "text": "here"
+    },
+    {
+      "start": 2937.72,
+      "duration": 5.28,
+      "text": "you should not be"
+    },
+    {
+      "start": 2940.0,
+      "duration": 3.0,
+      "text": "connected"
+    },
+    {
+      "start": 2947.64,
+      "duration": 3.84,
+      "text": "what when did that even"
+    },
+    {
+      "start": 2957.72,
+      "duration": 6.48,
+      "text": "happen let's go let's go let's go let's"
+    },
+    {
+      "start": 2961.2,
+      "duration": 3.0,
+      "text": "go"
+    },
+    {
+      "start": 2976.079,
+      "duration": 3.441,
+      "text": "all right all right all right come"
+    },
+    {
+      "start": 2989.44,
+      "duration": 6.76,
+      "text": "on we have a whole mess of situation"
+    },
+    {
+      "start": 2992.24,
+      "duration": 3.96,
+      "text": "going on here what happened"
+    },
+    {
+      "start": 3004.68,
+      "duration": 2.399,
+      "text": "good"
+    },
+    {
+      "start": 3024.079,
+      "duration": 6.921,
+      "text": "Lord okay that comes out of 5 volt"
+    },
+    {
+      "start": 3027.4,
+      "duration": 3.6,
+      "text": "into the the big"
+    },
+    {
+      "start": 3032.079,
+      "duration": 4.0,
+      "text": "cap"
+    },
+    {
+      "start": 3033.96,
+      "duration": 5.92,
+      "text": "into the small"
+    },
+    {
+      "start": 3036.079,
+      "duration": 6.28,
+      "text": "cap No Cap all right"
+    },
+    {
+      "start": 3039.88,
+      "duration": 6.16,
+      "text": "great then"
+    },
+    {
+      "start": 3042.359,
+      "duration": 3.681,
+      "text": "data comes out of"
+    },
+    {
+      "start": 3046.799,
+      "duration": 7.681,
+      "text": "six should not be going"
+    },
+    {
+      "start": 3050.4,
+      "duration": 8.24,
+      "text": "into ground at"
+    },
+    {
+      "start": 3054.48,
+      "duration": 4.16,
+      "text": "all how did this happen"
+    },
+    {
+      "start": 3075.52,
+      "duration": 3.92,
+      "text": "we almost lost it there all right let's"
+    },
+    {
+      "start": 3077.64,
+      "duration": 3.6,
+      "text": "do quick manual inspection before we"
+    },
+    {
+      "start": 3079.44,
+      "duration": 6.679,
+      "text": "have the"
+    },
+    {
+      "start": 3081.24,
+      "duration": 7.319,
+      "text": "uh the ERC check okay so ground is going"
+    },
+    {
+      "start": 3086.119,
+      "duration": 2.44,
+      "text": "to"
+    },
+    {
+      "start": 3093.079,
+      "duration": 3.72,
+      "text": "this undoing stuff or am I losing my"
+    },
+    {
+      "start": 3102.68,
+      "duration": 6.6,
+      "text": "mind oh this is 5 volts also not ground"
+    },
+    {
+      "start": 3106.92,
+      "duration": 5.36,
+      "text": "5 volts is going to this"
+    },
+    {
+      "start": 3109.28,
+      "duration": 6.0,
+      "text": "capacitor and then this needs to hit"
+    },
+    {
+      "start": 3112.28,
+      "duration": 3.0,
+      "text": "here"
+    },
+    {
+      "start": 3117.76,
+      "duration": 2.96,
+      "text": "why are you not doing"
+    },
+    {
+      "start": 3123.88,
+      "duration": 8.439,
+      "text": "that oh it just did that okay that's"
+    },
+    {
+      "start": 3128.839,
+      "duration": 5.601,
+      "text": "strange all right five volts comes in"
+    },
+    {
+      "start": 3132.319,
+      "duration": 4.28,
+      "text": "big"
+    },
+    {
+      "start": 3134.44,
+      "duration": 6.679,
+      "text": "cap goes"
+    },
+    {
+      "start": 3136.599,
+      "duration": 4.52,
+      "text": "into vsss or VCC"
+    },
+    {
+      "start": 3142.76,
+      "duration": 7.16,
+      "text": "whatever yes that's great"
+    },
+    {
+      "start": 3145.52,
+      "duration": 4.4,
+      "text": "okay the other leg"
+    },
+    {
+      "start": 3152.119,
+      "duration": 6.281,
+      "text": "of 5 volt should not be going there"
+    },
+    {
+      "start": 3196.96,
+      "duration": 3.28,
+      "text": "ah okay this is what we"
+    },
+    {
+      "start": 3204.16,
+      "duration": 5.72,
+      "text": "did okay"
+    },
+    {
+      "start": 3207.119,
+      "duration": 2.761,
+      "text": "there we go that's"
+    },
+    {
+      "start": 3213.599,
+      "duration": 3.0,
+      "text": "better"
+    },
+    {
+      "start": 3217.44,
+      "duration": 3.28,
+      "text": "no please"
+    },
+    {
+      "start": 3220.76,
+      "duration": 3.72,
+      "text": "stop you're an absolute"
+    },
+    {
+      "start": 3227.319,
+      "duration": 5.921,
+      "text": "Menace okay five Vols the only thing"
+    },
+    {
+      "start": 3230.119,
+      "duration": 7.321,
+      "text": "that five Vol should be going to is the"
+    },
+    {
+      "start": 3233.24,
+      "duration": 7.599,
+      "text": "cap and then to vsss yes great okay okay"
+    },
+    {
+      "start": 3237.44,
+      "duration": 3.399,
+      "text": "ground is going"
+    },
+    {
+      "start": 3241.0,
+      "duration": 3.68,
+      "text": "to the ground"
+    },
+    {
+      "start": 3246.799,
+      "duration": 6.121,
+      "text": "pins beautiful the ground pins and then"
+    },
+    {
+      "start": 3250.76,
+      "duration": 2.16,
+      "text": "uh"
+    },
+    {
+      "start": 3253.96,
+      "duration": 4.96,
+      "text": "gp6 which is pin"
+    },
+    {
+      "start": 3256.16,
+      "duration": 8.439,
+      "text": "three it's going to the resistor and"
+    },
+    {
+      "start": 3258.92,
+      "duration": 5.679,
+      "text": "then to data in and data out all the way"
+    },
+    {
+      "start": 3264.92,
+      "duration": 6.199,
+      "text": "through yes"
+    },
+    {
+      "start": 3267.44,
+      "duration": 4.8,
+      "text": "okay seven is just going to the switch"
+    },
+    {
+      "start": 3271.119,
+      "duration": 3.641,
+      "text": "that's"
+    },
+    {
+      "start": 3272.24,
+      "duration": 4.04,
+      "text": "it what pleasure Watching Max good luck"
+    },
+    {
+      "start": 3274.76,
+      "duration": 3.2,
+      "text": "with the product need to leave I one for"
+    },
+    {
+      "start": 3276.28,
+      "duration": 4.88,
+      "text": "late yes thank you brother you have a"
+    },
+    {
+      "start": 3277.96,
+      "duration": 3.2,
+      "text": "great day and happy New"
+    },
+    {
+      "start": 3281.799,
+      "duration": 4.201,
+      "text": "Year's all right all right all right"
+    },
+    {
+      "start": 3286.799,
+      "duration": 6.0,
+      "text": "all we are looking good here let's let's"
+    },
+    {
+      "start": 3290.799,
+      "duration": 6.0,
+      "text": "check this I know it's going to give me"
+    },
+    {
+      "start": 3292.799,
+      "duration": 7.52,
+      "text": "an error about power source"
+    },
+    {
+      "start": 3296.799,
+      "duration": 3.52,
+      "text": "electrical rules"
+    },
+    {
+      "start": 3316.48,
+      "duration": 7.359,
+      "text": "Checker so we got to make all these"
+    },
+    {
+      "start": 3318.96,
+      "duration": 4.879,
+      "text": "happy cuz they're not happy right now"
+    },
+    {
+      "start": 3358.28,
+      "duration": 6.64,
+      "text": "we add a power"
+    },
+    {
+      "start": 3359.839,
+      "duration": 5.081,
+      "text": "flag and then we add"
+    },
+    {
+      "start": 3368.799,
+      "duration": 4.56,
+      "text": "a how dare you"
+    },
+    {
+      "start": 3408.76,
+      "duration": 4.64,
+      "text": "we actually add a power flag to this too"
+    },
+    {
+      "start": 3597.52,
+      "duration": 3.599,
+      "text": "oh I'm so silly"
+    },
+    {
+      "start": 3655.039,
+      "duration": 4.841,
+      "text": "why is that one not not happy about that"
+    },
+    {
+      "start": 3688.52,
+      "duration": 2.72,
+      "text": "that one is not"
+    },
+    {
+      "start": 3707.48,
+      "duration": 9.44,
+      "text": "psyched okay uh input power not driven"
+    },
+    {
+      "start": 3712.48,
+      "duration": 4.44,
+      "text": "by any output power pins"
+    },
+    {
+      "start": 3732.359,
+      "duration": 3.44,
+      "text": "yes you are"
+    },
+    {
+      "start": 3789.039,
+      "duration": 2.401,
+      "text": "okay"
+    },
+    {
+      "start": 3804.76,
+      "duration": 3.0,
+      "text": "why"
+    },
+    {
+      "start": 3834.72,
+      "duration": 3.0,
+      "text": "e"
+    },
+    {
+      "start": 3864.72,
+      "duration": 4.44,
+      "text": "for is not a fan of my setup"
+    },
+    {
+      "start": 3874.279,
+      "duration": 4.641,
+      "text": "here doesn't like it"
+    },
+    {
+      "start": 3906.76,
+      "duration": 3.079,
+      "text": "this cap giving us"
+    },
+    {
+      "start": 3912.279,
+      "duration": 6.921,
+      "text": "problems ah the cap is giving us"
+    },
+    {
+      "start": 3914.839,
+      "duration": 4.361,
+      "text": "problems no cap"
+    },
+    {
+      "start": 3927.079,
+      "duration": 3.361,
+      "text": "did I not see that this has"
+    },
+    {
+      "start": 3935.64,
+      "duration": 6.959,
+      "text": "polarity hi Max in community or better"
+    },
+    {
+      "start": 3938.68,
+      "duration": 6.76,
+      "text": "said Community"
+    },
+    {
+      "start": 3942.599,
+      "duration": 5.921,
+      "text": "yes good morning"
+    },
+    {
+      "start": 3945.44,
+      "duration": 5.96,
+      "text": "Miguel how are you today my"
+    },
+    {
+      "start": 3948.52,
+      "duration": 6.16,
+      "text": "friend Happy New Year's what's your New"
+    },
+    {
+      "start": 3951.4,
+      "duration": 3.28,
+      "text": "Year's resolution"
+    },
+    {
+      "start": 3956.599,
+      "duration": 5.561,
+      "text": "what are you doing this coming"
+    },
+    {
+      "start": 3959.119,
+      "duration": 6.081,
+      "text": "year what are you"
+    },
+    {
+      "start": 3962.16,
+      "duration": 5.24,
+      "text": "building what are you working on I got"
+    },
+    {
+      "start": 3965.2,
+      "duration": 2.2,
+      "text": "to"
+    },
+    {
+      "start": 3975.119,
+      "duration": 4.361,
+      "text": "know give me the deets"
+    },
+    {
+      "start": 4023.559,
+      "duration": 3.0,
+      "text": "for"
+    },
+    {
+      "start": 4100.359,
+      "duration": 7.081,
+      "text": "I don't want that cap I don't want that"
+    },
+    {
+      "start": 4103.679,
+      "duration": 3.761,
+      "text": "the capacitor I do not want that one"
+    },
+    {
+      "start": 4114.719,
+      "duration": 3.721,
+      "text": "we're going to use something else let me"
+    },
+    {
+      "start": 4115.96,
+      "duration": 7.359,
+      "text": "log into my"
+    },
+    {
+      "start": 4118.44,
+      "duration": 4.879,
+      "text": "uh AliExpress account and"
+    },
+    {
+      "start": 4123.4,
+      "duration": 4.359,
+      "text": "see what I've ordered"
+    },
+    {
+      "start": 4141.6,
+      "duration": 5.119,
+      "text": "it is a 1210 that is what it is"
+    },
+    {
+      "start": 4207.48,
+      "duration": 2.28,
+      "text": "this"
+    },
+    {
+      "start": 4210.08,
+      "duration": 4.8,
+      "text": "work why are you doing this to me"
+    },
+    {
+      "start": 4357.32,
+      "duration": 6.2,
+      "text": "it's working"
+    },
+    {
+      "start": 4358.719,
+      "duration": 4.801,
+      "text": "everywhere but not this one"
+    },
+    {
+      "start": 4445.92,
+      "duration": 6.44,
+      "text": "where are we now buffering um I am"
+    },
+    {
+      "start": 4449.08,
+      "duration": 6.24,
+      "text": "trying to figure out a bug here"
+    },
+    {
+      "start": 4452.36,
+      "duration": 7.279,
+      "text": "where uh I cannot"
+    },
+    {
+      "start": 4455.32,
+      "duration": 6.08,
+      "text": "get electronic rules Checker to pass on"
+    },
+    {
+      "start": 4459.639,
+      "duration": 5.08,
+      "text": "my schematic right now I have my SCH"
+    },
+    {
+      "start": 4461.4,
+      "duration": 6.88,
+      "text": "schematic uh drawn up I have the button"
+    },
+    {
+      "start": 4464.719,
+      "duration": 5.841,
+      "text": "right here and then I have uh my"
+    },
+    {
+      "start": 4468.28,
+      "duration": 4.48,
+      "text": "resistors for my data line I have my"
+    },
+    {
+      "start": 4470.56,
+      "duration": 6.48,
+      "text": "capacitor for my"
+    },
+    {
+      "start": 4472.76,
+      "duration": 6.72,
+      "text": "LEDs and um I cannot get for some reason"
+    },
+    {
+      "start": 4477.04,
+      "duration": 5.0,
+      "text": "when I add this capacitor it does not"
+    },
+    {
+      "start": 4479.48,
+      "duration": 7.36,
+      "text": "want to pass"
+    },
+    {
+      "start": 4482.04,
+      "duration": 4.8,
+      "text": "uh electronic rules checking"
+    },
+    {
+      "start": 4504.84,
+      "duration": 3.64,
+      "text": "could that be it"
+    },
+    {
+      "start": 4539.72,
+      "duration": 5.54,
+      "text": "[Music]"
+    },
+    {
+      "start": 4560.44,
+      "duration": 3.44,
+      "text": "I'm an electronic engineer and I miss"
+    },
+    {
+      "start": 4562.12,
+      "duration": 5.2,
+      "text": "hardware part in my day today I have"
+    },
+    {
+      "start": 4563.88,
+      "duration": 3.44,
+      "text": "been working only with software"
+    },
+    {
+      "start": 4567.44,
+      "duration": 7.44,
+      "text": "programming yeah that can be nice though"
+    },
+    {
+      "start": 4570.88,
+      "duration": 7.6,
+      "text": "cuz some of this Hardware stuff is"
+    },
+    {
+      "start": 4574.88,
+      "duration": 7.759,
+      "text": "really rough super rough I cannot figure"
+    },
+    {
+      "start": 4578.48,
+      "duration": 7.32,
+      "text": "out why it's so upset about having this"
+    },
+    {
+      "start": 4582.639,
+      "duration": 7.0,
+      "text": "capacitor here but um um it does not"
+    },
+    {
+      "start": 4585.8,
+      "duration": 3.839,
+      "text": "care about the other capacitors at"
+    },
+    {
+      "start": 4592.719,
+      "duration": 8.081,
+      "text": "all it makes me wonder if I'm"
+    },
+    {
+      "start": 4596.96,
+      "duration": 6.279,
+      "text": "like choosing the wrong cap but I don't"
+    },
+    {
+      "start": 4600.8,
+      "duration": 2.439,
+      "text": "think I"
+    },
+    {
+      "start": 4613.84,
+      "duration": 4.04,
+      "text": "am for"
+    },
+    {
+      "start": 4665.8,
+      "duration": 8.28,
+      "text": "your desk Hub looks Greener every day"
+    },
+    {
+      "start": 4668.84,
+      "duration": 5.24,
+      "text": "yes oh I love to hear that"
+    },
+    {
+      "start": 4692.92,
+      "duration": 3.96,
+      "text": "do you have um do you have any projects"
+    },
+    {
+      "start": 4695.32,
+      "duration": 4.72,
+      "text": "you're working on like side projects"
+    },
+    {
+      "start": 4696.88,
+      "duration": 3.16,
+      "text": "right now"
+    },
+    {
+      "start": 4711.239,
+      "duration": 4.561,
+      "text": "switch on over to X come on over to the"
+    },
+    {
+      "start": 4713.52,
+      "duration": 2.28,
+      "text": "good"
+    },
+    {
+      "start": 4716.56,
+      "duration": 4.0,
+      "text": "side oops"
+    },
+    {
+      "start": 4746.12,
+      "duration": 6.519,
+      "text": "I'm going to sign into uh PCB"
+    },
+    {
+      "start": 4749.28,
+      "duration": 7.04,
+      "text": "way and see if I can grab my"
+    },
+    {
+      "start": 4752.639,
+      "duration": 3.681,
+      "text": "schematic for a different"
+    },
+    {
+      "start": 4756.639,
+      "duration": 5.921,
+      "text": "PCB and uh see if I did something"
+    },
+    {
+      "start": 4759.56,
+      "duration": 3.0,
+      "text": "differently"
+    },
+    {
+      "start": 4765.12,
+      "duration": 3.44,
+      "text": "I have nine minutes to finish"
+    },
+    {
+      "start": 4786.4,
+      "duration": 6.68,
+      "text": "this no it doesn't have"
+    },
+    {
+      "start": 4789.6,
+      "duration": 3.48,
+      "text": "it all right my"
+    },
+    {
+      "start": 4793.639,
+      "duration": 4.481,
+      "text": "friends this is going to be GG's for now"
+    },
+    {
+      "start": 4796.719,
+      "duration": 5.0,
+      "text": "our"
+    },
+    {
+      "start": 4798.12,
+      "duration": 5.36,
+      "text": "uh I'll probably finish this just"
+    },
+    {
+      "start": 4801.719,
+      "duration": 3.44,
+      "text": "learning full stack and getting better"
+    },
+    {
+      "start": 4803.48,
+      "duration": 3.32,
+      "text": "at iOS programming but it will be one of"
+    },
+    {
+      "start": 4805.159,
+      "duration": 4.641,
+      "text": "my New Year's resolutions start some"
+    },
+    {
+      "start": 4806.8,
+      "duration": 6.2,
+      "text": "project yes I love hearing that that's"
+    },
+    {
+      "start": 4809.8,
+      "duration": 3.2,
+      "text": "awesome that's"
+    },
+    {
+      "start": 4813.32,
+      "duration": 5.879,
+      "text": "amazing um I feel like the App Store is"
+    },
+    {
+      "start": 4817.679,
+      "duration": 4.161,
+      "text": "just like"
+    },
+    {
+      "start": 4819.199,
+      "duration": 4.721,
+      "text": "insane like I need to this this coming"
+    },
+    {
+      "start": 4821.84,
+      "duration": 3.56,
+      "text": "year I need to get into putting some"
+    },
+    {
+      "start": 4823.92,
+      "duration": 3.84,
+      "text": "apps out"
+    },
+    {
+      "start": 4825.4,
+      "duration": 4.48,
+      "text": "and uh that would be really"
+    },
+    {
+      "start": 4827.76,
+      "duration": 5.08,
+      "text": "cool but"
+    },
+    {
+      "start": 4829.88,
+      "duration": 5.96,
+      "text": "um probably going to be uh changing my"
+    },
+    {
+      "start": 4832.84,
+      "duration": 6.48,
+      "text": "Tex T then which I hate doing um all"
+    },
+    {
+      "start": 4835.84,
+      "duration": 7.04,
+      "text": "right so thank you guys for watching uh"
+    },
+    {
+      "start": 4839.32,
+      "duration": 5.96,
+      "text": "we got really close to finishing the uh"
+    },
+    {
+      "start": 4842.88,
+      "duration": 3.44,
+      "text": "schematic I don't know this is a weird"
+    },
+    {
+      "start": 4845.28,
+      "duration": 4.24,
+      "text": "thing"
+    },
+    {
+      "start": 4846.32,
+      "duration": 6.44,
+      "text": "where the I'm having an error on this"
+    },
+    {
+      "start": 4849.52,
+      "duration": 5.48,
+      "text": "pin when this cap is here which I've"
+    },
+    {
+      "start": 4852.76,
+      "duration": 3.64,
+      "text": "never seen this before I I don't know"
+    },
+    {
+      "start": 4855.0,
+      "duration": 4.48,
+      "text": "why it's causing it I'm sure it's"
+    },
+    {
+      "start": 4856.4,
+      "duration": 5.799,
+      "text": "something really stupid but"
+    },
+    {
+      "start": 4859.48,
+      "duration": 4.32,
+      "text": "um I'll come back to it later today and"
+    },
+    {
+      "start": 4862.199,
+      "duration": 4.241,
+      "text": "I'll figure it out and then I'll post"
+    },
+    {
+      "start": 4863.8,
+      "duration": 5.52,
+      "text": "that the uh schematic has been completed"
+    },
+    {
+      "start": 4866.44,
+      "duration": 5.279,
+      "text": "thanks guys I'll see you in the next one"
+    },
+    {
+      "start": 4869.32,
+      "duration": 2.399,
+      "text": "peace"
+    }
+  ],
+  "full_text": "appreciate good morning good morning good morning it's Max it's Max vers button and I will not give in let's go good morning good morning we got to get our tweet out we got to let the people know what we're doing come on let's go there all right people come on come on now let's pull up the uh to-do list here let's get smart let's get educated about it I get the coffee going my veins all right let's get the status update first okay o o o it just make it just makes you want to press it look at it look at it makes you want to press this bad boy doesn't it Jesus oh wow so the issue we have right now okay and then this is uh priority Numero Uno on our to-do list here is that um we need to make the actual green button part a tiny bit a tiny bit smaller there Christian thank you so much brother that means the absolute world to me yes so the button we have to make a tiny bit smaller because it is uh it if you don't hit it top dead center it will hit the uh the the base the key cap will hit the base okay which um which we obviously don't want happening we want a really nice clean key press that way there there's no weird sounds of the uh of the 3D print hitting the um the outside of it all right people let's get it going let's get it rolling joining for people just joining here's where we're at with the button all right I think it's looking unbelievable it's it's the most clickable thing I've ever seen like when you see it on the desk you instantly just want to click it so um yeah all right to-do list is uh make key cap tiny bit smaller half a millimeter you C smaller half millimeter and then um we have to it's not going to be easy we have to draw schematic for PCB G to be got me a little top we can do it we can do it all right let's get this key cap smaller Morpheus is here yes baby good morning Morpheus how are you doing today are we waking up from the Matrix wake up Neil here's our new key key uh stems revolutionary design yes you are bless sir yes you are we're all blessed to be doing it I think you should add text commit I think I should too I think I gotta add your name to it right I got to add your name and I got to say I gotta say push it I think that's a great idea good morning how you doing today all right so um come on bro little bit bigger [Music] oh I'm so shot today go Max go wait Floren real quick I got to give you the uh I got to give you I got to show you what's up with this I gotta show you this real quick foren oh look at it look at this bad boy go yes yes it's pretty good it's pretty good right that's the that's the big ass green button yes it is Makoto thank you good morning good morning all right I got to keep going uh yeah so we're going to add we're going to add LEDs to it so it will glow the uh the inside of the button is going to be filled with LEDs we're going to make a custom PCB and uh it'll it'll have backlight and it's going to look sick right now we are making the um oh my God I just made the button bigger too I'm I'm so shot today damn it we're making the button a little bit smaller it's tiny bit too big in the closure no all right that's going to be perfect can't wait for it super cool custom purple version yes we need the purple version of course of course of course go to the desk hub look at how big this little project has gotten by the way please someone tell me I'm I'm insane thank you thank you good morning have a great day today you're you're a legend your desk cup will be there soon I'll share the uh tracking with you Jesus Christ okay version 11 of the keycap wow I have to volunteer with the marketing face red smiling to face red smiling live I have to volunteer with the marketing all right volunteer with marketing let's get involved come on do you have um about 8,000 followers on Tik Tok cuz that's what we need right now again have you arrived in the name yet or will it be a surprise I have the file name as click it but I don't like it I have not come up with the name yet what is your uh what's your favorite of the names so far happy New Year happy New Year Jacob how you doing today good morning what's your resolution everyone in here what's your New Year's resolution right now come on I got to hear it you are with me I need to put some uh I wish you best of luck inspiring to see you build the physical products thank you so much I think I think Nobody Does it because they're smart because they're not insane it uh it'll make you go crazy designing physical stuff I guess there's twice as many bugs right you have software bugs and Hardware bugs now you can just name things go into dead if you have to you can just name things what if we have multiple names for it if I just throw together a couple websites is it really that painful to build it damn uh did you see did you see my file list hold on I'll show you how painful it is I will show you right now how painful it is this is how painful it is brother remember these are all designs all right these are all designs and then not only did I design them but I printed them and they didn't work and then I redesigned it and then I printed it and then it didn't work right and we're we're just talking about a button just a button here guys okay we're not talking about catching a rocket with chopsticks this a button but I love it I love it lot of iterations yes all right New Year resolution ship my very first product ship fast yes let's get a button on your desk and I want to see you 2025 when the product when the the Project's all done slam the button send it into production make your first sale get some r r going big money all right um so this is the scariest part of the whole the whole ordeal here this is a schematic editor right this is where we're going to draw up this is where we're going to draw up the schematic for the PCB you know which is really really something no no I think we start with our pins and we grab some uh how many pins are there in our micr controller I build iOS apps I guess the button won't work with pushing to App Store connect right absolutely it'll work with it so I'm putting a microcontroller in it and uh and you're going to have a small dashboard similar to how desk deskhub has a dashboard to set up up so um we can actually a the button will connect to Wi-Fi um and it'll be able to receive software updates but um we'll actually be able to tell the button uh whatever we want it to do I mean you could hook it up to Philips Hue and have it turn your lights on and off if you want to uh what whatever you can think of doing to your computer you're going to be able to have the button do how many pses have it's got nine pins so we need a one by n we need two of them CU there's two rows of pins come on okay it sounds cool to be able to implement on top of the button to create something my own absolutely and that's that's how I build all of my stuff like desk Cub has the API feature so that you can uh you can grab whatever you want on the desk Cub you know I like building Hardware that uh you have full control over and you're not locked into the Matrix I don't know all right what we need to know is we got to we got to get chat gbt involved here because we need to know and I'm all out of credit on on 01 the good chat GPT that's not good extensibility is a great quality yes it is yes it is I think the Indie hacking Community appreciates that because um we're all Builders and we don't want to buy something that we can't mess with okay okay God that sucks why do we have to make everything that's just how it goes you look like Tony Stark Elon must designing this those electric stuff so much cooler than design ux coding Jacob that that makes my whole day all right I'm going to go to work today and think about that comment all day let's grab let's grab a screenshot I'm grabbing a screenshot of that right there you're incredible comment 2024 on the last day God the the non-pa chat gbt is not good it it messes me up more times than it helps also they make this uh they make this software difficult on purpose I don't know why but they do they think it's awesome they think it's funny all right so we are going from uh gpio Port 4 to ground and the hilarious thing about GPI Port 4 is it's on pin number seven one day when I start designing real stuff not that a button isn't real stuff I'm just going to make [ __ ] that makes sense why are we putting on a microprocessor pin 4 gpio 4 on right what the [ __ ] all right so what we did right there is we just made our uh that's our microprocessor this right here this header and then um this is going to be our actual ual button itself right and so uh seven will be pulled high with a pullup resistor in software so you can do that you can do that all in software you pull seven high and then um it is connected to ground via the um the uh two which two is ground here and then when you hit the button seven the pull-up resistor will read low because instead of uh being stuck as as high it'll switch to uh to being connected to ground which will um which will make it read low because it's going to make the connection to ground right instead of uh instead of just there being the signal going back to the microprocessor as reading high and that's your what a time to be alive yes um and that's your basic explanation of that all right and so the switch the switch is actually really easy we need to figure out our um we need to figure out our LED design and um I think that we should go with um um The W W12 S I forgot what it is like wb12 what exactly the micro processor does in this case so the microprocessor holds the um the code and uh it's the brains of the operation so when I hit the switch button It'll recognize that the button's been switched and then in this case uh I have it set up to emulate a keyboard right now and so um it's like a smart keyboard and that it can do whatever like I could have it send um okay send a keystroke wait 500 milliseconds send b keystroke wait 500 milliseconds uh send shift don't release shift send uh CBF release shift like you can do whatever you want with it and that's how we're going to get it to um open the terminal go to our project directory and uh make the get commits and also input uh a message with the commit the microprocessor is uh is critical you know 5050 so that's a 5 mm x 5 mm surface mount device package which means we're going to throw that bad boy right on top of a PCB and um with the pick and place machine and then we'll throw it on a hot plate and it'll solder itself just like the uh microprocessor so we have to throw some of these LEDs into our uh design the thing we're going to need for our LEDs is we're going to need a resistor at the beginning oh thumbs up we're going to need a resistor at the beginning of the circuit maybe we're GNA need a large capacitor definitely at the beginning of the circuit so that um when we have it change colors or change brightness or whatever it doesn't get messed up and then um we're going to have a tiny capacitor right in front of every LEDs and I almost like to think of those as like just like a little tiny battery back backup for them where uh if something changes or they Peak or whatever they need a little bit more power draw you don't see any flicker because they have that capacitor saving the energy for them right there and it can just boom here you go so let's throw some uh let's throw some of these LEDs in there some 50s these are going to be bright too we got we got to make sure that we get the right ones here that's going to be critical those are 2020s we these are 2020s we don't want those we're going to use the big 50/50 these ones are awesome all right um so 5 by five we're going to hit this and then we're going to hit Place repeated copies and then how many 5 by five are we going to have on this thing on this unit so I'm thinking I'm thinking yeah Jacob you should you should try to build something it's good for you all right um I'm thinking that we try to throw in cuz these are only 5 by five okay they're they're not that big like this whole case is 60x 60 okay so I'm thinking we place and the more LEDs we have the better it'll be for diffusion so you won't see like a strong uh LED in one area and not the next so I'm thinking we throw one two three four in the top and then we try to do three in the bottom there oh we can't do three in the bottom because the microprocessor is going to be right there so we do four in the top and then uh we do two in the bottom we have six in total that's going to be great cuz we'll have plenty of head room for power there let's go let's go so when we lay it out and the schematic the positioning doesn't matter oops I'm on my face by accident when we lay it out in the schematic the positioning does not matter all right we do need to ask chat GPT here what um a good CU I don't remember what should we use for a cap in front of each LED and what should we use for one on the entire circuit come on okay filter no we know what we know what they're for all right yes a point UF ceramic come on now so the really nice thing about a ceramic cap not an electro electrolytic cap a ceramic cap is that um with the ceramic cap they are um there's no polarity so for someone like myself who has no idea what they're doing uh it's hard to mess them up right 0402 baby this is the bad boy we need right here yes do you already have the LEDs at home the LEDs are on the way they're uh they're coming from uh China right now I think that I have a thousand of them coming and they're going to come on a big uh real like a huge tape that'll get put into my pick and place machine all right 4020 Let's uh let's grab these come on we got to keep going oh this is an 0402 we want the surface mount version this was really hard for me to wrap my head around but uh the capacitors are going to bridge ground and uh VCC so it's going to bridge 5 volts and ground right before the um right before the LED we need a resistor for data oh this is going to turn into a mess very quickly I think that I think that this uh th farad capacitor or whatever it is is going to be a 1210 size but I will fix it if it's not I just want to get going with this because it's already 611 okay so um let's do um let's do data first and then we'll do uh voltage and ground so um grab a chip here as well do you already yeah as well the microprocessors yeah I have like only 100 of the microprocessors at home though because those are a little bit more expensive those also come from China all right so this is data it's going to go in it's going to come out of the GPI o Port uh three and then uh go into this resistor right here uh this 30 330 Ohm resistor and then it's going to go into Data n and then uh out data out pretty simple setup remember all we're doing is drawing the schematic this is nothing positional so this is like writing the backend code without um without having any front end code and all I did right there was just told the schematic that that ends that ends right there data data in data out okay and then um we have to supply the power which uh power is going to be on five volts is right here oops that's about I don't think we need one okay we do not need one God if I do that one more time okay all right so we're going out of five volts right here this is probably unfortunately going to be an electrolytic capacitor so we are going to need What's the title of the soundtrack the soundtrack is white bat uh white bat vibrant 80 synth wve playlist gets me AB absolutely fired up out of my mind okay so we have to hit one leg of the capacitor before going in to voltage in I mean it's simple stuff but it's also not at all that makes sense it's simple stuff but it's also very infuriating and I have no uh it just stuff that I researched do we have another ground really don't okay I like this better I think that's cleaner to look at for the schematic for it to dip down like that and then pop back up so you can see that we're hitting this we're hitting this capacitor this is just a little tiny guy tooo a little tiny capacitor and uh these actually like matter you want them as close as possible to the LED like you want it snug right up there so that you get the um the greatest effect from it I messed the song up right here oh no I didn't I'm an idiot all right here we go come on that would have broke the whole thing okay there's our circuit baby come on keep pushing why are these connected right here you should not be connected what when did that even happen let's go let's go let's go let's go all right all right all right come on we have a whole mess of situation going on here what happened good Lord okay that comes out of 5 volt into the the big cap into the small cap No Cap all right great then data comes out of six should not be going into ground at all how did this happen we almost lost it there all right let's do quick manual inspection before we have the uh the ERC check okay so ground is going to this undoing stuff or am I losing my mind oh this is 5 volts also not ground 5 volts is going to this capacitor and then this needs to hit here why are you not doing that oh it just did that okay that's strange all right five volts comes in big cap goes into vsss or VCC whatever yes that's great okay the other leg of 5 volt should not be going there ah okay this is what we did okay there we go that's better no please stop you're an absolute Menace okay five Vols the only thing that five Vol should be going to is the cap and then to vsss yes great okay okay ground is going to the ground pins beautiful the ground pins and then uh gp6 which is pin three it's going to the resistor and then to data in and data out all the way through yes okay seven is just going to the switch that's it what pleasure Watching Max good luck with the product need to leave I one for late yes thank you brother you have a great day and happy New Year's all right all right all right all we are looking good here let's let's check this I know it's going to give me an error about power source electrical rules Checker so we got to make all these happy cuz they're not happy right now we add a power flag and then we add a how dare you we actually add a power flag to this too oh I'm so silly why is that one not not happy about that that one is not psyched okay uh input power not driven by any output power pins yes you are okay why e for is not a fan of my setup here doesn't like it this cap giving us problems ah the cap is giving us problems no cap did I not see that this has polarity hi Max in community or better said Community yes good morning Miguel how are you today my friend Happy New Year's what's your New Year's resolution what are you doing this coming year what are you building what are you working on I got to know give me the deets for I don't want that cap I don't want that the capacitor I do not want that one we're going to use something else let me log into my uh AliExpress account and see what I've ordered it is a 1210 that is what it is this work why are you doing this to me it's working everywhere but not this one where are we now buffering um I am trying to figure out a bug here where uh I cannot get electronic rules Checker to pass on my schematic right now I have my SCH schematic uh drawn up I have the button right here and then I have uh my resistors for my data line I have my capacitor for my LEDs and um I cannot get for some reason when I add this capacitor it does not want to pass uh electronic rules checking could that be it [Music] I'm an electronic engineer and I miss hardware part in my day today I have been working only with software programming yeah that can be nice though cuz some of this Hardware stuff is really rough super rough I cannot figure out why it's so upset about having this capacitor here but um um it does not care about the other capacitors at all it makes me wonder if I'm like choosing the wrong cap but I don't think I am for your desk Hub looks Greener every day yes oh I love to hear that do you have um do you have any projects you're working on like side projects right now switch on over to X come on over to the good side oops I'm going to sign into uh PCB way and see if I can grab my schematic for a different PCB and uh see if I did something differently I have nine minutes to finish this no it doesn't have it all right my friends this is going to be GG's for now our uh I'll probably finish this just learning full stack and getting better at iOS programming but it will be one of my New Year's resolutions start some project yes I love hearing that that's awesome that's amazing um I feel like the App Store is just like insane like I need to this this coming year I need to get into putting some apps out and uh that would be really cool but um probably going to be uh changing my Tex T then which I hate doing um all right so thank you guys for watching uh we got really close to finishing the uh schematic I don't know this is a weird thing where the I'm having an error on this pin when this cap is here which I've never seen this before I I don't know why it's causing it I'm sure it's something really stupid but um I'll come back to it later today and I'll figure it out and then I'll post that the uh schematic has been completed thanks guys I'll see you in the next one peace"
+}
