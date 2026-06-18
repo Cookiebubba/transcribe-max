@@ -4,46 +4,47 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CNVS — FAQ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   CNVS — FAQ
-   Styled after cnvs.dev: the "Aurora" theme, animated aperture
-   sky, and the signature .cnvs-node glass card (chrome bar with
-   status dot + Title · CNVS + × close, over a body). Swift /
-   liquid-glass aesthetic. Single self-contained file.
+   CNVS — FAQ   ·  matched to cnvs.dev
+   Warm night-sky aesthetic: dark starfield + amber/gold ambient
+   glow, cream monospace display type, gold-outlined ghost
+   buttons, and the signature .cnvs-node glass card (chrome bar
+   with status dot + Title · CNVS + × close, over a body).
+   Single self-contained file (Google Fonts is the only CDN ref).
    ============================================================ */
 
 :root{
-  --bg-0:#070a12;
-  --bg-1:#0a0f1c;
-  --ink:#eaf1ff;
-  --ink-dim:#9fb0cc;
-  --ink-faint:#6f7f9c;
-  --line:rgba(140,170,225,.14);
-  --line-strong:rgba(150,185,255,.30);
-  --glass:rgba(20,28,46,.55);
-  --glass-hi:rgba(38,52,82,.55);
-  --radius:18px;
-  --radius-sm:12px;
+  --bg-0:#0a0807;
+  --bg-1:#100c0a;
+  --cream:#f1e9d7;          /* headings / display */
+  --ink:#e9e0cd;
+  --ink-dim:#b3a890;        /* warm body gray */
+  --ink-faint:#867c6b;
+  --line:rgba(214,182,120,.15);
+  --line-strong:rgba(220,190,130,.34);
+  --glass:rgba(26,21,16,.60);
 
-  /* agent / category accents (from the site's --agent-* tokens) */
-  --a-aurora:#5eead4;   /* product / general  */
-  --a-apple:#cfe0ff;    /* platform / swift    */
-  --a-claude:#f0a072;   /* pricing (Anthropic clay) */
-  --a-codex:#37d6a0;    /* agents              */
-  --a-cursor:#ff8fb6;   /* models              */
-  --a-violet:#b79cff;   /* voice               */
-  --a-blue:#5fa0ff;     /* remote / infra      */
+  /* warm gold accent family (faithful to the site) */
+  --gold:#d8b56b;
+  --gold-bright:#f0cd86;
+  --amber:#e0a86a;
+  --bronze:#c6a259;
+  --sand:#e7ddc6;
 
-  --shadow:0 24px 60px -28px rgba(0,0,0,.85), 0 2px 0 rgba(255,255,255,.04) inset;
-  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Inter, system-ui, sans-serif;
-  --mono: ui-monospace, "SF Mono", SFMono-Regular, "JetBrains Mono", Menlo, monospace;
+  --radius:20px;
+  --shadow:0 30px 70px -34px rgba(0,0,0,.9), 0 1px 0 rgba(255,240,210,.05) inset;
+  --mono:"JetBrains Mono", ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code", Menlo, monospace;
+  --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 }
 
 *{box-sizing:border-box}
 html,body{margin:0;height:100%}
 body{
-  font-family:var(--font);
+  font-family:var(--sans);
   color:var(--ink);
   background:var(--bg-0);
   -webkit-font-smoothing:antialiased;
@@ -51,186 +52,213 @@ body{
   overflow-x:hidden;
 }
 
-/* ---------- animated aperture sky / aurora ---------- */
-.aperture-bg{position:fixed;inset:0;z-index:-2;overflow:hidden;background:
-  radial-gradient(120% 90% at 50% -10%, #10182c 0%, var(--bg-1) 45%, var(--bg-0) 100%);}
-.aperture-bg::after{content:"";position:absolute;inset:-2px;background:
-  radial-gradient(60% 50% at 50% 120%, rgba(94,234,212,.05), transparent 70%);}
-.aurora{position:absolute;filter:blur(70px);opacity:.55;mix-blend-mode:screen;border-radius:50%;
-  animation:drift 26s ease-in-out infinite;}
-.aurora.a1{width:60vw;height:46vw;left:-10vw;top:-14vw;
-  background:radial-gradient(circle at 30% 30%, #2bd6c0, transparent 60%);}
-.aurora.a2{width:54vw;height:40vw;right:-12vw;top:-6vw;animation-delay:-8s;
-  background:radial-gradient(circle at 60% 40%, #5b7bff, transparent 60%);}
-.aurora.a3{width:70vw;height:48vw;left:8vw;bottom:-26vw;animation-delay:-15s;opacity:.4;
-  background:radial-gradient(circle at 50% 50%, #9a6bff, transparent 62%);}
-.grain{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.035;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");}
-@keyframes drift{0%,100%{transform:translate3d(0,0,0) scale(1)}33%{transform:translate3d(3vw,2vw,0) scale(1.08)}66%{transform:translate3d(-2vw,1vw,0) scale(.96)}}
+/* ---------- warm night sky ---------- */
+.sky{position:fixed;inset:0;z-index:-3;overflow:hidden;
+  background:
+    radial-gradient(120% 80% at 50% -8%, #211710 0%, rgba(20,14,10,.4) 38%, transparent 60%),
+    radial-gradient(140% 90% at 50% 116%, rgba(190,134,58,.34) 0%, rgba(120,80,34,.10) 34%, transparent 60%),
+    linear-gradient(180deg, #0c0a09 0%, #0a0908 46%, #0c0907 100%);}
+.sky::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(80% 50% at 50% 50%, transparent 60%, rgba(0,0,0,.45) 100%);}
+#stars{position:fixed;inset:0;z-index:-2;pointer-events:none}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.5;
+  animation:tw 4s ease-in-out infinite}
+.shoot{position:fixed;top:-10%;left:0;width:2px;height:2px;border-radius:50%;background:#fff;z-index:-2;
+  box-shadow:0 0 6px 1px rgba(255,245,220,.8);opacity:0;
+  filter:drop-shadow(0 0 4px #fff)}
+.shoot::after{content:"";position:absolute;right:1px;top:0;width:140px;height:1px;
+  background:linear-gradient(90deg, rgba(255,245,220,.85), transparent);transform-origin:right center}
+.shoot.s1{animation:shoot 9s ease-in 2s infinite}
+.shoot.s2{animation:shoot 11s ease-in 6.5s infinite}
+@keyframes tw{0%,100%{opacity:.25}50%{opacity:.9}}
+@keyframes shoot{
+  0%{opacity:0;transform:translate(6vw,4vh) rotate(34deg) scale(1)}
+  6%{opacity:1}
+  16%{opacity:1}
+  24%{opacity:0;transform:translate(46vw,34vh) rotate(34deg) scale(1)}
+  100%{opacity:0;transform:translate(46vw,34vh) rotate(34deg)}}
+@media (prefers-reduced-motion:reduce){.star,.shoot{animation:none}.shoot{display:none}*{scroll-behavior:auto!important}}
 
-@media (prefers-reduced-motion:reduce){.aurora{animation:none}*{scroll-behavior:auto!important}}
+/* ---------- header / logo ---------- */
+.site-logo{position:fixed;top:20px;left:24px;z-index:20;display:flex;align-items:center;gap:11px;
+  text-decoration:none;color:var(--cream)}
+.site-logo__icon{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;
+  background:linear-gradient(160deg, #241c12, #15110c);
+  border:1px solid rgba(220,190,130,.4);
+  box-shadow:0 6px 18px -8px rgba(0,0,0,.8), 0 0 14px rgba(216,181,107,.12) inset}
+.site-logo__icon svg{width:17px;height:17px;color:var(--cream)}
+.site-logo__word{font-family:var(--mono);font-weight:700;letter-spacing:.16em;font-size:16px;color:var(--cream)}
 
-/* ---------- shell ---------- */
-.site-logo{position:fixed;top:22px;left:26px;z-index:20;display:flex;align-items:center;gap:10px;
-  text-decoration:none;color:var(--ink);}
-.site-logo__icon{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
-  background:conic-gradient(from 210deg, #5eead4, #5b7bff, #9a6bff, #5eead4);
-  box-shadow:0 6px 20px -6px rgba(91,123,255,.7), 0 0 0 1px rgba(255,255,255,.18) inset;
-  font-weight:800;font-size:13px;color:#05121a;letter-spacing:.02em;}
-.site-logo__word{font-weight:700;letter-spacing:.18em;font-size:15px}
+.wrap{max-width:760px;margin:0 auto;padding:118px 22px 80px}
 
-.wrap{max-width:760px;margin:0 auto;padding:120px 22px 90px}
-
-.head{text-align:center;margin-bottom:30px}
-.head__eyebrow{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 var(--mono);
-  letter-spacing:.16em;text-transform:uppercase;color:var(--a-aurora);
-  padding:7px 13px;border:1px solid var(--line);border-radius:100px;background:rgba(94,234,212,.06);}
-.head__eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--a-aurora);
-  box-shadow:0 0 12px var(--a-aurora);animation:pulse 2.4s ease-in-out infinite}
-.head h1{font-size:clamp(34px,6vw,52px);line-height:1.04;margin:18px 0 10px;letter-spacing:-.02em;
-  font-weight:760;background:linear-gradient(180deg,#fff 30%, #b9c9ee);-webkit-background-clip:text;background-clip:text;color:transparent}
-.head p{color:var(--ink-dim);font-size:16px;margin:0;max-width:46ch;margin-inline:auto}
+.head{text-align:center;margin-bottom:28px}
+.head__eyebrow{display:inline-flex;align-items:center;gap:9px;
+  font:600 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--gold);
+  padding:7px 14px;border:1px solid var(--line);border-radius:100px;background:rgba(216,181,107,.06)}
+.head__eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);
+  box-shadow:0 0 12px var(--gold);animation:pulse 2.6s ease-in-out infinite}
+.head h1{font-family:var(--mono);font-weight:800;font-size:clamp(30px,5.6vw,46px);line-height:1.08;
+  margin:20px 0 12px;letter-spacing:-.01em;color:var(--cream);
+  text-shadow:0 1px 30px rgba(216,181,107,.12)}
+.head p{color:var(--ink-dim);font-size:16px;margin:0;max-width:48ch;margin-inline:auto;line-height:1.55}
 
 /* ---------- search node ---------- */
-.search-node{margin:26px 0 14px;position:sticky;top:16px;z-index:15}
+.search-node{margin:26px 0 12px;position:sticky;top:14px;z-index:15}
 .searchbar{position:relative;display:flex;align-items:center;gap:12px;
   padding:5px 6px 5px 16px;border-radius:16px;
-  background:linear-gradient(180deg, rgba(28,38,62,.78), rgba(16,22,38,.82));
+  background:linear-gradient(180deg, rgba(32,25,17,.82), rgba(18,14,10,.86));
   border:1px solid var(--line-strong);
   box-shadow:var(--shadow);
-  backdrop-filter:blur(22px) saturate(140%);
-  -webkit-backdrop-filter:blur(22px) saturate(140%);
-  transition:border-color .35s ease, box-shadow .45s ease, transform .25s cubic-bezier(.2,.9,.25,1);}
+  backdrop-filter:blur(22px) saturate(130%);
+  -webkit-backdrop-filter:blur(22px) saturate(130%);
+  transition:border-color .35s ease, box-shadow .45s ease, transform .25s cubic-bezier(.2,.9,.25,1)}
 .searchbar::before{content:"";position:absolute;inset:-1px;border-radius:17px;padding:1px;pointer-events:none;
-  background:conic-gradient(from var(--ang,0deg), transparent 0deg, #5eead4 60deg, #5b7bff 140deg, #9a6bff 220deg, transparent 300deg);
+  background:conic-gradient(from var(--ang,0deg), transparent 0deg, #d8b56b 70deg, #f0cd86 150deg, #b9822f 230deg, transparent 320deg);
   -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .4s ease}
 .search-node.is-focused .searchbar{transform:translateY(-1px);
-  box-shadow:0 30px 70px -30px rgba(0,0,0,.9), 0 0 0 4px rgba(91,123,255,.10);}
-.search-node.is-focused .searchbar::before{opacity:1;animation:spin 5s linear infinite}
-.search-ico{flex:0 0 auto;width:20px;height:20px;color:var(--ink-dim);
+  box-shadow:0 34px 76px -34px rgba(0,0,0,.92), 0 0 0 4px rgba(216,181,107,.10)}
+.search-node.is-focused .searchbar::before{opacity:1;animation:spin 5.5s linear infinite}
+.search-ico{flex:0 0 auto;width:20px;height:20px;color:var(--ink-faint);
   transition:color .3s ease, transform .4s cubic-bezier(.2,.9,.25,1)}
-.search-node.is-focused .search-ico{color:var(--a-aurora);transform:scale(1.08) rotate(-6deg)}
-.searchbar input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--ink);
-  font:500 17px/1.4 var(--font);padding:13px 0;letter-spacing:-.01em}
+.search-node.is-focused .search-ico{color:var(--gold);transform:scale(1.08) rotate(-6deg)}
+.searchbar input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--cream);
+  font:500 17px/1.4 var(--sans);padding:13px 0;letter-spacing:-.01em}
 .searchbar input::placeholder{color:transparent}
 .ph{position:absolute;left:48px;top:50%;transform:translateY(-50%);pointer-events:none;
-  color:var(--ink-faint);font-size:17px;display:flex;align-items:center;letter-spacing:-.01em}
+  color:var(--ink-faint);font-size:17px;display:flex;align-items:center}
 .ph.hide{opacity:0}
-.ph .caret{display:inline-block;width:2px;height:18px;margin-left:1px;background:var(--a-aurora);
+.ph .caret{display:inline-block;width:2px;height:18px;margin-left:1px;background:var(--gold);
   animation:blink 1.05s steps(1) infinite;border-radius:2px}
-.search-clear{flex:0 0 auto;border:0;background:rgba(255,255,255,.06);color:var(--ink-dim);
+.search-clear{flex:0 0 auto;border:0;background:rgba(255,240,210,.06);color:var(--ink-dim);
   width:34px;height:34px;border-radius:10px;cursor:pointer;font-size:18px;line-height:1;
   display:grid;place-items:center;opacity:0;transform:scale(.8);pointer-events:none;
   transition:.25s cubic-bezier(.2,.9,.25,1)}
 .search-clear.show{opacity:1;transform:scale(1);pointer-events:auto}
-.search-clear:hover{background:rgba(255,255,255,.12);color:var(--ink)}
+.search-clear:hover{background:rgba(255,240,210,.12);color:var(--cream)}
 .kbd{flex:0 0 auto;display:flex;gap:4px;margin-right:6px}
-.kbd kbd{font:600 11px var(--mono);color:var(--ink-faint);background:rgba(255,255,255,.05);
+.kbd kbd{font:600 11px var(--mono);color:var(--ink-faint);background:rgba(255,240,210,.04);
   border:1px solid var(--line);border-radius:6px;padding:4px 7px;transition:opacity .25s}
 .search-node.is-focused .kbd{opacity:0}
 
-/* result meta row */
-.meta-row{display:flex;align-items:center;justify-content:space-between;gap:12px;
-  margin:18px 4px 14px;min-height:22px}
-.meta-row__label{font:600 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);
+/* meta row */
+.meta-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 4px 14px;min-height:22px}
+.meta-row__label{font:600 11px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-faint);
   display:flex;align-items:center;gap:9px}
-.count-chip{font:600 12px var(--mono);color:var(--a-aurora);background:rgba(94,234,212,.08);
-  border:1px solid rgba(94,234,212,.22);border-radius:100px;padding:5px 11px;
-  transition:.3s ease}
-.count-chip.searching{color:var(--a-blue);background:rgba(95,160,255,.08);border-color:rgba(95,160,255,.24)}
+.count-chip{font:600 12px var(--mono);color:var(--gold);background:rgba(216,181,107,.08);
+  border:1px solid rgba(216,181,107,.24);border-radius:100px;padding:5px 11px;transition:.3s ease}
+.count-chip.searching{color:var(--gold-bright);background:rgba(240,205,134,.10);border-color:rgba(240,205,134,.3)}
 
-/* ---------- cnvs node (the card) ---------- */
+/* ---------- cnvs node (card) ---------- */
 .list{display:flex;flex-direction:column;gap:14px}
 .cnvs-node{position:relative;border-radius:var(--radius);overflow:hidden;
-  background:linear-gradient(180deg, var(--glass), rgba(12,17,30,.72));
+  background:linear-gradient(180deg, var(--glass), rgba(14,11,8,.74));
   border:1px solid var(--line);
   box-shadow:var(--shadow);
-  backdrop-filter:blur(18px) saturate(135%);
-  -webkit-backdrop-filter:blur(18px) saturate(135%);
-  --accent:var(--a-aurora);
+  backdrop-filter:blur(16px) saturate(125%);
+  -webkit-backdrop-filter:blur(16px) saturate(125%);
+  --accent:var(--gold);
   transition:border-color .3s ease, transform .3s cubic-bezier(.2,.9,.25,1), box-shadow .3s ease;
   will-change:transform}
 .cnvs-node:hover{border-color:var(--line-strong);transform:translateY(-2px)}
-.cnvs-node.open{border-color:color-mix(in srgb, var(--accent) 42%, var(--line-strong))}
+.cnvs-node.open{border-color:color-mix(in srgb, var(--accent) 50%, var(--line-strong));
+  box-shadow:var(--shadow), 0 0 40px -16px color-mix(in srgb, var(--accent) 50%, transparent)}
 .cnvs-node::after{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;
-  background:linear-gradient(180deg, transparent, var(--accent), transparent);opacity:.0;transition:opacity .35s}
+  background:linear-gradient(180deg, transparent, var(--accent), transparent);opacity:0;transition:opacity .35s}
 .cnvs-node.open::after{opacity:.9}
 
-.cnvs-node__chrome{display:flex;align-items:center;gap:10px;padding:13px 14px 13px 16px;cursor:pointer;
-  user-select:none}
+.cnvs-node__chrome{display:flex;align-items:center;gap:10px;padding:13px 14px 13px 16px;cursor:pointer;user-select:none}
 .cnvs-node__status{flex:0 0 auto;width:9px;height:9px;border-radius:50%;background:var(--accent);
-  box-shadow:0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent);
-  animation:dotpulse 3.2s ease-in-out infinite}
+  box-shadow:0 0 8px color-mix(in srgb, var(--accent) 70%, transparent);
+  animation:dotpulse 3.4s ease-in-out infinite}
 .cnvs-node__title{flex:1;min-width:0;display:flex;align-items:baseline;gap:9px;overflow:hidden}
-.cnvs-node__title-main{font-weight:600;font-size:16px;letter-spacing:-.01em;color:var(--ink);
-  white-space:normal;line-height:1.35}
+.cnvs-node__title-main{font-weight:600;font-size:16px;letter-spacing:-.005em;color:var(--cream);line-height:1.35}
 .cnvs-node__title-sep{color:var(--ink-faint);font-size:12px}
-.cnvs-node__title-sub{font:600 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;
-  color:color-mix(in srgb, var(--accent) 75%, #fff 0%);opacity:.85;flex:0 0 auto}
+.cnvs-node__title-sub{font:600 10px var(--mono);letter-spacing:.16em;text-transform:uppercase;
+  color:color-mix(in srgb, var(--accent) 78%, #fff 0%);opacity:.9;flex:0 0 auto}
 .cnvs-node__asks{flex:0 0 auto;font:600 11px var(--mono);color:var(--ink-faint);
-  background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:100px;padding:3px 9px}
+  background:rgba(255,240,210,.03);border:1px solid var(--line);border-radius:100px;padding:3px 9px}
 .cnvs-node__close{flex:0 0 auto;width:26px;height:26px;border-radius:8px;border:1px solid transparent;
-  background:transparent;color:var(--ink-faint);font-size:16px;line-height:1;display:grid;place-items:center;
+  background:transparent;color:var(--ink-faint);display:grid;place-items:center;
   transition:.3s cubic-bezier(.2,.9,.25,1)}
 .cnvs-node__close svg{width:13px;height:13px;transition:transform .35s cubic-bezier(.2,.9,.25,1)}
-.cnvs-node.open .cnvs-node__close{color:var(--ink);background:rgba(255,255,255,.06)}
+.cnvs-node.open .cnvs-node__close{color:var(--cream);background:rgba(255,240,210,.06)}
 .cnvs-node.open .cnvs-node__close svg{transform:rotate(45deg)}
 
-/* accordion body via grid-rows trick (smooth height) */
 .cnvs-node__reveal{display:grid;grid-template-rows:0fr;transition:grid-template-rows .42s cubic-bezier(.2,.9,.25,1)}
 .cnvs-node.open .cnvs-node__reveal{grid-template-rows:1fr}
 .cnvs-node__body{overflow:hidden;min-height:0}
-.cnvs-node__body-inner{padding:2px 18px 18px 32px;color:var(--ink-dim);font-size:15px;line-height:1.62;
+.cnvs-node__body-inner{padding:2px 18px 18px 34px;color:var(--ink-dim);font-size:15px;line-height:1.62;
   opacity:0;transform:translateY(6px);transition:opacity .4s ease .06s, transform .4s ease .06s}
 .cnvs-node.open .cnvs-node__body-inner{opacity:1;transform:none}
-.cnvs-node__body-inner strong{color:var(--ink);font-weight:650}
-.cnvs-node__body-inner .tag{display:inline-block;margin-top:12px;font:600 11px var(--mono);
-  color:var(--accent);letter-spacing:.06em;border-top:1px solid var(--line);padding-top:10px;width:100%}
+.cnvs-node__body-inner strong{color:var(--cream);font-weight:650}
+.cnvs-node__body-inner .tag{display:block;margin-top:13px;font:600 11px var(--mono);
+  color:var(--accent);letter-spacing:.08em;border-top:1px solid var(--line);padding-top:11px}
 
-/* fuzzy highlight */
-.hl{color:#fff;font-weight:700;background:linear-gradient(180deg, transparent 62%, color-mix(in srgb,var(--accent) 38%, transparent) 0);
+.hl{color:#fff;font-weight:700;background:linear-gradient(180deg, transparent 60%, color-mix(in srgb,var(--accent) 42%, transparent) 0);
   border-radius:3px;padding:0 .5px}
 
-/* entrance + regen animation */
 .cnvs-node{animation:rise .5s cubic-bezier(.2,.9,.25,1) both}
 .list.regen .cnvs-node{animation:regen .34s cubic-bezier(.2,.9,.25,1) both}
-
-/* empty state (never used because >=3 always, but kept tidy) */
-.fallback-note{font:500 13px var(--font);color:var(--ink-faint);text-align:center;margin:16px 0 0;opacity:0;
-  transition:opacity .3s}
+.fallback-note{font:500 13px var(--sans);color:var(--ink-faint);text-align:center;margin:16px 0 0;opacity:0;transition:opacity .3s}
 .fallback-note.show{opacity:1}
 
-/* footer echo of the site pricing */
-.foot{margin-top:46px;text-align:center}
-.foot .pay{font:600 13px var(--mono);letter-spacing:.06em;color:var(--ink-dim)}
-.foot .pay b{color:var(--ink)}
-.aurora-btn{display:inline-flex;align-items:center;gap:9px;margin-top:16px;text-decoration:none;
-  font-weight:650;font-size:15px;color:#04121a;padding:13px 22px;border-radius:13px;
-  background:linear-gradient(180deg,#7ff3df,#46c8ff);
-  box-shadow:0 14px 34px -14px rgba(70,200,255,.7), 0 0 0 1px rgba(255,255,255,.25) inset;
-  transition:transform .25s cubic-bezier(.2,.9,.25,1), box-shadow .3s, filter .3s}
-.aurora-btn:hover{transform:translateY(-2px);filter:brightness(1.05);
-  box-shadow:0 22px 44px -16px rgba(70,200,255,.85), 0 0 0 1px rgba(255,255,255,.35) inset}
-.foot small{display:block;margin-top:16px;color:var(--ink-faint);font-size:12px}
+/* ---------- footer (pricing echo) ---------- */
+.foot{margin-top:48px;text-align:center}
+.foot h2{font-family:var(--mono);font-weight:800;font-size:clamp(24px,4.4vw,32px);color:var(--cream);
+  letter-spacing:-.01em;line-height:1.12;margin:0 0 22px}
+.price-card{max-width:430px;margin:0 auto;border-radius:var(--radius);padding:26px 24px 22px;
+  background:linear-gradient(180deg, rgba(34,26,16,.7), rgba(16,12,9,.82));
+  border:1px solid var(--line-strong);
+  box-shadow:var(--shadow), 0 0 60px -26px rgba(216,181,107,.5);
+  backdrop-filter:blur(16px)}
+.price-card__price{font-family:var(--mono);font-weight:800;font-size:52px;color:var(--cream);margin:0;line-height:1}
+.price-card__meta{font:600 11px var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--amber);margin:8px 0 18px}
+.aurora-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;width:100%;
+  font-family:var(--mono);font-weight:600;font-size:15px;color:var(--cream);text-decoration:none;
+  padding:14px 22px;border-radius:13px;cursor:pointer;
+  background:linear-gradient(180deg, rgba(48,38,22,.6), rgba(28,21,13,.7));
+  border:1px solid rgba(220,190,130,.55);
+  box-shadow:0 0 26px rgba(216,181,107,.12) inset, 0 10px 26px -14px rgba(0,0,0,.8);
+  transition:transform .25s cubic-bezier(.2,.9,.25,1), box-shadow .3s, border-color .3s, filter .3s}
+.aurora-btn:hover{transform:translateY(-2px);border-color:var(--gold-bright);filter:brightness(1.06);
+  box-shadow:0 0 34px rgba(240,205,134,.22) inset, 0 16px 34px -16px rgba(0,0,0,.85)}
+/* mini ratchet rail */
+.rail{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin:20px 4px 2px;position:relative}
+.rail__track{position:absolute;left:8%;right:8%;top:7px;height:1px;background:linear-gradient(90deg,var(--line),var(--line-strong),var(--line))}
+.rail__stop{position:relative;display:flex;flex-direction:column;align-items:center;gap:7px;flex:1;z-index:1}
+.rail__dot{width:11px;height:11px;border-radius:50%;background:#241b11;border:1px solid var(--line-strong)}
+.rail__stop[data-state="current"] .rail__dot{background:var(--gold);box-shadow:0 0 12px var(--gold);border-color:var(--gold)}
+.rail__price{font:700 14px var(--mono)}
+.rail__stop[data-state="gone"] .rail__price{color:var(--ink-faint);text-decoration:line-through}
+.rail__stop[data-state="current"] .rail__price{color:var(--cream)}
+.rail__stop[data-state="next"] .rail__price{color:var(--ink-faint)}
+.rail__sub{font:600 9px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+.rail__stop[data-state="current"] .rail__sub{color:var(--amber)}
+.foot small{display:block;margin-top:22px;color:var(--ink-faint);font-size:12px}
 
 /* keyframes */
 @keyframes spin{to{--ang:360deg}}
 @property --ang{syntax:'<angle>';inherits:false;initial-value:0deg}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes dotpulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 55%,transparent)}50%{box-shadow:0 0 0 5px transparent}}
+@keyframes dotpulse{0%,100%{box-shadow:0 0 8px color-mix(in srgb,var(--accent) 55%,transparent)}50%{box-shadow:0 0 3px color-mix(in srgb,var(--accent) 30%,transparent)}}
 @keyframes rise{from{opacity:0;transform:translateY(14px) scale(.99)}to{opacity:1;transform:none}}
 @keyframes regen{from{opacity:0;transform:translateY(7px) scale(.992);filter:blur(2px)}to{opacity:1;transform:none;filter:none}}
 </style>
 </head>
 <body>
-<div class="aperture-bg" aria-hidden="true">
-  <span class="aurora a1"></span><span class="aurora a2"></span><span class="aurora a3"></span>
-</div>
-<div class="grain" aria-hidden="true"></div>
+<div class="sky" aria-hidden="true"></div>
+<div id="stars" aria-hidden="true"></div>
+<span class="shoot s1" aria-hidden="true"></span>
+<span class="shoot s2" aria-hidden="true"></span>
 
-<a class="site-logo" href="#"><span class="site-logo__icon">C</span><span class="site-logo__word">CNVS</span></a>
+<a class="site-logo" href="#">
+  <span class="site-logo__icon">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M8 15.5 12 7l4 8.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.4 12.6h5.2" stroke-linecap="round"/></svg>
+  </span>
+  <span class="site-logo__word">CNVS</span>
+</a>
 
 <main class="wrap">
   <header class="head">
@@ -258,9 +286,19 @@ body{
   <p class="fallback-note" id="fallback">Closest matches shown — nothing scored an exact hit.</p>
 
   <footer class="foot">
-    <p class="pay">Pay once · own CNVS forever — <b>$99</b> founder license</p>
-    <a class="aurora-btn" href="#">Get CNVS</a>
-    <small>This is a fan-made FAQ styled after cnvs.dev. Answers compiled from MaxBladeTv's streams.</small>
+    <h2>Pay once,<br>own CNVS forever.</h2>
+    <div class="price-card">
+      <p class="price-card__price">$99</p>
+      <p class="price-card__meta">One-time payment</p>
+      <a class="aurora-btn" href="#">Get license #1</a>
+      <div class="rail">
+        <span class="rail__track" aria-hidden="true"></span>
+        <span class="rail__stop" data-state="current"><span class="rail__dot"></span><span class="rail__price">$99</span><span class="rail__sub">founder · 5 left</span></span>
+        <span class="rail__stop" data-state="next"><span class="rail__dot"></span><span class="rail__price">$129</span><span class="rail__sub">#6–50</span></span>
+        <span class="rail__stop" data-state="next"><span class="rail__dot"></span><span class="rail__price">$169</span><span class="rail__sub">#51–150</span></span>
+      </div>
+    </div>
+    <small>Fan-made FAQ styled after cnvs.dev · answers compiled from MaxBladeTv's streams.</small>
   </footer>
 </main>
 
@@ -268,143 +306,142 @@ body{
 /* ============================================================
    DATA — questions Max answered on stream.
    asks = relative popularity (drives the default "top 10").
-   acc  = CSS accent var · sub = node subtitle tag.
+   acc  = warm accent var · sub = node subtitle tag.
    ============================================================ */
 const FAQ = [
- {q:"What is CNVS / Canvas?", asks:312, acc:"--a-aurora", sub:"CNVS",
+ {q:"What is CNVS / Canvas?", asks:312, acc:"--gold", sub:"CNVS",
   a:"<strong>An agentic development environment that lives inside an infinite canvas.</strong> You spawn AI coding agents, terminals, browser previews and notes on one surface, drive them by voice, and ship — “idea to first revenue, no bottlenecks.” Max calls it “the Disneyland of vibe coding.”",
   kw:"canvas cnvs what is it agentic development environment infinite vibe coding"},
 
- {q:"Is it Mac only? What's it built in?", asks:268, acc:"--a-apple", sub:"Platform",
+ {q:"Is it Mac only? What's it built in?", asks:268, acc:"--sand", sub:"Platform",
   a:"<strong>macOS only, written 100% in Swift from the ground up</strong> — terminals, browser, canvas, music player, all native. It's an app you install, not an operating system (the full-screen view fools people).",
   kw:"mac macos only platform swift native built language install operating system"},
 
- {q:"Why Swift and not Electron?", asks:201, acc:"--a-apple", sub:"Swift",
+ {q:"Why Swift and not Electron?", asks:201, acc:"--sand", sub:"Swift",
   a:"<strong>Performance and memory.</strong> JavaScript on the desktop is “so slow” and balloons RAM; Swift “runs natively raw dog on Apple hardware.” It also makes Canvas the moat — “everybody can build a web app… a Mac app, it's different.” He won't ship Electron.",
   kw:"swift electron why not javascript performance memory native moat tauri web app"},
 
- {q:"When is the Windows / Linux version?", asks:240, acc:"--a-blue", sub:"Roadmap",
+ {q:"When is the Windows / Linux version?", asks:240, acc:"--bronze", sub:"Roadmap",
   a:"<strong>Deferred, no firm date.</strong> A port would be built natively (Qt / C++ / Rust) — never Electron. He attempted a Windows build live (Electron prototype rejected, Qt chosen) but nothing has shipped. Windows buyers will get an early-bird founder price.",
   kw:"windows linux port when release qt rust c++ cross platform founder price ubuntu"},
 
- {q:"How does voice control work?", asks:233, acc:"--a-violet", sub:"Voice",
+ {q:"How does voice control work?", asks:233, acc:"--amber", sub:"Voice",
   a:"<strong>Two modes.</strong> On-device <strong>Parakeet</strong> (NVIDIA) does local speech-to-text + a grammar/regex resolver — instant, free, no API. Or <strong>GPT Realtime 2</strong> for conversational “Jarvis” control (bring your own OpenAI key). Low-confidence local commands fall back to a cheap LLM.",
   kw:"voice control parakeet nvidia gpt realtime jarvis speech to text local microphone command dictation"},
 
- {q:"How much does it cost?", asks:295, acc:"--a-claude", sub:"Pricing",
+ {q:"How much does it cost?", asks:295, acc:"--gold", sub:"Pricing",
   a:"<strong>A one-time lifetime license on a price ratchet:</strong> <strong>$99</strong> founder (first 5), then <strong>$129</strong> (#6–50), then <strong>$169</strong> (#51–150). You get a numbered license and all 1.x updates forever. No subscription.",
   kw:"cost price how much pricing lifetime 99 129 169 ratchet license founder pay once cheap"},
 
- {q:"Is it a subscription?", asks:188, acc:"--a-claude", sub:"Pricing",
+ {q:"Is it a subscription?", asks:188, acc:"--gold", sub:"Pricing",
   a:"<strong>No.</strong> It's a one-time, bring-your-own-key purchase. “Charging recurring revenue for a product with no recurring costs is a bad look.” Lifetime may be retired around ~150–200 licenses, with existing buyers grandfathered onto it forever.",
   kw:"subscription monthly recurring one time lifetime byo key no sub grandfathered"},
 
- {q:"Does it bill me API rates, or use my Claude/Codex plan?", asks:210, acc:"--a-codex", sub:"Billing",
+ {q:"Does it bill me API rates, or use my Claude/Codex plan?", asks:210, acc:"--bronze", sub:"Billing",
   a:"<strong>It uses your existing subscriptions, not API billing.</strong> The agent CLIs (Claude Code, Codex, Cursor) run on your normal plans — full subsidized usage. The only bring-your-own-API-key part is voice via GPT Realtime; local Parakeet voice costs nothing.",
   kw:"api rates billing subscription claude codex cursor plan byo key cost tokens usage"},
 
- {q:"Which agents does it support?", asks:176, acc:"--a-codex", sub:"Agents",
+ {q:"Which agents does it support?", asks:176, acc:"--bronze", sub:"Agents",
   a:"“<strong>It works with anything — any agent installed on your computer.</strong>” Demonstrated: Claude Code, Codex, Cursor (Composer), OpenCode, Gemini CLI, Grok, plus Max's own Hermes and Open Claw. He's “model agnostic.”",
   kw:"agents support claude code codex cursor opencode gemini grok hermes open claw cli model agnostic"},
 
- {q:"What are remote canvases (VPS)?", asks:169, acc:"--a-blue", sub:"Remote",
+ {q:"What are remote canvases (VPS)?", asks:169, acc:"--bronze", sub:"Remote",
   a:"<strong>A canvas that runs on your own VPS</strong> via SSH/Tailscale. Agents started there keep running after you close or power off your Mac; reopen the same remote canvas from any Mac and they're still going. Zero compute on Max's end — it's your server, your keys.",
   kw:"remote canvas vps server ssh tailscale hetzner keep running close mac background"},
 
- /* ---- searchable depth (surfaces via fuzzy search) ---- */
- {q:"What models do you use and recommend?", asks:142, acc:"--a-cursor", sub:"Models",
+ {q:"What models do you use and recommend?", asks:142, acc:"--amber", sub:"Models",
   a:"Mainly <strong>Claude (Opus)</strong> on the $200 plan, plus a $100 Codex plan and $20 Cursor. The story evolved live: Opus 4.8 (great UI, underwhelming elsewhere) → <strong>Fable 5 / “Mythos”</strong> as the leap (but “no design taste”) → GPT-5.5 for clean backend code. Composer 2.5 for fast tweaks.",
   kw:"models opus 4.8 fable 5 mythos gpt 5.5 claude cursor composer which recommend plan 200"},
 
- {q:"What is the Forge?", asks:121, acc:"--a-codex", sub:"Forge",
+ {q:"What is the Forge?", asks:121, acc:"--bronze", sub:"Forge",
   a:"<strong>A Kanban board node.</strong> Load it with tasks (agents can add their own), set max concurrent agents (20–30), hit start, and it spawns/prompts agents that move ready → building → testing → done, then auto-close to keep the canvas clean. “It absolutely rips.”",
   kw:"forge kanban board tasks queue parallel agents concurrent spawn delegate"},
 
- {q:"How are agents named?", asks:134, acc:"--a-codex", sub:"Agents",
+ {q:"How are agents named?", asks:134, acc:"--bronze", sub:"Agents",
   a:"They <strong>auto-name themselves</strong>, by default after the <strong>Paw Patrol</strong> cast (his kid's favorite) — Chase, Marshall, Sky, Rubble, Rocky, Zuma… You can name them yourself, and Day 43 added a custom comma-separated name pool.",
   kw:"agent names naming paw patrol chase marshall sky rubble custom random"},
 
- {q:"Is there shared memory across agents?", asks:108, acc:"--a-aurora", sub:"Memory",
+ {q:"Is there shared memory across agents?", asks:108, acc:"--gold", sub:"Memory",
   a:"<strong>Yes — a system-wide canvas memory</strong> all agents read/write via MCP/CLI, so different-brand agents feel like one. It's a file-based “MD playbook” using just-in-time retrieval (chosen over heavyweight engines) — “200% less me explaining.”",
   kw:"memory shared context agents mcp cli playbook retrieval rag remember"},
 
- {q:"How do agents control the canvas?", asks:127, acc:"--a-aurora", sub:"MCP",
+ {q:"How do agents control the canvas?", asks:127, acc:"--gold", sub:"MCP",
   a:"<strong>Bidirectional control via a built-in MCP server + CLI.</strong> You drive agents by voice/text; agents drive the canvas back — spawning terminals, starting a dev server, opening a browser preview, drawing diagrams, even spawning other agents. Native MCP registration means no startup-prompt injection.",
   kw:"agents control canvas mcp server cli bidirectional spawn browser preview draw diagrams"},
 
- {q:"What is Canvas Link?", asks:74, acc:"--a-blue", sub:"Link",
+ {q:"What is Canvas Link?", asks:74, acc:"--bronze", sub:"Link",
   a:"<strong>Links two canvases</strong> (e.g. front-end + back-end, or local + production) so agents on either side share context and — with permission — can edit both. Invoked via Command-K; reference-only by default, edit is deliberate.",
   kw:"canvas link multiple directories connect front end back end local production command k"},
 
- {q:"What themes are there?", asks:96, acc:"--a-violet", sub:"Themes",
+ {q:"What themes are there?", asks:96, acc:"--amber", sub:"Themes",
   a:"Many, always growing: <strong>Aurora</strong> (the brand theme), Lakeside (light + night, very popular), Cobalt, Meadow / Night Meadow, Outrun, Bauhaus and more. Backgrounds are Max's own — GPT Image Gen 2 stills animated into 4K loops with Kling. Goal: a translucent “smoked glass” look.",
   kw:"themes aurora lakeside cobalt meadow outrun bauhaus smoked glass liquid background customize"},
 
- {q:"How many agents can it run at once?", asks:88, acc:"--a-codex", sub:"Limits",
+ {q:"How many agents can it run at once?", asks:88, acc:"--bronze", sub:"Limits",
   a:"“<strong>I don't think there's a max — comes down to how good your computer is.</strong>” He's demoed 15 Claude + 15 Codex + 15 Cursor together; getting perf good enough for ~1,000 took about two months. Spinning up ~100 at once can still hitch live.",
   kw:"how many agents max limit terminals concurrent thousand performance run at once"},
 
- {q:"Is there a free trial?", asks:79, acc:"--a-claude", sub:"Pricing",
+ {q:"Is there a free trial?", asks:79, acc:"--gold", sub:"Pricing",
   a:"<strong>No.</strong> “Free trials are for venture capitalists, not for indie makers.” Adding one previously hurt his QuickClaw growth.",
   kw:"free trial demo try before buy no refund"},
 
- {q:"Does the license cover all my devices?", asks:71, acc:"--a-claude", sub:"License",
+ {q:"Does the license cover all my devices?", asks:71, acc:"--gold", sub:"License",
   a:"<strong>Yes</strong> — one account; sign in with the same Apple/Google login on all your devices.",
   kw:"license devices multiple computers account apple google login how many"},
 
- {q:"What is “caveman mode”?", asks:63, acc:"--a-codex", sub:"Agents",
+ {q:"What is “caveman mode”?", asks:63, acc:"--bronze", sub:"Agents",
   a:"A toggle (Settings → Agents) that forces agents to give <strong>ultra-brief, zero-jargon replies</strong>. Great for shipping fast, bad for hard debugging.",
   kw:"caveman mode brief replies jargon settings agents short"},
 
- {q:"Can it open the iOS simulator?", asks:58, acc:"--a-apple", sub:"Simulator",
+ {q:"Can it open the iOS simulator?", asks:58, acc:"--sand", sub:"Simulator",
   a:"Partially, behind a debug flag. macOS forbids reparenting another app's window, so the approach is to <strong>mirror Simulator.app</strong> (ScreenCaptureKit) and forward input — “puppeteering.” Pulled from the build until it's perfected.",
   kw:"ios simulator iphone preview mirror screencapturekit xcode app"},
 
- {q:"Does the music player support Spotify?", asks:84, acc:"--a-violet", sub:"Music",
+ {q:"Does the music player support Spotify?", asks:84, acc:"--amber", sub:"Music",
   a:"Not yet — it's the top request. It has Apple Music (MusicKit), YouTube and licensed “stations.” Spotify is hard: the old streaming SDK was deprecated, leaving only an “app remote” that can't play audio itself. It'd be the first real library added to Canvas.",
   kw:"music player spotify apple music youtube stations equalizer visualizer background song"},
 
- {q:"Can agents draw diagrams or loops?", asks:67, acc:"--a-aurora", sub:"Drawing",
+ {q:"Can agents draw diagrams or loops?", asks:67, acc:"--gold", sub:"Drawing",
   a:"<strong>Yes</strong> — agents can draw labeled boxes and diagrams on the canvas via a JSON draw verb (demoed a 54-element diagram). The roadmap goal is visual <strong>loops</strong>: draw a loop node, wire an arrow to an agent/forge, “start the loop.”",
   kw:"draw diagrams agents canvas excalidraw loops visual arrow node sketch"},
 
- {q:"Can I use a local model offline?", asks:61, acc:"--a-cursor", sub:"Models",
+ {q:"Can I use a local model offline?", asks:61, acc:"--amber", sub:"Models",
   a:"<strong>Yes, point it at Ollama</strong> (Gemma / Qwen) inside an agent. He wouldn't run it live (eats all system memory) and says local models “aren't there yet” for his complexity — but he's “model agnostic” and open to native support later.",
   kw:"local model offline ollama gemma qwen open source no internet llama agnostic"},
 
- {q:"Who built it and how long did it take?", asks:92, acc:"--a-aurora", sub:"Origin",
+ {q:"Who built it and how long did it take?", asks:92, acc:"--gold", sub:"Origin",
   a:"<strong>Max built it solo, off-stream, at night over ~2 weeks</strong>, then continued live. He pitched it on Day 15 — “the entire stream chat said it's a terrible idea and I made it anyways.”",
   kw:"who built made it solo how long origin started story idea night"},
 
- {q:"When did the alpha ship and how do I get access?", asks:103, acc:"--a-blue", sub:"Access",
+ {q:"When did the alpha ship and how do I get access?", asks:103, acc:"--bronze", sub:"Access",
   a:"A free <strong>early-access alpha to YouTube channel members</strong> shipped late May 2026 (live by Day 38), with hard cut-off at paid launch. It went paid on <strong>Day 42 (2026-06-11)</strong>. Get on the list at cnvs.dev.",
   kw:"alpha access early beta how to get members waitlist launch when shipped sign up"},
 
- {q:"Does Canvas build itself?", asks:69, acc:"--a-aurora", sub:"Meta",
+ {q:"Does Canvas build itself?", asks:69, acc:"--gold", sub:"Meta",
   a:"“<strong>Yes — I build canvas within canvas.</strong>” A dev script opens a second <em>canvas-dev</em> instance on its own port so the installed app stays up while he tests. An artifact build exposes an API the main canvas drives to run ~1,000+ tests (replacing Playwright for Swift).",
   kw:"canvas build itself dogfood dev mode artifact tests inside meta self hosting"},
 
- {q:"What's the dictation feature?", asks:64, acc:"--a-violet", sub:"Dictation",
+ {q:"What's the dictation feature?", asks:64, acc:"--amber", sub:"Dictation",
   a:"A <strong>Whisper-Flow-style dictation</strong> on its own keybind (separate from the command voice key). It types wherever your cursor is and doesn't auto-submit, powered by local Parakeet. Max canceled his Whisper Flow sub after building it.",
   kw:"dictation whisper flow type cursor keybind parakeet local transcribe"},
 
- {q:"What are Hermes and Open Claw?", asks:57, acc:"--a-blue", sub:"Hermes",
+ {q:"What are Hermes and Open Claw?", asks:57, acc:"--bronze", sub:"Hermes",
   a:"<strong>Max's own agents.</strong> Hermes (built in as a chat node, runs on GPT-5.5) handles infrastructure and bulk work — SSH, repos, DNS, sending invite codes. Canvas/Claude Code handle taste-driven work. “Claude Code holds the paintbrush; Hermes is a paintbrush holding another paintbrush.”",
   kw:"hermes open claw agent infrastructure ssh gpt 5.5 chat node bulk tasks"},
 
- {q:"How do you stop agents fighting over files?", asks:55, acc:"--a-codex", sub:"Agents",
+ {q:"How do you stop agents fighting over files?", asks:55, acc:"--bronze", sub:"Agents",
   a:"Max says he's <strong>never once</strong> hit it, even with 20 agents — they detect another agent editing a file and wait (a watcher), helped by shared memory. The “proper” way is git worktrees, which you can run inside Canvas.",
   kw:"race condition conflict files agents fighting worktree git parallel watcher wait"},
 
- {q:"Can I run it on a TV?", asks:52, acc:"--a-apple", sub:"Use case",
+ {q:"Can I run it on a TV?", asks:52, acc:"--sand", sub:"Use case",
   a:"<strong>Yes — a favorite use case.</strong> Stand in front of a TV, fully voice-controlled, no keyboard or mouse, “vibe code your ass off.”",
   kw:"tv big screen voice control no keyboard mouse hands free use case"},
 
- {q:"Is there a mobile / iPad app?", asks:73, acc:"--a-apple", sub:"Mobile",
+ {q:"Is there a mobile / iPad app?", asks:73, acc:"--sand", sub:"Mobile",
   a:"Wanted a lot — “an iPad and iPhone version is going to be insane,” envisioned as a phone remote (push-to-talk, swipe to flip canvases). Built natively in Swift, not React Native. No firm date.",
   kw:"mobile ios ipad iphone app remote companion phone push to talk"},
 
- {q:"Does it support Chrome extensions?", asks:48, acc:"--a-blue", sub:"Browser",
+ {q:"Does it support Chrome extensions?", asks:48, acc:"--bronze", sub:"Browser",
   a:"<strong>No</strong> — browser nodes are Apple WebKit web views, so no Chrome extensions, and nothing (cookies/cache) is imported. Embedding Chromium or puppeteering your real Chrome were weighed and largely rejected as too heavy.",
   kw:"chrome extensions browser webkit chromium cookies cache preview puppeteer"}
 ];
@@ -417,7 +454,7 @@ const FAQ = [
 function fuzzyScore(query, text){
   query = query.toLowerCase(); text = text.toLowerCase();
   if(!query) return {score:0, hits:[]};
-  let qi=0, ti=0, score=0, run=0, hits=[], started=false, firstIdx=-1;
+  let qi=0, ti=0, score=0, run=0, hits=[], firstIdx=-1;
   while(ti<text.length && qi<query.length){
     if(text[ti]===query[qi]){
       if(firstIdx<0) firstIdx=ti;
@@ -425,33 +462,26 @@ function fuzzyScore(query, text){
       const prev = text[ti-1];
       const boundary = ti===0 || prev===' ' || prev==='/' || prev==='-' || prev==='—' || prev==='(';
       let pts = 1;
-      if(boundary) pts += 3;           // start of a word
-      if(run>0) pts += run*1.4;        // contiguous run grows
-      if(ti===0) pts += 2;             // very start
-      score += pts; run++; qi++; started=true;
+      if(boundary) pts += 3;
+      if(run>0) pts += run*1.4;
+      if(ti===0) pts += 2;
+      score += pts; run++; qi++;
     } else { run=0; }
     ti++;
   }
-  if(qi<query.length) return {score:0, hits:[]};      // not all chars matched -> no subsequence
-  // global shaping
+  if(qi<query.length) return {score:0, hits:[]};
   const completeness = qi/query.length;
   const compactness = hits.length>1 ? (hits.length)/(hits[hits.length-1]-hits[0]+1) : 1;
   score = score * (0.6 + 0.4*compactness) - firstIdx*0.15;
   score *= completeness;
   return {score, hits};
 }
-
-/* score a FAQ entry: best of title (weighted) and keyword/answer field */
 function scoreEntry(query, e){
   const t = fuzzyScore(query, e.q);
   const k = fuzzyScore(query, e.kw);
   const a = fuzzyScore(query, e.a.replace(/<[^>]+>/g,''));
-  // title hits matter most; keyword next; answer least
-  const combined = t.score*1.0 + k.score*0.42 + a.score*0.12;
-  return {score:combined, titleHits:t.hits};
+  return {score:t.score*1.0 + k.score*0.42 + a.score*0.12, titleHits:t.hits};
 }
-
-/* token-aware: split query on spaces, require each token to match somewhere */
 function search(query){
   const tokens = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
   const ranked = FAQ.map((e,idx)=>{
@@ -459,7 +489,6 @@ function search(query){
       const s = scoreEntry(query.trim(), e);
       return {e, idx, score:s.score, hits:s.titleHits};
     }
-    // multi-token: sum per-token best score; all tokens must hit (else heavy penalty)
     let total=0, allHit=true, titleHits=[];
     for(const tok of tokens){
       const s = scoreEntry(tok, e);
@@ -475,7 +504,7 @@ function search(query){
 }
 
 /* ============================================================
-   Rendering with FLIP reordering for snappy regen
+   Rendering + FLIP reordering
    ============================================================ */
 const listEl = document.getElementById('list');
 const metaLabel = document.getElementById('metaLabel');
@@ -487,24 +516,16 @@ const clearBtn = document.getElementById('clear');
 const phEl = document.getElementById('ph');
 const phText = document.getElementById('phText');
 
-const MIN_RESULTS = 3;
-const TOP_N = 10;
-let openId = null;          // remember which card is open by question text
-let rendered = new Map();   // q -> element (for FLIP)
+const MIN_RESULTS = 3, TOP_N = 10;
+let openId = null, rendered = new Map();
 
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-
 function highlight(text, hits){
   if(!hits || !hits.length) return esc(text);
-  const set = new Set(hits);
-  let out='';
-  for(let i=0;i<text.length;i++){
-    const c = esc(text[i]);
-    out += set.has(i) ? `<span class="hl">${c}</span>` : c;
-  }
+  const set = new Set(hits); let out='';
+  for(let i=0;i<text.length;i++){const c=esc(text[i]); out += set.has(i)?`<span class="hl">${c}</span>`:c;}
   return out;
 }
-
 function buildCard(item){
   const e = item.e;
   const el = document.createElement('article');
@@ -528,125 +549,88 @@ function buildCard(item){
     <div class="cnvs-node__reveal"><div class="cnvs-node__body"><div class="cnvs-node__body-inner">
       ${e.a}<span class="tag">${e.sub} · asked ${e.asks}× on stream</span>
     </div></div></div>`;
-  const chrome = el.querySelector('.cnvs-node__chrome');
-  chrome.addEventListener('click', ()=> toggle(el, e.q));
+  el.querySelector('.cnvs-node__chrome').addEventListener('click', ()=> toggle(el, e.q));
   if(openId===e.q) el.classList.add('open');
   return el;
 }
-
 function toggle(el, q){
   const isOpen = el.classList.contains('open');
-  // single-open accordion
   listEl.querySelectorAll('.cnvs-node.open').forEach(n=>{ if(n!==el) n.classList.remove('open'); });
   el.classList.toggle('open', !isOpen);
   openId = !isOpen ? q : null;
 }
-
 function render(query){
   const searching = query.trim().length>0;
   let items;
   if(!searching){
-    items = FAQ.map((e,idx)=>({e,idx,score:0,hits:[]}))
-               .sort((a,b)=> b.e.asks - a.e.asks)
-               .slice(0,TOP_N);
-    metaLabel.textContent = 'Top 10 — most asked';
-    countChip.textContent = TOP_N;
-    countChip.classList.remove('searching');
-    fallback.classList.remove('show');
+    items = FAQ.map((e,idx)=>({e,idx,score:0,hits:[]})).sort((a,b)=> b.e.asks - a.e.asks).slice(0,TOP_N);
+    metaLabel.textContent='Top 10 — most asked'; countChip.textContent=TOP_N;
+    countChip.classList.remove('searching'); fallback.classList.remove('show');
   } else {
     const ranked = search(query);
     const positive = ranked.filter(r=>r.score>0.5);
-    let shown;
-    if(positive.length >= MIN_RESULTS){ shown = positive; }
-    else { shown = ranked.slice(0, Math.max(MIN_RESULTS, positive.length)); } // always >=3
-    // cap long result lists for snappiness
-    items = shown.slice(0, 12);
-    metaLabel.textContent = 'Live results';
-    countChip.textContent = items.length;
-    countChip.classList.add('searching');
-    fallback.classList.toggle('show', positive.length < MIN_RESULTS);
+    let shown = positive.length>=MIN_RESULTS ? positive : ranked.slice(0, Math.max(MIN_RESULTS, positive.length));
+    items = shown.slice(0,12);
+    metaLabel.textContent='Live results'; countChip.textContent=items.length;
+    countChip.classList.add('searching'); fallback.classList.toggle('show', positive.length<MIN_RESULTS);
   }
-
-  // ---- FLIP: capture old positions ----
   const first = new Map();
-  rendered.forEach((el,q)=>{ first.set(q, el.getBoundingClientRect().top); });
-
-  // build new set
-  const frag = document.createDocumentFragment();
-  const next = new Map();
-  items.forEach(item=>{
-    const el = buildCard(item);
-    next.set(item.e.q, el);
-    frag.appendChild(el);
-  });
-  listEl.innerHTML='';
-  listEl.appendChild(frag);
-
-  // regen shimmer
+  rendered.forEach((el,q)=> first.set(q, el.getBoundingClientRect().top));
+  const frag = document.createDocumentFragment(), next = new Map();
+  items.forEach(item=>{ const el=buildCard(item); next.set(item.e.q, el); frag.appendChild(el); });
+  listEl.innerHTML=''; listEl.appendChild(frag);
   listEl.classList.remove('regen'); void listEl.offsetWidth; listEl.classList.add('regen');
-
-  // ---- FLIP: invert + play for cards that persisted ----
   next.forEach((el,q)=>{
     if(first.has(q)){
       const dy = first.get(q) - el.getBoundingClientRect().top;
       if(Math.abs(dy)>1){
-        el.style.transition='none';
-        el.style.transform=`translateY(${dy}px)`;
-        requestAnimationFrame(()=>{
-          el.style.transition='transform .4s cubic-bezier(.2,.9,.25,1)';
-          el.style.transform='';
-        });
+        el.style.transition='none'; el.style.transform=`translateY(${dy}px)`;
+        requestAnimationFrame(()=>{ el.style.transition='transform .4s cubic-bezier(.2,.9,.25,1)'; el.style.transform=''; });
       }
     }
   });
   rendered = next;
 }
-
-/* ---- input: character-to-character regen ---- */
 let raf=0;
 input.addEventListener('input', ()=>{
   clearBtn.classList.toggle('show', input.value.length>0);
   phEl.classList.toggle('hide', input.value.length>0 || document.activeElement===input);
-  cancelAnimationFrame(raf);
-  raf = requestAnimationFrame(()=> render(input.value));
+  cancelAnimationFrame(raf); raf=requestAnimationFrame(()=> render(input.value));
 });
-
-clearBtn.addEventListener('click', ()=>{
-  input.value=''; clearBtn.classList.remove('show'); input.focus();
-  render('');
-});
-
-/* ---- search bar focus animation ---- */
+clearBtn.addEventListener('click', ()=>{ input.value=''; clearBtn.classList.remove('show'); input.focus(); render(''); });
 input.addEventListener('focus', ()=>{ node.classList.add('is-focused'); phEl.classList.add('hide'); stopPlaceholder(); });
-input.addEventListener('blur', ()=>{
-  node.classList.remove('is-focused');
-  if(!input.value){ phEl.classList.remove('hide'); startPlaceholder(); }
-});
-
-/* "/" focuses search */
+input.addEventListener('blur', ()=>{ node.classList.remove('is-focused'); if(!input.value){ phEl.classList.remove('hide'); startPlaceholder(); } });
 document.addEventListener('keydown', e=>{
   if(e.key==='/' && document.activeElement!==input){ e.preventDefault(); input.focus(); }
   if(e.key==='Escape' && document.activeElement===input){ input.blur(); }
 });
 
-/* ---- rotating typewriter placeholder ---- */
-const PH = ["What is CNVS?","Is it Mac only?","How much does it cost?","windows version?","does it use my Claude plan?","voice control"];
+/* rotating typewriter placeholder */
+const PH=["What is CNVS?","Is it Mac only?","How much does it cost?","windows version?","does it use my Claude plan?","voice control"];
 let phi=0, phc=0, phTimer=0, phDeleting=false;
 function tickPlaceholder(){
-  const word = PH[phi];
-  phc += phDeleting ? -1 : 1;
-  phText.textContent = word.slice(0,phc);
-  let delay = phDeleting ? 38 : 70;
+  const word=PH[phi]; phc += phDeleting?-1:1; phText.textContent=word.slice(0,phc);
+  let delay = phDeleting?38:70;
   if(!phDeleting && phc===word.length){ delay=1400; phDeleting=true; }
   else if(phDeleting && phc===0){ phDeleting=false; phi=(phi+1)%PH.length; delay=320; }
-  phTimer = setTimeout(tickPlaceholder, delay);
+  phTimer=setTimeout(tickPlaceholder, delay);
 }
 function startPlaceholder(){ clearTimeout(phTimer); phc=0; phDeleting=false; tickPlaceholder(); }
 function stopPlaceholder(){ clearTimeout(phTimer); }
 
+/* starfield */
+(function stars(){
+  const host=document.getElementById('stars'); const N=120; let html='';
+  for(let i=0;i<N;i++){
+    const x=Math.random()*100, y=Math.random()*100, s=Math.random()*1.6+0.6,
+      o=Math.random()*0.5+0.2, d=Math.random()*4, dur=3+Math.random()*4;
+    html+=`<span class="star" style="left:${x}%;top:${y}%;width:${s}px;height:${s}px;opacity:${o};animation-delay:${d}s;animation-duration:${dur}s"></span>`;
+  }
+  host.innerHTML=html;
+})();
+
 /* boot */
-render('');
-startPlaceholder();
+render(''); startPlaceholder();
 </script>
 </body>
 </html>
