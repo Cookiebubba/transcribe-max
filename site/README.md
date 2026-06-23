@@ -1,6 +1,13 @@
 # CNVS FAQ — deployable site
 
-A single self-contained static page: [`index.html`](./index.html) (the CNVS FAQ).
+Self-contained static pages:
+
+- [`index.html`](./index.html) — the CNVS FAQ.
+- [`bingo.html`](./bingo.html) — **Max Blade Stream Bingo**: a lore-accurate,
+  light-mode bingo game built from the 58 transcribed streams. Click **NEW CARD**
+  for a fresh weighted board (center is a locked “wake up” free space); mark a
+  slot when it happens live; five in a row triggers a confetti BINGO. No build
+  step, only Google Fonts as an external dependency.
 
 ## Deploy on Vercel (manual)
 

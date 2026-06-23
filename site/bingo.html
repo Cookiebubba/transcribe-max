@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Max Blade — Stream Bingo</title>
+<meta name="description" content="A meta, lore-accurate bingo card for the Max Blade vibe-coding streams. New card every click. Mark a slot when it happens live." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23eef0f5'/><g fill='none' stroke='%234f46e5' stroke-width='7'><rect x='20' y='20' width='26' height='26' rx='4'/><rect x='54' y='20' width='26' height='26' rx='4'/><rect x='20' y='54' width='26' height='26' rx='4'/><rect x='54' y='54' width='26' height='26' rx='4'/></g></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   MAX BLADE — STREAM BINGO
+   Light "blueprint IDE" aesthetic. Same house family as the CNVS
+   FAQ (JetBrains Mono + Inter, node-window chrome) but a distinct
+   cool/paper theme. Self-contained single file.
+   ============================================================ */
+:root{
+  --paper:#eef1f6;
+  --paper-2:#f7f9fc;
+  --card:#ffffff;
+  --ink:#161a22;
+  --ink-2:#3b4253;
+  --ink-dim:#697086;
+  --ink-faint:#9aa1b3;
+  --line:#e2e6ef;
+  --line-2:#d4d9e6;
+  --grid:rgba(79,70,229,.05);
+
+  --indigo:#4f46e5;
+  --indigo-2:#6d63f3;
+  --indigo-soft:#eef0ff;
+  --violet:#7c3aed;
+  --amber:#e08a1e;
+  --amber-soft:#fff3e0;
+  --coral:#ef5b6e;
+  --mint:#10b187;
+  --mint-soft:#e3f7f0;
+
+  --t1:#4f46e5;  /* tier accents */
+  --t2:#0ea5b7;
+  --t3:#e08a1e;
+  --t4:#d4477f;
+  --t5:#7c3aed;
+
+  --mono:"JetBrains Mono", ui-monospace, "SF Mono", SFMono-Regular, "Cascadia Code", Menlo, monospace;
+  --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --shadow:0 32px 70px -42px rgba(31,38,71,.45), 0 2px 0 rgba(255,255,255,.7) inset;
+  --tile-shadow:0 6px 16px -10px rgba(31,38,71,.5);
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+
+/* paper + blueprint grid */
+.bg{position:fixed;inset:0;z-index:-3;
+  background:
+    radial-gradient(120% 80% at 50% -10%, #ffffff 0%, rgba(255,255,255,0) 46%),
+    radial-gradient(90% 70% at 100% 110%, rgba(124,58,237,.07) 0%, transparent 55%),
+    radial-gradient(90% 70% at 0% 108%, rgba(79,70,229,.08) 0%, transparent 55%),
+    linear-gradient(180deg,#f1f3f9 0%, #e9edf5 100%);}
+.bg::after{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:30px 30px;mask:radial-gradient(120% 90% at 50% 30%,#000 40%,transparent 92%)}
+
+/* confetti canvas */
+#fx{position:fixed;inset:0;z-index:60;pointer-events:none}
+
+.wrap{max-width:760px;margin:0 auto;padding:46px 18px 70px}
+
+/* ---------- header ---------- */
+.head{text-align:center;margin-bottom:22px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;
+  font:600 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--indigo);
+  padding:7px 14px;border:1px solid var(--line-2);border-radius:100px;background:#fff;
+  box-shadow:0 6px 18px -12px rgba(79,70,229,.5)}
+.eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--coral);
+  box-shadow:0 0 0 0 rgba(239,91,110,.5);animation:live 2.4s ease-in-out infinite}
+@keyframes live{0%,100%{box-shadow:0 0 0 0 rgba(239,91,110,.45)}50%{box-shadow:0 0 0 7px rgba(239,91,110,0)}}
+.head h1{font-family:var(--mono);font-weight:800;font-size:clamp(30px,6.2vw,50px);line-height:1.02;
+  margin:18px 0 10px;letter-spacing:-.02em;color:var(--ink)}
+.head h1 .b{color:var(--indigo)}
+.head p{color:var(--ink-dim);font-size:15px;margin:0 auto;max-width:52ch;line-height:1.55}
+.head a{color:var(--indigo);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(79,70,229,.25)}
+.head a:hover{color:var(--violet)}
+
+/* ---------- scoreboard / controls ---------- */
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:20px 0 16px;justify-content:center}
+.stat{display:flex;align-items:center;gap:8px;font:600 12px var(--mono);color:var(--ink-2);
+  background:#fff;border:1px solid var(--line);border-radius:11px;padding:9px 13px;box-shadow:0 6px 16px -14px rgba(31,38,71,.7)}
+.stat b{font-weight:800;color:var(--indigo);font-variant-numeric:tabular-nums;min-width:1ch}
+.stat.win b{color:var(--coral)}
+.spacer{flex:1 1 18px;min-width:6px}
+.btn{appearance:none;cursor:pointer;font:700 12.5px/1 var(--mono);letter-spacing:.02em;
+  color:#fff;background:var(--indigo);border:1px solid var(--indigo);border-radius:11px;padding:11px 15px;
+  display:inline-flex;align-items:center;gap:8px;
+  box-shadow:0 12px 24px -14px rgba(79,70,229,.95);transition:transform .15s cubic-bezier(.2,.9,.25,1),box-shadow .25s,background .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 30px -16px rgba(79,70,229,.95)}
+.btn:active{transform:translateY(0) scale(.97)}
+.btn svg{width:14px;height:14px}
+.btn--ghost{color:var(--ink-2);background:#fff;border-color:var(--line-2);box-shadow:0 8px 18px -16px rgba(31,38,71,.8)}
+.btn--ghost:hover{color:var(--indigo);border-color:var(--indigo)}
+.btn--icon{padding:11px;color:var(--ink-2);background:#fff;border-color:var(--line-2);box-shadow:none}
+.btn--icon:hover{color:var(--indigo);border-color:var(--indigo);transform:translateY(-2px)}
+.btn--icon.is-off{color:var(--ink-faint)}
+
+/* ---------- the node-window card ---------- */
+.board-card{border-radius:20px;background:var(--card);border:1px solid var(--line);
+  box-shadow:var(--shadow);overflow:hidden}
+.chrome{display:flex;align-items:center;gap:11px;padding:13px 16px;border-bottom:1px solid var(--line);
+  background:linear-gradient(180deg,#fbfcfe,#f4f6fb)}
+.lights{display:flex;gap:7px}
+.lights i{width:11px;height:11px;border-radius:50%;display:block}
+.lights i:nth-child(1){background:#ff6159}.lights i:nth-child(2){background:#ffbd2e}.lights i:nth-child(3){background:#28c840}
+.chrome__title{flex:1;display:flex;align-items:baseline;gap:9px;min-width:0;font-family:var(--mono)}
+.chrome__title b{font-weight:700;font-size:13px;color:var(--ink-2)}
+.chrome__title span{font-weight:600;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint)}
+.chrome__seed{font:600 10.5px var(--mono);color:var(--ink-faint);letter-spacing:.05em;white-space:nowrap}
+
+/* ---------- grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:14px}
+.cell{position:relative;aspect-ratio:1/1;border-radius:13px;cursor:pointer;
+  background:linear-gradient(180deg,#fff,#fbfcfe);border:1px solid var(--line-2);
+  padding:9px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  box-shadow:var(--tile-shadow);overflow:hidden;
+  transition:transform .16s cubic-bezier(.2,.9,.25,1),box-shadow .22s,border-color .22s,background .25s;
+  -webkit-tap-highlight-color:transparent;user-select:none}
+.cell::before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:var(--tc,var(--indigo));opacity:.65}
+.cell:hover{transform:translateY(-3px) scale(1.012);box-shadow:0 16px 26px -16px rgba(31,38,71,.65);border-color:var(--tc,var(--indigo))}
+.cell:active{transform:scale(.96)}
+.cell__idx{position:absolute;top:5px;right:7px;font:700 8.5px var(--mono);color:var(--ink-faint);letter-spacing:.04em}
+.cell__txt{font:600 clamp(8.5px,1.55vw,12px)/1.16 var(--sans);color:var(--ink-2);
+  letter-spacing:-.005em;max-height:100%;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:6}
+.cell__emoji{font-size:clamp(12px,2.2vw,17px);margin-bottom:2px;line-height:1;filter:saturate(1.05)}
+
+/* marked state */
+.cell.marked{background:linear-gradient(180deg,var(--indigo-soft),#fff);border-color:var(--tc,var(--indigo));
+  box-shadow:0 12px 24px -14px color-mix(in srgb,var(--tc,var(--indigo)) 60%,transparent),0 0 0 1px var(--tc,var(--indigo)) inset}
+.cell.marked .cell__txt{color:var(--ink)}
+.cell.marked::before{opacity:1;height:100%;background:color-mix(in srgb,var(--tc,var(--indigo)) 9%,transparent)}
+/* CLIPPED stamp */
+.stamp{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;opacity:0}
+.stamp b{font:800 13px var(--mono);letter-spacing:.12em;color:var(--tc,var(--indigo));
+  border:2.5px solid var(--tc,var(--indigo));border-radius:8px;padding:3px 7px;transform:rotate(-13deg);
+  background:rgba(255,255,255,.55);text-shadow:0 1px 0 rgba(255,255,255,.6);box-shadow:0 4px 10px -6px rgba(0,0,0,.3)}
+.cell.marked .stamp{animation:stampIn .42s cubic-bezier(.18,1.5,.4,1) forwards}
+@keyframes stampIn{0%{opacity:0;transform:scale(2.1) rotate(8deg)}55%{opacity:1}100%{opacity:.96;transform:scale(1) rotate(0)}}
+/* ring pulse on mark */
+.cell .ring{position:absolute;inset:0;border-radius:13px;border:2px solid var(--tc,var(--indigo));opacity:0}
+.cell.pulse .ring{animation:ring .5s ease-out}
+@keyframes ring{0%{opacity:.7;transform:scale(.82)}100%{opacity:0;transform:scale(1.18)}}
+.cell.pop{animation:pop .34s cubic-bezier(.2,1.4,.35,1)}
+@keyframes pop{0%{transform:scale(1)}40%{transform:scale(.9)}100%{transform:scale(1)}}
+
+/* FREE space */
+.cell.free{cursor:default;background:
+   radial-gradient(120% 120% at 50% 0%,#fff 0%,transparent 60%),
+   linear-gradient(160deg,var(--indigo) 0%,var(--violet) 100%);
+  border-color:transparent;color:#fff;
+  box-shadow:0 18px 34px -16px rgba(79,70,229,.85),0 0 0 1px rgba(255,255,255,.3) inset}
+.cell.free::before{display:none}
+.cell.free:hover{transform:translateY(-3px) scale(1.012)}
+.cell.free .cell__txt{color:#fff;font-weight:700}
+.cell.free .cell__idx{color:rgba(255,255,255,.7)}
+.cell.free .free-star{font-size:clamp(15px,2.6vw,20px);line-height:1;filter:drop-shadow(0 2px 6px rgba(0,0,0,.3))}
+.cell.free .free-lbl{font:800 8px var(--mono);letter-spacing:.2em;margin-top:3px;color:rgba(255,255,255,.85)}
+.cell.free .sheen{position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.45) 48%,transparent 62%);
+  transform:translateX(-120%);animation:sheen 4.6s ease-in-out 1.2s infinite}
+@keyframes sheen{0%{transform:translateX(-120%)}22%,100%{transform:translateX(120%)}}
+
+/* winning-line flare */
+.cell.win{animation:winflare 1.05s ease-in-out;border-color:var(--coral);
+  box-shadow:0 16px 30px -12px rgba(239,91,110,.7),0 0 0 2px var(--coral) inset}
+.cell.win .stamp b{color:var(--coral);border-color:var(--coral)}
+@keyframes winflare{0%{transform:scale(1)}30%{transform:scale(1.09);box-shadow:0 0 0 4px rgba(239,91,110,.35),0 0 28px rgba(239,91,110,.6)}100%{transform:scale(1)}}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:7px 14px;justify-content:center;margin:16px 4px 0}
+.legend i{display:inline-flex;align-items:center;gap:6px;font:600 10.5px var(--mono);color:var(--ink-dim)}
+.legend i b{width:9px;height:9px;border-radius:3px;display:block}
+.foot{text-align:center;margin-top:22px;color:var(--ink-faint);font:500 12px var(--sans)}
+.foot b{font-family:var(--mono);color:var(--ink-dim);font-weight:600}
+
+/* ---------- BINGO banner ---------- */
+.banner{position:fixed;inset:0;z-index:70;display:grid;place-items:center;pointer-events:none;
+  opacity:0;visibility:hidden;transition:opacity .3s}
+.banner.show{opacity:1;visibility:visible}
+.banner__card{pointer-events:auto;text-align:center;background:#fff;border:1px solid var(--line);
+  border-radius:22px;padding:34px 40px;box-shadow:0 50px 90px -30px rgba(31,38,71,.55);
+  transform:translateY(14px) scale(.94);transition:transform .45s cubic-bezier(.16,1.4,.3,1)}
+.banner.show .banner__card{transform:translateY(0) scale(1)}
+.banner__word{font:800 clamp(40px,11vw,84px)/.92 var(--mono);letter-spacing:-.02em;
+  background:linear-gradient(120deg,var(--indigo),var(--coral) 55%,var(--amber));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.banner__sub{margin:12px 0 20px;color:var(--ink-2);font:600 14px var(--sans)}
+.banner__sub b{font-family:var(--mono);color:var(--coral)}
+.banner__row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+@media (max-width:560px){
+  .grid{gap:6px;padding:10px}
+  .cell{border-radius:11px;padding:6px 5px}
+  .cell__txt{-webkit-line-clamp:5}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important}
+  .cell,.btn{transition:none!important}
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<canvas id="fx"></canvas>
+
+<main class="wrap">
+  <header class="head">
+    <span class="eyebrow"><span class="dot"></span> Stream Bingo · Live</span>
+    <h1>MAX&nbsp;BLADE <span class="b">BINGO</span></h1>
+    <p>Lore-accurate squares from <b>58 transcribed streams</b>. New card each click, weighted so every board is realistically winnable. Mark a slot when it happens live — get five in a row and yell <a href="#" id="howto">BINGO</a>.</p>
+  </header>
+
+  <div class="bar">
+    <div class="stat">MARKED <b id="markCount">0</b><span style="color:var(--ink-faint)">/24</span></div>
+    <div class="stat win">BINGOS <b id="bingoCount">0</b></div>
+    <div class="spacer"></div>
+    <button class="btn btn--icon" id="muteBtn" title="Toggle sound" aria-label="Toggle sound">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/></svg>
+    </button>
+    <button class="btn btn--ghost" id="resetBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+      RESET
+    </button>
+    <button class="btn" id="newBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h6v6H5zM13 3h6v6h-6zM5 15h6v6H5zM13 15h6v6h-6z"/></svg>
+      NEW CARD
+    </button>
+  </div>
+
+  <section class="board-card">
+    <div class="chrome">
+      <div class="lights"><i></i><i></i><i></i></div>
+      <div class="chrome__title"><b>max-blade-bingo</b><span>vibe-coding edition</span></div>
+      <div class="chrome__seed" id="seedTag">#0000</div>
+    </div>
+    <div class="grid" id="grid" role="grid" aria-label="Bingo card"></div>
+  </section>
+
+  <div class="legend">
+    <i><b style="background:var(--t1)"></b> Tier 1 · near-guaranteed</i>
+    <i><b style="background:var(--t2)"></b> Tier 2 · reliable</i>
+    <i><b style="background:var(--t3)"></b> Tier 3 · mid-board</i>
+    <i><b style="background:var(--t4)"></b> Tier 4 · deep cut</i>
+    <i><b style="background:var(--t5)"></b> Tier 5 · rare</i>
+  </div>
+
+  <p class="foot">Center is a free space — <b>“Max says ‘wake up’”</b> (491× in the archive). Mathematically inevitable.</p>
+</main>
+
+<div class="banner" id="banner">
+  <div class="banner__card">
+    <div class="banner__word">BINGO!</div>
+    <div class="banner__sub" id="bannerSub">Line <b>#1</b> — clip it and ship it, baby.</div>
+    <div class="banner__row">
+      <button class="btn btn--ghost" id="bannerKeep">KEEP PLAYING</button>
+      <button class="btn" id="bannerNew">NEW CARD</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   Slot pool — 49 squares, ordered/grouped by candidate strength.
+   t = tier (1 strongest … 5 rarest). e = optional emoji.
+   Free space (center) is injected separately.
+   ============================================================ */
+const POOL = [
+  // ---- Tier 1 : near-guaranteed ----
+  {t:1,e:"🙏",x:"“That means the absolute world, brother”"},
+  {t:1,e:"🐶",x:"Commands a Paw Patrol agent by name (“Rubble, the cursor agent is ready”)"},
+  {t:1,e:"✂️",x:"“Clippo, clip that!”"},
+  {t:1,e:"🏠",x:"“…until I buy my family a house”"},
+  {t:1,e:"🗣️",x:"Says “bro” and “dude” in the same breath"},
+  {t:1,e:"🚀",x:"“LET’S GOOO” over a one-line fix"},
+  {t:1,e:"📈",x:"Flexes the live ARR number"},
+  {t:1,e:"😱",x:"“No no no” / “whoa whoa whoa” panic at a red error"},
+  {t:1,e:"🔗",x:"“First link in the description” — cnvs.dev"},
+  // ---- Tier 2 : reliable ----
+  {t:2,e:"💔",x:"Praises Claude, then “Claude is DOWN again”"},
+  {t:2,e:"🤨",x:"“Are you kidding me right now?”"},
+  {t:2,e:"🤯",x:"“You guys are out of your mind” (a compliment)"},
+  {t:2,e:"💪",x:"Drops to do live push-ups to test the rep counter"},
+  {t:2,e:"🔑",x:"Bring-Your-Own-Key evangelism"},
+  {t:2,e:"🧠",x:"Hermes runs the whole operation"},
+  {t:2,e:"📦",x:"“Shipping this week, not this month”"},
+  {t:2,e:"🔙",x:"“We are SO back… we cannot be stopped”"},
+  {t:2,e:"💬",x:"“Join the Discord community” mid-debug"},
+  {t:2,e:"⌨️",x:"Narrates an entire prompt out loud, word for word"},
+  // ---- Tier 3 : mid-board ----
+  {t:3,e:"📉",x:"Trashes Gemini as “D-tier” for vibe coding"},
+  {t:3,e:"🤖",x:"“GPT is way too proactive”"},
+  {t:3,e:"🙏",x:"“Prayed to the AI gods and they blessed me — it just works”"},
+  {t:3,e:"🏳️",x:"Family motto: “when things get hard… just give up”"},
+  {t:3,e:"🥤",x:"Cracks a White Monster (“best flavor there is”)"},
+  {t:3,e:"🐘",x:"Database sermon: “Postgres — the basics just work”"},
+  {t:3,e:"🖥️",x:"Brags about his massive Hetzner server"},
+  {t:3,e:"🎁",x:"Giveaway / vows to build his mom a desktop"},
+  {t:3,e:"🛠️",x:"“What are you building?” to a single lurker"},
+  {t:3,e:"📰",x:"Reads the “comment of the day” out loud"},
+  // ---- Tier 4 : deep cut ----
+  {t:4,e:"👀",x:"Wants Perceptron on a camera to read “the wife’s mood”"},
+  {t:4,e:"🦾",x:"“The tech man will prevail”"},
+  {t:4,e:"🔁",x:"Re-explains his GitHub→server→Hermes auto-deploy pipeline"},
+  {t:4,e:"👨‍👩‍👧",x:"“Got my mom, dad, fiancée & best friend here”"},
+  {t:4,e:"🎙️",x:"Mic stand breaks in the first minute of a Friday stream"},
+  {t:4,e:"📣",x:"“Marketed entirely on X / TikTok”"},
+  {t:4,e:"⬆️",x:"Shoutout: “onwards and upwards, baby”"},
+  {t:4,e:"📜",x:"Waiting on Daario to “release Fable 5”"},
+  {t:4,e:"✅",x:"Accepts every AI diff without reading a line"},
+  {t:4,e:"⏳",x:"“Real quick” → 45 minutes evaporate"},
+  // ---- Tier 5 : rare ----
+  {t:5,e:"😏",x:"References the AI transcribing these very streams"},
+  {t:5,e:"🔢",x:"“Where’s Day 44?” — the numbering skips one"},
+  {t:5,e:"🕕",x:"Stream crosses the 6-hour mark"},
+  {t:5,e:"🐛",x:"Declares a bug is “actually a feature”"},
+  {t:5,e:"📝",x:"Commit message is just “stuff”"},
+  {t:5,e:"🎚️",x:"“Talk Macros — feel better fast” slips out in ad-voice"},
+  {t:5,e:"💥",x:"Two agents collide on the same file"},
+  {t:5,e:"🖊️",x:"Best friend’s gifted drawing pad comes up"},
+  {t:5,e:"🎹",x:"Explains how “one key does everything”"},
+  {t:5,e:"🌅",x:"“Buy the house, hug the wife & kids, keep grinding” monologue"},
+];
+const FREE = {free:true,e:"🔆",x:"Max says “wake up”",lbl:"FREE"};
+const TIER_W = {1:9, 2:6, 3:4, 4:2.2, 5:1.1}; // draw weight by tier
+
+/* ---------- deterministic RNG so a seed reproduces a card ---------- */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+
+function drawCard(seed){
+  const rnd = mulberry32(seed);
+  // weighted sample without replacement → 24 slots
+  const items = POOL.map((s,i)=>({s,i,key:Math.pow(rnd(), 1/(TIER_W[s.t]||1))}));
+  items.sort((a,b)=>b.key-a.key);
+  const chosen = items.slice(0,24).map(o=>o.s);
+  // shuffle the 24 positions (Fisher–Yates)
+  for(let i=chosen.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[chosen[i],chosen[j]]=[chosen[j],chosen[i]]}
+  // splice the free space into the center (index 12)
+  const cells=[]; let k=0;
+  for(let p=0;p<25;p++) cells.push(p===12?FREE:chosen[k++]);
+  return cells;
+}
+
+/* ---------- state ---------- */
+const LINES=(()=>{const L=[];for(let r=0;r<5;r++)L.push([0,1,2,3,4].map(c=>r*5+c));
+  for(let c=0;c<5;c++)L.push([0,1,2,3,4].map(r=>r*5+c));
+  L.push([0,6,12,18,24]);L.push([4,8,12,16,20]);return L})();
+const TC={1:'var(--t1)',2:'var(--t2)',3:'var(--t3)',4:'var(--t4)',5:'var(--t5)'};
+const SAVE='maxbingo.v1';
+let seed, cells, marked, wonLines, sound=true;
+
+const grid=document.getElementById('grid');
+const markCountEl=document.getElementById('markCount');
+const bingoCountEl=document.getElementById('bingoCount');
+const seedTag=document.getElementById('seedTag');
+const banner=document.getElementById('banner');
+const bannerSub=document.getElementById('bannerSub');
+
+function save(){try{localStorage.setItem(SAVE,JSON.stringify({seed,marked:[...marked],wonLines:[...wonLines],sound}))}catch(e){}}
+function load(){try{return JSON.parse(localStorage.getItem(SAVE))}catch(e){return null}}
+
+function render(){
+  grid.innerHTML='';
+  seedTag.textContent='#'+seed.toString(36).toUpperCase().padStart(4,'0').slice(-4);
+  cells.forEach((c,i)=>{
+    const el=document.createElement('div');
+    el.className='cell'+(c.free?' free':'');
+    el.dataset.i=i;
+    el.setAttribute('role','gridcell');
+    if(!c.free) el.style.setProperty('--tc',TC[c.t]);
+    if(c.free){
+      el.innerHTML=`<div class="sheen"></div><div class="free-star">✦</div>
+        <div class="cell__txt">${c.x}</div><div class="free-lbl">${c.lbl}</div>`;
+    }else{
+      el.innerHTML=`<span class="ring"></span><span class="cell__idx">T${c.t}</span>
+        ${c.e?`<div class="cell__emoji">${c.e}</div>`:''}
+        <div class="cell__txt">${c.x}</div>
+        <div class="stamp"><b>CLIPPED</b></div>`;
+    }
+    if(marked.has(i)) el.classList.add('marked');
+    el.addEventListener('click',()=>toggle(i,el));
+    grid.appendChild(el);
+  });
+  updateStats();
+}
+function updateStats(){
+  let m=0;marked.forEach(i=>{if(!cells[i].free)m++});
+  markCountEl.textContent=m;
+  bingoCountEl.textContent=wonLines.size;
+}
+function toggle(i,el){
+  if(cells[i].free) return;
+  if(marked.has(i)){marked.delete(i);el.classList.remove('marked')}
+  else{
+    marked.add(i);el.classList.add('marked','pulse','pop');
+    el.addEventListener('animationend',()=>el.classList.remove('pulse','pop'),{once:true});
+    blip(520,0.05);
+  }
+  updateStats();save();checkBingo();
+}
+
+function checkBingo(){
+  const isMarked=i=>marked.has(i)||cells[i].free;
+  LINES.forEach((line,li)=>{
+    if(line.every(isMarked) && !wonLines.has(li)){
+      wonLines.add(li);
+      celebrate(line);
+    }
+  });
+  updateStats();save();
+}
+
+function celebrate(line){
+  // flare the winning cells
+  line.forEach((idx,n)=>{
+    const el=grid.querySelector(`.cell[data-i="${idx}"]`);
+    if(!el) return;
+    setTimeout(()=>{el.classList.add('win');el.addEventListener('animationend',()=>el.classList.remove('win'),{once:true})}, n*70);
+  });
+  // sound sweep
+  if(sound){[523,659,784,1047].forEach((f,n)=>setTimeout(()=>blip(f,0.09,'sine',.12),n*90))}
+  // confetti + banner
+  burst();
+  bannerSub.innerHTML=`Line <b>#${wonLines.size}</b> — clip it and ship it, baby.`;
+  banner.classList.add('show');
+  clearTimeout(celebrate._t);
+  celebrate._t=setTimeout(()=>banner.classList.remove('show'),2600);
+}
+
+/* ---------- WebAudio blips ---------- */
+let actx;
+function blip(freq,dur=0.06,type='triangle',gain=.06){
+  if(!sound) return;
+  try{
+    actx=actx||new (window.AudioContext||window.webkitAudioContext)();
+    if(actx.state==='suspended')actx.resume();
+    const o=actx.createOscillator(),g=actx.createGain();
+    o.type=type;o.frequency.value=freq;
+    o.connect(g);g.connect(actx.destination);
+    const t=actx.currentTime;
+    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(gain,t+0.008);
+    g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
+    o.start(t);o.stop(t+dur+0.02);
+  }catch(e){}
+}
+
+/* ---------- confetti ---------- */
+const fx=document.getElementById('fx'),ctx=fx.getContext('2d');
+let parts=[],raf=null,DPR=Math.min(2,window.devicePixelRatio||1);
+function sizeFx(){fx.width=innerWidth*DPR;fx.height=innerHeight*DPR;ctx.setTransform(DPR,0,0,DPR,0,0)}
+sizeFx();addEventListener('resize',sizeFx);
+const COLORS=['#4f46e5','#7c3aed','#ef5b6e','#e08a1e','#10b187','#0ea5b7'];
+function burst(){
+  const cx=innerWidth/2, cy=innerHeight*0.42, N=140;
+  for(let i=0;i<N;i++){
+    const a=Math.random()*Math.PI*2, sp=4+Math.random()*9;
+    parts.push({x:cx,y:cy,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-3,
+      g:0.16+Math.random()*0.1,s:5+Math.random()*7,rot:Math.random()*6.28,
+      vr:(Math.random()-.5)*.4,c:COLORS[i%COLORS.length],life:1,
+      shape:Math.random()<.5?'r':'c'});
+  }
+  if(!raf) raf=requestAnimationFrame(tick);
+}
+function tick(){
+  ctx.clearRect(0,0,fx.width,fx.height);
+  parts=parts.filter(p=>p.life>0);
+  parts.forEach(p=>{
+    p.vy+=p.g;p.x+=p.vx;p.y+=p.vy;p.vx*=.99;p.rot+=p.vr;p.life-=0.009;
+    ctx.save();ctx.globalAlpha=Math.max(0,p.life);ctx.translate(p.x,p.y);ctx.rotate(p.rot);
+    ctx.fillStyle=p.c;
+    if(p.shape==='r'){ctx.fillRect(-p.s/2,-p.s/2,p.s,p.s*.6)}
+    else{ctx.beginPath();ctx.arc(0,0,p.s/2,0,6.28);ctx.fill()}
+    ctx.restore();
+  });
+  if(parts.length) raf=requestAnimationFrame(tick); else{raf=null;ctx.clearRect(0,0,fx.width,fx.height)}
+}
+
+/* ---------- controls ---------- */
+function newCard(s){
+  seed=(s===undefined)?(Date.now()^Math.floor(Math.random()*1e9))>>>0:s>>>0;
+  cells=drawCard(seed);marked=new Set();wonLines=new Set();
+  render();save();
+}
+document.getElementById('newBtn').onclick=()=>{banner.classList.remove('show');newCard()};
+document.getElementById('bannerNew').onclick=()=>{banner.classList.remove('show');newCard()};
+document.getElementById('bannerKeep').onclick=()=>banner.classList.remove('show');
+document.getElementById('resetBtn').onclick=()=>{marked=new Set();wonLines=new Set();render();save()};
+document.getElementById('howto').onclick=e=>{e.preventDefault()};
+const muteBtn=document.getElementById('muteBtn');
+muteBtn.onclick=()=>{sound=!sound;muteBtn.classList.toggle('is-off',!sound);save();if(sound)blip(660,.06)};
+
+/* ---------- boot ---------- */
+(function init(){
+  const sv=load();
+  if(sv && typeof sv.seed==='number'){
+    seed=sv.seed>>>0;cells=drawCard(seed);
+    marked=new Set(sv.marked||[]);wonLines=new Set(sv.wonLines||[]);
+    sound=sv.sound!==false;muteBtn.classList.toggle('is-off',!sound);
+    render();
+  }else{newCard()}
+})();
+</script>
+</body>
+</html>
