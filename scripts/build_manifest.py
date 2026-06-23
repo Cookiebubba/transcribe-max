@@ -3,7 +3,7 @@
 
 This is a one-off seed builder: the raw rows below were captured from the
 channel's /streams page (via the Apify `streamers/youtube-scraper` actor) on
-2026-06-18. Re-running `refresh_streams.py` will overwrite streams.json with a
+2026-06-23. Re-running `refresh_streams.py` will overwrite streams.json with a
 fresh enumeration; this script just bakes in the known-good snapshot so the
 repo has a complete manifest without needing network access.
 
@@ -80,6 +80,9 @@ RAW: list[tuple[str, str, str, str]] = [
     ("E07ps2b843Y", "Day 43 - VIBE CODING UNTIL I BUY MY FAMILY A HOUSE", "2026-06-16T06:37:38Z", "02:33:16"),
     ("MzNA0EMUva0", "Day 45 - Vibe coding until I buy my family a house ( Earned : $9,319 )", "2026-06-17T18:49:14Z", "04:13:36"),
     ("iSy9MB15csw", "Day 46 - Vibe coding until I buy my family a house ( Earned : $9,826 )", "2026-06-18T14:17:34Z", "03:59:38"),
+    ("XmvJUs-FdK0", "Day 47 - Vibe coding until I buy my family a house ( Earned : $13,075 )", "2026-06-20T11:38:43Z", "03:14:14"),
+    ("HSJuooZ_z5g", "Day 48 - Vibe coding until I buy my family a house ( Earned : $19,348 )", "2026-06-23T06:46:37Z", "03:39:02"),
+    ("O57Y3lg0rCc", "Day 49 - Vibe coding until I buy my family a house ( Earned : $20,686 )", "2026-06-23T14:27:28Z", "00:00:00"),
 ]
 
 
@@ -125,7 +128,7 @@ def main() -> None:
         "channel_url": "https://www.youtube.com/@MaxBladeTv",
         "channel_id": "UChcJv_JCjQHXcgjlHpxDIcA",
         "source": "channel /streams tab (ended live broadcasts)",
-        "snapshot_date": "2026-06-18",
+        "snapshot_date": "2026-06-23",
         "stream_count": len(rows),
         "streams": rows,
     }

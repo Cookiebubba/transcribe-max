@@ -24,14 +24,14 @@ publicly enumerable by scrapers — so this repo reads the `/streams` page direc
 Slugs are `day-NN-<videoId>` for the numbered series and `stream-<videoId>`
 otherwise.
 
-## Results (snapshot 2026-06-18)
+## Results (snapshot 2026-06-23)
 
-- **62 streams** found on the channel (~188 hours of video).
-- **56 transcribed** — **1,105,254 words**, 187,886 timestamped segments.
-- **6 not transcribed** because they have **no English captions** on YouTube:
-  the 49-second test stream, three Jan-2025 streams, Day 8, and **Day 46**
-  (today's stream — YouTube hadn't finished generating auto-captions yet).
-  Re-running `transcribe.py` later will pick up any that gain captions.
+- **65 streams** found on the channel (~195 hours of video).
+- **58 transcribed** — **1,151,376 words**, 195,399 timestamped segments.
+- **7 not transcribed** because they have **no English captions** on YouTube
+  (yet): the 49-second test stream, three Jan-2025 streams, Day 8, Day 46, and
+  **Day 49** (today's stream — YouTube hadn't finished generating auto-captions
+  yet). Re-running `transcribe.py` later will pick up any that gain captions.
 
 These are **caption-based** transcripts (YouTube auto-generated captions). No
 audio/Whisper transcription is performed, so streams without captions are

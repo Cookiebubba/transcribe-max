@@ -1,8 +1,8 @@
 # MaxBladeTv stream transcripts — index
 
 Channel: [@MaxBladeTv](https://www.youtube.com/@MaxBladeTv)  
-Streams: **62** · Transcribed: **56** · No captions: **6** · Words: **1,105,254**  
-Snapshot: 2026-06-18
+Streams: **65** · Transcribed: **58** · No captions: **7** · Words: **1,151,376**  
+Snapshot: 2026-06-23
 
 | # | Date | Duration | Words | Transcript | Video | Title |
 |---|------|----------|-------|------------|-------|-------|
@@ -68,3 +68,6 @@ Snapshot: 2026-06-18
 | Day 43 | 2026-06-16 | 02:33:16 | 17,039 | [md](./day-43-E07ps2b843Y.md) · [json](./day-43-E07ps2b843Y.json) | [▶](https://www.youtube.com/watch?v=E07ps2b843Y) | Day 43 - VIBE CODING UNTIL I BUY MY FAMILY A HOUSE |
 | Day 45 | 2026-06-17 | 04:13:36 | 30,615 | [md](./day-45-MzNA0EMUva0.md) · [json](./day-45-MzNA0EMUva0.json) | [▶](https://www.youtube.com/watch?v=MzNA0EMUva0) | Day 45 - Vibe coding until I buy my family a house ( Earned : $9,319 ) |
 | Day 46 | 2026-06-18 | 03:59:38 | — | _none_ | [▶](https://www.youtube.com/watch?v=iSy9MB15csw) | Day 46 - Vibe coding until I buy my family a house ( Earned : $9,826 ) |
+| Day 47 | 2026-06-20 | 03:14:14 | 23,699 | [md](./day-47-XmvJUs-FdK0.md) · [json](./day-47-XmvJUs-FdK0.json) | [▶](https://www.youtube.com/watch?v=XmvJUs-FdK0) | Day 47 - Vibe coding until I buy my family a house ( Earned : $13,075 ) |
+| Day 48 | 2026-06-23 | 03:39:02 | 22,423 | [md](./day-48-HSJuooZ_z5g.md) · [json](./day-48-HSJuooZ_z5g.json) | [▶](https://www.youtube.com/watch?v=HSJuooZ_z5g) | Day 48 - Vibe coding until I buy my family a house ( Earned : $19,348 ) |
+| Day 49 | 2026-06-23 | 00:00:00 | — | _none_ | [▶](https://www.youtube.com/watch?v=O57Y3lg0rCc) | Day 49 - Vibe coding until I buy my family a house ( Earned : $20,686 ) |

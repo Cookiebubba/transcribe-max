@@ -4,8 +4,8 @@
   "channel_url": "https://www.youtube.com/@MaxBladeTv",
   "channel_id": "UChcJv_JCjQHXcgjlHpxDIcA",
   "source": "channel /streams tab (ended live broadcasts)",
-  "snapshot_date": "2026-06-18",
-  "stream_count": 62,
+  "snapshot_date": "2026-06-23",
+  "stream_count": 65,
   "streams": [
     {
       "video_id": "fzQ73Q5oGa0",
@@ -626,6 +626,36 @@
       "duration_seconds": 14378,
       "day_number": 46,
       "slug": "day-46-iSy9MB15csw"
+    },
+    {
+      "video_id": "XmvJUs-FdK0",
+      "title": "Day 47 - Vibe coding until I buy my family a house ( Earned : $13,075 )",
+      "url": "https://www.youtube.com/watch?v=XmvJUs-FdK0",
+      "published_at": "2026-06-20T11:38:43Z",
+      "duration": "03:14:14",
+      "duration_seconds": 11654,
+      "day_number": 47,
+      "slug": "day-47-XmvJUs-FdK0"
+    },
+    {
+      "video_id": "HSJuooZ_z5g",
+      "title": "Day 48 - Vibe coding until I buy my family a house ( Earned : $19,348 )",
+      "url": "https://www.youtube.com/watch?v=HSJuooZ_z5g",
+      "published_at": "2026-06-23T06:46:37Z",
+      "duration": "03:39:02",
+      "duration_seconds": 13142,
+      "day_number": 48,
+      "slug": "day-48-HSJuooZ_z5g"
+    },
+    {
+      "video_id": "O57Y3lg0rCc",
+      "title": "Day 49 - Vibe coding until I buy my family a house ( Earned : $20,686 )",
+      "url": "https://www.youtube.com/watch?v=O57Y3lg0rCc",
+      "published_at": "2026-06-23T14:27:28Z",
+      "duration": "00:00:00",
+      "duration_seconds": 0,
+      "day_number": 49,
+      "slug": "day-49-O57Y3lg0rCc"
     }
   ]
 }
