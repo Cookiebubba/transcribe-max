@@ -6,3 +6,4 @@ venv/
 *.json3
 *.vtt
 *.srt
+memory/.ingest_state.json
