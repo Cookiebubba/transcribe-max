@@ -65,6 +65,46 @@ python scripts/build_index.py
 `transcribe.py` is idempotent: it skips streams that already have output unless
 you pass `--force`.
 
+## Semantic memory search (Graphiti)
+
+`memory/` adds an optional [Graphiti](https://github.com/getzep/graphiti)
+pipeline that builds a temporal **knowledge graph** from the transcripts so you
+can do hybrid **semantic + keyword + graph** search over the streams ("what did
+he say about pricing getclippo?", "when did MRR cross $30k?").
+
+This needs infrastructure that the build sandbox doesn't have, so it ships as
+ready-to-run tooling rather than a pre-built graph:
+
+```bash
+pip install -r memory/requirements.txt
+
+# 1. start a graph database (Neo4j)
+docker compose -f memory/docker-compose.yml up -d
+
+# 2. configure keys (Claude+Voyage, or single-key OpenAI)
+cp memory/.env.example memory/.env && $EDITOR memory/.env
+set -a; . memory/.env; set +a
+
+# 3. size the job first — NO API calls
+python memory/ingest.py --dry-run                 # full corpus
+python memory/ingest.py --dry-run --limit 3       # just a sample
+
+# 4. ingest (start small!), then search
+python memory/ingest.py --limit 3                 # 3 oldest streams
+python memory/search.py "what did he say about pricing getclippo"
+python memory/ingest.py                           # everything, once you're happy
+```
+
+⚠️ **Cost/time:** ingesting all 56 transcripts is **~985 episodes**, i.e. ~985+
+LLM extraction calls plus embeddings — real API spend and a long run. Use
+`--dry-run`, `--limit`, and `--max-chunks` to control it; start with a few
+streams. Provider/model/back-end are all configurable via `memory/.env`
+(defaults: Claude `claude-sonnet-5` for extraction + Voyage embeddings; Neo4j).
+
+> If you only need plain semantic lookup (not a knowledge graph), a vector
+> store over `transcripts/*.json` (e.g. Chroma/LanceDB + embeddings) is cheaper
+> and simpler — ask and I can add that instead.
+
 ## How the transcripts in this repo were produced
 
 The repo was bootstrapped in a sandbox with **no direct access to YouTube or the

@@ -1,0 +1,9 @@
+# Graphiti semantic memory over the transcripts (optional feature).
+graphiti-core==0.29.2
+
+# LLM / embedding providers (install what you use):
+anthropic>=0.40.0      # Claude extraction (default provider)
+voyageai>=0.3.0        # embeddings for the Anthropic provider
+openai>=1.40.0         # single-key OpenAI mode, and optional reranker
+
+python-dotenv>=1.0.0
