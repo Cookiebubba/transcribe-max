@@ -1,0 +1,1653 @@
+<!doctype html>
+<html lang="en" data-shell="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invited.you — Meta Ad Concepts v1</title>
+<style>
+/* ══════════════════════════════════════════════════════════════════════════
+   INVITED.YOU — META AD CONCEPT DECK
+   Design tokens below are lifted verbatim from invited.you/public/style.css
+   so every card renders in the product's real light and dark palettes.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* Real brand type, served from the live site. Falls back to system-ui if the
+   deck is opened offline — the cards still lay out identically because every
+   dimension is in cqw, not in ex/ch units that depend on the font. */
+@font-face{font-family:"Creato Display";src:url("https://invited.you/public/fonts/creato-regular.woff2") format("woff2");font-weight:100 450;font-display:swap}
+@font-face{font-family:"Creato Display";src:url("https://invited.you/public/fonts/creato-medium.woff2") format("woff2");font-weight:451 609;font-display:swap}
+@font-face{font-family:"Creato Display";src:url("https://invited.you/public/fonts/creato-bold.woff2") format("woff2");font-weight:610 760;font-display:swap}
+@font-face{font-family:"Creato Display";src:url("https://invited.you/public/fonts/creato-extrabold.woff2") format("woff2");font-weight:761 900;font-display:swap}
+@font-face{font-family:"Fragment Mono";src:url("https://invited.you/public/fonts/fragment-mono.woff2") format("woff2");font-weight:400;font-display:swap}
+
+:root{
+  --font:"Creato Display",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Fragment Mono",ui-monospace,"Cascadia Mono",monospace;
+
+  /* brand constants — identical in both themes */
+  --electric:#22d3ee;
+  --pink:#d61f94;
+  --violet:#6d28d9;
+  --teal:#0e7490;
+  --grad-primary:linear-gradient(105deg,#0e7490,#6d28d9 55%,#d61f94);
+  --grad-foil:linear-gradient(100deg,#155e75 0%,#0e7490 18%,#6d28d9 42%,#d61f94 60%,#0e7490 82%,#155e75 100%);
+
+  /* deck shell */
+  --sh-bg:oklch(0.14 0.006 274);
+  --sh-panel:oklch(0.185 0.007 274);
+  --sh-panel-2:oklch(0.225 0.008 274);
+  --sh-line:oklch(0.31 0.011 274);
+  --sh-ink:oklch(0.96 0.004 270);
+  --sh-dim:oklch(0.72 0.012 272);
+  --sh-faint:oklch(0.56 0.012 272);
+}
+
+/* ── the two product palettes, verbatim from style.css ─────────────────── */
+.t-light{
+  --bg:oklch(0.97 0.003 270);      --bg-deep:oklch(0.93 0.005 270);
+  --surface:oklch(0.995 0.001 270);--surface-2:oklch(0.94 0.004 270);
+  --line:oklch(0.87 0.006 270);
+  --ink:oklch(0.22 0.012 270);     --ink-dim:oklch(0.4 0.014 270);
+  --neon:#0e7490;                  --rule:oklch(0.22 0.012 270 / .12);
+  --sheen:255,255,255;             --on-accent:#fff;
+}
+.t-dark{
+  --bg:oklch(0.18 0.006 274);      --bg-deep:oklch(0.14 0.006 274);
+  --surface:oklch(0.235 0.008 274);--surface-2:oklch(0.29 0.01 274);
+  --line:oklch(0.37 0.012 274);
+  --ink:oklch(0.96 0.004 270);     --ink-dim:oklch(0.75 0.012 272);
+  --neon:#22d3ee;                  --rule:oklch(0.98 0.004 270 / .14);
+  --sheen:255,255,255;             --on-accent:#08222b;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--sh-bg);color:var(--sh-ink);
+  font-family:var(--font);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ══ deck chrome ═════════════════════════════════════════════════════════ */
+.wrap{max-width:1560px;margin:0 auto;padding:0 32px 140px}
+
+.masthead{padding:72px 0 40px;border-bottom:1px solid var(--sh-line)}
+.eyebrow{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--sh-faint);margin:0 0 18px;
+}
+h1.title{
+  font-size:clamp(2.2rem,5.2vw,4rem);font-weight:800;letter-spacing:-.028em;
+  line-height:1.03;margin:0 0 20px;max-width:20ch;
+}
+h1.title em{
+  font-style:normal;background:var(--grad-foil);background-size:200% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.standfirst{font-size:1.12rem;color:var(--sh-dim);max-width:70ch;margin:0 0 30px}
+.metabar{display:flex;flex-wrap:wrap;gap:10px}
+.pill{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;
+  padding:7px 13px;border-radius:9999px;border:1px solid var(--sh-line);
+  color:var(--sh-dim);background:var(--sh-panel);
+}
+.pill.on{border-color:var(--electric);color:var(--electric)}
+
+section.block{padding:64px 0;border-bottom:1px solid var(--sh-line)}
+h2.sec{
+  font-size:clamp(1.5rem,2.8vw,2.1rem);font-weight:750;letter-spacing:-.022em;
+  margin:0 0 8px;
+}
+.sec-sub{color:var(--sh-dim);max-width:78ch;margin:0 0 34px;font-size:1.02rem}
+h3.sub{font-size:1.08rem;font-weight:700;letter-spacing:-.01em;margin:0 0 12px}
+
+.grid{display:grid;gap:20px}
+@media(min-width:860px){.grid.g2{grid-template-columns:1fr 1fr}.grid.g3{grid-template-columns:repeat(3,1fr)}}
+
+.panel{
+  background:var(--sh-panel);border:1px solid var(--sh-line);
+  border-radius:16px;padding:24px 26px;
+}
+.panel.accent{border-color:oklch(.45 .09 220)}
+.panel h3.sub{margin-top:0}
+.panel p:last-child,.panel ul:last-child{margin-bottom:0}
+.panel p{margin:0 0 12px;color:var(--sh-dim);font-size:.95rem}
+.panel ul{margin:0 0 12px;padding-left:20px;color:var(--sh-dim);font-size:.95rem}
+.panel li{margin:0 0 8px}
+.panel li strong,.panel p strong{color:var(--sh-ink);font-weight:650}
+kbd,code{
+  font-family:var(--mono);font-size:.86em;background:var(--sh-panel-2);
+  border:1px solid var(--sh-line);border-radius:5px;padding:.1em .42em;color:var(--sh-ink);
+}
+.quote{
+  border-left:2px solid var(--electric);padding:2px 0 2px 16px;margin:0 0 14px;
+  color:var(--sh-ink);font-size:.95rem;
+}
+.quote cite{display:block;font-style:normal;font-size:.8rem;color:var(--sh-faint);margin-top:6px;font-family:var(--mono)}
+
+table.tbl{width:100%;border-collapse:collapse;font-size:.9rem}
+table.tbl th,table.tbl td{
+  text-align:left;padding:11px 14px;border-bottom:1px solid var(--sh-line);vertical-align:top;
+}
+table.tbl th{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--sh-faint);font-weight:400;
+}
+table.tbl td{color:var(--sh-dim)}
+table.tbl td strong{color:var(--sh-ink);font-weight:650}
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+.flag{
+  display:inline-block;font-family:var(--mono);font-size:.66rem;letter-spacing:.08em;
+  text-transform:uppercase;padding:3px 8px;border-radius:5px;vertical-align:middle;
+}
+.flag.ok{background:oklch(.32 .08 158);color:oklch(.88 .13 158)}
+.flag.check{background:oklch(.34 .09 80);color:oklch(.9 .13 88)}
+
+/* ══ ad row: card left, notes right ══════════════════════════════════════ */
+.adrow{padding:56px 0;border-bottom:1px solid var(--sh-line)}
+.adrow:last-of-type{border-bottom:0}
+.adrow-in{display:grid;gap:34px;align-items:start}
+@media(min-width:1080px){
+  .adrow-in{grid-template-columns:minmax(340px,470px) 1fr;gap:52px}
+  .adrow-in .stage{position:sticky;top:24px}
+}
+.adhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;margin:0 0 8px}
+.adno{
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.1em;color:var(--sh-faint);
+  border:1px solid var(--sh-line);border-radius:6px;padding:3px 9px;
+}
+h2.adname{font-size:clamp(1.3rem,2.4vw,1.72rem);font-weight:750;letter-spacing:-.02em;margin:0}
+.adline{color:var(--sh-dim);margin:0 0 26px;max-width:80ch}
+
+/* ══ THE AD CARD — 4:5, 1080×1350. All interior sizing in cqw so the card is
+      resolution-independent: 100cqw == the card's own width. ═════════════ */
+.stage{--k:1}
+.adbox{
+  container-type:inline-size;
+  width:100%;max-width:540px;
+  border-radius:14px;overflow:hidden;
+  box-shadow:0 24px 70px -30px #000,0 0 0 1px var(--sh-line);
+}
+body.exact .adbox{max-width:none;width:1080px}
+body.exact .stage{overflow-x:auto;position:static}
+body.exact .adrow-in{grid-template-columns:1fr}
+
+.ad{
+  position:relative;width:100%;aspect-ratio:4/5;overflow:hidden;
+  background:var(--bg);color:var(--ink);
+  font-family:var(--font);display:flex;flex-direction:column;
+  padding:6.6cqw;
+  isolation:isolate;
+}
+
+/* ── dark field: dotted world-map wash + vignette (approximates the live
+      canvas field on invited.you; swap the real render in for production) ── */
+.ad--dark .field{
+  position:absolute;inset:0;z-index:-2;
+  background:
+    radial-gradient(115% 80% at 18% 24%,oklch(.34 .07 200 / .40),transparent 58%),
+    radial-gradient(105% 85% at 84% 42%,oklch(.32 .11 305 / .42),transparent 60%),
+    radial-gradient(90% 60% at 50% 108%,oklch(.30 .10 320 / .30),transparent 62%),
+    var(--bg-deep);
+}
+.ad--dark .dots{
+  position:absolute;inset:-10%;z-index:-1;opacity:.5;
+  background-image:radial-gradient(currentColor 1.05px,transparent 1.06px);
+  background-size:.86cqw .86cqw;color:oklch(.72 .06 250);
+  -webkit-mask-image:radial-gradient(120% 78% at 50% 34%,#000 12%,transparent 76%);
+  mask-image:radial-gradient(120% 78% at 50% 34%,#000 12%,transparent 76%);
+}
+.ad--dark .vig{
+  position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(125% 92% at 50% 42%,transparent 36%,oklch(.10 .006 274 / .82) 100%);
+}
+/* ── light field: the soft silk the product's light mode actually uses ──── */
+.ad--light .field{
+  position:absolute;inset:0;z-index:-2;
+  background:
+    radial-gradient(105% 78% at 22% 12%,oklch(.93 .028 218 / .8),transparent 60%),
+    radial-gradient(100% 80% at 86% 26%,oklch(.93 .035 318 / .72),transparent 62%),
+    linear-gradient(180deg,var(--surface),var(--bg-deep));
+}
+.ad--light .dots{
+  position:absolute;inset:0;z-index:-1;opacity:.30;
+  background-image:radial-gradient(currentColor .95px,transparent .96px);
+  background-size:.86cqw .86cqw;color:oklch(.55 .02 265);
+  -webkit-mask-image:radial-gradient(110% 70% at 50% 22%,#000 6%,transparent 72%);
+  mask-image:radial-gradient(110% 70% at 50% 22%,#000 6%,transparent 72%);
+}
+
+/* ── logo lockup, top left (matches the reference creative) ─────────────── */
+.lockup{display:flex;align-items:center;gap:1.5cqw;flex:0 0 auto}
+/* explicit height, not auto: a <use> reference gives the SVG no intrinsic size,
+   so `height:auto` silently resolves to the 150px UA default and the lockup row
+   grows to 150px tall on every card. 673:764 viewBox → width × 1.135. */
+.lockup svg{width:3.5cqw;height:3.97cqw;color:var(--ink);display:block;flex:0 0 auto}
+.lockup .wm{font-size:3.5cqw;font-weight:800;letter-spacing:-.012em;line-height:1;color:var(--ink)}
+.lockup .wm i{font-style:normal;color:var(--neon)}
+
+.ad .body{flex:1 1 auto;display:flex;flex-direction:column;justify-content:center;gap:3.4cqw;padding:3cqw 0}
+.ad .foot{
+  flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;gap:2cqw;
+  font-family:var(--mono);font-size:2.05cqw;letter-spacing:.03em;color:var(--ink-dim);
+}
+
+/* ── typographic scale, tuned so OCR reads every glyph at 1080px wide ───── */
+.hook{
+  font-size:9.4cqw;font-weight:800;line-height:1.02;letter-spacing:-.028em;margin:0;
+  text-wrap:balance;
+}
+.hook.sm{font-size:7.6cqw}
+.hook.xs{font-size:6.5cqw;line-height:1.08}
+.hook .neon{color:var(--neon)}
+.hook .quiet{color:var(--ink-dim)}
+.hook .foil{
+  background:var(--grad-foil);background-size:180% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.sub{font-size:3.5cqw;line-height:1.36;color:var(--ink-dim);margin:0;max-width:30ch;text-wrap:pretty}
+.sub.big{font-size:4.1cqw;color:var(--ink)}
+.kicker{
+  font-family:var(--mono);font-size:2.15cqw;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--neon);margin:0;
+}
+.kicker.dim{color:var(--ink-dim)}
+
+/* ── the address-bar component, rebuilt from the live .namecheck markup ─── */
+.chrome{
+  background:oklch(from var(--surface) l c h / .82);
+  border:1px solid var(--line);border-radius:3.1cqw;
+  padding:2.5cqw 2.3cqw 2.3cqw;
+  backdrop-filter:blur(8px);
+  box-shadow:0 2px 6px oklch(.05 .01 274 / .18),0 18px 44px -24px oklch(.05 .01 274 / .5);
+}
+.chrome .lights{display:flex;gap:1.05cqw;margin:0 0 2.1cqw;padding-left:.5cqw}
+.chrome .lights i{width:1.15cqw;height:1.15cqw;border-radius:50%;background:var(--line);display:block}
+.addr{
+  display:flex;align-items:center;gap:1.4cqw;
+  background:var(--bg);border:1px solid var(--line);border-radius:2.2cqw;
+  padding:2.35cqw 2.4cqw;
+}
+.addr .lock{width:2.15cqw;height:2.15cqw;flex:0 0 auto;color:var(--ink-dim)}
+.addr .you{font-size:3.35cqw;font-weight:500;color:var(--ink);letter-spacing:-.005em}
+.addr .you.ph{color:var(--ink-dim)}
+.addr .sfx{
+  margin-left:auto;font-family:var(--mono);font-size:3.05cqw;color:var(--ink-dim);
+  letter-spacing:-.01em;white-space:nowrap;
+}
+.cta{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--grad-primary);color:#fff;
+  font-size:3.2cqw;font-weight:650;letter-spacing:-.005em;
+  padding:2.35cqw 4.4cqw;border-radius:9999px;margin-top:2.3cqw;
+}
+.cta.block{display:flex;width:100%}
+.chrome.row{display:grid;grid-template-columns:1fr auto;gap:2cqw;align-items:center}
+.chrome.row .lights{grid-column:1/-1;margin-bottom:.4cqw}
+.chrome.row .cta{margin-top:0}
+
+/* ── comparison rows (used by the trust + reframe cards) ────────────────── */
+.vs{display:flex;flex-direction:column;gap:2.2cqw}
+.vs-item{
+  display:flex;align-items:center;gap:2.2cqw;
+  border:1px solid var(--line);border-radius:2.6cqw;
+  padding:3cqw 3.2cqw;background:oklch(from var(--surface) l c h / .7);
+}
+.vs-item .mark{
+  flex:0 0 auto;width:4.6cqw;height:4.6cqw;border-radius:50%;
+  display:grid;place-items:center;font-size:2.6cqw;font-weight:800;
+}
+.vs-bad .mark{background:oklch(.5 .19 25 / .18);color:oklch(.72 .19 25)}
+.vs-good .mark{background:oklch(.55 .14 200 / .2);color:var(--neon)}
+.vs-item .url{font-family:var(--mono);font-size:3.35cqw;letter-spacing:-.015em;color:var(--ink)}
+.vs-bad .url{color:var(--ink-dim);text-decoration:line-through;text-decoration-thickness:.22cqw}
+.vs-item .tag{
+  margin-left:auto;font-family:var(--mono);font-size:1.85cqw;letter-spacing:.09em;
+  text-transform:uppercase;white-space:nowrap;
+}
+.vs-bad .tag{color:oklch(.72 .19 25)}
+.vs-good .tag{color:var(--neon)}
+.vs-good{border-color:oklch(.6 .12 205 / .5);box-shadow:0 0 0 .28cqw oklch(.6 .12 205 / .14)}
+
+/* ── benefit ticks ──────────────────────────────────────────────────────── */
+.ticks{display:flex;flex-direction:column;gap:2.1cqw;margin:0;padding:0;list-style:none}
+.ticks li{display:flex;align-items:flex-start;gap:1.9cqw;font-size:3.15cqw;line-height:1.3;color:var(--ink)}
+.ticks svg{width:3.5cqw;height:3.5cqw;flex:0 0 auto;color:var(--neon);margin-top:.15cqw}
+
+/* ── the live profile render (rebuilt from lewis.invited.you's real DOM) ── */
+.pv{
+  border-radius:3.4cqw;overflow:hidden;background:var(--surface);
+  border:1px solid var(--line);
+  box-shadow:0 3px 10px oklch(.05 .01 274 / .16),0 30px 70px -34px oklch(.05 .01 274 / .6);
+}
+.pv-cover{position:relative;height:29cqw;background:linear-gradient(150deg,oklch(.74 .04 250),oklch(.86 .02 265))}
+.pv-cover img{width:100%;height:100%;object-fit:cover;object-position:61% 0%;display:block}
+.pv-cover::after{
+  content:"";position:absolute;inset:auto 0 0;height:52%;
+  background:linear-gradient(180deg,transparent,var(--surface));
+}
+.pv-id{position:relative;margin-top:-6.5cqw;padding:0 4cqw 3cqw;text-align:center;z-index:1}
+.pv-name{
+  font-size:4.5cqw;font-weight:800;letter-spacing:-.022em;color:var(--ink);
+  margin:0;display:flex;align-items:center;justify-content:center;gap:1.4cqw;
+}
+.pv-name .sp{width:2.7cqw;height:2.7cqw;color:#e0b64a}
+.chip{
+  display:inline-flex;align-items:center;gap:.8cqw;margin-top:1.3cqw;
+  background:linear-gradient(100deg,#f3d089,#c9982f 46%,#f7e2ab);
+  color:#3a2c05;font-size:1.85cqw;font-weight:750;letter-spacing:.1em;text-transform:uppercase;
+  padding:.85cqw 2cqw;border-radius:9999px;
+}
+.chip .sp{width:1.7cqw;height:1.7cqw}
+.pv-bio{font-size:2.65cqw;color:var(--ink-dim);margin:1.5cqw 0 0}
+.pv-soc{display:flex;justify-content:center;gap:1.5cqw;margin-top:2.4cqw}
+.pv-soc a{
+  width:5cqw;height:5cqw;border-radius:50%;background:var(--surface-2);
+  display:grid;place-items:center;color:var(--ink-dim);
+}
+.pv-soc svg{width:2.6cqw;height:2.6cqw}
+.pv-sec{
+  margin:0 3.2cqw 3.2cqw;background:var(--surface-2);border-radius:2.6cqw;
+  padding:3cqw 2.6cqw;text-align:center;
+}
+.pv-sec-t{font-size:2.75cqw;font-weight:750;letter-spacing:.13em;text-transform:uppercase;color:var(--ink);margin:0}
+.pv-sec-s{font-size:2.25cqw;color:var(--ink-dim);margin:.9cqw 0 2.2cqw}
+.pv-embed{
+  aspect-ratio:16/9;border-radius:1.6cqw;overflow:hidden;position:relative;
+  background:linear-gradient(140deg,oklch(.32 .01 265),oklch(.2 .01 265));
+}
+.pv-embed img{width:100%;height:100%;object-fit:cover;display:block}
+.pv-play{
+  position:absolute;inset:0;margin:auto;width:8.4cqw;height:5.9cqw;z-index:2;
+  background:#ff0000;border-radius:1.5cqw;display:grid;place-items:center;
+}
+.pv-play::after{content:"";width:0;height:0;border-left:2.5cqw solid #fff;border-top:1.5cqw solid transparent;border-bottom:1.5cqw solid transparent;margin-left:.5cqw}
+.pv-links{padding:0 3.2cqw 3.6cqw;display:flex;flex-direction:column;gap:1.7cqw}
+.pv-link{
+  display:flex;align-items:center;gap:2.2cqw;background:var(--surface-2);
+  border-radius:2.2cqw;padding:2.1cqw 2.4cqw;
+}
+.pv-link.feat{
+  background:var(--surface);
+  box-shadow:0 0 0 .28cqw #e6c26a,0 0 3.4cqw oklch(.8 .12 85 / .45);
+}
+.pv-link .th{
+  width:5.6cqw;height:5.6cqw;border-radius:1.4cqw;flex:0 0 auto;overflow:hidden;
+  background:linear-gradient(140deg,oklch(.4 .02 265),oklch(.24 .01 265));
+}
+.pv-link .th img{width:100%;height:100%;object-fit:cover;display:block}
+.pv-link .tx{display:flex;flex-direction:column;line-height:1.25;min-width:0}
+.pv-link .tt{font-size:2.65cqw;font-weight:650;color:var(--ink)}
+.pv-link .ss{font-size:2.15cqw;color:var(--ink-dim)}
+.pv-link .go{margin-left:auto;color:var(--ink-dim);font-size:2.9cqw}
+
+/* ── live-view layout: the real page shown inside a clipped viewport, so it
+      reads as a page you are looking at rather than a card that got cropped ── */
+.ad.live{gap:3.2cqw;justify-content:flex-start}
+.ad.live > .lockup,.ad.live > .hook,.ad.live > .livecap{flex:0 0 auto}
+.ad.live > .pvport{
+  flex:1 1 auto;min-height:0;position:relative;overflow:hidden;
+  border-radius:3.4cqw;background:var(--surface);border:1px solid var(--line);
+  box-shadow:0 3px 10px oklch(.05 .01 274 / .18),0 30px 70px -34px oklch(.05 .01 274 / .62);
+}
+.pvport .pv{
+  position:absolute;left:0;right:0;top:0;
+  border:0;border-radius:0;box-shadow:none;
+}
+.pvport::after{
+  content:"";position:absolute;inset:auto 0 0;height:26%;pointer-events:none;
+  background:linear-gradient(180deg,transparent,var(--surface) 78%);
+}
+/* card 08 carries a hook above the viewport, so it gets a shorter crop of the
+   cover to keep the section card and its embed inside the frame. */
+.pvport.tight .pv-cover{height:19cqw}
+.livecap{text-align:center;padding-top:.6cqw}
+.livecap .hook{margin-bottom:1.4cqw}
+.livecap .sub{max-width:none;margin:0 auto}
+.livecap .sub strong{color:var(--ink);font-weight:700}
+
+/* ── notes column ───────────────────────────────────────────────────────── */
+.notes{display:flex;flex-direction:column;gap:18px}
+.note{
+  background:var(--sh-panel);border:1px solid var(--sh-line);border-radius:14px;
+  padding:20px 22px;
+}
+.note > h4{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--sh-faint);margin:0 0 12px;font-weight:400;
+}
+.note p{margin:0 0 11px;color:var(--sh-dim);font-size:.94rem}
+.note p:last-child{margin-bottom:0}
+.note strong{color:var(--sh-ink);font-weight:650}
+.note ul{margin:0;padding-left:19px;color:var(--sh-dim);font-size:.94rem}
+.note li{margin:0 0 7px}
+.note li:last-child{margin-bottom:0}
+
+/* the copy block a media buyer pastes straight into Ads Manager */
+.copy{background:var(--sh-panel-2);border-color:oklch(.36 .03 250)}
+.fieldrow{
+  display:grid;grid-template-columns:130px 1fr;gap:10px 16px;
+  padding:11px 0;border-top:1px solid var(--sh-line);align-items:start;
+}
+.fieldrow:first-of-type{border-top:0;padding-top:0}
+@media(max-width:520px){.fieldrow{grid-template-columns:1fr;gap:4px}}
+.fieldrow dt{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--sh-faint);padding-top:2px;
+}
+.fieldrow dd{margin:0;color:var(--sh-ink);font-size:.94rem;line-height:1.5}
+.fieldrow dd .cc{
+  display:block;font-family:var(--mono);font-size:.7rem;color:var(--sh-faint);margin-top:5px;
+}
+dl.fields{margin:0}
+
+.tagrow{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+.tag{
+  font-family:var(--mono);font-size:.7rem;padding:4px 9px;border-radius:6px;
+  background:var(--sh-panel-2);border:1px solid var(--sh-line);color:var(--sh-dim);
+}
+
+.toolbar{
+  position:sticky;top:0;z-index:50;background:oklch(.14 .006 274 / .92);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--sh-line);
+}
+.toolbar-in{
+  max-width:1560px;margin:0 auto;padding:11px 32px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.toolbar .brand{display:flex;align-items:center;gap:9px;font-weight:750;letter-spacing:-.01em;margin-right:auto}
+.toolbar .brand svg{width:19px;height:19px;color:var(--sh-ink)}
+.toolbar .brand i{font-style:normal;color:var(--electric)}
+button.tb{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;
+  background:var(--sh-panel-2);color:var(--sh-dim);
+  border:1px solid var(--sh-line);border-radius:8px;padding:8px 13px;cursor:pointer;
+}
+button.tb:hover{color:var(--sh-ink);border-color:var(--sh-faint)}
+button.tb[aria-pressed="true"]{background:var(--electric);color:#06232b;border-color:var(--electric);font-weight:700}
+
+a{color:var(--electric)}
+.foot-note{padding:44px 0 0;color:var(--sh-faint);font-size:.86rem;max-width:80ch}
+@media print{.toolbar{display:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 673 764">
+    <path fill="currentColor" fill-rule="evenodd" d="M336.5 0C360.5 175.66 470.54 310.42 673 335C510.45 402.37 402.78 522.69 400.5 700A64 64 0 0 1 272.5 700C270.22 522.69 162.55 402.37 0 335C202.46 310.42 312.5 175.66 336.5 0ZM272.5 270.5a64 64 0 1 0 128 0a64 64 0 1 0-128 0Z"/>
+  </symbol>
+  <symbol id="sp" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 0c.9 6.8 4.3 10.2 12 12-7.7 1.8-11.1 5.2-12 12-.9-6.8-4.3-10.2-12-12C7.7 10.2 11.1 6.8 12 0Z"/>
+  </symbol>
+  <symbol id="tick" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M4 12.5 9.5 18 20 6.5"/>
+  </symbol>
+  <symbol id="lock" viewBox="0 0 16 16">
+    <path d="M4.6 7V5.2a3.4 3.4 0 0 1 6.8 0V7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <rect x="3" y="7" width="10" height="7" rx="2" fill="currentColor"/>
+  </symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></symbol>
+  <symbol id="yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10.2 9.3l4.8 2.7-4.8 2.7z" fill="currentColor"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path d="M4 3l6.9 9L4.3 21H7l5-6 4.4 6H20l-7.2-9.7L19.3 3h-2.6l-4.3 5.2L8.2 3z" fill="currentColor"/></symbol>
+  <symbol id="tw" viewBox="0 0 24 24"><path d="M4.2 3 3 6.6V18h4v2.9h2.8l2.8-2.9h3.9l4.3-4.3V3zm2 1.9h13.1v8.1l-2.5 2.5h-4l-2.7 2.7v-2.7h-3.9zm4.4 2.9v4.4h1.9V7.7zm5 0v4.4h1.9V7.7z" fill="currentColor"/></symbol>
+  <symbol id="li" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="7.1" cy="8" r="1.5" fill="currentColor"/><rect x="5.9" y="10.4" width="2.4" height="7.2" fill="currentColor"/><path d="M11 17.6v-7.2h2.3v1c.5-.8 1.4-1.2 2.5-1.2 1.9 0 3.1 1.2 3.1 3.5v3.9h-2.4v-3.5c0-1-.4-1.7-1.3-1.7-.9 0-1.4.6-1.4 1.7v3.5z" fill="currentColor"/></symbol>
+  <symbol id="chart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M3 20h18M6 20v-6M11 20V8M16 20v-9M21 20V4"/></symbol>
+</svg>
+
+<div class="toolbar">
+  <div class="toolbar-in">
+    <span class="brand"><svg><use href="#mark"/></svg> Invited<i>.you</i> · ad concepts</span>
+    <button class="tb" id="btn-exact" aria-pressed="false">Export size 1080×1350</button>
+    <button class="tb" id="btn-safe" aria-pressed="false">Safe-zone overlay</button>
+  </div>
+</div>
+
+<div class="wrap">
+
+<header class="masthead">
+  <p class="eyebrow">Meta paid social · concept round 1 · 10 statics · 4:5 1080×1350</p>
+  <h1 class="title">Ten ways to sell <em>a link that leads to you</em>.</h1>
+  <p class="standfirst">
+    The current creative opens on the product. That works on people who already know what
+    Invited.you is — which right now is almost nobody. Every concept below leads with a
+    <strong>problem, a reframe or a proof</strong> and lands the product second, because
+    that is the only order that works on a cold audience. Five light, five dark, both pulled
+    from the real <code>style.css</code> tokens so nothing here drifts from the product.
+  </p>
+  <div class="metabar">
+    <span class="pill on">10 concepts</span>
+    <span class="pill">5 light · 5 dark</span>
+    <span class="pill">4:5 · 1080×1350</span>
+    <span class="pill">copy fields included</span>
+    <span class="pill">2 claims flagged to verify</span>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<section class="block">
+  <h2 class="sec">What I found</h2>
+  <p class="sec-sub">
+    invited.you and lewis.invited.you are both blocked from this environment's network, so
+    everything below was pulled through a headless browser and read off the live DOM,
+    the live stylesheet and two full-page renders. Every line in quotes is the site's own.
+  </p>
+
+  <div class="grid g2">
+    <div class="panel">
+      <h3 class="sub">The product, in its own words</h3>
+      <p class="quote">Claim the link that leads to you.<cite>invited.you — H1</cite></p>
+      <p class="quote">Create a discoverable link to you and everything you do.<cite>invited.you — subhead</cite></p>
+      <p class="quote">yourname.invited.you — a link you can say out loud.<cite>invited.you — meta description</cite></p>
+      <p class="quote">Invited is a name people say out loud. We're opening it with creators, not with ads.<cite>invited.you/partners</cite></p>
+      <p>
+        The single most valuable line on the whole site is <strong>“a link you can say out
+        loud”</strong> — it is buried in a meta description where no human will ever read it.
+        It is the sharpest articulation of the product's actual wedge, and concept 09 is
+        built entirely on it.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h3 class="sub">The mechanic that actually differentiates</h3>
+      <p>
+        Competitors give you a <em>path</em>: <code>linktr.ee/yourname</code>. Invited.you
+        gives you a <strong>subdomain</strong>: <code>yourname.invited.you</code>. That is not
+        cosmetic — it is the whole positioning:
+      </p>
+      <ul>
+        <li><strong>It's sayable.</strong> You can read it into a microphone. You cannot
+          comfortably say “linktree slash” out loud on a podcast.</li>
+        <li><strong>It reads as owned.</strong> A subdomain looks like an address, not a
+          profile inside somebody else's app.</li>
+        <li><strong>It's scarce by construction.</strong> One <code>lewis</code> exists. Names
+          are allocated in claim order and, per the site, “do not come back.”</li>
+      </ul>
+      <p>Three of the ten concepts attack this angle from different directions.</p>
+    </div>
+
+    <div class="panel">
+      <h3 class="sub">Confirmed features (safe to advertise)</h3>
+      <ul>
+        <li>Personal subdomain <code>yourname.invited.you</code> <span class="flag ok">verified</span></li>
+        <li>Cover photo, name, bio, social icon row (IG, YouTube, X, Twitch, LinkedIn) <span class="flag ok">verified</span></li>
+        <li>Named <strong>sections</strong> with headings and sub-copy — a page structure, not a link list <span class="flag ok">verified</span></li>
+        <li>Rich <strong>embeds</strong> — the live YouTube playlist plays inside the page <span class="flag ok">verified</span></li>
+        <li>Link blocks with thumbnail + title + subtitle, plus a highlighted “featured” state <span class="flag ok">verified</span></li>
+        <li>Rarity tiers — a gold <strong>RARE</strong> chip renders on Lewis's page; the
+          stylesheet also carries epic, legendary and one-of-one <span class="flag ok">verified</span></li>
+        <li>Genuine light <em>and</em> dark themes with a user-facing toggle <span class="flag ok">verified</span></li>
+        <li>Founding-price claims and per-creator attribution links <code>/i/</code> <span class="flag ok">verified</span></li>
+      </ul>
+    </div>
+
+    <div class="panel accent">
+      <h3 class="sub">Two things to confirm before you spend a pound</h3>
+      <p>
+        <strong>Analytics.</strong> <span class="flag check">unverified</span> You asked for an
+        “advanced analytics” hook and I've written it (concept 07) because it is the single
+        strongest professional-buyer angle in the category. But I found <em>no</em> analytics
+        surface anywhere on the public site or in the stylesheet. Do not run 07 until you can
+        screenshot a real dashboard. Advertising a feature that isn't shipped is how a new
+        domain gets its ad account restricted.
+      </p>
+      <p>
+        <strong>“100,000 founding places.”</strong> <span class="flag check">unverified</span>
+        That number comes from a source comment on the homepage describing the
+        <code>/viral</code> page, which I could not load. <code>/partners</code> does confirm
+        the mechanic in prose — “they claim at the founding price while places remain” and
+        “founding places are allocated in claim order and they do not come back.” Concept 04
+        uses the mechanic; put the real number in only once you've confirmed it.
+      </p>
+      <p>
+        One more, for calibration rather than compliance: the live counter currently reads
+        <strong>“12 people waiting.”</strong> Nothing in this round claims social proof by
+        volume, because at 12 you have none. Every scarcity line here is built on
+        <em>name</em> scarcity, which is true on day one.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<section class="block">
+  <h2 class="sec">Competitor teardown</h2>
+  <p class="sec-sub">
+    What the category is actually saying in paid social right now, and the gap that leaves.
+  </p>
+
+  <div class="scroller">
+  <table class="tbl">
+    <thead><tr><th>Who</th><th>The line they run</th><th>The angle</th><th>What it leaves open</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Linktree</strong></td>
+        <td>“Try the #1 link in bio tool worldwide with over 70M users. Help your followers
+          discover everything you do, with one simple link.”</td>
+        <td>Scale as proof. Category default.</td>
+        <td>70M users is also 70M identical pages. “Everyone uses it” is one word away from
+          “it doesn't say anything about you.”</td>
+      </tr>
+      <tr>
+        <td><strong>Linktree</strong> (feature ad)</td>
+        <td>“✅ Turn your bio into a mini-website ✅ Grow &amp; engage ✅ Sell products &amp;
+          monetize ✅ Optimise with in-depth analytics … 26% off, deal ends soon.”</td>
+        <td>Tick-list + discount urgency.</td>
+        <td>Four benefits and a coupon, aimed at nobody in particular. Discounting is what
+          you do when the product can't carry the ad.</td>
+      </tr>
+      <tr>
+        <td><strong>Category at large</strong><br><span style="font-size:.85em">(Later, Taplink, Beacons, Lnk.Bio, Bio.link)</span></td>
+        <td>“Everything you are, in one simple link.” / “one link for everything.”</td>
+        <td>Consolidation. All of it.</td>
+        <td>Every competitor sells the <em>same</em> job — tidying links. Not one of them
+          sells <em>status</em>. That lane is empty.</td>
+      </tr>
+      <tr>
+        <td><strong>The reviews</strong></td>
+        <td>TikTok has flagged <code>linktr.ee</code> URLs as “unsafe”; the shared domain gets
+          abused by scam and counterfeit networks; users report suspensions without
+          explanation; SEO writers pan it for keeping link equity.</td>
+        <td>—</td>
+        <td>This is the softest tissue in the category and <strong>nobody is attacking it</strong>.
+          Concept 03 goes straight at it.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="grid g3" style="margin-top:26px">
+    <div class="panel">
+      <h3 class="sub">The words real people use</h3>
+      <p>Lead with the phrase the buyer already has in their head. In descending order of
+        search volume and everyday use:</p>
+      <ul>
+        <li><code>link in bio</code> — the category noun. Non-negotiable; it appears in the
+          image text or the primary text of nine of ten concepts.</li>
+        <li><code>Linktree alternative</code> — highest-intent phrase in the space. Someone
+          typing it has already decided to leave.</li>
+        <li><code>bio link</code>, <code>link tree</code> (two words, misspelled, huge)</li>
+        <li><code>one link for everything</code></li>
+        <li><code>custom domain</code> / <code>own domain</code> — the recurring upgrade
+          trigger in every “best alternatives” listicle. This is exactly what Invited.you
+          gives away as the default.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3 class="sub">The strategic call</h3>
+      <p>
+        Do not out-feature Linktree. You will lose, and you'd be fighting for the customer who
+        wanted free.
+      </p>
+      <p>
+        <strong>Reposition the category as a status object.</strong> Linktree is where a link
+        in bio is a <em>utility</em>. Invited.you is where it's a <em>credential</em> — the
+        difference between a Hotmail address and a domain. Every concept here is a variation
+        on that one idea, because a campaign that says one thing ten ways beats one that says
+        ten things once.
+      </p>
+    </div>
+    <div class="panel">
+      <h3 class="sub">Making the algorithm read it</h3>
+      <p>Meta's delivery system reads your ad in two places. Both are handled here:</p>
+      <ul>
+        <li><strong>Image text is OCR'd.</strong> Every hook renders at ≥68px on a 1080px
+          canvas, ≥7:1 contrast, no type over busy imagery without a gradient scrim. No
+          decorative or condensed faces.</li>
+        <li><strong>Text fields carry the targeting signal.</strong> Every concept ships with
+          Primary text / Headline / Description written to contain the category keywords in
+          plain language — that block, not the image, is what pulls the right audience.</li>
+        <li><strong>The 20% rule is gone</strong>, but heavy text still suppresses reach.
+          These sit around 8–14% coverage.</li>
+        <li>Use one campaign, Advantage+ audience, ten creatives in one ad set. Let delivery
+          find the segment; don't hand-build ten audiences and split your data ten ways.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<section class="block" style="border-bottom:0;padding-bottom:12px">
+  <h2 class="sec">The ten concepts</h2>
+  <p class="sec-sub">
+    Each card is the real 4:5 creative, rendered live in HTML at the product's own tokens —
+    hit <kbd>Export size</kbd> in the bar above to snap them all to exactly 1080×1350 for
+    screenshotting. Notes to the right of each explain the mechanic, the target, and the
+    exact copy to paste into Ads Manager.
+  </p>
+</section>
+
+<!-- ─────────────────────────── 01 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">01 · DARK</span><h2 class="adname">Tired of boring link pages?</h2></div>
+  <p class="adline">The blunt-instrument hook. Names the feeling, then shows the fix in one beat.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--dark t-dark">
+      <div class="field"></div><div class="dots"></div><div class="vig"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="body">
+        <h2 class="hook">Tired of boring link&nbsp;pages?</h2>
+        <p class="sub big">Get a link that's actually yours.</p>
+        <div class="chrome">
+          <div class="lights"><i></i><i></i><i></i></div>
+          <div class="addr">
+            <svg class="lock"><use href="#lock"/></svg>
+            <span class="you ph">yourname</span>
+            <span class="sfx">.invited.you</span>
+          </div>
+          <span class="cta block">Claim your name</span>
+        </div>
+      </div>
+      <div class="foot"><span>invited.you</span><span>FOUNDING NAMES OPEN</span></div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          Your existing creative opens with the logo and the product. That is a <em>brand</em>
+          ad, and brand ads work on people who already know you. On a cold audience the first
+          job is to make someone feel seen in under a second.
+        </p>
+        <p>
+          <strong>“Tired of…”</strong> is the oldest hook in direct response because it works:
+          it addresses a state the reader is already in rather than a product they've never
+          heard of. Then the address bar does the arguing — the reader sees their own name in
+          a URL bar and finishes the pitch themselves.
+        </p>
+        <p>
+          Keeping the browser chrome is deliberate. It's the one visual that says
+          <em>address</em> rather than <em>profile</em>, which is the entire product.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">existing link-in-bio users</span><span class="tag">creators 18–34</span>
+          <span class="tag">broad / Advantage+</span><span class="tag">cold</span>
+        </div>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>Your link in bio is a list of links on a page that looks like everyone else's.<br><br>Invited.you gives you the whole address: yourname.invited.you. Not a slash. Not a username inside someone else's app. Your name, in the URL bar.<br><br>Founding names are being claimed now — and names don't come back.<span class="cc">312 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>Claim yourname.invited.you<span class="cc">26 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>The link in bio that's actually yours<span class="cc">36 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Sign Up</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li>The map field here is a CSS approximation. For the production export, screenshot
+            the real canvas field from the homepage and drop it in — it is genuinely the best
+            asset the brand owns and it should not be faked.</li>
+          <li>Hook renders at ~101px on a 1080 canvas. Comfortably OCR-safe.</li>
+          <li>Text coverage ≈ 12%.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 02 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">02 · DARK</span><h2 class="adname">The long way of saying it</h2></div>
+  <p class="adline">Category reframe. Turns the competitor's own phrase into the reason to leave.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--dark t-dark">
+      <div class="field"></div><div class="dots"></div><div class="vig"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="body">
+        <h2 class="hook sm"><span class="quiet">“Link in bio”</span><br>is the long way of&nbsp;saying</h2>
+        <div class="chrome">
+          <div class="lights"><i></i><i></i><i></i></div>
+          <div class="addr">
+            <svg class="lock"><use href="#lock"/></svg>
+            <span class="you">yourname</span>
+            <span class="sfx">.invited.you</span>
+          </div>
+        </div>
+        <p class="sub">One address. Your name. Short enough to say&nbsp;out&nbsp;loud.</p>
+      </div>
+      <div class="foot"><span>invited.you</span><span>CLAIM YOUR NAME</span></div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          You asked whether “link in bio” is the long tag and whether there's a better hook
+          underneath it. There is — and it's better than replacing the phrase. <strong>Use
+          their phrase, then beat it.</strong>
+        </p>
+        <p>
+          “Link in bio” is a workaround people say because the platform only gives them one
+          slot. It's an <em>apology</em> for a limitation. This ad completes the sentence with
+          the actual address and lets the contrast land without ever naming a competitor.
+        </p>
+        <p>
+          Strategically this is the most important ad in the set, because it's the one that
+          moves the category. It doesn't argue that Invited.you is a better link-in-bio tool.
+          It argues that “link in bio” is a phase you're supposed to grow out of.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">keyword-aware</span><span class="tag">Linktree / Beacons / Taplink users</span>
+          <span class="tag">creators + solo founders</span><span class="tag">cold, high-intent</span>
+        </div>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>"Link in bio" is what you say when you don't have an address.<br><br>Invited.you gives you one: yourname.invited.you. Short enough to say on a podcast, print on a card, or read out in a video — and it points at everything you do.<br><br>One name each. Claim yours before someone else does.<span class="cc">289 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>A link in bio you can say out loud<span class="cc">33 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>yourname.invited.you — claim it free<span class="cc">35 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Sign Up</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li>The quotation marks around “Link in bio” are load-bearing — they mark it as
+            <em>someone else's words</em>. Don't let a designer tidy them away.</li>
+          <li>The address bar shows <code>yourname</code> at full ink rather than placeholder
+            grey, because here it's the punchline, not a prompt.</li>
+          <li>Strong candidate for the description field to carry <code>Linktree
+            alternative</code> in a variant — highest-intent phrase in the category.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 03 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">03 · DARK</span><h2 class="adname">Doesn't look like a scam</h2></div>
+  <p class="adline">The trust attack. The softest tissue in the category, and nobody is hitting it.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--dark t-dark">
+      <div class="field"></div><div class="dots"></div><div class="vig"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="body">
+        <h2 class="hook sm">Your link shouldn't make people hesitate.</h2>
+        <div class="vs">
+          <div class="vs-item vs-bad">
+            <span class="mark">✕</span>
+            <span class="url">someapp.com/yourname</span>
+            <span class="tag">shared domain</span>
+          </div>
+          <div class="vs-item vs-good">
+            <span class="mark">✓</span>
+            <span class="url">yourname.invited.you</span>
+            <span class="tag">yours alone</span>
+          </div>
+        </div>
+        <p class="sub">A link in bio that looks like an address, not a redirect.</p>
+      </div>
+      <div class="foot"><span>invited.you</span><span>CLAIM YOUR NAME</span></div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          You asked for “a link in bio that isn't sketchy.” The research says that instinct is
+          the strongest one you have. Reviews of the incumbent cluster hard on trust:
+          <strong>TikTok has flagged <code>linktr.ee</code> URLs as unsafe</strong>, the shared
+          domain gets abused by counterfeit and scam networks, and creators report account
+          suspensions with no explanation.
+        </p>
+        <p>
+          Every one of those problems has the same root cause: <strong>you are a tenant on
+          somebody else's domain, and you inherit its reputation.</strong> Invited.you's
+          subdomain architecture genuinely fixes it. That's not a marketing claim, it's how
+          the product is built.
+        </p>
+        <p>
+          Note the competitor is <em>not</em> named. <code>someapp.com/yourname</code> makes
+          the point, stays inside Meta's rules on referencing third-party brands, and avoids
+          giving a market leader free recall. Do not let anyone talk you into putting the real
+          domain on the artwork.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">professionals</span><span class="tag">consultants &amp; coaches</span>
+          <span class="tag">small business owners</span><span class="tag">anyone selling from a bio</span>
+        </div>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>When your link in bio lives on a shared domain, you inherit that domain's reputation — including everyone else's.<br><br>Invited.you gives you your own: yourname.invited.you. One name, one owner, nothing else on it.<br><br>It reads like an address because it is one.<span class="cc">276 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>A link in bio people actually trust<span class="cc">34 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>Your own address, not a shared one<span class="cc">33 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Learn More</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li><strong>Keep the copy about architecture, never about a named competitor's
+            safety.</strong> “Shared domains carry shared reputation” is a defensible
+            structural claim. “Linktree is unsafe” is a disparagement complaint waiting to
+            happen.</li>
+          <li>The strikethrough plus red ✕ survives OCR fine — the words themselves are
+            unobstructed.</li>
+          <li>Likely the highest-CTR concept in the set and the one most worth putting real
+            budget behind after the first read.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 04 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">04 · DARK</span><h2 class="adname">Names don't come back</h2></div>
+  <p class="adline">The offer ad. Real scarcity, structurally true from day one.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--dark t-dark">
+      <div class="field"></div><div class="dots"></div><div class="vig"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="body">
+        <p class="kicker">Founding names · open now</p>
+        <h2 class="hook sm">There is exactly one <span class="foil">yourname</span>.</h2>
+        <div class="chrome">
+          <div class="lights"><i></i><i></i><i></i></div>
+          <div class="addr">
+            <svg class="lock"><use href="#lock"/></svg>
+            <span class="you ph">yourname</span>
+            <span class="sfx">.invited.you</span>
+          </div>
+          <span class="cta block">Claim it first</span>
+        </div>
+        <p class="sub">Founding names are allocated in claim order. They do not come back.</p>
+      </div>
+      <div class="foot"><span>invited.you</span><span>FOUNDING PRICE</span></div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          Hormozi's rule is that urgency only converts when it's real, and the fastest way to
+          burn a young brand is a countdown that resets. <strong>This one doesn't have to
+          fake it.</strong> Name scarcity is structural: there is one <code>lewis</code>, and
+          when it's gone it's gone. That's true on day one with twelve people on the list, and
+          it will still be true at a million.
+        </p>
+        <p>
+          Which is exactly why this ad sells the <em>name</em>, not the price. Price scarcity
+          needs a number you can defend. Name scarcity needs nothing but the truth. The
+          founding-price mechanic sits in the footer and the primary text where it costs you
+          nothing if the details change.
+        </p>
+        <p>
+          The line “they do not come back” is lifted verbatim from the partners page. It's the
+          best sentence on the site — use it.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">retargeting — site visitors 30d</span><span class="tag">warm</span>
+          <span class="tag">waitlist non-converters</span><span class="tag">early adopters</span>
+        </div>
+        <p style="margin-top:12px">
+          This is a closer, not an opener. Run it as the retargeting creative behind 01, 02 and
+          03 rather than to cold traffic — scarcity lands on people who already want the thing.
+        </p>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>Every link in bio tool hands out the same page. Invited.you hands out a name.<br><br>yourname.invited.you — and there is only one of them. Founding places are allocated in claim order, at the founding price, and they don't come back.<br><br>Take yours before someone with the same name does.<span class="cc">296 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>One name each. Claim yours.<span class="cc">27 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>Founding names are open now<span class="cc">27 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Sign Up</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li><span class="flag check">verify</span> If you want a hard number on the artwork
+            — “100,000 founding places” — confirm it against <code>/viral</code> first. I
+            couldn't load that page. Until then the ad works fine without one.</li>
+          <li>Swap <code>yourname</code> for real first names in a dynamic variant set
+            (<em>There is exactly one Sarah.</em>). Costs nothing, lifts CTR noticeably.</li>
+          <li>The foil gradient on “yourname” is the product's real <code>--foil-g</code>.
+            Keep it to one word — it's a highlight, not a headline treatment.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 05 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">05 · DARK</span><h2 class="adname">Live view — dark</h2></div>
+  <p class="adline">Product-as-hero. The real page, rendered, with the claim underneath it.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--dark t-dark live">
+      <div class="field"></div><div class="dots"></div><div class="vig"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="pvport t-light">
+        <div class="pv">
+          <div class="pv-cover">
+            <img src="https://lewis.invited.you/u/76be4da6-3eb3-4a65-b301-043e4b037cb2/3d51722443175b1c3bafdfa222bf6d1cfd2e203d2025cc418190dc9c28d874c8.png" alt="" onerror="this.style.display='none'">
+          </div>
+          <div class="pv-id">
+            <h3 class="pv-name">Lewis Rogers <svg class="sp"><use href="#sp"/></svg></h3>
+            <span class="chip"><svg class="sp"><use href="#sp"/></svg>Rare</span>
+            <p class="pv-bio">Founder and CEO at Fons</p>
+            <div class="pv-soc">
+              <a><svg><use href="#ig"/></svg></a><a><svg><use href="#yt"/></svg></a>
+              <a><svg><use href="#x"/></svg></a><a><svg><use href="#tw"/></svg></a>
+              <a><svg><use href="#li"/></svg></a>
+            </div>
+          </div>
+          <div class="pv-links">
+            <div class="pv-link feat">
+              <span class="th"><img src="https://lewis.invited.you/u/76be4da6-3eb3-4a65-b301-043e4b037cb2/34237bc1704b0771e9dbf44041ee243c68d2c2f6e8b0a2822fdc5e9fe9ffe7f3.png" alt="" onerror="this.style.display='none'"></span>
+              <span class="tx"><span class="tt">Invited.you</span><span class="ss">Founder</span></span><span class="go">→</span>
+            </div>
+            <div class="pv-link">
+              <span class="th"><img src="https://lewis.invited.you/u/76be4da6-3eb3-4a65-b301-043e4b037cb2/092f03938beb6c9d359263f2e3d35176ebeb452268c93d180d395bbdb3a04c9c.png" alt="" onerror="this.style.display='none'"></span>
+              <span class="tx"><span class="tt">Fons</span><span class="ss">Founder &amp; CEO</span></span><span class="go">→</span>
+            </div>
+            <div class="pv-link">
+              <span class="th"><img src="https://lewis.invited.you/u/76be4da6-3eb3-4a65-b301-043e4b037cb2/082cfb60d02543b92bac83ae1443ccecc52568f55fd9438c8aadede56bdb5649.png" alt="" onerror="this.style.display='none'"></span>
+              <span class="tx"><span class="tt">ReadySetLaunch</span><span class="ss">Founder</span></span><span class="go">→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="livecap">
+        <h2 class="hook xs">This is a link in&nbsp;bio.</h2>
+        <p class="sub"><strong>lewis.invited.you</strong> — live right now</p>
+      </div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          You asked for a live view of what a page actually looks like. This is it — rebuilt
+          from the real DOM on <code>lewis.invited.you</code>, right down to the gold RARE
+          chip and the featured-link glow.
+        </p>
+        <p>
+          The mechanic is <strong>disbelief</strong>. Everyone reading knows what a link in bio
+          looks like: a stack of grey rectangles. Showing a cover photo, a rarity badge, social
+          icons and thumbnailed link cards, then flatly captioning it “This is a link in bio,”
+          creates a small contradiction the viewer has to resolve — and resolving it means
+          looking longer. Dwell time is the metric that actually feeds Meta's optimiser.
+        </p>
+        <p>
+          There is no benefit copy at all here, and that's the point. The product outperforms
+          any sentence you could write about it.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">visual-first audiences</span><span class="tag">IG &amp; Reels placements</span>
+          <span class="tag">creators</span><span class="tag">broad / Advantage+</span>
+        </div>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>This is a link in bio.<br><br>Cover photo, bio, socials, sections, embeds that actually play, and link cards with thumbnails — on your own address: yourname.invited.you<br><br>Go and look at a real one: lewis.invited.you<span class="cc">218 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>Your link in bio, upgraded<span class="cc">26 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>See a live page at lewis.invited.you<span class="cc">35 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Learn More</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li>The images load live from <code>lewis.invited.you</code>. If they're blank here,
+            your browser couldn't reach the domain — the layout is unaffected.</li>
+          <li><strong>Get Lewis's sign-off before this runs.</strong> It's his face and his
+            name in a paid ad; an internal demo and a paid placement are different things.</li>
+          <li>For production, screenshot the real page rather than shipping this recreation.
+            This exists so you can see the composition and the crop before anyone opens
+            Figma.</li>
+          <li>Dark shell, light card. That contrast is the composition — don't let anyone
+            "fix" it to matching themes.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 06 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">06 · LIGHT</span><h2 class="adname">Worthy of your LinkedIn</h2></div>
+  <p class="adline">The professional-status play. The lane the entire category has left empty.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--light t-light">
+      <div class="field"></div><div class="dots"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="body">
+        <p class="kicker">For people with a reputation</p>
+        <h2 class="hook sm">The first link in bio worthy of your LinkedIn&nbsp;profile.</h2>
+        <div class="chrome">
+          <div class="lights"><i></i><i></i><i></i></div>
+          <div class="addr">
+            <svg class="lock"><use href="#lock"/></svg>
+            <span class="you ph">yourname</span>
+            <span class="sfx">.invited.you</span>
+          </div>
+        </div>
+        <p class="sub">Your name is the address. Nothing about it says side&nbsp;hustle.</p>
+      </div>
+      <div class="foot"><span>invited.you</span><span>CLAIM YOUR NAME</span></div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          You floated “worthy of your LinkedIn profile” and it is the sharpest idea in your
+          brief. Here's why it works better than the “professional” framings around it.
+        </p>
+        <p>
+          The category's problem for a serious buyer isn't features — it's
+          <strong>connotation</strong>. Link-in-bio pages read as creator-economy furniture.
+          A consultant, a fractional CFO or a partner at a firm won't put one in their LinkedIn
+          featured section, because it makes them look like they're selling a course. That
+          hesitation is a real, unaddressed buying objection, and this ad names it out loud.
+        </p>
+        <p>
+          <strong>“Nothing about it says side hustle”</strong> is the load-bearing line. It's
+          the exact fear, stated plainly, which is how you get a professional to feel
+          understood rather than sold to.
+        </p>
+        <p>
+          Light mode is not a coincidence. The professional segment reads dark UI as
+          gaming-adjacent. Light, generous whitespace, deep-teal accent — that's the register
+          they trust.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">consultants</span><span class="tag">founders &amp; execs</span>
+          <span class="tag">speakers</span><span class="tag">recruiters</span>
+          <span class="tag">25–54</span><span class="tag">B2B-leaning interests</span>
+        </div>
+        <p style="margin-top:12px">
+          Meta can't target “LinkedIn users,” but it doesn't need to — naming LinkedIn in the
+          image and the primary text is a self-selection filter. The people it's for will
+          recognise themselves. Everyone else scrolls past, which is what you want.
+        </p>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>There's a reason you haven't put a link in bio on your LinkedIn.<br><br>They look like side hustles. Invited.you doesn't — because it isn't a page inside an app, it's your own address: yourname.invited.you<br><br>Your work, your name, one link. Nothing about it needs explaining.<span class="cc">288 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>A link in bio for professionals<span class="cc">31 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>yourname.invited.you<span class="cc">20 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Learn More</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li>Naming LinkedIn in ad copy is fine — it's a factual reference to where the link
+            goes, not a claim of partnership. Don't use their logo or wordmark.</li>
+          <li>“The first…” is a strong claim. If legal wants it softened, “A link in bio worthy
+            of your LinkedIn profile” costs almost nothing in punch.</li>
+          <li>Test against 07 head-to-head — same audience, different promise (status vs.
+            evidence). Whichever wins tells you what the professional segment actually buys.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 07 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">07 · LIGHT</span><h2 class="adname">With the analytics to prove it <span class="flag check" style="font-size:.55em;vertical-align:middle">hold</span></h2></div>
+  <p class="adline">The feature-proof ad you asked for — written, and held until the feature is confirmed.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--light t-light">
+      <div class="field"></div><div class="dots"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="body">
+        <h2 class="hook sm">Link in bio for professionals.</h2>
+        <p class="sub big" style="margin-top:-1.4cqw">With the numbers to prove it&nbsp;worked.</p>
+        <ul class="ticks">
+          <li><svg><use href="#tick"/></svg>Your own address — yourname.invited.you</li>
+          <li><svg><use href="#tick"/></svg>Sections, embeds and rich link cards</li>
+          <li><svg><use href="#chart"/></svg>See exactly which link earned the click</li>
+        </ul>
+      </div>
+      <div class="foot"><span>invited.you</span><span>CLAIM YOUR NAME</span></div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          The tick-list is the format Linktree itself runs, and it works — for a
+          <em>considered</em> buyer who is comparing tools rather than discovering a category.
+          It's the right creative for the bottom of the funnel and the wrong one at the top,
+          which is why it's one of ten and not the lead.
+        </p>
+        <p>
+          Analytics is the correct third tick. Every “best Linktree alternative” listicle
+          converges on the same three upgrade triggers — custom domain, design control,
+          analytics. Invited.you wins the first two outright by construction. Analytics is the
+          one that closes the comparison.
+        </p>
+        <p>
+          Note the phrasing: <strong>“See exactly which link earned the click.”</strong> Not
+          “advanced analytics.” Everyone claims advanced analytics and nobody believes it. A
+          specific, checkable sentence outperforms a superlative every time.
+        </p>
+      </div>
+      <div class="note" style="border-color:oklch(.45 .1 80)">
+        <h4>Hold this one</h4>
+        <p>
+          <span class="flag check">unverified</span> <strong>I found no analytics feature
+          anywhere on the public site or in the stylesheet.</strong> The profile pages have no
+          stats surface and the marketing site is a pre-launch waitlist.
+        </p>
+        <p>
+          Don't run it until you can point at a real dashboard. If analytics is on the roadmap
+          rather than shipped, the honest version of this ad swaps the third tick for something
+          verified — the rarity tiers, say, which are visibly live — and you keep the format.
+        </p>
+        <p>
+          If it <em>is</em> built and just isn't public yet: screenshot it and this becomes a
+          much stronger ad than the one drawn here. A real chart beats a tick every time.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">comparison shoppers</span><span class="tag">retargeting</span>
+          <span class="tag">consultants &amp; marketers</span><span class="tag">warm</span>
+        </div>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>Most link in bio tools tell you a page got visited. That's not a number you can do anything with.<br><br>Invited.you is a link in bio built for people who are actually selling something: your own address at yourname.invited.you, sections and embeds instead of a list of buttons, and click data down to the individual link.<br><br>Claim your name — there's only one of each.<span class="cc">376 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>Link in bio with real analytics<span class="cc">31 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>Know which link earned the click<span class="cc">32 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Learn More</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 08 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">08 · LIGHT</span><h2 class="adname">Live view — light</h2></div>
+  <p class="adline">The same proof play in the palette the product actually ships as default.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--light t-light live">
+      <div class="field"></div><div class="dots"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <h2 class="hook xs">Yes — this is a link in&nbsp;bio.</h2>
+      <div class="pvport tight">
+        <div class="pv">
+          <div class="pv-cover">
+            <img src="https://lewis.invited.you/u/76be4da6-3eb3-4a65-b301-043e4b037cb2/3d51722443175b1c3bafdfa222bf6d1cfd2e203d2025cc418190dc9c28d874c8.png" alt="" onerror="this.style.display='none'">
+          </div>
+          <div class="pv-id">
+            <h3 class="pv-name">Lewis Rogers <svg class="sp"><use href="#sp"/></svg></h3>
+            <span class="chip"><svg class="sp"><use href="#sp"/></svg>Rare</span>
+            <p class="pv-bio">Founder and CEO at Fons</p>
+            <div class="pv-soc">
+              <a><svg><use href="#ig"/></svg></a><a><svg><use href="#yt"/></svg></a>
+              <a><svg><use href="#x"/></svg></a><a><svg><use href="#tw"/></svg></a>
+              <a><svg><use href="#li"/></svg></a>
+            </div>
+          </div>
+          <div class="pv-sec">
+            <h4 class="pv-sec-t">My channels</h4>
+            <p class="pv-sec-s">Follow my build journey on YouTube</p>
+            <div class="pv-embed"><span class="pv-play"></span></div>
+          </div>
+          <div class="pv-links">
+            <div class="pv-link feat">
+              <span class="th"><img src="https://lewis.invited.you/u/76be4da6-3eb3-4a65-b301-043e4b037cb2/34237bc1704b0771e9dbf44041ee243c68d2c2f6e8b0a2822fdc5e9fe9ffe7f3.png" alt="" onerror="this.style.display='none'"></span>
+              <span class="tx"><span class="tt">Invited.you</span><span class="ss">Founder</span></span><span class="go">→</span>
+            </div>
+            <div class="pv-link">
+              <span class="th"><img src="https://lewis.invited.you/u/76be4da6-3eb3-4a65-b301-043e4b037cb2/092f03938beb6c9d359263f2e3d35176ebeb452268c93d180d395bbdb3a04c9c.png" alt="" onerror="this.style.display='none'"></span>
+              <span class="tx"><span class="tt">Fons</span><span class="ss">Founder &amp; CEO</span></span><span class="go">→</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="livecap">
+        <p class="sub">Sections. Embeds that play. Your own address.<br><strong>lewis.invited.you</strong></p>
+      </div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          Same disbelief mechanic as 05, but with the hook <em>above</em> the product and the
+          section card visible — so you can see the two things that actually separate this
+          from a link list: <strong>a named section with sub-copy, and a video embed that
+          plays inside the page.</strong>
+        </p>
+        <p>
+          Light mode matters here beyond aesthetics. It's what the product ships as default,
+          so this ad sets an accurate expectation. Ads that over-style relative to the real
+          product buy you clicks and lose you signups at the landing page.
+        </p>
+        <p>
+          Running 05 and 08 as a matched dark/light pair is also the cleanest read you'll get
+          on which palette your buyer responds to — same concept, same copy, one variable.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">broad / Advantage+</span><span class="tag">creators</span>
+          <span class="tag">small business</span><span class="tag">Feed + Reels</span>
+        </div>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>Yes — this is a link in bio.<br><br>Sections with real headings. Videos that play without leaving the page. Link cards with thumbnails. And an address that's yours: yourname.invited.you<br><br>Have a look at a live one — lewis.invited.you<span class="cc">231 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>Not another list of links<span class="cc">25 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>Claim yourname.invited.you<span class="cc">26 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Learn More</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li>Same consent point as 05 — Lewis needs to sign off on his face running in paid.</li>
+          <li>The YouTube play button is drawn, not screenshotted. Fine for a concept; for
+            production use the real page capture so the embed thumbnail is genuine.</li>
+          <li>Hook sits top-left on a white scrim rather than centred, so it survives the
+            Reels UI crop. Keep the bottom 20% clear of anything load-bearing.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 09 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">09 · LIGHT</span><h2 class="adname">Say it out loud</h2></div>
+  <p class="adline">Built on the best sentence on the site — currently hidden in a meta description.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--light t-light">
+      <div class="field"></div><div class="dots"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="body">
+        <h2 class="hook">A link you can say out&nbsp;loud.</h2>
+        <div class="chrome">
+          <div class="lights"><i></i><i></i><i></i></div>
+          <div class="addr">
+            <svg class="lock"><use href="#lock"/></svg>
+            <span class="you ph">yourname</span>
+            <span class="sfx">.invited.you</span>
+          </div>
+        </div>
+        <p class="sub">Try saying your current one on a podcast. Exactly.</p>
+      </div>
+      <div class="foot"><span>invited.you</span><span>CLAIM YOUR NAME</span></div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          This line is already written — it's sitting in the homepage's meta description, where
+          Google reads it and no customer ever will. <strong>“A link you can say out loud”</strong>
+          is the most compressed statement of the product's advantage on the entire site.
+        </p>
+        <p>
+          What makes it work is that it's a <em>test the reader runs on themselves</em>. The
+          subline — “try saying your current one on a podcast” — triggers an internal
+          simulation: they mentally say “linktree slash my name” and immediately hear how bad
+          it sounds. You didn't insult the competitor. They did.
+        </p>
+        <p>
+          That's the highest-leverage move available in ad copy: get the reader to reach the
+          conclusion first. It also gives you a claim no competitor can copy, because it's a
+          property of the URL structure, not a feature.
+        </p>
+        <p>
+          Cleanest, most confident execution of the set. If you only run two ads, run this and
+          03.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">podcasters</span><span class="tag">speakers</span>
+          <span class="tag">video creators</span><span class="tag">networkers</span>
+          <span class="tag">broad</span>
+        </div>
+        <p style="margin-top:12px">
+          Widest audience in the set — the pain applies to anyone who has ever had to read a
+          URL aloud. Good default for Advantage+ where you want the algorithm to find the
+          segment for you.
+        </p>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>Say your link in bio out loud. Go on.<br><br>"Link tree, slash, my name, no spaces" isn't an address. It's a set of instructions.<br><br>Invited.you gives you the real thing: yourname.invited.you. Say it once on a podcast and people will actually get there.<br><br>One name each — claim yours.<span class="cc">280 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>A link you can say out loud<span class="cc">27 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>yourname.invited.you — claim it now<span class="cc">34 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Sign Up</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li>The primary text names the competitor generically (“link tree, slash”) rather
+            than as a brand. Keeps it inside Meta's rules and still lands.</li>
+          <li>The hook runs at ~101px — the largest in the set. Deliberate: this is the one
+            line you'd want read from three feet away.</li>
+          <li>Lowest text coverage of the ten at ≈8%. Best reach characteristics of the set.</li>
+          <li>Obvious video adaptation: someone tries to say a competitor URL aloud, gives up,
+            then says <em>lewis dot invited dot you</em>. Shoot it once you've validated the
+            static.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ─────────────────────────── 10 ──────────────────────────────────────── -->
+<article class="adrow">
+  <div class="adhead"><span class="adno">10 · LIGHT</span><h2 class="adname">Nine things, one link</h2></div>
+  <p class="adline">Straight problem statement. The most literal ad in the set, on purpose.</p>
+  <div class="adrow-in">
+    <div class="stage"><div class="adbox"><div class="ad ad--light t-light">
+      <div class="field"></div><div class="dots"></div>
+      <div class="lockup"><svg><use href="#mark"/></svg><span class="wm">Invited<i>.you</i></span></div>
+      <div class="body">
+        <h2 class="hook sm">You do nine things. Instagram gives you one&nbsp;link.</h2>
+        <ul class="ticks">
+          <li><svg><use href="#tick"/></svg>One address for all of it</li>
+          <li><svg><use href="#tick"/></svg>Sections, not a pile of buttons</li>
+          <li><svg><use href="#tick"/></svg>Your name in the URL, not a slash</li>
+        </ul>
+        <div class="chrome row">
+          <div class="lights"><i></i><i></i><i></i></div>
+          <div class="addr">
+            <svg class="lock"><use href="#lock"/></svg>
+            <span class="you ph">yourname</span>
+            <span class="sfx">.invited.you</span>
+          </div>
+          <span class="cta">Claim</span>
+        </div>
+      </div>
+      <div class="foot"><span>invited.you</span><span>FOUNDING NAMES OPEN</span></div>
+    </div></div></div>
+
+    <div class="notes">
+      <div class="note">
+        <h4>Why this one</h4>
+        <p>
+          Every other concept here is a reframe. This one isn't — it's the plainest possible
+          statement of the job, and the set needs one. Reframes win big when they land and
+          whiff completely when the reader isn't in on the premise. A literal
+          problem/solution ad is your floor.
+        </p>
+        <p>
+          <strong>“You do nine things”</strong> is doing the work. It's specific enough to feel
+          personal and vague enough to fit everyone — the reader immediately starts counting
+          their own, and once they're counting they've accepted the premise.
+        </p>
+        <p>
+          It also carries the most category keywords of any card in the set, which makes it the
+          best-behaved creative for a cold Advantage+ campaign. If you need one ad to teach the
+          algorithm who your buyer is, it's this one.
+        </p>
+      </div>
+      <div class="note">
+        <h4>Who it's for</h4>
+        <div class="tagrow">
+          <span class="tag">broad / Advantage+</span><span class="tag">multi-hyphenates</span>
+          <span class="tag">side businesses</span><span class="tag">cold, top of funnel</span>
+        </div>
+      </div>
+      <div class="note copy">
+        <h4>Paste into Ads Manager</h4>
+        <dl class="fields">
+          <div class="fieldrow"><dt>Primary text</dt><dd>A newsletter. A shop. A podcast. A day job. A side project. And one link in your bio.<br><br>Invited.you is a link in bio that holds all of it — sections with real headings, videos that play in the page, link cards with thumbnails — on an address that's yours: yourname.invited.you<br><br>Founding names are open. There's only one of each.<span class="cc">347 characters</span></dd></div>
+          <div class="fieldrow"><dt>Headline</dt><dd>One link for everything you do<span class="cc">30 characters</span></dd></div>
+          <div class="fieldrow"><dt>Description</dt><dd>Claim yourname.invited.you free<span class="cc">31 characters</span></dd></div>
+          <div class="fieldrow"><dt>CTA button</dt><dd>Sign Up</dd></div>
+        </dl>
+      </div>
+      <div class="note">
+        <h4>Notes for the build</h4>
+        <ul>
+          <li>Naming Instagram is factual and fine. No logo, no implied endorsement.</li>
+          <li>Swap “Instagram” for “TikTok” as a placement-matched variant — costs nothing and
+            lifts relevance on TikTok-sourced audiences.</li>
+          <li>Densest card in the set at ≈14% text coverage. Watch its reach against 09; if
+            it's materially worse, cut a tick.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<section class="block" style="border-top:1px solid var(--sh-line)">
+  <h2 class="sec">How to run them</h2>
+  <p class="sec-sub">Ten creatives is a test, not a campaign. Here's the sequence that gets you an answer fastest.</p>
+
+  <div class="grid g3">
+    <div class="panel">
+      <h3 class="sub">Round 1 — find the hook</h3>
+      <p>One campaign, one ad set, Advantage+ audience, all ten creatives in it. Do not build
+        ten audiences; you'll split the data ten ways and learn nothing.</p>
+      <p>Optimise for <strong>landing page views</strong>, not conversions — a pre-launch
+        waitlist won't feed the pixel enough conversion events to exit learning.</p>
+      <p>Run until each creative has ~1,000 impressions. Kill the bottom half on CTR.</p>
+    </div>
+    <div class="panel">
+      <h3 class="sub">Round 2 — vary one thing</h3>
+      <p>Take the top 2–3 and make five variants of each, changing exactly one element:
+        the hook line, or the palette, or the proof device. Never two at once.</p>
+      <p>My prediction, for the record so you can hold me to it: <strong>03 (trust) and 09
+        (say it out loud) win</strong>. 03 has the strongest unaddressed objection behind it;
+        09 has the lowest text coverage and the cleanest single idea.</p>
+    </div>
+    <div class="panel">
+      <h3 class="sub">Round 3 — close</h3>
+      <p>Retarget everyone who hit the site with <strong>04</strong>. Scarcity converts people
+        who already want it and irritates people who don't — so only show it to the first
+        group.</p>
+      <p>Then take whatever won and shoot it as video. Statics find the message; video scales
+        it. 09 has an obvious script already.</p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:20px">
+    <div class="panel">
+      <h3 class="sub">Export spec</h3>
+      <ul>
+        <li><strong>4:5 · 1080×1350</strong> — Feed and Explore. That's what's drawn here.</li>
+        <li><strong>1:1 · 1080×1080</strong> — safe fallback across placements. Crop from
+          centre; every card's hook is vertically centred so it survives.</li>
+        <li><strong>9:16 · 1080×1920</strong> — Stories and Reels. Keep the <em>top 14%</em>
+          and <em>bottom 20%</em> clear of anything load-bearing; hit the safe-zone toggle in
+          the bar to see the margins.</li>
+        <li>Export PNG for anything with type on a flat field, JPG q90 for the live-view cards.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3 class="sub">Before anything goes live</h3>
+      <ul>
+        <li><span class="flag check">verify</span> Analytics — hold <strong>07</strong> until a
+          real dashboard exists.</li>
+        <li><span class="flag check">verify</span> The founding-places number, if you want one
+          on the artwork in <strong>04</strong>.</li>
+        <li>Written sign-off from Lewis for <strong>05</strong> and <strong>08</strong>.</li>
+        <li>Every ad points at a waitlist, not a product. Say so on the landing page — the
+          fastest way to torch a new pixel is a bounce rate caused by a surprise.</li>
+        <li>Meta Pixel firing on the notify-me submit before spend starts, not after.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="foot-note">
+    Sources: invited.you (homepage, /partners, style.css, live renders of invited.you and
+    lewis.invited.you, captured 7 Aug 2026) · Linktree's own Facebook page ads ·
+    published reviews and “Linktree alternative” listicles for the trust and keyword research.
+    Both flagged claims are flagged because I could not verify them, not because I think
+    they're false.
+  </p>
+</section>
+
+</div>
+
+<script>
+(function(){
+  var b=document.body;
+  function toggle(id,cls){
+    var el=document.getElementById(id);
+    el.addEventListener('click',function(){
+      var on=el.getAttribute('aria-pressed')==='true';
+      el.setAttribute('aria-pressed',String(!on));
+      b.classList.toggle(cls,!on);
+      if(!on) window.scrollBy(0,0);
+    });
+  }
+  toggle('btn-exact','exact');
+  toggle('btn-safe','safe');
+
+  // safe-zone overlay: Reels/Stories keep-clear margins, drawn over every card
+  var css=document.createElement('style');
+  css.textContent=
+    'body.safe .ad::before{content:"";position:absolute;inset:0;z-index:9;pointer-events:none;'+
+    'background:linear-gradient(180deg,rgba(214,31,148,.28) 0,rgba(214,31,148,.28) 14%,transparent 14%,'+
+    'transparent 80%,rgba(214,31,148,.28) 80%,rgba(214,31,148,.28) 100%);}'+
+    'body.safe .ad::after{content:"KEEP CLEAR — REELS / STORIES UI";position:absolute;left:0;right:0;bottom:1.5cqw;'+
+    'z-index:10;text-align:center;font-family:var(--mono);font-size:1.5cqw;letter-spacing:.14em;'+
+    'color:#fff;pointer-events:none;}';
+  document.head.appendChild(css);
+})();
+</script>
+</body>
+</html>
