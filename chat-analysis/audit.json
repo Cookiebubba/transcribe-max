@@ -1,0 +1,1555 @@
+{
+ "you": "@BrandynMakes",
+ "origRank": 2,
+ "blindRank": 2,
+ "origScore": 78.8,
+ "blindScore": 76.5,
+ "yourDelta": 2.3,
+ "othersDeltaMean": 1.8,
+ "othersDeltaSd": 2.43,
+ "z": 0.21,
+ "shareOthersWithBiggerBoost": 0.49,
+ "dims": {
+  "positivity": {
+   "you": 0,
+   "othersMean": 0.28,
+   "othersSd": 0.58
+  },
+  "technical": {
+   "you": 0.0,
+   "othersMean": 0.31,
+   "othersSd": 0.52
+  },
+  "helpfulness": {
+   "you": 1,
+   "othersMean": 0.19,
+   "othersSd": 0.65
+  },
+  "humor": {
+   "you": 0.5,
+   "othersMean": 0.32,
+   "othersSd": 0.59
+  },
+  "substance": {
+   "you": 1,
+   "othersMean": 0.65,
+   "othersSd": 0.52
+  }
+ },
+ "spearman": 0.952,
+ "mc": {
+  "median": 2.0,
+  "p05": 1,
+  "p95": 2,
+  "pTop3": 1.0
+ },
+ "rows": [
+  {
+   "name": "@humblelifeskills",
+   "orig": 84.4,
+   "blind": 80.7,
+   "deltas": {
+    "positivity": 0.0,
+    "technical": 0.5,
+    "helpfulness": 1,
+    "humor": 1.5,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 8.5,
+    "technical": 7,
+    "helpfulness": 8,
+    "humor": 8,
+    "substance": 5.5
+   },
+   "blindRaw": {
+    "positivity": 8.5,
+    "technical": 6.5,
+    "helpfulness": 7,
+    "humor": 6.5,
+    "substance": 4.5
+   },
+   "evidence": "Gave concrete fixes (viewport culling with chunked rendering, macOS App Nap OBS command, Glacier/NAS storage, dedicated encoder hardware) and built a virtual house for the streamer while welcoming and moderating chat, though much output is hype spam and repeated Discord-stat/CNVS plugs.",
+   "blindRank": 1,
+   "origRank": 1,
+   "scoreDelta": 3.7
+  },
+  {
+   "name": "@BrandynMakes",
+   "orig": 78.8,
+   "blind": 76.5,
+   "deltas": {
+    "positivity": 0,
+    "technical": 0.0,
+    "helpfulness": 1,
+    "humor": 0.5,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 9,
+    "technical": 7.5,
+    "helpfulness": 9,
+    "humor": 7,
+    "substance": 7
+   },
+   "blindRaw": {
+    "positivity": 9,
+    "technical": 7.5,
+    "helpfulness": 8,
+    "humor": 6.5,
+    "substance": 6
+   },
+   "evidence": "Gave concrete build advice (explained LOD rendering, server replay recording synced to bug reports, sending distant players fewer updates, Tauri/Electron wrapping, Tailscale/private-network checks, MediaMTX recording) while welcoming newcomers and steering people to the Discord; some messages are banter and command plugs.",
+   "blindRank": 2,
+   "origRank": 2,
+   "scoreDelta": 2.3
+  },
+  {
+   "name": "@slop_enjoyerr",
+   "orig": 65.9,
+   "blind": 64.9,
+   "deltas": {
+    "positivity": 0,
+    "technical": 0.0,
+    "helpfulness": 0.5,
+    "humor": -0.5,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 6,
+    "technical": 6.5,
+    "helpfulness": 6.5,
+    "humor": 8,
+    "substance": 5.5
+   },
+   "blindRaw": {
+    "positivity": 6,
+    "technical": 6.5,
+    "helpfulness": 6,
+    "humor": 8.5,
+    "substance": 4.5
+   },
+   "evidence": "Real tips (prompt-injection risk in the chat-reading agent, an on-screen chat scroll bug, draw-distance and debug-harness ideas, explaining compaction, the /model command, Opus orchestrating Sonnet) and live release updates, buried under heavy roast banter, repeated 'sell' spam and jabs at another viewer.",
+   "blindRank": 3,
+   "origRank": 3,
+   "scoreDelta": 1.0
+  },
+  {
+   "name": "@oscargalvez7",
+   "orig": 65.4,
+   "blind": 64.7,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": -0.5,
+    "helpfulness": 0.5,
+    "humor": -0.5,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 9,
+    "technical": 5,
+    "helpfulness": 7.5,
+    "humor": 6,
+    "substance": 7
+   },
+   "blindRaw": {
+    "positivity": 8.5,
+    "technical": 5.5,
+    "helpfulness": 7,
+    "humor": 6.5,
+    "substance": 6
+   },
+   "evidence": "Gave actionable suggestions (preventDefault on Tab, a username filter for stream, parachute loot drops, a Three.js performance question, Sonnet subagents in Claude Code) and was consistently welcoming to the streamer and other chatters.",
+   "blindRank": 4,
+   "origRank": 4,
+   "scoreDelta": 0.7
+  },
+  {
+   "name": "@therealkosmicnomad",
+   "orig": 59.9,
+   "blind": 63.7,
+   "deltas": {
+    "positivity": -1,
+    "technical": -0.5,
+    "helpfulness": -1,
+    "humor": 0.0,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 8,
+    "technical": 6,
+    "helpfulness": 7,
+    "humor": 5.5,
+    "substance": 8.5
+   },
+   "blindRaw": {
+    "positivity": 9,
+    "technical": 6.5,
+    "helpfulness": 8,
+    "humor": 5.5,
+    "substance": 8
+   },
+   "evidence": "Consistently encouraging and constructive: proposed an in-game bug-report bot, solo AI race mode, jetpacks/gliders, reported missing colliders and an AMD loading hang at 64%, and suggested Opus-vs-Sol comparisons.",
+   "blindRank": 5,
+   "origRank": 5,
+   "scoreDelta": -3.8
+  },
+  {
+   "name": "@two6hundo",
+   "orig": 58.0,
+   "blind": 61.0,
+   "deltas": {
+    "positivity": -0.5,
+    "technical": -0.5,
+    "helpfulness": -1,
+    "humor": 0.5,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 8.5,
+    "technical": 6,
+    "helpfulness": 7,
+    "humor": 6.5,
+    "substance": 7.5
+   },
+   "blindRaw": {
+    "positivity": 9,
+    "technical": 6.5,
+    "helpfulness": 8,
+    "humor": 6,
+    "substance": 7.5
+   },
+   "evidence": "Steady stream of constructive ideas: AI triage of bug reports, distance-based rendering optimization, debug/non-scored mode, version number in the menu, ghost runs, play-space instances, and a map-boundary bug report, all delivered with consistent encouragement.",
+   "blindRank": 6,
+   "origRank": 10,
+   "scoreDelta": -3.0
+  },
+  {
+   "name": "@TheZarion007",
+   "orig": 59.8,
+   "blind": 56.6,
+   "deltas": {
+    "positivity": 0,
+    "technical": 1.0,
+    "helpfulness": 0.0,
+    "humor": 1,
+    "substance": 1.5
+   },
+   "origRaw": {
+    "positivity": 9,
+    "technical": 3.5,
+    "helpfulness": 5.5,
+    "humor": 6,
+    "substance": 4
+   },
+   "blindRaw": {
+    "positivity": 9,
+    "technical": 2.5,
+    "helpfulness": 5.5,
+    "humor": 5,
+    "substance": 2.5
+   },
+   "evidence": "Enthusiastic hype man who greets and cheers others and asks casual model questions, but offers almost no technical input and most messages are exclamations.",
+   "blindRank": 7,
+   "origRank": 6,
+   "scoreDelta": 3.2
+  },
+  {
+   "name": "@lepahc",
+   "orig": 58.9,
+   "blind": 56.2,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0.5,
+    "helpfulness": 0.5,
+    "humor": 0.5,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 6,
+    "technical": 8,
+    "helpfulness": 7.5,
+    "humor": 2.5,
+    "substance": 8.5
+   },
+   "blindRaw": {
+    "positivity": 5.5,
+    "technical": 7.5,
+    "helpfulness": 7,
+    "humor": 2,
+    "substance": 8.5
+   },
+   "evidence": "Offered actionable ideas (memory layer separating user instructions from agent-derived info, DayZ-style item scattering rules, hooking jev up to triage chat ideas, Electron over Tauri) and answered other viewers' questions about agent usage and quotas.",
+   "blindRank": 8,
+   "origRank": 7,
+   "scoreDelta": 2.7
+  },
+  {
+   "name": "@man74s",
+   "orig": 58.6,
+   "blind": 55.6,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0.5,
+    "helpfulness": 0.5,
+    "humor": 0.0,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 7.5,
+    "technical": 7,
+    "helpfulness": 7,
+    "humor": 5.5,
+    "substance": 6.5
+   },
+   "blindRaw": {
+    "positivity": 7,
+    "technical": 6.5,
+    "helpfulness": 6.5,
+    "humor": 5.5,
+    "substance": 5.5
+   },
+   "evidence": "Gave concrete workflow advice (run Opus 5.5 as orchestrator and have Claude Code spin off Sonnet 5.5 worker agents, a model-tier breakdown) and flagged audio balance problems to the streamer, amid a lot of OpenAI ribbing.",
+   "blindRank": 9,
+   "origRank": 9,
+   "scoreDelta": 3.0
+  },
+  {
+   "name": "@Superdoopercooper",
+   "orig": 56.6,
+   "blind": 55.3,
+   "deltas": {
+    "positivity": -0.5,
+    "technical": 0.5,
+    "helpfulness": 0,
+    "humor": 1.0,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 7,
+    "technical": 4.5,
+    "helpfulness": 5,
+    "humor": 6.5,
+    "substance": 4.5
+   },
+   "blindRaw": {
+    "positivity": 7.5,
+    "technical": 4,
+    "helpfulness": 5,
+    "humor": 5.5,
+    "substance": 3.5
+   },
+   "evidence": "Some useful ideas (narrating playtest bugs to a listening CNVS agent, manual prompting over looping) but also a wrong LOD definition, with helpfulness mostly cheering and defending the stream amid many 'lets go' messages.",
+   "blindRank": 10,
+   "origRank": 13,
+   "scoreDelta": 1.3
+  },
+  {
+   "name": "@davidkang5708",
+   "orig": 56.4,
+   "blind": 55.1,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0.0,
+    "helpfulness": 0.5,
+    "humor": -0.5,
+    "substance": 0
+   },
+   "origRaw": {
+    "positivity": 6,
+    "technical": 5.5,
+    "helpfulness": 4.5,
+    "humor": 6.5,
+    "substance": 6
+   },
+   "blindRaw": {
+    "positivity": 5.5,
+    "technical": 5.5,
+    "helpfulness": 4,
+    "humor": 7,
+    "substance": 6
+   },
+   "evidence": "Offered sensible model opinions (Sol as a non-creative backend workhorse, chef/sous-chef agent hierarchy, Opus-vs-Sonnet subagent question, looping suggestions), but helpfulness is dragged down by repeated IQ insults aimed at other viewers.",
+   "blindRank": 11,
+   "origRank": 14,
+   "scoreDelta": 1.3
+  },
+  {
+   "name": "@shonifari",
+   "orig": 54.5,
+   "blind": 55.0,
+   "deltas": {
+    "positivity": -0.5,
+    "technical": 0,
+    "helpfulness": 0.0,
+    "humor": -0.5,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 6,
+    "technical": 5,
+    "helpfulness": 6.5,
+    "humor": 4,
+    "substance": 6
+   },
+   "blindRaw": {
+    "positivity": 6.5,
+    "technical": 5,
+    "helpfulness": 6.5,
+    "humor": 4.5,
+    "substance": 5
+   },
+   "evidence": "Flagged that the video audio drowned out the streamer's voice, shared discord commands, pushed back on a patronising chatter, and gave reasonable takes on effort levels, token use and price anchoring, alongside many 'W'/'LFG' messages.",
+   "blindRank": 12,
+   "origRank": 18,
+   "scoreDelta": -0.5
+  },
+  {
+   "name": "@coderanger75",
+   "orig": 57.9,
+   "blind": 54.6,
+   "deltas": {
+    "positivity": 1.0,
+    "technical": 0.5,
+    "helpfulness": 0.0,
+    "humor": 0.5,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 6.5,
+    "technical": 5.5,
+    "helpfulness": 5.5,
+    "humor": 6.5,
+    "substance": 6
+   },
+   "blindRaw": {
+    "positivity": 5.5,
+    "technical": 5,
+    "helpfulness": 5.5,
+    "humor": 6,
+    "substance": 5
+   },
+   "evidence": "Gave practical suggestions (lower mic input sensitivity, double-tap mic for dictation, use Sonnet 5.5 on low/med for small bugs, breakdown of new plan usage tiers) mixed with a lot of cynical DevDay commentary.",
+   "blindRank": 13,
+   "origRank": 11,
+   "scoreDelta": 3.3
+  },
+  {
+   "name": "@adrianpadurariu",
+   "orig": 58.7,
+   "blind": 54.2,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 1.0,
+    "helpfulness": 1.0,
+    "humor": -0.5,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 5.5,
+    "technical": 6.5,
+    "helpfulness": 6.5,
+    "humor": 7,
+    "substance": 6
+   },
+   "blindRaw": {
+    "positivity": 5,
+    "technical": 5.5,
+    "helpfulness": 5.5,
+    "humor": 7.5,
+    "substance": 5
+   },
+   "evidence": "Gave actionable debugging tips (check for headless browsers, point to session id, npm run dev, cache warnings) and flagged a possible public IP leak twice, but also sent a burst of fragmented 'dot com' spam and lots of mocking event commentary.",
+   "blindRank": 14,
+   "origRank": 8,
+   "scoreDelta": 4.5
+  },
+  {
+   "name": "@Gnokain",
+   "orig": 54.8,
+   "blind": 54.1,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": -0.5,
+    "helpfulness": 0.0,
+    "humor": 1,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 6.5,
+    "technical": 4.5,
+    "helpfulness": 5.5,
+    "humor": 5,
+    "substance": 6
+   },
+   "blindRaw": {
+    "positivity": 6,
+    "technical": 5,
+    "helpfulness": 5.5,
+    "humor": 4,
+    "substance": 5
+   },
+   "evidence": "Gave concrete game/UX feedback (fix missing colliders, put Resume as the top button, fixed loot spawns for competitive play, nerf sniper, a viewer-room idea for streamers) along with lots of questions and short reactions.",
+   "blindRank": 15,
+   "origRank": 17,
+   "scoreDelta": 0.7
+  },
+  {
+   "name": "@GarlicCruton",
+   "orig": 57.5,
+   "blind": 54.0,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0.5,
+    "helpfulness": 0.5,
+    "humor": 1,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 8.5,
+    "technical": 4,
+    "helpfulness": 6,
+    "humor": 6,
+    "substance": 5
+   },
+   "blindRaw": {
+    "positivity": 8,
+    "technical": 3.5,
+    "helpfulness": 5.5,
+    "humor": 5,
+    "substance": 4
+   },
+   "evidence": "Mostly greetings and hype with model name-drops; a few ideas (vendor-neutral optimized harness for CNVS, Jev reviewing transcripts to feed agents) and friendly replies to others.",
+   "blindRank": 16,
+   "origRank": 12,
+   "scoreDelta": 3.5
+  },
+  {
+   "name": "@creepybeat",
+   "orig": 53.0,
+   "blind": 53.7,
+   "deltas": {
+    "positivity": 0.0,
+    "technical": -0.5,
+    "helpfulness": 0.0,
+    "humor": 0.0,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 7.5,
+    "technical": 5,
+    "helpfulness": 6.5,
+    "humor": 5.5,
+    "substance": 6.5
+   },
+   "blindRaw": {
+    "positivity": 7.5,
+    "technical": 5.5,
+    "helpfulness": 6.5,
+    "humor": 5.5,
+    "substance": 6
+   },
+   "evidence": "Repeatedly reported a concrete inventory ammo-count bug and suggested motion-blur toggle, FPS counter, storm-damage nerf and a storm-cloud gradient, mixed with playful banter.",
+   "blindRank": 17,
+   "origRank": 20,
+   "scoreDelta": -0.7
+  },
+  {
+   "name": "@foschleo",
+   "orig": 53.2,
+   "blind": 53.4,
+   "deltas": {
+    "positivity": -0.5,
+    "technical": 0.0,
+    "helpfulness": 0,
+    "humor": 0.5,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 5.5,
+    "technical": 6.5,
+    "helpfulness": 5,
+    "humor": 5.5,
+    "substance": 4.5
+   },
+   "blindRaw": {
+    "positivity": 6,
+    "technical": 6.5,
+    "helpfulness": 5,
+    "humor": 5,
+    "substance": 4
+   },
+   "evidence": "Gave genuinely useful game-dev advice (radius-based LOD hierarchy to prevent pop-in, a building-planner system, grid-based map generation with per-POI agents), but repeated it many times in all caps alongside SELL spam.",
+   "blindRank": 18,
+   "origRank": 19,
+   "scoreDelta": -0.2
+  },
+  {
+   "name": "@iamdonh",
+   "orig": 55.1,
+   "blind": 52.3,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0,
+    "helpfulness": 1.0,
+    "humor": 0.0,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 6.5,
+    "technical": 5,
+    "helpfulness": 6.5,
+    "humor": 5.5,
+    "substance": 6.5
+   },
+   "blindRaw": {
+    "positivity": 6,
+    "technical": 5,
+    "helpfulness": 5.5,
+    "humor": 5.5,
+    "substance": 5.5
+   },
+   "evidence": "Offered sensible ideas (stats on model-release posts as a CNVS sales funnel, letting the community run subagents on the VPS) and practical help like a mic-level tip, the DevDay link and noting new plans were live, though many messages are !discord commands and emotes.",
+   "blindRank": 19,
+   "origRank": 16,
+   "scoreDelta": 2.8
+  },
+  {
+   "name": "@of9490",
+   "orig": 49.8,
+   "blind": 52.3,
+   "deltas": {
+    "positivity": -1,
+    "technical": 0,
+    "helpfulness": -0.5,
+    "humor": 0.0,
+    "substance": -0.5
+   },
+   "origRaw": {
+    "positivity": 5,
+    "technical": 6,
+    "helpfulness": 5,
+    "humor": 4.5,
+    "substance": 6
+   },
+   "blindRaw": {
+    "positivity": 6,
+    "technical": 6,
+    "helpfulness": 5.5,
+    "humor": 4.5,
+    "substance": 6.5
+   },
+   "evidence": "Gave concrete model-usage comparisons (Opus 5.5 High vs xHigh cost/benefit, Sonnet vs Opus at matched performance, Haiku as a test model) and asked useful engine and isolation questions, though repeated the cynical 'Dots is free for training data' point several times.",
+   "blindRank": 20,
+   "origRank": 28,
+   "scoreDelta": -2.5
+  },
+  {
+   "name": "@yesindeed900",
+   "orig": 55.9,
+   "blind": 52.2,
+   "deltas": {
+    "positivity": 1.5,
+    "technical": 0.0,
+    "helpfulness": 0.5,
+    "humor": 0.5,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 6.5,
+    "technical": 4.5,
+    "helpfulness": 5,
+    "humor": 7.5,
+    "substance": 5
+   },
+   "blindRaw": {
+    "positivity": 5,
+    "technical": 4.5,
+    "helpfulness": 4.5,
+    "humor": 7,
+    "substance": 4
+   },
+   "evidence": "Cited Artificial Analysis benchmarks on Sonnet cost/intelligence and WebGPU performance issues and posted a screenshot to Discord, but much of the chat is crude hype or dev-day mockery.",
+   "blindRank": 21,
+   "origRank": 15,
+   "scoreDelta": 3.7
+  },
+  {
+   "name": "@Shhhmooke",
+   "orig": 52.9,
+   "blind": 51.9,
+   "deltas": {
+    "positivity": -0.5,
+    "technical": 1,
+    "helpfulness": -0.5,
+    "humor": 0.5,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 7.5,
+    "technical": 4,
+    "helpfulness": 5,
+    "humor": 6.5,
+    "substance": 5
+   },
+   "blindRaw": {
+    "positivity": 8,
+    "technical": 3,
+    "helpfulness": 5.5,
+    "humor": 6,
+    "substance": 4.5
+   },
+   "evidence": "Friendly regular with banter and a couple of practical notes (add cash credits and have the agent write a handoff, asks about effort level and three.js), but low technical depth.",
+   "blindRank": 22,
+   "origRank": 21,
+   "scoreDelta": 1.0
+  },
+  {
+   "name": "@HeatStoker69",
+   "orig": 52.7,
+   "blind": 51.6,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0.0,
+    "helpfulness": 0,
+    "humor": 0.0,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 6,
+    "technical": 5.5,
+    "helpfulness": 5,
+    "humor": 6.5,
+    "substance": 6
+   },
+   "blindRaw": {
+    "positivity": 5.5,
+    "technical": 5.5,
+    "helpfulness": 5,
+    "humor": 6.5,
+    "substance": 5.5
+   },
+   "evidence": "Technical input includes storing as JSON before updates, inverted normals as a debugging idea, render-resolution/post-processing notes and effort-level observations; helpfulness is modest feature ideas and questions offset by a long run of cynical event commentary in Stream D.",
+   "blindRank": 23,
+   "origRank": 22,
+   "scoreDelta": 1.1
+  },
+  {
+   "name": "@smellyydeli",
+   "orig": 52.4,
+   "blind": 51.2,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0.0,
+    "helpfulness": 0.0,
+    "humor": 1,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 6,
+    "technical": 4.5,
+    "helpfulness": 5.5,
+    "humor": 6,
+    "substance": 4.5
+   },
+   "blindRaw": {
+    "positivity": 5.5,
+    "technical": 4.5,
+    "helpfulness": 5.5,
+    "humor": 5,
+    "substance": 4.5
+   },
+   "evidence": "Relayed useful news (Sonnet 5.5 found in the Claude Code binary with version and pricing, the 6.1 delay) and suggested higher effort settings, mixed with hype spam and light trolling.",
+   "blindRank": 24,
+   "origRank": 24,
+   "scoreDelta": 1.2
+  },
+  {
+   "name": "@techtejash6622",
+   "orig": 52.2,
+   "blind": 49.2,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0.5,
+    "helpfulness": 0.5,
+    "humor": 0.0,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 7,
+    "technical": 4,
+    "helpfulness": 3.5,
+    "humor": 4.5,
+    "substance": 4
+   },
+   "blindRaw": {
+    "positivity": 6.5,
+    "technical": 3.5,
+    "helpfulness": 3,
+    "humor": 4.5,
+    "substance": 3
+   },
+   "evidence": "Mostly hype and self-referential questions about pricing their own editor, with heavy spam (14x 'ONE MORE THING' and repeated VOLUME demands) that outweighed the occasional relevant question.",
+   "blindRank": 25,
+   "origRank": 26,
+   "scoreDelta": 3.0
+  },
+  {
+   "name": "@byanuragbaral",
+   "orig": 45.6,
+   "blind": 47.8,
+   "deltas": {
+    "positivity": -0.5,
+    "technical": 0,
+    "helpfulness": -1,
+    "humor": 0,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 6,
+    "technical": 4,
+    "helpfulness": 4,
+    "humor": 5,
+    "substance": 4.5
+   },
+   "blindRaw": {
+    "positivity": 6.5,
+    "technical": 4,
+    "helpfulness": 5,
+    "humor": 5,
+    "substance": 4.5
+   },
+   "evidence": "Technical input is limited to a UI overlay suggestion and a token-cost comparison among many spec/ASI questions; helpfulness comes from answering a lag question and friendly engagement, offset by repeated unanswered spec questions.",
+   "blindRank": 26,
+   "origRank": 40,
+   "scoreDelta": -2.2
+  },
+  {
+   "name": "@fooledbyprimes",
+   "orig": 49.8,
+   "blind": 47.3,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 1.0,
+    "helpfulness": -0.5,
+    "humor": 0.5,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 5,
+    "technical": 5.5,
+    "helpfulness": 4,
+    "humor": 6.5,
+    "substance": 5.5
+   },
+   "blindRaw": {
+    "positivity": 4.5,
+    "technical": 4.5,
+    "helpfulness": 4.5,
+    "humor": 6,
+    "substance": 5
+   },
+   "evidence": "Contributed some informed but tangential commentary (DNF logic layer, OpenAI Gym history, geometry-caching speculation) and game ideas, mostly cynical dev-day riffing rather than help to others.",
+   "blindRank": 27,
+   "origRank": 30,
+   "scoreDelta": 2.5
+  },
+  {
+   "name": "@simonbourdon1018",
+   "orig": 47.5,
+   "blind": 46.8,
+   "deltas": {
+    "positivity": 1,
+    "technical": 0.0,
+    "helpfulness": -0.5,
+    "humor": 0.0,
+    "substance": 0
+   },
+   "origRaw": {
+    "positivity": 8,
+    "technical": 3.5,
+    "helpfulness": 4.5,
+    "humor": 4.5,
+    "substance": 4
+   },
+   "blindRaw": {
+    "positivity": 7,
+    "technical": 3.5,
+    "helpfulness": 5,
+    "humor": 4.5,
+    "substance": 4
+   },
+   "evidence": "Technical input is a repeated 'texture streaming' suggestion and a model-creativity opinion; helpfulness from pointing chat to pricing details in Discord, diluted by many duplicated messages.",
+   "blindRank": 28,
+   "origRank": 35,
+   "scoreDelta": 0.7
+  },
+  {
+   "name": "@RedMir564",
+   "orig": 52.6,
+   "blind": 46.6,
+   "deltas": {
+    "positivity": 1.0,
+    "technical": 1.0,
+    "helpfulness": 1.0,
+    "humor": 0.5,
+    "substance": 1.5
+   },
+   "origRaw": {
+    "positivity": 8.5,
+    "technical": 3.5,
+    "helpfulness": 6.5,
+    "humor": 5,
+    "substance": 5.5
+   },
+   "blindRaw": {
+    "positivity": 7.5,
+    "technical": 2.5,
+    "helpfulness": 5.5,
+    "humor": 4.5,
+    "substance": 4
+   },
+   "evidence": "Technical input is limited to light remarks (Steam disclosure, add a save feature to Only Up), while helpfulness comes from warm community support, greeting others and cheering the vibe-coding community.",
+   "blindRank": 29,
+   "origRank": 23,
+   "scoreDelta": 6.0
+  },
+  {
+   "name": "@sumwhat1275",
+   "orig": 52.3,
+   "blind": 46.5,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 1.0,
+    "helpfulness": 1,
+    "humor": 1.5,
+    "substance": 1.5
+   },
+   "origRaw": {
+    "positivity": 7.5,
+    "technical": 4.5,
+    "helpfulness": 6,
+    "humor": 7.5,
+    "substance": 6
+   },
+   "blindRaw": {
+    "positivity": 7,
+    "technical": 3.5,
+    "helpfulness": 5,
+    "humor": 6,
+    "substance": 4.5
+   },
+   "evidence": "Technical input is light (route bug reports to Opus, use NVIDIA built-in, model-merging observation); helpfulness is friendly game feedback and greetings rather than active support.",
+   "blindRank": 30,
+   "origRank": 25,
+   "scoreDelta": 5.8
+  },
+  {
+   "name": "@SebBalls-1",
+   "orig": 46.3,
+   "blind": 45.5,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0,
+    "helpfulness": 0,
+    "humor": -0.5,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 4.5,
+    "technical": 6,
+    "helpfulness": 5,
+    "humor": 6.5,
+    "substance": 6.5
+   },
+   "blindRaw": {
+    "positivity": 4,
+    "technical": 6,
+    "helpfulness": 5,
+    "humor": 7,
+    "substance": 6
+   },
+   "evidence": "Sharp technical takes (quantization jab, cheaper/faster/better trade-off, Codex CLI fallback, prompting advice) and a warning about env leaks on stream, though largely cynical commentary on the event.",
+   "blindRank": 31,
+   "origRank": 38,
+   "scoreDelta": 0.8
+  },
+  {
+   "name": "@Quigago",
+   "orig": 47.8,
+   "blind": 45.3,
+   "deltas": {
+    "positivity": 0.0,
+    "technical": 0,
+    "helpfulness": 1,
+    "humor": 1.0,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 3.5,
+    "technical": 5,
+    "helpfulness": 5,
+    "humor": 6.5,
+    "substance": 5.5
+   },
+   "blindRaw": {
+    "positivity": 3.5,
+    "technical": 5,
+    "helpfulness": 4,
+    "humor": 5.5,
+    "substance": 4.5
+   },
+   "evidence": "Gave a useful OBS tip (flip the DevDay video source to avoid re-stream flags) and explained how benchmark scoring weights time and turns, but was mostly sarcastic and spammed 'can't hear'.",
+   "blindRank": 32,
+   "origRank": 34,
+   "scoreDelta": 2.5
+  },
+  {
+   "name": "@CJs-e2c",
+   "orig": 49.2,
+   "blind": 45.0,
+   "deltas": {
+    "positivity": 1.0,
+    "technical": 0.5,
+    "helpfulness": 0.5,
+    "humor": 1,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 7.5,
+    "technical": 4,
+    "helpfulness": 5.5,
+    "humor": 6,
+    "substance": 5.5
+   },
+   "blindRaw": {
+    "positivity": 6.5,
+    "technical": 3.5,
+    "helpfulness": 5,
+    "humor": 5,
+    "substance": 4.5
+   },
+   "evidence": "Asked reasonable questions (Marshall vs Chase agent roles, video file size and lower resolution, model naming) and ran a poll, but offered little concrete technical input.",
+   "blindRank": 33,
+   "origRank": 31,
+   "scoreDelta": 4.2
+  },
+  {
+   "name": "@apocalipto3343",
+   "orig": 49.9,
+   "blind": 44.9,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 1,
+    "helpfulness": 0.5,
+    "humor": 1.5,
+    "substance": 1.5
+   },
+   "origRaw": {
+    "positivity": 7,
+    "technical": 5,
+    "helpfulness": 5,
+    "humor": 5,
+    "substance": 5
+   },
+   "blindRaw": {
+    "positivity": 6.5,
+    "technical": 4,
+    "helpfulness": 4.5,
+    "humor": 3.5,
+    "substance": 3.5
+   },
+   "evidence": "Some sensible suggestions (session-scoped checkpoints, test on mobile, Stage Manager-style switching, hardware upgrade) but heavily repeated messages and fragments limit both technical value and helpfulness.",
+   "blindRank": 34,
+   "origRank": 27,
+   "scoreDelta": 5.0
+  },
+  {
+   "name": "@andreaskrbyravn855",
+   "orig": 49.8,
+   "blind": 44.8,
+   "deltas": {
+    "positivity": 0.0,
+    "technical": 1.0,
+    "helpfulness": 1.5,
+    "humor": 0.5,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 6.5,
+    "technical": 6.5,
+    "helpfulness": 7,
+    "humor": 2,
+    "substance": 7.5
+   },
+   "blindRaw": {
+    "positivity": 6.5,
+    "technical": 5.5,
+    "helpfulness": 5.5,
+    "humor": 1.5,
+    "substance": 6.5
+   },
+   "evidence": "Asked sensible stack questions (three.js vs Unity) and made practical game suggestions such as culling unseen geometry, static trees to reduce flicker, keybinds, a visible storm wall and a god mode for testing.",
+   "blindRank": 35,
+   "origRank": 29,
+   "scoreDelta": 5.0
+  },
+  {
+   "name": "@JohnTheDragon",
+   "orig": 46.5,
+   "blind": 44.0,
+   "deltas": {
+    "positivity": 0,
+    "technical": 1.0,
+    "helpfulness": 0,
+    "humor": 0,
+    "substance": 1
+   },
+   "origRaw": {
+    "positivity": 7,
+    "technical": 2.5,
+    "helpfulness": 5,
+    "humor": 8,
+    "substance": 5
+   },
+   "blindRaw": {
+    "positivity": 7,
+    "technical": 1.5,
+    "helpfulness": 5,
+    "humor": 8,
+    "substance": 4
+   },
+   "evidence": "Near-zero technical input (one 'have claude update itself' quip); helpfulness from audio-level feedback and pointing the streamer to Discord, with most messages being affectionate roasting and running jokes.",
+   "blindRank": 36,
+   "origRank": 36,
+   "scoreDelta": 2.5
+  },
+  {
+   "name": "@why.kabira",
+   "orig": 48.4,
+   "blind": 43.6,
+   "deltas": {
+    "positivity": 1.0,
+    "technical": 0.5,
+    "helpfulness": 1,
+    "humor": 0,
+    "substance": 1.5
+   },
+   "origRaw": {
+    "positivity": 6.5,
+    "technical": 3,
+    "helpfulness": 4,
+    "humor": 6,
+    "substance": 3.5
+   },
+   "blindRaw": {
+    "positivity": 5.5,
+    "technical": 2.5,
+    "helpfulness": 3,
+    "humor": 6,
+    "substance": 2
+   },
+   "evidence": "Technical input is vague (try n8n automations with Astra, have AI automate Unity/Blender environments), and helpfulness is dragged down by repeated copy-paste spam and \"I'm high\" bits, although they did encourage other viewers.",
+   "blindRank": 37,
+   "origRank": 33,
+   "scoreDelta": 4.8
+  },
+  {
+   "name": "@DanielsApps2",
+   "orig": 42.8,
+   "blind": 43.6,
+   "deltas": {
+    "positivity": 0.0,
+    "technical": 0,
+    "helpfulness": -0.5,
+    "humor": 0,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 4.5,
+    "technical": 5,
+    "helpfulness": 4.5,
+    "humor": 4,
+    "substance": 4.5
+   },
+   "blindRaw": {
+    "positivity": 4.5,
+    "technical": 5,
+    "helpfulness": 5,
+    "humor": 4,
+    "substance": 4.5
+   },
+   "evidence": "Offered sensible cost/effort comparisons (sonnet xhigh vs opus high, high vs xhigh cost) and app-store discovery advice, but much of the output is dismissive event commentary ('slop', 'cringe', 'shill').",
+   "blindRank": 38,
+   "origRank": 45,
+   "scoreDelta": -0.8
+  },
+  {
+   "name": "@brunoczr",
+   "orig": 45.8,
+   "blind": 43.5,
+   "deltas": {
+    "positivity": 0.0,
+    "technical": 1.0,
+    "helpfulness": -0.5,
+    "humor": 1,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 7.5,
+    "technical": 3.5,
+    "helpfulness": 4,
+    "humor": 4,
+    "substance": 3.5
+   },
+   "blindRaw": {
+    "positivity": 7.5,
+    "technical": 2.5,
+    "helpfulness": 4.5,
+    "humor": 3,
+    "substance": 2.5
+   },
+   "evidence": "Mostly short hype reactions; minor feedback such as gun-arm proportions, dropped frames and a Severance-style UI idea.",
+   "blindRank": 39,
+   "origRank": 39,
+   "scoreDelta": 2.3
+  },
+  {
+   "name": "@wsmawm",
+   "orig": 43.3,
+   "blind": 43.0,
+   "deltas": {
+    "positivity": -0.5,
+    "technical": 0.5,
+    "helpfulness": 0,
+    "humor": 0,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 5,
+    "technical": 5.5,
+    "helpfulness": 6,
+    "humor": 5,
+    "substance": 5.5
+   },
+   "blindRaw": {
+    "positivity": 5.5,
+    "technical": 5,
+    "helpfulness": 6,
+    "humor": 5,
+    "substance": 5.5
+   },
+   "evidence": "Diagnosed the streamer's mic redlining/overdriving and explained OAuth login in T3 and how its web/iOS app streams MCP tool calls, mixed with off-topic personal chat.",
+   "blindRank": 40,
+   "origRank": 43,
+   "scoreDelta": 0.3
+  },
+  {
+   "name": "@saurabh.n.sawant",
+   "orig": 46.5,
+   "blind": 42.8,
+   "deltas": {
+    "positivity": 1.0,
+    "technical": 0.5,
+    "helpfulness": 0.5,
+    "humor": 0,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 6.5,
+    "technical": 3,
+    "helpfulness": 4.5,
+    "humor": 4,
+    "substance": 3.5
+   },
+   "blindRaw": {
+    "positivity": 5.5,
+    "technical": 2.5,
+    "helpfulness": 4,
+    "humor": 4,
+    "substance": 2.5
+   },
+   "evidence": "Mostly reactions and model/plan name-drops (6.1 Sol, $500 plan), with small contributions like correcting another viewer about the Whisper Flow founder and pointing Max to a Discord showcase.",
+   "blindRank": 41,
+   "origRank": 37,
+   "scoreDelta": 3.7
+  },
+  {
+   "name": "@roland7358",
+   "orig": 43.2,
+   "blind": 42.2,
+   "deltas": {
+    "positivity": 0.0,
+    "technical": 0.5,
+    "helpfulness": -0.5,
+    "humor": 1,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 7.5,
+    "technical": 1,
+    "helpfulness": 4,
+    "humor": 2,
+    "substance": 2
+   },
+   "blindRaw": {
+    "positivity": 7.5,
+    "technical": 0.5,
+    "helpfulness": 4.5,
+    "humor": 1,
+    "substance": 1.5
+   },
+   "evidence": "Nearly all messages are one- or two-word reactions ('wow', 'damn', 'is crazy') and greetings/goodbyes; no technical content beyond 'are they more expensive' and community value is limited to presence.",
+   "blindRank": 42,
+   "origRank": 44,
+   "scoreDelta": 1.0
+  },
+  {
+   "name": "@luckey_faraday",
+   "orig": 43.5,
+   "blind": 42.0,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0,
+    "helpfulness": 0.5,
+    "humor": -0.5,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 7.5,
+    "technical": 2,
+    "helpfulness": 4.5,
+    "humor": 5,
+    "substance": 3
+   },
+   "blindRaw": {
+    "positivity": 7,
+    "technical": 2,
+    "helpfulness": 4,
+    "humor": 5.5,
+    "substance": 2.5
+   },
+   "evidence": "Technical input limited to 'change the effort' and a reasoning-level question; helpfulness minimal beyond flagging a ragebaiter, with most messages being 'mogged'/W hype.",
+   "blindRank": 43,
+   "origRank": 42,
+   "scoreDelta": 1.5
+  },
+  {
+   "name": "@Noname6969-q2f",
+   "orig": 49.0,
+   "blind": 41.5,
+   "deltas": {
+    "positivity": 1.5,
+    "technical": 1.0,
+    "helpfulness": 2,
+    "humor": 0.5,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 6,
+    "technical": 4.5,
+    "helpfulness": 5,
+    "humor": 4,
+    "substance": 2.5
+   },
+   "blindRaw": {
+    "positivity": 4.5,
+    "technical": 3.5,
+    "helpfulness": 3,
+    "humor": 3.5,
+    "substance": 2.5
+   },
+   "evidence": "Relayed concrete Sonnet 5.5 release details (Claude Code 2.1.284, OpenRouter, 106 tok/s, pricing), but buried them under heavy copy-paste spam ('OpenAI SlopDay > Grok dots clone...') and repeated 'what model made this?'.",
+   "blindRank": 44,
+   "origRank": 32,
+   "scoreDelta": 7.5
+  },
+  {
+   "name": "@chaddonnerschwanz7504",
+   "orig": 39.9,
+   "blind": 40.7,
+   "deltas": {
+    "positivity": 1.0,
+    "technical": -1.0,
+    "helpfulness": 0,
+    "humor": -0.5,
+    "substance": 0
+   },
+   "origRaw": {
+    "positivity": 5.5,
+    "technical": 1.5,
+    "helpfulness": 3,
+    "humor": 6,
+    "substance": 3
+   },
+   "blindRaw": {
+    "positivity": 4.5,
+    "technical": 2.5,
+    "helpfulness": 3,
+    "humor": 6.5,
+    "substance": 3
+   },
+   "evidence": "Only light technical remarks (character gait shifting from chest weight, no 6.1 access yet), and helpfulness is low because most messages are crude jokes, including some offensive ones.",
+   "blindRank": 45,
+   "origRank": 47,
+   "scoreDelta": -0.8
+  },
+  {
+   "name": "@Mousebear3",
+   "orig": 39.6,
+   "blind": 40.4,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": -0.5,
+    "helpfulness": -0.5,
+    "humor": 0,
+    "substance": 0.5
+   },
+   "origRaw": {
+    "positivity": 7,
+    "technical": 1.5,
+    "helpfulness": 4,
+    "humor": 3,
+    "substance": 3.5
+   },
+   "blindRaw": {
+    "positivity": 6.5,
+    "technical": 2,
+    "helpfulness": 4.5,
+    "humor": 3,
+    "substance": 3
+   },
+   "evidence": "Contributed repeated simple feature requests (character abilities, skins, Play Store release, maps) and a collision note, but many messages are filler ('W', 'yes', 'that crazy').",
+   "blindRank": 46,
+   "origRank": 48,
+   "scoreDelta": -0.8
+  },
+  {
+   "name": "@rawgoldranks",
+   "orig": 44.2,
+   "blind": 40.0,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 1.0,
+    "helpfulness": 0.5,
+    "humor": 0.5,
+    "substance": 1.0
+   },
+   "origRaw": {
+    "positivity": 7,
+    "technical": 3.5,
+    "helpfulness": 4.5,
+    "humor": 6,
+    "substance": 4.5
+   },
+   "blindRaw": {
+    "positivity": 6.5,
+    "technical": 2.5,
+    "helpfulness": 4,
+    "humor": 5.5,
+    "substance": 3.5
+   },
+   "evidence": "Asks basic usage/cost and Hetzner server questions without technical depth; helpfulness is mostly banter, event ideas (CNVS Luma meetup) and hype rather than helping others.",
+   "blindRank": 47,
+   "origRank": 41,
+   "scoreDelta": 4.2
+  },
+  {
+   "name": "@swey_",
+   "orig": 37.0,
+   "blind": 38.5,
+   "deltas": {
+    "positivity": -0.5,
+    "technical": 0.5,
+    "helpfulness": -1.0,
+    "humor": -0.5,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 3.5,
+    "technical": 4,
+    "helpfulness": 3.5,
+    "humor": 5.5,
+    "substance": 4.5
+   },
+   "blindRaw": {
+    "positivity": 4,
+    "technical": 3.5,
+    "helpfulness": 4.5,
+    "humor": 6,
+    "substance": 4.5
+   },
+   "evidence": "Mostly cynical Dev Day roasting, with a few light technical notes (simplify to 'a VM on your servers', '3 objects in the main loop') and one constructive suggestion to make walk bob a toggleable setting.",
+   "blindRank": 48,
+   "origRank": 49,
+   "scoreDelta": -1.5
+  },
+  {
+   "name": "@brett7277",
+   "orig": 40.3,
+   "blind": 37.3,
+   "deltas": {
+    "positivity": 0.5,
+    "technical": 0.5,
+    "helpfulness": 0.5,
+    "humor": 1,
+    "substance": 0.0
+   },
+   "origRaw": {
+    "positivity": 3.5,
+    "technical": 5,
+    "helpfulness": 4.5,
+    "humor": 4,
+    "substance": 5.5
+   },
+   "blindRaw": {
+    "positivity": 3,
+    "technical": 4.5,
+    "helpfulness": 4,
+    "humor": 3,
+    "substance": 5.5
+   },
+   "evidence": "Raised a thoughtful discussion on Steam AI-tag sales and critiqued walk-cycle arm/leg animation, but the bulk of Stream D is cynical anti-OpenAI dunking.",
+   "blindRank": 49,
+   "origRank": 46,
+   "scoreDelta": 3.0
+  },
+  {
+   "name": "@yokatamin",
+   "orig": 23.0,
+   "blind": 23.0,
+   "deltas": {
+    "positivity": 0,
+    "technical": 0.0,
+    "helpfulness": 0,
+    "humor": 0,
+    "substance": 0
+   },
+   "origRaw": {
+    "positivity": 3,
+    "technical": 0.5,
+    "helpfulness": 1,
+    "humor": 2,
+    "substance": 1
+   },
+   "blindRaw": {
+    "positivity": 3,
+    "technical": 0.5,
+    "helpfulness": 1,
+    "humor": 2,
+    "substance": 1
+   },
+   "evidence": "No technical input; long off-topic, partly hostile rants at Bill Gates and Anthropic plus emoji and fragment spam that disrupts chat.",
+   "blindRank": 50,
+   "origRank": 50,
+   "scoreDelta": 0.0
+  }
+ ],
+ "missing": [],
+ "mentionStats": {
+  "candidates": 251,
+  "verdicts": 251,
+  "confirmed": 232,
+  "people": 42
+ }
+}

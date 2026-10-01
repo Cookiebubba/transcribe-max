@@ -1,0 +1,2472 @@
+{
+ "@JohnTheDragon": {
+  "count": 20,
+  "avg": 0.7,
+  "pos": 14,
+  "neu": 6,
+  "neg": 0,
+  "kinds": {
+   "greeting": 5,
+   "teases": 5,
+   "reads_message": 4,
+   "other": 2,
+   "disagrees": 1,
+   "agrees": 1,
+   "thanks": 1,
+   "answers_question": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "3:09:22",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "John, what is up, John? You made it.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "3:10:40",
+    "sentiment": 0,
+    "kind": "teases",
+    "quote": "John, you didn't even give me a review of the battle royale. There's no shot you're just coming in here and immediately saying that's going to use 100,000% GPU.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "3:30:22",
+    "sentiment": 0,
+    "kind": "disagrees",
+    "quote": "John says that is what we need to make AI girlfriend. Now, we can't go down that path.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "3:38:18",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "John knows exactly what I'm saying. Me and John could be head of marketing.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:34:38",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "John, no, John... as much as I hate this, I very much enjoy when you are here with in the stream. Very much.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:40:04",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "I will say John, you are very smart. Even though you're psychotic, you're equally psychotic as you are smart.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:43:39",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "What if John shows up to a voice chat? Exactly. There's gamer words. ... John the Dragon, my guy, my legend, thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:44:06",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "John the Dragon, my guy, my legend, thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:44:29",
+    "sentiment": 1,
+    "kind": "answers_question",
+    "quote": "John the Dragon is finally here... Where is the setup video? ... John, I had to set up the spaceship.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:46:10",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "John the Dragon and Big Papa Pump is here, too. We're going the distance. We're built for speed, baby.",
+    "confidence": "medium"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:56:21",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "John the Dragon says, \"I just got to my setup...\" That's my guy. That's my guy. I love to hear that.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:48:15",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "John, what's up? How are we doing?",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:49:57",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "All right, John. I know it's you. I knew it was going to be you, brother.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:51:27",
+    "sentiment": 0,
+    "kind": "teases",
+    "quote": "Oh, John's burning up over there. John came unprepared. John was not ready for the smoke. It's okay.",
+    "confidence": "medium"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:53:12",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "John, that was a generational aura loss right there. It won't work. It won't work my ass.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:13:59",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "D roast it. I love it. Says John the Dragon. She doesn't like cinema.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:15:54",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "You got to look at what Lucky Faraday just said in the Discord, buddy. All right, I will. I will.",
+    "confidence": "medium"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:21:05",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "John said, \"Da, what happened? Why did you settle for Max?\" ... That's a [__] up comment.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:04:54",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "John the Dragon is here. I was about to tag John the Dragon on Discord and do my weekly wellness check",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:06:53",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "The vibe coding king is building. Let's go, baby. John is here.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@humblelifeskills": {
+  "count": 34,
+  "avg": 1.06,
+  "pos": 27,
+  "neu": 7,
+  "neg": 0,
+  "kinds": {
+   "other": 8,
+   "greeting": 7,
+   "praises": 6,
+   "reads_message": 5,
+   "thanks": 5,
+   "agrees": 2,
+   "answers_question": 1
+  },
+  "streams": 5,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:02:56",
+    "sentiment": 2,
+    "kind": "greeting",
+    "quote": "Humble, what's up, you legend?",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:24:43",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Pretty nuts, says Humble.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:34:30",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Humble says, \"Vibe coders unite.\" All good, my brother. Thank you, Humble.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:02:44",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Humble. What's up? Good morning. Good morning.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:17:02",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Humble my guy. What's up? M5 Ultra Studio maxed out. Job done.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "1:26:57",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Humble. That's a great idea. That's a great idea. We would just need to figure out how to lock that down.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:02:46",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "I looked over and then Humble and Brandon said, \"Welcome back.\" ... Probably script kitties.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:39:54",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Thank you so much, Humble.",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "0:05:05",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Humble says, \"Absolutely cooking.\"",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "0:39:01",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Humble, what's up today? What's up, Humble? What are we looking forward to here?",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "1:40:47",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Humble says they gave free hardware. That's true. Humble.",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "3:28:51",
+    "sentiment": 2,
+    "kind": "thanks",
+    "quote": "Humble. You're a legend. Thank you so much. I appreciate it.",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "3:55:29",
+    "sentiment": 2,
+    "kind": "thanks",
+    "quote": "Thank you, Humble. You already know you're the goat. Thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:05:10",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Good morning, Humble.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:56:40",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Humble wants a triple bypass egg bites.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "6:19:31",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "Humble says, \"I don't need anything, dude, but thank you.\" You're getting a house, Humble.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:04:40",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Good morning, Lucky. Good morning, Humble. Good morning, Tensor.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:05:40",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "A, our very own Humble created a really cool house for us.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:06:49",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Is Humble here this morning? The vibe coding king is building. Let's go, baby.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:41:52",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "Let's say you're in a group of four. All right, so it's me, Brandon, Humble, Oscar.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:09:44",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Humble says sadly one. Why sadly?",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:25:55",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Let's go. Super duper Cooper. Come on, Humble. Come on, Heat Stoker.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "3:09:21",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Humble's on the other side of the table. I'm like, Humble, how you doing? How's your project coming out?",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "3:56:25",
+    "sentiment": 0,
+    "kind": "answers_question",
+    "quote": "Humble. How am I supposed to hide it? Hold on. I might be able to.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:13:08",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Humble. You're going to have to remind me tomorrow... I'm sorry, brother. ...we'll check out Humble House after.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:13:32",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Humble. You're going to have to remind me tomorrow... I'm sorry, brother. Bro, humble is cooking.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:20:32",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Bro, humble cart fire. All right, let's look at Humble's thing... Where's the link, Humble?",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:20:57",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Where's the link, Humble? ... Let me see what Humble cooked.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:22:15",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Damn, we got the whole crew in here. This is sick. I'm not going to lie. Humble. This is sick.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:22:56",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Humble, how many tokens did you spend here, my friend? Dude, Humble is a vibe coding demon.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:26:24",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Humble. I didn't know your game, brother. This is crazy.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:27:09",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "This is so epic, dude. Humble, you killed this. You killed this... Humble, thank you for this. Unreal.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:27:41",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Humble, you killed this. You killed this... Humble, thank you for this. Unreal.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "5:15:30",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Chad, thank you. Humble, my guy.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@brett7277": {
+  "count": 1,
+  "avg": 0,
+  "pos": 0,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "disagrees": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "6:29:26",
+    "sentiment": 0,
+    "kind": "disagrees",
+    "quote": "That looks better than canvas. No, no, no, no, Brett. No, don't say that.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@why.kabira": {
+  "count": 3,
+  "avg": 0.67,
+  "pos": 2,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "thanks": 1,
+   "greeting": 1,
+   "disagrees": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "1:12:02",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Ah, good night Kabir. Thanks for being here. I appreciate you.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "1:19:21",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "What's up, Kabira? What's up? What's up? How are you?",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "0:20:24",
+    "sentiment": 0,
+    "kind": "disagrees",
+    "quote": "Dev day is today. What are you talking about, Kabira? It's in 20 minutes.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@BrandynMakes": {
+  "count": 49,
+  "avg": 0.78,
+  "pos": 33,
+  "neu": 16,
+  "neg": 0,
+  "kinds": {
+   "other": 16,
+   "teases": 9,
+   "reads_message": 8,
+   "thanks": 7,
+   "praises": 4,
+   "agrees": 3,
+   "answers_question": 1,
+   "disagrees": 1
+  },
+  "streams": 4,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "2:13:27",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Max let Arrows back inside. Was that 10 minutes? Was that 10 minutes already, Brandon? Let me see.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:42:08",
+    "sentiment": 2,
+    "kind": "thanks",
+    "quote": "All right, Brandon Makes, absolute legend. Thank you so much. Thank you for being here.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:02:48",
+    "sentiment": 2,
+    "kind": "reads_message",
+    "quote": "Brandon the legend, keep your hands and feet and genitals to the ride at all times.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:02:46",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "I looked over and then Humble and Brandon said, \"Welcome back.\"",
+    "confidence": "medium"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:29:09",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "They're frozen. They're Brandon. Brandon, you did not. It's 5v3. You did not, Brandon.",
+    "confidence": "medium"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:40:03",
+    "sentiment": 2,
+    "kind": "thanks",
+    "quote": "Brandon Makes, you already know, legend. Thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:11:29",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Brandon says, \"Can't be worse than what Grok goes through on X in the comments.\" That's so true.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:37:04",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Brandon says, \"I'm using Buzz quite a bit, but I'm straying away because making the agent workflows into something more programmatic...\"",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "10:20:32",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Brandon, thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "10:36:50",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Brandon Legend, thank you so much. I appreciate it... Brandon, it was cool talking with you, playing with you today.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "2:23:20",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "I abandon all of my friends for vibe coding. That's perfect, Brandon. Listen, we're friends now.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:10:05",
+    "sentiment": 0,
+    "kind": "teases",
+    "quote": "Imagine you just get to dock all day with your bro. Brandon, I said dock one time. Brandon, we're taking it too far now.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:56:50",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "Brandon needs a venti caramel dirty chai latte hot... I can't say no to you guys, though.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "6:57:56",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "All right, Brandy. Come on... We're about to see the one v one of me verse Brandon... Is this you, Brandon, or no?",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "6:58:30",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "Is this Brandon or is this not Brandon? Is this you, Brandon, or no?",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:00:15",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "Brandon, do you know how to play? ... Brandon, I'm gonna send you a DM with the code.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:00:52",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "I just learned by beating two people. Okay. All right. Brandon. Brandon, I'm gonna send you a DM with the code.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:02:36",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "I cannot give up my perfect record now to Brandon.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:05:19",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "No way. Brandon, you got to give me one more... I was being nice cuz I like Brandon, but this time I'm playing 100% for real.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:05:56",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Brandon, you got to give me one more... I was being nice cuz I like Brandon, but this time I'm playing 100% for real.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:06:31",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "I was being nice cuz I like Brandon, but this time I'm playing 100% for real.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:07:08",
+    "sentiment": 1,
+    "kind": "praises",
+    "quote": "Brandon, I'm sending you the invite link right now. Brandon is a gamer. Brandon is a gamer.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:07:57",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "Brandon is a gamer... Brandon, I just sent you the link. You got to join. Stop worrying about the poll.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:08:19",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "Brandon, I just sent you the link. You got to join... We can't let Brandon beat us twice. Guys, no one tell Brandon.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:11:47",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Here you go, Brandon. We're leaving it 50/50 for now. Thank you for playing... All right, Brandon, you down? Let's do it.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:12:25",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "All right, Brandon, you down? Let's do it.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:13:10",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Brandon, I'm sending you the link right now. Thank you for playing today, brother. I appreciate it.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:17:09",
+    "sentiment": 1,
+    "kind": "praises",
+    "quote": "Yo, GG's Brandon. GG's. Unreal, guys. Absolutely unreal game, by the way.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:18:44",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "Brandon, look at what you've done. Look at what you've done to my hair. How could you have done this to me?",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:21:12",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "No, don't tell me. Not after all we've been through, Sonnet. Don't tell me I get mogged by Brandon",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:24:28",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "I cannot believe that I just threw that heated game of Overcooked. Brandon, I'll never live this down.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:24:49",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "I'm going to be waking up tomorrow to some sort of AI edit of me sweating over a flaming grill of burgers with Brandon next to me.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:01:32",
+    "sentiment": 1,
+    "kind": "answers_question",
+    "quote": "Brandon, I'm still here, brother.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:05:05",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Cinema and Discord General. Lol. Max getting cooked in Discord General. Oh no... This is disastrous, dude.",
+    "confidence": "medium"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:53:22",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Brandon's ready. Brandon said he's ready for the playback... I need stakes. No, I can't do stakes.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:57:04",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Can you guys hear Brandon at all? I'm sorry, I just threw you on the spot, dude. I hope that's all right.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:15:34",
+    "sentiment": 0,
+    "kind": "disagrees",
+    "quote": "I don't know anything about Brandon. Brandon lost a... Discord General. No, no, no, no. We don't got to look at Discord General.",
+    "confidence": "medium"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:19:06",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "It got so bad after the last rematch with Brandon Makes. Max had to leave.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:14:31",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Oh my god, Brandon, that's actually a genius idea. Let's go to space.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:41:52",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Let's say you're in a group of four. All right, so it's me, Brandon, Humble, Oscar.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:44:48",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "Sort of like the same thing when me and Brandon had the one v one on Overcooked",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:37:49",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Oh, man. That's a great idea, Brandon. That's an excellent idea.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "2:35:36",
+    "sentiment": 0,
+    "kind": "other",
+    "quote": "Brandon, what are you no? No way.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "2:54:14",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Garlic crouton understands it. Brandon understands it.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "3:08:56",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "I look over, there's Brandon. What up, Brandon? ... is this Brandon's floor",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "3:09:17",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "I look over, there's Brandon. What up, Brandon?",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:54:38",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Check the game in Discord General. The chain mechanic. I know exactly what you're talking about, Brandon.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "5:11:02",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Thank you so much, Brandon. Thank you.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "5:15:34",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Brandon, emotional damage. Absolutely.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@oscargalvez7": {
+  "count": 9,
+  "avg": 1,
+  "pos": 8,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "thanks": 5,
+   "greeting": 1,
+   "answers_question": 1,
+   "other": 1,
+   "agrees": 1
+  },
+  "streams": 4,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "1:56:29",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Oscar, what's up? What's up? What's up?",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:23:37",
+    "sentiment": 0,
+    "kind": "answers_question",
+    "quote": "I know. I got to build it up. Oscar, we have to fill a 50 game.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:34:34",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Thank you, Humble. Thank you, Oscar.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:44:03",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "All right, Oscar, thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:40:21",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Oscar, you already know. Come on.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:04:11",
+    "sentiment": 2,
+    "kind": "thanks",
+    "quote": "Thanks, Oscar. I appreciate it. And thanks for the love on the shorts... my boy is rooting for me.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:07:29",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Thank you so much... if we're being honest, Oscar, the other shorts didn't deserve the views, but finally Opus 55 is good enough",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:41:53",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Let's say you're in a group of four. All right, so it's me, Brandon, Humble, Oscar.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:10:26",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "You know what, Oscar? You actually just kind of nailed it, though.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@roland7358": {
+  "count": 6,
+  "avg": 0.5,
+  "pos": 3,
+  "neu": 3,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 3,
+   "greeting": 2,
+   "thanks": 1
+  },
+  "streams": 4,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:15:17",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Who was here? ... Roland was here.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:40:23",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Roland, my guy.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:06:21",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "How are we doing? Roland Yonder, my guy.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:20:09",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Roland says 15.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "4:38:32",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Roland says W.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:06:55",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Roland, what is up today?",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@adrianpadurariu": {
+  "count": 3,
+  "avg": 0.67,
+  "pos": 2,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "greeting": 1,
+   "thanks": 1,
+   "reads_message": 1
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:02:46",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Good morning, Adrian. Yes, we have a new intro.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "10:35:36",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Adrian, thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "6:33:36",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Adrian says, \"Ah, hold on. Let me grab my laptop.\"",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@SebBalls-1": {
+  "count": 1,
+  "avg": 1,
+  "pos": 1,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "agrees": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:12:57",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Ask AI. Good idea. The answer is always more tokens, Seb.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@TheZarion007": {
+  "count": 3,
+  "avg": 1,
+  "pos": 2,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 2,
+   "greeting": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "3:09:30",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "I'm doing a donut right now in the mower game. Let's go, Zaryion.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:56:46",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "The Zarian wants a cold brew and cold foam.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:04:48",
+    "sentiment": 2,
+    "kind": "greeting",
+    "quote": "The Zarion, my goat. How are you doing today?",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@luckey_faraday": {
+  "count": 7,
+  "avg": 0.57,
+  "pos": 4,
+  "neu": 3,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 3,
+   "greeting": 2,
+   "thanks": 1,
+   "other": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "3:20:35",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Lucky, what's up?",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "10:35:31",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Lucky Faraday, my guy, dude. Thank you.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "8:26:22",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Lucky says OpenAI will not release GPT 6.1 Astra over safety concerns, but the timing is interesting.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:10:27",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Lucky says mogged again.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:04:38",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Let's go. Good morning, Lucky. Good morning, Humble.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:41:57",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "We got Don, we got Lucky in there... Quick, Lucky throws the help line down.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "2:54:02",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Lucky understands it.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@CJs-e2c": {
+  "count": 3,
+  "avg": 0,
+  "pos": 0,
+  "neu": 3,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 3
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:15:10",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Who was here? Code Ranger was here. CJ was here.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:20:06",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "CJS says 100.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:57:41",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Tried to cold brew with pumpkin spice baby. I'm sorry, CJ. I already ordered it.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@smellyydeli": {
+  "count": 5,
+  "avg": 1.4,
+  "pos": 4,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "praises": 3,
+   "reads_message": 1,
+   "disagrees": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:40:14",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Smelly deli, you're the man.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:36:13",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "Smelly deli. Lots of users are already being routed to Claude Sonnet 55 even on free tier. I cannot wait.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:36:34",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Smelly Deli, if you guys don't know, is our in-house, highly trusted advisor of AI news... there is no one that I trust more than smelly deli",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:36:56",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "There is no one that I trust more than smelly deli coming in and giving me the breaking news with AI.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:58:35",
+    "sentiment": 0,
+    "kind": "disagrees",
+    "quote": "Sounds like you're cheating. I'm not cheating at all right now. This is where I am. I just fell down to here. Smelly.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@Superdoopercooper": {
+  "count": 10,
+  "avg": 0.5,
+  "pos": 5,
+  "neu": 5,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 7,
+   "agrees": 1,
+   "greeting": 1,
+   "other": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "0:53:50",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "This is for Facebook users. Yes. Super duper",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:56:43",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Super duper needs a breakfast burrito.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "4:38:29",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Super Cooper says W. ... Absolute W. Sonnet for prototypes.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:44:53",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Take my money, says super duper Cooper.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "7:49:35",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "Let's vibe one more orbit around Earth. Come on. That's what we're doing. Super duper Cooper.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:04:44",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Super duper Cooper is here.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:27:14",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Super duper Cooper says, \"I got music going. Your stream on, coffee warm. Let's go.\"",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:32:07",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "I'm loading it on my phone. I don't think it works in the phone. Super duper Cooper.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:09:54",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "Super duper Cooper says one. Let's go.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:25:52",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "Let's go. Super duper Cooper. Come on, Humble.",
+    "confidence": "medium"
+   }
+  ]
+ },
+ "@rawgoldranks": {
+  "count": 3,
+  "avg": 0.33,
+  "pos": 1,
+  "neu": 2,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 1,
+   "answers_question": 1,
+   "greeting": 1
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:19:59",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Raw Gold Rank says $0.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:42:42",
+    "sentiment": 0,
+    "kind": "answers_question",
+    "quote": "Oh no, that was raw gold ranks. Max, did you pay for resets today? No. So, if you guys don't know this, Anthropic gave you banked resets.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:11:22",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Raw Gold Race. Good morning, guys.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@yesindeed900": {
+  "count": 4,
+  "avg": 0.25,
+  "pos": 1,
+  "neu": 3,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 2,
+   "teases": 1,
+   "answers_question": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:22:51",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "Yes indeed is going through something... I don't know what has happened to Yes indeed over the last two weeks. He's a savage.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:27:18",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Yes indeed said it didn't fix [ __ ]. I opened it and it basically blew up my computer. What kind of computer you got?",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:28:13",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Yes, indeed said it's not fixed, which would be really annoying if GPT 6.1 did not fix this overnight.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:29:42",
+    "sentiment": 0,
+    "kind": "answers_question",
+    "quote": "Yes, indeed. You probably need to shift command R. You're probably running the old site.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@apocalipto3343": {
+  "count": 2,
+  "avg": 0.5,
+  "pos": 1,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "greeting": 1,
+   "reads_message": 1
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:44:39",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "All right, Apocalypto. Peace. See you.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "1:06:59",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Apocalypto says yerba mate is from Argentina. ... Are you trying to tell me the type of yerba mate I should be procuring?",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@LaughingParadox777": {
+  "count": 3,
+  "avg": 1,
+  "pos": 3,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "thanks": 2,
+   "greeting": 1
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:28:35",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Thank you. Thank you. Thank you, Laughing Paradox.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:42:23",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Laughing paradox, my guy. Thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "2:26:52",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "What is up, Laughing Paradox?",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@man74s": {
+  "count": 4,
+  "avg": 0.75,
+  "pos": 3,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "greeting": 1,
+   "agrees": 1,
+   "reads_message": 1,
+   "thanks": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "0:24:22",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "I'm addicted to AI. We all are. Welcome... What's up, Man 74.",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "3:28:57",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Man 74. What's up? What's up? We got you. Cognitive overload. Yeah, that's what it is.",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "3:34:25",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Man 74 says, \"AI is literally changing and improving my life, my career, everything.\"",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "3:55:29",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Thank you so much, man. 74. Thank you, Humble.",
+    "confidence": "medium"
+   }
+  ]
+ },
+ "@creepybeat": {
+  "count": 2,
+  "avg": 0,
+  "pos": 0,
+  "neu": 2,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 2
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:20:03",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Creepy Beat says $250.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:10:01",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Creepy Beat says two. Completely lost.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@simonbourdon1018": {
+  "count": 5,
+  "avg": 0.4,
+  "pos": 2,
+  "neu": 3,
+  "neg": 0,
+  "kinds": {
+   "greeting": 2,
+   "answers_question": 1,
+   "reads_message": 1,
+   "agrees": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:09:22",
+    "sentiment": 0,
+    "kind": "answers_question",
+    "quote": "Hey, what is your chair? This is a Simon. This is the best show I've ever had in my life. Look at the back of it.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:15:15",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Simon was here. Come on.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "2:29:07",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Simon, what's up? What's up? What's up? How are you? How are you?",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:20:58",
+    "sentiment": 0,
+    "kind": "agrees",
+    "quote": "Simon. I know it's",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "2:16:53",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Simon, you made it.",
+    "confidence": "medium"
+   }
+  ]
+ },
+ "@HeatStoker69": {
+  "count": 3,
+  "avg": 1,
+  "pos": 3,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "agrees": 3
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:38:40",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Heatstroke says, \"I'm using Opus 5.5 extra with Unreal Engine 5.8 and it's churning through the session limit much faster.\" Yes. Yes. Yes.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "5:11:50",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Heat Stoker 69, they're absolutely cooking right now.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:25:55",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Come on, Heat Stoker. We need to plan for the plan that plans for the plan. That's what we need to do.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@coderanger75": {
+  "count": 3,
+  "avg": 0,
+  "pos": 0,
+  "neu": 3,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 3
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:15:07",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Who was here? Code Ranger was here. CJ was here.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "3:56:28",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Code Ranger wants a pumpkin cream shaken espresso. Okay.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "4:38:29",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Code Ranger says W.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@Noname6969-q2f": {
+  "count": 2,
+  "avg": 0.5,
+  "pos": 1,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 1,
+   "agrees": 1
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "4:38:24",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Bruno says W. Noame says W.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:59:32",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Nerf gun damage, too high. All right. Noname, I think you're right.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@GarlicCruton": {
+  "count": 11,
+  "avg": 1.09,
+  "pos": 9,
+  "neu": 2,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 3,
+   "praises": 3,
+   "greeting": 3,
+   "thanks": 2
+  },
+  "streams": 5,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:15:12",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "Who was here? ... I already know Garlic was here.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:31:05",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Garlic crouton, thank you so much. Banger Friday stream... Have an amazing weekend. I appreciate it. Thank you so much.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:42:25",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "Garlic crouton. You already know the testimonial. The testimonial legend.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:17:16",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Garlic crouton, my guy. Garlic crouton.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "1:10:52",
+    "sentiment": 1,
+    "kind": "praises",
+    "quote": "Somehow garlic crouton, no matter what I do... my guy is one step ahead of me every time.",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "0:05:17",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "We're all glad to be here. Let's go. Garlic Crouton, let's go.",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "3:28:50",
+    "sentiment": 2,
+    "kind": "thanks",
+    "quote": "Thank you, Garlic Crouton. Means the world. You're a legend.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:05:14",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Garlic crouton. What's going on, my guy?",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "4:26:57",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "They're helical planetary gears. My guy Garlic Crouton knows. Thank god we have legends in the chat.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:03:10",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Oh, garlic crouton. Bro, he just said, \"Damn, my streamer is washed.\" No,",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "2:54:12",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Garlic Crouton understands it.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@chaddonnerschwanz7504": {
+  "count": 6,
+  "avg": 0.5,
+  "pos": 4,
+  "neu": 1,
+  "neg": 1,
+  "kinds": {
+   "thanks": 2,
+   "agrees": 2,
+   "scolds": 1,
+   "reads_message": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "2:45:36",
+    "sentiment": -1,
+    "kind": "scolds",
+    "quote": "Jesus Christ, Chad.",
+    "confidence": "medium"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:42:12",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Chad, you already know. My guy. My guy.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "4:38:48",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Chad says W. Absolute W.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "3:03:32",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "W but fun for like a day. That's almost exactly how I feel, Chad.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "3:06:13",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Like Chad said, this is fun for a day and then it's going to get old insanely fast.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "5:15:30",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Chad, thank you.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@davidkang5708": {
+  "count": 7,
+  "avg": 0.86,
+  "pos": 6,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "agrees": 3,
+   "teases": 2,
+   "reads_message": 1,
+   "other": 1
+  },
+  "streams": 4,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "1:27:11",
+    "sentiment": 1,
+    "kind": "reads_message",
+    "quote": "Chad, he did it. He looped the gauntlet. David Gang, my guy. I knew you were going to be psyched.",
+    "confidence": "high"
+   },
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "2:39:20",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "GPT6 Sol is a good workhorse for things that are already built... not creative but very competent. That's exactly how I feel.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:40:05",
+    "sentiment": 1,
+    "kind": "other",
+    "quote": "David Kang, my guy. I will eat a monster lunch. You eat a monster lunch, too.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "1:41:42",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "I already read this. Uh, Scamfield says David Kang. [__] yeah. Oh my god. Go crazy.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "9:23:54",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Max does have that whole 6'5 thing going for him... Yeah, that's so true. Thank you, David K. Thank you for reminding me.",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:09:49",
+    "sentiment": 0,
+    "kind": "teases",
+    "quote": "David King says two. He has no idea what I'm talking about... David King says three. He's out to space right now.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:11:42",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "David, you're not going to come in here and say that you don't understand what's happening and then answer it... You nailed it.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@fooledbyprimes": {
+  "count": 1,
+  "avg": 0,
+  "pos": 0,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:20:03",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Fooled by Prime says 120 bones... Full Prime says 3.14159.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@Quigago": {
+  "count": 1,
+  "avg": 1,
+  "pos": 1,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "teases": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "iFrEETnjZtg",
+    "time": "0:14:13",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "If Quigago doesn't like it, that's always a positive indicator... No hate on Quago... That's a compliment to Quagago.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@employer-x": {
+  "count": 3,
+  "avg": 0.67,
+  "pos": 2,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "teases": 1,
+   "disagrees": 1,
+   "thanks": 1
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "0:27:01",
+    "sentiment": 1,
+    "kind": "teases",
+    "quote": "How dare you? Employer X",
+    "confidence": "medium"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "1:23:06",
+    "sentiment": 0,
+    "kind": "disagrees",
+    "quote": "But employer, imagine you're playing the game. An update comes in... the game totally freezes up on you... then bang spawns you on the platform.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "5:15:27",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Take it easy. Love from South Africa. Employer X. Thank you so much.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@Ameerkashif": {
+  "count": 3,
+  "avg": 0.67,
+  "pos": 2,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "thanks": 1,
+   "reads_message": 1,
+   "agrees": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:06:44",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Amir, thank you so much for being here. I really appreciate it... I couldn't agree more.",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:17:02",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Amir says, \"Cold storage.\"",
+    "confidence": "high"
+   },
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:43:27",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Amir says, \"We them guys.\" Yes, we are.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@iamdonh": {
+  "count": 3,
+  "avg": 0.67,
+  "pos": 2,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "agrees": 2,
+   "disagrees": 1
+  },
+  "streams": 3,
+  "items": [
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "0:15:36",
+    "sentiment": 0,
+    "kind": "disagrees",
+    "quote": "I Am Don says Mac mini farm incoming. Do you think that's our best bet, Don? I don't think that's the right path right now.",
+    "confidence": "high"
+   },
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "0:15:42",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "That's fair. That is fair. I am Don.",
+    "confidence": "high"
+   },
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "0:40:58",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "I am Don says I love Opus on medium. Don... sometimes I just prefer it on medium. Like even prefer it over extra high.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@shonifari": {
+  "count": 1,
+  "avg": 1,
+  "pos": 1,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "thanks": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "4:44:05",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Shony, thank you so much.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@slop_enjoyerr": {
+  "count": 2,
+  "avg": 1,
+  "pos": 2,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "thanks": 1,
+   "agrees": 1
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "10:35:27",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Slop Enjoyer, thank you so much. I really appreciate it.",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "3:12:49",
+    "sentiment": 1,
+    "kind": "agrees",
+    "quote": "Floors should be a person and rooms should be repos. That's a good idea. Slop Enjoyer",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@yokatamin": {
+  "count": 1,
+  "avg": 1,
+  "pos": 1,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "thanks": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "H_kXcU9o7Bg",
+    "time": "3:54:53",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Yoka, I think you're new. I think this is your first day here. I appreciate you being here.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@MR.REDACTED1": {
+  "count": 1,
+  "avg": 1,
+  "pos": 1,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "thanks": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "3:54:36",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Your AD is sick, dude. Thank you so much, Victor. Mr. Redacted. I appreciate that.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@Shhhmooke": {
+  "count": 2,
+  "avg": 0.5,
+  "pos": 1,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "greeting": 1,
+   "reads_message": 1
+  },
+  "streams": 2,
+  "items": [
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "5:32:17",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Smoke. What's up? What's up?",
+    "confidence": "high"
+   },
+   {
+    "video": "iFrEETnjZtg",
+    "time": "2:54:04",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Schmoke understands it.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@TheMMAHawk": {
+  "count": 1,
+  "avg": 0,
+  "pos": 0,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:27:17",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "The MMA Hawk can't wait to play it. It's unbelievable.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@Finance_Flynn": {
+  "count": 1,
+  "avg": 2,
+  "pos": 1,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "praises": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "5E0BWd2WxT8",
+    "time": "0:50:51",
+    "sentiment": 2,
+    "kind": "praises",
+    "quote": "I'm only at 73 subs. So, this is huge. Thanks for the advice, Finance Flynn. Amazing. Awesome. I love that so much.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@Mousebear3": {
+  "count": 1,
+  "avg": 1,
+  "pos": 1,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "greeting": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "iFrEETnjZtg",
+    "time": "4:00:46",
+    "sentiment": 1,
+    "kind": "greeting",
+    "quote": "Mouse bear, what's up?",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@IAmLusion": {
+  "count": 1,
+  "avg": 1,
+  "pos": 1,
+  "neu": 0,
+  "neg": 0,
+  "kinds": {
+   "thanks": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "BbVtfwNYPUA",
+    "time": "2:39:54",
+    "sentiment": 1,
+    "kind": "thanks",
+    "quote": "Thank you so much, Humble. Thank you, I am Lusion.",
+    "confidence": "high"
+   }
+  ]
+ },
+ "@brunoczr": {
+  "count": 1,
+  "avg": 0,
+  "pos": 0,
+  "neu": 1,
+  "neg": 0,
+  "kinds": {
+   "reads_message": 1
+  },
+  "streams": 1,
+  "items": [
+   {
+    "video": "_kDKm6SW8dY",
+    "time": "4:38:24",
+    "sentiment": 0,
+    "kind": "reads_message",
+    "quote": "Bruno says W.",
+    "confidence": "high"
+   }
+  ]
+ }
+}
