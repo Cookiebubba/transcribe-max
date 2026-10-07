@@ -144,6 +144,7 @@ button, select, input, textarea { font: inherit; color: inherit }
 
 .toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); border-radius: 999px;
   padding: 10px 10px 10px 18px; display: flex; gap: 12px; align-items: center; font-size: 14px; z-index: 60; box-shadow: 0 10px 30px -10px rgba(0,0,0,.4) }
+.toast[hidden], .more[hidden] { display: none }
 .toast button { border: 0; background: var(--honey); color: var(--honey-ink); border-radius: 999px; padding: 5px 12px; font-weight: 600; cursor: pointer }
 /* stats: one card, three sections */
 .stats { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); display: grid; grid-template-columns: 1.15fr 1fr 1fr; overflow: hidden }
@@ -176,12 +177,29 @@ button, select, input, textarea { font: inherit; color: inherit }
 .dcard .t { flex: 1 1 260px; min-width: 0; display: grid; gap: 2px }
 .dcard .t strong { font-weight: 600; text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--no) 60%, transparent) }
 @media (prefers-reduced-motion: reduce) { .stack i, .tagbars em i { transition: none } .live { animation: none } .kpi.bump b { animation: none } }
+/* how-to card + reader */
+.howto { display: flex; align-items: center; gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 10px 10px 18px }
+.howto .ico { font: 600 12px/1 var(--f-mono); color: var(--honey); letter-spacing: -.05em; white-space: pre }
+.howto strong { font-weight: 600; margin-right: auto }
+.reader { border: 0; padding: 0; border-radius: var(--r); background: var(--card); color: var(--ink); width: min(760px, calc(100vw - 32px)); max-height: min(86vh, 900px); box-shadow: 0 30px 80px -20px rgba(0,0,0,.45) }
+.reader::backdrop { background: color-mix(in srgb, var(--ink) 40%, transparent) }
+.reader .rhead { position: sticky; top: 0; display: flex; gap: 8px; align-items: center; padding: 14px 16px 14px 24px; background: var(--card); border-bottom: 1px solid var(--line) }
+.reader .rhead strong { margin-right: auto; font-weight: 600 }
+.reader .rbody { padding: 8px 28px 28px; font-size: 15px; line-height: 1.6 }
+.reader h1 { font-size: 24px; margin: 18px 0 6px } .reader h2 { font-size: 17px; margin: 22px 0 6px } .reader p { margin: 8px 0; max-width: 68ch }
+.reader ul, .reader ol { margin: 6px 0; padding-left: 22px; display: grid; gap: 4px } .reader code { font: 13px var(--f-mono); background: var(--bg); border-radius: 6px; padding: 1px 5px }
+.reader pre { background: var(--bg); border-radius: 16px; padding: 12px 14px; overflow-x: auto; font: 12.5px/1.5 var(--f-mono) } .reader pre code { background: none; padding: 0 }
 .foot { font: 12px var(--f-mono); color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; align-items: center }
 .foot button { border: 0; background: none; color: var(--muted); text-decoration: underline; cursor: pointer; padding: 0; font: inherit }
 @media (prefers-reduced-motion: reduce) { .card.flash { animation: none } }
 </style>
 
 <div class="wrap">
+  <div class="howto" aria-label="How to Hive">
+    <span class="ico" aria-hidden="true">&lt;&gt;&lt;&gt;</span><strong>How to Hive</strong>
+    <button class="btn" type="button" id="howto-read">Read</button>
+    <button class="btn ok" type="button" id="howto-copy">Copy</button>
+  </div>
   <header class="brand">
     <pre class="comb" id="comb" aria-hidden="true"></pre>
     <div><div class="word">hive<b>.</b>code</div><small>Chat ideas in. Shipped features out.</small></div>
@@ -196,6 +214,10 @@ button, select, input, textarea { font: inherit; color: inherit }
   <main id="page"></main>
   <div class="foot"><span>Preview build · sample data from Max's Sep 23 – Oct 6 stream chats · changes save in this browser</span><button type="button" id="reset">Reset preview</button></div>
 </div>
+<dialog class="reader" id="reader" aria-labelledby="reader-h">
+  <div class="rhead"><strong id="reader-h">How to Hive</strong><button class="btn ok" type="button" id="reader-copy">Copy</button><button class="btn" type="button" id="reader-close">Close</button></div>
+  <div class="rbody" id="reader-body"></div>
+</dialog>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script>
@@ -674,6 +696,42 @@ function renderStats() {
   void tb.offsetWidth;
   requestAnimationFrame(() => top.forEach(([t, n]) => { const el = tb.querySelector(`[data-t="${t}"] em i`); if (el) el.style.width = (100 * n / max) + "%"; }));
 }
+
+/* ---------- how to hive ---------- */
+const HOWTO = "# How to Hive\n\nHive Code turns a streamer's live chat into a reviewed, ranked, credited build queue. You are the agent running it. Nothing below assumes a fixed stack: use whatever access this user already has (API keys, CLIs, a browser or computer-use session, scraping services, local models), and ask the user only when you have no route at all.\n\n## 0. Before you start\n- Ask for, or find in the project, the channel and which streams to process (default: the most recent finished stream).\n- Check what you can reach: shell, network, browser or computer use, API keys in env vars, MCP tools, paid scraping services. Prefer a route the user already pays for or has set up.\n- Never guess a missing value. If a step fails, say which step, what you tried and what would unblock it.\n\n## 1. Get the chat\nGoal: every chat message from the stream with author handle, text, and offset into the VOD in seconds.\nPick the first route that works:\n- **Downloader with chat replay**: e.g. `yt-dlp --skip-download --write-subs --sub-langs live_chat <url>` writes the replay as JSON lines (YouTube). For Twitch, a VOD chat downloader or the platform API.\n- **Scraping service**: a hosted live-chat replay scraper (for example an Apify actor) when the machine's IP is blocked.\n- **Official API**: works for chat while the stream is live; it can't fetch replays after the fact.\n- **Computer use**: open the replay, expand chat and scroll it, capturing messages with their timestamps. Slow; use it as the last resort.\nKeep the raw export. Drop the streamer's own messages and bot commands (`!discord`, nightbot replies) before analysis, but keep them in the raw file.\n\n## 2. Get the VOD and what was said\nGoal: a timestamped transcript, plus key frames when something important was on screen.\n- **Captions first**: auto or manual captions via a downloader or transcript API.\n- **No captions**: download audio only (`yt-dlp -x`) and transcribe with Whisper (local or API) or a hosted transcription service. Long streams may need splitting into chunks.\n- **On-screen content**: for pages, patch notes or game footage the streamer shows, use a video-capable model, or grab frames with `ffmpeg -ss <t> -frames:v 1` and read them.\n- Align everything on VOD seconds so chat, speech and frames line up.\n\n## 3. Turn chat into review cards\nWrite one item per actionable suggestion or bug report:\n```json\n{\"id\": \"r-<stream>-<n>\", \"t\": \"Short imperative title\", \"d\": \"One-line plain description\",\n \"q\": \"verbatim chat message\", \"who\": [\"@handle\", \"@cohandle\"], \"date\": \"YYYY-MM-DD\",\n \"at\": \"h:mm:ss\", \"tags\": [\"bug\", \"hud\"], \"tri\": 1, \"st\": \"review\"}\n```\nRules:\n- **Quotes are verbatim.** Copy the message exactly and check it against the raw export. The first handle in `who` must be the quote's author.\n- **Merge duplicates.** Same idea from several people becomes one card with everyone in `who`, earliest message as the quote.\n- **Tags** come from the handbook's tag list. Add a new tag only when nothing fits, and say so.\n- **Triage**: 0 = broken or blocks play, 1 = high-impact or repeated often, 2 = normal, 3 = big or speculative idea.\n- **Context matters**: use the transcript to see whether the streamer agreed, laughed it off or said no. Note it in `d`. Jokes, trolling and off-topic messages are skipped, not denied.\n- Everything new lands as `st: \"review\"`. Only a human approves or denies.\n\n## 4. Suggest milestones\nAfter a batch, group approved and high-triage cards into 2\u20134 milestones (e.g. \"Copter v1: flight model, door gun, helipads\"). For each give the cards, a one-line goal and a rough order. Propose them to the user; don't create them silently.\n\n## 5. Learn the user's preferences\nWatch what the user approves, denies and reorders, and what the streamer says about features on stream. When a pattern repeats (e.g. denies anything pay-to-win, always ranks HUD clarity high), propose a handbook line under the right tag with the evidence (card ids, VOD timestamp). Add it only after the user agrees. Never rewrite existing lines without asking.\n\n## 6. Run the dashboard live\nThe page is one self-contained HTML file. To make it a live dashboard:\n1. Put it in a folder with a `hive.json` data file holding `{ \"items\": {...}, \"order\": [...], \"hb\": {...} }`. That's the same shape the preview stores in the browser under the `hivecode.preview.v2` key.\n2. Change the page's startup to `fetch(\"./hive.json\")` and fall back to the built-in sample if that fails. Refresh on an interval or when the tab regains focus.\n3. Serve the folder with whatever is available: `python3 -m http.server 8787`, `npx serve`, `bunx serve`, or a framework dev server. Open `http://localhost:8787/hive-code.html`.\n4. Agents update `hive.json` by writing a temp file and renaming it over the old one, so the page never reads a half-written file.\n\n## 7. Build the approval gate\nThe gate is the only thing that lets an agent start work. Smallest useful backend, in any stack (Node, Bun, Python, a serverless function, a hosted DB):\n- `GET /api/state` returns items, order and handbook.\n- `POST /api/items/:id/decision` with `{ \"decision\": \"approve\" | \"deny\" }` sets `st` and appends to a decision log (who, when, previous state).\n- `PATCH /api/items/:id` for triage, tags and title. `PUT /api/order` with the full ranked id list.\n- `POST /api/items/:id/shipped` with a commit or PR link.\n- `GET/PUT /api/handbook`.\nPersist to a JSON file, SQLite or the user's existing database. Point the page's buttons at these endpoints instead of the browser's local storage. If the dashboard is reachable beyond localhost, require a token.\nGate rules for builder agents:\n- Only pick up `st: \"approved\"`, highest rank first, P0 before everything.\n- Never build `review` or `denied` cards, even if they look easy.\n- When done, mark shipped with the link, and credit everyone in `who` in the changelog.\n\n## 8. Read the handbook before building\nBefore touching code for a card:\n1. Read **General**, then every tag section the card has.\n2. Precedence: the card's own description, then tag preferences, then general rules. If two lines conflict, ask.\n3. Name the handbook lines you followed in the PR or commit message.\n4. If you learned something new while building, propose it as a handbook line (step 5).\n";
+function howtoText() {
+  const tags = Object.keys(S.hb.tags).sort();
+  return HOWTO + "\n\n## This project right now\n- Tags in use: " + tags.map(t => "`" + t + "`").join(", ") +
+    "\n- Cards: " + counts().review + " in review, " + Object.values(S.items).filter(i => i.st === "approved").length + " approved, " +
+    Object.values(S.items).filter(i => i.st === "denied").length + " denied\n\n" + hbMarkdown().replace(/^# .*\n/, "### Current handbook\n");
+}
+function mdToHtml(md) {
+  const inline = t => esc(t).replace(/`([^`]+)`/g, "<code>$1</code>").replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  const out = []; let list = null, code = null;
+  const close = () => { if (list) { out.push(`</${list}>`); list = null; } };
+  md.split("\n").forEach(l => {
+    if (l.startsWith("```")) { if (code) { out.push(`<pre><code>${esc(code.join("\n"))}</code></pre>`); code = null; } else { close(); code = []; } return; }
+    if (code) { code.push(l); return; }
+    let m;
+    if ((m = l.match(/^(#{1,3}) (.*)/))) { close(); const n = Math.min(m[1].length, 2); out.push(`<h${n}>${inline(m[2])}</h${n}>`); }
+    else if ((m = l.match(/^- (.*)/))) { if (list !== "ul") { close(); list = "ul"; out.push("<ul>"); } out.push(`<li>${inline(m[1])}</li>`); }
+    else if ((m = l.match(/^\d+\. (.*)/))) { if (list !== "ol") { close(); list = "ol"; out.push("<ol>"); } out.push(`<li>${inline(m[1])}</li>`); }
+    else if (l.trim()) { close(); out.push(`<p>${inline(l)}</p>`); } else close();
+  });
+  close(); return out.join("");
+}
+function copyHowto() {
+  navigator.clipboard.writeText(howtoText()).then(() => toast("How to Hive copied as Markdown"), () => toast("Copy is blocked here. Open Read and select the text instead."));
+}
+const reader = document.getElementById("reader");
+document.getElementById("howto-read").onclick = () => {
+  document.getElementById("reader-body").innerHTML = mdToHtml(howtoText());
+  reader.showModal ? reader.showModal() : reader.setAttribute("open", "");
+};
+document.getElementById("reader-close").onclick = () => reader.close ? reader.close() : reader.removeAttribute("open");
+reader.addEventListener("click", e => { if (e.target === reader) reader.close(); });
+document.getElementById("howto-copy").onclick = copyHowto;
+document.getElementById("reader-copy").onclick = copyHowto;
 
 /* ---------- boot ---------- */
 function render() {
