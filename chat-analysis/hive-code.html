@@ -1,0 +1,605 @@
+<title>Hive Code</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: one quiet column app. Wordmark + four tabs on top; each page is a stack of big 30px-radius
+   cards. Honey is the only accent; approve/deny use their own semantic colors. */
+:root {
+  --bg: #f3f4f1; --card: #ffffff; --ink: #1b1b18; --muted: #6c6b63; --line: #e2e2dc; --line-2: #d2d2ca;
+  --honey: #e2a114; --honey-ink: #3a2700; --honey-soft: #fbefcf;
+  --ok: #2c8a57; --ok-soft: #e1f2e8; --no: #c2453a; --no-soft: #f8e3e0;
+  --t0: #c2453a; --t1: #e2a114; --t2: #4f7fb8; --t3: #8a8a80;
+  --f-ui: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --r: 30px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11110f; --card: #1a1a17; --ink: #ecebe6; --muted: #9b998f; --line: #2a2a26; --line-2: #3a3a34;
+  --honey: #f4b731; --honey-ink: #2a1c00; --honey-soft: #3a2c0c;
+  --ok: #5cc98d; --ok-soft: #173826; --no: #ef7d70; --no-soft: #3d1c18;
+  --t0: #ef7d70; --t1: #f4b731; --t2: #7fa9dd; --t3: #8f8d84; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11110f; --card: #1a1a17; --ink: #ecebe6; --muted: #9b998f; --line: #2a2a26; --line-2: #3a3a34;
+  --honey: #f4b731; --honey-ink: #2a1c00; --honey-soft: #3a2c0c;
+  --ok: #5cc98d; --ok-soft: #173826; --no: #ef7d70; --no-soft: #3d1c18;
+  --t0: #ef7d70; --t1: #f4b731; --t2: #7fa9dd; --t3: #8f8d84; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--f-ui) }
+button, select, input, textarea { font: inherit; color: inherit }
+:focus-visible { outline: 2px solid var(--honey); outline-offset: 2px }
+.wrap { max-width: 920px; margin: 0 auto; padding-inline: 20px; padding-block: 26px 120px; display: grid; gap: 22px }
+.wrap > * { min-width: 0 }
+@media (max-width: 520px) { .wrap { padding-inline: 16px } }
+
+/* brand */
+.brand { display: flex; align-items: center; gap: 18px; flex-wrap: wrap }
+.comb { margin: 0; font: 600 12px/1.12 var(--f-mono); color: var(--honey); white-space: pre; user-select: none }
+.comb i { font-style: normal; color: var(--ink) }
+.word { font: 600 30px/1 var(--f-mono); letter-spacing: -.02em }
+.word b { color: var(--honey); font-weight: 600 }
+.brand small { display: block; font: 13px var(--f-ui); color: var(--muted); letter-spacing: 0; margin-top: 6px }
+
+/* tabs */
+.tabs { display: flex; gap: 4px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 4px; overflow-x: auto; scrollbar-width: none }
+.tab { border: 0; background: none; padding: 9px 16px; border-radius: 999px; cursor: pointer; white-space: nowrap; color: var(--muted); font-weight: 500 }
+.tab[aria-selected="true"] { background: var(--ink); color: var(--bg) }
+.tab .n { font: 12px var(--f-mono); opacity: .7; margin-left: 4px }
+
+/* toolbar */
+.bar { display: grid; gap: 10px }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center }
+.chip { border: 1px solid var(--line-2); background: var(--card); border-radius: 999px; padding: 6px 12px; cursor: pointer; font-size: 13px }
+.chip[aria-pressed="true"] { background: var(--honey-soft); border-color: var(--honey); color: var(--ink) }
+.sel { border: 1px solid var(--line-2); background: var(--card); border-radius: 999px; padding: 7px 12px; cursor: pointer; font-size: 13px }
+.lbl { font: 12px var(--f-mono); color: var(--muted); margin-right: 2px }
+.bulk { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 14px }
+.bulk .count { font: 13px var(--f-mono); color: var(--muted); margin-right: auto }
+.btn { border: 1px solid var(--line-2); background: var(--card); border-radius: 999px; padding: 7px 14px; cursor: pointer; font-weight: 500; font-size: 13px; display: inline-flex; gap: 6px; align-items: center }
+.btn:disabled { opacity: .4; cursor: default }
+.btn.ok { background: var(--ok-soft); border-color: transparent; color: var(--ok) }
+.btn.no { background: var(--no-soft); border-color: transparent; color: var(--no) }
+.btn.ghost { border-color: transparent; background: none; color: var(--muted) }
+.check { width: 20px; height: 20px; accent-color: var(--honey); cursor: pointer; flex: none }
+
+/* cards */
+.list { display: grid; gap: 12px; position: relative }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); display: grid; grid-template-columns: 34px 26px minmax(0, 1fr); gap: 4px 12px; padding: 18px 20px 18px 10px; position: relative; transition: border-color .15s, box-shadow .15s }
+.card.selected { border-color: var(--honey); box-shadow: 0 0 0 1px var(--honey) inset }
+.card.dragging { opacity: .3 }
+.card.flash { animation: flash .9s ease-out }
+@keyframes flash { from { box-shadow: 0 0 0 3px var(--honey) } }
+.grip { grid-row: 1 / span 2; align-self: stretch; display: grid; place-items: center; border: 0; background: none; cursor: grab; border-radius: 16px; color: var(--muted); touch-action: none; padding: 0 }
+.grip:hover { background: var(--bg); color: var(--ink) }
+.grip[aria-disabled="true"] { cursor: not-allowed; opacity: .35 }
+.grip svg { width: 12px; height: 20px; fill: currentColor }
+.card .check { margin-top: 3px }
+.main { display: grid; gap: 8px; min-width: 0 }
+.top { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap }
+.rank { font: 600 13px var(--f-mono); color: var(--muted); min-width: 26px; font-variant-numeric: tabular-nums }
+.card h3 { margin: 0; font-size: 17px; font-weight: 600; line-height: 1.3; flex: 1 1 260px; min-width: 0; text-wrap: balance }
+.desc { margin: 0; color: var(--muted); font-size: 14px }
+.quote { margin: 0; font-size: 13.5px; border-left: 3px solid var(--honey); padding: 2px 0 2px 10px; color: var(--ink) }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font: 12px var(--f-mono); color: var(--muted) }
+.meta a { color: var(--muted) }
+.who { color: var(--ink) }
+.tag { border-radius: 999px; padding: 2px 9px; background: var(--bg); border: 1px solid var(--line) }
+.actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 2px }
+.tri { border: 1px solid var(--line-2); border-radius: 999px; padding: 5px 10px; background: var(--card); font-size: 13px; cursor: pointer }
+.dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none }
+.spacer { flex: 1 }
+.empty { border: 1px dashed var(--line-2); border-radius: var(--r); padding: 28px; text-align: center; color: var(--muted) }
+.drop-line { position: absolute; left: 12px; right: 12px; height: 4px; border-radius: 4px; background: var(--honey); pointer-events: none; z-index: 4; transform: translateY(-8px) }
+.ghost { position: fixed; z-index: 50; pointer-events: none; left: 0; top: 0; background: var(--card); border: 1px solid var(--honey); border-radius: var(--r);
+  padding: 14px 18px; box-shadow: 0 18px 40px -14px rgba(0,0,0,.35); max-width: min(560px, 90vw); font-weight: 600; display: flex; gap: 10px; align-items: center }
+.ghost .stack { font: 600 12px var(--f-mono); background: var(--honey); color: var(--honey-ink); border-radius: 999px; padding: 2px 9px }
+.hint { font: 12px var(--f-mono); color: var(--muted) }
+@media (max-width: 560px) { .card { grid-template-columns: 28px 24px minmax(0, 1fr); padding-right: 14px } }
+
+/* built */
+.section-h { display: flex; align-items: baseline; gap: 10px; margin: 6px 0 0 }
+.section-h h2 { margin: 0; font-size: 18px; font-weight: 600 }
+.section-h span { font: 12px var(--f-mono); color: var(--muted) }
+.bcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 22px; display: grid; gap: 8px }
+.pill { font: 600 11px var(--f-mono); border-radius: 999px; padding: 3px 10px; letter-spacing: .03em; white-space: nowrap }
+.pill.q { background: var(--honey-soft); color: var(--ink) } .pill.s { background: var(--ok-soft); color: var(--ok) } .pill.d { background: var(--no-soft); color: var(--no) }
+
+/* credits */
+.badges { display: flex; flex-wrap: wrap; gap: 8px }
+.badge { display: inline-flex; gap: 6px; align-items: center; border-radius: 999px; padding: 3px 10px 3px 6px; font: 600 12px var(--f-mono); border: 1px solid var(--line-2); background: var(--card); white-space: nowrap }
+.badge .hex { width: 14px; height: 15px; clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%) }
+.people { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden }
+.person { border-bottom: 1px solid var(--line) }
+.person:last-child { border-bottom: 0 }
+.person > button { width: 100%; border: 0; background: none; cursor: pointer; display: grid; grid-template-columns: 36px minmax(0, 1fr) auto 140px 36px; gap: 12px; align-items: center; padding: 14px 22px; text-align: left }
+.person > button:hover { background: var(--bg) }
+.person .pos { font: 600 14px var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums }
+.person .nm { font-weight: 600; overflow-wrap: anywhere }
+.person .num { font: 600 15px var(--f-mono); text-align: right; font-variant-numeric: tabular-nums }
+.meter { height: 8px; border-radius: 8px; background: var(--bg); overflow: hidden }
+.meter b { display: block; height: 100%; background: var(--honey); border-radius: 8px }
+.person .open { padding: 0 22px 16px 70px; display: grid; gap: 6px }
+.person .open div { display: flex; gap: 10px; align-items: baseline; font-size: 14px; flex-wrap: wrap }
+@media (max-width: 600px) { .person > button { grid-template-columns: 28px minmax(0, 1fr) auto; padding-inline: 16px } .person .meter, .person .num2 { display: none } .person .open { padding-left: 16px } }
+
+/* handbook */
+.hb { display: grid; gap: 14px }
+.hcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 20px 22px; display: grid; gap: 10px }
+.hcard h2 { margin: 0; font-size: 17px; font-weight: 600; display: flex; gap: 10px; align-items: baseline }
+.hcard h2 span { font: 12px var(--f-mono); color: var(--muted); font-weight: 400 }
+.prefs { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px }
+.prefs li { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 8px; align-items: start; font-size: 14px }
+.prefs li .n { font: 12px var(--f-mono); color: var(--muted); padding-top: 2px }
+.prefs li [contenteditable] { outline: none; border-radius: 8px; padding: 1px 4px; margin: -1px -4px }
+.prefs li [contenteditable]:focus { background: var(--bg); box-shadow: 0 0 0 1px var(--line-2) }
+.x { border: 0; background: none; color: var(--muted); cursor: pointer; border-radius: 999px; width: 26px; height: 26px; line-height: 1 }
+.x:hover { background: var(--no-soft); color: var(--no) }
+.add { display: flex; gap: 8px }
+.add input { flex: 1; min-width: 0; border: 1px solid var(--line-2); border-radius: 999px; padding: 7px 14px; background: var(--bg) }
+.toc { display: flex; flex-wrap: wrap; gap: 8px }
+
+.toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); border-radius: 999px;
+  padding: 10px 10px 10px 18px; display: flex; gap: 12px; align-items: center; font-size: 14px; z-index: 60; box-shadow: 0 10px 30px -10px rgba(0,0,0,.4) }
+.toast button { border: 0; background: var(--honey); color: var(--honey-ink); border-radius: 999px; padding: 5px 12px; font-weight: 600; cursor: pointer }
+.foot { font: 12px var(--f-mono); color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; align-items: center }
+.foot button { border: 0; background: none; color: var(--muted); text-decoration: underline; cursor: pointer; padding: 0; font: inherit }
+@media (prefers-reduced-motion: reduce) { .card.flash { animation: none } }
+</style>
+
+<div class="wrap">
+  <header class="brand">
+    <pre class="comb" id="comb" aria-hidden="true"></pre>
+    <div><div class="word">hive<b>.</b>code</div><small>Chat ideas in. Shipped features out.</small></div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Pages" id="tabs"></nav>
+  <main id="page"></main>
+  <div class="foot"><span>Preview build · sample data from Max's Sep 23 – Oct 6 stream chats · changes save in this browser</span><button type="button" id="reset">Reset preview</button></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script>
+/* ---------- wordmark: a small ASCII honeycomb whose cells hold code glyphs ---------- */
+const GLY = ["{}", "<>", ";;", "=>", "01", "()", "&&", "//", "[]", "::", "!=", "++", "fn", "$_", "</"];
+const COMB = [
+  " __    __    __",
+  "/@@\\__/@@\\__/@@\\__",
+  "\\__/@@\\__/@@\\__/@@\\",
+  "/@@\\__/@@\\__/@@\\__/",
+  "\\__/  \\__/  \\__/"];
+const combEl = document.getElementById("comb");
+let cells = [];
+function drawComb() {
+  let k = 0;
+  combEl.innerHTML = COMB.map(l => l.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))
+    .replace(/@@/g, () => `<i>${(cells[k++] || "  ").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))}</i>`)).join("\n");
+}
+const nCells = COMB.join("").split("@@").length - 1;
+cells = Array.from({length: nCells}, (_, i) => GLY[i % GLY.length]);
+drawComb();
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches)
+  setInterval(() => { cells[Math.floor(Math.random() * nCells)] = GLY[Math.floor(Math.random() * GLY.length)]; drawComb(); }, 1400);
+
+/* ---------- data (real suggestions from stream chat; statuses are sample) ---------- */
+const V = {"2026-10-06": "vEjDwWYnaWE", "2026-09-30": "iFrEETnjZtg", "2026-09-28": "_kDKm6SW8dY", "2026-09-25": "5E0BWd2WxT8", "2026-09-23": "BbVtfwNYPUA"};
+const TRI = [
+  {v: 0, name: "P0 · Now", c: "var(--t0)"}, {v: 1, name: "P1 · Next", c: "var(--t1)"},
+  {v: 2, name: "P2 · Later", c: "var(--t2)"}, {v: 3, name: "P3 · Someday", c: "var(--t3)"}];
+const SEED = [
+ ["Stairs clip into walls at POIs", "Stair meshes sit too close to walls and catch the camera. Has slipped past several agent loops.", "We need to grab screenshots of the stairs too close to the wall - this issue has escaped the last few loops lol", ["@therealkosmicnomad"], "2026-10-06", "1:53:50", ["bug", "map"], 0],
+ ["Scoping while crouched is broken", "ADS from a crouch snaps the camera back to standing height.", "Scoped in whilst crouched is broken", ["@Jarc123-i4m"], "2026-10-06", "2:08:05", ["bug", "combat"], 0],
+ ["Match lag and z-fighting faces", "Players reported heavy lag in the first multiplayer match and flickering overlapping faces.", "theres a lot of lag. and a lot of faces with z-depth fighting", ["@HeatStoker69", "@xthetrader_"], "2026-10-06", "2:10:08", ["bug", "performance"], 0],
+ ["Teammates are hard to tell apart", "Nothing marks who is on your team during a match.", "the only thing is it wasn't too obvious who were the other team players", ["@oscargalvez7"], "2026-10-06", "2:18:19", ["hud", "bug"], 1],
+ ["Texture flicker and floating props", "Ground props hover above terrain; some textures flicker at distance.", "fix the flickering issues with textures, fix all floating objects in the world that should be grounded", ["@ALIENDISTRICT51_OFFICIAL"], "2026-10-06", "0:38:55", ["bug", "art"], 1],
+ ["Iron sights are rotated", "Front and rear sights on two rifles are off the barrel axis.", "the iron sights are rotated on the gun", ["@HeatStoker69", "@welshe222"], "2026-10-06", "1:36:28", ["bug", "combat"], 1],
+ ["Hide crosshair while driving", "Hip-fire crosshair shows while driving and while aiming from a vehicle seat.", "seems like the crosshairs still show while ADSing while inside a vehicle, should be an easy fix for an agent", ["@HNewtonAI"], "2026-10-06", "2:41:22", ["bug", "hud", "vehicles"], 1],
+ ["Ping a spot for your team", "Mark a location on the map or in the world for squadmates.", "you have to be able to ping something on the map for your team to see", ["@TheZooomOut"], "2026-10-06", "1:13:20", ["hud"], 1],
+ ["Controller support and aim assist", "Most repeated request across streams.", "Aim assist for controller", ["@The_Chessman", "@of9490", "@ALIENDISTRICT51_OFFICIAL"], "2026-10-06", "0:36:55", ["meta", "combat"], 1],
+ ["Helicopter speed scales with altitude", "Slower near the ground, faster up high for travel. Easy to pilot.", "Helicopter should probably have scaling speed dependent on altitude for balance", ["@BrandynMakes"], "2026-10-06", "1:48:59", ["vehicles"], 1],
+ ["Wider FOV while flying", "Pull the camera back so the copter takes 20–30% of screen height.", "fov should definitely increase while flying a helicopter", ["@HNewtonAI"], "2026-10-06", "2:39:54", ["vehicles"], 1],
+ ["Tuk-tuk takes more damage", "It's the safest place on the map right now.", "the tuc-tuc needs to have less health, and take more damage, otherwise it's too OP", ["@HeatStoker69"], "2026-10-06", "2:41:11", ["vehicles", "combat"], 1],
+ ["Smoother recoil animation", "First-shot kick snaps too hard; recovery feels stiff.", "The recoil animation is... rough", ["@RedMir564"], "2026-10-06", "2:06:17", ["combat", "art"], 1],
+ ["In-game bug reporter", "A /kongbot command that logs what the player sees, with location, for the agents.", "What if you added a bug reporting feature (in-game) to help speed up development?", ["@therealkosmicnomad"], "2026-09-30", "1:58:48", ["meta"], 1],
+ ["Banana grenades", "Grenades become mini banana bunches; pulling the peel is the pin.", "okay if the grenades are bananas, pulling the peel should be the action as if you were pulling a real pin lol", ["@itsstayunknown", "@NinjaDragonWizard"], "2026-10-06", "0:36:06", ["combat"], 2],
+ ["Low-ammo counter turns red", "Magazine count changes color under 25%.", "how about the ammo quantity number goes red when its low?", ["@smickle87"], "2026-10-06", "0:39:28", ["hud"], 2],
+ ["POI name on first entry", "Big banner the first time you enter a POI, then a small label by the minimap.", "UI that shows up when you enter a new POI but only show it in the center the first time they go to the POI", ["@HNewtonAI", "@The_Chessman"], "2026-10-06", "0:46:31", ["hud", "map"], 2],
+ ["Weapon wheel", "Hold to open a quick-select wheel for toolbar equipment.", "adda gta style weapon wheel as a quick inventory to asigned equipment on tool bar menu", ["@Superdoopercooper"], "2026-10-06", "1:39:37", ["hud", "combat"], 2],
+ ["Bushes and ferns to hide in", "Dense grass and fern clumps that break line of sight.", "add clumps of lush grass/bushes/ferns so you can hide in it", ["@durlanjo"], "2026-10-06", "0:58:54", ["map"], 2],
+ ["Hitmarker sounds", "Separate sounds for body hits, headshots and confirmed kills.", "make the hitmarkers satisfying, old cods like MW2 have great ones", ["@HNewtonAI"], "2026-10-06", "2:44:10", ["audio", "combat"], 2],
+ ["Copter door gun with limited ammo", "Needs a passenger to shoot; ammo cap for fairness.", "helicopters should have a limited amount of bullets for the minigun to balance out the game for fairness", ["@ALIENDISTRICT51_OFFICIAL", "@Shhhmooke"], "2026-10-06", "1:53:24", ["vehicles", "combat"], 2],
+ ["Rotors break near trees", "Blades take damage close to trees and buildings.", "have the Heli's blades be damageable when they get close to trees and buildings", ["@Jdevinn"], "2026-10-06", "1:53:41", ["vehicles"], 2],
+ ["Move plane info under the minimap", "Declutter the center of the HUD.", "Should put the plane departs below the mini map as well so its not just a cluster of central information", ["@welshe222"], "2026-10-06", "0:55:31", ["hud"], 2],
+ ["Parachute hands look janky", "Hand pose while holding the chute needs a pass.", "The hands for parachute holding could use a little work, they look abit janky", ["@welshe222"], "2026-10-06", "0:57:00", ["art"], 2],
+ ["Compact HUD with transparent boxes", "HUD is too large and generic.", "also the hud maybe should be more compact, and use transparent boxes instead?", ["@d3vere"], "2026-09-30", "1:49:06", ["hud"], 2],
+ ["Rotating, round minimap", "Minimap should turn with the player and be circular.", "Minimap needs to turn with you and not be so sharp maybe more of a circle", ["@Duffy_Adams"], "2026-09-30", "1:52:52", ["hud", "map"], 2],
+ ["Replayable server recording", "Record server activity end to end and sync it to bug reports.", "For the beta gameplay, you should record the server activity in a way that can be played back end to end.", ["@BrandynMakes"], "2026-09-30", "2:03:22", ["meta"], 2],
+ ["Kongs need accessories", "Brown kong characters get mistaken for trees.", "i would add accessories soon the brown kong characters get easily mistaken for a tree", ["@MR.REDACTED1"], "2026-09-25", "4:06:03", ["art"], 2],
+ ["Drop a weapon from inventory", "", "Are you now able to drop a weapon from inventory?", ["@therealkosmicnomad"], "2026-09-28", "2:39:57", ["hud", "combat"], 2],
+ ["Holding space jumps higher", "Jump height depends on how long space is held. Decide if that's intended.", "you jump higher when holding spacebar ._.", ["@vicietor"], "2026-09-28", "10:11:46", ["bug", "movement"], 2],
+ ["Climb trees with a stamina bar", "Hang on until stamina runs out, then jump to the next tree.", "make it where players can climb trees and a stamina bar only allows the player to hang on for so many seconds", ["@ALIENDISTRICT51_OFFICIAL", "@TheZooomOut"], "2026-10-06", "0:48:24", ["movement"], 3],
+ ["Vine ropes and barrel launchers", "Classic kong-style traversal across the map.", "Can you add some og Kong style traversal like vine ropes and barrel launchers throughout the map.", ["@TheMMAHawk"], "2026-09-25", "1:02:41", ["movement", "map"], 3],
+ ["Kong Royale ziplines", "Standard ziplines on the map plus a pickup version.", "you should add Ziplines aswell but kong royale special as a pick up item with standard ones across the map!!", ["@akramabbes7495"], "2026-09-25", "2:19:19", ["movement"], 3],
+ ["Rivers with banana speedboats", "", "Rivers thru out the map with banana speed boats also.", ["@TheMMAHawk"], "2026-09-25", "2:08:36", ["vehicles", "map"], 3],
+ ["Monkey storm killstreak", "Bananas rain from the sky and monkeys land with area damage.", "Monkey storm kill streak - shoot loads of bananas in the sky and have a pack of little moneys land with an AOE like a pred", ["@The_Chessman"], "2026-10-06", "0:38:49", ["combat"], 3],
+ ["One legendary ghillie suit per match", "Spawns at a random POI.", "Should add a legendary ghillie suite only one spawns per game but its really good for hiding in bushes", ["@welshe222"], "2026-10-06", "0:59:35", ["combat", "map"], 3],
+];
+// built page seeds: [title, desc, quote, who, date, at, tags, status, builtDate]
+const BUILT = [
+ ["Homemade banana copter look", "Bamboo-and-scrap helicopter built from things found on the island.", "The banana copter should look \"home made\" like with things around the island", ["@therealkosmicnomad"], "2026-10-06", "1:44:47", ["vehicles", "art"], "approved", "2026-10-07"],
+ ["Helipads on rooftops", "A few buildings get landing pads; copters spawn at more than one.", "There need to be a few buildings on the map that have helipads", ["@NinjaDragonWizard", "@Duffy_Adams"], "2026-10-06", "1:46:02", ["vehicles", "map"], "approved", "2026-10-07"],
+ ["Inventory shows total ammo", "Inventory count now matches the ammo you actually carry.", "the number of ammo showed in the inventory should be the total number of ammo", ["@creepybeat"], "2026-09-28", "2:41:52", ["bug", "hud"], "shipped", "2026-10-01"],
+ ["Chunked rendering with viewport culling", "Only chunks the camera can see are drawn and loaded.", "The technique you want is viewport culling with chunked rendering", ["@humblelifeskills"], "2026-09-23", "1:34:08", ["performance"], "shipped", "2026-09-24"],
+ ["Static distant trees", "Far trees render as static meshes to cut flicker while jumping.", "maybe some are rendered and some are just a static tree when you jump so less flicker", ["@andreaskrbyravn855"], "2026-09-25", "2:57:00", ["performance", "art"], "shipped", "2026-09-26"],
+ ["Lens effect on scopes", "Subtle lensing on scope glass.", "can it add some lensing effect on the scope lens?", ["@HeatStoker69"], "2026-09-30", "1:51:43", ["art", "combat"], "shipped", "2026-10-02"],
+];
+const HANDBOOK = {
+  general: [
+    "Credit every change to the chatter(s) who suggested it.",
+    "One card, one change. Ship the smallest version first.",
+    "Capture before and after screenshots for anything visual.",
+    "Playtest three local rounds before marking a card built.",
+    "Never change an existing control; new keybinds go in settings.",
+  ],
+  tags: {
+    art: ["Fix meshes with Blender scripts, not hand edits.", "Render a wireframe preview to catch gaps and collisions.", "Characters must not read as scenery (kongs vs. trees)."],
+    audio: ["Ambient and quiet by default. POI sounds play once.", "Distinct hit, headshot and kill sounds."],
+    bug: ["Reproduce with a screenshot and map location before fixing.", "Re-check stair and wall clearances on every loop."],
+    combat: ["Power weapons always have limited ammo.", "Banana-themed when it doesn't hurt readability."],
+    hud: ["Compact, semi-transparent panels.", "Highlights use a contrasting color.", "Show big once, then small by the minimap."],
+    map: ["Randomize mythic and legendary spawns per match.", "Lay POIs out on a grid; one agent per POI."],
+    meta: ["Controller support is a standing request; don't break gamepad input."],
+    movement: ["Ape-style traversal: climb, swing, vines.", "Movement tech should have a skill gap but be easy to start."],
+    performance: ["Viewport culling with chunked rendering.", "Static meshes for distant foliage."],
+    vehicles: ["Vehicles take real damage; nothing is a safe box.", "Vehicle weapons need a passenger to fire."],
+  },
+};
+
+/* ---------- state ---------- */
+const KEY = "hivecode.preview.v1";
+function fresh() {
+  const items = {};
+  const order = [];
+  SEED.forEach((s, i) => { const id = "r" + i; order.push(id);
+    items[id] = {id, t: s[0], d: s[1], q: s[2], who: s[3], date: s[4], at: s[5], tags: s[6], tri: s[7], st: "review"}; });
+  BUILT.forEach((s, i) => { const id = "b" + i;
+    items[id] = {id, t: s[0], d: s[1], q: s[2], who: s[3], date: s[4], at: s[5], tags: s[6], tri: 1, st: s[7], built: s[8]}; });
+  return {items, order, hb: JSON.parse(JSON.stringify(HANDBOOK))};
+}
+let S;
+try { S = JSON.parse(localStorage.getItem(KEY)) || fresh(); } catch (e) { S = fresh(); }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+
+const ui = {tab: "review", tags: new Set(), date: "all", sort: "rank", selected: new Set(), openPerson: null};
+const TAGS = [...new Set(Object.values(S.items).flatMap(i => i.tags))].sort();
+const DATES = [...new Set(Object.values(S.items).map(i => i.date))].sort().reverse();
+
+/* ---------- helpers ---------- */
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtD = d => new Date(d + "T12:00:00Z").toLocaleDateString("en-US", {month: "short", day: "numeric", timeZone: "UTC"});
+const secs = t => t.split(":").map(Number).reduce((a, b) => a * 60 + b, 0);
+const link = it => V[it.date] ? `https://www.youtube.com/watch?v=${V[it.date]}&t=${secs(it.at)}s` : null;
+const GRIP = `<svg viewBox="0 0 12 20" aria-hidden="true"><circle cx="3" cy="4" r="1.6"/><circle cx="9" cy="4" r="1.6"/><circle cx="3" cy="10" r="1.6"/><circle cx="9" cy="10" r="1.6"/><circle cx="3" cy="16" r="1.6"/><circle cx="9" cy="16" r="1.6"/></svg>`;
+const page = document.getElementById("page");
+let toastTimer;
+function toast(msg, undo) {
+  const t = document.getElementById("toast");
+  t.innerHTML = `<span>${esc(msg)}</span>${undo ? `<button type="button" id="undo">Undo</button>` : ""}`;
+  t.hidden = false; clearTimeout(toastTimer);
+  if (undo) document.getElementById("undo").onclick = () => { undo(); t.hidden = true; };
+  toastTimer = setTimeout(() => t.hidden = true, 4500);
+}
+function snapshot() { return JSON.stringify(S); }
+function restore(snap) { S = JSON.parse(snap); save(); render(); }
+
+/* ---------- tabs ---------- */
+const TABS = [["review", "Review"], ["built", "Built"], ["credits", "Credits"], ["handbook", "Handbook"]];
+function counts() {
+  const all = Object.values(S.items);
+  return {review: S.order.filter(id => S.items[id].st === "review").length,
+    built: all.filter(i => i.st === "approved" || i.st === "shipped").length,
+    credits: people().length, handbook: Object.keys(S.hb.tags).length};
+}
+function drawTabs() {
+  const c = counts();
+  document.getElementById("tabs").innerHTML = TABS.map(([k, l]) =>
+    `<button class="tab" role="tab" type="button" data-k="${k}" aria-selected="${ui.tab === k}">${l}<span class="n">${c[k]}</span></button>`).join("");
+}
+document.getElementById("tabs").addEventListener("click", e => {
+  const b = e.target.closest(".tab"); if (!b) return; ui.tab = b.dataset.k;
+  try { history.replaceState(null, "", "#" + ui.tab); } catch (err) {}
+  render(); window.scrollTo(0, 0);
+});
+
+/* ---------- review ---------- */
+function visibleReview() {
+  let ids = S.order.filter(id => S.items[id].st === "review");
+  ids = ids.filter(id => { const it = S.items[id];
+    return (ui.date === "all" || it.date === ui.date) && (!ui.tags.size || it.tags.some(t => ui.tags.has(t))); });
+  const rank = id => S.order.indexOf(id);
+  if (ui.sort === "new") ids.sort((a, b) => S.items[b].date.localeCompare(S.items[a].date) || rank(a) - rank(b));
+  if (ui.sort === "old") ids.sort((a, b) => S.items[a].date.localeCompare(S.items[b].date) || rank(a) - rank(b));
+  if (ui.sort === "tri") ids.sort((a, b) => S.items[a].tri - S.items[b].tri || rank(a) - rank(b));
+  return ids;
+}
+const rankOf = id => S.order.filter(x => S.items[x].st === "review").indexOf(id) + 1;
+
+function reviewCard(id) {
+  const it = S.items[id], sel = ui.selected.has(id), canDrag = ui.sort === "rank", l = link(it);
+  return `<article class="card${sel ? " selected" : ""}" data-id="${id}">
+    <button class="grip" type="button" aria-label="Drag to reorder ${esc(it.t)}. Arrow keys move it." ${canDrag ? "" : 'aria-disabled="true" title="Switch to Rank order to drag"'}>${GRIP}</button>
+    <input class="check" type="checkbox" id="sel-${id}" aria-label="Select ${esc(it.t)}" ${sel ? "checked" : ""}>
+    <div class="main">
+      <div class="top"><span class="rank">#${rankOf(id)}</span><h3>${esc(it.t)}</h3></div>
+      ${it.d ? `<p class="desc">${esc(it.d)}</p>` : ""}
+      <blockquote class="quote">${esc(it.q)}</blockquote>
+      <div class="meta"><span class="who">${it.who.map(esc).join(" · ")}</span>
+        ${l ? `<a href="${l}" target="_blank" rel="noopener">${fmtD(it.date)} · ${esc(it.at)}</a>` : `<span>${fmtD(it.date)}</span>`}
+        ${it.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+      <div class="actions">
+        <span class="dot" style="background:${TRI[it.tri].c}"></span>
+        <select class="tri" id="tri-${id}" aria-label="Triage level">${TRI.map(t => `<option value="${t.v}" ${t.v === it.tri ? "selected" : ""}>${t.name}</option>`).join("")}</select>
+        <span class="spacer"></span>
+        <button class="btn no" type="button" data-act="deny">✕ Deny</button>
+        <button class="btn ok" type="button" data-act="approve">✓ Approve</button>
+      </div>
+    </div></article>`;
+}
+
+function renderReview() {
+  const vis = visibleReview();
+  const allSel = vis.length && vis.every(id => ui.selected.has(id));
+  const nSel = [...ui.selected].filter(id => S.items[id] && S.items[id].st === "review").length;
+  page.innerHTML = `
+  <div class="bar">
+    <div class="row"><span class="lbl">Tags</span>${TAGS.map(t => `<button class="chip" type="button" data-tag="${t}" aria-pressed="${ui.tags.has(t)}">${esc(t)}</button>`).join("")}
+      ${ui.tags.size ? `<button class="btn ghost" type="button" id="clear-tags">Clear</button>` : ""}</div>
+    <div class="row">
+      <label class="lbl" for="f-date">Date</label>
+      <select class="sel" id="f-date"><option value="all">All streams</option>${DATES.map(d => `<option value="${d}" ${ui.date === d ? "selected" : ""}>${fmtD(d)}</option>`).join("")}</select>
+      <label class="lbl" for="f-sort">Order</label>
+      <select class="sel" id="f-sort">
+        <option value="rank" ${ui.sort === "rank" ? "selected" : ""}>Rank (drag to reorder)</option>
+        <option value="tri" ${ui.sort === "tri" ? "selected" : ""}>Triage level</option>
+        <option value="new" ${ui.sort === "new" ? "selected" : ""}>Newest first</option>
+        <option value="old" ${ui.sort === "old" ? "selected" : ""}>Oldest first</option>
+      </select>
+      <span class="hint">${vis.length} of ${counts().review} in review</span>
+    </div>
+  </div>
+  <div class="bulk">
+    <input class="check" type="checkbox" id="sel-all" aria-label="Select all visible" ${allSel ? "checked" : ""}>
+    <span class="count">${nSel ? `${nSel} selected` : "Select all"}</span>
+    <select class="sel" id="bulk-tri" ${nSel ? "" : "disabled"} aria-label="Set triage for selected"><option value="">Set triage…</option>${TRI.map(t => `<option value="${t.v}">${t.name}</option>`).join("")}</select>
+    <button class="btn no" type="button" id="bulk-deny" ${nSel ? "" : "disabled"}>✕ Deny${nSel > 1 ? " all" : ""}</button>
+    <button class="btn ok" type="button" id="bulk-approve" ${nSel ? "" : "disabled"}>✓ Approve${nSel > 1 ? " all" : ""}</button>
+  </div>
+  <div class="list" id="list">${vis.length ? vis.map(reviewCard).join("") : `<div class="empty">Nothing to review here. Clear a filter or check Built.</div>`}</div>`;
+}
+
+function setStatus(ids, st) {
+  const snap = snapshot();
+  ids.forEach(id => { S.items[id].st = st; if (st === "approved") S.items[id].built = new Date().toISOString().slice(0, 10); ui.selected.delete(id); });
+  save(); render();
+  toast(`${st === "approved" ? "Approved" : "Denied"} ${ids.length} ${ids.length === 1 ? "card" : "cards"}`, () => restore(snap));
+}
+
+page.addEventListener("click", e => {
+  if (ui.tab !== "review") return;
+  const chip = e.target.closest("[data-tag]");
+  if (chip) { const t = chip.dataset.tag; ui.tags.has(t) ? ui.tags.delete(t) : ui.tags.add(t); return render(); }
+  if (e.target.id === "clear-tags") { ui.tags.clear(); return render(); }
+  if (e.target.closest("#bulk-approve")) return setStatus([...ui.selected].filter(id => S.items[id].st === "review"), "approved");
+  if (e.target.closest("#bulk-deny")) return setStatus([...ui.selected].filter(id => S.items[id].st === "review"), "denied");
+  const act = e.target.closest("[data-act]");
+  if (act) return setStatus([act.closest(".card").dataset.id], act.dataset.act === "approve" ? "approved" : "denied");
+});
+page.addEventListener("change", e => {
+  if (ui.tab !== "review") return;
+  const t = e.target;
+  if (t.id === "f-date") { ui.date = t.value; return render(); }
+  if (t.id === "f-sort") { ui.sort = t.value; return render(); }
+  if (t.id === "sel-all") { visibleReview().forEach(id => t.checked ? ui.selected.add(id) : ui.selected.delete(id)); return render(); }
+  if (t.id === "bulk-tri" && t.value !== "") {
+    [...ui.selected].forEach(id => { if (S.items[id].st === "review") S.items[id].tri = +t.value; }); save(); toast(`Set ${ui.selected.size} to ${TRI[+t.value].name}`); return render(); }
+  if (t.classList.contains("tri")) { S.items[t.closest(".card").dataset.id].tri = +t.value; save(); return render(); }
+  if (t.classList.contains("check") && t.closest(".card")) {
+    const id = t.closest(".card").dataset.id; t.checked ? ui.selected.add(id) : ui.selected.delete(id); return render(); }
+});
+
+/* ---------- drag to reorder (six-dot handle, multi-select, edge auto-scroll) ---------- */
+let drag = null;
+function moveIds(ids, beforeId, afterId) {
+  const keep = S.order.filter(id => !ids.includes(id));
+  let at = keep.length;
+  if (beforeId) at = keep.indexOf(beforeId);
+  else if (afterId) at = keep.indexOf(afterId) + 1;
+  keep.splice(at, 0, ...ids);
+  S.order = keep; save();
+}
+function dropTarget(y) {
+  const cards = [...document.querySelectorAll("#list .card:not(.dragging)")];
+  for (const c of cards) { const r = c.getBoundingClientRect(); if (y < r.top + r.height / 2) return {before: c, cards}; }
+  return {before: null, cards};
+}
+function placeLine(y) {
+  const list = document.getElementById("list"); if (!list) return;
+  const {before, cards} = dropTarget(y);
+  const lr = list.getBoundingClientRect();
+  let top;
+  if (before) top = before.getBoundingClientRect().top - lr.top + 2;
+  else if (cards.length) { const last = cards[cards.length - 1].getBoundingClientRect(); top = last.bottom - lr.top + 10; }
+  else top = 0;
+  drag.line.style.top = top + "px";
+  drag.before = before ? before.dataset.id : null;
+  drag.after = !before && cards.length ? cards[cards.length - 1].dataset.id : null;
+}
+function tick() {
+  if (!drag) return;
+  const edge = 90, y = drag.y, h = innerHeight;
+  let v = 0;
+  if (y < edge) v = -Math.ceil((edge - y) / edge * 22);
+  else if (y > h - edge) v = Math.ceil((y - (h - edge)) / edge * 22);
+  if (v) { window.scrollBy(0, v); placeLine(y); }
+  requestAnimationFrame(tick);
+}
+page.addEventListener("pointerdown", e => {
+  const g = e.target.closest(".grip"); if (!g || ui.tab !== "review") return;
+  if (ui.sort !== "rank") { toast("Switch Order to Rank to drag cards"); return; }
+  e.preventDefault();
+  const id = g.closest(".card").dataset.id;
+  const vis = visibleReview();
+  const ids = ui.selected.has(id) && ui.selected.size > 1 ? vis.filter(x => ui.selected.has(x)) : [id];
+  ids.forEach(x => { const c = document.querySelector(`.card[data-id="${x}"]`); c && c.classList.add("dragging"); });
+  const ghost = document.createElement("div"); ghost.className = "ghost";
+  ghost.innerHTML = `${GRIP.replace("<svg", '<svg width="10" height="18"')}<span>${esc(S.items[id].t)}</span>${ids.length > 1 ? `<span class="stack">+${ids.length - 1}</span>` : ""}`;
+  document.body.appendChild(ghost);
+  const line = document.createElement("div"); line.className = "drop-line"; document.getElementById("list").appendChild(line);
+  drag = {ids, ghost, line, y: e.clientY, x: e.clientX, before: null, after: null};
+  g.setPointerCapture(e.pointerId);
+  const move = ev => { drag.y = ev.clientY; drag.x = ev.clientX; ghost.style.transform = `translate(${ev.clientX + 14}px, ${ev.clientY - 22}px)`; placeLine(ev.clientY); };
+  const up = () => {
+    g.removeEventListener("pointermove", move); g.removeEventListener("pointerup", up); g.removeEventListener("pointercancel", up);
+    const d = drag; drag = null; ghost.remove(); line.remove();
+    moveIds(d.ids, d.before, d.after); render();
+    d.ids.forEach(x => { const c = document.querySelector(`.card[data-id="${x}"]`); c && c.classList.add("flash"); });
+  };
+  g.addEventListener("pointermove", move); g.addEventListener("pointerup", up); g.addEventListener("pointercancel", up);
+  move(e); requestAnimationFrame(tick);
+});
+page.addEventListener("keydown", e => {
+  const g = e.target.closest(".grip"); if (!g || ui.sort !== "rank" || !["ArrowUp", "ArrowDown"].includes(e.key)) return;
+  e.preventDefault();
+  const id = g.closest(".card").dataset.id, vis = visibleReview();
+  const ids = ui.selected.has(id) && ui.selected.size > 1 ? vis.filter(x => ui.selected.has(x)) : [id];
+  const others = vis.filter(x => !ids.includes(x));
+  const firstIdx = vis.indexOf(ids[0]), lastIdx = vis.indexOf(ids[ids.length - 1]);
+  if (e.key === "ArrowUp") { const prev = vis.slice(0, firstIdx).filter(x => !ids.includes(x)).pop(); if (!prev) return; moveIds(ids, prev, null); }
+  else { const next = vis.slice(lastIdx + 1).filter(x => !ids.includes(x))[0]; if (!next) return; moveIds(ids, null, next); }
+  render(); const c = document.querySelector(`.card[data-id="${id}"] .grip`); c && c.focus();
+});
+
+/* ---------- built ---------- */
+function bcard(it) {
+  const l = link(it);
+  return `<article class="bcard" data-id="${it.id}">
+    <div class="top"><h3 style="margin:0;font-size:17px;font-weight:600;flex:1 1 240px">${esc(it.t)}</h3>
+      <span class="pill ${it.st === "shipped" ? "s" : it.st === "denied" ? "d" : "q"}">${it.st === "shipped" ? "Shipped" : it.st === "denied" ? "Denied" : "Queued for agents"}</span></div>
+    ${it.d ? `<p class="desc">${esc(it.d)}</p>` : ""}
+    <div class="meta"><span class="who">${it.who.map(esc).join(" · ")}</span>
+      ${l ? `<a href="${l}" target="_blank" rel="noopener">suggested ${fmtD(it.date)}</a>` : ""}
+      ${it.built ? `<span>${it.st === "shipped" ? "shipped" : it.st === "denied" ? "denied" : "approved"} ${fmtD(it.built)}</span>` : ""}
+      ${it.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
+    <div class="actions">${it.st === "approved" ? `<button class="btn ok" type="button" data-b="ship">Mark shipped</button>` : ""}
+      <button class="btn ghost" type="button" data-b="back">Back to review</button></div></article>`;
+}
+function renderBuilt() {
+  const all = Object.values(S.items);
+  const q = all.filter(i => i.st === "approved").sort((a, b) => (b.built || "").localeCompare(a.built || ""));
+  const s = all.filter(i => i.st === "shipped").sort((a, b) => (b.built || "").localeCompare(a.built || ""));
+  const d = all.filter(i => i.st === "denied");
+  page.innerHTML = `<div class="list">
+    <div class="section-h"><h2>Queued for agents</h2><span>${q.length} approved</span></div>
+    ${q.length ? q.map(bcard).join("") : `<div class="empty">Approve cards on Review and they land here.</div>`}
+    <div class="section-h"><h2>Shipped</h2><span>${s.length}</span></div>
+    ${s.map(bcard).join("")}
+    ${d.length ? `<div class="section-h"><h2>Denied</h2><span>${d.length}</span></div>${d.map(bcard).join("")}` : ""}
+  </div>`;
+}
+page.addEventListener("click", e => {
+  if (ui.tab !== "built") return;
+  const b = e.target.closest("[data-b]"); if (!b) return;
+  const it = S.items[b.closest(".bcard").dataset.id], snap = snapshot();
+  if (b.dataset.b === "ship") { it.st = "shipped"; it.built = new Date().toISOString().slice(0, 10); toast("Marked shipped", () => restore(snap)); }
+  else { it.st = "review"; if (!S.order.includes(it.id)) S.order.push(it.id); toast("Moved back to review", () => restore(snap)); }
+  save(); render();
+});
+
+/* ---------- credits ---------- */
+const BADGES = [
+  {min: 4, name: "Queen's Court", c: "var(--honey)"},
+  {min: 3, name: "Comb Builder", c: "var(--t2)"},
+  {min: 2, name: "Forager", c: "var(--ok)"},
+];
+const badgeFor = n => BADGES.find(b => n >= b.min);
+function people() {
+  const m = new Map();
+  Object.values(S.items).filter(i => i.st !== "denied").forEach(i => i.who.forEach(w => {
+    if (!m.has(w)) m.set(w, {name: w, items: []}); m.get(w).items.push(i); }));
+  return [...m.values()].map(p => ({...p, n: p.items.length, shipped: p.items.filter(i => i.st === "shipped").length}))
+    .sort((a, b) => b.n - a.n || b.shipped - a.shipped || a.name.localeCompare(b.name, "en", {sensitivity: "base"}));
+}
+const badgeHtml = b => b ? `<span class="badge"><span class="hex" style="background:${b.c}"></span>${esc(b.name)}</span>` : "";
+function renderCredits() {
+  const ps = people(), max = ps[0] ? ps[0].n : 1;
+  let rank = 0, prev = null;
+  page.innerHTML = `<div class="list">
+    <div class="badges">${BADGES.slice().reverse().map(b => `${badgeHtml(b)}<span class="hint" style="align-self:center">${b.min}+</span>`).join("")}</div>
+    <div class="people">${ps.map((p, i) => { if (p.n !== prev) { rank = i + 1; prev = p.n; } const open = ui.openPerson === p.name;
+      return `<div class="person"><button type="button" data-p="${esc(p.name)}" aria-expanded="${open}">
+        <span class="pos">${rank}</span>
+        <span class="nm">${esc(p.name)}</span>
+        <span>${badgeHtml(badgeFor(p.n))}</span>
+        <span class="meter" aria-hidden="true"><b style="width:${Math.max(6, 100 * p.n / max)}%"></b></span>
+        <span class="num">${p.n}</span></button>
+        ${open ? `<div class="open">${p.items.map(i => `<div><span class="pill ${i.st === "shipped" ? "s" : "q"}">${i.st === "review" ? "In review" : i.st === "approved" ? "Queued" : "Shipped"}</span><span>${esc(i.t)}</span><span class="hint">${fmtD(i.date)}</span></div>`).join("")}</div>` : ""}
+      </div>`; }).join("")}</div></div>`;
+}
+page.addEventListener("click", e => {
+  if (ui.tab !== "credits") return;
+  const b = e.target.closest("[data-p]"); if (!b) return;
+  ui.openPerson = ui.openPerson === b.dataset.p ? null : b.dataset.p; render();
+});
+
+/* ---------- handbook ---------- */
+function hbMarkdown() {
+  return ["# Hive Code handbook", "", "## General", ...S.hb.general.map(p => `- ${p}`), "",
+    ...Object.keys(S.hb.tags).sort().flatMap(t => [`## ${t}`, ...S.hb.tags[t].map(p => `- ${p}`), ""])].join("\n");
+}
+function prefList(key, arr) {
+  return `<ul class="prefs" data-key="${key}">${arr.map((p, i) => `<li><span class="n">${i + 1}</span><span contenteditable="true" spellcheck="false" data-i="${i}" role="textbox" aria-label="Preference ${i + 1}">${esc(p)}</span><button class="x" type="button" data-del="${i}" aria-label="Remove">✕</button></li>`).join("")}</ul>
+    <form class="add" data-key="${key}"><input id="add-${key}" placeholder="Add a preference" aria-label="Add a preference to ${key}"><button class="btn" type="submit">Add</button></form>`;
+}
+function renderHandbook() {
+  const tags = Object.keys(S.hb.tags).sort();
+  page.innerHTML = `<div class="hb">
+    <div class="row"><span class="lbl">Jump to</span>${tags.map(t => `<a class="chip" href="#hb-${t}" style="text-decoration:none">${esc(t)} · ${S.hb.tags[t].length}</a>`).join("")}
+      <span class="spacer"></span><button class="btn" type="button" id="copy-hb">Copy for agents</button></div>
+    <section class="hcard"><h2>General <span>applies to every card</span></h2>${prefList("general", S.hb.general)}</section>
+    ${tags.map(t => `<section class="hcard" id="hb-${t}"><h2>${esc(t)} <span>${S.hb.tags[t].length} preferences</span></h2>${prefList(t, S.hb.tags[t])}</section>`).join("")}
+  </div>`;
+}
+const hbArr = key => key === "general" ? S.hb.general : S.hb.tags[key];
+page.addEventListener("submit", e => {
+  if (ui.tab !== "handbook") return; e.preventDefault();
+  const f = e.target, v = f.querySelector("input").value.trim(); if (!v) return;
+  hbArr(f.dataset.key).push(v); save(); render();
+  const inp = document.getElementById("add-" + f.dataset.key); inp && inp.focus();
+});
+page.addEventListener("click", e => {
+  if (ui.tab !== "handbook") return;
+  const d = e.target.closest("[data-del]");
+  if (d) { const key = d.closest(".prefs").dataset.key, snap = snapshot(); hbArr(key).splice(+d.dataset.del, 1); save(); render(); toast("Preference removed", () => restore(snap)); return; }
+  if (e.target.id === "copy-hb") {
+    const md = hbMarkdown();
+    navigator.clipboard.writeText(md).then(() => toast("Handbook copied as Markdown"), () => toast("Copy blocked here. Select the text on this page instead."));
+  }
+});
+page.addEventListener("focusout", e => {
+  if (ui.tab !== "handbook") return;
+  const el = e.target.closest("[contenteditable]"); if (!el) return;
+  const key = el.closest(".prefs").dataset.key, v = el.textContent.trim();
+  if (v) { hbArr(key)[+el.dataset.i] = v; save(); }
+});
+
+/* ---------- boot ---------- */
+function render() {
+  drawTabs();
+  ({review: renderReview, built: renderBuilt, credits: renderCredits, handbook: renderHandbook})[ui.tab]();
+}
+document.getElementById("reset").onclick = () => { const snap = snapshot(); S = fresh(); ui.selected.clear(); save(); render(); toast("Preview reset", () => restore(snap)); };
+const h = (location.hash || "").slice(1); if (TABS.some(t => t[0] === h)) ui.tab = h;
+render();
+</script>
