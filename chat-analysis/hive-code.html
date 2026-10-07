@@ -398,7 +398,6 @@ function reviewCard(id) {
         <select class="tri" id="tri-${id}" aria-label="Triage level">${TRI.map(t => `<option value="${t.v}" ${t.v === it.tri ? "selected" : ""}>${t.name}</option>`).join("")}</select>
         <span class="spacer"></span>
         <button class="btn no" type="button" data-act="deny">✕ Deny</button>
-        <button class="btn ok" type="button" data-act="approve">✓ Approve</button>
       </div>
     </div></article>`;
 }
@@ -429,7 +428,6 @@ function renderReview() {
     <span class="count">${nSel ? `${nSel} selected` : "Select all"}</span>
     <select class="sel" id="bulk-tri" ${nSel ? "" : "disabled"} aria-label="Set triage for selected"><option value="">Set triage…</option>${TRI.map(t => `<option value="${t.v}">${t.name}</option>`).join("")}</select>
     <button class="btn no" type="button" id="bulk-deny" ${nSel ? "" : "disabled"}>✕ Deny${nSel > 1 ? " all" : ""}</button>
-    <button class="btn ok" type="button" id="bulk-approve" ${nSel ? "" : "disabled"}>✓ Approve${nSel > 1 ? " all" : ""}</button>
   </div>
   <div class="list" id="list">${vis.length ? vis.map(reviewCard).join("") : `<div class="empty">Nothing to review here. Clear a filter or check Built.</div>`}</div>
   ${deniedSection()}`;
@@ -438,13 +436,21 @@ function renderReview() {
 function deniedSection() {
   const d = Object.values(S.items).filter(i => i.st === "denied").sort((a, b) => (b.built || "").localeCompare(a.built || ""));
   return `<section class="denied" aria-labelledby="denied-h">
-    <div class="section-h"><h2 id="denied-h">Denied</h2><span>${d.length} · approve anything that deserves a second look</span>
+    <div class="section-h"><h2 id="denied-h">Denied</h2><span>${d.length} · approve to put it back in the list</span>
       ${d.length > 1 ? `<span class="spacer"></span><button class="btn ok" type="button" id="approve-denied">✓ Approve all denied</button>` : ""}</div>
     ${d.length ? d.map(it => `<div class="dcard" data-id="${it.id}"><div class="t"><strong>${esc(it.t)}</strong>
         <div class="meta"><span class="who">${it.who.map(esc).join(" · ")}</span><span>${fmtD(it.date)}</span>${it.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div></div>
         <button class="btn ok" type="button" data-den="approve">✓ Approve</button></div>`).join("")
       : `<div class="empty">Nothing denied. Denied cards wait here so they can still be approved.</div>`}
   </section>`;
+}
+function reinstate(ids) {
+  const snap = snapshot();
+  ids.forEach(id => { S.items[id].st = "review"; delete S.items[id].built; if (!S.order.includes(id)) S.order.push(id); });
+  save(); render();
+  const r = ids.length === 1 ? ` at #${rankOf(ids[0])}` : "";
+  toast(`Approved ${ids.length} ${ids.length === 1 ? "card" : "cards"}, back in the list${r}`, () => restore(snap));
+  ids.forEach(x => { const c = document.querySelector(`.card[data-id="${x}"]`); c && c.classList.add("flash"); });
 }
 function setStatus(ids, st) {
   const snap = snapshot();
@@ -458,11 +464,10 @@ page.addEventListener("click", e => {
   const chip = e.target.closest("[data-tag]");
   if (chip) { const t = chip.dataset.tag; ui.tags.has(t) ? ui.tags.delete(t) : ui.tags.add(t); return render(); }
   if (e.target.id === "clear-tags") { ui.tags.clear(); return render(); }
-  if (e.target.closest("#bulk-approve")) return setStatus([...ui.selected].filter(id => S.items[id].st === "review"), "approved");
   if (e.target.closest("#bulk-deny")) return setStatus([...ui.selected].filter(id => S.items[id].st === "review"), "denied");
   const den = e.target.closest("[data-den]");
-  if (den) return setStatus([den.closest(".dcard").dataset.id], "approved");
-  if (e.target.closest("#approve-denied")) return setStatus(Object.values(S.items).filter(i => i.st === "denied").map(i => i.id), "approved");
+  if (den) return reinstate([den.closest(".dcard").dataset.id]);
+  if (e.target.closest("#approve-denied")) return reinstate(Object.values(S.items).filter(i => i.st === "denied").map(i => i.id));
   const act = e.target.closest("[data-act]");
   if (act) return setStatus([act.closest(".card").dataset.id], act.dataset.act === "approve" ? "approved" : "denied");
 });
