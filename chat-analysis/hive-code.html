@@ -263,6 +263,10 @@ const BUILT = [
  ["Chunked rendering with viewport culling", "Only chunks the camera can see are drawn and loaded.", "The technique you want is viewport culling with chunked rendering", ["@humblelifeskills"], "2026-09-23", "1:34:08", ["performance"], "shipped", "2026-09-24"],
  ["Static distant trees", "Far trees render as static meshes to cut flicker while jumping.", "maybe some are rendered and some are just a static tree when you jump so less flicker", ["@andreaskrbyravn855"], "2026-09-25", "2:57:00", ["performance", "art"], "shipped", "2026-09-26"],
  ["Lens effect on scopes", "Subtle lensing on scope glass.", "can it add some lensing effect on the scope lens?", ["@HeatStoker69"], "2026-09-30", "1:51:43", ["art", "combat"], "shipped", "2026-10-02"],
+ ["Loot boxes", "Paid or random reward crates.", "Put in loot boxes, people love loot boxes", ["@Quigago"], "2026-09-28", "5:46:27", ["meta"], "denied", "2026-09-29"],
+ ["Giant kong NPC that throws barrels", "A boss-sized kong lobbing bananas and barrels at random players from long range.", "Agent add a giant king kong character that throws bananas or barrels at random players from long distance", ["@mach13"], "2026-09-30", "1:55:58", ["combat", "map"], "denied", "2026-10-01"],
+ ["Spammable slide button", "A slide you can press over and over like a fidget spinner.", "you need a slide button that kids can press over and over like a fidget spinner", ["@richardjohnson8009"], "2026-10-06", "1:15:37", ["movement"], "denied", "2026-10-07"],
+ ["Throwable coconuts", "Coconuts that do a little damage when thrown at players.", "players should be able to throw coconuts at other players and it does little damage", ["@ALIENDISTRICT51_OFFICIAL"], "2026-10-06", "0:53:26", ["combat"], "denied", "2026-10-07"],
 ];
 const HANDBOOK = {
   general: [
@@ -287,7 +291,7 @@ const HANDBOOK = {
 };
 
 /* ---------- state ---------- */
-const KEY = "hivecode.preview.v1";
+const KEY = "hivecode.preview.v2";
 function fresh() {
   const items = {};
   const order = [];
@@ -416,7 +420,6 @@ function deniedSection() {
       ${d.length > 1 ? `<span class="spacer"></span><button class="btn ok" type="button" id="approve-denied">✓ Approve all denied</button>` : ""}</div>
     ${d.length ? d.map(it => `<div class="dcard" data-id="${it.id}"><div class="t"><strong>${esc(it.t)}</strong>
         <div class="meta"><span class="who">${it.who.map(esc).join(" · ")}</span><span>${fmtD(it.date)}</span>${it.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div></div>
-        <button class="btn ghost" type="button" data-den="review">Back to review</button>
         <button class="btn ok" type="button" data-den="approve">✓ Approve</button></div>`).join("")
       : `<div class="empty">Nothing denied. Denied cards wait here so they can still be approved.</div>`}
   </section>`;
@@ -436,9 +439,7 @@ page.addEventListener("click", e => {
   if (e.target.closest("#bulk-approve")) return setStatus([...ui.selected].filter(id => S.items[id].st === "review"), "approved");
   if (e.target.closest("#bulk-deny")) return setStatus([...ui.selected].filter(id => S.items[id].st === "review"), "denied");
   const den = e.target.closest("[data-den]");
-  if (den) { const id = den.closest(".dcard").dataset.id;
-    if (den.dataset.den === "approve") return setStatus([id], "approved");
-    const snap = snapshot(); S.items[id].st = "review"; save(); render(); return toast("Back in review", () => restore(snap)); }
+  if (den) return setStatus([den.closest(".dcard").dataset.id], "approved");
   if (e.target.closest("#approve-denied")) return setStatus(Object.values(S.items).filter(i => i.st === "denied").map(i => i.id), "approved");
   const act = e.target.closest("[data-act]");
   if (act) return setStatus([act.closest(".card").dataset.id], act.dataset.act === "approve" ? "approved" : "denied");
@@ -539,8 +540,7 @@ function bcard(it) {
       ${l ? `<a href="${l}" target="_blank" rel="noopener">suggested ${fmtD(it.date)}</a>` : ""}
       ${it.built ? `<span>${it.st === "shipped" ? "shipped" : it.st === "denied" ? "denied" : "approved"} ${fmtD(it.built)}</span>` : ""}
       ${it.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
-    <div class="actions">${it.st === "approved" ? `<button class="btn ok" type="button" data-b="ship">Mark shipped</button>` : ""}
-      <button class="btn ghost" type="button" data-b="back">Back to review</button></div></article>`;
+    ${it.st === "approved" ? `<div class="actions"><span class="spacer"></span><button class="btn" type="button" data-b="ship">Mark shipped</button><button class="btn no" type="button" data-b="deny">✕ Deny</button></div>` : ""}</article>`;
 }
 function renderBuilt() {
   const all = Object.values(S.items);
@@ -558,7 +558,7 @@ page.addEventListener("click", e => {
   const b = e.target.closest("[data-b]"); if (!b) return;
   const it = S.items[b.closest(".bcard").dataset.id], snap = snapshot();
   if (b.dataset.b === "ship") { it.st = "shipped"; it.built = new Date().toISOString().slice(0, 10); toast("Marked shipped", () => restore(snap)); }
-  else { it.st = "review"; if (!S.order.includes(it.id)) S.order.push(it.id); toast("Moved back to review", () => restore(snap)); }
+  else { it.st = "denied"; it.built = new Date().toISOString().slice(0, 10); toast("Denied. It's at the bottom of Review if you change your mind.", () => restore(snap)); }
   save(); render();
 });
 
