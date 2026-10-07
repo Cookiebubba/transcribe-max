@@ -36,8 +36,9 @@ button, select, input, textarea { font: inherit; color: inherit }
 
 /* brand */
 .brand { display: flex; align-items: center; gap: 18px; flex-wrap: wrap }
-.comb { margin: 0; font: 600 12px/1.12 var(--f-mono); color: var(--honey); white-space: pre; user-select: none }
-.comb i { font-style: normal; color: var(--ink) }
+.comb { margin: 0; font: 600 16px/1.02 var(--f-mono); color: var(--line-2); white-space: pre; user-select: none; letter-spacing: -.04em }
+.comb i { font-style: normal; color: var(--honey); transition: color .6s }
+.comb i.lit { color: var(--ink) }
 .word { font: 600 30px/1 var(--f-mono); letter-spacing: -.02em }
 .word b { color: var(--honey); font-weight: 600 }
 .brand small { display: block; font: 13px var(--f-ui); color: var(--muted); letter-spacing: 0; margin-top: 6px }
@@ -93,9 +94,9 @@ button, select, input, textarea { font: inherit; color: inherit }
 .spacer { flex: 1 }
 .empty { border: 1px dashed var(--line-2); border-radius: var(--r); padding: 28px; text-align: center; color: var(--muted) }
 .drop-line { position: absolute; left: 12px; right: 12px; height: 4px; border-radius: 4px; background: var(--honey); pointer-events: none; z-index: 4; transform: translateY(-8px) }
-.ghost { position: fixed; z-index: 50; pointer-events: none; left: 0; top: 0; background: var(--card); border: 1px solid var(--honey); border-radius: var(--r);
+.drag-ghost { position: fixed; z-index: 50; pointer-events: none; left: 0; top: 0; background: var(--card); border: 1px solid var(--honey); border-radius: var(--r);
   padding: 14px 18px; box-shadow: 0 18px 40px -14px rgba(0,0,0,.35); max-width: min(560px, 90vw); font-weight: 600; display: flex; gap: 10px; align-items: center }
-.ghost .stack { font: 600 12px var(--f-mono); background: var(--honey); color: var(--honey-ink); border-radius: 999px; padding: 2px 9px }
+.drag-ghost .stack { font: 600 12px var(--f-mono); background: var(--honey); color: var(--honey-ink); border-radius: 999px; padding: 2px 9px }
 .hint { font: 12px var(--f-mono); color: var(--muted) }
 @media (max-width: 560px) { .card { grid-template-columns: 28px 24px minmax(0, 1fr); padding-right: 14px } }
 
@@ -144,6 +145,37 @@ button, select, input, textarea { font: inherit; color: inherit }
 .toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); border-radius: 999px;
   padding: 10px 10px 10px 18px; display: flex; gap: 12px; align-items: center; font-size: 14px; z-index: 60; box-shadow: 0 10px 30px -10px rgba(0,0,0,.4) }
 .toast button { border: 0; background: var(--honey); color: var(--honey-ink); border-radius: 999px; padding: 5px 12px; font-weight: 600; cursor: pointer }
+/* stats: one card, three sections */
+.stats { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); display: grid; grid-template-columns: 1.15fr 1fr 1fr; overflow: hidden }
+.stats > section { padding: 18px 22px; display: grid; gap: 12px; align-content: start; min-width: 0 }
+.stats > section + section { border-left: 1px solid var(--line) }
+@media (max-width: 760px) { .stats { grid-template-columns: minmax(0, 1fr) } .stats > section + section { border-left: 0; border-top: 1px solid var(--line) } }
+.stats h4 { margin: 0; font: 500 11px var(--f-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 8px }
+.live { width: 7px; height: 7px; border-radius: 50%; background: var(--ok); box-shadow: 0 0 0 0 var(--ok); animation: pulse 2.4s infinite }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 60%, transparent) } 70% { box-shadow: 0 0 0 7px transparent } 100% { box-shadow: 0 0 0 0 transparent } }
+.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px }
+.kpi { display: grid; gap: 2px }
+.kpi b { font: 600 30px/1 var(--f-mono); font-variant-numeric: tabular-nums; letter-spacing: -.03em }
+.kpi span { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 6px; white-space: nowrap }
+.kpi.bump b { animation: bump .5s ease-out }
+@keyframes bump { 40% { color: var(--honey); transform: translateY(-2px) } }
+.stack { display: flex; height: 12px; border-radius: 12px; overflow: hidden; background: var(--bg); gap: 2px }
+.stack i { display: block; height: 100%; transition: flex-grow .7s cubic-bezier(.2,.8,.2,1) }
+.legend { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px; font: 12px var(--f-mono); color: var(--muted) }
+.legend span { display: flex; align-items: center; gap: 6px; font-variant-numeric: tabular-nums; white-space: nowrap; min-width: 0 }
+.legend b { color: var(--ink); font-weight: 600; margin-left: auto }
+.tagbars { display: grid; gap: 7px }
+.tagbars div { display: grid; grid-template-columns: 78px minmax(0, 1fr) 24px; gap: 8px; align-items: center; font: 12px var(--f-mono) }
+.tagbars em { font-style: normal; height: 8px; border-radius: 8px; background: var(--bg); overflow: hidden; display: block }
+.tagbars em i { display: block; height: 100%; width: 0; background: var(--honey); border-radius: 8px; transition: width .8s cubic-bezier(.2,.8,.2,1) }
+.tagbars b { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums }
+/* denied section on review */
+.denied { display: grid; gap: 10px; margin-top: 26px; padding-top: 22px; border-top: 1px dashed var(--line-2) }
+.dcard { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 18px 14px 22px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; opacity: .85 }
+.dcard:hover { opacity: 1 }
+.dcard .t { flex: 1 1 260px; min-width: 0; display: grid; gap: 2px }
+.dcard .t strong { font-weight: 600; text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--no) 60%, transparent) }
+@media (prefers-reduced-motion: reduce) { .stack i, .tagbars em i { transition: none } .live { animation: none } .kpi.bump b { animation: none } }
 .foot { font: 12px var(--f-mono); color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; align-items: center }
 .foot button { border: 0; background: none; color: var(--muted); text-decoration: underline; cursor: pointer; padding: 0; font: inherit }
 @media (prefers-reduced-motion: reduce) { .card.flash { animation: none } }
@@ -155,6 +187,11 @@ button, select, input, textarea { font: inherit; color: inherit }
     <div><div class="word">hive<b>.</b>code</div><small>Chat ideas in. Shipped features out.</small></div>
   </header>
 
+  <div class="stats" id="stats" aria-label="Quick stats">
+    <section><h4><span class="live" aria-hidden="true"></span>Pipeline</h4><div class="kpis" id="kpis"></div></section>
+    <section><h4>Triage · in review</h4><div class="stack" id="tri-stack" aria-hidden="true"></div><div class="legend" id="tri-legend"></div></section>
+    <section><h4>Top tags · in review</h4><div class="tagbars" id="tagbars"></div></section>
+  </div>
   <nav class="tabs" role="tablist" aria-label="Pages" id="tabs"></nav>
   <main id="page"></main>
   <div class="foot"><span>Preview build · sample data from Max's Sep 23 – Oct 6 stream chats · changes save in this browser</span><button type="button" id="reset">Reset preview</button></div>
@@ -162,26 +199,18 @@ button, select, input, textarea { font: inherit; color: inherit }
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script>
-/* ---------- wordmark: a small ASCII honeycomb whose cells hold code glyphs ---------- */
-const GLY = ["{}", "<>", ";;", "=>", "01", "()", "&&", "//", "[]", "::", "!=", "++", "fn", "$_", "</"];
-const COMB = [
-  " __    __    __",
-  "/@@\\__/@@\\__/@@\\__",
-  "\\__/@@\\__/@@\\__/@@\\",
-  "/@@\\__/@@\\__/@@\\__/",
-  "\\__/  \\__/  \\__/"];
+/* ---------- wordmark: a hexagon built from < and > ---------- */
+const HEX = ["  <><><>", " <><><><>", "<><><><><>", " <><><><>", "  <><><>"];
 const combEl = document.getElementById("comb");
-let cells = [];
+const nGlyph = HEX.join("").replace(/ /g, "").length;
+let lit = new Set();
 function drawComb() {
   let k = 0;
-  combEl.innerHTML = COMB.map(l => l.replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))
-    .replace(/@@/g, () => `<i>${(cells[k++] || "  ").replace(/[&<>]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]))}</i>`)).join("\n");
+  combEl.innerHTML = HEX.map(l => [...l].map(ch => ch === " " ? " " : `<i class="${lit.has(k++) ? "lit" : ""}">${ch === "<" ? "&lt;" : "&gt;"}</i>`).join("")).join("\n");
 }
-const nCells = COMB.join("").split("@@").length - 1;
-cells = Array.from({length: nCells}, (_, i) => GLY[i % GLY.length]);
 drawComb();
 if (!matchMedia("(prefers-reduced-motion: reduce)").matches)
-  setInterval(() => { cells[Math.floor(Math.random() * nCells)] = GLY[Math.floor(Math.random() * GLY.length)]; drawComb(); }, 1400);
+  setInterval(() => { lit = new Set(Array.from({length: 3}, () => Math.floor(Math.random() * nGlyph))); drawComb(); }, 1200);
 
 /* ---------- data (real suggestions from stream chat; statuses are sample) ---------- */
 const V = {"2026-10-06": "vEjDwWYnaWE", "2026-09-30": "iFrEETnjZtg", "2026-09-28": "_kDKm6SW8dY", "2026-09-25": "5E0BWd2WxT8", "2026-09-23": "BbVtfwNYPUA"};
@@ -376,12 +405,25 @@ function renderReview() {
     <button class="btn no" type="button" id="bulk-deny" ${nSel ? "" : "disabled"}>✕ Deny${nSel > 1 ? " all" : ""}</button>
     <button class="btn ok" type="button" id="bulk-approve" ${nSel ? "" : "disabled"}>✓ Approve${nSel > 1 ? " all" : ""}</button>
   </div>
-  <div class="list" id="list">${vis.length ? vis.map(reviewCard).join("") : `<div class="empty">Nothing to review here. Clear a filter or check Built.</div>`}</div>`;
+  <div class="list" id="list">${vis.length ? vis.map(reviewCard).join("") : `<div class="empty">Nothing to review here. Clear a filter or check Built.</div>`}</div>
+  ${deniedSection()}`;
 }
 
+function deniedSection() {
+  const d = Object.values(S.items).filter(i => i.st === "denied").sort((a, b) => (b.built || "").localeCompare(a.built || ""));
+  return `<section class="denied" aria-labelledby="denied-h">
+    <div class="section-h"><h2 id="denied-h">Denied</h2><span>${d.length} · approve anything that deserves a second look</span>
+      ${d.length > 1 ? `<span class="spacer"></span><button class="btn ok" type="button" id="approve-denied">✓ Approve all denied</button>` : ""}</div>
+    ${d.length ? d.map(it => `<div class="dcard" data-id="${it.id}"><div class="t"><strong>${esc(it.t)}</strong>
+        <div class="meta"><span class="who">${it.who.map(esc).join(" · ")}</span><span>${fmtD(it.date)}</span>${it.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div></div>
+        <button class="btn ghost" type="button" data-den="review">Back to review</button>
+        <button class="btn ok" type="button" data-den="approve">✓ Approve</button></div>`).join("")
+      : `<div class="empty">Nothing denied. Denied cards wait here so they can still be approved.</div>`}
+  </section>`;
+}
 function setStatus(ids, st) {
   const snap = snapshot();
-  ids.forEach(id => { S.items[id].st = st; if (st === "approved") S.items[id].built = new Date().toISOString().slice(0, 10); ui.selected.delete(id); });
+  ids.forEach(id => { S.items[id].st = st; if (st === "approved" || st === "denied") S.items[id].built = new Date().toISOString().slice(0, 10); ui.selected.delete(id); });
   save(); render();
   toast(`${st === "approved" ? "Approved" : "Denied"} ${ids.length} ${ids.length === 1 ? "card" : "cards"}`, () => restore(snap));
 }
@@ -393,6 +435,11 @@ page.addEventListener("click", e => {
   if (e.target.id === "clear-tags") { ui.tags.clear(); return render(); }
   if (e.target.closest("#bulk-approve")) return setStatus([...ui.selected].filter(id => S.items[id].st === "review"), "approved");
   if (e.target.closest("#bulk-deny")) return setStatus([...ui.selected].filter(id => S.items[id].st === "review"), "denied");
+  const den = e.target.closest("[data-den]");
+  if (den) { const id = den.closest(".dcard").dataset.id;
+    if (den.dataset.den === "approve") return setStatus([id], "approved");
+    const snap = snapshot(); S.items[id].st = "review"; save(); render(); return toast("Back in review", () => restore(snap)); }
+  if (e.target.closest("#approve-denied")) return setStatus(Object.values(S.items).filter(i => i.st === "denied").map(i => i.id), "approved");
   const act = e.target.closest("[data-act]");
   if (act) return setStatus([act.closest(".card").dataset.id], act.dataset.act === "approve" ? "approved" : "denied");
 });
@@ -453,7 +500,7 @@ page.addEventListener("pointerdown", e => {
   const vis = visibleReview();
   const ids = ui.selected.has(id) && ui.selected.size > 1 ? vis.filter(x => ui.selected.has(x)) : [id];
   ids.forEach(x => { const c = document.querySelector(`.card[data-id="${x}"]`); c && c.classList.add("dragging"); });
-  const ghost = document.createElement("div"); ghost.className = "ghost";
+  const ghost = document.createElement("div"); ghost.className = "drag-ghost";
   ghost.innerHTML = `${GRIP.replace("<svg", '<svg width="10" height="18"')}<span>${esc(S.items[id].t)}</span>${ids.length > 1 ? `<span class="stack">+${ids.length - 1}</span>` : ""}`;
   document.body.appendChild(ghost);
   const line = document.createElement("div"); line.className = "drop-line"; document.getElementById("list").appendChild(line);
@@ -499,13 +546,11 @@ function renderBuilt() {
   const all = Object.values(S.items);
   const q = all.filter(i => i.st === "approved").sort((a, b) => (b.built || "").localeCompare(a.built || ""));
   const s = all.filter(i => i.st === "shipped").sort((a, b) => (b.built || "").localeCompare(a.built || ""));
-  const d = all.filter(i => i.st === "denied");
   page.innerHTML = `<div class="list">
     <div class="section-h"><h2>Queued for agents</h2><span>${q.length} approved</span></div>
     ${q.length ? q.map(bcard).join("") : `<div class="empty">Approve cards on Review and they land here.</div>`}
     <div class="section-h"><h2>Shipped</h2><span>${s.length}</span></div>
     ${s.map(bcard).join("")}
-    ${d.length ? `<div class="section-h"><h2>Denied</h2><span>${d.length}</span></div>${d.map(bcard).join("")}` : ""}
   </div>`;
 }
 page.addEventListener("click", e => {
@@ -594,9 +639,45 @@ page.addEventListener("focusout", e => {
   if (v) { hbArr(key)[+el.dataset.i] = v; save(); }
 });
 
+/* ---------- quick stats (animated) ---------- */
+const shown = {};
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+tween.runs = {};
+function tween(el, key, to) {
+  const from = shown[key] ?? 0; shown[key] = to;
+  if (from === to) { el.textContent = to; return; }
+  if (from !== 0 || to !== 0) { el.parentElement.classList.remove("bump"); void el.offsetWidth; if (from) el.parentElement.classList.add("bump"); }
+  if (reduce) { el.textContent = to; return; }
+  const t0 = performance.now(), dur = from ? 450 : 900, run = (tween.runs[key] = (tween.runs[key] || 0) + 1);
+  const start = +el.textContent || 0;
+  const step = now => { if (tween.runs[key] !== run) return; const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(start + (to - start) * e); if (p < 1) requestAnimationFrame(step); };
+  requestAnimationFrame(step);
+}
+function renderStats() {
+  const all = Object.values(S.items), rev = all.filter(i => i.st === "review");
+  const k = [["review", "Review", rev.length, "var(--honey)"], ["queued", "Queued", all.filter(i => i.st === "approved").length, "var(--t2)"],
+    ["shipped", "Shipped", all.filter(i => i.st === "shipped").length, "var(--ok)"], ["denied", "Denied", all.filter(i => i.st === "denied").length, "var(--no)"]];
+  const kp = document.getElementById("kpis");
+  if (!kp.children.length) kp.innerHTML = k.map(([id, l, , c]) => `<div class="kpi"><b id="k-${id}">0</b><span><i class="dot" style="background:${c}"></i>${l}</span></div>`).join("");
+  k.forEach(([id, , n]) => tween(document.getElementById("k-" + id), id, n));
+  const tc = TRI.map(t => rev.filter(i => i.tri === t.v).length);
+  const st = document.getElementById("tri-stack");
+  if (!st.children.length) { st.innerHTML = TRI.map(t => `<i style="background:${t.c};flex-grow:0"></i>`).join(""); void st.offsetWidth; }
+  requestAnimationFrame(() => [...st.children].forEach((el, i) => el.style.flexGrow = tc[i]));
+  document.getElementById("tri-legend").innerHTML = TRI.map((t, i) => `<span><i class="dot" style="background:${t.c}"></i>${t.name.replace(" · ", " ")}<b>${tc[i]}</b></span>`).join("");
+  const counts = {}; rev.forEach(i => i.tags.forEach(t => counts[t] = (counts[t] || 0) + 1));
+  const top = Object.entries(counts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 4), max = top[0] ? top[0][1] : 1;
+  const tb = document.getElementById("tagbars");
+  const prevW = Object.fromEntries([...tb.querySelectorAll("[data-t]")].map(d => [d.dataset.t, d.querySelector("em i").style.width]));
+  tb.innerHTML = top.map(([t, n]) => `<div data-t="${t}"><span>${esc(t)}</span><em><i style="width:${prevW[t] || "0%"}"></i></em><b>${n}</b></div>`).join("") || `<span class="hint">Nothing in review</span>`;
+  void tb.offsetWidth;
+  requestAnimationFrame(() => top.forEach(([t, n]) => { const el = tb.querySelector(`[data-t="${t}"] em i`); if (el) el.style.width = (100 * n / max) + "%"; }));
+}
+
 /* ---------- boot ---------- */
 function render() {
-  drawTabs();
+  drawTabs(); renderStats();
   ({review: renderReview, built: renderBuilt, credits: renderCredits, handbook: renderHandbook})[ui.tab]();
 }
 document.getElementById("reset").onclick = () => { const snap = snapshot(); S = fresh(); ui.selected.clear(); save(); render(); toast("Preview reset", () => restore(snap)); };
