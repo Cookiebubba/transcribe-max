@@ -85,7 +85,7 @@ html.bf-dragging, html.bf-dragging * { cursor: grabbing !important; -webkit-user
 .bf-plane {
   position: absolute; inset: 0; pointer-events: none;
   backface-visibility: hidden; -webkit-backface-visibility: hidden;
-  transform: translateZ(calc(var(--z) * 1px)) scale(calc(var(--bf-p) / (var(--bf-p) - var(--z))));
+  transform: translateZ(calc(var(--z) * 1px)) scale(calc((var(--bf-p) - var(--z) - var(--thick)) / var(--bf-p)));
 }
 
 /* ---------- the smoked glass body ---------- */

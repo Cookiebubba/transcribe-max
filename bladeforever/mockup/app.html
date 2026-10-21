@@ -1,0 +1,271 @@
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Blade Forever</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;900&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="brand.css">
+<link rel="stylesheet" href="card3d.css">
+<link rel="stylesheet" href="stats.css">
+<style>
+/* Shell only. The five modules own their own looks; this file is glue:
+   tokens, page chrome, the ranking ledger, and the split card view.
+   NOTE: no ancestor of the card may set overflow, clip-path or filter —
+   any of those flatten its 3D space. */
+:root{
+  --void:#07080b; --deep:#0d1016; --mist:#161b25; --raise:#1d2430;
+  --glass:rgba(22,27,37,.55); --glass-2:rgba(30,37,50,.42);
+  --glass-hi:rgba(255,255,255,.07); --glass-edge:rgba(255,255,255,.10);
+  --ink:#e8e2d4; --ink-dim:#a8a596; --ink-faint:#737892;
+  --parch:#e8dcc0; --parch-2:#d6c49e; --parch-ink:#2c2418; --parch-rule:#b9a57d;
+  --ember:#e0954a; --ember-deep:#b4621f; --arcane:#7aa8d8;
+  --gold:#c7a765; --verd:#6f9268; --blood:#9c3b3b;
+  --t-ascendant:#e0954a; --t-exalted:#c7a765; --t-honored:#9fb3c8;
+  --t-tempered:#8a7a5e; --t-footman:#5a6372;
+  --r-card:20px; --r-lg:18px; --r-md:14px; --r-sm:10px; --r-pill:999px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--void);color:var(--ink);font-family:var(--body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:#050608}
+.wrap{width:100%;max-width:1200px;margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px))}
+.shell{position:relative;z-index:1}
+
+/* ── chrome ─────────────────────────────────────────────── */
+/* Scoped to the page chrome on purpose: a bare `header`/`nav` tag selector
+   also matches the <header> elements the stats module emits for its own
+   section headings, which painted a dark sticky bar across them. */
+header.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;
+  background:linear-gradient(rgba(7,8,11,.92),rgba(7,8,11,.74) 70%,transparent);
+  backdrop-filter:blur(9px)}
+.head{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-block:14px}
+header.topbar nav{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.band{padding-block:30px 52px}
+.lede{color:var(--ink-dim);max-width:60ch;margin:10px 0 0;font-size:15.5px;line-height:1.6}
+.eyebrow{font-family:var(--display);font-size:10.5px;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--ink-faint);margin:0}
+h1.page{font-family:var(--display);font-size:clamp(26px,4.6vw,42px);letter-spacing:.05em;
+  text-transform:uppercase;margin:6px 0 0;text-wrap:balance}
+
+/* ── ranking ledger: as little chrome as possible ───────── */
+.ledger{margin-top:26px;display:flex;flex-direction:column}
+.lhead{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:16px;
+  padding:0 14px 10px;font-family:var(--display);font-size:10px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-faint)}
+.lhead i{text-align:right;font-style:normal}
+.lrow{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:16px;align-items:center;
+  width:100%;text-align:left;background:none;border:0;cursor:pointer;color:inherit;
+  font:inherit;padding:13px 14px;border-radius:var(--r-md);transition:background .16s ease}
+.lrow+.lrow{box-shadow:0 -1px 0 rgba(255,255,255,.045)}
+.lrow:hover,.lrow:focus-visible{background:var(--glass-2);box-shadow:none}
+.lrow:focus-visible{outline:2px solid var(--ember);outline-offset:-2px}
+.lrow .rk{font-family:var(--data);font-size:14px;text-align:right;color:var(--ink-faint);
+  font-variant-numeric:tabular-nums}
+.lrow.top5 .rk{color:var(--t-ascendant)}
+.who{min-width:0;display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
+.who b{font-family:var(--display);font-weight:600;font-size:17px;letter-spacing:.02em;
+  color:var(--ink);overflow-wrap:anywhere}
+.who span{font-size:13px;color:var(--ink-faint);font-style:italic}
+.meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.lv{font-family:var(--data);font-size:12px;color:var(--ink-dim);font-variant-numeric:tabular-nums}
+.tier{font-family:var(--display);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+  padding:3px 10px;border-radius:var(--r-pill);background:var(--glass);color:var(--tc)}
+.excluded{display:flex;align-items:center;gap:12px;margin-top:20px;padding:13px 14px;
+  border-radius:var(--r-md);background:var(--glass-2);color:var(--ink-faint);font-size:13.5px}
+
+/* ── card view: card left, stats right ──────────────────── */
+.split{display:grid;grid-template-columns:minmax(0,var(--bf-card-w,360px)) minmax(0,1fr);
+  gap:clamp(22px,3.4vw,46px);align-items:start;margin-top:26px}
+.cardcol{position:sticky;top:96px;display:flex;flex-direction:column;align-items:center;gap:16px}
+.hint{font-size:12.5px;color:var(--ink-faint);text-align:center;max-width:34ch;line-height:1.5}
+.backbtn{margin-top:4px}
+@media (max-width:900px){
+  .split{grid-template-columns:1fr}
+  .cardcol{position:static}
+}
+
+/* ── duel placeholder ───────────────────────────────────── */
+.arena{margin-top:24px;border-radius:var(--r-card);padding:clamp(26px,5vw,56px) 22px;
+  background:radial-gradient(80% 110% at 50% 108%,rgba(224,149,74,.14),transparent 64%),var(--glass-2);
+  text-align:center}
+.fighters{display:flex;gap:clamp(20px,8vw,96px);justify-content:center;align-items:flex-end}
+.fig{width:clamp(56px,15vw,88px)}
+.fig .silo{height:clamp(96px,22vw,142px);border-radius:var(--r-sm);
+  background:linear-gradient(180deg,#2e3542,#121620);
+  clip-path:polygon(38% 0,62% 0,70% 14%,66% 31%,80% 41%,78% 69%,66% 69%,64% 100%,36% 100%,34% 69%,22% 69%,20% 41%,34% 31%,30% 14%)}
+.fig p{margin:10px 0 0;font-family:var(--display);font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-faint)}
+.slots{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:28px}
+.slot{padding:16px;border-radius:var(--r-md);background:var(--glass-2);min-width:0;text-align:left}
+.slot b{display:block;font-family:var(--display);font-size:12px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--ink)}
+.slot span{display:block;margin-top:6px;font-size:13px;color:var(--ink-dim);line-height:1.5}
+.prov{margin-top:40px;padding-block:22px 40px;font-size:12.5px;color:var(--ink-faint);
+  line-height:1.65;box-shadow:0 -1px 0 rgba(255,255,255,.055)}
+.prov b{color:var(--ink-dim);font-weight:600}
+.pend{display:inline-block;font-family:var(--display);font-size:9px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ember);padding:1px 7px;border-radius:var(--r-pill);
+  background:rgba(224,149,74,.13)}
+</style>
+
+<div class="shell">
+<header class="topbar"><div class="wrap head">
+  <a class="wm wm--responsive" href="#ranks" aria-label="Blade Forever">
+    <svg class="wm__full" viewBox="0 0 262 40" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bf-wm-gold" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#f0d897"/><stop offset=".55" stop-color="#c7a765"/><stop offset="1" stop-color="#8f7638"/>
+        </linearGradient>
+        <linearGradient id="bf-wm-steel-l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4efe2"/><stop offset="1" stop-color="#9fb3c8"/></linearGradient>
+        <linearGradient id="bf-wm-steel-r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fb3c8"/><stop offset="1" stop-color="#4b5870"/></linearGradient>
+      </defs>
+      <g>
+        <circle cx="20" cy="21" r="15.5" fill="none" stroke="url(#bf-wm-gold)" stroke-width="3"/>
+        <path d="M20 1 24.2 8.5V27L20 31.5Z" fill="url(#bf-wm-steel-r)"/>
+        <path d="M20 1 15.8 8.5V27L20 31.5Z" fill="url(#bf-wm-steel-l)"/>
+        <rect x="9" y="26" width="22" height="4.4" rx="2.2" fill="url(#bf-wm-gold)"/>
+        <rect x="18.4" y="30" width="3.2" height="6" rx="1.6" fill="#8f7638"/>
+        <circle cx="20" cy="37.2" r="2.2" fill="url(#bf-wm-gold)"/>
+      </g>
+      <text class="wm-t" x="50" y="29" font-size="25" textLength="210" lengthAdjust="spacing"><tspan class="wm-a">BLADE</tspan><tspan class="wm-b" dx="9">FOREVER</tspan></text>
+    </svg>
+    <svg class="wm__mark" viewBox="0 0 40 40" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bf-wm-gold-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0d897"/><stop offset=".55" stop-color="#c7a765"/><stop offset="1" stop-color="#8f7638"/></linearGradient>
+        <linearGradient id="bf-wm-steel-lm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4efe2"/><stop offset="1" stop-color="#9fb3c8"/></linearGradient>
+        <linearGradient id="bf-wm-steel-rm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fb3c8"/><stop offset="1" stop-color="#4b5870"/></linearGradient>
+      </defs>
+      <circle cx="20" cy="21" r="15.5" fill="none" stroke="url(#bf-wm-gold-m)" stroke-width="3"/>
+      <path d="M20 1 24.2 8.5V27L20 31.5Z" fill="url(#bf-wm-steel-rm)"/>
+      <path d="M20 1 15.8 8.5V27L20 31.5Z" fill="url(#bf-wm-steel-lm)"/>
+      <rect x="9" y="26" width="22" height="4.4" rx="2.2" fill="url(#bf-wm-gold-m)"/>
+      <rect x="18.4" y="30" width="3.2" height="6" rx="1.6" fill="#8f7638"/>
+      <circle cx="20" cy="37.2" r="2.2" fill="url(#bf-wm-gold-m)"/>
+    </svg>
+    <span class="wm__tag">Chatter Chronicle</span>
+  </a>
+  <nav role="tablist" aria-label="Views">
+    <button class="btn btn--ghost" role="tab" aria-selected="true" data-view="ranks">Rankings</button>
+    <button class="btn btn--ghost" role="tab" aria-selected="false" data-view="card">Card</button>
+    <button class="btn btn--ghost" role="tab" aria-selected="false" data-view="duel">Duel</button>
+  </nav>
+</div></header>
+
+<main class="wrap band" id="view"></main>
+<div class="wrap prov" id="prov"></div>
+</div>
+
+<script src="shader.js"></script>
+<script src="data.js"></script>
+<script src="card3d.js"></script>
+<script src="stats.js"></script>
+<script>
+(function () {
+  var D = window.BF_DATA, view = document.getElementById('view');
+  var roster = D.ranked(), selected = roster[0], current = 'ranks';
+  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) {
+    return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]; }); };
+
+  function ranks() {
+    view.innerHTML =
+      '<p class="eyebrow">The Hall &middot; Standings</p>' +
+      '<h1 class="page">Rankings</h1>' +
+      '<p class="lede">Everyone who speaks in chat is ranked. Standing is earned across ' +
+      'every stream and never reset &mdash; the ledger only grows. Choose a name to open their card.</p>' +
+      '<div class="lhead"><i>#</i><span>Name</span><span>Standing</span></div>' +
+      '<div class="ledger">' + roster.map(function (m) {
+        return '<button class="lrow' + (m.rank <= 5 ? ' top5' : '') + '" data-h="' + esc(m.handle) + '">' +
+          '<span class="rk">' + m.rank + '</span>' +
+          '<span class="who"><b>' + esc(m.name) + '</b><span>' + esc(m.title) + '</span></span>' +
+          '<span class="meta"><span class="lv">L' + m.level + '</span>' +
+          '<span class="tier" style="--tc:var(--t-' + m.tier + ')">' + m.tier + '</span></span>' +
+        '</button>'; }).join('') + '</div>' +
+      D.bots().map(function (b) {
+        return '<div class="excluded"><span>' + esc(b.handle) + '</span>' +
+          '<span>' + b.chat.messages + ' messages &mdash; would rank #' + b.wouldRank +
+          '. Bots are not ranked and do not get cards.</span></div>'; }).join('');
+    bindRows();
+  }
+
+  function card() {
+    var m = selected;
+    view.innerHTML =
+      '<p class="eyebrow">Rank ' + m.rank + ' &middot; ' + esc(m.tier) + '</p>' +
+      '<h1 class="page">' + esc(m.name) + '</h1>' +
+      '<p class="lede">' + esc(m.title) + ' &mdash; ' + esc(m.cls) + ', bearing ' + esc(m.weapon) + '.</p>' +
+      '<div class="split"><div class="cardcol">' +
+        '<div id="cardmount"></div>' +
+        '<p class="hint">Move the pointer to tilt. Drag anywhere to spin. ' +
+        'Click the card to turn it over.</p>' +
+        '<button class="btn btn--secondary backbtn" id="back">Back to rankings</button>' +
+      '</div><div id="statmount"></div></div>';
+    window.BF_CARD.mount(document.getElementById('cardmount'), m);
+    window.BF_STATS.mount(document.getElementById('statmount'), m);
+    document.getElementById('back').addEventListener('click', function () { go('ranks'); });
+  }
+
+  function duel() {
+    view.innerHTML =
+      '<p class="eyebrow">Placeholder &middot; not built</p>' +
+      '<h1 class="page">The Duel</h1>' +
+      '<p class="lede">A sword duel played in the browser, fought by the members themselves. ' +
+      'This is a stub so the route and the shape exist &mdash; the animation library for it ' +
+      'lives on your machine.</p>' +
+      '<div class="arena"><div class="fighters">' +
+        '<div class="fig"><div class="silo"></div><p>Ascendant I</p></div>' +
+        '<div class="fig"><div class="silo"></div><p>Ascendant II</p></div>' +
+      '</div><p class="eyebrow" style="margin-top:22px">Arena &mdash; awaiting rig</p></div>' +
+      '<div class="slots">' +
+        '<div class="slot"><b>Roster</b><span>The top five of every chatter update are ' +
+          'modelled and rigged. The roster only grows.</span></div>' +
+        '<div class="slot"><b>Blades</b><span>A fighter carries the weapon their real member ' +
+          'status earned, from Notched Iron to Bladeforever.</span></div>' +
+        '<div class="slot"><b>Auto-entry</b><span>Three months a channel member and you are in, ' +
+          'ranked or not.</span></div>' +
+        '<div class="slot"><b>Open question</b><span>Played by visitors, or a spectacle that ' +
+          'resolves from both fighters&rsquo; stats? The second is far cheaper to ship.</span></div>' +
+      '</div>';
+  }
+
+  function bindRows() {
+    [].forEach.call(view.querySelectorAll('.lrow'), function (b) {
+      b.addEventListener('click', function () {
+        var m = D.byHandle(b.dataset.h);
+        if (m) { selected = m; go('card'); }
+      });
+    });
+  }
+
+  var VIEWS = { ranks: ranks, card: card, duel: duel };
+  function go(v) {
+    if (!VIEWS[v]) return;
+    current = v;
+    try { location.hash = v; } catch (e) {}
+    VIEWS[v]();
+    [].forEach.call(document.querySelectorAll('header.topbar nav button'), function (b) {
+      b.setAttribute('aria-selected', String(b.dataset.view === current));
+    });
+    window.scrollTo({ top: 0, behavior:
+      matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }
+  document.querySelector('header.topbar nav').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-view]'); if (b) go(b.dataset.view);
+  });
+
+  document.getElementById('prov').innerHTML =
+    '<b>Where these numbers come from.</b> Names, ranks, message counts and the moderator and ' +
+    'member flags are real, from the chat replay of <code>al0kXm7r3Kk</code> &mdash; "building the ' +
+    'hivecoding platform with opus 5.5" &mdash; first 3.6 hours, 1,500 events, 154 unique chatters, ' +
+    'pulled 2026-10-21. Ranks are provisional: a partial window favours early chatters. ' +
+    'Level and MIGHT derive from real message counts. Everything marked <span class="pend">backfill</span> ' +
+    '&mdash; VIGOUR, INSIGHT, RESOLVE, temperament, the hivecoding.gg record, streaks, dates and ' +
+    'membership length &mdash; is a seeded placeholder pending the full chat backfill and the ' +
+    'hivecoding.gg join on channel id. Portraits are generated from each handle; real avatars drop ' +
+    'into the same medallion. All art, frames, classes and weapon names are original to this project.';
+
+  window.BF_SHADER.mount(document.body);
+  var h = (location.hash || '').replace('#', '');
+  go(VIEWS[h] ? h : 'ranks');
+})();
+</script>
