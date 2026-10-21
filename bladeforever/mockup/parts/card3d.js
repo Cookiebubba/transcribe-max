@@ -253,12 +253,11 @@
         '<circle cx="170" cy="176" r="74" stroke-width="1"/>' + ticks +
         '<circle cx="170" cy="176" r="40" stroke-width="1.4"/></g>' +
       /* sword behind the initials */
-      '<g stroke-linejoin="round"><path d="M165,46 L175,46 L173,222 L170,236 L167,222Z" fill="url(#' + id + '-sw)" opacity=".92" stroke="#000" stroke-opacity=".5"/>' +
-      '<rect x="132" y="222" width="76" height="9" rx="4.5" style="fill:var(--gold)" stroke="#000" stroke-opacity=".5"/>' +
-      '<rect x="167.5" y="231" width="5" height="26" rx="2.5" style="fill:var(--raise)"/><circle cx="170" cy="262" r="6.5" style="fill:var(--gold)"/></g>' +
-      '<circle cx="170" cy="150" r="36" style="fill:var(--deep)" stroke="#000" stroke-opacity=".6" stroke-width="2"/>' +
-      '<circle cx="170" cy="150" r="33" fill="none" style="stroke:var(--accent)" stroke-width="1.2" opacity=".8"/>' +
-      '<text x="170" y="161" text-anchor="middle" style="font:700 30px var(--display, Georgia, serif);fill:var(--ink)" letter-spacing="1">' + esc(initials) + '</text>' +
+      '<g stroke-linejoin="round"><path d="M170,40 L177,62 L176,238 L164,238 L163,62Z" fill="url(#' + id + '-sw)" opacity=".92" stroke="#000" stroke-opacity=".5"/>' +
+      '<rect x="132" y="236" width="76" height="9" rx="4.5" style="fill:var(--gold)" stroke="#000" stroke-opacity=".5"/>' +
+      '<rect x="167.5" y="245" width="5" height="22" rx="2.5" style="fill:var(--raise)"/><circle cx="170" cy="273" r="6.5" style="fill:var(--gold)"/></g>' +
+      '<circle cx="170" cy="176" r="36" style="fill:var(--deep)" stroke="#000" stroke-opacity=".6" stroke-width="2"/>' +
+      '<circle cx="170" cy="176" r="33" fill="none" style="stroke:var(--accent)" stroke-width="1.2" opacity=".8"/>' +
       '</svg>';
   }
 
@@ -321,6 +320,7 @@
       '<div class="bf-plane" style="--z:34"><div class="bf-rim"></div></div>' +
       '<div class="bf-plane" style="--z:44">' +
         '<div class="bf-b-word">Blade Forever</div>' +
+        '<div class="bf-b-ini">' + esc(m.initials || name.slice(0, 2).toUpperCase()) + '</div>' +
         '<div class="bf-b-id"><h3>' + esc(m.handle || name) + '</h3><p>Sworn ' + esc(fmtDate(c.firstSeen)) + ' &middot; seen ' + esc(fmtDate(c.lastSeen)) + '</p></div>' +
         '<div class="bf-b-grid">' +
           '<div class="bf-b-cell"><span>Messages</span><b>' + num(c.messages) + '</b></div>' +
