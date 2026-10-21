@@ -8,7 +8,8 @@
    340 x 476 design grid, so the card scales as one object.
 
    LAYER STACK (front face, translateZ in px, back to front):
-     core 0 -> far scene 6 -> near scene 20 -> CHARACTER 36 -> fog 46
+     core 0 -> far bg 0 -> near bg 9 -> leading lines 18 -> floor 27
+     -> CHARACTER 36 -> foreground 43 -> fog 46
      -> frame 56 -> glass rim 60 -> embers 64 -> plates 74 -> stats 84
      -> hologram 92
    Each layer is a .bf-plane (full-card, own translateZ, scaled so it

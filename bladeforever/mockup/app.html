@@ -79,10 +79,32 @@ h1.page{font-family:var(--display);font-size:clamp(26px,4.6vw,42px);letter-spaci
   gap:clamp(22px,3.4vw,46px);align-items:start;margin-top:26px}
 .cardcol{position:sticky;top:96px;display:flex;flex-direction:column;align-items:center;gap:16px}
 .hint{font-size:12.5px;color:var(--ink-faint);text-align:center;max-width:34ch;line-height:1.5}
+/* A touch device has no pointer to move, so the instruction changes with it. */
+.p-coarse{display:none}
+@media (pointer:coarse){.p-fine{display:none}.p-coarse{display:inline}}
 .backbtn{margin-top:4px}
 @media (max-width:900px){
   .split{grid-template-columns:1fr}
   .cardcol{position:static}
+}
+/* Mobile: the card is the hero, so the heading block is compressed to lift it
+   above the fold on a 390x844 screen (it started 271px down), and the card
+   itself takes most of the width. Stats follow directly underneath. */
+@media (max-width:620px){
+  .band{padding-block:16px 34px}
+  h1.page{font-size:23px;letter-spacing:.04em;margin-top:3px}
+  .lede{font-size:14px;margin-top:7px;line-height:1.5}
+  #view[data-v="card"] .lede{display:none}
+  #view[data-v="card"] .band{padding-top:10px}
+  .split{gap:16px;margin-top:14px}
+  .cardcol{gap:11px}
+  .hint{font-size:12px;max-width:30ch}
+  .backbtn{margin-top:0}
+  .ledger{margin-top:18px}
+  .lrow{padding:12px 10px;gap:12px;grid-template-columns:34px minmax(0,1fr) auto}
+  .who b{font-size:15.5px}
+  .who span{font-size:12px}
+  :root{--bf-card-w:min(92vw,360px)}
 }
 
 /* ── duel placeholder ───────────────────────────────────── */
@@ -196,8 +218,9 @@ h1.page{font-family:var(--display);font-size:clamp(26px,4.6vw,42px);letter-spaci
       '<p class="lede">' + esc(m.title) + ' &mdash; ' + esc(m.cls) + ', bearing ' + esc(m.weapon) + '.</p>' +
       '<div class="split"><div class="cardcol">' +
         '<div id="cardmount"></div>' +
-        '<p class="hint">Move the pointer to tilt. Drag anywhere to spin. ' +
-        'Click the card to turn it over.</p>' +
+        '<p class="hint"><span class="p-fine">Move the pointer to tilt. Drag anywhere ' +
+        'to spin. Click the card to turn it over.</span>' +
+        '<span class="p-coarse">Drag the card to spin. Tap it to turn it over.</span></p>' +
         '<button class="btn btn--secondary backbtn" id="back">Back to rankings</button>' +
       '</div><div id="statmount"></div></div>';
     window.BF_CARD.mount(document.getElementById('cardmount'), m);
@@ -241,6 +264,7 @@ h1.page{font-family:var(--display);font-size:clamp(26px,4.6vw,42px);letter-spaci
   function go(v) {
     if (!VIEWS[v]) return;
     current = v;
+    view.dataset.v = v;
     try { location.hash = v; } catch (e) {}
     VIEWS[v]();
     [].forEach.call(document.querySelectorAll('header.topbar nav button'), function (b) {

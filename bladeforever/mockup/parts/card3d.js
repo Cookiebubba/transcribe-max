@@ -79,7 +79,10 @@
   }
   var P_WIN = arch(34, 62, 306, 326, 110, 14);       // the opening
   var P_MID = arch(22, 50, 318, 338, 122, 26);       // inlay groove
-  var P_RING = arch(10, 38, 330, 350, 134, 38);      // outer edge of window surround
+  var P_RING = arch(10, 38, 330, 350, 134, 38);
+  var P_SLOT = arch(0, 0, 294, 286, 121, 25);        // scene-plane clip, in slot coords (matches .bf-win)
+  function clipDef(id) { return '<clipPath id="' + id + '-cp"><path d="' + P_SLOT + '"/></clipPath>'; }
+  function open(id) { return '<g clip-path="url(#' + id + '-cp)">'; }      // outer edge of window surround
 
   /* ---------------- thorn crown: original motif ---------------- */
   function thorns(id) {
@@ -159,7 +162,7 @@
         '<stop offset=".55" style="stop-color:color-mix(in srgb, var(--accent) calc(var(--i) * 12% + 4%), var(--deep))"/>' +
         '<stop offset="1" style="stop-color:color-mix(in srgb, var(--accent) calc(var(--i) * 46% + 8%), var(--deep))"/></linearGradient>' +
       '<radialGradient id="' + id + '-moon" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:var(--accent);stop-opacity:.75"/><stop offset=".5" style="stop-color:var(--accent);stop-opacity:.22"/><stop offset="1" style="stop-color:var(--accent);stop-opacity:0"/></radialGradient>' +
-      '</defs>' +
+      clipDef(id) + '</defs>' + open(id) +
       '<rect width="294" height="286" fill="url(#' + id + '-sky)"/>' + stars +
       '<circle cx="147" cy="118" r="104" fill="url(#' + id + '-moon)"/>' +
       '<circle cx="147" cy="118" r="34" style="fill:color-mix(in srgb, var(--accent) calc(var(--i) * 30% + 10%), var(--parch))" opacity=".92"/>' +
@@ -168,30 +171,70 @@
       '<path d="M0,196 L26,176 L52,190 L84,160 L112,182 L140,168 L176,190 L210,156 L246,184 L274,170 L294,184 V286 H0Z" style="fill:color-mix(in srgb, var(--mist) 80%, var(--accent) 6%)" opacity=".9"/>' +
       '<path d="M96,206 V168 h10 v-12 h8 v12 h8 v-18 h8 v18 h8 v-12 h8 v12 h10 V206Z M168,206 V176 h8 v-8 h6 v8 h8 v-14 h6 v14 h8 V206Z" style="fill:var(--deep)" stroke="var(--void)" stroke-linejoin="round" stroke-width="1.5" opacity=".95"/>' +
       '<path d="M0,226 C40,208 70,222 110,214 C160,204 200,226 240,214 C262,208 280,212 294,218 V286 H0Z" style="fill:var(--deep)"/>' +
-      '</svg>';
+      '</g></svg>';
   }
 
+  /* Six-layer scene. Every plane is clipped three ways without touching preserve-3d:
+   its own .bf-win (leaf element, children are 2D), AND an SVG <clipPath> of the same
+   arch shape inside the svg. Vanishing point is (147,150). */
+  var SVG0 = '<svg viewBox="0 0 294 286" preserveAspectRatio="xMidYMid slice" aria-hidden="true">';
+
+  /* layer 2: closer background mass - twin spires, cliff band, braziers */
   function sceneNearSVG(id) {
-    return '<svg viewBox="0 0 294 286" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs>' +
-      '<linearGradient id="' + id + '-st" x1="0" y1="0" x2="1" y2="0"><stop offset="0" style="stop-color:var(--void)"/><stop offset="1" style="stop-color:var(--mist)"/></linearGradient>' +
-      '<radialGradient id="' + id + '-fl" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:var(--ember);stop-opacity:.9"/><stop offset="1" style="stop-color:var(--ember);stop-opacity:0"/></radialGradient>' +
-      '</defs>' +
-      /* ruined pillars + broken arch, left and right */
-      '<g fill="url(#' + id + '-st)" stroke="var(--void)" stroke-width="1.5" stroke-linejoin="round">' +
-        '<path d="M-6,286 V96 H-6 L38,96 V286Z"/><rect x="-8" y="84" width="52" height="14" rx="5"/>' +
-        '<path d="M44,92 C70,84 92,102 100,132 L86,134 C80,114 66,104 44,108Z"/>' +
-        '<path d="M300,286 V80 H256 V286Z"/><rect x="250" y="68" width="52" height="14" rx="5"/>' +
-        '<path d="M250,76 C224,68 202,86 194,116 L208,118 C214,98 228,88 250,92Z"/>' +
-      '</g>' +
-      '<g style="fill:var(--void)" opacity=".6"><path d="M34,286 L34,226 L44,222 L52,232 L60,224 L62,286Z"/><path d="M232,286 L234,236 L244,230 L252,240 L258,286Z"/></g>' +
-      /* braziers: warm light grows with tier */
-      '<g style="opacity:calc(.35 + var(--i) * .65)">' +
-        '<circle cx="22" cy="206" r="30" fill="url(#' + id + '-fl)"/><circle cx="272" cy="198" r="30" fill="url(#' + id + '-fl)"/>' +
-        '<path d="M16,214 q6,-18 6,-18 q6,10 6,18z" style="fill:var(--ember)"/><path d="M266,206 q6,-18 6,-18 q6,10 6,18z" style="fill:var(--ember)"/></g>' +
-      /* ground */
-      '<path d="M0,262 C50,250 90,262 147,258 C200,254 250,262 294,252 V286 H0Z" style="fill:var(--void)" opacity=".92"/>' +
-      '<g style="fill:var(--mist)" opacity=".7"><ellipse cx="60" cy="268" rx="14" ry="4"/><ellipse cx="236" cy="272" rx="18" ry="4.5"/><ellipse cx="190" cy="266" rx="8" ry="2.6"/></g>' +
-      '</svg>';
+    return SVG0 + '<defs>' + clipDef(id) +
+      '<linearGradient id="' + id + '-st" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--mist)"/><stop offset="1" style="stop-color:var(--void)"/></linearGradient>' +
+      '<radialGradient id="' + id + '-fl" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:var(--ember);stop-opacity:.9"/><stop offset="1" style="stop-color:var(--ember);stop-opacity:0"/></radialGradient></defs>' + open(id) +
+      '<g fill="url(#' + id + '-st)" stroke="var(--void)" stroke-width="1.5" stroke-linejoin="round" opacity=".92">' +
+        '<path d="M14,200 V96 Q14,70 40,48 Q66,70 66,96 V200Z"/><path d="M228,200 V86 Q228,60 254,40 Q280,60 280,86 V200Z"/>' +
+        '<path d="M-6,206 C40,184 80,196 120,190 C150,186 170,192 200,188 C240,182 270,190 300,200 V286 H-6Z"/></g>' +
+      '<g style="opacity:calc(.35 + var(--i) * .65)"><circle cx="46" cy="186" r="26" fill="url(#' + id + '-fl)"/><circle cx="250" cy="186" r="26" fill="url(#' + id + '-fl)"/>' +
+        '<path d="M41,194 q5,-16 5,-16 q5,9 5,16z M245,194 q5,-16 5,-16 q5,9 5,16z" style="fill:var(--ember)"/></g></g></svg>';
+  }
+
+  /* layer 3: leading lines - receding arch ribs, light shafts and banners converging on the hero */
+  function sceneLinesSVG(id) {
+    var ribs = '', k, ks = [1.0, .74, .54, .4, .3];
+    for (k = 0; k < ks.length; k++) {
+      var s = ks[k], w = 250 * s, h = 230 * s;
+      ribs += '<path d="' + arch(147 - w / 2, 150 - h * .62, 147 + w / 2, 150 + h * .38, w / 2, 6) + '" stroke-width="' + (3.2 * s + .6).toFixed(1) + '" opacity="' + (.2 + .4 * (1 - s)).toFixed(2) + '"/>';
+    }
+    var rays = '', a;
+    for (a = 0; a < 7; a++) {
+      var x = -20 + a * 55;
+      rays += '<path d="M147,150 L' + x + ',0 L' + (x + 22) + ',0Z" fill="url(#' + id + '-ray)"/>';
+    }
+    return SVG0 + '<defs>' + clipDef(id) +
+      '<linearGradient id="' + id + '-ray" x1="0" y1="1" x2="0" y2="0" gradientUnits="objectBoundingBox"><stop offset="0" style="stop-color:var(--accent);stop-opacity:0"/><stop offset="1" style="stop-color:var(--accent);stop-opacity:.22"/></linearGradient></defs>' + open(id) +
+      rays +
+      '<g fill="none" style="stroke:color-mix(in srgb, var(--accent) 35%, var(--ink-faint))" stroke-linejoin="round">' + ribs +
+        '<path d="M0,286 L147,150 M294,286 L147,150 M0,170 L147,150 M294,170 L147,150" stroke-width="1" opacity=".28"/></g>' +
+      '<g style="fill:var(--blood)" opacity=".8"><path d="M58,40 h18 v62 l-9,-9 l-9,9Z"/><path d="M218,40 h18 v62 l-9,-9 l-9,9Z"/></g></g></svg>';
+  }
+
+  /* layer 4: floor - receding ground plane, perspective tiles, contact shadow */
+  function sceneFloorSVG(id) {
+    var rows = '', cols = '', i, y = 152, step = 3;
+    for (i = 0; i < 10; i++) { rows += '<line x1="0" x2="294" y1="' + y.toFixed(1) + '" y2="' + y.toFixed(1) + '"/>'; step *= 1.38; y += step; }
+    for (i = -8; i <= 8; i++) cols += '<line x1="147" y1="152" x2="' + (147 + i * 70) + '" y2="290"/>';
+    return SVG0 + '<defs>' + clipDef(id) +
+      '<linearGradient id="' + id + '-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:color-mix(in srgb, var(--accent) calc(var(--i) * 30% + 6%), var(--mist))"/><stop offset=".35" style="stop-color:var(--deep)"/><stop offset="1" style="stop-color:var(--void)"/></linearGradient>' +
+      '<radialGradient id="' + id + '-sh" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#000" stop-opacity=".85"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient></defs>' + open(id) +
+      '<path d="M0,152 H294 V286 H0Z" fill="url(#' + id + '-g)"/>' +
+      '<g stroke-width="1" style="stroke:var(--ink-faint)" opacity=".28">' + rows + cols + '</g>' +
+      '<rect x="0" y="149" width="294" height="6" style="fill:var(--accent)" opacity=".18"/>' +
+      '<ellipse cx="147" cy="268" rx="64" ry="9" fill="url(#' + id + '-sh)"/></g></svg>';
+  }
+
+  /* layer 6: foreground - occluders in FRONT of the hero: broken pillar, low arch, rubble */
+  function sceneForeSVG(id) {
+    return SVG0 + '<defs>' + clipDef(id) +
+      '<linearGradient id="' + id + '-fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--raise)"/><stop offset="1" style="stop-color:var(--void)"/></linearGradient></defs>' + open(id) +
+      '<g fill="url(#' + id + '-fg)" stroke="var(--void)" stroke-width="1.6" stroke-linejoin="round" style="filter:drop-shadow(0 0 3px rgba(0,0,0,.6))">' +
+        '<path d="M-8,286 V150 L10,142 L18,156 L36,148 V286Z"/>' +
+        '<path d="M300,286 V232 Q300,196 270,196 Q242,196 238,226 L238,286Z"/>' +
+        '<ellipse cx="62" cy="276" rx="26" ry="13"/><ellipse cx="96" cy="282" rx="16" ry="8"/>' +
+        '<ellipse cx="212" cy="280" rx="22" ry="10"/><ellipse cx="180" cy="285" rx="12" ry="6"/></g>' +
+      '<g fill="none" style="stroke:var(--accent);filter:drop-shadow(0 0 3px var(--accent))" stroke-width="1.2" opacity=".5" stroke-linecap="round"><path d="M36,152 V270"/><path d="M62,263 q10,-4 22,0"/></g></g></svg>';
   }
 
   /* ---------------- PLACEHOLDER CHARACTER: original standing warrior ----------------
@@ -288,9 +331,12 @@
     var rank = m.rank == null ? '-' : m.rank;
     var tier = TIERS.indexOf(m.tier) < 0 ? 'footman' : m.tier;
     return '' +
-      '<div class="bf-plane" style="--z:6"><div class="bf-win">' + sceneFarSVG(id + 'a') + '</div></div>' +
-      '<div class="bf-plane" style="--z:20"><div class="bf-win">' + sceneNearSVG(id + 'b') + '</div></div>' +
+      '<div class="bf-plane" style="--z:0"><div class="bf-win">' + sceneFarSVG(id + 'a') + '</div></div>' +
+      '<div class="bf-plane" style="--z:9"><div class="bf-win">' + sceneNearSVG(id + 'b') + '</div></div>' +
+      '<div class="bf-plane" style="--z:18"><div class="bf-win">' + sceneLinesSVG(id + 'l') + '</div></div>' +
+      '<div class="bf-plane" style="--z:27"><div class="bf-win">' + sceneFloorSVG(id + 'o') + '</div></div>' +
       '<div class="bf-plane" style="--z:36"><div class="bf-win"><div class="bf-character" data-bf-slot="character">' + placeholderSVG(id + 'c') + '</div></div></div>' +
+      '<div class="bf-plane" style="--z:43"><div class="bf-win">' + sceneForeSVG(id + 'g') + '</div></div>' +
       '<div class="bf-plane" style="--z:46"><div class="bf-win"><div class="bf-fog"></div></div></div>' +
       '<div class="bf-plane" style="--z:56">' + frameSVG(id + 'f') + '</div>' +
       '<div class="bf-plane" style="--z:60"><div class="bf-rim"></div></div>' +
