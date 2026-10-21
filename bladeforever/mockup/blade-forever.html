@@ -278,12 +278,15 @@ const ROSTER=RAW.map((c,i)=>{
   const rank=i+1,n=hashOf(c.h);
   /* MIG and LEVEL are real (message count). VIG/INS/RES and membership months
      need the full backfill — derived deterministically here and flagged. */
-  const months=c.mem?1+n%14:0;
+  const months=c.mem?1+n%14:0, prompts=n%6;
+  /* VIGOUR measures turning up, so it tracks rank rather than drifting free.
+     INSIGHT is derived FROM prompts, so the Artificer class and the INSIGHT
+     stat can never disagree on the same card. */
   const o={...c,rank,
     level:Math.max(1,Math.min(60,Math.round(c.m/2))),
     MIG:Math.min(99,Math.round(c.m*.92)),
-    VIG:8+n%42, INS:c.mod?12+n%28:n%22, RES:months?20+months*4:4+n%18,
-    months, prompts:n%5};
+    VIG:Math.max(5,Math.min(99,62-rank*2+n%14)), INS:prompts*14+n%12,
+    RES:months?20+months*4:4+n%18, months, prompts};
   o.tier=tierFor(rank); o.cls=classOf(o); o.weapon=weaponFor(months); o.title=titleOf(o,rank);
   return o;
 });
