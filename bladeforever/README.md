@@ -1,8 +1,19 @@
-# hivecoding.gg — groundwork
+# Blade Forever — groundwork
 
-Turn MaxBladeTv's YouTube chat into a ranked, collectible community layer:
-every chatter gets a card with real stats, earned badges, and visual effects;
-chat gets mined for prompt suggestions filtered by AI.
+A chatter-statistics site for MaxBladeTv: rankings, collectible member cards,
+growth, goals and earnings, in a medieval dark-fantasy treatment.
+
+**Blade Forever is not hivecoding.gg.** hivecoding.gg is a separate, already-live
+site that runs the chat prompt engine. Blade Forever is a *consumer* of data:
+
+| source | gives us |
+|---|---|
+| **hivecoding.gg** | chat prompt-engine stats (suggestions, scores, what got used) |
+| **old site** | historical stats from the previous version |
+| **YouTube chat replay** | per-message chat history, avatars, badges, Super Chats |
+| **transcripts** (this repo) | goals, earnings timeline |
+
+Those merge into one ranking and one card per member.
 
 Status: **prep / spike.** Nothing is provisioned. This directory holds the
 schema, the ingestion script, the AI contracts, and the cost model.

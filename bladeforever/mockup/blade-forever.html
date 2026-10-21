@@ -1,0 +1,530 @@
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Blade Forever</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: an iron rail over a stone ground; each view is a slab band with a
+   hairline rule. Committed single dark theme — this is a Dark Souls / Skyrim
+   register and the ember accent only reads against near-black. Deliberately
+   austere: flat slabs, hairline rules, inset bevels. No filigree, no scrollwork. */
+:root{
+  --void:#0a0b0d; --stone:#14161b; --stone-2:#1d2128; --stone-3:#282d36;
+  --iron:#3a4150; --iron-hi:#4c5565; --steel:#8f99a8;
+  --bone:#cfc8b8; --parch:#e3d8bf;
+  --ember:#c2621c; --ember-hi:#e89243; --gold:#b1904c; --blood:#8d2f2f; --verd:#5d7a52;
+  --t-ascendant:#e89243; --t-exalted:#b1904c; --t-honored:#7f94a8;
+  --t-tempered:#6b5b43; --t-footman:#4a515d;
+  --display:"Cinzel",Georgia,serif; --body:"Spectral",Georgia,serif;
+  --data:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--void); color:var(--bone);
+  font-family:var(--body); font-size:15.5px; line-height:1.6;
+  background-image:
+    radial-gradient(1200px 560px at 50% -12%, #1b1d24 0%, transparent 64%),
+    radial-gradient(760px 420px at 88% 110%, #22160e 0%, transparent 62%);
+  background-attachment:fixed;
+}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:#07080a}
+/* stone grain — cheap, no assets */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.035;
+  background-image:repeating-linear-gradient(0deg,#fff 0 1px,transparent 1px 3px),
+    repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 4px)}
+.wrap{position:relative;z-index:1;width:100%;max-width:1160px;margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--display);margin:0;text-wrap:balance;letter-spacing:.03em}
+.mono{font-family:var(--data);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--display);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--steel)}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(10,11,13,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--iron)}
+.head{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-block:13px}
+.brand{font-family:var(--display);font-weight:700;font-size:19px;letter-spacing:.14em;
+  text-transform:uppercase;display:flex;align-items:center;gap:11px}
+.brand .bl{width:3px;height:22px;background:linear-gradient(var(--ember-hi),var(--blood));flex:none}
+.brand span{color:var(--ember-hi)}
+nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+nav button{font-family:var(--display);font-weight:600;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;background:transparent;color:var(--steel);border:1px solid transparent;
+  padding:7px 12px;cursor:pointer;border-radius:0}
+nav button:hover{color:var(--parch);background:var(--stone-2)}
+nav button[aria-selected="true"]{color:var(--void);background:var(--bone);border-color:var(--bone)}
+nav button:focus-visible,.card:focus-visible,.rowbtn:focus-visible{outline:2px solid var(--ember-hi);outline-offset:2px}
+
+.band{padding-block:40px 46px}
+.band+.band{border-top:1px solid var(--iron)}
+.titleblock{margin-bottom:24px}
+.titleblock h2{font-size:clamp(22px,3.6vw,32px);text-transform:uppercase;letter-spacing:.07em}
+.titleblock p{margin:9px 0 0;color:var(--steel);max-width:66ch;font-size:15px}
+
+/* ── ledger: the main ranking list ───────────────────────── */
+.ledger{border-top:1px solid var(--iron)}
+.lrow{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:14px;align-items:center;
+  padding:11px 6px;border-bottom:1px solid #22262e;min-width:0}
+.lrow:hover{background:var(--stone)}
+.lrow .r{font-family:var(--data);font-weight:700;font-size:14px;text-align:right;color:var(--steel)}
+.lrow .nm{min-width:0;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.lrow .nm b{font-family:var(--display);font-weight:600;font-size:16px;color:var(--parch);
+  overflow-wrap:anywhere}
+.lrow .nm .ti{font-size:12.5px;color:var(--steel);font-style:italic}
+.lrow .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.lv{font-family:var(--data);font-size:11.5px;font-weight:700;color:var(--bone);
+  border:1px solid var(--iron);padding:1px 6px;white-space:nowrap}
+.tierchip{font-family:var(--display);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+  padding:2px 7px;border:1px solid currentColor;white-space:nowrap}
+.rowbtn{background:none;border:none;padding:0;font:inherit;color:inherit;cursor:pointer;text-align:left}
+.top5 .r{color:var(--t-ascendant)}
+.ledgerhead{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:14px;padding:0 6px 8px;
+  font-family:var(--display);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#5c6676}
+.ledgerhead .r{text-align:right}
+
+/* ── cards ───────────────────────────────────────────────── */
+.cardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(212px,1fr));gap:22px}
+.card{position:relative;min-width:0;max-width:100%;aspect-ratio:3/4.3;padding:0;border:none;
+  background:none;font:inherit;color:inherit;text-align:left;cursor:pointer;
+  transition:transform .2s ease;transform-style:preserve-3d}
+.frame{position:relative;height:100%;overflow:hidden;
+  background:linear-gradient(176deg,var(--stone-3) 0%,var(--stone) 46%,#0d0f13 100%);
+  border:1px solid var(--fc,var(--iron));
+  box-shadow:inset 0 0 0 3px #0c0e12, inset 0 0 26px rgba(0,0,0,.85), 0 12px 30px rgba(0,0,0,.6);
+  display:flex;flex-direction:column}
+/* art slot — the generated medieval scene drops in here */
+.art{position:absolute;inset:34px 10px auto;height:46%;overflow:hidden;
+  background:
+    radial-gradient(90% 60% at 50% 96%, rgba(232,146,67,.3) 0%, transparent 70%),
+    linear-gradient(#10131a 0%, #1a1f28 42%, #0b0d11 100%);
+  border:1px solid #0d1015}
+.art i{position:absolute;display:block;background:#0c0f14}
+.art .m1{left:8%;bottom:0;width:22%;height:46%;clip-path:polygon(0 100%,14% 10%,30% 0,48% 14%,66% 6%,86% 22%,100% 100%)}
+.art .m2{right:4%;bottom:0;width:34%;height:58%;clip-path:polygon(0 100%,18% 24%,38% 6%,60% 20%,82% 4%,100% 30%,100% 100%);background:#090b0f}
+.art .arch{left:50%;bottom:0;width:30%;height:62%;transform:translateX(-50%);background:#0a0c10;
+  clip-path:polygon(0 100%,0 34%,16% 12%,34% 2%,50% 0,66% 2%,84% 12%,100% 34%,100% 100%,74% 100%,74% 44%,26% 44%,26% 100%)}
+.art .fog{inset:auto 0 0;height:40%;background:linear-gradient(transparent,rgba(26,31,40,.9));clip-path:none}
+.cardtop{position:relative;z-index:3;display:flex;align-items:center;gap:8px;
+  padding:7px 9px;background:linear-gradient(#20242c,#15181e);border-bottom:1px solid #0d1015}
+.cname{font-family:var(--display);font-weight:600;font-size:11.5px;line-height:1.2;
+  letter-spacing:.03em;color:var(--parch);min-width:0;overflow-wrap:anywhere}
+.clvl{margin-left:auto;font-family:var(--data);font-weight:700;font-size:11px;color:var(--fc,var(--bone));flex:none}
+.port{position:relative;z-index:4;width:62px;height:62px;margin:0 auto;margin-top:calc(34px + 46% - 31px);
+  border-radius:50%;border:2px solid var(--fc,var(--iron));background:#0b0d11;
+  display:grid;place-items:center;box-shadow:0 0 0 4px #0b0d11,0 6px 16px rgba(0,0,0,.8);overflow:hidden}
+.port b{font-family:var(--display);font-size:21px;font-weight:700;color:#fff;text-shadow:0 2px 8px #000}
+.typeline{position:relative;z-index:3;margin-top:9px;padding:0 9px;font-family:var(--display);
+  font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--steel);text-align:center}
+.statbar{position:relative;z-index:3;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  margin:9px 9px 0;background:#0d1015;border:1px solid #0d1015}
+.statbar div{background:var(--stone-2);padding:5px 2px;text-align:center}
+.statbar span{display:block;font-family:var(--display);font-size:8px;letter-spacing:.1em;color:#66707f}
+.statbar b{font-family:var(--data);font-size:12.5px;color:var(--bone)}
+.abil{position:relative;z-index:3;margin:8px 9px 0;padding:6px 8px;background:rgba(10,12,16,.72);
+  border-left:2px solid var(--fc,var(--iron));font-size:11px;line-height:1.4;color:#a9a394;font-style:italic}
+.cfoot{position:relative;z-index:3;margin-top:auto;padding:7px 9px;display:flex;align-items:center;
+  gap:7px;border-top:1px solid #0d1015;background:linear-gradient(#15181e,#0d0f13)}
+.cfoot .wp{font-size:10px;color:var(--steel);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cfoot .rk{margin-left:auto;font-family:var(--data);font-size:10px;font-weight:700;color:var(--fc,var(--bone));flex:none}
+
+/* tier treatments — the effect ladder */
+.sheen{position:absolute;inset:0;z-index:5;pointer-events:none;opacity:0;
+  background:linear-gradient(115deg,transparent 34%,rgba(255,255,255,.3) 48%,transparent 60%);
+  background-size:260% 260%;
+  background-position:calc(var(--mx,.5)*200% - 50%) calc(var(--my,.5)*200% - 50%);
+  mix-blend-mode:overlay;transition:opacity .2s}
+.card:hover .sheen{opacity:1}
+.card[data-tier="footman"] .sheen{display:none}
+/* honored (11-25): hover sheen only */
+.card[data-tier="honored"]{--fc:var(--t-honored)}
+/* tempered (26-100): hover tilt, no sheen */
+.card[data-tier="tempered"]{--fc:var(--t-tempered)}
+.card[data-tier="tempered"] .sheen{opacity:0!important}
+.card[data-tier="footman"]{--fc:var(--t-footman)}
+/* exalted (6-10): autonomous slow light sweep */
+.card[data-tier="exalted"]{--fc:var(--t-exalted)}
+.card[data-tier="exalted"] .frame::after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:linear-gradient(104deg,transparent 40%,rgba(177,144,76,.34) 50%,transparent 60%);
+  background-size:300% 300%;animation:sweep 5.5s linear infinite;mix-blend-mode:screen}
+@keyframes sweep{0%{background-position:160% 0}100%{background-position:-60% 0}}
+/* ascendant (1-5): sweep + rising embers + pulsing edge */
+.card[data-tier="ascendant"]{--fc:var(--t-ascendant)}
+.card[data-tier="ascendant"] .frame{animation:edge 3.6s ease-in-out infinite}
+@keyframes edge{0%,100%{box-shadow:inset 0 0 0 3px #0c0e12,inset 0 0 26px rgba(0,0,0,.85),0 12px 30px rgba(0,0,0,.6),0 0 0 1px rgba(232,146,67,.5)}
+  50%{box-shadow:inset 0 0 0 3px #0c0e12,inset 0 0 26px rgba(0,0,0,.85),0 12px 34px rgba(0,0,0,.6),0 0 16px 1px rgba(232,146,67,.75)}}
+.card[data-tier="ascendant"] .frame::after{content:"";position:absolute;inset:0;z-index:5;pointer-events:none;
+  background:linear-gradient(104deg,transparent 38%,rgba(232,146,67,.4) 50%,transparent 62%);
+  background-size:300% 300%;animation:sweep 4s linear infinite;mix-blend-mode:screen}
+.motes{position:absolute;inset:0;z-index:6;pointer-events:none;overflow:hidden;display:none}
+.card[data-tier="ascendant"] .motes{display:block}
+.motes i{position:absolute;bottom:-8px;width:2px;height:2px;border-radius:50%;
+  background:var(--ember-hi);box-shadow:0 0 6px 2px rgba(232,146,67,.6);animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) translateX(0);opacity:0}
+  12%{opacity:.95}70%{opacity:.7}100%{transform:translateY(-320px) translateX(var(--dx,6px));opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .card,.card .frame,.card .frame::after,.motes i{animation:none!important;transition:none!important}
+  .motes{display:none!important}
+}
+
+/* ── tier ladder table ──────────────────────────────────── */
+.tablewrap{overflow-x:auto;border:1px solid var(--iron);background:var(--stone)}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:14px}
+th,td{text-align:left;padding:10px 13px;border-bottom:1px solid #22262e;vertical-align:top}
+th{font-family:var(--display);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+  color:#5c6676;background:var(--stone-2)}
+tr:last-child td{border-bottom:none}
+td.num{font-family:var(--data);font-variant-numeric:tabular-nums;white-space:nowrap}
+td b{font-family:var(--display);font-weight:600;letter-spacing:.04em}
+
+/* ── detail ─────────────────────────────────────────────── */
+.detail{display:grid;grid-template-columns:minmax(0,236px) minmax(0,1fr);gap:30px;align-items:start}
+.breakdown{display:flex;flex-direction:column;gap:1px;background:var(--iron);border:1px solid var(--iron)}
+.brow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:12px;align-items:center;
+  background:var(--stone);padding:9px 12px;font-size:13.5px}
+.brow .src{color:var(--steel);min-width:0}
+.brow .arr{color:var(--ember);font-family:var(--data);flex:none}
+.brow .dst{font-family:var(--display);font-size:12.5px;letter-spacing:.05em;color:var(--parch);min-width:0}
+.pend{font-family:var(--display);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--blood);border:1px solid var(--blood);padding:0 4px;margin-left:6px;white-space:nowrap}
+
+/* ── duel placeholder ───────────────────────────────────── */
+.arena{position:relative;border:1px solid var(--iron);background:
+  radial-gradient(70% 90% at 50% 100%, rgba(194,98,28,.16) 0%, transparent 66%),
+  linear-gradient(#141720,#0a0b0e);
+  min-height:290px;display:grid;place-items:center;text-align:center;overflow:hidden;padding:32px 20px}
+.arena .vs{font-family:var(--display);font-size:clamp(34px,8vw,66px);font-weight:700;letter-spacing:.14em;
+  color:#1f2430;text-transform:uppercase}
+.arena .ov{position:relative;z-index:2}
+.fighters{display:flex;gap:clamp(16px,6vw,70px);justify-content:center;align-items:flex-end;margin-bottom:18px}
+.fig{width:clamp(54px,14vw,78px)}
+.fig .silo{height:clamp(84px,20vw,116px);background:linear-gradient(#2b313c,#12151b);
+  clip-path:polygon(38% 0,62% 0,70% 15%,66% 32%,80% 42%,78% 70%,66% 70%,64% 100%,36% 100%,34% 70%,22% 70%,20% 42%,34% 32%,30% 15%);
+  border:1px solid #0b0d11}
+.fig p{margin:7px 0 0;font-family:var(--display);font-size:10.5px;letter-spacing:.1em;color:var(--steel)}
+.slot{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:10px;margin-top:20px}
+.slotcard{border:1px dashed var(--iron);background:var(--stone);padding:12px;min-width:0}
+.slotcard b{display:block;font-family:var(--display);font-size:12px;letter-spacing:.05em;color:var(--parch)}
+.slotcard span{font-size:12px;color:var(--steel)}
+
+.panel{border:1px solid var(--iron);background:var(--stone);padding:17px}
+.note{font-size:13px;color:var(--steel);margin-top:16px;max-width:74ch}
+.note b{color:var(--bone);font-weight:600}
+.prov{border-top:1px solid var(--iron);padding-block:22px 36px;font-size:12.5px;color:#6c7684;position:relative;z-index:1}
+.prov b{color:var(--steel);font-weight:600}
+.kpis{display:flex;gap:26px;flex-wrap:wrap;margin-top:20px}
+.kpi b{display:block;font-family:var(--data);font-weight:700;font-size:clamp(19px,3.2vw,26px);color:var(--ember-hi)}
+.kpi span{font-family:var(--display);font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:#5c6676}
+@media (max-width:720px){.detail{grid-template-columns:1fr}.detail .card{max-width:250px}}
+</style>
+
+<header>
+  <div class="wrap head">
+    <div class="brand"><span class="bl"></span>Blade<span>&nbsp;Forever</span></div>
+    <nav role="tablist" aria-label="Views">
+      <button role="tab" aria-selected="true" data-view="ranks">Rankings</button>
+      <button role="tab" aria-selected="false" data-view="cards">Cards</button>
+      <button role="tab" aria-selected="false" data-view="detail">Card</button>
+      <button role="tab" aria-selected="false" data-view="traits">Traits</button>
+      <button role="tab" aria-selected="false" data-view="duel">Duel</button>
+    </nav>
+  </div>
+</header>
+<main id="views"></main>
+<div class="wrap prov" id="prov"></div>
+
+<script>
+/* ── roster: real chat data, ranks 1-19 from the sampled replay ── */
+const RAW=[
+ {h:"@humblelifeskills",m:107,mod:1,mem:1},{h:"@TheZarion007",m:85},{h:"@shmloney",m:84},
+ {h:"@byanuragbaral",m:65},{h:"@AppsCreative",m:56},{h:"@Sam-Amodei",m:48},
+ {h:"@davidkang5708",m:45,mod:1},{h:"@Ackk53",m:40},{h:"@chrislink73",m:34},
+ {h:"@rieefq",m:33},{h:"@BrandynMakes",m:33,mod:1,mem:1},{h:"@sumwhat1275",m:29,mem:1},
+ {h:"@Choso-r6f",m:28},{h:"@Zincツ",m:28},{h:"@adrianpadurariu",m:27,mem:1},
+ {h:"@RobbieHyatt",m:24},{h:"@IAMYOURFATHERANDYOURMOTHER",m:23},{h:"@argofowl",m:21},
+ {h:"@iamdonh",m:19,mod:1}
+];
+
+/* tier ladder — rank decides the treatment */
+const TIERS=[
+ {k:"ascendant",name:"Ascendant",lo:1,hi:5,fx:"Animated — ember motes, light sweep, pulsing edge",
+  extra:"Modelled and rigged for the Duel",col:"var(--t-ascendant)"},
+ {k:"exalted",name:"Exalted",lo:6,hi:10,fx:"Animated — slow light sweep",extra:"Gold-iron frame",col:"var(--t-exalted)"},
+ {k:"honored",name:"Honoured",lo:11,hi:25,fx:"Holo sheen on hover",extra:"Steel frame",col:"var(--t-honored)"},
+ {k:"tempered",name:"Tempered",lo:26,hi:100,fx:"Tilt on hover, no sheen",extra:"Bronze frame",col:"var(--t-tempered)"},
+ {k:"footman",name:"Footman",lo:101,hi:null,fx:"None — flat stone",extra:"Everyone has a card",col:"var(--t-footman)"}
+];
+const tierFor=r=>TIERS.find(t=>r>=t.lo&&(t.hi===null||r<=t.hi));
+
+/* class comes from the dominant trait */
+function classOf(c){
+  if(c.mod)return"Warden";
+  if(c.prompts>=3)return"Artificer";
+  if(c.mem)return"Oathsworn";
+  if(c.m>=80)return"Chronicler";
+  if(c.m>=40)return"Journeyman";
+  return"Wanderer";
+}
+/* weapon comes from membership length — the Duel uses this to pick the blade */
+const WEAPONS=[[0,"Notched Iron"],[1,"Footman's Sword"],[3,"Oathsteel"],[6,"Emberbrand"],[12,"Bladeforever"]];
+const weaponFor=mo=>WEAPONS.filter(w=>mo>=w[0]).at(-1)[1];
+function titleOf(c,r){
+  if(r===1)return"First of the Hall";
+  if(c.mod)return"Warden of the Chat";
+  if(c.mem)return"Sworn of the Blade";
+  if(r<=10)return"Of the Vanguard";
+  return"Of the Ranks";
+}
+function hashOf(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return Math.abs(h)}
+
+const ROSTER=RAW.map((c,i)=>{
+  const rank=i+1,n=hashOf(c.h);
+  /* MIG and LEVEL are real (message count). VIG/INS/RES and membership months
+     need the full backfill — derived deterministically here and flagged. */
+  const months=c.mem?1+n%14:0;
+  const o={...c,rank,
+    level:Math.max(1,Math.min(60,Math.round(c.m/2))),
+    MIG:Math.min(99,Math.round(c.m*.92)),
+    VIG:8+n%42, INS:c.mod?12+n%28:n%22, RES:months?20+months*4:4+n%18,
+    months, prompts:n%5};
+  o.tier=tierFor(rank); o.cls=classOf(o); o.weapon=weaponFor(months); o.title=titleOf(o,rank);
+  return o;
+});
+let selected=ROSTER[0],current="ranks";
+
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function portrait(h){
+  const n=hashOf(h),a=n%360;
+  return`<div class="port" style="background:linear-gradient(150deg,hsl(${a} 26% 38%),hsl(${(a+40)%360} 22% 16%))">
+    <b>${esc(h.replace(/^@/,"").slice(0,2).toUpperCase())}</b></div>`;
+}
+function motes(h){
+  const n=hashOf(h);let s="";
+  for(let i=0;i<9;i++){
+    const L=(n*(i+3))%92+4, d=3.4+((n>>i)%40)/10, del=((n>>(i+2))%50)/10, dx=((n>>i)%18)-9;
+    s+=`<i style="left:${L}%;animation-duration:${d}s;animation-delay:-${del}s;--dx:${dx}px"></i>`;
+  }
+  return`<div class="motes">${s}</div>`;
+}
+function cardHTML(c){
+  return`<button class="card" data-tier="${c.tier.k}" data-handle="${esc(c.h)}"
+      aria-label="${esc(c.h)}, rank ${c.rank}, ${c.tier.name}">
+    <div class="frame">
+      <div class="cardtop"><span class="cname">${esc(c.h.replace(/^@/,""))}</span>
+        <span class="clvl">L${c.level}</span></div>
+      <div class="art"><i class="m2"></i><i class="m1"></i><i class="arch"></i><i class="fog"></i></div>
+      ${portrait(c.h)}
+      <div class="typeline">${c.cls} · ${c.tier.name}</div>
+      <div class="statbar">
+        <div><span>MIG</span><b>${c.MIG}</b></div><div><span>VIG</span><b>${c.VIG}</b></div>
+        <div><span>INS</span><b>${c.INS}</b></div><div><span>RES</span><b>${c.RES}</b></div></div>
+      <div class="abil">${esc(c.title)}.</div>
+      <div class="cfoot"><span class="wp">${esc(c.weapon)}</span><span class="rk">#${c.rank}</span></div>
+      <div class="sheen"></div>${motes(c.h)}
+    </div></button>`;
+}
+
+/* ── views ── */
+function viewRanks(){
+  return`<section class="band"><div class="wrap">
+    <div class="titleblock"><p class="eyebrow">The Hall · Standings</p>
+      <h2>Rankings</h2>
+      <p>Everyone who speaks in chat is ranked. Standing is earned across every
+         stream and never reset — the ledger only grows.</p></div>
+    <div class="ledgerhead"><span class="r">#</span><span>Name</span><span>Standing</span></div>
+    <div class="ledger">${ROSTER.map(c=>`
+      <div class="lrow ${c.rank<=5?"top5":""}">
+        <span class="r">${c.rank}</span>
+        <span class="nm"><b><button class="rowbtn" data-handle="${esc(c.h)}">${esc(c.h.replace(/^@/,""))}</button></b>
+          <span class="ti">${esc(c.title)}</span></span>
+        <span class="meta"><span class="lv">L${c.level}</span>
+          <span class="tierchip" style="color:${c.tier.col}">${c.tier.name}</span></span>
+      </div>`).join("")}</div>
+    <div class="kpis">
+      <div class="kpi"><b>154</b><span>ranked chatters</span></div>
+      <div class="kpi"><b>19</b><span>shown</span></div>
+      <div class="kpi"><b>5</b><span>ascendant</span></div>
+      <div class="kpi"><b>1</b><span>bot filtered</span></div>
+    </div>
+    <p class="note"><b>@nightbot</b> would place 8th on raw message count and is excluded —
+      bots are not ranked and do not get cards.</p>
+  </div></section>`;
+}
+
+function viewCards(){
+  const reps=TIERS.map(t=>ROSTER.find(c=>c.tier.k===t.k)).filter(Boolean);
+  return`<section class="band"><div class="wrap">
+    <div class="titleblock"><p class="eyebrow">Prototypes</p><h2>The Effect Ladder</h2>
+      <p>Information is organised the way a trading card organises it — name and level
+         bar, art, type line, stat block, ability text, footer. The treatment is a
+         medieval one: flat slabs, hairline iron, inset bevels. Rank decides how much
+         the card moves.</p></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Tier</th><th class="num">Ranks</th><th>Treatment</th><th>Also</th></tr></thead>
+      <tbody>${TIERS.map(t=>`<tr><td><b style="color:${t.col}">${t.name}</b></td>
+        <td class="num">${t.hi?t.lo+"–"+t.hi:t.lo+"+"}</td>
+        <td>${t.fx}</td><td>${t.extra}</td></tr>`).join("")}</tbody></table></div>
+    <p class="note">Only the top ten move on their own. Below that the card reacts to you
+      but stays still otherwise, so a page of two hundred cards doesn't crawl — and the
+      top of the board stays visibly rarer.</p>
+    <h3 style="margin:30px 0 14px;font-size:14px;letter-spacing:.17em;text-transform:uppercase;color:var(--steel)">
+      One of each tier</h3>
+    <div class="cardgrid">${reps.map(cardHTML).join("")}</div>
+    <h3 style="margin:34px 0 14px;font-size:14px;letter-spacing:.17em;text-transform:uppercase;color:var(--steel)">
+      Top five · Ascendant</h3>
+    <div class="cardgrid">${ROSTER.slice(0,5).map(cardHTML).join("")}</div>
+  </div></section>`;
+}
+
+function viewDetail(){
+  const c=selected;
+  const rows=[
+   ["Lifetime messages","Level &amp; MIGHT",false],
+   ["Rank on the ledger","Tier, frame &amp; effect",false],
+   ["Moderator badge","Class — Warden",false],
+   ["Membership","Class — Oathsworn",false],
+   ["Streams attended","VIGOUR",true],
+   ["Prompts used on stream","INSIGHT &amp; Class — Artificer",true],
+   ["Tenure / streak","RESOLVE",true],
+   ["Months a member","Weapon tier",true],
+   ["Super Chats","Patron sigil, gold trim",true]
+  ];
+  return`<section class="band"><div class="wrap">
+    <div class="titleblock"><p class="eyebrow">Rank ${c.rank} · ${c.tier.name}</p>
+      <h2>${esc(c.h.replace(/^@/,""))}</h2>
+      <p>${esc(c.title)} — ${c.cls}, bearing ${esc(c.weapon)}.</p></div>
+    <div class="detail">
+      <div>${cardHTML(c)}</div>
+      <div>
+        <p class="eyebrow" style="margin-bottom:11px">Trait → card element</p>
+        <div class="breakdown">${rows.map(([s,d,pending])=>`
+          <div class="brow"><span class="src">${s}</span><span class="arr">→</span>
+            <span class="dst">${d}${pending?'<span class="pend">backfill</span>':""}</span></div>`).join("")}</div>
+        <div class="kpis">
+          <div class="kpi"><b>L${c.level}</b><span>level</span></div>
+          <div class="kpi"><b>${c.m}</b><span>messages</span></div>
+          <div class="kpi"><b>${c.cls}</b><span>class</span></div>
+          <div class="kpi"><b>#${c.rank}</b><span>rank</span></div>
+        </div>
+        <p class="note">Rows marked <span class="pend">backfill</span> are wired but not yet
+          fed — they need the full chat history and the hivecoding.gg stats join. MIGHT,
+          level, tier and class-from-badge are real today.</p>
+      </div>
+    </div>
+  </div></section>`;
+}
+
+function viewTraits(){
+  const cls=[["Warden","Holds the moderator badge","mod badge"],
+   ["Artificer","Suggestions of theirs got used on stream","prompts used ≥ 3"],
+   ["Oathsworn","Channel member","membership"],
+   ["Chronicler","Speaks the most","≥ 80 messages"],
+   ["Journeyman","A steady voice","≥ 40 messages"],
+   ["Wanderer","Newly arrived","default"]];
+  return`<section class="band"><div class="wrap">
+    <div class="titleblock"><p class="eyebrow">System</p><h2>Traits &amp; Classes</h2>
+      <p>Nothing on a card is decorative. Each element is a real measurement, so a card
+         can be regenerated from the database at any time and will come out the same.</p></div>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Class</th><th>Meaning</th><th>Earned by</th></tr></thead>
+      <tbody>${cls.map(([n,m,e])=>`<tr><td><b>${n}</b></td><td>${m}</td>
+        <td class="num" style="font-size:12.5px">${e}</td></tr>`).join("")}</tbody></table></div>
+    <h3 style="margin:28px 0 13px;font-size:14px;letter-spacing:.17em;text-transform:uppercase;color:var(--steel)">
+      Weapon by membership length</h3>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Blade</th><th class="num">Months a member</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td><b>Notched Iron</b></td><td class="num">—</td><td>Not a member</td></tr>
+        <tr><td><b>Footman's Sword</b></td><td class="num">1–2</td><td></td></tr>
+        <tr><td><b>Oathsteel</b></td><td class="num">3–5</td><td>Three months also auto-qualifies for the Duel</td></tr>
+        <tr><td><b>Emberbrand</b></td><td class="num">6–11</td><td></td></tr>
+        <tr><td><b>Bladeforever</b></td><td class="num">12+</td><td>The relic the site is named for</td></tr>
+      </tbody></table></div>
+    <h3 style="margin:28px 0 13px;font-size:14px;letter-spacing:.17em;text-transform:uppercase;color:var(--steel)">
+      The four stats</h3>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Stat</th><th>Measures</th><th>Source</th></tr></thead>
+      <tbody>
+        <tr><td><b>MIGHT</b></td><td>How much they speak</td><td>lifetime messages</td></tr>
+        <tr><td><b>VIGOUR</b></td><td>How reliably they turn up</td><td>streams attended</td></tr>
+        <tr><td><b>INSIGHT</b></td><td>How often their ideas get built</td><td>prompts used (hivecoding.gg)</td></tr>
+        <tr><td><b>RESOLVE</b></td><td>How long they've stood there</td><td>tenure and streak</td></tr>
+      </tbody></table></div>
+    <p class="note">Four stats, not six — every one maps to something the database already
+      knows how to count. Nothing is invented to fill a slot.</p>
+  </div></section>`;
+}
+
+function viewDuel(){
+  return`<section class="band"><div class="wrap">
+    <div class="titleblock"><p class="eyebrow">Placeholder · not built</p><h2>The Duel</h2>
+      <p>A sword duel you play in the browser, using the members themselves as
+         fighters. This page is a stub so the route and the shape exist — the animation
+         library for it lives on your machine.</p></div>
+    <div class="arena">
+      <div class="vs" aria-hidden="true">Versus</div>
+      <div class="ov">
+        <div class="fighters">
+          <div class="fig"><div class="silo"></div><p>Ascendant I</p></div>
+          <div class="fig"><div class="silo"></div><p>Ascendant II</p></div>
+        </div>
+        <p class="eyebrow">Arena — awaiting rig</p>
+      </div>
+    </div>
+    <div class="slot">
+      <div class="slotcard"><b>Roster</b><span>Top 5 of every chatter update are modelled
+        and rigged. The roster grows each update; nobody is removed.</span></div>
+      <div class="slotcard"><b>Blades</b><span>A fighter carries the weapon their real
+        member status earned — Notched Iron through Bladeforever.</span></div>
+      <div class="slotcard"><b>Auto-entry</b><span>Three months a channel member and you're
+        in, ranked or not.</span></div>
+      <div class="slotcard"><b>Animation</b><span>Drop-in slot for your local library.
+        Nothing here commits to an engine yet.</span></div>
+    </div>
+    <p class="note">Open question worth settling before anything is modelled: is the Duel
+      <b>played</b> by visitors, or is it a <b>spectacle</b> that resolves from the two
+      fighters' stats? The first needs input, netcode and balance; the second is a
+      render of a result and is far cheaper to ship.</p>
+  </div></section>`;
+}
+
+const VIEWS={ranks:viewRanks,cards:viewCards,detail:viewDetail,traits:viewTraits,duel:viewDuel};
+function wire(){
+  document.querySelectorAll(".card").forEach(el=>{
+    el.addEventListener("pointermove",e=>{
+      const r=el.getBoundingClientRect(),mx=(e.clientX-r.left)/r.width,my=(e.clientY-r.top)/r.height;
+      el.style.setProperty("--mx",mx.toFixed(3));el.style.setProperty("--my",my.toFixed(3));
+      if(!matchMedia("(prefers-reduced-motion: reduce)").matches)
+        el.style.transform=`perspective(820px) rotateY(${(mx-.5)*13}deg) rotateX(${(.5-my)*13}deg)`;
+    });
+    el.addEventListener("pointerleave",()=>{el.style.transform=""});
+    el.addEventListener("click",()=>{const f=ROSTER.find(c=>c.h===el.dataset.handle);
+      if(f){selected=f;go("detail")}});
+  });
+  document.querySelectorAll(".rowbtn").forEach(b=>b.addEventListener("click",ev=>{
+    ev.stopPropagation();const f=ROSTER.find(c=>c.h===b.dataset.handle);if(f){selected=f;go("detail")}}));
+}
+function render(){
+  document.getElementById("views").innerHTML=VIEWS[current]();
+  document.querySelectorAll("nav button").forEach(b=>
+    b.setAttribute("aria-selected",String(b.dataset.view===current)));
+  wire();
+}
+function go(v){if(!VIEWS[v])return;current=v;try{location.hash=v}catch(e){}render();
+  window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})}
+document.querySelector("nav").addEventListener("click",e=>{
+  const b=e.target.closest("button[data-view]");if(b)go(b.dataset.view)});
+
+document.getElementById("prov").innerHTML=
+ `<b>Sources.</b> Names, ranks, message counts, moderator and member flags are real — from the
+  chat replay of <span class="mono">al0kXm7r3Kk</span> ("building the hivecoding platform with
+  opus 5.5"), first 3.6 hours, 1,500 events, 154 chatters, pulled 2026-10-21. Ranks are
+  provisional: a partial window favours early chatters. <b>MIGHT and level are derived from real
+  message counts;</b> VIGOUR, INSIGHT, RESOLVE, membership months and weapon tier are placeholders
+  pending the full backfill and the hivecoding.gg stats join — marked
+  <span class="pend">backfill</span> on the card view. Portraits are generated from a hash of
+  each handle; real avatars drop into the same medallion. Card art is a CSS stand-in for the
+  generated medieval scene, which cannot load here because external images are blocked in this
+  frame. All art, classes, weapon names and frames are original to this project.`;
+
+const h=(location.hash||"").replace("#","");
+if(VIEWS[h])current=h;
+render();
+</script>
