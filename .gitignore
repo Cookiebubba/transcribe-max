@@ -7,3 +7,4 @@ venv/
 *.vtt
 *.srt
 memory/.ingest_state.json
+hivecoding/data/
