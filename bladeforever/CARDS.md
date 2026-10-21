@@ -92,3 +92,46 @@ tier ladder above.
   two fighters' stats? The second is far cheaper to ship.
 - Are cards opt-in or opt-out for members?
 - Is the ledger all-time, rolling-90-day, or both?
+
+---
+
+## Card scene: parallax layer stack
+
+The portrait window is a six-layer parallax scene, each layer on its own depth
+plane so tilting the card produces real separation rather than a flat image.
+
+| Layer | z | Contents |
+|---|---|---|
+| far background | 0 | sky, moon, ridge |
+| near background | 9 | twin spires, braziers |
+| leading lines | 18 | arch ribs, light shafts, banners — draw the eye to centre |
+| floor | 27 | perspective tiles, contact shadow |
+| **character** | **36** | the swappable figure (see below) |
+| foreground | 43 | broken pillar, low arch, rubble — occludes the character |
+| fog | 46 | atmospheric haze |
+| frame | 56 | the metal frame, sits over the window edge |
+
+**Masking.** Nothing may render outside the card border. Each scene plane is
+clipped by its own `.bf-win` leaf (arch radius + `overflow:hidden`), and each
+scene SVG also carries its own `<clipPath>` of the same arch. Crucially, no
+clipping is applied to an ancestor inside the 3D chain — `overflow`,
+`clip-path` or `filter` on an ancestor flattens `preserve-3d` and destroys the
+parallax. Any future layer must follow the same rule.
+
+**Known limit.** At steep free-spin the plane deck visibly separates. That is
+inherent to a `preserve-3d` stack with genuine depth — the card *is* a deck of
+planes, so a steep viewing angle shows its spread. It is not a clipping bug and
+cannot be fixed by more clipping. The options are to clamp the spin angle, to
+collapse the z-spread (which costs the parallax), or to accept it as the card
+behaving like a physical object. Undecided.
+
+**Material.** The card body is deliberately translucent: `.bf-core` is `--mist`
+at 70% with `backdrop-filter: blur(18px) saturate(1.35)` — the "dark liquid
+glass" brief. It is meant to pick up the background behind it. Testing it
+against a bright flat colour will make correct behaviour look broken.
+
+**Swapping the character.** `BF_CARD.characterSlot()` returns the live
+`.bf-character` node; `slot.replaceChildren(imgOrCanvasOrWebGL)` swaps it. It is
+already clipped to the arch and needs nothing else changed. `BF_CARD.pose`
+exposes `{rx, ry, spin, nx, ny}` each frame so a 3D character can be aimed to
+match the card's tilt. This is the hook for the modelled, rigged fighters.
