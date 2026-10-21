@@ -203,6 +203,7 @@ button.chip:focus-visible, a.chip:focus-visible, button.tag:focus-visible { outl
 @keyframes bf-ember { 0%,100% { opacity: 1; } 50% { opacity: .45; } }
 
 /* ---------- form inputs ---------- */
+.input, .select, .textarea, .btn, .chip, .pill, .tag, .nav-item { box-sizing: border-box; }
 .field { display: flex; flex-direction: column; gap: .5rem; }
 .input, .select, .textarea {
   appearance: none; -webkit-appearance: none; width: 100%; min-height: 44px; padding: .7em 1.1em;
@@ -292,17 +293,17 @@ hr::after, .divider::after {
 .wm__tag { font-family: var(--display); font-size: .62rem; font-weight: 600; letter-spacing: .42em; text-transform: uppercase; color: var(--ink-faint); padding-left: .2em; }
 .wm--lg .wm__tag { font-size: .74rem; }
 .wm--xl .wm__tag, .wm--xxl .wm__tag { font-size: .95rem; }
-.wm__mark { display: none; }
+.wm svg.wm__mark { display: none; }
 .wm svg .wm-t { font-family: var(--display); font-weight: 900; }
 .wm svg .wm-a { fill: url(#bf-wm-gold); }
 .wm svg .wm-b { fill: var(--ink); }
 /* mark-only: swap on narrow screens, or force with .wm--mark */
-.wm--mark .wm__full, .wm--mark .wm__tag { display: none; }
-.wm--mark .wm__mark { display: block; }
+.wm--mark svg.wm__full, .wm--mark .wm__tag { display: none; }
+.wm--mark svg.wm__mark { display: block; }
 .wm--mark svg { height: 36px; }
 @media (max-width: 520px) {
-  .wm--responsive .wm__full, .wm--responsive .wm__tag { display: none; }
-  .wm--responsive .wm__mark { display: block; }
+  .wm--responsive svg.wm__full, .wm--responsive .wm__tag { display: none; }
+  .wm--responsive svg.wm__mark { display: block; }
   .wm--responsive svg { height: 36px; }
 }
 

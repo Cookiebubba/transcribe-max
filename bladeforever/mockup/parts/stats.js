@@ -3,8 +3,15 @@
   'use strict';
 
   var uid = 0;
-  var host = null;
-  var current = null;
+  /* Per-instance state. These were module-level singletons, so a second mount()
+     stole them from the first panel: the first host never got its reveal class
+     and stayed frozen at zero, and only the newest panel was observed for
+     resize. A ranked page mounts many panels, so state lives per host element.
+     renderHost is the host of the current synchronous render pass, which lets
+     the sizing helpers stay zero-argument. */
+  var STATE = new WeakMap();
+  var lastHost = null;
+  var renderHost = null;
 
   var STAT_DEFS = [
     { key: 'MIG', name: 'Might', note: 'Raw volume of voice' },
@@ -43,6 +50,7 @@
     var t = String(m.tier || '').toLowerCase();
     return TIERS[t] ? t : 'footman';
   }
+  function isNarrow(h) { h = h || renderHost; return !!h && h.clientWidth > 0 && h.clientWidth < 520; }
   function head(title, sub) {
     return '<header class="bfs-sec-head"><h3 class="bfs-h">' + esc(title) + '</h3>' +
       (sub ? '<span class="bfs-h-sub">' + sub + '</span>' : '') + '</header>';
@@ -88,7 +96,8 @@
   function radar(m) {
     var p = m.personality || {};
     var id = 'bfsr' + (++uid);
-    var W = 500, H = 296, cx = 250, cy = 148, R = 104, n = AXES.length;
+    var nar = isNarrow(), n = AXES.length;
+    var lh = nar ? 23 : 16, R = nar ? 80 : 104, W = 500, cx = 250, cy = R + (nar ? 52 : 44), H = cy + R * 0.81 + lh * 2 + 26;
     function pt(i, r) {
       var a = (-90 + i * 360 / n) * Math.PI / 180;
       return [cx + r * Math.cos(a), cy + r * Math.sin(a)];
@@ -111,17 +120,17 @@
       var c = Math.cos((-90 + i * 360 / n) * Math.PI / 180);
       var anchor = c > 0.3 ? 'start' : (c < -0.3 ? 'end' : 'middle');
       var y1, y2;
-      if (i === 0) { y1 = q[1] - 17; y2 = q[1] - 2; }                 /* block above vertex */
-      else if (Math.sin((-90 + i * 360 / n) * Math.PI / 180) > 0.5) { y1 = q[1] + 14; y2 = q[1] + 30; } /* below */
-      else { y1 = q[1] - 4; y2 = q[1] + 12; }                        /* beside */
+      if (i === 0) { y1 = q[1] - lh - 2; y2 = q[1] - 3; }                 /* block above vertex */
+      else if (Math.sin((-90 + i * 360 / n) * Math.PI / 180) > 0.5) { y1 = q[1] + lh - 2; y2 = q[1] + 2 * lh - 1; } /* below */
+      else { y1 = q[1] - 3; y2 = q[1] + lh - 4; }                        /* beside */
       return '<text class="bfs-rlab" x="' + f1(q[0]) + '" y="' + f1(y1) + '" text-anchor="' + anchor + '">' + a.label + '</text>' +
              '<text class="bfs-rval" x="' + f1(q[0]) + '" y="' + f1(y2) + '" text-anchor="' + anchor + '">' + Math.round(vals[i]) + '</text>';
     }).join('');
     var ticks = [50].map(function (lv) {
       return '<text class="bfs-rtick" x="' + (cx + 4) + '" y="' + f1(cy - R * lv / 100 + 3) + '">' + lv + '</text>';
     }).join('');
-    return '<section class="bfs-sec">' + head('Temperament', 'five virtues, 0–100') +
-      '<svg class="bfs-radar" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Personality radar: ' +
+    return '<section class="bfs-sec">' + head('Temperament', 'five virtues') +
+      '<svg class="bfs-radar' + (nar ? ' bfs-nar' : '') + '" viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Personality radar: ' +
       AXES.map(function (a, i) { return a.label + ' ' + Math.round(vals[i]); }).join(', ') + '">' +
       '<defs><radialGradient id="' + id + '" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="var(--ember)" stop-opacity=".55"/><stop offset="1" stop-color="var(--ember-deep)" stop-opacity=".30"/></radialGradient></defs>' +
       rings + spokes + ticks +
@@ -166,7 +175,7 @@
     var title = head('Activity', 'messages per active day');
     if (!hs.length) return '<section class="bfs-sec">' + title + '<p class="bfs-empty">No recorded activity yet.</p></section>';
     var id = 'bfsh' + (++uid);
-    var W = 600, H = 200, L = 14, Rr = 64, T = 26, B = 44;
+    var nar = isNarrow(), W = 600, H = 214, L = 14, Rr = 80, T = 38, B = 54;
     var pw = W - L - Rr, ph = H - T - B, base = T + ph;
     var vals = hs.map(function (p) { return Math.max(0, Number(p.messages)); });
     var max = Math.max.apply(null, vals), min = Math.min.apply(null, vals);
@@ -188,7 +197,7 @@
     }
     /* min / max markers */
     function lab(i, txt, cls, below) {
-      var x = clamp(pts[i][0], L + 22, L + pw - 22), y = pts[i][1] + (below ? 19 : -11);
+      var x = clamp(pts[i][0], L + 22, L + pw - 22), y = pts[i][1] + (below ? (nar ? 28 : 19) : -12);
       return '<circle class="bfs-mark" cx="' + f1(pts[i][0]) + '" cy="' + f1(pts[i][1]) + '" r="3"/>' +
         '<text class="bfs-slab ' + cls + '" x="' + f1(x) + '" y="' + f1(Math.max(12, y)) + '" text-anchor="middle">' + txt + '</text>';
     }
@@ -241,7 +250,9 @@
   }
 
   /* ---------- assemble ---------- */
-  function render(m) {
+  function render(h, m) {
+    if (!h) return;
+    renderHost = h;
     m = m || {};
     var html =
       '<article class="bfs-sheet">' +
@@ -250,23 +261,51 @@
           identity(m) + coreStats(m) + radar(m) + hive(m) + history(m) + chat(m) + badges(m) +
         '</div>' +
       '</article>';
-    host.innerHTML = html;
-    host.classList.remove('bfs-in');
-    void host.offsetWidth;
-    requestAnimationFrame(function () { requestAnimationFrame(function () { host && host.classList.add('bfs-in'); }); });
+    h.innerHTML = html;
+    var st = STATE.get(h);
+    if (st) st.lastNarrow = isNarrow(h);
+    h.classList.remove('bfs-in');
+    void h.offsetWidth;
+    requestAnimationFrame(function () { requestAnimationFrame(function () { h.classList.add('bfs-in'); }); });
+    renderHost = null;
   }
 
   window.BF_STATS = {
     mount: function (el, member) {
-      host = el;
-      host.classList.add('bfs');
-      current = member;
-      render(member);
+      if (!el) return;
+      el.classList.add('bfs');
+      var st = STATE.get(el);
+      if (!st) { st = {}; STATE.set(el, st); }
+      st.member = member;
+      lastHost = el;
+      render(el, member);
+      if (window.ResizeObserver && !st.ro) {
+        st.ro = new ResizeObserver(function () {
+          var cur = STATE.get(el);
+          if (cur && isNarrow(el) !== cur.lastNarrow) render(el, cur.member);
+        });
+        st.ro.observe(el);
+      }
     },
-    update: function (member) {
-      if (!host) return;
-      current = member;
-      render(member);
+    /* el is optional and defaults to the most recent mount, so existing
+       single-panel callers keep working. */
+    update: function (member, el) {
+      var h = el || lastHost;
+      if (!h) return;
+      var st = STATE.get(h);
+      if (!st) { st = {}; STATE.set(h, st); }
+      st.member = member;
+      render(h, member);
+    },
+    destroy: function (el) {
+      var h = el || lastHost;
+      if (!h) return;
+      var st = STATE.get(h);
+      if (st && st.ro) st.ro.disconnect();
+      STATE.delete(h);
+      h.classList.remove('bfs', 'bfs-in');
+      h.innerHTML = '';
+      if (lastHost === h) lastHost = null;
     }
   };
 })();

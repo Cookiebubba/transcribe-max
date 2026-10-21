@@ -51,7 +51,7 @@
   letter-spacing: .2em; text-transform: uppercase; color: var(--bfs-ink);
   text-shadow: 0 1px 0 rgba(255,255,255,.55);
 }
-.bfs-h-sub { font-family: var(--data, ui-monospace, monospace); font-size: 13px; color: var(--bfs-ink-3); letter-spacing: .02em; text-align: right; }
+.bfs-h-sub { white-space: nowrap; font-family: var(--data, ui-monospace, monospace); font-size: 13px; color: var(--bfs-ink-3); letter-spacing: .02em; text-align: right; }
 .bfs-empty { margin: 4px 0 8px; font-size: 16px; line-height: 1.55; font-style: italic; color: var(--bfs-ink-2); }
 .bfs dl, .bfs ul { margin: 0; padding: 0; list-style: none; }
 .bfs dd { margin: 0; }
@@ -82,7 +82,7 @@
 }
 .bfs-title { margin: 8px 0 0; font-size: 20px; line-height: 1.35; font-style: italic; color: var(--bfs-ink-2); }
 .bfs-handle { margin: 8px 0 0; font-family: var(--data, ui-monospace, monospace); font-size: 14px; color: var(--bfs-ink-3); overflow-wrap: anywhere; }
-.bfs-id-meta { display: flex; flex-wrap: wrap; gap: 14px 34px; margin-top: 26px; }
+.bfs .bfs-id-meta { display: flex; flex-wrap: wrap; gap: 14px 34px; margin-top: 26px; }
 .bfs-id-meta dt, .bfs-chat dt, .bfs-hive-grid dt {
   font-family: var(--data, ui-monospace, monospace); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--bfs-ink-3);
 }
@@ -206,6 +206,7 @@
 
 /* ---- small screens ---- */
 @media (max-width: 560px) {
+  .bfs-slab { font-size: 23px; } .bfs-slab-last { font-size: 27px; } .bfs-axis { font-size: 21px; }
   .bfs-sheet { border-radius: 24px; }
   .bfs-stat { grid-template-columns: 84px minmax(0, 1fr) 38px; gap: 10px; }
   .bfs-stat-key { font-size: 16px; }
@@ -223,3 +224,7 @@
   .bfs-meter-fill { transform: scaleX(1) !important; }
   .bfs-rshape { transform: none !important; opacity: 1 !important; }
 }
+
+.bfs-nar .bfs-rlab { font-size: 19px; letter-spacing: .04em; }
+.bfs-nar .bfs-rval { font-size: 21px; }
+.bfs-nar .bfs-rtick { font-size: 14px; }

@@ -1,0 +1,260 @@
+/* =====================================================================
+   Blade Forever — collectible card (card3d.css)
+   Companion to card3d.js. Everything is scoped under .bf-stage / .bf-*.
+
+   SIZE: set --bf-card-w on any ancestor (e.g. .card-view{--bf-card-w:380px})
+   to resize the card. Default clamp(250px, 82vw, 360px). Aspect is 5:7.
+   Every inner measurement is `calc(var(--u) * N)` where N is in the
+   340 x 476 design grid, so the card scales as one object.
+
+   LAYER STACK (front face, translateZ in px, back to front):
+     core 0 -> far scene 6 -> near scene 20 -> CHARACTER 36 -> fog 46
+     -> frame 56 -> glass rim 60 -> embers 64 -> plates 74 -> stats 84
+     -> hologram 92
+   Each layer is a .bf-plane (full-card, own translateZ, scaled so it
+   keeps its flat size under perspective). Do not clip a parent of the
+   planes (overflow/clip-path/filter/opacity) or preserve-3d flattens.
+   ===================================================================== */
+
+.bf-stage {
+  --bf-p: 1400;
+  --bf-w: var(--bf-card-w, clamp(250px, 82vw, 360px));
+  --u: calc(var(--bf-w) / 340);
+  --thick: 4;
+  position: relative;
+  width: var(--bf-w);
+  height: calc(var(--u) * 476);
+  margin: 0 auto;
+  perspective: calc(var(--bf-p) * 1px);
+  perspective-origin: 50% 50%;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: grab;
+  outline: none;
+  font-family: var(--body, Georgia, serif);
+  color: var(--ink);
+}
+.bf-stage:focus-visible { outline: 2px solid var(--accent, var(--gold)); outline-offset: 10px; border-radius: var(--r-card); }
+html.bf-dragging, html.bf-dragging * { cursor: grabbing !important; -webkit-user-select: none !important; user-select: none !important; }
+
+/* ---------- tier intensity: --i drives glow, foil and ember strength ---------- */
+.bf-card { --accent: var(--t-footman); --i: 0; }
+.bf-card[data-tier="ascendant"] { --accent: var(--t-ascendant); --i: 1; }
+.bf-card[data-tier="exalted"]   { --accent: var(--t-exalted);   --i: .75; }
+.bf-card[data-tier="honored"]   { --accent: var(--t-honored);   --i: .5; }
+.bf-card[data-tier="tempered"]  { --accent: var(--t-tempered);  --i: .25; }
+.bf-card[data-tier="footman"]   { --accent: var(--t-footman);   --i: 0; }
+
+.bf-card {
+  --mx: 50%; --my: 50%; --bmx: 50%; --bmy: 50%; --ang: 0; --glare: 0;
+  --metal-hi: color-mix(in srgb, var(--accent) calc(var(--i) * 30%), var(--ink-dim));
+  --metal-mid: color-mix(in srgb, var(--accent) calc(var(--i) * 10%), var(--raise));
+  --metal-lo: color-mix(in srgb, var(--accent) calc(var(--i) * 5%), var(--deep));
+  --slab: color-mix(in srgb, var(--accent) calc(var(--i) * 40%), #3a4254);
+  position: absolute; inset: 0;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* contact shadow on the "table"; slides opposite to the tilt */
+.bf-shadow {
+  position: absolute; left: 6%; right: 6%; bottom: calc(var(--u) * -34); height: calc(var(--u) * 40);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(0,0,0,.62), transparent);
+  filter: blur(calc(var(--u) * 10));
+  transform: translate3d(var(--sx, 0px), var(--sy, 0px), 0) scale(var(--ss, 1));
+  opacity: var(--so, .8);
+  pointer-events: none;
+}
+
+/* ---------- thickness: a stack of rim slabs between the two faces ---------- */
+.bf-slab {
+  position: absolute; inset: 0; pointer-events: none;
+  border-radius: calc(var(--u) * 20);
+  box-shadow: inset 0 0 0 calc(var(--u) * 2.4) var(--slab);
+  transform: translateZ(calc(var(--zz) * 1px));
+}
+.bf-slab:nth-child(odd) { filter: brightness(.78); }
+
+.bf-face { position: absolute; inset: 0; transform-style: preserve-3d; backface-visibility: hidden; -webkit-backface-visibility: hidden; pointer-events: none; }
+.bf-front { transform: translateZ(calc(var(--thick) * 1px)); }
+.bf-back  { transform: rotateY(180deg) translateZ(calc(var(--thick) * 1px)); }
+
+.bf-plane {
+  position: absolute; inset: 0; pointer-events: none;
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
+  transform: translateZ(calc(var(--z) * 1px)) scale(calc(var(--bf-p) / (var(--bf-p) - var(--z))));
+}
+
+/* ---------- the smoked glass body ---------- */
+.bf-core {
+  position: absolute; inset: 0; border-radius: calc(var(--u) * 20); pointer-events: none;
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--mist) 70%, transparent), color-mix(in srgb, var(--void) 78%, transparent) 70%);
+  -webkit-backdrop-filter: blur(18px) saturate(1.35); backdrop-filter: blur(18px) saturate(1.35);
+  box-shadow: 0 calc(var(--u) * 24) calc(var(--u) * 40) rgba(0,0,0,.5), 0 0 calc(var(--u) * 50) color-mix(in srgb, var(--accent) calc(var(--i) * 30%), transparent);
+}
+.bf-glass {
+  position: absolute; inset: 0; border-radius: calc(var(--u) * 20);
+  background:
+    radial-gradient(120% 60% at var(--mx) var(--my), rgba(255,255,255,.10), transparent 55%),
+    radial-gradient(90% 40% at 50% 100%, color-mix(in srgb, var(--accent) calc(var(--i) * 22%), transparent), transparent 70%),
+    linear-gradient(180deg, rgba(255,255,255,.07), transparent 22%, transparent 70%, rgba(0,0,0,.28));
+  -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);
+  box-shadow:
+    inset 0 calc(var(--u) * 1.5) 0 var(--glass-hi),
+    inset 0 calc(var(--u) * 14) calc(var(--u) * 22) -10px rgba(255,255,255,.05),
+    inset 0 calc(var(--u) * -18) calc(var(--u) * 30) rgba(0,0,0,.35);
+}
+/* soft refracted edge: a bright conic rim whose hot spot follows the tilt */
+.bf-rim {
+  position: absolute; inset: 0; border-radius: calc(var(--u) * 20);
+  padding: calc(var(--u) * 1.6);
+  background: conic-gradient(from calc(var(--ang) * 1deg),
+    rgba(255,255,255,.75), transparent 14%, color-mix(in srgb, var(--accent) 60%, transparent) 30%,
+    transparent 46%, rgba(255,255,255,.45) 62%, transparent 78%, color-mix(in srgb, var(--arcane) 50%, transparent) 90%, rgba(255,255,255,.75));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor; mask-composite: exclude;
+  opacity: .85;
+}
+
+/* ---------- window-shaped planes (scene, character, fog) ---------- */
+.bf-win {
+  position: absolute; left: calc(var(--u) * 23); top: calc(var(--u) * 51);
+  width: calc(var(--u) * 294); height: calc(var(--u) * 286);
+  border-radius: calc(var(--u) * 121) calc(var(--u) * 121) calc(var(--u) * 25) calc(var(--u) * 25);
+  overflow: hidden;
+}
+.bf-win > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+/* ===== CHARACTER SLOT =====
+   .bf-character is the ONE container to replace with a 3D character / fight
+   scene. See the comment block at the top of card3d.js ("CHARACTER SWAP"). */
+.bf-character { position: absolute; inset: 0; }
+.bf-character > img, .bf-character > canvas, .bf-character > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; display: block; }
+.bf-character > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block;
+  filter: drop-shadow(0 0 calc(var(--u) * 7) color-mix(in srgb, var(--accent) calc(10% + var(--i) * 38%), transparent)); }
+
+.bf-fog {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(70% 26% at 30% 96%, rgba(190,200,220,.20), transparent 70%),
+    radial-gradient(70% 22% at 75% 100%, rgba(190,200,220,.16), transparent 70%),
+    linear-gradient(180deg, transparent 62%, color-mix(in srgb, var(--accent) calc(var(--i) * 18%), rgba(10,12,18,.55)));
+}
+
+.bf-frame-svg, .bf-back-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; overflow: visible; }
+
+/* ---------- embers (ascendant) ---------- */
+.bf-motes { position: absolute; inset: 0; overflow: hidden; border-radius: calc(var(--u) * 20); }
+.bf-mote {
+  position: absolute; bottom: calc(var(--u) * 4); left: var(--l);
+  width: calc(var(--u) * var(--s)); height: calc(var(--u) * var(--s)); border-radius: 50%;
+  background: radial-gradient(circle, #fff3d6, var(--ember) 45%, transparent 72%);
+  box-shadow: 0 0 calc(var(--u) * 6) var(--ember);
+  opacity: 0;
+  animation: bf-rise var(--d) linear var(--dl) infinite;
+}
+@keyframes bf-rise {
+  0%   { transform: translate3d(0, 0, 0) scale(.7); opacity: 0; }
+  12%  { opacity: 1; }
+  60%  { transform: translate3d(calc(var(--dx) * .5), calc(var(--u) * -300), 0) scale(.9); opacity: .9; }
+  100% { transform: translate3d(var(--dx), calc(var(--u) * -500), 0) scale(.25); opacity: 0; }
+}
+
+/* ---------- plates (HTML, positioned on the 340 x 476 grid) ---------- */
+.bf-pill, .bf-lv {
+  position: absolute; top: calc(var(--u) * 16); height: calc(var(--u) * 22);
+  display: flex; align-items: center; gap: calc(var(--u) * 6);
+  padding: 0 calc(var(--u) * 10);
+  border-radius: var(--r-pill, 999px);
+  background: color-mix(in srgb, var(--void) 55%, transparent);
+  box-shadow: inset 0 1px 0 var(--glass-hi), inset 0 0 0 1px rgba(255,255,255,.04), 0 calc(var(--u) * 3) calc(var(--u) * 8) rgba(0,0,0,.35);
+  font: 600 calc(var(--u) * 8.5)/1 var(--data, ui-monospace, monospace);
+  letter-spacing: .18em; text-transform: uppercase; color: var(--accent);
+  white-space: nowrap;
+}
+.bf-pill { left: calc(var(--u) * 20); }
+.bf-pill i { width: calc(var(--u) * 6); height: calc(var(--u) * 6); border-radius: 50%; background: var(--accent); box-shadow: 0 0 calc(var(--u) * (2 + 8 * var(--i))) var(--accent); }
+.bf-lv { right: calc(var(--u) * 20); color: var(--ink); }
+.bf-lv b { font: 700 calc(var(--u) * 12)/1 var(--display, Georgia, serif); letter-spacing: .02em; color: var(--ink); }
+.bf-lv span { color: var(--ink-dim); }
+
+.bf-medal {
+  position: absolute; left: calc(var(--u) * 146); top: calc(var(--u) * 14); width: calc(var(--u) * 48); height: calc(var(--u) * 48);
+  border-radius: 50%; display: grid; place-items: center;
+  background:
+    radial-gradient(circle at 34% 28%, rgba(255,255,255,.35), transparent 38%),
+    radial-gradient(circle at 50% 50%, var(--metal-mid) 0 58%, var(--metal-hi) 100%);
+  box-shadow:
+    0 calc(var(--u) * 5) calc(var(--u) * 10) rgba(0,0,0,.55),
+    inset 0 0 0 calc(var(--u) * 2.5) color-mix(in srgb, var(--accent) calc(40% + var(--i) * 60%), var(--ink-faint)),
+    inset 0 0 0 calc(var(--u) * 5) rgba(0,0,0,.45),
+    0 0 calc(var(--u) * (4 + 18 * var(--i))) color-mix(in srgb, var(--accent) calc(var(--i) * 70%), transparent);
+}
+.bf-medal b { font: 700 calc(var(--u) * 20)/1 var(--display, Georgia, serif); color: var(--ink); text-shadow: 0 1px 0 rgba(0,0,0,.7), 0 0 calc(var(--u) * 8) color-mix(in srgb, var(--accent) 60%, transparent); }
+.bf-medal b small { font-size: .5em; opacity: .7; margin-right: .05em; vertical-align: .35em; }
+.bf-medal.is-long b { font-size: calc(var(--u) * 15); }
+
+.bf-id { position: absolute; left: calc(var(--u) * 20); right: calc(var(--u) * 20); top: calc(var(--u) * 355); text-align: center; }
+.bf-name { margin: 0; font: 700 calc(var(--u) * 21)/calc(var(--u) * 25) var(--display, Georgia, serif); letter-spacing: .01em; color: var(--ink);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 calc(var(--u) * 2) calc(var(--u) * 8) rgba(0,0,0,.6); }
+.bf-title { margin: calc(var(--u) * 1) 0 0; font: italic 500 calc(var(--u) * 11.5)/calc(var(--u) * 14) var(--body, Georgia, serif); color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bf-sub { margin: calc(var(--u) * 2) 0 0; font: 500 calc(var(--u) * 8.5)/calc(var(--u) * 11) var(--data, ui-monospace, monospace); letter-spacing: .2em; text-transform: uppercase; color: var(--ink-dim); }
+.bf-sub em { font-style: normal; color: var(--ink-faint); padding: 0 .5em; }
+
+.bf-stats { position: absolute; left: calc(var(--u) * 20); right: calc(var(--u) * 20); top: calc(var(--u) * 411); height: calc(var(--u) * 43);
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: calc(var(--u) * 6); }
+.bf-stat {
+  position: relative; border-radius: calc(var(--u) * 10); padding: calc(var(--u) * 6) calc(var(--u) * 8) 0;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--raise) 62%, transparent), color-mix(in srgb, var(--void) 70%, transparent));
+  box-shadow: inset 0 1px 0 var(--glass-hi), 0 calc(var(--u) * 4) calc(var(--u) * 10) rgba(0,0,0,.45);
+}
+.bf-stat span { display: block; font: 600 calc(var(--u) * 7.5)/1 var(--data, ui-monospace, monospace); letter-spacing: .2em; color: var(--ink-faint); }
+.bf-stat b { display: block; margin-top: calc(var(--u) * 3); font: 700 calc(var(--u) * 17)/1 var(--display, Georgia, serif); color: var(--ink); font-variant-numeric: tabular-nums; }
+.bf-stat u { position: absolute; left: calc(var(--u) * 8); right: calc(var(--u) * 8); bottom: calc(var(--u) * 5); height: calc(var(--u) * 3); border-radius: 3px; background: rgba(255,255,255,.08); text-decoration: none; overflow: hidden; }
+.bf-stat u::after { content: ""; position: absolute; inset: 0; width: var(--w); border-radius: 3px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, var(--deep)), var(--accent)); box-shadow: 0 0 calc(var(--u) * 5) color-mix(in srgb, var(--accent) calc(var(--i) * 80%), transparent); }
+
+/* ---------- hologram / foil: responds to --mx --my (tilt) ---------- */
+.bf-holo {
+  position: absolute; inset: 0; border-radius: calc(var(--u) * 20);
+  opacity: var(--i);
+  background:
+    radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,.30), transparent 34%),
+    linear-gradient(115deg,
+      transparent 18%,
+      color-mix(in srgb, var(--accent) 34%, transparent) 33%,
+      color-mix(in srgb, var(--gold) 26%, transparent) 40%,
+      color-mix(in srgb, var(--verd) 22%, transparent) 46%,
+      color-mix(in srgb, var(--arcane) 32%, transparent) 53%,
+      color-mix(in srgb, var(--blood) 20%, transparent) 60%,
+      transparent 75%) var(--mx) var(--my) / 260% 260%,
+    repeating-linear-gradient(60deg, rgba(255,255,255,.05) 0 1px, transparent 1px calc(var(--u) * 4));
+  mask: radial-gradient(130% 130% at var(--mx) var(--my), #000 25%, rgba(0,0,0,.35) 75%);
+  -webkit-mask: radial-gradient(130% 130% at var(--mx) var(--my), #000 25%, rgba(0,0,0,.35) 75%);
+}
+.bf-back .bf-holo { background:
+    radial-gradient(circle at var(--bmx) var(--bmy), rgba(255,255,255,.28), transparent 34%),
+    linear-gradient(115deg, transparent 22%, color-mix(in srgb, var(--accent) 30%, transparent) 40%, color-mix(in srgb, var(--arcane) 28%, transparent) 52%, transparent 70%) var(--bmx) var(--bmy) / 260% 260%;
+  mask: none; -webkit-mask: none; }
+.bf-card[data-tier="footman"] .bf-holo { display: none; }
+
+/* ---------- back face ---------- */
+.bf-b-word { position: absolute; left: 0; right: 0; top: calc(var(--u) * 26); text-align: center; font: 700 calc(var(--u) * 11)/1 var(--display, Georgia, serif); letter-spacing: .5em; text-indent: .5em; color: var(--ink-dim); text-transform: uppercase; }
+.bf-b-id { position: absolute; left: calc(var(--u) * 30); right: calc(var(--u) * 30); top: calc(var(--u) * 290); text-align: center; }
+.bf-b-id h3 { margin: 0; font: 700 calc(var(--u) * 19)/calc(var(--u) * 24) var(--display, Georgia, serif); color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bf-b-id p { margin: calc(var(--u) * 3) 0 0; font: 500 calc(var(--u) * 8.5)/calc(var(--u) * 12) var(--data, ui-monospace, monospace); letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+.bf-b-grid { position: absolute; left: calc(var(--u) * 30); right: calc(var(--u) * 30); top: calc(var(--u) * 352); display: grid; grid-template-columns: repeat(2, 1fr); gap: calc(var(--u) * 7); }
+.bf-b-cell { border-radius: calc(var(--u) * 10); padding: calc(var(--u) * 7) calc(var(--u) * 10); display: flex; justify-content: space-between; align-items: baseline;
+  background: color-mix(in srgb, var(--void) 55%, transparent); box-shadow: inset 0 1px 0 var(--glass-hi), 0 calc(var(--u) * 3) calc(var(--u) * 8) rgba(0,0,0,.4); }
+.bf-b-cell span { font: 600 calc(var(--u) * 7.5)/1 var(--data, ui-monospace, monospace); letter-spacing: .18em; text-transform: uppercase; color: var(--ink-faint); }
+.bf-b-cell b { font: 700 calc(var(--u) * 15)/1 var(--display, Georgia, serif); color: var(--ink); font-variant-numeric: tabular-nums; }
+.bf-b-foot { position: absolute; left: 0; right: 0; top: calc(var(--u) * 430); text-align: center; font: 500 calc(var(--u) * 8)/1 var(--data, ui-monospace, monospace); letter-spacing: .22em; text-transform: uppercase; color: var(--ink-faint); }
+
+@media (prefers-reduced-motion: reduce) {
+  .bf-mote { display: none; animation: none; }
+  .bf-card, .bf-shadow { transition: none; }
+}
