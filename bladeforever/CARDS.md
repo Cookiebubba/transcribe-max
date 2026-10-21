@@ -95,43 +95,88 @@ tier ladder above.
 
 ---
 
-## Card scene: parallax layer stack
+## Card scene: a window into a lit 3D street
 
-The portrait window is a six-layer parallax scene, each layer on its own depth
-plane so tilting the card produces real separation rather than a flat image.
+The front of the card is a **window**. The arched frame (ring y 14-316 of the
+340 x 476 design grid) is the top two-thirds of the card; name, title,
+class / weapon and the four stat plates fill the bottom third.
 
-| Layer | z | Contents |
+Behind the glass is a real, static 3D scene (`mockup/parts/scene.js`,
+`window.BF_SCENE`): a signed-distance-field street raymarched in one WebGL 1
+fragment shader. No libraries, no images, no network.
+
+**Portal projection.** The canvas lies on the window plane. In scene space the
+window is a rectangle on z = 0; every pixel is a point on it, and its ray runs
+from a virtual eye through that point (off-axis projection). Marching starts
+at the glass, so nothing can sit in front of the window. The eye is `eyeDist`
+in front of the window and moves with the card pose: the viewer direction in
+card space, `v = (-cos rx sin ry, -sin rx, cos rx cos ry)`, offsets the eye by
+`eyeDist * parallax * (v.x, v.y)`. At pose 0 the view is the straight-on
+painting. Points on the glass stay locked to the frame; deeper points slide
+further with the eye and you see around near edges (lamp post, arches),
+which is what a physical window does.
+
+**Static, rendered on demand.** Nothing in the scene animates. The card calls
+`scene.setPose(rx, ry)` only when its pose changes; the scene draws a
+reduced-resolution frame while moving and one full frame 170 ms after it
+stops. No drawing while the card is off-screen, the tab is hidden, or the
+front faces away. DPR is capped at 2. `BF_SCENE.setQuality(q)` (0.35-1) is the
+single quality knob (resolution, march steps, shadow steps). After 5 s
+without pointer input the card eases back to rest, so a resting card shows
+the painting and costs nothing (this replaced the old idle sway).
+
+**One light.** Each scene has exactly one emitter, the street lantern. The
+shader lights everything from it: inverse-square falloff, soft shadows with a
+penumbra scaled to the emitter size, ambient occlusion, GGX specular, height
+fog with closed-form single scattering (a wide isotropic term plus a tight
+halo near the lamp), glossy reflections of the glow on wet stone and steel,
+and a short reflection march for puddles and polished metal. A faint
+non-directional ambient keeps shadows off pure black; it is not a light.
+The lantern housing and bracket are skipped by shadow rays (they enclose the
+light).
+
+**Presets.** One preset object per scene: camera, street layout and seed,
+arch depths, lamp-post and light position / colour / intensity, ambient,
+exposure, fog, palette, figure and prop placement. The format is documented
+at the top of `scene.js`.
+
+| Member | Preset | Contents |
 |---|---|---|
-| far background | 0 | sky, moon, ridge |
-| near background | 9 | twin spires, braziers |
-| leading lines | 18 | arch ribs, light shafts, banners — draw the eye to centre |
-| floor | 27 | perspective tiles, contact shadow |
-| **character** | **36** | the swappable figure (see below) |
-| foreground | 43 | broken pillar, low arch, rubble — occludes the character |
-| fog | 46 | atmospheric haze |
-| frame | 56 | the metal frame, sits over the window edge |
+| @humblelifeskills | `humble-night-street` | An original Warden in blackened plate, mid-stride on wet cobbles, Oathsteel lowered in his right hand (ring pommel: the oath ring), red tabard with a gold pale and ring. Iron street lantern on a post, timber-framed houses, pointed arches receding into fog. |
+| everyone else | `vigil-street` | The same street, empty, with the member's blade planted in the cobbles. Hash of the handle varies the houses, arch spacing and lamp side; the lantern is tinted by tier; the blade is toned by weapon. |
 
-**Masking.** Nothing may render outside the card border. Each scene plane is
-clipped by its own `.bf-win` leaf (arch radius + `overflow:hidden`), and each
-scene SVG also carries its own `<clipPath>` of the same arch. Crucially, no
-clipping is applied to an ancestor inside the 3D chain — `overflow`,
-`clip-path` or `filter` on an ancestor flattens `preserve-3d` and destroys the
-parallax. Any future layer must follow the same rule.
+Add a bespoke scene by adding `PRESETS['@handle'] = { ... }`; it is merged
+over the default, so it only needs the keys it changes.
 
-**Known limit.** At steep free-spin the plane deck visibly separates. That is
-inherent to a `preserve-3d` stack with genuine depth — the card *is* a deck of
-planes, so a steep viewing angle shows its spread. It is not a clipping bug and
-cannot be fixed by more clipping. The options are to clamp the spin angle, to
-collapse the z-spread (which costs the parallax), or to accept it as the card
-behaving like a physical object. Undecided.
+**Masking.** The canvas sits in its own `.bf-win` leaf (arch radius +
+`overflow:hidden`) on a plane at translateZ 2, just under the frame at 4. No
+clipping is applied to an ancestor inside the 3D chain: `overflow`,
+`clip-path` or `filter` on an ancestor flattens `preserve-3d`. Because the
+depth now lives inside the scene, the CSS deck is thin (front planes z 0-10,
+back planes z 3-10), so the card stays one solid slab at any spin angle and
+the old "deck separates at steep spin" limit is gone.
+
+**Fallback.** If WebGL or highp floats are unavailable, or the shader fails
+to compile or link, the card renders the previous six-plane CSS/SVG scene
+(far bg 0, near bg 9, leading lines 18, floor 27, character 36, foreground
+43, fog 46, with the frame at 56). It is never blank. While the shader
+compiles the window shows a painted CSS gradient, then the canvas fades in
+(no fade under reduced motion).
+
+**Figure hook (rigged model).** `BF_CARD.characterSlot()` returns the
+`.bf-character` overlay on the window plane, above the canvas and clipped to
+the arch. Put a canvas in it and the built-in SDF figure is removed from the
+scene (and restored when the slot is emptied). `BF_CARD.scene().camera()`
+returns the live off-axis camera in scene metres (`projection`, `view`:
+column-major 4x4; `figure`: where the built-in figure stands), and the stage
+fires `bf-pose` whenever the pose changes, so an external renderer can stay
+registered with the street. The overlay has no shared depth with the scene,
+so scene geometry cannot occlude it. In CSS-fallback mode the slot holds the
+old placeholder and swaps as before. `BF_CARD.pose` is unchanged.
 
 **Material.** The card body is deliberately translucent: `.bf-core` is `--mist`
-at 70% with `backdrop-filter: blur(18px) saturate(1.35)` — the "dark liquid
-glass" brief. It is meant to pick up the background behind it. Testing it
-against a bright flat colour will make correct behaviour look broken.
-
-**Swapping the character.** `BF_CARD.characterSlot()` returns the live
-`.bf-character` node; `slot.replaceChildren(imgOrCanvasOrWebGL)` swaps it. It is
-already clipped to the arch and needs nothing else changed. `BF_CARD.pose`
-exposes `{rx, ry, spin, nx, ny}` each frame so a 3D character can be aimed to
-match the card's tilt. This is the hook for the modelled, rigged fighters.
+at 70% with `backdrop-filter: blur(18px) saturate(1.35)`, the "dark liquid
+glass" brief. Testing it against a bright flat colour will make correct
+behaviour look broken. Over the window the tier foil is reduced to a faint
+glaze, and the ascendant embers rise only through the bottom third, so the
+painting keeps its contrast and never appears to move.

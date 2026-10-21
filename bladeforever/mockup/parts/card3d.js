@@ -1,6 +1,7 @@
 /* =====================================================================
    Blade Forever — collectible card (card3d.js)
-   window.BF_CARD = { mount(el, member), update(member), destroy() }
+   window.BF_CARD = { mount(el, member), update(member), destroy(),
+                      characterSlot(), scene(), pose }
    Needs card3d.css. Vanilla JS, no libraries, no network, no images.
 
    MOTION MODEL
@@ -11,34 +12,52 @@
      freely. On release a damped spring carries the inertia and settles on
      the nearest face-front rest pose. A tap/click on the card (no drag)
      flips it to the back; tap again to flip back. Enter/Space also flips.
-   - prefers-reduced-motion: no idle sway, no embers, no inertia (release
-     eases back with a critically damped lerp); dragging still works.
+   - After IDLE_AFTER ms without pointer input the card eases back to rest
+     (pose 0), where the window reads as a flat painting. No idle sway: the
+     scene must not move on its own, and a resting card costs nothing.
+   - prefers-reduced-motion: no embers, no inertia (release eases back with
+     a critically damped lerp), no scene fade-in; dragging still works.
 
    ---------------------------------------------------------------------
-   CHARACTER SWAP  (replacing the placeholder with a 3D character)
+   WINDOW SCENE  (parts/scene.js, optional but expected)
    ---------------------------------------------------------------------
-   The front face has exactly one container for the hero figure:
+   The arched window fills the top two-thirds of the card (frame ring
+   y 14..316 of the 340 x 476 grid); name, title, class/weapon and the four
+   stat plates live in the bottom third. Behind the window is a real 3D
+   scene: BF_SCENE renders a raymarched, single-light scene into ONE
+   <canvas> that lies on the window plane (translateZ 2, just under the
+   frame at 4) and is clipped by its own .bf-win leaf. Depth comes from an
+   off-axis ("portal") projection driven by the card pose, not from CSS
+   planes, so the CSS deck is thin (planes z 0..10) and the card stays one
+   solid slab at steep spin angles.
+   The card calls scene.setPose(rx, ry) only when the pose changed; the
+   scene draws on that dirty flag and pauses off-screen / hidden / when the
+   front faces away. Preset per member: BF_SCENE.presetFor(member).
+   Fallback: if WebGL (or highp) is unavailable or the shader fails, the
+   previous six-plane CSS/SVG scene is rendered instead (never blank).
 
-        <div class="bf-character" data-bf-slot="character">...</div>
+   ---------------------------------------------------------------------
+   FIGURE HOOK  (for the future rigged 3D model)
+   ---------------------------------------------------------------------
+   BF_CARD.characterSlot() returns the live .bf-character node. In WebGL
+   mode it is an empty overlay on the window plane, above the scene canvas,
+   already clipped to the arch. Put a canvas/img/video in it:
 
-   It sits on its own depth plane (translateZ 36) inside the portrait
-   window, is 294u x 286u (u = card width / 340), already clipped by the
-   arched window, and sits above the scenery and under the frame. To swap:
+     var slot = BF_CARD.characterSlot();
+     slot.replaceChildren(renderer.domElement);      // e.g. three.js
+     var cam = BF_CARD.scene().camera();             // live off-axis camera
+     // cam.projection / cam.view: column-major 4x4, scene metres;
+     // cam.figure: {position, yaw} where the built-in figure stands.
 
-     var slot = BF_CARD.characterSlot();   // the live .bf-character node
-     slot.replaceChildren(myImg);          // <img>, <canvas>, <video> ...
-     // or: renderer.setSize(slot.clientWidth, slot.clientHeight);
-     //     slot.replaceChildren(renderer.domElement);   // WebGL / three.js
-
-   img/canvas/video children are auto-sized to fill (object-fit: contain).
-   Nothing else (frame, plates, hologram, motion) needs to change.
-   Listen for `bf-character-slot` on the stage if you need to re-attach
-   after update(): it fires with detail:{slot, member} every time the card
-   re-renders, and the placeholder is only re-inserted when the slot is
-   empty or still holds the placeholder (data-bf-placeholder).
-   For live fight poses, the card exposes the tilt each frame as
-   `BF_CARD.pose` = {rx, ry, spin, nx, ny} (normalised pointer -1..1) so a
-   WebGL scene can aim the character.
+   As soon as the slot has children the built-in SDF figure is removed
+   from the scene (and restored when the slot is emptied), so the model
+   stands alone in the lit street. Re-read camera() on 'bf-pose' events
+   (fired on the stage with detail = BF_CARD.pose whenever it changes).
+   The overlay cannot be occluded by scene geometry (no shared depth).
+   In CSS-fallback mode the slot holds the old placeholder SVG and swaps
+   exactly as before. `bf-character-slot` still fires after each render
+   with detail:{slot, member}; a swapped-in child survives update().
+   BF_CARD.pose = {rx, ry, spin, nx, ny} is published every changed frame.
    ===================================================================== */
 (function () {
   'use strict';
@@ -47,7 +66,7 @@
   var SENS = 0.5;             // deg per px while dragging
   var TILT_LERP = 0.085;      // per 60fps frame
   var SPRING_K = 0.010, SPRING_C = 0.075, VMAX = 38;
-  var IDLE_AFTER = 3200;      // ms without pointer before idle sway
+  var IDLE_AFTER = 5000;      // ms without pointer before easing to rest
 
   var uidCounter = 0;
   var inst = null;
@@ -77,17 +96,18 @@
       ' V' + (y1 - rb) + ' A' + rb + ',' + rb + ' 0 0 1 ' + (x1 - rb) + ',' + y1 +
       ' H' + (x0 + rb) + ' A' + rb + ',' + rb + ' 0 0 1 ' + x0 + ',' + (y1 - rb) + ' Z';
   }
-  var P_WIN = arch(34, 62, 306, 326, 110, 14);       // the opening
-  var P_MID = arch(22, 50, 318, 338, 122, 26);       // inlay groove
-  var P_RING = arch(10, 38, 330, 350, 134, 38);
-  var P_SLOT = arch(0, 0, 294, 286, 121, 25);        // scene-plane clip, in slot coords (matches .bf-win)
+  /* The window frame (ring) spans y 14..316 = the top two-thirds of the card. */
+  var P_WIN = arch(26, 28, 314, 304, 126, 14);       // the opening
+  var P_MID = arch(19, 21, 321, 310, 133, 22);       // inlay groove
+  var P_RING = arch(12, 14, 328, 316, 140, 30);
+  var P_SLOT = arch(0, 0, 294, 286, 129, 17);        // fallback scene-plane clip, in its 294 x 286 viewBox (.bf-win is 292 x 280)
   function clipDef(id) { return '<clipPath id="' + id + '-cp"><path d="' + P_SLOT + '"/></clipPath>'; }
   function open(id) { return '<g clip-path="url(#' + id + '-cp)">'; }      // outer edge of window surround
 
   /* ---------------- thorn crown: original motif ---------------- */
   function thorns(id) {
-    var out = '', i, a, cx = 144, cy = 172, R = 134;
-    var spec = [[210, .85], [227, .72], [243, .6], [257, .46]];
+    var out = '', i, a, cx = 152, cy = 154, R = 140;
+    var spec = [[198, .8], [212, .66], [225, .52]];
     for (i = 0; i < spec.length; i++) {
       a = spec[i][0] * RAD;
       var px = cx + R * Math.cos(a), py = cy + R * Math.sin(a), rot = spec[i][0] + 90, s = spec[i][1];
@@ -139,11 +159,11 @@
       '<path d="' + P_WIN + '" fill="none" stroke="url(#' + id + '-bl)" stroke-width="3"/>' +
       /* rivets */
       '<g stroke="#000" stroke-opacity=".6" stroke-width="1">' +
-        [[22, 22], [318, 22], [22, 454], [318, 454], [24, 342], [316, 342]].map(function (p) {
+        [[22, 22], [318, 22], [22, 454], [318, 454]].map(function (p) {
           return '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="4.2" fill="url(#' + id + '-rv)"/>';
         }).join('') + '</g>' +
       /* bottom keystone gem */
-      '<g transform="translate(170 350)"><rect x="-17" y="-6" width="34" height="12" rx="6" style="fill:url(#' + id + '-m)" stroke="#000" stroke-opacity=".5"/>' +
+      '<g transform="translate(170 316)"><rect x="-17" y="-6" width="34" height="12" rx="6" style="fill:url(#' + id + '-m)" stroke="#000" stroke-opacity=".5"/>' +
       '<rect x="-9" y="-4" width="18" height="8" rx="4" fill="url(#' + id + '-gem)" style="filter:drop-shadow(0 0 4px var(--accent))"/></g>' +
       '</svg>';
   }
@@ -324,12 +344,7 @@
   function fmtDate(d) { return d ? String(d) : '-'; }
   function num(v) { return (v == null || isNaN(v)) ? '-' : Number(v).toLocaleString('en-US'); }
 
-  function renderFront(m, id) {
-    var stats = m.stats || {}, keys = ['MIG', 'VIG', 'INS', 'RES'];
-    var name = m.name || (m.handle || '').replace(/^@/, '') || 'Unknown';
-    var fs = clamp(300 / (name.length * 0.6), 13, 21);
-    var rank = m.rank == null ? '-' : m.rank;
-    var tier = TIERS.indexOf(m.tier) < 0 ? 'footman' : m.tier;
+  function cssScene(id) {
     return '' +
       '<div class="bf-plane" style="--z:0"><div class="bf-win">' + sceneFarSVG(id + 'a') + '</div></div>' +
       '<div class="bf-plane" style="--z:9"><div class="bf-win">' + sceneNearSVG(id + 'b') + '</div></div>' +
@@ -337,11 +352,35 @@
       '<div class="bf-plane" style="--z:27"><div class="bf-win">' + sceneFloorSVG(id + 'o') + '</div></div>' +
       '<div class="bf-plane" style="--z:36"><div class="bf-win"><div class="bf-character" data-bf-slot="character">' + placeholderSVG(id + 'c') + '</div></div></div>' +
       '<div class="bf-plane" style="--z:43"><div class="bf-win">' + sceneForeSVG(id + 'g') + '</div></div>' +
-      '<div class="bf-plane" style="--z:46"><div class="bf-win"><div class="bf-fog"></div></div></div>' +
-      '<div class="bf-plane" style="--z:56">' + frameSVG(id + 'f') + '</div>' +
-      '<div class="bf-plane" style="--z:60"><div class="bf-rim"></div></div>' +
-      '<div class="bf-plane bf-motes-plane" style="--z:64"><div class="bf-motes"></div></div>' +
-      '<div class="bf-plane" style="--z:74">' +
+      '<div class="bf-plane" style="--z:46"><div class="bf-win"><div class="bf-fog"></div></div></div>';
+  }
+
+  /* one flat plane on the window: the scene canvas + the character overlay */
+  function glScene() {
+    return '<div class="bf-plane bf-scene-plane" style="--z:2"><div class="bf-win bf-scene">' +
+      '<canvas class="bf-scene-cv" aria-hidden="true"></canvas>' +
+      '<div class="bf-character" data-bf-slot="character"></div></div></div>';
+  }
+
+  /* Plane depths. With the WebGL window the depth lives inside the scene, so
+     the CSS deck is kept thin (the card reads as one solid slab at any spin);
+     the CSS fallback keeps its wide spread because that IS its parallax. */
+  var Z_GL = { frame: 4, rim: 5, motes: 6, plates: 8, stats: 9, holo: 10 };
+  var Z_CSS = { frame: 56, rim: 60, motes: 64, plates: 74, stats: 84, holo: 92 };
+
+  function renderFront(m, id, mode) {
+    var Z = mode === 'gl' ? Z_GL : Z_CSS;
+    var stats = m.stats || {}, keys = ['MIG', 'VIG', 'INS', 'RES'];
+    var name = m.name || (m.handle || '').replace(/^@/, '') || 'Unknown';
+    var fs = clamp(300 / (name.length * 0.6), 13, 21);
+    var rank = m.rank == null ? '-' : m.rank;
+    var tier = TIERS.indexOf(m.tier) < 0 ? 'footman' : m.tier;
+    return '' +
+      (mode === 'gl' ? glScene() : cssScene(id)) +
+      '<div class="bf-plane" style="--z:' + Z.frame + '">' + frameSVG(id + 'f') + '</div>' +
+      '<div class="bf-plane" style="--z:' + Z.rim + '"><div class="bf-rim"></div></div>' +
+      '<div class="bf-plane bf-motes-plane" style="--z:' + Z.motes + '"><div class="bf-motes"></div></div>' +
+      '<div class="bf-plane" style="--z:' + Z.plates + '">' +
         '<div class="bf-pill"><i></i>' + esc(tier) + '</div>' +
         '<div class="bf-lv"><span>LV</span><b>' + esc(m.level == null ? '-' : m.level) + '</b></div>' +
         '<div class="bf-medal' + (String(rank).length > 2 ? ' is-long' : '') + '"><b><small>#</small>' + esc(rank) + '</b></div>' +
@@ -349,22 +388,22 @@
           '<p class="bf-title">' + esc(m.title || '') + '</p>' +
           '<p class="bf-sub">' + esc(m.cls || '') + '<em>/</em>' + esc(m.weapon || '') + '</p></div>' +
       '</div>' +
-      '<div class="bf-plane" style="--z:84"><div class="bf-stats">' +
+      '<div class="bf-plane" style="--z:' + Z.stats + '"><div class="bf-stats">' +
         keys.map(function (k) {
           var v = clamp(Number(stats[k]) || 0, 0, 99);
           return '<div class="bf-stat"><span>' + k + '</span><b>' + v + '</b><u style="--w:' + (v / 99 * 100).toFixed(1) + '%"></u></div>';
         }).join('') + '</div></div>' +
-      '<div class="bf-plane" style="--z:92"><div class="bf-holo"></div></div>';
+      '<div class="bf-plane" style="--z:' + Z.holo + '"><div class="bf-holo"></div></div>';
   }
 
   function renderBack(m, id) {
     var c = m.chat || {}, h = m.hive || {};
     var name = m.name || (m.handle || '').replace(/^@/, '') || 'Unknown';
     return '' +
-      '<div class="bf-plane" style="--z:14">' + sigilSVG(id + 's', m.initials || name.slice(0, 2).toUpperCase()) + '</div>' +
-      '<div class="bf-plane" style="--z:30">' + backFrameSVG(id + 'k') + '</div>' +
-      '<div class="bf-plane" style="--z:34"><div class="bf-rim"></div></div>' +
-      '<div class="bf-plane" style="--z:44">' +
+      '<div class="bf-plane" style="--z:3">' + sigilSVG(id + 's', m.initials || name.slice(0, 2).toUpperCase()) + '</div>' +
+      '<div class="bf-plane" style="--z:5">' + backFrameSVG(id + 'k') + '</div>' +
+      '<div class="bf-plane" style="--z:6"><div class="bf-rim"></div></div>' +
+      '<div class="bf-plane" style="--z:8">' +
         '<div class="bf-b-word">Blade Forever</div>' +
         '<div class="bf-b-ini">' + esc(m.initials || name.slice(0, 2).toUpperCase()) + '</div>' +
         '<div class="bf-b-id"><h3>' + esc(m.handle || name) + '</h3><p>Sworn ' + esc(fmtDate(c.firstSeen)) + ' &middot; seen ' + esc(fmtDate(c.lastSeen)) + '</p></div>' +
@@ -376,7 +415,7 @@
         '</div>' +
         '<div class="bf-b-foot">' + esc(m.tier || '') + ' &middot; rank ' + esc(m.rank == null ? '-' : m.rank) + '</div>' +
       '</div>' +
-      '<div class="bf-plane" style="--z:56"><div class="bf-holo"></div></div>';
+      '<div class="bf-plane" style="--z:10"><div class="bf-holo"></div></div>';
   }
 
   function build(member) {
@@ -413,16 +452,53 @@
     }
     I.card.setAttribute('data-tier', tier);
     I.stage.setAttribute('aria-label', (m.name || m.handle || 'Member') + ', ' + tier + ' tier, rank ' + (m.rank == null ? 'unranked' : m.rank) + ', level ' + (m.level == null ? '?' : m.level));
-    I.front.innerHTML = renderFront(m, I.id);
+    unmountScene(I);
+    var mode = (!I.forceCSS && window.BF_SCENE && window.BF_SCENE.supported()) ? 'gl' : 'css';
+    I.front.innerHTML = renderFront(m, I.id, mode);
     I.back.innerHTML = renderBack(m, I.id);
+    I.card.setAttribute('data-scene', mode);
     if (keep) {
       slot = I.front.querySelector('.bf-character');
       slot.replaceChildren.apply(slot, keep);
     }
     I.member = m;
+    if (mode === 'gl') mountScene(I, m);
     makeMotes(I, tier);
     var evt;
     try { evt = new CustomEvent('bf-character-slot', { detail: { slot: I.front.querySelector('.bf-character'), member: m } }); I.stage.dispatchEvent(evt); } catch (e) { /* old browsers */ }
+  }
+
+  /* ---------------- window scene (BF_SCENE) ---------------- */
+  function unmountScene(I) {
+    if (I.slotObs) { I.slotObs.disconnect(); I.slotObs = null; }
+    if (I.scene) { I.scene.destroy(); I.scene = null; }
+  }
+  function toCSS(I) {
+    if (I.forceCSS) return;
+    I.forceCSS = true;
+    unmountScene(I);
+    if (I.member) render(I, I.member);
+  }
+  function mountScene(I, m) {
+    var cv = I.front.querySelector('.bf-scene-cv');
+    var slot = I.front.querySelector('.bf-character');
+    var settled = false, sc = null;
+    try {
+      sc = window.BF_SCENE.create(cv, window.BF_SCENE.presetFor(m), {
+        observe: I.stage,
+        onFail: function () { if (settled) toCSS(I); }
+      });
+    } catch (e) { sc = null; }
+    settled = true;
+    if (!sc) { toCSS(I); return; }
+    I.scene = sc;
+    var pose = I.pose || { rx: 0, ry: 0 };
+    sc.setFigure(!slot.firstElementChild);
+    sc.setPose(pose.rx, pose.ry);
+    if (window.MutationObserver) {
+      I.slotObs = new MutationObserver(function () { if (I.scene) I.scene.setFigure(!slot.firstElementChild); });
+      I.slotObs.observe(slot, { childList: true });
+    }
   }
 
   function makeMotes(I, tier) {
@@ -542,12 +618,9 @@
       var dt = I.last ? clamp((now - I.last) / 16.667, 0.2, 3) : 1;
       I.last = now;
 
-      // idle sway when the pointer has been quiet
+      // pointer quiet for a while: ease back to rest (the straight-on painting)
       var tx = S.tx, ty = S.ty;
-      if (!I.reduced && now - S.lastPtr > IDLE_AFTER) {
-        var t = now / 1000;
-        ty = Math.sin(t * 0.55) * 7; tx = Math.cos(t * 0.41) * 4.5;
-      }
+      if (now - S.lastPtr > IDLE_AFTER) { tx = 0; ty = 0; }
       var k = 1 - Math.pow(1 - TILT_LERP, dt);
       S.cx += (ty - S.cx) * k;
       S.cy += (tx - S.cy) * k;
@@ -583,6 +656,9 @@
       ss.setProperty('--ss', (0.7 + 0.3 * face).toFixed(3));
       ss.setProperty('--so', (0.45 + 0.4 * face).toFixed(3));
       BF_CARD.pose = { rx: rx, ry: ry, spin: S.sy, nx: S.nx, ny: S.ny };
+      I.pose = BF_CARD.pose;
+      if (I.scene) I.scene.setPose(rx, ry);
+      try { I.stage.dispatchEvent(new CustomEvent('bf-pose', { detail: BF_CARD.pose })); } catch (e) { /* old browsers */ }
     }
     I.raf = requestAnimationFrame(tick);
   }
@@ -610,11 +686,14 @@
       if (!inst) return;
       cancelAnimationFrame(inst.raf);
       if (inst.off) inst.off();
+      unmountScene(inst);
       if (inst.stage.parentNode) inst.stage.parentNode.removeChild(inst.stage);
       inst = null;
     },
     /* the live container to drop a 3D character / canvas / img into */
-    characterSlot: function () { return inst ? inst.front.querySelector('.bf-character') : null; }
+    characterSlot: function () { return inst ? inst.front.querySelector('.bf-character') : null; },
+    /* the live window scene ({camera, setFigure, render, stats, preset}) or null in CSS fallback */
+    scene: function () { return inst && inst.scene ? inst.scene : null; }
   };
   window.BF_CARD = BF_CARD;
 })();

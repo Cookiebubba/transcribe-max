@@ -7,11 +7,19 @@
    Every inner measurement is `calc(var(--u) * N)` where N is in the
    340 x 476 design grid, so the card scales as one object.
 
+   LAYOUT: the arched window (frame ring y 14..316 of 476) is the top
+   two-thirds of the card; identity + stats fill the bottom third.
+
    LAYER STACK (front face, translateZ in px, back to front):
-     core 0 -> far bg 0 -> near bg 9 -> leading lines 18 -> floor 27
-     -> CHARACTER 36 -> foreground 43 -> fog 46
-     -> frame 56 -> glass rim 60 -> embers 64 -> plates 74 -> stats 84
-     -> hologram 92
+     core 0 -> WINDOW SCENE 2 (one WebGL canvas + character overlay,
+     clipped by its own .bf-win leaf; depth comes from the scene's
+     off-axis projection, see scene.js)
+     -> frame 4 -> glass rim 5 -> embers 6 -> plates 8 -> stats 9
+     -> hologram 10.   Back face: sigil 3, frame 5, rim 6, text 8, holo 10.
+   CSS fallback (no WebGL): far bg 0 -> near bg 9 -> lines 18 -> floor 27
+     -> CHARACTER 36 -> foreground 43 -> fog 46 -> frame 56 -> rim 60
+     -> embers 64 -> plates 74 -> stats 84 -> hologram 92 (the wide spread
+     is that mode's parallax).
    Each layer is a .bf-plane (full-card, own translateZ, scaled so it
    keeps its flat size under perspective). Do not clip a parent of the
    planes (overflow/clip-path/filter/opacity) or preserve-3d flattens.
@@ -123,11 +131,24 @@ html.bf-dragging, html.bf-dragging * { cursor: grabbing !important; -webkit-user
 
 /* ---------- window-shaped planes (scene, character, fog) ---------- */
 .bf-win {
-  position: absolute; left: calc(var(--u) * 23); top: calc(var(--u) * 51);
-  width: calc(var(--u) * 294); height: calc(var(--u) * 286);
-  border-radius: calc(var(--u) * 121) calc(var(--u) * 121) calc(var(--u) * 25) calc(var(--u) * 25);
+  position: absolute; left: calc(var(--u) * 24); top: calc(var(--u) * 26);
+  width: calc(var(--u) * 292); height: calc(var(--u) * 280);
+  border-radius: calc(var(--u) * 128) calc(var(--u) * 128) calc(var(--u) * 16) calc(var(--u) * 16);
   overflow: hidden;
 }
+/* the WebGL window: a leaf, so its overflow clip never touches the 3D chain.
+   The painted gradient shows only for the instant before the first frame. */
+.bf-scene {
+  background:
+    radial-gradient(38% 30% at 24% 26%, color-mix(in srgb, var(--ember) 30%, transparent), transparent 70%),
+    radial-gradient(90% 60% at 50% 100%, color-mix(in srgb, var(--ember-deep) 14%, var(--void)), transparent 80%),
+    linear-gradient(180deg, var(--deep), var(--void));
+}
+.bf-scene-cv {
+  position: absolute; inset: 0; width: 100%; height: 100%; display: block;
+  opacity: 0; transition: opacity .45s ease;
+}
+.bf-scene-cv.is-ready { opacity: 1; }
 .bf-win > svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 
 /* ===== CHARACTER SLOT =====
@@ -161,8 +182,8 @@ html.bf-dragging, html.bf-dragging * { cursor: grabbing !important; -webkit-user
 @keyframes bf-rise {
   0%   { transform: translate3d(0, 0, 0) scale(.7); opacity: 0; }
   12%  { opacity: 1; }
-  60%  { transform: translate3d(calc(var(--dx) * .5), calc(var(--u) * -300), 0) scale(.9); opacity: .9; }
-  100% { transform: translate3d(var(--dx), calc(var(--u) * -500), 0) scale(.25); opacity: 0; }
+  60%  { transform: translate3d(calc(var(--dx) * .3), calc(var(--u) * -90), 0) scale(.9); opacity: .9; }
+  100% { transform: translate3d(calc(var(--dx) * .5), calc(var(--u) * -150), 0) scale(.25); opacity: 0; }
 }
 
 /* ---------- plates (HTML, positioned on the 340 x 476 grid) ---------- */
@@ -184,7 +205,7 @@ html.bf-dragging, html.bf-dragging * { cursor: grabbing !important; -webkit-user
 .bf-lv span { color: var(--ink-dim); }
 
 .bf-medal {
-  position: absolute; left: calc(var(--u) * 146); top: calc(var(--u) * 14); width: calc(var(--u) * 48); height: calc(var(--u) * 48);
+  position: absolute; left: calc(var(--u) * 148); top: calc(var(--u) * 6); width: calc(var(--u) * 44); height: calc(var(--u) * 44);
   border-radius: 50%; display: grid; place-items: center;
   background:
     radial-gradient(circle at 34% 28%, rgba(255,255,255,.35), transparent 38%),
@@ -195,27 +216,27 @@ html.bf-dragging, html.bf-dragging * { cursor: grabbing !important; -webkit-user
     inset 0 0 0 calc(var(--u) * 5) rgba(0,0,0,.45),
     0 0 calc(var(--u) * (4 + 18 * var(--i))) color-mix(in srgb, var(--accent) calc(var(--i) * 70%), transparent);
 }
-.bf-medal b { font: 700 calc(var(--u) * 20)/1 var(--display, Georgia, serif); color: var(--ink); text-shadow: 0 1px 0 rgba(0,0,0,.7), 0 0 calc(var(--u) * 8) color-mix(in srgb, var(--accent) 60%, transparent); }
+.bf-medal b { font: 700 calc(var(--u) * 18)/1 var(--display, Georgia, serif); color: var(--ink); text-shadow: 0 1px 0 rgba(0,0,0,.7), 0 0 calc(var(--u) * 8) color-mix(in srgb, var(--accent) 60%, transparent); }
 .bf-medal b small { font-size: .5em; opacity: .7; margin-right: .05em; vertical-align: .35em; }
-.bf-medal.is-long b { font-size: calc(var(--u) * 15); }
+.bf-medal.is-long b { font-size: calc(var(--u) * 14); }
 
-.bf-id { position: absolute; left: calc(var(--u) * 20); right: calc(var(--u) * 20); top: calc(var(--u) * 355); text-align: center; }
-.bf-name { margin: 0; font: 700 calc(var(--u) * 21)/calc(var(--u) * 25) var(--display, Georgia, serif); letter-spacing: .01em; color: var(--ink);
+.bf-id { position: absolute; left: calc(var(--u) * 22); right: calc(var(--u) * 22); top: calc(var(--u) * 328); text-align: center; }
+.bf-name { margin: 0; font: 700 calc(var(--u) * 21)/calc(var(--u) * 26) var(--display, Georgia, serif); letter-spacing: .01em; color: var(--ink);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 calc(var(--u) * 2) calc(var(--u) * 8) rgba(0,0,0,.6); }
-.bf-title { margin: calc(var(--u) * 1) 0 0; font: italic 500 calc(var(--u) * 11.5)/calc(var(--u) * 14) var(--body, Georgia, serif); color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.bf-sub { margin: calc(var(--u) * 2) 0 0; font: 500 calc(var(--u) * 8.5)/calc(var(--u) * 11) var(--data, ui-monospace, monospace); letter-spacing: .2em; text-transform: uppercase; color: var(--ink-dim); }
+.bf-title { margin: calc(var(--u) * 1) 0 0; font: italic 500 calc(var(--u) * 12.5)/calc(var(--u) * 16) var(--body, Georgia, serif); color: var(--accent); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bf-sub { margin: calc(var(--u) * 3) 0 0; font: 500 calc(var(--u) * 9.5)/calc(var(--u) * 12) var(--data, ui-monospace, monospace); letter-spacing: .2em; text-transform: uppercase; color: var(--ink-dim); }
 .bf-sub em { font-style: normal; color: var(--ink-faint); padding: 0 .5em; }
 
-.bf-stats { position: absolute; left: calc(var(--u) * 20); right: calc(var(--u) * 20); top: calc(var(--u) * 411); height: calc(var(--u) * 43);
+.bf-stats { position: absolute; left: calc(var(--u) * 22); right: calc(var(--u) * 22); top: calc(var(--u) * 393); height: calc(var(--u) * 52);
   display: grid; grid-template-columns: repeat(4, 1fr); gap: calc(var(--u) * 6); }
 .bf-stat {
-  position: relative; border-radius: calc(var(--u) * 10); padding: calc(var(--u) * 6) calc(var(--u) * 8) 0;
+  position: relative; border-radius: calc(var(--u) * 10); padding: calc(var(--u) * 8) calc(var(--u) * 9) 0;
   background: linear-gradient(180deg, color-mix(in srgb, var(--raise) 62%, transparent), color-mix(in srgb, var(--void) 70%, transparent));
   box-shadow: inset 0 1px 0 var(--glass-hi), 0 calc(var(--u) * 4) calc(var(--u) * 10) rgba(0,0,0,.45);
 }
-.bf-stat span { display: block; font: 600 calc(var(--u) * 7.5)/1 var(--data, ui-monospace, monospace); letter-spacing: .2em; color: var(--ink-faint); }
-.bf-stat b { display: block; margin-top: calc(var(--u) * 3); font: 700 calc(var(--u) * 17)/1 var(--display, Georgia, serif); color: var(--ink); font-variant-numeric: tabular-nums; }
-.bf-stat u { position: absolute; left: calc(var(--u) * 8); right: calc(var(--u) * 8); bottom: calc(var(--u) * 5); height: calc(var(--u) * 3); border-radius: 3px; background: rgba(255,255,255,.08); text-decoration: none; overflow: hidden; }
+.bf-stat span { display: block; font: 600 calc(var(--u) * 9)/1 var(--data, ui-monospace, monospace); letter-spacing: .18em; color: var(--ink-dim); }
+.bf-stat b { display: block; margin-top: calc(var(--u) * 4); font: 700 calc(var(--u) * 19)/1 var(--display, Georgia, serif); color: var(--ink); font-variant-numeric: tabular-nums; }
+.bf-stat u { position: absolute; left: calc(var(--u) * 8); right: calc(var(--u) * 8); bottom: calc(var(--u) * 7); height: calc(var(--u) * 3); border-radius: 3px; background: rgba(255,255,255,.08); text-decoration: none; overflow: hidden; }
 .bf-stat u::after { content: ""; position: absolute; inset: 0; width: var(--w); border-radius: 3px;
   background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, var(--deep)), var(--accent)); box-shadow: 0 0 calc(var(--u) * 5) color-mix(in srgb, var(--accent) calc(var(--i) * 80%), transparent); }
 
@@ -236,6 +257,12 @@ html.bf-dragging, html.bf-dragging * { cursor: grabbing !important; -webkit-user
     repeating-linear-gradient(60deg, rgba(255,255,255,.05) 0 1px, transparent 1px calc(var(--u) * 4));
   mask: radial-gradient(130% 130% at var(--mx) var(--my), #000 25%, rgba(0,0,0,.35) 75%);
   -webkit-mask: radial-gradient(130% 130% at var(--mx) var(--my), #000 25%, rgba(0,0,0,.35) 75%);
+}
+/* over the window the foil is only a faint glaze, so the painting keeps its contrast */
+.bf-card[data-scene="gl"] .bf-front .bf-holo {
+  -webkit-mask: radial-gradient(130% 130% at var(--mx) var(--my), #000 25%, rgba(0,0,0,.35) 75%), linear-gradient(180deg, rgba(0,0,0,.16) 0 62%, #000 69%);
+  -webkit-mask-composite: source-in;
+  mask: radial-gradient(130% 130% at var(--mx) var(--my), #000 25%, rgba(0,0,0,.35) 75%) intersect, linear-gradient(180deg, rgba(0,0,0,.16) 0 62%, #000 69%);
 }
 .bf-back .bf-holo { background:
     radial-gradient(circle at var(--bmx) var(--bmy), rgba(255,255,255,.28), transparent 34%),
@@ -258,5 +285,6 @@ html.bf-dragging, html.bf-dragging * { cursor: grabbing !important; -webkit-user
 
 @media (prefers-reduced-motion: reduce) {
   .bf-mote { display: none; animation: none; }
+  .bf-scene-cv { transition: none; }
   .bf-card, .bf-shadow { transition: none; }
 }
