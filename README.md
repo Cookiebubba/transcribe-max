@@ -1,5 +1,7 @@
 # transcribe-max
 
+<a href="https://buymeacoffee.com/brandynships"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" height="41"></a>
+
 Transcripts of **every live stream** from the YouTube channel
 [Max Blade — @MaxBladeTv](https://www.youtube.com/@MaxBladeTv), plus the tooling
 to (re)generate them.
